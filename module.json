@@ -1,0 +1,105 @@
+{
+	"id": "sdnd-strahd-adv",
+	"title": "SDnD Adventures - The Curse of Strahd",
+	"description": "A pre-packaged adventure for the Curse of Strahd Campaign.",
+	"version": "#{VERSION}#",
+	"library": "false",
+	"socket": true,
+	"manifestPlusVersion": "1.2.0",
+	"compatibility": {
+		"minimum": 10,
+		"verified": 10,
+		"maximum": 10
+	},
+	"authors": [
+		{
+			"name": "Stroud",
+			"url": "https://github.com/matthewbstroud/sdnd-strahd-adv",
+			"discord": "CaiusMartius"
+		}
+	],
+	"relationships": {
+		"systems": [
+			{
+				"id": "dnd5e",
+				"type": "system",
+				"manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",
+				"compatibility": {
+					"verified": "2.2.2"
+				}
+			}
+		],
+		"requires": [
+			{
+				"id": "lib-wrapper",
+				"type": "module",
+				"manifest": "https://github.com/ruipin/fvtt-lib-wrapper/releases/latest/download/module.json",
+				"compatibility": {
+					"verified": "1.12.12.0"
+				}
+			},
+			{
+				"id": "warpgate",
+				"type": "module",
+				"manifest": "https://github.com/trioderegion/warpgate/releases/latest/download/module.json",
+				"compatibility": {
+					"verified": "1.16.0"
+				}
+			},
+			{
+				"id": "compendium-folders",
+				"type": "module",
+				"manifest": "https://raw.githubusercontent.com/earlSt1/vtt-compendium-folders/10x-update/module.json",
+				"compatibility": {
+					"verified": "2.5.7"
+				}
+			},
+			{
+				"id": "socketlib",
+				"type": "module",
+				"manifest": "https://raw.githubusercontent.com/manuelVo/foundryvtt-socketlib/master/module.json",
+				"compatibility": {
+					"verified": "1.0.12"
+				}
+			},
+			{
+				"id": "monks-active-tiles",
+				"type": "module",
+				"manifest": "https://github.com/ironmonk88/monks-active-tiles/releases/latest/download/module.json",
+				"compatibility": {
+					"verified": "10.15"
+				}
+			}
+		],
+		"optional": []
+	},
+	"esmodules": [
+		"scripts/module.js"
+	],
+	"styles": [
+		"styles/module.css"
+	],
+	"packs": [
+		{
+			"name": "snd-curse-of-strahd",
+			"label": "Curse of Strahd",
+			"path": "packs/snd-curse-of-strahd.db",
+			"type": "Adventure",
+			"system": "dnd5e",
+			"private": true,
+			"module": "sdnd-strahd-adv"
+		}
+	],
+	"changelog": "https://github.com/matthewbstroud/sdnd-strahd-adv/blob/master/CHANGELOG.md",
+	"url": "#{URL}#",
+	"manifest": "#{MANIFEST}#",
+	"download": "#{DOWNLOAD}#",
+	"license": "LICENSE",
+	"readme": "README.md",
+	"media": [
+		{
+			"type": "icon",
+			"url": ""
+		}
+	]
+}
