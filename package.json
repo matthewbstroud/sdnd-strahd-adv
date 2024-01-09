@@ -1,0 +1,21 @@
+{
+  "name": "sdnd-strahd-adv",
+  "version": "11.1.0",
+  "description": "Vampire Campaign",
+  "main": "module.json",
+  "scripts": {
+    "fixThumbs": "node ./tools/fixThumbPaths.mjs",
+    "updateYML": "node ./tools/pushLDBtoYML.mjs",
+    "postupdateYML": "node ./tools/fixThumbPaths.mjs",
+    "updateLDB": "node ./tools/pullYMLtoLDB.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewbstroud/sdnd-strahd-adv.git"
+  },
+  "author": "Matthew Stroud",
+  "license": "MIT",
+  "dependencies": {
+    "@foundryvtt/foundryvtt-cli": "^1.0.2"
+  }
+}

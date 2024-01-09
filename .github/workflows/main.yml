@@ -70,20 +70,12 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-
-      # Extract version embedded in the tag.
-      # This step expects the tag to be one of the following formats:
-      #   - "v<major>.<minor>.<patch>" (e.g., "v1.2.3")
-      #   - "<major>.<minor>.<patch>"  (e.g., "1.2.3")
-      #
-      # The version will be used by later steps to fill in the value for the
-      # "version" key required for a valid module manifest.
-      - name: Extract Version From Tag
-        id: get_version
-        uses: battila7/get-version-action@v2
-
+      # Remove the 'v' from the tag for versioning
+      - id: get_version
+        run: |
+          echo "VERSION=${GITHUB_REF_NAME#v}" >> $GITHUB_ENV
 
       # Modify "module.json" with values specific to the release.
       # Since the values for the "version" and "url" keys aren't known ahead of
@@ -97,11 +89,24 @@ jobs:
         with:
           files: 'module.json'
         env:
-          VERSION: ${{steps.get_version.outputs.version-without-v}}
+          VERSION: ${{ env.VERSION }}
           URL: ${{ env.project_url }}
           MANIFEST: ${{ env.latest_manifest_url }}
           DOWNLOAD: ${{ env.release_module_url }}
 
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Setup Node and Foundry CLI
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Make Sure Foundry is installed
+        run: npm install -g @foundryvtt/foundryvtt-cli
+      - run: fvtt configure set "dataPath" ${GITHUB_WORKSPACE}
+      - name: Build Packs
+        run: npm run updateLDB
 
       # Create a "module.zip" archive containing all the module's required files.
       # If you have other directories or files that will need to be added to
@@ -122,9 +127,10 @@ jobs:
             templates                            \
             images/                              \
             scripts/                             \
+            sfx/                                 \
             styles/                              \
             packs/                               \
-            language/                            \
+            languages/                           \
             lang/
           # Don't forget to add a backslash at the end of the line for any
           # additional files or directories!
