@@ -2,6 +2,7 @@
 # New Features
 - New Scenes
   - Area Q: Argynvostholt
+  - Area S: Village of Krezk
 # v11.1.3
 # New Features
 - New Scenes
