@@ -1,3 +1,6 @@
+# v11.1.5
+# Conversion
+- Converting images to be 100 dpi or less
 # v11.1.4
 # New Features
 - New Scenes

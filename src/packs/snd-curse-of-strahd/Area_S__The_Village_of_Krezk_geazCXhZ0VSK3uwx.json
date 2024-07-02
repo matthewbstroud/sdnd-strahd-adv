@@ -30,8 +30,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong></em> The mongrelfolk makes two attacks: one with its bite and one with its claw or dagger.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Curse of Strahd pg 234"
@@ -74,7 +73,6 @@
             },
             "ability": null,
             "actionType": null,
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -98,7 +96,13 @@
             "recharge": {
               "value": null,
               "charged": false
-            }
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "summons": null,
+            "properties": []
           },
           "ownership": {
             "default": 0
@@ -132,8 +136,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong> Melee Weapon Attack:</em> +3 to hit, reach 5 ft., one target. <em>Hit:</em> 3 (1d4 + 1) piercing damage.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Curse of Strahd pg 234"
@@ -186,7 +189,6 @@
             },
             "ability": "str",
             "actionType": "mwak",
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -216,25 +218,24 @@
               "dt": null,
               "conditions": ""
             },
-            "weaponType": "natural",
-            "baseItem": "",
-            "properties": {
-              "amm": false,
-              "fin": false,
-              "fir": false,
-              "foc": false,
-              "hvy": false,
-              "lgt": false,
-              "lod": false,
-              "rch": true,
-              "rel": false,
-              "ret": false,
-              "spc": false,
-              "thr": false,
-              "two": false,
-              "ver": false
+            "properties": [
+              "rch"
+            ],
+            "proficient": 1,
+            "unidentified": {
+              "description": ""
             },
-            "proficient": 1
+            "type": {
+              "value": "natural",
+              "baseItem": ""
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "container": null,
+            "summons": null,
+            "magicalBonus": null
           },
           "ownership": {
             "default": 0
@@ -268,8 +269,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong> Melee Weapon Attack:</em> +3 to hit, reach 5 ft., one target. <em>Hit:</em> 3 (1d4 + 1) slashing damage.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Curse of Strahd pg 234"
@@ -322,7 +322,6 @@
             },
             "ability": "str",
             "actionType": "mwak",
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -352,25 +351,24 @@
               "dt": null,
               "conditions": ""
             },
-            "weaponType": "natural",
-            "baseItem": "",
-            "properties": {
-              "amm": false,
-              "fin": false,
-              "fir": false,
-              "foc": false,
-              "hvy": false,
-              "lgt": false,
-              "lod": false,
-              "rch": true,
-              "rel": false,
-              "ret": false,
-              "spc": false,
-              "thr": false,
-              "two": false,
-              "ver": false
+            "properties": [
+              "rch"
+            ],
+            "proficient": 1,
+            "unidentified": {
+              "description": ""
             },
-            "proficient": 1
+            "type": {
+              "value": "natural",
+              "baseItem": ""
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "container": null,
+            "summons": null,
+            "magicalBonus": null
           },
           "ownership": {
             "default": 0
@@ -404,8 +402,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong> Melee or Ranged Weapon Attack:</em> +3 to hit, reach 5 ft. or range 20/60 ft., one target. <em>Hit:</em> 3 (1d4 + 1) piercing damage.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Curse of Strahd pg 234"
@@ -458,7 +455,6 @@
             },
             "ability": "str",
             "actionType": "mwak",
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -488,25 +484,27 @@
               "dt": null,
               "conditions": ""
             },
-            "weaponType": "simpleM",
-            "baseItem": "",
-            "properties": {
-              "amm": false,
-              "fin": true,
-              "fir": false,
-              "foc": false,
-              "hvy": false,
-              "lgt": true,
-              "lod": false,
-              "rch": true,
-              "rel": false,
-              "ret": false,
-              "spc": false,
-              "thr": true,
-              "two": false,
-              "ver": false
+            "properties": [
+              "fin",
+              "lgt",
+              "rch",
+              "thr"
+            ],
+            "proficient": 1,
+            "unidentified": {
+              "description": ""
             },
-            "proficient": 1
+            "type": {
+              "value": "simpleM",
+              "baseItem": ""
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "container": null,
+            "summons": null,
+            "magicalBonus": null
           },
           "ownership": {
             "default": 0
@@ -540,8 +538,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong></em> The mongrelfolk has one of the following extraordinary features, determined randomly by rolling a d20 or chosen by the DM:</p><p><strong>1–3: Amphibious.</strong> The mongrelfolk can breathe air and water.</p><p><strong>4–9: Darkvision.</strong> The mongrelfolk has darkvision out to a range of 60 feet.</p><p><strong>10: Flight.</strong> The mongrelfolk has leathery wings and a flying speed of 40 feet.</p><p><strong>11–15: Keen Hearing and Smell.</strong> The mongrelfolk has advantage on Wisdom (Perception) checks that rely on hearing or smell.</p><p><strong>16–17: Spider Climb.</strong> The mongrelfolk can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p><p><strong>18–19: Standing Leap.</strong> The mongrelfolk’s long jump is up to 20 feet and its high jump is up to 10 feet, with or without a running start.</p><p><strong>20: Two-Headed.</strong> The mongrelfolk has advantage on Wisdom (Perception) checks and on saving throws against being blinded, charmed, deafened, frightened, stunned, or knocked unconscious.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Curse of Strahd pg 234"
@@ -584,7 +581,6 @@
             },
             "ability": null,
             "actionType": null,
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -608,7 +604,13 @@
             "recharge": {
               "value": null,
               "charged": false
-            }
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "summons": null,
+            "properties": []
           },
           "ownership": {
             "default": 0
@@ -642,8 +644,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong></em> The mongrelfolk can mimic any sounds it has heard, including voices. A creature that hears the sounds can tell they are imitations with a successful DC 12 Wisdom (Insight) check.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Curse of Strahd pg 234"
@@ -686,7 +687,6 @@
             },
             "ability": null,
             "actionType": null,
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -710,7 +710,13 @@
             "recharge": {
               "value": null,
               "charged": false
-            }
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "summons": null,
+            "properties": []
           },
           "ownership": {
             "default": 0
@@ -857,7 +863,12 @@
           },
           "init": {
             "ability": "",
-            "bonus": "0"
+            "bonus": "0",
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
           },
           "movement": {
             "burrow": null,
@@ -879,7 +890,30 @@
             "units": "ft",
             "special": ""
           },
-          "spellcasting": ""
+          "spellcasting": "",
+          "exhaustion": 0,
+          "concentration": {
+            "ability": "",
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            },
+            "bonuses": {
+              "save": ""
+            },
+            "limit": 1
+          },
+          "death": {
+            "ability": "",
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            },
+            "success": 0,
+            "failure": 0
+          }
         },
         "details": {
           "biography": {
@@ -927,6 +961,10 @@
               "common"
             ],
             "custom": ""
+          },
+          "dm": {
+            "amount": {},
+            "bypasses": []
           }
         },
         "currency": {
@@ -943,6 +981,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "ani": {
@@ -951,6 +994,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "arc": {
@@ -959,6 +1007,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "ath": {
@@ -967,6 +1020,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "dec": {
@@ -975,6 +1033,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "his": {
@@ -983,6 +1046,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "ins": {
@@ -991,6 +1059,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "itm": {
@@ -999,6 +1072,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "inv": {
@@ -1007,6 +1085,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "med": {
@@ -1015,6 +1098,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "nat": {
@@ -1023,6 +1111,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "prc": {
@@ -1031,6 +1124,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "prf": {
@@ -1039,6 +1137,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "per": {
@@ -1047,6 +1150,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "rel": {
@@ -1055,6 +1163,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "slt": {
@@ -1063,6 +1176,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "ste": {
@@ -1071,6 +1189,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "sur": {
@@ -1079,6 +1202,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           }
         },
@@ -1177,7 +1305,7 @@
         "width": 1,
         "height": 1,
         "lockRotation": false,
-        "rotation": 90,
+        "rotation": 0,
         "alpha": 1,
         "light": {
           "alpha": 0.5,
@@ -1218,6 +1346,11 @@
           "dnd5e-helpers": {
             "coverLevel": 1
           },
+          "simbuls-cover-calculator": {
+            "coverLevel": 1,
+            "coverLevelDead": 1,
+            "coverLevelProne": 1
+          },
           "monks-tokenbar": {
             "include": "default"
           },
@@ -1227,10 +1360,10 @@
         },
         "randomImg": false,
         "texture": {
-          "src": "modules/sdnd-strahd-adv/images/tokens/NPC/Otto_Token.webp",
+          "src": "modules/sdnd-strahd-adv/images/tokens/NPC/Colvin_Belview_Token.webp",
           "tint": null,
-          "scaleX": 0.9,
-          "scaleY": 0.9,
+          "scaleX": 1,
+          "scaleY": 1,
           "offsetX": 0,
           "offsetY": 0,
           "rotation": 0
@@ -1255,7 +1388,7 @@
         "systemVersion": "2.4.1",
         "coreVersion": "11.315",
         "createdTime": 1707081067575,
-        "modifiedTime": 1707083981978,
+        "modifiedTime": 1707089893440,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       },
       "_id": "GcxbCKaSq2eZozlw"
@@ -1286,8 +1419,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong></em> The mongrelfolk makes two attacks: one with its bite and one with its claw or dagger.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Curse of Strahd pg 234"
@@ -1330,7 +1462,6 @@
             },
             "ability": null,
             "actionType": null,
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -1354,7 +1485,13 @@
             "recharge": {
               "value": null,
               "charged": false
-            }
+            },
+            "properties": [],
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "summons": null
           },
           "ownership": {
             "default": 0
@@ -1388,8 +1525,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong> Melee Weapon Attack:</em> +3 to hit, reach 5 ft., one target. <em>Hit:</em> 3 (1d4 + 1) piercing damage.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Curse of Strahd pg 234"
@@ -1442,7 +1578,6 @@
             },
             "ability": "str",
             "actionType": "mwak",
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -1472,25 +1607,24 @@
               "dt": null,
               "conditions": ""
             },
-            "weaponType": "natural",
-            "baseItem": "",
-            "properties": {
-              "amm": false,
-              "fin": false,
-              "fir": false,
-              "foc": false,
-              "hvy": false,
-              "lgt": false,
-              "lod": false,
-              "rch": true,
-              "rel": false,
-              "ret": false,
-              "spc": false,
-              "thr": false,
-              "two": false,
-              "ver": false
+            "properties": [
+              "rch"
+            ],
+            "proficient": 1,
+            "unidentified": {
+              "description": ""
             },
-            "proficient": 1
+            "type": {
+              "value": "natural",
+              "baseItem": ""
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "container": null,
+            "summons": null,
+            "magicalBonus": null
           },
           "ownership": {
             "default": 0
@@ -1524,8 +1658,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong> Melee Weapon Attack:</em> +3 to hit, reach 5 ft., one target. <em>Hit:</em> 3 (1d4 + 1) slashing damage.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Curse of Strahd pg 234"
@@ -1578,7 +1711,6 @@
             },
             "ability": "str",
             "actionType": "mwak",
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -1608,25 +1740,24 @@
               "dt": null,
               "conditions": ""
             },
-            "weaponType": "natural",
-            "baseItem": "",
-            "properties": {
-              "amm": false,
-              "fin": false,
-              "fir": false,
-              "foc": false,
-              "hvy": false,
-              "lgt": false,
-              "lod": false,
-              "rch": true,
-              "rel": false,
-              "ret": false,
-              "spc": false,
-              "thr": false,
-              "two": false,
-              "ver": false
+            "properties": [
+              "rch"
+            ],
+            "proficient": 1,
+            "unidentified": {
+              "description": ""
             },
-            "proficient": 1
+            "type": {
+              "value": "natural",
+              "baseItem": ""
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "container": null,
+            "summons": null,
+            "magicalBonus": null
           },
           "ownership": {
             "default": 0
@@ -1660,8 +1791,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong> Melee or Ranged Weapon Attack:</em> +3 to hit, reach 5 ft. or range 20/60 ft., one target. <em>Hit:</em> 3 (1d4 + 1) piercing damage.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Curse of Strahd pg 234"
@@ -1714,7 +1844,6 @@
             },
             "ability": "str",
             "actionType": "mwak",
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -1744,25 +1873,27 @@
               "dt": null,
               "conditions": ""
             },
-            "weaponType": "simpleM",
-            "baseItem": "",
-            "properties": {
-              "amm": false,
-              "fin": true,
-              "fir": false,
-              "foc": false,
-              "hvy": false,
-              "lgt": true,
-              "lod": false,
-              "rch": true,
-              "rel": false,
-              "ret": false,
-              "spc": false,
-              "thr": true,
-              "two": false,
-              "ver": false
+            "properties": [
+              "fin",
+              "lgt",
+              "rch",
+              "thr"
+            ],
+            "proficient": 1,
+            "unidentified": {
+              "description": ""
             },
-            "proficient": 1
+            "type": {
+              "value": "simpleM",
+              "baseItem": ""
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "container": null,
+            "summons": null,
+            "magicalBonus": null
           },
           "ownership": {
             "default": 0
@@ -1796,8 +1927,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong></em> The mongrelfolk has one of the following extraordinary features, determined randomly by rolling a d20 or chosen by the DM:</p><p><strong>1–3: Amphibious.</strong> The mongrelfolk can breathe air and water.</p><p><strong>4–9: Darkvision.</strong> The mongrelfolk has darkvision out to a range of 60 feet.</p><p><strong>10: Flight.</strong> The mongrelfolk has leathery wings and a flying speed of 40 feet.</p><p><strong>11–15: Keen Hearing and Smell.</strong> The mongrelfolk has advantage on Wisdom (Perception) checks that rely on hearing or smell.</p><p><strong>16–17: Spider Climb.</strong> The mongrelfolk can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p><p><strong>18–19: Standing Leap.</strong> The mongrelfolk’s long jump is up to 20 feet and its high jump is up to 10 feet, with or without a running start.</p><p><strong>20: Two-Headed.</strong> The mongrelfolk has advantage on Wisdom (Perception) checks and on saving throws against being blinded, charmed, deafened, frightened, stunned, or knocked unconscious.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Curse of Strahd pg 234"
@@ -1840,7 +1970,6 @@
             },
             "ability": null,
             "actionType": null,
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -1864,7 +1993,13 @@
             "recharge": {
               "value": null,
               "charged": false
-            }
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "summons": null,
+            "properties": []
           },
           "ownership": {
             "default": 0
@@ -1898,8 +2033,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong></em> The mongrelfolk can mimic any sounds it has heard, including voices. A creature that hears the sounds can tell they are imitations with a successful DC 12 Wisdom (Insight) check.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Curse of Strahd pg 234"
@@ -1942,7 +2076,6 @@
             },
             "ability": null,
             "actionType": null,
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -1966,7 +2099,13 @@
             "recharge": {
               "value": null,
               "charged": false
-            }
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "summons": null,
+            "properties": []
           },
           "ownership": {
             "default": 0
@@ -2113,7 +2252,12 @@
           },
           "init": {
             "ability": "",
-            "bonus": "0"
+            "bonus": "0",
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
           },
           "movement": {
             "burrow": null,
@@ -2135,7 +2279,30 @@
             "units": "ft",
             "special": ""
           },
-          "spellcasting": ""
+          "spellcasting": "",
+          "exhaustion": 0,
+          "concentration": {
+            "ability": "",
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            },
+            "bonuses": {
+              "save": ""
+            },
+            "limit": 1
+          },
+          "death": {
+            "ability": "",
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            },
+            "success": 0,
+            "failure": 0
+          }
         },
         "details": {
           "biography": {
@@ -2183,6 +2350,10 @@
               "common"
             ],
             "custom": ""
+          },
+          "dm": {
+            "amount": {},
+            "bypasses": []
           }
         },
         "currency": {
@@ -2199,6 +2370,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "ani": {
@@ -2207,6 +2383,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "arc": {
@@ -2215,6 +2396,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "ath": {
@@ -2223,6 +2409,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "dec": {
@@ -2231,6 +2422,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "his": {
@@ -2239,6 +2435,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "ins": {
@@ -2247,6 +2448,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "itm": {
@@ -2255,6 +2461,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "inv": {
@@ -2263,6 +2474,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "med": {
@@ -2271,6 +2487,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "nat": {
@@ -2279,6 +2500,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "prc": {
@@ -2287,6 +2513,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "prf": {
@@ -2295,6 +2526,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "per": {
@@ -2303,6 +2539,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "rel": {
@@ -2311,6 +2552,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "slt": {
@@ -2319,6 +2565,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "ste": {
@@ -2327,6 +2578,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "sur": {
@@ -2335,6 +2591,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           }
         },
@@ -2534,8 +2795,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong></em> The mongrelfolk makes two attacks: one with its bite and one with its claw or dagger.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Curse of Strahd pg 234"
@@ -2578,7 +2838,6 @@
             },
             "ability": null,
             "actionType": null,
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -2602,7 +2861,13 @@
             "recharge": {
               "value": null,
               "charged": false
-            }
+            },
+            "properties": [],
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "summons": null
           },
           "ownership": {
             "default": 0
@@ -2636,8 +2901,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong> Melee Weapon Attack:</em> +3 to hit, reach 5 ft., one target. <em>Hit:</em> 3 (1d4 + 1) piercing damage.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Curse of Strahd pg 234"
@@ -2690,7 +2954,6 @@
             },
             "ability": "str",
             "actionType": "mwak",
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -2720,25 +2983,24 @@
               "dt": null,
               "conditions": ""
             },
-            "weaponType": "natural",
-            "baseItem": "",
-            "properties": {
-              "amm": false,
-              "fin": false,
-              "fir": false,
-              "foc": false,
-              "hvy": false,
-              "lgt": false,
-              "lod": false,
-              "rch": true,
-              "rel": false,
-              "ret": false,
-              "spc": false,
-              "thr": false,
-              "two": false,
-              "ver": false
+            "properties": [
+              "rch"
+            ],
+            "proficient": 1,
+            "unidentified": {
+              "description": ""
             },
-            "proficient": 1
+            "type": {
+              "value": "natural",
+              "baseItem": ""
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "container": null,
+            "summons": null,
+            "magicalBonus": null
           },
           "ownership": {
             "default": 0
@@ -2772,8 +3034,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong> Melee Weapon Attack:</em> +3 to hit, reach 5 ft., one target. <em>Hit:</em> 3 (1d4 + 1) slashing damage.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Curse of Strahd pg 234"
@@ -2826,7 +3087,6 @@
             },
             "ability": "str",
             "actionType": "mwak",
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -2856,25 +3116,24 @@
               "dt": null,
               "conditions": ""
             },
-            "weaponType": "natural",
-            "baseItem": "",
-            "properties": {
-              "amm": false,
-              "fin": false,
-              "fir": false,
-              "foc": false,
-              "hvy": false,
-              "lgt": false,
-              "lod": false,
-              "rch": true,
-              "rel": false,
-              "ret": false,
-              "spc": false,
-              "thr": false,
-              "two": false,
-              "ver": false
+            "properties": [
+              "rch"
+            ],
+            "proficient": 1,
+            "unidentified": {
+              "description": ""
             },
-            "proficient": 1
+            "type": {
+              "value": "natural",
+              "baseItem": ""
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "container": null,
+            "summons": null,
+            "magicalBonus": null
           },
           "ownership": {
             "default": 0
@@ -2908,8 +3167,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong> Melee or Ranged Weapon Attack:</em> +3 to hit, reach 5 ft. or range 20/60 ft., one target. <em>Hit:</em> 3 (1d4 + 1) piercing damage.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Curse of Strahd pg 234"
@@ -2962,7 +3220,6 @@
             },
             "ability": "str",
             "actionType": "mwak",
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -2992,25 +3249,27 @@
               "dt": null,
               "conditions": ""
             },
-            "weaponType": "simpleM",
-            "baseItem": "",
-            "properties": {
-              "amm": false,
-              "fin": true,
-              "fir": false,
-              "foc": false,
-              "hvy": false,
-              "lgt": true,
-              "lod": false,
-              "rch": true,
-              "rel": false,
-              "ret": false,
-              "spc": false,
-              "thr": true,
-              "two": false,
-              "ver": false
+            "properties": [
+              "fin",
+              "lgt",
+              "rch",
+              "thr"
+            ],
+            "proficient": 1,
+            "unidentified": {
+              "description": ""
             },
-            "proficient": 1
+            "type": {
+              "value": "simpleM",
+              "baseItem": ""
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "container": null,
+            "summons": null,
+            "magicalBonus": null
           },
           "ownership": {
             "default": 0
@@ -3044,8 +3303,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong></em> The mongrelfolk has one of the following extraordinary features, determined randomly by rolling a d20 or chosen by the DM:</p><p><strong>1–3: Amphibious.</strong> The mongrelfolk can breathe air and water.</p><p><strong>4–9: Darkvision.</strong> The mongrelfolk has darkvision out to a range of 60 feet.</p><p><strong>10: Flight.</strong> The mongrelfolk has leathery wings and a flying speed of 40 feet.</p><p><strong>11–15: Keen Hearing and Smell.</strong> The mongrelfolk has advantage on Wisdom (Perception) checks that rely on hearing or smell.</p><p><strong>16–17: Spider Climb.</strong> The mongrelfolk can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p><p><strong>18–19: Standing Leap.</strong> The mongrelfolk’s long jump is up to 20 feet and its high jump is up to 10 feet, with or without a running start.</p><p><strong>20: Two-Headed.</strong> The mongrelfolk has advantage on Wisdom (Perception) checks and on saving throws against being blinded, charmed, deafened, frightened, stunned, or knocked unconscious.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Curse of Strahd pg 234"
@@ -3088,7 +3346,6 @@
             },
             "ability": null,
             "actionType": null,
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -3112,7 +3369,13 @@
             "recharge": {
               "value": null,
               "charged": false
-            }
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "summons": null,
+            "properties": []
           },
           "ownership": {
             "default": 0
@@ -3146,8 +3409,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong></em> The mongrelfolk can mimic any sounds it has heard, including voices. A creature that hears the sounds can tell they are imitations with a successful DC 12 Wisdom (Insight) check.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Curse of Strahd pg 234"
@@ -3190,7 +3452,6 @@
             },
             "ability": null,
             "actionType": null,
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -3214,7 +3475,13 @@
             "recharge": {
               "value": null,
               "charged": false
-            }
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "summons": null,
+            "properties": []
           },
           "ownership": {
             "default": 0
@@ -3361,7 +3628,12 @@
           },
           "init": {
             "ability": "",
-            "bonus": "0"
+            "bonus": "0",
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
           },
           "movement": {
             "burrow": null,
@@ -3383,7 +3655,30 @@
             "units": "ft",
             "special": ""
           },
-          "spellcasting": ""
+          "spellcasting": "",
+          "exhaustion": 0,
+          "concentration": {
+            "ability": "",
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            },
+            "bonuses": {
+              "save": ""
+            },
+            "limit": 1
+          },
+          "death": {
+            "ability": "",
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            },
+            "success": 0,
+            "failure": 0
+          }
         },
         "details": {
           "biography": {
@@ -3431,6 +3726,10 @@
               "common"
             ],
             "custom": ""
+          },
+          "dm": {
+            "amount": {},
+            "bypasses": []
           }
         },
         "currency": {
@@ -3447,6 +3746,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "ani": {
@@ -3455,6 +3759,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "arc": {
@@ -3463,6 +3772,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "ath": {
@@ -3471,6 +3785,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "dec": {
@@ -3479,6 +3798,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "his": {
@@ -3487,6 +3811,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "ins": {
@@ -3495,6 +3824,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "itm": {
@@ -3503,6 +3837,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "inv": {
@@ -3511,6 +3850,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "med": {
@@ -3519,6 +3863,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "nat": {
@@ -3527,6 +3876,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "prc": {
@@ -3535,6 +3889,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "prf": {
@@ -3543,6 +3902,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "per": {
@@ -3551,6 +3915,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "rel": {
@@ -3559,6 +3928,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "slt": {
@@ -3567,6 +3941,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "ste": {
@@ -3575,6 +3954,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "sur": {
@@ -3583,6 +3967,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           }
         },
@@ -3781,8 +4170,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong></em> The deva makes two melee attacks.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Basic Rules pg 261"
@@ -3825,7 +4213,6 @@
             },
             "ability": null,
             "actionType": null,
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -3849,7 +4236,13 @@
             "recharge": {
               "value": null,
               "charged": false
-            }
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "summons": null,
+            "properties": []
           },
           "ownership": {
             "default": 0
@@ -3883,8 +4276,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong> Melee Weapon Attack:</em> +8 to hit, reach 5 ft., one target. <em>Hit:</em> 7 (1d6 + 4) bludgeoning damage plus 18 (4d8) radiant damage.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Basic Rules pg 261"
@@ -3937,7 +4329,6 @@
             },
             "ability": "str",
             "actionType": "mwak",
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -3971,25 +4362,24 @@
               "dt": null,
               "conditions": ""
             },
-            "weaponType": "simpleM",
-            "baseItem": "",
-            "properties": {
-              "amm": false,
-              "fin": false,
-              "fir": false,
-              "foc": false,
-              "hvy": false,
-              "lgt": false,
-              "lod": false,
-              "rch": true,
-              "rel": false,
-              "ret": false,
-              "spc": false,
-              "thr": false,
-              "two": false,
-              "ver": false
+            "properties": [
+              "rch"
+            ],
+            "proficient": 1,
+            "unidentified": {
+              "description": ""
             },
-            "proficient": 1
+            "type": {
+              "value": "simpleM",
+              "baseItem": ""
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "container": null,
+            "summons": null,
+            "magicalBonus": null
           },
           "ownership": {
             "default": 0
@@ -4023,8 +4413,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong></em> The deva touches another creature. The target magically regains 20 (4d8 + 2) hit points and is freed from any curse, disease, poison, blindness, or deafness.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Basic Rules pg 261"
@@ -4067,7 +4456,6 @@
             },
             "ability": null,
             "actionType": null,
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -4096,7 +4484,13 @@
             "recharge": {
               "value": null,
               "charged": false
-            }
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "summons": null,
+            "properties": []
           },
           "ownership": {
             "default": 0
@@ -4130,8 +4524,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong></em> The deva magically polymorphs into a humanoid or beast that has a challenge rating equal to or less than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the deva's choice).</p><p>In a new form, the deva retains its game statistics and ability to speak, but its AC, movement modes, Strength, Dexterity, and special senses are replaced by those of the new form, and it gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has but that it lacks.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Basic Rules pg 261"
@@ -4174,7 +4567,6 @@
             },
             "ability": null,
             "actionType": null,
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -4198,7 +4590,13 @@
             "recharge": {
               "value": null,
               "charged": false
-            }
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "summons": null,
+            "properties": []
           },
           "ownership": {
             "default": 0
@@ -4232,8 +4630,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong></em> The deva's weapon attacks are magical. When the deva hits with any weapon, the weapon deals an extra 4d8 radiant damage (included in the attack).</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Basic Rules pg 261"
@@ -4276,7 +4673,6 @@
             },
             "ability": null,
             "actionType": null,
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -4300,7 +4696,13 @@
             "recharge": {
               "value": null,
               "charged": false
-            }
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "summons": null,
+            "properties": []
           },
           "ownership": {
             "default": 0
@@ -4334,8 +4736,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong></em> The deva's spellcasting ability is Charisma (spell save DC 17). The deva can innately cast the following spells, requiring only verbal components:</p><p>At will: detect evil and good</p><p>1/day each: commune, raise dead</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Basic Rules pg 261"
@@ -4378,7 +4779,6 @@
             },
             "ability": null,
             "actionType": null,
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -4402,7 +4802,13 @@
             "recharge": {
               "value": null,
               "charged": false
-            }
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "summons": null,
+            "properties": []
           },
           "ownership": {
             "default": 0
@@ -4436,8 +4842,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong></em> The deva has advantage on saving throws against spells and other magical effects.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Basic Rules pg 261"
@@ -4480,7 +4885,6 @@
             },
             "ability": null,
             "actionType": null,
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -4504,7 +4908,13 @@
             "recharge": {
               "value": null,
               "charged": false
-            }
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "summons": null,
+            "properties": []
           },
           "ownership": {
             "default": 0
@@ -4554,14 +4964,20 @@
               ],
               "version": "2.9.67",
               "effectsApplied": true
+            },
+            "dnd5e": {
+              "migratedProperties": [
+                "vocal",
+                "somatic",
+                "concentration"
+              ]
             }
           },
           "_id": "1jihla314gmbxo0s",
           "system": {
             "description": {
               "value": "<p>For the duration, you know if there is an aberration, celestial, elemental, fey, fiend, or undead within 30 feet of you, as well as where the creature is located. Similarly, you know if there is a place or object within 30 feet of you that has been magically consecrated or desecrated.</p>\n<p>The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Basic Rules, Player's Handbook pg 231"
@@ -4604,7 +5020,6 @@
             },
             "ability": null,
             "actionType": "other",
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -4622,13 +5037,6 @@
             },
             "level": 1,
             "school": "div",
-            "components": {
-              "vocal": true,
-              "somatic": true,
-              "material": false,
-              "ritual": false,
-              "concentration": true
-            },
             "materials": {
               "value": "",
               "consumed": false,
@@ -4642,7 +5050,17 @@
             "scaling": {
               "mode": "none",
               "formula": ""
-            }
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "summons": null,
+            "properties": [
+              "vocal",
+              "somatic",
+              "concentration"
+            ]
           },
           "ownership": {
             "default": 0,
@@ -4693,14 +5111,21 @@
               ],
               "version": "2.9.67",
               "effectsApplied": true
+            },
+            "dnd5e": {
+              "migratedProperties": [
+                "vocal",
+                "somatic",
+                "material",
+                "ritual"
+              ]
             }
           },
           "_id": "7w2px5tj0bhaz4h6",
           "system": {
             "description": {
               "value": "<p>You contact your deity or a divine proxy and ask up to three questions that can be answered with a yes or no. You must ask your questions before the spell ends. You receive a correct answer for each question.</p>\n<p>Divine beings aren't necessarily omniscient, so you might receive \"unclear\" as an answer if a question pertains to information that lies beyond the deity's knowledge. In a case where a one-word answer could be misleading or contrary to the deity's interests, the GM might offer a short phrase as an answer instead.</p>\n<p>If you cast the spell two or more times before finishing your next long rest, there is a cumulative 25 percent chance for each casting after the first that you get no answer. The GM makes this roll in secret.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Basic Rules, Player's Handbook pg 223"
@@ -4743,7 +5168,6 @@
             },
             "ability": null,
             "actionType": "other",
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -4761,13 +5185,6 @@
             },
             "level": 5,
             "school": "div",
-            "components": {
-              "vocal": true,
-              "somatic": true,
-              "material": true,
-              "ritual": true,
-              "concentration": false
-            },
             "materials": {
               "value": "incense and a vial of holy or unholy water",
               "consumed": false,
@@ -4781,7 +5198,18 @@
             "scaling": {
               "mode": "none",
               "formula": ""
-            }
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "summons": null,
+            "properties": [
+              "vocal",
+              "somatic",
+              "material",
+              "ritual"
+            ]
           },
           "ownership": {
             "default": 0,
@@ -4832,14 +5260,20 @@
               ],
               "version": "2.9.67",
               "effectsApplied": true
+            },
+            "dnd5e": {
+              "migratedProperties": [
+                "vocal",
+                "somatic",
+                "material"
+              ]
             }
           },
           "_id": "i85nilqfvnx1zxok",
           "system": {
             "description": {
               "value": "<p>You return a dead creature you touch to life, provided that it has been dead no longer than 10 days. If the creature's soul is both willing and at liberty to rejoin the body, the creature returns to life with 1 hit point.</p>\n<p>This spell also neutralizes any poisons and cures nonmagical diseases that affected the creature at the time it died. This spell doesn't, however, remove magical diseases, curses, or similar effects; if these aren't first removed prior to casting the spell, they take effect when the creature returns to life. The spell can't return an undead creature to life.</p>\n<p>This spell closes all mortal wounds, but it doesn't restore missing body parts. If the creature is lacking body parts or organs integral for its survival--its head, for instance--the spell automatically fails.</p>\n<p>Coming back from the dead is an ordeal. The target takes a −4 penalty to all attack rolls, saving throws, and ability checks. Every time the target finishes a long rest, the penalty is reduced by 1 until it disappears.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Basic Rules, Player's Handbook pg 270"
@@ -4882,7 +5316,6 @@
             },
             "ability": null,
             "actionType": "heal",
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -4900,13 +5333,6 @@
             },
             "level": 5,
             "school": "nec",
-            "components": {
-              "vocal": true,
-              "somatic": true,
-              "material": true,
-              "ritual": false,
-              "concentration": false
-            },
             "materials": {
               "value": "a diamond worth at least 500 gp, which the spell consumes",
               "consumed": true,
@@ -4920,7 +5346,17 @@
             "scaling": {
               "mode": "none",
               "formula": ""
-            }
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "summons": null,
+            "properties": [
+              "vocal",
+              "somatic",
+              "material"
+            ]
           },
           "ownership": {
             "default": 0,
@@ -5088,7 +5524,12 @@
           },
           "init": {
             "ability": "",
-            "bonus": "0"
+            "bonus": "0",
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
           },
           "movement": {
             "burrow": 0,
@@ -5110,7 +5551,30 @@
             "units": "ft",
             "special": ""
           },
-          "spellcasting": "cha"
+          "spellcasting": "cha",
+          "exhaustion": 0,
+          "concentration": {
+            "ability": "",
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            },
+            "bonuses": {
+              "save": ""
+            },
+            "limit": 1
+          },
+          "death": {
+            "ability": "",
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            },
+            "success": 0,
+            "failure": 0
+          }
         },
         "details": {
           "biography": {
@@ -5163,6 +5627,10 @@
           "languages": {
             "value": [],
             "custom": "Telepathy 120 ft.; All"
+          },
+          "dm": {
+            "amount": {},
+            "bypasses": []
           }
         },
         "currency": {
@@ -5179,6 +5647,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "ani": {
@@ -5187,6 +5660,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "arc": {
@@ -5195,6 +5673,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "ath": {
@@ -5203,6 +5686,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "dec": {
@@ -5211,6 +5699,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "his": {
@@ -5219,6 +5712,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "ins": {
@@ -5227,6 +5725,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "itm": {
@@ -5235,6 +5738,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "inv": {
@@ -5243,6 +5751,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "med": {
@@ -5251,6 +5764,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "nat": {
@@ -5259,6 +5777,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "prc": {
@@ -5267,6 +5790,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "prf": {
@@ -5275,6 +5803,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "per": {
@@ -5283,6 +5816,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "rel": {
@@ -5291,6 +5829,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "slt": {
@@ -5299,6 +5842,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "ste": {
@@ -5307,6 +5855,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "sur": {
@@ -5315,6 +5868,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           }
         },
@@ -5490,10 +6048,10 @@
       },
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "2.4.1",
+        "systemVersion": "3.1.2",
         "coreVersion": "11.315",
         "createdTime": 1685295906575,
-        "modifiedTime": 1707083002518,
+        "modifiedTime": 1719926019882,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       }
     },
@@ -5522,8 +6080,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong></em> The golem makes two slam attacks.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Basic Rules pg 127"
@@ -5566,7 +6123,6 @@
             },
             "ability": null,
             "actionType": null,
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -5590,7 +6146,13 @@
             "recharge": {
               "value": null,
               "charged": false
-            }
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "summons": null,
+            "properties": []
           },
           "ownership": {
             "default": 0
@@ -5624,8 +6186,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong> Melee Weapon Attack:</em> +7 to hit, reach 5 ft., one target. <em>Hit:</em> 13 (2d8 + 4) bludgeoning damage.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Basic Rules pg 127"
@@ -5678,7 +6239,6 @@
             },
             "ability": "str",
             "actionType": "mwak",
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -5708,25 +6268,24 @@
               "dt": null,
               "conditions": ""
             },
-            "weaponType": "natural",
-            "baseItem": "",
-            "properties": {
-              "amm": false,
-              "fin": false,
-              "fir": false,
-              "foc": false,
-              "hvy": false,
-              "lgt": false,
-              "lod": false,
-              "rch": true,
-              "rel": false,
-              "ret": false,
-              "spc": false,
-              "thr": false,
-              "two": false,
-              "ver": false
+            "properties": [
+              "rch"
+            ],
+            "proficient": 1,
+            "unidentified": {
+              "description": ""
             },
-            "proficient": 1
+            "type": {
+              "value": "natural",
+              "baseItem": ""
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "container": null,
+            "summons": null,
+            "magicalBonus": null
           },
           "ownership": {
             "default": 0
@@ -5760,8 +6319,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong></em> Whenever the golem starts its turn with 40 hit points or fewer, roll a d6. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object, with preference for an object smaller than itself. Once the golem goes berserk, it continues to do so until it is destroyed or regains all its hit points.</p><p>The golem's creator, if within 60 feet of the berserk golem, can try to calm it by speaking firmly and persuasively. The golem must be able to hear its creator, who must take an action to make a DC 15 Charisma (Persuasion) check. If the check succeeds, the golem ceases being berserk. If it takes damage while still at 40 hit points or fewer, the golem might go berserk again.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Basic Rules pg 127"
@@ -5804,7 +6362,6 @@
             },
             "ability": null,
             "actionType": null,
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -5828,7 +6385,13 @@
             "recharge": {
               "value": null,
               "charged": false
-            }
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "summons": null,
+            "properties": []
           },
           "ownership": {
             "default": 0
@@ -5862,8 +6425,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong></em> If the golem takes fire damage, it has disadvantage on attack rolls and ability checks until the end of its next turn.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Basic Rules pg 127"
@@ -5906,7 +6468,6 @@
             },
             "ability": null,
             "actionType": null,
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -5930,7 +6491,13 @@
             "recharge": {
               "value": null,
               "charged": false
-            }
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "summons": null,
+            "properties": []
           },
           "ownership": {
             "default": 0
@@ -5964,8 +6531,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong></em> The golem is immune to any spell or effect that would alter its form.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Basic Rules pg 127"
@@ -6008,7 +6574,6 @@
             },
             "ability": null,
             "actionType": null,
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -6032,7 +6597,13 @@
             "recharge": {
               "value": null,
               "charged": false
-            }
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "summons": null,
+            "properties": []
           },
           "ownership": {
             "default": 0
@@ -6108,8 +6679,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong></em> Whenever the golem is subjected to lightning damage, it takes no damage and instead regains a number of hit points equal to the lightning damage dealt.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Basic Rules pg 127"
@@ -6152,7 +6722,6 @@
             },
             "ability": null,
             "actionType": null,
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -6176,7 +6745,13 @@
             "recharge": {
               "value": null,
               "charged": false
-            }
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "summons": null,
+            "properties": []
           },
           "ownership": {
             "default": 0
@@ -6210,8 +6785,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong></em> The golem has advantage on saving throws against spells and other magical effects.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Basic Rules pg 127"
@@ -6254,7 +6828,6 @@
             },
             "ability": null,
             "actionType": null,
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -6278,7 +6851,13 @@
             "recharge": {
               "value": null,
               "charged": false
-            }
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "summons": null,
+            "properties": []
           },
           "ownership": {
             "default": 0
@@ -6312,8 +6891,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong></em> The golem's weapon attacks are magical.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Basic Rules pg 127"
@@ -6356,7 +6934,6 @@
             },
             "ability": null,
             "actionType": null,
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -6380,7 +6957,13 @@
             "recharge": {
               "value": null,
               "charged": false
-            }
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "summons": null,
+            "properties": []
           },
           "ownership": {
             "default": 0
@@ -6395,48 +6978,7 @@
           }
         }
       ],
-      "effects": [
-        {
-          "icon": "icons/svg/downgrade.svg",
-          "changes": [
-            {
-              "key": "flags.midi-qol.absorption.lightning",
-              "value": "1",
-              "mode": 0,
-              "priority": 20
-            }
-          ],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
-          "tint": null,
-          "transfer": false,
-          "disabled": false,
-          "flags": {
-            "dae": {
-              "transfer": true,
-              "stackable": "none"
-            },
-            "ddbimporter": {
-              "disabled": false
-            },
-            "midi-qol": {
-              "forceCEOff": true
-            }
-          },
-          "_id": "w7kj2oltc8au4gl3",
-          "origin": "Actor.oQijwQx889yj4oqP.Item.76zqdf3q2xequ2ll",
-          "name": "Lightning Absorption",
-          "description": "",
-          "statuses": []
-        }
-      ],
+      "effects": [],
       "folder": "2CdesoEeworwTPLp",
       "sort": 200000,
       "flags": {
@@ -6569,7 +7111,12 @@
           },
           "init": {
             "ability": "",
-            "bonus": "0"
+            "bonus": "0",
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
           },
           "movement": {
             "burrow": 0,
@@ -6591,7 +7138,30 @@
             "units": "ft",
             "special": ""
           },
-          "spellcasting": ""
+          "spellcasting": "",
+          "exhaustion": 0,
+          "concentration": {
+            "ability": "",
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            },
+            "bonuses": {
+              "save": ""
+            },
+            "limit": 1
+          },
+          "death": {
+            "ability": "",
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            },
+            "success": 0,
+            "failure": 0
+          }
         },
         "details": {
           "biography": {
@@ -6648,6 +7218,10 @@
           "languages": {
             "value": [],
             "custom": "Understands the languages of its creator but can't speak"
+          },
+          "dm": {
+            "amount": {},
+            "bypasses": []
           }
         },
         "currency": {
@@ -6664,6 +7238,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "ani": {
@@ -6672,6 +7251,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "arc": {
@@ -6680,6 +7264,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "ath": {
@@ -6688,6 +7277,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "dec": {
@@ -6696,6 +7290,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "his": {
@@ -6704,6 +7303,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "ins": {
@@ -6712,6 +7316,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "itm": {
@@ -6720,6 +7329,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "inv": {
@@ -6728,6 +7342,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "med": {
@@ -6736,6 +7355,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "nat": {
@@ -6744,6 +7368,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "prc": {
@@ -6752,6 +7381,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "prf": {
@@ -6760,6 +7394,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "per": {
@@ -6768,6 +7407,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "rel": {
@@ -6776,6 +7420,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "slt": {
@@ -6784,6 +7433,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "ste": {
@@ -6792,6 +7446,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "sur": {
@@ -6800,6 +7459,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           }
         },
@@ -6970,10 +7634,10 @@
       },
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "2.4.1",
+        "systemVersion": "3.1.2",
         "coreVersion": "11.315",
         "createdTime": 1685295906281,
-        "modifiedTime": 1707083400599,
+        "modifiedTime": 1719926019931,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       }
     },
@@ -7002,8 +7666,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong></em> The mongrelfolk makes two attacks: one with its bite and one with its claw or dagger.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Curse of Strahd pg 234"
@@ -7046,7 +7709,6 @@
             },
             "ability": null,
             "actionType": null,
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -7070,7 +7732,13 @@
             "recharge": {
               "value": null,
               "charged": false
-            }
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "summons": null,
+            "properties": []
           },
           "ownership": {
             "default": 0
@@ -7104,8 +7772,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong> Melee Weapon Attack:</em> +3 to hit, reach 5 ft., one target. <em>Hit:</em> 3 (1d4 + 1) piercing damage.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Curse of Strahd pg 234"
@@ -7158,7 +7825,6 @@
             },
             "ability": "str",
             "actionType": "mwak",
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -7188,25 +7854,24 @@
               "dt": null,
               "conditions": ""
             },
-            "weaponType": "natural",
-            "baseItem": "",
-            "properties": {
-              "amm": false,
-              "fin": false,
-              "fir": false,
-              "foc": false,
-              "hvy": false,
-              "lgt": false,
-              "lod": false,
-              "rch": true,
-              "rel": false,
-              "ret": false,
-              "spc": false,
-              "thr": false,
-              "two": false,
-              "ver": false
+            "properties": [
+              "rch"
+            ],
+            "proficient": 1,
+            "unidentified": {
+              "description": ""
             },
-            "proficient": 1
+            "type": {
+              "value": "natural",
+              "baseItem": ""
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "container": null,
+            "summons": null,
+            "magicalBonus": null
           },
           "ownership": {
             "default": 0
@@ -7240,8 +7905,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong> Melee Weapon Attack:</em> +3 to hit, reach 5 ft., one target. <em>Hit:</em> 3 (1d4 + 1) slashing damage.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Curse of Strahd pg 234"
@@ -7294,7 +7958,6 @@
             },
             "ability": "str",
             "actionType": "mwak",
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -7324,25 +7987,24 @@
               "dt": null,
               "conditions": ""
             },
-            "weaponType": "natural",
-            "baseItem": "",
-            "properties": {
-              "amm": false,
-              "fin": false,
-              "fir": false,
-              "foc": false,
-              "hvy": false,
-              "lgt": false,
-              "lod": false,
-              "rch": true,
-              "rel": false,
-              "ret": false,
-              "spc": false,
-              "thr": false,
-              "two": false,
-              "ver": false
+            "properties": [
+              "rch"
+            ],
+            "proficient": 1,
+            "unidentified": {
+              "description": ""
             },
-            "proficient": 1
+            "type": {
+              "value": "natural",
+              "baseItem": ""
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "container": null,
+            "summons": null,
+            "magicalBonus": null
           },
           "ownership": {
             "default": 0
@@ -7376,8 +8038,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong> Melee or Ranged Weapon Attack:</em> +3 to hit, reach 5 ft. or range 20/60 ft., one target. <em>Hit:</em> 3 (1d4 + 1) piercing damage.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Curse of Strahd pg 234"
@@ -7430,7 +8091,6 @@
             },
             "ability": "str",
             "actionType": "mwak",
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -7460,25 +8120,27 @@
               "dt": null,
               "conditions": ""
             },
-            "weaponType": "simpleM",
-            "baseItem": "",
-            "properties": {
-              "amm": false,
-              "fin": true,
-              "fir": false,
-              "foc": false,
-              "hvy": false,
-              "lgt": true,
-              "lod": false,
-              "rch": true,
-              "rel": false,
-              "ret": false,
-              "spc": false,
-              "thr": true,
-              "two": false,
-              "ver": false
+            "properties": [
+              "fin",
+              "lgt",
+              "rch",
+              "thr"
+            ],
+            "proficient": 1,
+            "unidentified": {
+              "description": ""
             },
-            "proficient": 1
+            "type": {
+              "value": "simpleM",
+              "baseItem": ""
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "container": null,
+            "summons": null,
+            "magicalBonus": null
           },
           "ownership": {
             "default": 0
@@ -7512,8 +8174,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong></em> The mongrelfolk has one of the following extraordinary features, determined randomly by rolling a d20 or chosen by the DM:</p><p><strong>1–3: Amphibious.</strong> The mongrelfolk can breathe air and water.</p><p><strong>4–9: Darkvision.</strong> The mongrelfolk has darkvision out to a range of 60 feet.</p><p><strong>10: Flight.</strong> The mongrelfolk has leathery wings and a flying speed of 40 feet.</p><p><strong>11–15: Keen Hearing and Smell.</strong> The mongrelfolk has advantage on Wisdom (Perception) checks that rely on hearing or smell.</p><p><strong>16–17: Spider Climb.</strong> The mongrelfolk can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p><p><strong>18–19: Standing Leap.</strong> The mongrelfolk’s long jump is up to 20 feet and its high jump is up to 10 feet, with or without a running start.</p><p><strong>20: Two-Headed.</strong> The mongrelfolk has advantage on Wisdom (Perception) checks and on saving throws against being blinded, charmed, deafened, frightened, stunned, or knocked unconscious.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Curse of Strahd pg 234"
@@ -7556,7 +8217,6 @@
             },
             "ability": null,
             "actionType": null,
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -7580,7 +8240,13 @@
             "recharge": {
               "value": null,
               "charged": false
-            }
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "summons": null,
+            "properties": []
           },
           "ownership": {
             "default": 0
@@ -7614,8 +8280,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong></em> The mongrelfolk can mimic any sounds it has heard, including voices. A creature that hears the sounds can tell they are imitations with a successful DC 12 Wisdom (Insight) check.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Curse of Strahd pg 234"
@@ -7658,7 +8323,6 @@
             },
             "ability": null,
             "actionType": null,
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -7682,7 +8346,13 @@
             "recharge": {
               "value": null,
               "charged": false
-            }
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "summons": null,
+            "properties": []
           },
           "ownership": {
             "default": 0
@@ -7829,7 +8499,12 @@
           },
           "init": {
             "ability": "",
-            "bonus": "0"
+            "bonus": "0",
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
           },
           "movement": {
             "burrow": null,
@@ -7851,7 +8526,30 @@
             "units": "ft",
             "special": ""
           },
-          "spellcasting": ""
+          "spellcasting": "",
+          "exhaustion": 0,
+          "concentration": {
+            "ability": "",
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            },
+            "bonuses": {
+              "save": ""
+            },
+            "limit": 1
+          },
+          "death": {
+            "ability": "",
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            },
+            "success": 0,
+            "failure": 0
+          }
         },
         "details": {
           "biography": {
@@ -7899,6 +8597,10 @@
               "common"
             ],
             "custom": ""
+          },
+          "dm": {
+            "amount": {},
+            "bypasses": []
           }
         },
         "currency": {
@@ -7915,6 +8617,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "ani": {
@@ -7923,6 +8630,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "arc": {
@@ -7931,6 +8643,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "ath": {
@@ -7939,6 +8656,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "dec": {
@@ -7947,6 +8669,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "his": {
@@ -7955,6 +8682,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "ins": {
@@ -7963,6 +8695,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "itm": {
@@ -7971,6 +8708,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "inv": {
@@ -7979,6 +8721,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "med": {
@@ -7987,6 +8734,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "nat": {
@@ -7995,6 +8747,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "prc": {
@@ -8003,6 +8760,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "prf": {
@@ -8011,6 +8773,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "per": {
@@ -8019,6 +8786,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "rel": {
@@ -8027,6 +8799,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "slt": {
@@ -8035,6 +8812,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "ste": {
@@ -8043,6 +8825,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "sur": {
@@ -8051,6 +8838,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           }
         },
@@ -8257,8 +9049,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong></em> The mongrelfolk makes two attacks: one with its bite and one with its claw or dagger.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Curse of Strahd pg 234"
@@ -8301,7 +9092,6 @@
             },
             "ability": null,
             "actionType": null,
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -8325,7 +9115,13 @@
             "recharge": {
               "value": null,
               "charged": false
-            }
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "summons": null,
+            "properties": []
           },
           "ownership": {
             "default": 0
@@ -8359,8 +9155,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong> Melee Weapon Attack:</em> +3 to hit, reach 5 ft., one target. <em>Hit:</em> 3 (1d4 + 1) piercing damage.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Curse of Strahd pg 234"
@@ -8413,7 +9208,6 @@
             },
             "ability": "str",
             "actionType": "mwak",
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -8443,25 +9237,24 @@
               "dt": null,
               "conditions": ""
             },
-            "weaponType": "natural",
-            "baseItem": "",
-            "properties": {
-              "amm": false,
-              "fin": false,
-              "fir": false,
-              "foc": false,
-              "hvy": false,
-              "lgt": false,
-              "lod": false,
-              "rch": true,
-              "rel": false,
-              "ret": false,
-              "spc": false,
-              "thr": false,
-              "two": false,
-              "ver": false
+            "properties": [
+              "rch"
+            ],
+            "proficient": 1,
+            "unidentified": {
+              "description": ""
             },
-            "proficient": 1
+            "type": {
+              "value": "natural",
+              "baseItem": ""
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "container": null,
+            "summons": null,
+            "magicalBonus": null
           },
           "ownership": {
             "default": 0
@@ -8495,8 +9288,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong> Melee Weapon Attack:</em> +3 to hit, reach 5 ft., one target. <em>Hit:</em> 3 (1d4 + 1) slashing damage.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Curse of Strahd pg 234"
@@ -8549,7 +9341,6 @@
             },
             "ability": "str",
             "actionType": "mwak",
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -8579,25 +9370,24 @@
               "dt": null,
               "conditions": ""
             },
-            "weaponType": "natural",
-            "baseItem": "",
-            "properties": {
-              "amm": false,
-              "fin": false,
-              "fir": false,
-              "foc": false,
-              "hvy": false,
-              "lgt": false,
-              "lod": false,
-              "rch": true,
-              "rel": false,
-              "ret": false,
-              "spc": false,
-              "thr": false,
-              "two": false,
-              "ver": false
+            "properties": [
+              "rch"
+            ],
+            "proficient": 1,
+            "unidentified": {
+              "description": ""
             },
-            "proficient": 1
+            "type": {
+              "value": "natural",
+              "baseItem": ""
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "container": null,
+            "summons": null,
+            "magicalBonus": null
           },
           "ownership": {
             "default": 0
@@ -8631,8 +9421,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong> Melee or Ranged Weapon Attack:</em> +3 to hit, reach 5 ft. or range 20/60 ft., one target. <em>Hit:</em> 3 (1d4 + 1) piercing damage.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Curse of Strahd pg 234"
@@ -8685,7 +9474,6 @@
             },
             "ability": "str",
             "actionType": "mwak",
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -8715,25 +9503,27 @@
               "dt": null,
               "conditions": ""
             },
-            "weaponType": "simpleM",
-            "baseItem": "",
-            "properties": {
-              "amm": false,
-              "fin": true,
-              "fir": false,
-              "foc": false,
-              "hvy": false,
-              "lgt": true,
-              "lod": false,
-              "rch": true,
-              "rel": false,
-              "ret": false,
-              "spc": false,
-              "thr": true,
-              "two": false,
-              "ver": false
+            "properties": [
+              "fin",
+              "lgt",
+              "rch",
+              "thr"
+            ],
+            "proficient": 1,
+            "unidentified": {
+              "description": ""
             },
-            "proficient": 1
+            "type": {
+              "value": "simpleM",
+              "baseItem": ""
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "container": null,
+            "summons": null,
+            "magicalBonus": null
           },
           "ownership": {
             "default": 0
@@ -8767,8 +9557,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong></em> The mongrelfolk has one of the following extraordinary features, determined randomly by rolling a d20 or chosen by the DM:</p><p><strong>1–3: Amphibious.</strong> The mongrelfolk can breathe air and water.</p><p><strong>4–9: Darkvision.</strong> The mongrelfolk has darkvision out to a range of 60 feet.</p><p><strong>10: Flight.</strong> The mongrelfolk has leathery wings and a flying speed of 40 feet.</p><p><strong>11–15: Keen Hearing and Smell.</strong> The mongrelfolk has advantage on Wisdom (Perception) checks that rely on hearing or smell.</p><p><strong>16–17: Spider Climb.</strong> The mongrelfolk can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p><p><strong>18–19: Standing Leap.</strong> The mongrelfolk’s long jump is up to 20 feet and its high jump is up to 10 feet, with or without a running start.</p><p><strong>20: Two-Headed.</strong> The mongrelfolk has advantage on Wisdom (Perception) checks and on saving throws against being blinded, charmed, deafened, frightened, stunned, or knocked unconscious.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Curse of Strahd pg 234"
@@ -8811,7 +9600,6 @@
             },
             "ability": null,
             "actionType": null,
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -8835,7 +9623,13 @@
             "recharge": {
               "value": null,
               "charged": false
-            }
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "summons": null,
+            "properties": []
           },
           "ownership": {
             "default": 0
@@ -8869,8 +9663,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong></em> The mongrelfolk can mimic any sounds it has heard, including voices. A creature that hears the sounds can tell they are imitations with a successful DC 12 Wisdom (Insight) check.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Curse of Strahd pg 234"
@@ -8913,7 +9706,6 @@
             },
             "ability": null,
             "actionType": null,
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -8937,7 +9729,13 @@
             "recharge": {
               "value": null,
               "charged": false
-            }
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "summons": null,
+            "properties": []
           },
           "ownership": {
             "default": 0
@@ -9084,7 +9882,12 @@
           },
           "init": {
             "ability": "",
-            "bonus": "0"
+            "bonus": "0",
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
           },
           "movement": {
             "burrow": null,
@@ -9106,7 +9909,30 @@
             "units": "ft",
             "special": ""
           },
-          "spellcasting": ""
+          "spellcasting": "",
+          "exhaustion": 0,
+          "concentration": {
+            "ability": "",
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            },
+            "bonuses": {
+              "save": ""
+            },
+            "limit": 1
+          },
+          "death": {
+            "ability": "",
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            },
+            "success": 0,
+            "failure": 0
+          }
         },
         "details": {
           "biography": {
@@ -9154,6 +9980,10 @@
               "common"
             ],
             "custom": ""
+          },
+          "dm": {
+            "amount": {},
+            "bypasses": []
           }
         },
         "currency": {
@@ -9170,6 +10000,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "ani": {
@@ -9178,6 +10013,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "arc": {
@@ -9186,6 +10026,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "ath": {
@@ -9194,6 +10039,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "dec": {
@@ -9202,6 +10052,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "his": {
@@ -9210,6 +10065,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "ins": {
@@ -9218,6 +10078,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "itm": {
@@ -9226,6 +10091,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "inv": {
@@ -9234,6 +10104,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "med": {
@@ -9242,6 +10117,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "nat": {
@@ -9250,6 +10130,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "prc": {
@@ -9258,6 +10143,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "prf": {
@@ -9266,6 +10156,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "per": {
@@ -9274,6 +10169,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "rel": {
@@ -9282,6 +10182,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "slt": {
@@ -9290,6 +10195,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "ste": {
@@ -9298,6 +10208,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "sur": {
@@ -9306,6 +10221,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           }
         },
@@ -9512,8 +10432,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong></em> The mongrelfolk makes two attacks: one with its bite and one with its claw or dagger.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Curse of Strahd pg 234"
@@ -9556,7 +10475,6 @@
             },
             "ability": null,
             "actionType": null,
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -9580,7 +10498,13 @@
             "recharge": {
               "value": null,
               "charged": false
-            }
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "summons": null,
+            "properties": []
           },
           "ownership": {
             "default": 0
@@ -9614,8 +10538,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong> Melee Weapon Attack:</em> +3 to hit, reach 5 ft., one target. <em>Hit:</em> 3 (1d4 + 1) piercing damage.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Curse of Strahd pg 234"
@@ -9668,7 +10591,6 @@
             },
             "ability": "str",
             "actionType": "mwak",
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -9698,25 +10620,24 @@
               "dt": null,
               "conditions": ""
             },
-            "weaponType": "natural",
-            "baseItem": "",
-            "properties": {
-              "amm": false,
-              "fin": false,
-              "fir": false,
-              "foc": false,
-              "hvy": false,
-              "lgt": false,
-              "lod": false,
-              "rch": true,
-              "rel": false,
-              "ret": false,
-              "spc": false,
-              "thr": false,
-              "two": false,
-              "ver": false
+            "properties": [
+              "rch"
+            ],
+            "proficient": 1,
+            "unidentified": {
+              "description": ""
             },
-            "proficient": 1
+            "type": {
+              "value": "natural",
+              "baseItem": ""
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "container": null,
+            "summons": null,
+            "magicalBonus": null
           },
           "ownership": {
             "default": 0
@@ -9750,8 +10671,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong> Melee Weapon Attack:</em> +3 to hit, reach 5 ft., one target. <em>Hit:</em> 3 (1d4 + 1) slashing damage.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Curse of Strahd pg 234"
@@ -9804,7 +10724,6 @@
             },
             "ability": "str",
             "actionType": "mwak",
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -9834,25 +10753,24 @@
               "dt": null,
               "conditions": ""
             },
-            "weaponType": "natural",
-            "baseItem": "",
-            "properties": {
-              "amm": false,
-              "fin": false,
-              "fir": false,
-              "foc": false,
-              "hvy": false,
-              "lgt": false,
-              "lod": false,
-              "rch": true,
-              "rel": false,
-              "ret": false,
-              "spc": false,
-              "thr": false,
-              "two": false,
-              "ver": false
+            "properties": [
+              "rch"
+            ],
+            "proficient": 1,
+            "unidentified": {
+              "description": ""
             },
-            "proficient": 1
+            "type": {
+              "value": "natural",
+              "baseItem": ""
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "container": null,
+            "summons": null,
+            "magicalBonus": null
           },
           "ownership": {
             "default": 0
@@ -9886,8 +10804,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong> Melee or Ranged Weapon Attack:</em> +3 to hit, reach 5 ft. or range 20/60 ft., one target. <em>Hit:</em> 3 (1d4 + 1) piercing damage.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Curse of Strahd pg 234"
@@ -9940,7 +10857,6 @@
             },
             "ability": "str",
             "actionType": "mwak",
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -9970,25 +10886,27 @@
               "dt": null,
               "conditions": ""
             },
-            "weaponType": "simpleM",
-            "baseItem": "",
-            "properties": {
-              "amm": false,
-              "fin": true,
-              "fir": false,
-              "foc": false,
-              "hvy": false,
-              "lgt": true,
-              "lod": false,
-              "rch": true,
-              "rel": false,
-              "ret": false,
-              "spc": false,
-              "thr": true,
-              "two": false,
-              "ver": false
+            "properties": [
+              "fin",
+              "lgt",
+              "rch",
+              "thr"
+            ],
+            "proficient": 1,
+            "unidentified": {
+              "description": ""
             },
-            "proficient": 1
+            "type": {
+              "value": "simpleM",
+              "baseItem": ""
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "container": null,
+            "summons": null,
+            "magicalBonus": null
           },
           "ownership": {
             "default": 0
@@ -10022,8 +10940,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong></em> The mongrelfolk has one of the following extraordinary features, determined randomly by rolling a d20 or chosen by the DM:</p><p><strong>1–3: Amphibious.</strong> The mongrelfolk can breathe air and water.</p><p><strong>4–9: Darkvision.</strong> The mongrelfolk has darkvision out to a range of 60 feet.</p><p><strong>10: Flight.</strong> The mongrelfolk has leathery wings and a flying speed of 40 feet.</p><p><strong>11–15: Keen Hearing and Smell.</strong> The mongrelfolk has advantage on Wisdom (Perception) checks that rely on hearing or smell.</p><p><strong>16–17: Spider Climb.</strong> The mongrelfolk can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p><p><strong>18–19: Standing Leap.</strong> The mongrelfolk’s long jump is up to 20 feet and its high jump is up to 10 feet, with or without a running start.</p><p><strong>20: Two-Headed.</strong> The mongrelfolk has advantage on Wisdom (Perception) checks and on saving throws against being blinded, charmed, deafened, frightened, stunned, or knocked unconscious.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Curse of Strahd pg 234"
@@ -10066,7 +10983,6 @@
             },
             "ability": null,
             "actionType": null,
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -10090,7 +11006,13 @@
             "recharge": {
               "value": null,
               "charged": false
-            }
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "summons": null,
+            "properties": []
           },
           "ownership": {
             "default": 0
@@ -10124,8 +11046,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong></em> The mongrelfolk can mimic any sounds it has heard, including voices. A creature that hears the sounds can tell they are imitations with a successful DC 12 Wisdom (Insight) check.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Curse of Strahd pg 234"
@@ -10168,7 +11089,6 @@
             },
             "ability": null,
             "actionType": null,
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -10192,7 +11112,13 @@
             "recharge": {
               "value": null,
               "charged": false
-            }
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "summons": null,
+            "properties": []
           },
           "ownership": {
             "default": 0
@@ -10339,7 +11265,12 @@
           },
           "init": {
             "ability": "",
-            "bonus": "0"
+            "bonus": "0",
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
           },
           "movement": {
             "burrow": null,
@@ -10361,7 +11292,30 @@
             "units": "ft",
             "special": ""
           },
-          "spellcasting": ""
+          "spellcasting": "",
+          "exhaustion": 0,
+          "concentration": {
+            "ability": "",
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            },
+            "bonuses": {
+              "save": ""
+            },
+            "limit": 1
+          },
+          "death": {
+            "ability": "",
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            },
+            "success": 0,
+            "failure": 0
+          }
         },
         "details": {
           "biography": {
@@ -10409,6 +11363,10 @@
               "common"
             ],
             "custom": ""
+          },
+          "dm": {
+            "amount": {},
+            "bypasses": []
           }
         },
         "currency": {
@@ -10425,6 +11383,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "ani": {
@@ -10433,6 +11396,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "arc": {
@@ -10441,6 +11409,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "ath": {
@@ -10449,6 +11422,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "dec": {
@@ -10457,6 +11435,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "his": {
@@ -10465,6 +11448,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "ins": {
@@ -10473,6 +11461,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "itm": {
@@ -10481,6 +11474,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "inv": {
@@ -10489,6 +11487,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "med": {
@@ -10497,6 +11500,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "nat": {
@@ -10505,6 +11513,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "prc": {
@@ -10513,6 +11526,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "prf": {
@@ -10521,6 +11539,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "per": {
@@ -10529,6 +11552,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "rel": {
@@ -10537,6 +11565,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "slt": {
@@ -10545,6 +11578,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "ste": {
@@ -10553,6 +11591,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "sur": {
@@ -10561,6 +11604,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           }
         },
@@ -10772,8 +11820,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong></em> The mongrelfolk makes two attacks: one with its bite and one with its claw or dagger.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Curse of Strahd pg 234"
@@ -10816,7 +11863,6 @@
             },
             "ability": null,
             "actionType": null,
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -10840,7 +11886,13 @@
             "recharge": {
               "value": null,
               "charged": false
-            }
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "summons": null,
+            "properties": []
           },
           "ownership": {
             "default": 0
@@ -10874,8 +11926,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong> Melee Weapon Attack:</em> +3 to hit, reach 5 ft., one target. <em>Hit:</em> 3 (1d4 + 1) piercing damage.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Curse of Strahd pg 234"
@@ -10928,7 +11979,6 @@
             },
             "ability": "str",
             "actionType": "mwak",
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -10958,25 +12008,24 @@
               "dt": null,
               "conditions": ""
             },
-            "weaponType": "natural",
-            "baseItem": "",
-            "properties": {
-              "amm": false,
-              "fin": false,
-              "fir": false,
-              "foc": false,
-              "hvy": false,
-              "lgt": false,
-              "lod": false,
-              "rch": true,
-              "rel": false,
-              "ret": false,
-              "spc": false,
-              "thr": false,
-              "two": false,
-              "ver": false
+            "properties": [
+              "rch"
+            ],
+            "proficient": 1,
+            "unidentified": {
+              "description": ""
             },
-            "proficient": 1
+            "type": {
+              "value": "natural",
+              "baseItem": ""
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "container": null,
+            "summons": null,
+            "magicalBonus": null
           },
           "ownership": {
             "default": 0
@@ -11010,8 +12059,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong> Melee Weapon Attack:</em> +3 to hit, reach 5 ft., one target. <em>Hit:</em> 3 (1d4 + 1) slashing damage.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Curse of Strahd pg 234"
@@ -11064,7 +12112,6 @@
             },
             "ability": "str",
             "actionType": "mwak",
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -11094,25 +12141,24 @@
               "dt": null,
               "conditions": ""
             },
-            "weaponType": "natural",
-            "baseItem": "",
-            "properties": {
-              "amm": false,
-              "fin": false,
-              "fir": false,
-              "foc": false,
-              "hvy": false,
-              "lgt": false,
-              "lod": false,
-              "rch": true,
-              "rel": false,
-              "ret": false,
-              "spc": false,
-              "thr": false,
-              "two": false,
-              "ver": false
+            "properties": [
+              "rch"
+            ],
+            "proficient": 1,
+            "unidentified": {
+              "description": ""
             },
-            "proficient": 1
+            "type": {
+              "value": "natural",
+              "baseItem": ""
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "container": null,
+            "summons": null,
+            "magicalBonus": null
           },
           "ownership": {
             "default": 0
@@ -11146,8 +12192,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong> Melee or Ranged Weapon Attack:</em> +3 to hit, reach 5 ft. or range 20/60 ft., one target. <em>Hit:</em> 3 (1d4 + 1) piercing damage.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Curse of Strahd pg 234"
@@ -11200,7 +12245,6 @@
             },
             "ability": "str",
             "actionType": "mwak",
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -11230,25 +12274,27 @@
               "dt": null,
               "conditions": ""
             },
-            "weaponType": "simpleM",
-            "baseItem": "",
-            "properties": {
-              "amm": false,
-              "fin": true,
-              "fir": false,
-              "foc": false,
-              "hvy": false,
-              "lgt": true,
-              "lod": false,
-              "rch": true,
-              "rel": false,
-              "ret": false,
-              "spc": false,
-              "thr": true,
-              "two": false,
-              "ver": false
+            "properties": [
+              "fin",
+              "lgt",
+              "rch",
+              "thr"
+            ],
+            "proficient": 1,
+            "unidentified": {
+              "description": ""
             },
-            "proficient": 1
+            "type": {
+              "value": "simpleM",
+              "baseItem": ""
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "container": null,
+            "summons": null,
+            "magicalBonus": null
           },
           "ownership": {
             "default": 0
@@ -11282,8 +12328,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong></em> The mongrelfolk has one of the following extraordinary features, determined randomly by rolling a d20 or chosen by the DM:</p><p><strong>1–3: Amphibious.</strong> The mongrelfolk can breathe air and water.</p><p><strong>4–9: Darkvision.</strong> The mongrelfolk has darkvision out to a range of 60 feet.</p><p><strong>10: Flight.</strong> The mongrelfolk has leathery wings and a flying speed of 40 feet.</p><p><strong>11–15: Keen Hearing and Smell.</strong> The mongrelfolk has advantage on Wisdom (Perception) checks that rely on hearing or smell.</p><p><strong>16–17: Spider Climb.</strong> The mongrelfolk can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p><p><strong>18–19: Standing Leap.</strong> The mongrelfolk’s long jump is up to 20 feet and its high jump is up to 10 feet, with or without a running start.</p><p><strong>20: Two-Headed.</strong> The mongrelfolk has advantage on Wisdom (Perception) checks and on saving throws against being blinded, charmed, deafened, frightened, stunned, or knocked unconscious.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Curse of Strahd pg 234"
@@ -11326,7 +12371,6 @@
             },
             "ability": null,
             "actionType": null,
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -11350,7 +12394,13 @@
             "recharge": {
               "value": null,
               "charged": false
-            }
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "summons": null,
+            "properties": []
           },
           "ownership": {
             "default": 0
@@ -11384,8 +12434,7 @@
           "system": {
             "description": {
               "value": "<p><em><strong></strong></em> The mongrelfolk can mimic any sounds it has heard, including voices. A creature that hears the sounds can tell they are imitations with a successful DC 12 Wisdom (Insight) check.</p>",
-              "chat": "",
-              "unidentified": ""
+              "chat": ""
             },
             "source": {
               "custom": "Curse of Strahd pg 234"
@@ -11428,7 +12477,6 @@
             },
             "ability": null,
             "actionType": null,
-            "attackBonus": "",
             "chatFlavor": "",
             "critical": {
               "threshold": null,
@@ -11452,7 +12500,13 @@
             "recharge": {
               "value": null,
               "charged": false
-            }
+            },
+            "attack": {
+              "bonus": "",
+              "flat": false
+            },
+            "summons": null,
+            "properties": []
           },
           "ownership": {
             "default": 0
@@ -11599,7 +12653,12 @@
           },
           "init": {
             "ability": "",
-            "bonus": "0"
+            "bonus": "0",
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
           },
           "movement": {
             "burrow": null,
@@ -11621,7 +12680,30 @@
             "units": "ft",
             "special": ""
           },
-          "spellcasting": ""
+          "spellcasting": "",
+          "exhaustion": 0,
+          "concentration": {
+            "ability": "",
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            },
+            "bonuses": {
+              "save": ""
+            },
+            "limit": 1
+          },
+          "death": {
+            "ability": "",
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            },
+            "success": 0,
+            "failure": 0
+          }
         },
         "details": {
           "biography": {
@@ -11669,6 +12751,10 @@
               "common"
             ],
             "custom": ""
+          },
+          "dm": {
+            "amount": {},
+            "bypasses": []
           }
         },
         "currency": {
@@ -11685,6 +12771,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "ani": {
@@ -11693,6 +12784,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "arc": {
@@ -11701,6 +12797,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "ath": {
@@ -11709,6 +12810,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "dec": {
@@ -11717,6 +12823,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "his": {
@@ -11725,6 +12836,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "ins": {
@@ -11733,6 +12849,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "itm": {
@@ -11741,6 +12862,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "inv": {
@@ -11749,6 +12875,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "med": {
@@ -11757,6 +12888,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "nat": {
@@ -11765,6 +12901,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "prc": {
@@ -11773,6 +12914,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "prf": {
@@ -11781,6 +12927,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "per": {
@@ -11789,6 +12940,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "rel": {
@@ -11797,6 +12953,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "slt": {
@@ -11805,6 +12966,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "ste": {
@@ -11813,6 +12979,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           },
           "sur": {
@@ -11821,6 +12992,11 @@
             "bonuses": {
               "check": "",
               "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
             }
           }
         },
@@ -38238,7 +39414,7 @@
         "systemVersion": "2.4.1",
         "coreVersion": "11.315",
         "createdTime": 1707078477903,
-        "modifiedTime": 1707081381340,
+        "modifiedTime": 1707089689826,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       }
     },
@@ -39010,13 +40186,13 @@
           "effects": []
         },
         {
-          "name": "Otta Belview",
+          "name": "Colvin Belview",
           "displayName": 20,
           "actorLink": false,
           "width": 1,
           "height": 1,
           "lockRotation": false,
-          "rotation": 90,
+          "rotation": 0,
           "alpha": 1,
           "light": {
             "alpha": 0.5,
@@ -39051,7 +40227,8 @@
           },
           "flags": {
             "autorotate": {
-              "enabled": null
+              "enabled": null,
+              "offset": null
             },
             "dnd5e-helpers": {
               "coverLevel": 1
@@ -39060,13 +40237,19 @@
               "coverLevel": 1,
               "coverLevelDead": 1,
               "coverLevelProne": 1
+            },
+            "monks-tokenbar": {
+              "include": "default"
+            },
+            "core": {
+              "occlusionRadius": null
             }
           },
           "texture": {
-            "src": "modules/sdnd-strahd-adv/images/tokens/NPC/Otto_Token.webp",
+            "src": "modules/sdnd-strahd-adv/images/tokens/NPC/Colvin_Belview_Token.webp",
             "tint": null,
-            "scaleX": 0.9,
-            "scaleY": 0.9,
+            "scaleX": 1,
+            "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
             "rotation": 0
@@ -48998,7 +50181,7 @@
         "systemVersion": "2.4.1",
         "coreVersion": "11.315",
         "createdTime": 1707080467436,
-        "modifiedTime": 1707081221634,
+        "modifiedTime": 1707089772589,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       }
     }
@@ -49016,11 +50199,7 @@
       "_id": "2CdesoEeworwTPLp",
       "sort": 0,
       "color": null,
-      "flags": {
-        "core": {
-          "sourceId": "Folder.2CdesoEeworwTPLp"
-        }
-      },
+      "flags": {},
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
@@ -49057,11 +50236,7 @@
       "description": "",
       "sort": -100000,
       "color": "#ff0000",
-      "flags": {
-        "core": {
-          "sourceId": "Folder.SgCwMBKLb1IzBVaz"
-        }
-      },
+      "flags": {},
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
@@ -49079,11 +50254,7 @@
       "sorting": "a",
       "sort": 0,
       "color": null,
-      "flags": {
-        "core": {
-          "sourceId": "Folder.LBnj80h2gjIx1GBF"
-        }
-      },
+      "flags": {},
       "folder": "GSSJWHbwUqHqoZPf",
       "description": "",
       "_stats": {
@@ -49122,11 +50293,7 @@
       "_id": "T633A3ZOM9ehiWR0",
       "sort": 0,
       "color": "#ff0000",
-      "flags": {
-        "core": {
-          "sourceId": "Folder.T633A3ZOM9ehiWR0"
-        }
-      },
+      "flags": {},
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
@@ -49143,11 +50310,7 @@
       "sorting": "a",
       "sort": 1700000,
       "color": null,
-      "flags": {
-        "core": {
-          "sourceId": "Folder.7WgT7N6nuK5uhmsF"
-        }
-      },
+      "flags": {},
       "folder": "eDanIUwAG8TuhXfe",
       "description": "",
       "_stats": {
@@ -49240,10 +50403,10 @@
   "flags": {},
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "2.4.1",
+    "systemVersion": "3.1.2",
     "coreVersion": "11.315",
     "createdTime": 1707086814752,
-    "modifiedTime": 1707086814752,
+    "modifiedTime": 1719942094296,
     "lastModifiedBy": "6yhz13iFYYklKtgA"
   },
   "_key": "!adventures!geazCXhZ0VSK3uwx"

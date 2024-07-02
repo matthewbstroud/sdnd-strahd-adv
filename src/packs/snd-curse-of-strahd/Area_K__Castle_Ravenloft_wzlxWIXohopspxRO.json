@@ -835,10 +835,10 @@
           "width": 1,
           "height": 1,
           "x": 2800,
-          "y": 2880,
+          "y": 3040,
           "elevation": 0,
           "lockRotation": false,
-          "rotation": 45,
+          "rotation": 90,
           "effects": [],
           "alpha": 1,
           "hidden": false,
@@ -876,6 +876,9 @@
           "flags": {
             "autorotate": {
               "enabled": null
+            },
+            "ATL": {
+              "originals": {}
             }
           },
           "texture": {
@@ -913,6 +916,109 @@
           },
           "appendNumber": false,
           "prependAdjective": false
+        },
+        {
+          "name": "Animated Armor",
+          "displayName": 20,
+          "actorLink": false,
+          "width": 1,
+          "height": 1,
+          "lockRotation": false,
+          "rotation": 0,
+          "alpha": 1,
+          "light": {
+            "alpha": 0.5,
+            "angle": 360,
+            "bright": 0,
+            "coloration": 1,
+            "dim": 0,
+            "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false,
+              "type": null
+            },
+            "darkness": {
+              "min": 0,
+              "max": 1
+            },
+            "color": null,
+            "attenuation": 0.5
+          },
+          "disposition": -1,
+          "displayBars": 50,
+          "bar1": {
+            "attribute": "attributes.hp"
+          },
+          "bar2": {
+            "attribute": null
+          },
+          "flags": {
+            "autorotate": {
+              "enabled": null
+            },
+            "simbuls-cover-calculator": {
+              "coverLevel": 1,
+              "coverLevelDead": 1,
+              "coverLevelProne": 1
+            }
+          },
+          "texture": {
+            "src": "systems/dnd5e/tokens/construct/AnimatedArmor.webp",
+            "tint": null,
+            "scaleX": 1,
+            "scaleY": 1,
+            "offsetX": 0,
+            "offsetY": 0,
+            "rotation": 0
+          },
+          "sight": {
+            "angle": 360,
+            "enabled": false,
+            "range": 60,
+            "brightness": 0,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0.1,
+            "saturation": 0,
+            "contrast": 0
+          },
+          "detectionModes": [],
+          "appendNumber": false,
+          "prependAdjective": false,
+          "actorId": "CuKLs0fcyWvOs7Km",
+          "x": 2720,
+          "y": 3040,
+          "hidden": false,
+          "_id": "8awYiTwo82PRzUa4",
+          "delta": {
+            "_id": "Kfi8xJrDbC3TrYtJ",
+            "system": {
+              "attributes": {
+                "hp": {
+                  "temp": 0,
+                  "value": 20
+                }
+              }
+            },
+            "items": [],
+            "effects": [],
+            "flags": {
+              "midi-qol": {
+                "concentration-damage": 6
+              }
+            },
+            "name": null,
+            "type": null,
+            "img": null,
+            "ownership": null
+          },
+          "elevation": 0,
+          "effects": []
         }
       ],
       "lights": [
@@ -924,7 +1030,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -957,7 +1063,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -990,7 +1096,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -1023,7 +1129,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -1056,7 +1162,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -1089,7 +1195,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -1122,7 +1228,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -1155,7 +1261,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -1188,7 +1294,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -1221,7 +1327,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -1254,7 +1360,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -1287,7 +1393,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -1320,7 +1426,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -2574,7 +2680,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -2607,7 +2713,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -2640,7 +2746,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -2673,7 +2779,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -2706,7 +2812,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -2739,7 +2845,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -2772,7 +2878,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -2805,7 +2911,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -2838,7 +2944,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -2871,7 +2977,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -2904,7 +3010,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -2937,7 +3043,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -2970,7 +3076,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -3003,7 +3109,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -3036,7 +3142,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -3069,7 +3175,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -3102,7 +3208,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -3135,7 +3241,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -3168,7 +3274,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -3201,7 +3307,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -3234,7 +3340,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -3267,7 +3373,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -3300,7 +3406,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 5,
             "coloration": 1,
@@ -3333,7 +3439,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 5,
             "coloration": 1,
@@ -3366,7 +3472,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 5,
             "coloration": 1,
@@ -3399,7 +3505,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 5,
             "coloration": 1,
@@ -3432,7 +3538,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 5,
             "coloration": 1,
@@ -3465,7 +3571,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 5,
             "coloration": 1,
@@ -3498,7 +3604,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 5,
             "coloration": 1,
@@ -3531,7 +3637,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.5,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 9.94,
             "coloration": 1,
@@ -3568,7 +3674,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.5,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 9.94,
             "coloration": 1,
@@ -16385,7 +16491,9 @@
       "weather": "",
       "folder": "mXTM1KOCLajFK6n1",
       "sort": 100000,
-      "flags": {},
+      "flags": {
+        "token-attacher": {}
+      },
       "ownership": {
         "default": 0,
         "6yhz13iFYYklKtgA": 3
@@ -16406,10 +16514,10 @@
       "journalEntryPage": null,
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "2.4.1",
+        "systemVersion": "3.1.2",
         "coreVersion": "11.315",
-        "createdTime": null,
-        "modifiedTime": 1705008768966,
+        "createdTime": 1709218111993,
+        "modifiedTime": 1719957711411,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       }
     },
@@ -16426,9 +16534,9 @@
       "height": 5600,
       "padding": 0.1,
       "initial": {
-        "x": 4171,
-        "y": 3616,
-        "scale": 0.64
+        "x": 5522,
+        "y": 3706,
+        "scale": 0.5232121743443504
       },
       "backgroundColor": "#000000",
       "grid": {
@@ -16447,94 +16555,6 @@
       "darkness": 0,
       "drawings": [],
       "tokens": [
-        {
-          "_id": "157dJZN9e8HogcYJ",
-          "name": "G.M.",
-          "displayName": 0,
-          "actorId": "XeQcFC6ftRcQRkVM",
-          "actorLink": true,
-          "width": 1,
-          "height": 1,
-          "x": 6400,
-          "y": 3520,
-          "elevation": 0,
-          "lockRotation": false,
-          "rotation": 85.60129464500446,
-          "effects": [],
-          "alpha": 1,
-          "hidden": false,
-          "light": {
-            "alpha": 0.5,
-            "angle": 360,
-            "bright": 0,
-            "coloration": 1,
-            "dim": 0,
-            "luminosity": 0.5,
-            "saturation": 0,
-            "contrast": 0,
-            "shadows": 0,
-            "animation": {
-              "speed": 5,
-              "intensity": 5,
-              "reverse": false,
-              "type": null
-            },
-            "darkness": {
-              "min": 0,
-              "max": 1
-            },
-            "color": null,
-            "attenuation": 0.5
-          },
-          "disposition": 1,
-          "displayBars": 50,
-          "bar1": {
-            "attribute": "attributes.hp"
-          },
-          "bar2": {
-            "attribute": null
-          },
-          "flags": {
-            "autorotate": {
-              "enabled": null
-            }
-          },
-          "texture": {
-            "src": "tokenizer/pc-images/WizardToken.png",
-            "tint": null,
-            "scaleX": 1,
-            "scaleY": 1,
-            "offsetX": 0,
-            "offsetY": 0,
-            "rotation": 0
-          },
-          "sight": {
-            "angle": 360,
-            "enabled": true,
-            "range": 0,
-            "brightness": 1,
-            "visionMode": "basic",
-            "color": null,
-            "attenuation": 0.1,
-            "saturation": 0,
-            "contrast": 0
-          },
-          "overlayEffect": "",
-          "detectionModes": [],
-          "delta": {
-            "_id": "157dJZN9e8HogcYJ",
-            "name": null,
-            "type": null,
-            "img": null,
-            "system": {},
-            "items": [],
-            "effects": [],
-            "ownership": null,
-            "flags": {}
-          },
-          "appendNumber": false,
-          "prependAdjective": false
-        },
         {
           "_id": "kltktVCyY3l3MFCC",
           "name": "Gustav Herrenghast",
@@ -16629,94 +16649,6 @@
           "detectionModes": [],
           "delta": {
             "_id": "kltktVCyY3l3MFCC",
-            "name": null,
-            "type": null,
-            "img": null,
-            "system": {},
-            "items": [],
-            "effects": [],
-            "ownership": null,
-            "flags": {}
-          },
-          "appendNumber": false,
-          "prependAdjective": false
-        },
-        {
-          "_id": "10G3nXa317Zj5dkQ",
-          "name": "G.M.",
-          "displayName": 0,
-          "actorId": "XeQcFC6ftRcQRkVM",
-          "actorLink": true,
-          "width": 1,
-          "height": 1,
-          "x": 6160,
-          "y": 3360,
-          "elevation": 0,
-          "lockRotation": false,
-          "rotation": 90,
-          "effects": [],
-          "alpha": 1,
-          "hidden": false,
-          "light": {
-            "alpha": 0.5,
-            "angle": 360,
-            "bright": 0,
-            "coloration": 1,
-            "dim": 0,
-            "luminosity": 0.5,
-            "saturation": 0,
-            "contrast": 0,
-            "shadows": 0,
-            "animation": {
-              "speed": 5,
-              "intensity": 5,
-              "reverse": false,
-              "type": null
-            },
-            "darkness": {
-              "min": 0,
-              "max": 1
-            },
-            "color": null,
-            "attenuation": 0.5
-          },
-          "disposition": 1,
-          "displayBars": 50,
-          "bar1": {
-            "attribute": "attributes.hp"
-          },
-          "bar2": {
-            "attribute": null
-          },
-          "flags": {
-            "autorotate": {
-              "enabled": null
-            }
-          },
-          "texture": {
-            "src": "tokenizer/pc-images/WizardToken.png",
-            "tint": null,
-            "scaleX": 1,
-            "scaleY": 1,
-            "offsetX": 0,
-            "offsetY": 0,
-            "rotation": 0
-          },
-          "sight": {
-            "angle": 360,
-            "enabled": true,
-            "range": 0,
-            "brightness": 1,
-            "visionMode": "basic",
-            "color": null,
-            "attenuation": 0.1,
-            "saturation": 0,
-            "contrast": 0
-          },
-          "overlayEffect": "",
-          "detectionModes": [],
-          "delta": {
-            "_id": "10G3nXa317Zj5dkQ",
             "name": null,
             "type": null,
             "img": null,
@@ -17960,7 +17892,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -17993,7 +17925,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -18026,7 +17958,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -18059,7 +17991,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -18092,7 +18024,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -18125,7 +18057,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -18158,7 +18090,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -18191,7 +18123,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -18224,7 +18156,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -18257,7 +18189,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -18290,7 +18222,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -18323,7 +18255,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -18356,7 +18288,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -18389,7 +18321,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -18422,7 +18354,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -18455,7 +18387,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -18488,7 +18420,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -18521,7 +18453,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -18554,7 +18486,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -18587,7 +18519,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -18620,7 +18552,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -18653,7 +18585,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -18686,7 +18618,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -18719,7 +18651,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -18752,7 +18684,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -18785,7 +18717,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -18818,7 +18750,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -18851,7 +18783,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -18884,7 +18816,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -18917,7 +18849,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -18950,7 +18882,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -18983,7 +18915,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 5,
             "coloration": 1,
@@ -19016,7 +18948,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 5,
             "coloration": 1,
@@ -19049,7 +18981,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -19082,7 +19014,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -19115,7 +19047,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -19148,7 +19080,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -19181,7 +19113,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 5,
             "coloration": 1,
@@ -19214,7 +19146,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 5,
             "coloration": 1,
@@ -19247,7 +19179,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 5,
             "coloration": 1,
@@ -19280,7 +19212,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 5,
             "coloration": 1,
@@ -19313,7 +19245,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 5,
             "coloration": 1,
@@ -19346,7 +19278,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 5,
             "coloration": 1,
@@ -19379,7 +19311,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 5,
             "coloration": 1,
@@ -25358,7 +25290,9 @@
       "weather": "",
       "folder": "mXTM1KOCLajFK6n1",
       "sort": 200000,
-      "flags": {},
+      "flags": {
+        "token-attacher": {}
+      },
       "ownership": {
         "default": 0,
         "6yhz13iFYYklKtgA": 3
@@ -25372,17 +25306,17 @@
         "rotation": 0,
         "tint": null
       },
-      "foregroundElevation": null,
+      "foregroundElevation": 20,
       "fogOverlay": null,
       "fogExploredColor": null,
       "fogUnexploredColor": null,
       "journalEntryPage": null,
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "2.4.1",
+        "systemVersion": "3.1.2",
         "coreVersion": "11.315",
         "createdTime": null,
-        "modifiedTime": 1705008770903,
+        "modifiedTime": 1719957893761,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       }
     },
@@ -25419,92 +25353,7 @@
       "globalLightThreshold": null,
       "darkness": 0,
       "drawings": [],
-      "tokens": [
-        {
-          "_id": "46QRwAl8g4hICnhO",
-          "name": "Dewey Finn",
-          "displayName": 30,
-          "actorId": "QqaomANo6iwTBy1i",
-          "actorLink": true,
-          "width": 1,
-          "height": 1,
-          "x": 4640,
-          "y": 3280,
-          "elevation": 0,
-          "lockRotation": false,
-          "rotation": 270,
-          "effects": [],
-          "alpha": 1,
-          "hidden": false,
-          "light": {
-            "alpha": 0.5,
-            "angle": 360,
-            "bright": 0,
-            "coloration": 1,
-            "dim": 0,
-            "luminosity": 0.5,
-            "saturation": 0,
-            "contrast": 0,
-            "shadows": 0,
-            "animation": {
-              "speed": 5,
-              "intensity": 5,
-              "reverse": false,
-              "type": null
-            },
-            "darkness": {
-              "min": 0,
-              "max": 1
-            },
-            "color": null,
-            "attenuation": 0.5
-          },
-          "disposition": 1,
-          "displayBars": 50,
-          "bar1": {
-            "attribute": "attributes.hp"
-          },
-          "bar2": {
-            "attribute": null
-          },
-          "flags": {},
-          "texture": {
-            "src": "custom_tokens/PC/Mines_Origami/Dewey_Token.png",
-            "tint": null,
-            "scaleX": 1,
-            "scaleY": 1,
-            "offsetX": 0,
-            "offsetY": 0,
-            "rotation": 0
-          },
-          "sight": {
-            "angle": 360,
-            "enabled": true,
-            "range": 60,
-            "brightness": 0,
-            "visionMode": "basic",
-            "color": null,
-            "attenuation": 0.1,
-            "saturation": 0,
-            "contrast": 0
-          },
-          "overlayEffect": "",
-          "detectionModes": [],
-          "delta": {
-            "_id": "46QRwAl8g4hICnhO",
-            "name": null,
-            "type": null,
-            "img": null,
-            "system": {},
-            "items": [],
-            "effects": [],
-            "ownership": null,
-            "flags": {}
-          },
-          "appendNumber": false,
-          "prependAdjective": false
-        }
-      ],
+      "tokens": [],
       "lights": [
         {
           "_id": "9O1LZhoyMlFsSbf1",
@@ -25514,7 +25363,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -25547,7 +25396,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -25580,7 +25429,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -25613,7 +25462,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -25646,7 +25495,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -25679,7 +25528,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 7,
             "coloration": 1,
@@ -26933,7 +26782,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -26966,7 +26815,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -26999,7 +26848,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -27032,7 +26881,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -27065,7 +26914,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -27098,7 +26947,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -27131,7 +26980,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -27164,7 +27013,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -27197,7 +27046,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -27230,7 +27079,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -27263,7 +27112,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 15,
             "coloration": 1,
@@ -27296,7 +27145,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -27329,7 +27178,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 7,
             "coloration": 1,
@@ -27362,7 +27211,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 7,
             "coloration": 1,
@@ -27395,7 +27244,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -27428,7 +27277,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -27461,7 +27310,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 7,
             "coloration": 1,
@@ -27890,7 +27739,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -27923,7 +27772,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 7,
             "coloration": 1,
@@ -27956,7 +27805,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 7,
             "coloration": 1,
@@ -27989,7 +27838,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 15,
             "coloration": 1,
@@ -28022,7 +27871,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 10,
             "coloration": 1,
@@ -28644,7 +28493,7 @@
                   "action": "runmacro",
                   "data": {
                     "entity": {
-                      "id": "Macro.zBy1U9s3H2WoTetX",
+                      "id": "Macro.wb49ZZbDRnwYIlSl",
                       "name": "toggleFireplace"
                     },
                     "args": "\"defb7595-1b80-4a3d-a745-0d7d291265ed\"",
@@ -39768,7 +39617,8 @@
       "flags": {
         "core": {
           "sourceId": "Scene.HDaNR6XkhqyDWMgS"
-        }
+        },
+        "token-attacher": {}
       },
       "ownership": {
         "default": 0,
@@ -39790,10 +39640,10 @@
       "journalEntryPage": null,
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "2.4.1",
+        "systemVersion": "3.1.2",
         "coreVersion": "11.315",
         "createdTime": null,
-        "modifiedTime": 1705008773059,
+        "modifiedTime": 1719957902983,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       }
     },
@@ -39810,9 +39660,9 @@
       "height": 5600,
       "padding": 0.1,
       "initial": {
-        "x": 5332,
-        "y": 3986,
-        "scale": 0.87
+        "x": 5426,
+        "y": 3951,
+        "scale": 0.6201355698911529
       },
       "backgroundColor": "#000000",
       "grid": {
@@ -39830,92 +39680,7 @@
       "globalLightThreshold": null,
       "darkness": 0,
       "drawings": [],
-      "tokens": [
-        {
-          "_id": "46QRwAl8g4hICnhO",
-          "name": "Dewey Finn",
-          "displayName": 30,
-          "actorId": "QqaomANo6iwTBy1i",
-          "actorLink": true,
-          "width": 1,
-          "height": 1,
-          "x": 4720,
-          "y": 3760,
-          "elevation": 0,
-          "lockRotation": false,
-          "rotation": 270,
-          "effects": [],
-          "alpha": 1,
-          "hidden": false,
-          "light": {
-            "alpha": 0.5,
-            "angle": 360,
-            "bright": 0,
-            "coloration": 1,
-            "dim": 0,
-            "luminosity": 0.5,
-            "saturation": 0,
-            "contrast": 0,
-            "shadows": 0,
-            "animation": {
-              "speed": 5,
-              "intensity": 5,
-              "reverse": false,
-              "type": null
-            },
-            "darkness": {
-              "min": 0,
-              "max": 1
-            },
-            "color": null,
-            "attenuation": 0.5
-          },
-          "disposition": 1,
-          "displayBars": 50,
-          "bar1": {
-            "attribute": "attributes.hp"
-          },
-          "bar2": {
-            "attribute": null
-          },
-          "flags": {},
-          "texture": {
-            "src": "custom_tokens/PC/Mines_Origami/Dewey_Token.png",
-            "tint": null,
-            "scaleX": 1,
-            "scaleY": 1,
-            "offsetX": 0,
-            "offsetY": 0,
-            "rotation": 0
-          },
-          "sight": {
-            "angle": 360,
-            "enabled": true,
-            "range": 60,
-            "brightness": 0,
-            "visionMode": "basic",
-            "color": null,
-            "attenuation": 0.1,
-            "saturation": 0,
-            "contrast": 0
-          },
-          "overlayEffect": "",
-          "detectionModes": [],
-          "delta": {
-            "_id": "46QRwAl8g4hICnhO",
-            "name": null,
-            "type": null,
-            "img": null,
-            "system": {},
-            "items": [],
-            "effects": [],
-            "ownership": null,
-            "flags": {}
-          },
-          "appendNumber": false,
-          "prependAdjective": false
-        }
-      ],
+      "tokens": [],
       "lights": [
         {
           "_id": "2AdtCnHOUfsd4dwv",
@@ -41146,7 +40911,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -41179,7 +40944,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -41212,7 +40977,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -41245,7 +41010,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -41278,7 +41043,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -41311,7 +41076,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -41344,7 +41109,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -41377,7 +41142,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -41410,7 +41175,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -41839,7 +41604,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -41872,7 +41637,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 5,
             "coloration": 1,
@@ -50282,7 +50047,8 @@
       "flags": {
         "core": {
           "sourceId": "Scene.HDaNR6XkhqyDWMgS"
-        }
+        },
+        "token-attacher": {}
       },
       "ownership": {
         "default": 0,
@@ -50297,17 +50063,17 @@
         "rotation": 0,
         "tint": null
       },
-      "foregroundElevation": null,
+      "foregroundElevation": 20,
       "fogOverlay": null,
       "fogExploredColor": null,
       "fogUnexploredColor": null,
       "journalEntryPage": null,
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "2.4.1",
+        "systemVersion": "3.1.2",
         "coreVersion": "11.315",
         "createdTime": null,
-        "modifiedTime": 1705008775172,
+        "modifiedTime": 1719958022127,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       }
     },
@@ -50344,92 +50110,7 @@
       "globalLightThreshold": null,
       "darkness": 0,
       "drawings": [],
-      "tokens": [
-        {
-          "_id": "46QRwAl8g4hICnhO",
-          "name": "Dewey Finn",
-          "displayName": 30,
-          "actorId": "QqaomANo6iwTBy1i",
-          "actorLink": true,
-          "width": 1,
-          "height": 1,
-          "x": 5840,
-          "y": 3280,
-          "elevation": 0,
-          "lockRotation": false,
-          "rotation": 0,
-          "effects": [],
-          "alpha": 1,
-          "hidden": false,
-          "light": {
-            "alpha": 0.5,
-            "angle": 360,
-            "bright": 0,
-            "coloration": 1,
-            "dim": 0,
-            "luminosity": 0.5,
-            "saturation": 0,
-            "contrast": 0,
-            "shadows": 0,
-            "animation": {
-              "speed": 5,
-              "intensity": 5,
-              "reverse": false,
-              "type": null
-            },
-            "darkness": {
-              "min": 0,
-              "max": 1
-            },
-            "color": null,
-            "attenuation": 0.5
-          },
-          "disposition": 1,
-          "displayBars": 50,
-          "bar1": {
-            "attribute": "attributes.hp"
-          },
-          "bar2": {
-            "attribute": null
-          },
-          "flags": {},
-          "texture": {
-            "src": "custom_tokens/PC/Mines_Origami/Dewey_Token.png",
-            "tint": null,
-            "scaleX": 1,
-            "scaleY": 1,
-            "offsetX": 0,
-            "offsetY": 0,
-            "rotation": 0
-          },
-          "sight": {
-            "angle": 360,
-            "enabled": true,
-            "range": 60,
-            "brightness": 0,
-            "visionMode": "basic",
-            "color": null,
-            "attenuation": 0.1,
-            "saturation": 0,
-            "contrast": 0
-          },
-          "overlayEffect": "",
-          "detectionModes": [],
-          "delta": {
-            "_id": "46QRwAl8g4hICnhO",
-            "name": null,
-            "type": null,
-            "img": null,
-            "system": {},
-            "items": [],
-            "effects": [],
-            "ownership": null,
-            "flags": {}
-          },
-          "appendNumber": false,
-          "prependAdjective": false
-        }
-      ],
+      "tokens": [],
       "lights": [
         {
           "_id": "4gWNImeiEFAPzfgd",
@@ -50439,7 +50120,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -51693,7 +51374,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -51726,7 +51407,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -51759,7 +51440,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -51792,7 +51473,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -51825,7 +51506,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -51858,7 +51539,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -51891,7 +51572,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -51924,7 +51605,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -52353,7 +52034,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -59444,7 +59125,8 @@
       "flags": {
         "core": {
           "sourceId": "Scene.HDaNR6XkhqyDWMgS"
-        }
+        },
+        "token-attacher": {}
       },
       "ownership": {
         "default": 0,
@@ -59466,10 +59148,10 @@
       "journalEntryPage": null,
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "2.4.1",
+        "systemVersion": "3.1.2",
         "coreVersion": "11.315",
         "createdTime": null,
-        "modifiedTime": 1705008782631,
+        "modifiedTime": 1719958030279,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       }
     },
@@ -59486,9 +59168,9 @@
       "height": 5600,
       "padding": 0.1,
       "initial": {
-        "x": 4993,
-        "y": 3935,
-        "scale": 0.92
+        "x": 5302,
+        "y": 3959,
+        "scale": 0.7493457499999998
       },
       "backgroundColor": "#000000",
       "grid": {
@@ -60822,7 +60504,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -60855,7 +60537,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -60888,7 +60570,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -60921,7 +60603,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -60954,7 +60636,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -60987,7 +60669,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -61020,7 +60702,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -61053,7 +60735,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -61482,7 +61164,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -70252,7 +69934,8 @@
       "flags": {
         "core": {
           "sourceId": "Scene.HDaNR6XkhqyDWMgS"
-        }
+        },
+        "token-attacher": {}
       },
       "ownership": {
         "default": 0,
@@ -70267,17 +69950,17 @@
         "rotation": 0,
         "tint": null
       },
-      "foregroundElevation": null,
+      "foregroundElevation": 20,
       "fogOverlay": null,
       "fogExploredColor": null,
       "fogUnexploredColor": null,
       "journalEntryPage": null,
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "2.4.1",
+        "systemVersion": "3.1.2",
         "coreVersion": "11.315",
         "createdTime": null,
-        "modifiedTime": 1705008785030,
+        "modifiedTime": 1719958084363,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       }
     },
@@ -70294,9 +69977,9 @@
       "height": 5600,
       "padding": 0.1,
       "initial": {
-        "x": 5036,
-        "y": 2713,
-        "scale": 1.24
+        "x": 5119,
+        "y": 2767,
+        "scale": 0.9115139443749998
       },
       "backgroundColor": "#000000",
       "grid": {
@@ -71630,7 +71313,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -71663,7 +71346,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -71696,7 +71379,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -71729,7 +71412,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -71762,7 +71445,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -71795,7 +71478,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -71828,7 +71511,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -71861,7 +71544,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -72290,7 +71973,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -72356,7 +72039,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -79247,7 +78930,8 @@
       "flags": {
         "core": {
           "sourceId": "Scene.HDaNR6XkhqyDWMgS"
-        }
+        },
+        "token-attacher": {}
       },
       "ownership": {
         "default": 0,
@@ -79262,17 +78946,17 @@
         "rotation": 0,
         "tint": null
       },
-      "foregroundElevation": null,
+      "foregroundElevation": 20,
       "fogOverlay": null,
       "fogExploredColor": null,
       "fogUnexploredColor": null,
       "journalEntryPage": null,
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "2.4.1",
+        "systemVersion": "3.1.2",
         "coreVersion": "11.315",
         "createdTime": null,
-        "modifiedTime": 1705008788813,
+        "modifiedTime": 1719958108823,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       }
     },
@@ -79309,92 +78993,7 @@
       "globalLightThreshold": null,
       "darkness": 0,
       "drawings": [],
-      "tokens": [
-        {
-          "_id": "46QRwAl8g4hICnhO",
-          "name": "Dewey Finn",
-          "displayName": 30,
-          "actorId": "QqaomANo6iwTBy1i",
-          "actorLink": true,
-          "width": 1,
-          "height": 1,
-          "x": 4800,
-          "y": 2800,
-          "elevation": 0,
-          "lockRotation": false,
-          "rotation": 90,
-          "effects": [],
-          "alpha": 1,
-          "hidden": false,
-          "light": {
-            "alpha": 0.5,
-            "angle": 360,
-            "bright": 0,
-            "coloration": 1,
-            "dim": 0,
-            "luminosity": 0.5,
-            "saturation": 0,
-            "contrast": 0,
-            "shadows": 0,
-            "animation": {
-              "speed": 5,
-              "intensity": 5,
-              "reverse": false,
-              "type": null
-            },
-            "darkness": {
-              "min": 0,
-              "max": 1
-            },
-            "color": null,
-            "attenuation": 0.5
-          },
-          "disposition": 1,
-          "displayBars": 50,
-          "bar1": {
-            "attribute": "attributes.hp"
-          },
-          "bar2": {
-            "attribute": null
-          },
-          "flags": {},
-          "texture": {
-            "src": "custom_tokens/PC/Mines_Origami/Dewey_Token.png",
-            "tint": null,
-            "scaleX": 1,
-            "scaleY": 1,
-            "offsetX": 0,
-            "offsetY": 0,
-            "rotation": 0
-          },
-          "sight": {
-            "angle": 360,
-            "enabled": true,
-            "range": 60,
-            "brightness": 0,
-            "visionMode": "basic",
-            "color": null,
-            "attenuation": 0.1,
-            "saturation": 0,
-            "contrast": 0
-          },
-          "overlayEffect": "",
-          "detectionModes": [],
-          "delta": {
-            "_id": "46QRwAl8g4hICnhO",
-            "name": null,
-            "type": null,
-            "img": null,
-            "system": {},
-            "items": [],
-            "effects": [],
-            "ownership": null,
-            "flags": {}
-          },
-          "appendNumber": false,
-          "prependAdjective": false
-        }
-      ],
+      "tokens": [],
       "lights": [
         {
           "_id": "2AdtCnHOUfsd4dwv",
@@ -80625,7 +80224,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -80658,7 +80257,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -80691,7 +80290,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -80724,7 +80323,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -80757,7 +80356,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -80790,7 +80389,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -80823,7 +80422,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -80856,7 +80455,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -81285,7 +80884,7 @@
           "walls": true,
           "vision": false,
           "config": {
-            "alpha": 0.4,
+            "alpha": 0.2,
             "angle": 360,
             "bright": 20,
             "coloration": 1,
@@ -92266,7 +91865,8 @@
       "flags": {
         "core": {
           "sourceId": "Scene.HDaNR6XkhqyDWMgS"
-        }
+        },
+        "token-attacher": {}
       },
       "ownership": {
         "default": 0,
@@ -92281,17 +91881,17 @@
         "rotation": 0,
         "tint": null
       },
-      "foregroundElevation": null,
+      "foregroundElevation": 20,
       "fogOverlay": null,
       "fogExploredColor": null,
       "fogUnexploredColor": null,
       "journalEntryPage": null,
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "2.4.1",
+        "systemVersion": "3.1.2",
         "coreVersion": "11.315",
         "createdTime": null,
-        "modifiedTime": 1705008791423,
+        "modifiedTime": 1719958146249,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       }
     },
@@ -105228,7 +104828,8 @@
       "flags": {
         "core": {
           "sourceId": "Scene.HDaNR6XkhqyDWMgS"
-        }
+        },
+        "token-attacher": {}
       },
       "ownership": {
         "default": 0,
@@ -105250,10 +104851,10 @@
       "journalEntryPage": null,
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "2.4.1",
+        "systemVersion": "3.1.2",
         "coreVersion": "11.315",
         "createdTime": null,
-        "modifiedTime": 1705008793800,
+        "modifiedTime": 1719958153499,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       }
     },
@@ -105265,7 +104866,7 @@
       "navOrder": 0,
       "navName": "",
       "foreground": null,
-      "thumb": "modules/sdnd-strahd-adv/images/thumbs/93818ef16e3de40ff39ac77ef0450cd3.png",
+      "thumb": "modules/sdnd-strahd-adv/images/thumbs/XbgLiKfRFMyoVU3J-thumb.webp",
       "width": 8000,
       "height": 5600,
       "padding": 0.1,
@@ -108675,10 +108276,10 @@
       "journalEntryPage": null,
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "2.2.2",
-        "coreVersion": "10.291",
+        "systemVersion": "3.1.2",
+        "coreVersion": "11.315",
         "createdTime": null,
-        "modifiedTime": 1689092191299,
+        "modifiedTime": 1719957651787,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       }
     },
@@ -108690,7 +108291,7 @@
       "navOrder": 0,
       "navName": "",
       "foreground": null,
-      "thumb": "modules/sdnd-strahd-adv/images/thumbs/035026e1e51f4cb52859b3668fdd1da3.png",
+      "thumb": "modules/sdnd-strahd-adv/images/thumbs/Lkq1jJSoIYb3M7JQ-thumb.webp",
       "width": 8000,
       "height": 5600,
       "padding": 0.1,
@@ -120306,10 +119907,10 @@
       "journalEntryPage": null,
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "2.4.1",
+        "systemVersion": "3.1.2",
         "coreVersion": "11.315",
         "createdTime": null,
-        "modifiedTime": 1704836150116,
+        "modifiedTime": 1719957652103,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       }
     },
@@ -120321,7 +119922,7 @@
       "navOrder": 0,
       "navName": "",
       "foreground": null,
-      "thumb": "modules/sdnd-strahd-adv/images/thumbs/e18b6f472087f827196c82d466373cff.png",
+      "thumb": "modules/sdnd-strahd-adv/images/thumbs/EGPZ2gYdsDFpkRgd-thumb.webp",
       "width": 1120,
       "height": 880,
       "padding": 0.1,
@@ -120611,10 +120212,10 @@
       "journalEntryPage": null,
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "2.2.2",
-        "coreVersion": "10.291",
+        "systemVersion": "3.1.2",
+        "coreVersion": "11.315",
         "createdTime": null,
-        "modifiedTime": 1689092191303,
+        "modifiedTime": 1719957652440,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       }
     }
@@ -120631,11 +120232,7 @@
       "sorting": "a",
       "sort": 1000000,
       "color": null,
-      "flags": {
-        "core": {
-          "sourceId": "Folder.mXTM1KOCLajFK6n1"
-        }
-      },
+      "flags": {},
       "folder": "eDanIUwAG8TuhXfe",
       "description": "",
       "_stats": {
@@ -120671,11 +120268,7 @@
       "sorting": "a",
       "sort": 0,
       "color": null,
-      "flags": {
-        "core": {
-          "sourceId": "Folder.Zv3tTvE4FB1rdQQy"
-        }
-      },
+      "flags": {},
       "_id": "Zv3tTvE4FB1rdQQy",
       "folder": "GSSJWHbwUqHqoZPf",
       "description": "",
@@ -120692,19 +120285,19 @@
       "name": "Areas",
       "type": "JournalEntry",
       "sorting": "a",
-      "sort": 0,
+      "sort": 200000,
       "color": null,
       "flags": {},
       "_id": "GSSJWHbwUqHqoZPf",
-      "folder": null,
+      "folder": "T633A3ZOM9ehiWR0",
       "description": "",
       "_stats": {
-        "systemId": null,
-        "systemVersion": null,
-        "coreVersion": null,
+        "systemId": "dnd5e",
+        "systemVersion": "2.4.1",
+        "coreVersion": "11.315",
         "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null
+        "modifiedTime": 1705027185606,
+        "lastModifiedBy": "6yhz13iFYYklKtgA"
       }
     }
   ],
@@ -120713,10 +120306,10 @@
   "flags": {},
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "2.4.1",
+    "systemVersion": "3.1.2",
     "coreVersion": "11.315",
     "createdTime": 1705009842997,
-    "modifiedTime": 1705009842997,
+    "modifiedTime": 1719958209679,
     "lastModifiedBy": "6yhz13iFYYklKtgA"
   },
   "_key": "!adventures!wzlxWIXohopspxRO"
