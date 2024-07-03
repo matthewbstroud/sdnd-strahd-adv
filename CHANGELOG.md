@@ -1,4 +1,11 @@
 # v11.1.5
+# New Features
+- Area T: Tsolenka Pass
+- Area U: The Ruins of Berez
+- Area V: Van Richten’s Tower
+- Area X: The Amber Temple
+- Area Y: Yester Hill
+- Area Z: Werewolf Den
 # Conversion
 - Converting images to be 100 dpi or less
 # v11.1.4
