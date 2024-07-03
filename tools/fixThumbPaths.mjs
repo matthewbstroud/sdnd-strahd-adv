@@ -8,6 +8,7 @@ const desiredThumbPath = `modules/${process.env.npm_package_name}/images/thumbs/
 const basePath = "./src/packs";
 const packs = await fs.readdir(basePath);
 let fileModfied = false;
+let thumbsInUse = []
 for (const pack of packs) {
     if (pack === ".gitattributes") continue;
     const fileFolder = basePath + '/' + pack;
@@ -28,13 +29,16 @@ for (const pack of packs) {
             continue;
         }
         for (let scene of fileObject.scenes) {
-            if (scene.thumb.startsWith(desiredThumbPath)){
+            if (scene.thumb.startsWith(desiredThumbPath)) {
+                thumbsInUse.push(scene.thumb.split('/').pop());
                 continue;
             }
             fileModfied = true;
             console.log(`Modifying scene '${scene.name}'...`);
             console.log(`   Old Path: '${scene.thumb}'`);
-            let newPath = desiredThumbPath + scene.thumb.split('/').pop();
+            let thumbFile = scene.thumb.split('/').pop();
+            thumbsInUse.push(thumbFile);
+            let newPath = desiredThumbPath + thumbFile;
             console.log(`   New Path: '${newPath}'`);
             scene.thumb = newPath;
         }
@@ -47,8 +51,17 @@ for (const pack of packs) {
         }
         //console.log(fileObject.scenes.map(s => ({ "thumb": s.thumb })));
     }
-
-    
-
+}
+const thumbDir = `./images/thumbs`;
+const thumbs = await fs.readdir(thumbDir);
+for (const thumb of thumbs) {
+    if (!thumbsInUse.includes(thumb)) {
+        console.log(thumb + " is no longer referenced and will be deleted.");
+        let fullpath = `${thumbDir}/${thumb}`;
+        fs.unlink(fullpath, (err) => {
+            if (err) throw err;
+            console.log(`${fullpath} was deleted.`);
+        });
+    }
 }
 console.log("finished");
