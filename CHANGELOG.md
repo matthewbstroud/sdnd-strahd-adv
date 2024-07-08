@@ -1,3 +1,7 @@
+# v11.1.6
+# Bug Fixes
+- Fix dependencies
+- Fix Animated Armor Art
 # v11.1.5
 # New Features
 - Area T: Tsolenka Pass
