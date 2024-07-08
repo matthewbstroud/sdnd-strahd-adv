@@ -9,7 +9,7 @@
 	"compatibility": {
 		"minimum": 11,
 		"verified": 11,
-		"maximum": 11
+		"maximum": 12
 	},
 	"authors": [
 		{
@@ -25,7 +25,7 @@
 				"type": "system",
 				"manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",
 				"compatibility": {
-					"minimum": "2.4.0",
+					"minimum": "3.1.2",
 					"verified": "3.1.2",
 					"maximum": "3.1.x"
 				}
@@ -33,66 +33,12 @@
 		],
 		"requires": [
 			{
-				"id": "caeora-maps-tokens-assets",
+				"id": "betterroofs",
 				"type": "module",
-				"manifest": "https://foundryvtt.s3.us-west-2.amazonaws.com/modules/caeora-maps-tokens-assets/module.json",
-				"compatibility": {
-					"minimum": "2.1.5",
-					"verified": "2.1.5"
-				}
-			},
-			{
-				"id": "effectmacro",
-				"type": "module",
-				"manifest": "https://github.com/krbz999/effectmacro/releases/latest/download/module.json",
-				"compatibility": {
-					"minimum": "11.0.3",
-					"verified": "11.0.3"
-				}
-			},
-			{
-				"id": "item-piles",
-				"type": "module",
-				"manifest": "https://github.com/fantasycalendar/FoundryVTT-ItemPiles/releases/latest/download/module.json",
-				"compatibility": {
-					"minimum": "2.8.12",
-					"verified": "2.8.12"
-				}
-			},
-			{
-				"id": "lib-wrapper",
-				"type": "module",
-				"manifest": "https://github.com/ruipin/fvtt-lib-wrapper/releases/latest/download/module.json",
-				"compatibility": {
-					"minimum": "1.12.13.0",
-					"verified": "1.12.13.0"
-				}
-			},
-			{
-				"id": "monks-active-tiles",
-				"type": "module",
-				"manifest": "https://github.com/ironmonk88/monks-active-tiles/releases/latest/download/module.json",
-				"compatibility": {
-					"minimum": "11.19",
-					"verified": "11.19"
-				}
-			},
-			{
-				"id": "smart-doors",
-				"type": "module",
-				"manifest": "https://raw.githubusercontent.com/manuelVo/foundryvtt-smart-doors/master/module.json",
-				"compatibility": {
-					"minimum": "1.4.1",
-					"verified": "1.4.1"
-				}
-			},
-			{
-				"id": "socketlib",
-				"type": "module",
-				"manifest": "https://raw.githubusercontent.com/manuelVo/foundryvtt-socketlib/master/module.json",
-				"compatibility": {
-					"minimum": "1.0.13",
-					"verified": "1.0.13"
+				"manifest": "https://github.com/theripper93/Better-Roofs/releases/latest/download/module.json",
+				"comaptibility": {
+					"mininum": "1.9.2",
+					"verified": "1.9.2"
 				}
 			},
 			{
@@ -105,44 +51,7 @@
 				}
 			}
 		],
-		"optional": [
-			{
-				"id": "status-icon-tweaks",
-				"type": "module",
-				"manifest": "https://github.com/jessev14/status-icon-tweaks/releases/latest/download/module.json",
-				"compatibility": {
-					"minimum": "2.0.3",
-					"verified": "2.0.3"
-				}
-			},
-			{
-				"id": "tidy5e-sheet",
-				"type": "module",
-				"manifest": "https://github.com/sdenec/tidy5e-sheet/releases/download/0.10.0/module.json",
-				"compatibility": {
-					"minimum": "0.10.0",
-					"verified": "0.10.0"
-				}
-			},
-			{
-				"id": "token-action-hud-core",
-				"type": "module",
-				"manifest": "https://github.com/Larkinabout/fvtt-token-action-hud-core/releases/latest/download/module.json",
-				"compatibility": {
-					"minimum": "1.5.2",
-					"verified": "1.5.2"
-				}
-			},
-			{
-				"id": "token-action-hud-dnd5e",
-				"type": "module",
-				"manifest": "https://github.com/Larkinabout/fvtt-token-action-hud-dnd5e/releases/latest/download/module.json",
-				"compatibility": {
-					"minimum": "1.5.1",
-					"verified": "1.5.1"
-				}
-			}
-		]
+		"optional": []
 	},
 	"esmodules": [
 		"scripts/module.js"
