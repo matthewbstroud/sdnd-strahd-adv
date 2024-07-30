@@ -1,3 +1,9 @@
+# v11.1.7
+# New Features
+- Add new artwork for area approaches.
+- Finished initial map notes.
+# Bug Fixes
+- Remove unused images.
 # v11.1.6
 # Bug Fixes
 - Fix dependencies
