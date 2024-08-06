@@ -85,7 +85,19 @@
 				"GAMEMASTER": "OWNER"
 			},
 			"module": "snd-curse-of-strahd"
-		}
+		},
+		{
+			"label": "sdnd-cos-roll-tables",
+			"name": "Strahd Roll Tables",
+			"type": "RollTable",
+			"path": "packs/sdnd-cos-roll-tables.db",
+			"system": "dnd5e",
+			"flags": {},
+			"ownership": {
+			  "PLAYER": "LIMITED",
+			  "ASSISTANT": "OWNER"
+			}
+		  }
 	],
 	"packFolders": [
 		{
@@ -102,7 +114,8 @@
 			"sorting": "a",
 			"color": "#ff0000",
 			"packs": [
-				"sdnd-cos-macros"
+				"sdnd-cos-macros",
+				"sdnd-cos-roll-tables"
 			],
 			"folders": []
 		}

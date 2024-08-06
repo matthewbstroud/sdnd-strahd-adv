@@ -2,6 +2,7 @@
 # New Features
 - More artwork.  (Thanks Eric)
 - SFX tagging
+- Added Roll Tables Compendium
 # v11.1.7
 # New Features
 - Add new artwork for area approaches.
