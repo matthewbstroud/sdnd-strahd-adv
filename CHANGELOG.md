@@ -1,3 +1,7 @@
+# v11.1.8
+# New Features
+- More artwork.  (Thanks Eric)
+- SFX tagging
 # v11.1.7
 # New Features
 - Add new artwork for area approaches.

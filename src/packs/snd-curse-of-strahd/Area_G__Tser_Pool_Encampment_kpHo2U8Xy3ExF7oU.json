@@ -93,7 +93,7 @@
           "image": {},
           "text": {
             "format": 1,
-            "content": "<h4>If the characters decide to see Madam Eva, read:</h4><p></p><aside><blockquote><p>Magic flames cast a reddish glow over the interior of this tent, revealing a low table covered in a black velvet cloth. Glints of light seem to flash from a crystal ball on the table as a hunched figure peers into its depths. As the crone speaks, her voice crackles like dry weeds. “At last you have arrived!” Cackling laughter bursts like mad lightning from her withered lips.</p></blockquote></aside><p></p><p>Madam Eva (see appendix D) speaks the name of each party member and makes some reference to that individual’s past deeds. She then asks the characters if they want their fortunes read. If they say yes, Madam Eva produces a worn deck of cards and proceeds with the sequence outlined in chapter 1. (If the characters don’t want a reading of their fates, continue play using the card reading you performed before starting the adventure.)</p><p>Madam Eva might seem mad, but she is, in fact, cunning and sharp of mind. She has met a good many adventurers in her time and knows they can’t be fully trusted. She wants to free the land of Barovia from its curse, and her fate is interwoven with Strahd’s (see appendix D for details). She does the vampire’s bidding when called upon and does nothing to anger Strahd or bring harm to the Vistani. She never gives aid and never asks for any.</p><p></p><h2>Treasure</h2><p>For each Vistani tent or wagon that the characters search, roll once on the following table to determine what treasure is found:</p><div><table><thead><tr><th>d20</th><th>Treasure</th></tr></thead><tbody><tr><td>1–10</td><td>None</td></tr><tr><td>11–13</td><td>Sack of 100 ep (each coin stamped with Strahd’s visage in profile)</td></tr><tr><td>14–16</td><td>Pouch containing 4d6 gemstones worth 100 gp each</td></tr><tr><td>17–19</td><td>Sack containing 3d6 pieces of cheap jewelry worth 25 gp total and 1d6 pieces of fine jewelry worth 250 gp each</td></tr><tr><td>20</td><td>One magic item (roll once on Magic Item Table B in the Dungeon Master’s Guide)</td></tr></tbody></table></div><h4>Fortunes of Ravenloft</h4><p>If your card reading reveals that a treasure is here, it is hidden in one of the Vistani wagons. Madam Eva grants the characters permission to search the wagons if they ask, and any such search yields the treasure.</p>"
+            "content": "<h4>If the characters decide to see Madam Eva, read:</h4><p></p><aside><blockquote><p>Magic flames cast a reddish glow over the interior of this tent, revealing a low table covered in a black velvet cloth. Glints of light seem to flash from a crystal ball on the table as a hunched figure peers into its depths. As the crone speaks, her voice crackles like dry weeds. “At last you have arrived!” Cackling laughter bursts like mad lightning from her withered lips.</p></blockquote></aside><img src=\"modules/sdnd-strahd-adv/images/maps/Areas/G/madam_evas_tent.webp\" /><p>Madam Eva (see appendix D) speaks the name of each party member and makes some reference to that individual’s past deeds. She then asks the characters if they want their fortunes read. If they say yes, Madam Eva produces a worn deck of cards and proceeds with the sequence outlined in chapter 1. (If the characters don’t want a reading of their fates, continue play using the card reading you performed before starting the adventure.)</p><p>Madam Eva might seem mad, but she is, in fact, cunning and sharp of mind. She has met a good many adventurers in her time and knows they can’t be fully trusted. She wants to free the land of Barovia from its curse, and her fate is interwoven with Strahd’s (see appendix D for details). She does the vampire’s bidding when called upon and does nothing to anger Strahd or bring harm to the Vistani. She never gives aid and never asks for any.</p><p></p><h2>Treasure</h2><p>For each Vistani tent or wagon that the characters search, roll once on the following table to determine what treasure is found:</p><div><table><thead><tr><th>d20</th><th>Treasure</th></tr></thead><tbody><tr><td>1–10</td><td>None</td></tr><tr><td>11–13</td><td>Sack of 100 ep (each coin stamped with Strahd’s visage in profile)</td></tr><tr><td>14–16</td><td>Pouch containing 4d6 gemstones worth 100 gp each</td></tr><tr><td>17–19</td><td>Sack containing 3d6 pieces of cheap jewelry worth 25 gp total and 1d6 pieces of fine jewelry worth 250 gp each</td></tr><tr><td>20</td><td>One magic item (roll once on Magic Item Table B in the Dungeon Master’s Guide)</td></tr></tbody></table></div><h4>Fortunes of Ravenloft</h4><p>If your card reading reveals that a treasure is here, it is hidden in one of the Vistani wagons. Madam Eva grants the characters permission to search the wagons if they ask, and any such search yields the treasure.</p>"
           },
           "video": {
             "controls": true,
@@ -108,10 +108,10 @@
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
-            "systemVersion": "2.4.1",
+            "systemVersion": "3.1.2",
             "coreVersion": "11.315",
             "createdTime": 1704929096834,
-            "modifiedTime": 1704929173803,
+            "modifiedTime": 1721701658755,
             "lastModifiedBy": "6yhz13iFYYklKtgA"
           }
         }
@@ -127,7 +127,7 @@
         "systemVersion": "3.1.2",
         "coreVersion": "11.315",
         "createdTime": 1704928876166,
-        "modifiedTime": 1720554533263,
+        "modifiedTime": 1721701658755,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       }
     }
@@ -164,7 +164,7 @@
       "fogReset": 1673218695923,
       "globalLight": true,
       "globalLightThreshold": null,
-      "darkness": 0,
+      "darkness": 1,
       "drawings": [],
       "tokens": [
         {
@@ -220,6 +220,26 @@
             },
             "dnd5e-helpers": {
               "coverLevel": 1
+            },
+            "monks-tokenbar": {
+              "include": "default"
+            },
+            "core": {
+              "occlusionRadius": 10
+            },
+            "dnd5e": {
+              "tokenRing": {
+                "enabled": false,
+                "textures": {
+                  "subject": null
+                },
+                "scaleCorrection": 1,
+                "colors": {
+                  "ring": null,
+                  "background": null
+                },
+                "effects": 1
+              }
             }
           },
           "texture": {
@@ -936,7 +956,14 @@
           "_id": "5dXs8cBIUHHct8PY",
           "delta": {
             "_id": "iEpHYGkvKv7zlKid",
-            "system": {},
+            "system": {
+              "attributes": {
+                "hp": {
+                  "temp": 0,
+                  "tempmax": 0
+                }
+              }
+            },
             "items": [],
             "effects": [],
             "flags": {},
@@ -2249,7 +2276,7 @@
               "min": 0,
               "max": 1
             },
-            "color": "#d3c3fe",
+            "color": "#ff3333",
             "attenuation": 0.5
           },
           "hidden": false,
@@ -3262,7 +3289,7 @@
           "rotation": 0,
           "alpha": 1,
           "overhead": true,
-          "roof": false,
+          "roof": true,
           "occlusion": {
             "mode": 3,
             "alpha": 0,
@@ -3290,7 +3317,7 @@
               "minrequired": 0,
               "cooldown": null,
               "chance": 100,
-              "fileindex": -1,
+              "fileindex": 0,
               "actions": [],
               "files": []
             }
@@ -8079,7 +8106,7 @@
         "systemVersion": "3.1.2",
         "coreVersion": "11.315",
         "createdTime": 1704929215485,
-        "modifiedTime": 1720554505392,
+        "modifiedTime": 1722218815765,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       }
     }
@@ -8171,11 +8198,7 @@
       "_id": "T633A3ZOM9ehiWR0",
       "sort": 0,
       "color": "#ff0000",
-      "flags": {
-        "core": {
-          "sourceId": "Folder.T633A3ZOM9ehiWR0"
-        }
-      },
+      "flags": {},
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
@@ -8194,7 +8217,7 @@
     "systemVersion": "3.1.2",
     "coreVersion": "11.315",
     "createdTime": 1704929363516,
-    "modifiedTime": 1721698136256,
+    "modifiedTime": 1722382657113,
     "lastModifiedBy": "6yhz13iFYYklKtgA"
   },
   "_key": "!adventures!kpHo2U8Xy3ExF7oU"

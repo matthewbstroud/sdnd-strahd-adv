@@ -28,6 +28,10 @@ for (const pack of packs) {
             console.log(err);
             continue;
         }
+        if (!fileObject.scenes) {
+            console.log(`${file} doesn't contain scenes, skipping...`);
+            continue;
+        }
         for (let scene of fileObject.scenes) {
             if (scene.thumb.startsWith(desiredThumbPath)) {
                 thumbsInUse.push(scene.thumb.split('/').pop());

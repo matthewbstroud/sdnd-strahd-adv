@@ -1,0 +1,25 @@
+{
+  "folder": "9hEwatOwy7oakCZ4",
+  "name": "ToggleLightsK7-K9",
+  "type": "script",
+  "_id": "86v4XaUL54VuIeB8",
+  "author": "6yhz13iFYYklKtgA",
+  "img": "modules/stroud-dnd-helpers/images/icons/LightBulb_Icon.webp",
+  "scope": "global",
+  "command": "for (let i = 7; i < 10; i++) { \n  sdndStrahd.doors.setDoorState(`K${i}`, foundry.CONST.WALL_DOOR_STATES.CLOSED)\n  sdndStrahd.lighting.toggleLights(`K${i}`); \n}",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "6yhz13iFYYklKtgA": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.1.2",
+    "coreVersion": "11.315",
+    "createdTime": 1721872560869,
+    "modifiedTime": 1721953794699,
+    "lastModifiedBy": "6yhz13iFYYklKtgA"
+  },
+  "_key": "!macros!86v4XaUL54VuIeB8"
+}
