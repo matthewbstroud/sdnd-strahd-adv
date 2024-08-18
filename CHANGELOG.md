@@ -1,3 +1,7 @@
+# v11.1.9
+# New Features
+- More maps populated.
+- Changed art for gates of Barovia.
 # v11.1.8
 # New Features
 - More artwork.  (Thanks Eric)
