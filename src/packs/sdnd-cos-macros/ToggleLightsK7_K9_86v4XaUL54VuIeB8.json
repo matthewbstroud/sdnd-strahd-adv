@@ -6,7 +6,7 @@
   "author": "6yhz13iFYYklKtgA",
   "img": "modules/stroud-dnd-helpers/images/icons/LightBulb_Icon.webp",
   "scope": "global",
-  "command": "for (let i = 7; i < 10; i++) { \n  sdndStrahd.doors.setDoorState(`K${i}`, foundry.CONST.WALL_DOOR_STATES.CLOSED)\n  sdndStrahd.lighting.toggleLights(`K${i}`); \n}",
+  "command": "for (let i = 7; i < 10; i++) { \n  stroudDnD.tagging.doors.setState(`K${i}`, foundry.CONST.WALL_DOOR_STATES.CLOSED);\n  stroudDnD.tagging.lighting.toggle(`K${i}`); \n}",
   "sort": 0,
   "ownership": {
     "default": 0,
@@ -18,7 +18,7 @@
     "systemVersion": "3.1.2",
     "coreVersion": "11.315",
     "createdTime": 1721872560869,
-    "modifiedTime": 1721953794699,
+    "modifiedTime": 1724105993204,
     "lastModifiedBy": "6yhz13iFYYklKtgA"
   },
   "_key": "!macros!86v4XaUL54VuIeB8"

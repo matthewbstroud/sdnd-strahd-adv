@@ -1,3 +1,6 @@
+# v11.2.0
+# New Features
+- Remove local tagging functions
 # v11.1.9
 # New Features
 - More maps populated.
