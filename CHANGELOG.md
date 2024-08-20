@@ -1,3 +1,6 @@
+# v11.2.2
+# Bug Fixes
+- Fix slamming doors path.
 # v11.2.1
 # New Features
 - Use Stroud DnD Tagging Macros
