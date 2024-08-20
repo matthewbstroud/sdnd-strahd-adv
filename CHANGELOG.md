@@ -1,3 +1,8 @@
+# v11.2.1
+# New Features
+- Use Stroud DnD Tagging Macros
+- Remove Tagging Macros from this module.
+- Add SFX for slamming doors in K10.
 # v11.2.0
 # New Features
 - Remove local tagging functions
