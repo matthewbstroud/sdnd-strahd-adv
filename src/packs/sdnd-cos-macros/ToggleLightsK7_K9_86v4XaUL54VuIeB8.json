@@ -6,7 +6,7 @@
   "author": "6yhz13iFYYklKtgA",
   "img": "modules/stroud-dnd-helpers/images/icons/LightBulb_Icon.webp",
   "scope": "global",
-  "command": "for (let i = 7; i < 10; i++) { \n  stroudDnD.tagging.doors.setState(`K${i}`, foundry.CONST.WALL_DOOR_STATES.CLOSED);\n  stroudDnD.tagging.lighting.toggle(`K${i}`); \n}",
+  "command": "function shutDoors() {\n  for (let i = 7; i < 10; i++) { \n    stroudDnD.tagging.doors.setState(`K${i}`, CONST.WALL_DOOR_STATES.CLOSED);\n    stroudDnD.tagging.lighting.toggle(`K${i}`); \n  }\n}\n\ngame.audio.preload(\"modules/sdnd-strahd-adv/images/maps/areas/k/K10. Dining Hall/slamming_doors.mp3\")\n  .then((sound) => sound.play({volume: 1}))\n  .then(() => setTimeout(shutDoors, 3200));",
   "sort": 0,
   "ownership": {
     "default": 0,
@@ -18,7 +18,7 @@
     "systemVersion": "3.1.2",
     "coreVersion": "11.315",
     "createdTime": 1721872560869,
-    "modifiedTime": 1724105993204,
+    "modifiedTime": 1724178467189,
     "lastModifiedBy": "6yhz13iFYYklKtgA"
   },
   "_key": "!macros!86v4XaUL54VuIeB8"
