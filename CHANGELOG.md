@@ -1,3 +1,9 @@
+# v11.2.3
+# New Features
+- Map Changes
+  - Added fog to areas A, B, C, and D.
+- Items
+  - Added Map of Barovia
 # v11.2.2
 # Bug Fixes
 - Fix slamming doors path.
