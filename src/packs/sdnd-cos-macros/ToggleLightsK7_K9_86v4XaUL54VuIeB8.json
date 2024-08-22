@@ -6,7 +6,7 @@
   "author": "6yhz13iFYYklKtgA",
   "img": "modules/stroud-dnd-helpers/images/icons/LightBulb_Icon.webp",
   "scope": "global",
-  "command": "function shutDoors() {\n  for (let i = 7; i < 10; i++) { \n    stroudDnD.tagging.doors.setState(`K${i}`, CONST.WALL_DOOR_STATES.CLOSED);\n    stroudDnD.tagging.lighting.toggle(`K${i}`); \n  }\n}\n\ngame.audio.preload(\"modules/sdnd-strahd-adv/images/maps/Areas/K/K10.%20Dining%20Hall/slamming_doors.mp3\")\n  .then((sound) => sound.play({volume: 1}))\n  .then(() => setTimeout(shutDoors, 3200));",
+  "command": "function shutDoors(roomNumber) {\n    stroudDnD.tagging.doors.setState(`K${roomNumber}`, CONST.WALL_DOOR_STATES.CLOSED);\n    stroudDnD.tagging.lighting.toggle(`K${roomNumber}`); \n}\nAudioHelper.preloadSound(\"modules/sdnd-strahd-adv/images/maps/Areas/K/K10.%20Dining%20Hall/wind_blowing.mp3\")\n .then((sound) => {\n  AudioHelper.play({src: sound.src, volume: 1, autoplay: true, loop: false}, true)\n});\nsetTimeout(() => shutDoors(7), 2000);\nsetTimeout(() => shutDoors(8), 4000);\nsetTimeout(() => shutDoors(9), 6000);",
   "sort": 0,
   "ownership": {
     "default": 0,
@@ -18,7 +18,7 @@
     "systemVersion": "3.1.2",
     "coreVersion": "11.315",
     "createdTime": 1721872560869,
-    "modifiedTime": 1724273237038,
+    "modifiedTime": 1724334892264,
     "lastModifiedBy": "6yhz13iFYYklKtgA"
   },
   "_key": "!macros!86v4XaUL54VuIeB8"

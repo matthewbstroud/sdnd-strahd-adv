@@ -12557,6 +12557,9 @@
                 }
               ],
               "files": []
+            },
+            "stroud-dnd-helpers": {
+              "tagName": "K10_fireplaces"
             }
           },
           "texture": {
@@ -12621,6 +12624,9 @@
                 }
               ],
               "files": []
+            },
+            "stroud-dnd-helpers": {
+              "tagName": "K10_fireplaces"
             }
           },
           "texture": {
@@ -12763,6 +12769,79 @@
             "tint": null
           },
           "_id": "zOj9OZN8CtDkDalp",
+          "z": 100,
+          "rotation": 0,
+          "alpha": 1,
+          "hidden": true,
+          "locked": true,
+          "overhead": false,
+          "roof": false,
+          "occlusion": {
+            "mode": 1,
+            "alpha": 0,
+            "radius": null
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          }
+        },
+        {
+          "x": 4280,
+          "y": 3680,
+          "width": 80,
+          "height": 80,
+          "flags": {
+            "monks-active-tiles": {
+              "active": true,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                "",
+                "dblclick"
+              ],
+              "pertoken": false,
+              "minrequired": 0,
+              "chance": 100,
+              "actions": [
+                {
+                  "action": "runmacro",
+                  "data": {
+                    "entity": {
+                      "id": "Compendium.stroud-dnd-helpers.SDND-GM-Macros.Macro.dBxk9nylqrtSVVtZ"
+                    },
+                    "args": "K10_fireplaces",
+                    "runasgm": "gm"
+                  },
+                  "id": "OseqrAR1v0PJKUIm"
+                }
+              ],
+              "record": false,
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": false,
+              "cooldown": null,
+              "fileindex": -1,
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/icons/trigger_tiles.webp",
+            "scaleX": 1,
+            "scaleY": 1,
+            "offsetX": 0,
+            "offsetY": 0,
+            "rotation": 0,
+            "tint": null
+          },
+          "_id": "QOhC2Hnn3d5qU6cS",
           "z": 100,
           "rotation": 0,
           "alpha": 1,
@@ -20298,6 +20377,17 @@
             },
             "stroud-dnd-helpers": {
               "tagName": "K8"
+            },
+            "monks-active-tiles": {
+              "entity": {},
+              "open": false,
+              "close": false,
+              "lock": false,
+              "checklock": false,
+              "secret": false
+            },
+            "smartdoors": {
+              "synchronizationGroup": ""
             }
           },
           "threshold": {
@@ -20305,7 +20395,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "doorSound": "woodHeavy"
         },
         {
           "_id": "3AO7FFurs9AyQn4g",
@@ -20328,6 +20419,17 @@
             },
             "stroud-dnd-helpers": {
               "tagName": "K8"
+            },
+            "monks-active-tiles": {
+              "entity": {},
+              "open": false,
+              "close": false,
+              "lock": false,
+              "checklock": false,
+              "secret": false
+            },
+            "smartdoors": {
+              "synchronizationGroup": ""
             }
           },
           "threshold": {
@@ -20335,7 +20437,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "doorSound": "woodHeavy"
         },
         {
           "_id": "ByLhRPXfCU5czszL",
@@ -20351,13 +20454,24 @@
           "sound": 20,
           "dir": 0,
           "door": 1,
-          "ds": 0,
+          "ds": 2,
           "flags": {
             "sdnd-strahd-adv": {
               "documentName": "K8"
             },
             "stroud-dnd-helpers": {
               "tagName": "K8"
+            },
+            "monks-active-tiles": {
+              "entity": {},
+              "open": false,
+              "close": false,
+              "lock": false,
+              "checklock": false,
+              "secret": false
+            },
+            "smartdoors": {
+              "synchronizationGroup": ""
             }
           },
           "threshold": {
@@ -20365,7 +20479,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "doorSound": "woodHeavy"
         },
         {
           "_id": "auy2dsPUqGD7lMpo",
@@ -20381,13 +20496,24 @@
           "sound": 20,
           "dir": 0,
           "door": 1,
-          "ds": 0,
+          "ds": 2,
           "flags": {
             "sdnd-strahd-adv": {
               "documentName": "K8"
             },
             "stroud-dnd-helpers": {
               "tagName": "K8"
+            },
+            "monks-active-tiles": {
+              "entity": {},
+              "open": false,
+              "close": false,
+              "lock": false,
+              "checklock": false,
+              "secret": false
+            },
+            "smartdoors": {
+              "synchronizationGroup": ""
             }
           },
           "threshold": {
@@ -20395,7 +20521,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "doorSound": "woodHeavy"
         },
         {
           "_id": "nXBbturuwEUDESqx",
@@ -25080,8 +25207,20 @@
             },
             "stroud-dnd-helpers": {
               "tagName": "K7"
+            },
+            "monks-active-tiles": {
+              "entity": {},
+              "open": false,
+              "close": false,
+              "lock": false,
+              "checklock": false,
+              "secret": false
+            },
+            "smartdoors": {
+              "synchronizationGroup": ""
             }
-          }
+          },
+          "doorSound": "woodHeavy"
         },
         {
           "light": 20,
@@ -25110,8 +25249,20 @@
             },
             "stroud-dnd-helpers": {
               "tagName": "K7"
+            },
+            "monks-active-tiles": {
+              "entity": {},
+              "open": false,
+              "close": false,
+              "lock": false,
+              "checklock": false,
+              "secret": false
+            },
+            "smartdoors": {
+              "synchronizationGroup": ""
             }
-          }
+          },
+          "doorSound": "woodHeavy"
         },
         {
           "light": 20,
@@ -25140,8 +25291,20 @@
             },
             "stroud-dnd-helpers": {
               "tagName": "K9"
+            },
+            "monks-active-tiles": {
+              "entity": {},
+              "open": false,
+              "close": false,
+              "lock": false,
+              "checklock": false,
+              "secret": false
+            },
+            "smartdoors": {
+              "synchronizationGroup": ""
             }
-          }
+          },
+          "doorSound": "woodHeavy"
         },
         {
           "light": 20,
@@ -25170,8 +25333,20 @@
             },
             "stroud-dnd-helpers": {
               "tagName": "K9"
+            },
+            "monks-active-tiles": {
+              "entity": {},
+              "open": false,
+              "close": false,
+              "lock": false,
+              "checklock": false,
+              "secret": false
+            },
+            "smartdoors": {
+              "synchronizationGroup": ""
             }
-          }
+          },
+          "doorSound": "woodHeavy"
         }
       ],
       "playlist": null,
@@ -25206,7 +25381,7 @@
         "systemVersion": "3.1.2",
         "coreVersion": "11.315",
         "createdTime": 1709218111993,
-        "modifiedTime": 1724179551393,
+        "modifiedTime": 1724335935131,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       }
     },
@@ -137651,7 +137826,7 @@
     "systemVersion": "3.1.2",
     "coreVersion": "11.315",
     "createdTime": 1705009842997,
-    "modifiedTime": 1724180374566,
+    "modifiedTime": 1724335999377,
     "lastModifiedBy": "6yhz13iFYYklKtgA"
   },
   "_key": "!adventures!wzlxWIXohopspxRO"
