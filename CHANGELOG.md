@@ -1,3 +1,6 @@
+# v11.2.5
+# New Features
+- Add Night Time Roll Table.
 # v11.2.4
 # New Features
 - Added 3 Barovian House Battle Maps.
