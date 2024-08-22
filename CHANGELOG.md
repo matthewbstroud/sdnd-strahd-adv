@@ -1,3 +1,6 @@
+# v11.2.6
+# New Features
+- Add additional NPCs.
 # v11.2.5
 # New Features
 - Add Night Time Roll Table.
