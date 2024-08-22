@@ -1,3 +1,6 @@
+# v11.2.4
+# Bug Fixes
+- Fix door sync in Castle Ravenloft.
 # v11.2.3
 # New Features
 - Map Changes
