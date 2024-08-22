@@ -1,4 +1,6 @@
 # v11.2.4
+# New Features
+- Added 3 Barovian House Battle Maps.
 # Bug Fixes
 - Fix door sync in Castle Ravenloft.
 # v11.2.3
