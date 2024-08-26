@@ -1,3 +1,9 @@
+# v11.2.7
+# New Features
+- Change fog.
+# v11.2.6
+# New Features
+- Add additional NPCs.
 # v11.2.5
 # New Features
 - Add Night Time Roll Table.
