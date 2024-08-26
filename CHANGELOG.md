@@ -1,3 +1,6 @@
+# v11.2.7
+# New Features
+- Change fog.
 # v11.2.6
 # New Features
 - Add additional NPCs.
