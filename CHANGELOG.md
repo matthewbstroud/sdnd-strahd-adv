@@ -1,3 +1,6 @@
+# v11.2.8
+# Bug Fixes
+- Fix Svalich Woods Map.
 # v11.2.7
 # New Features
 - Change fog.
