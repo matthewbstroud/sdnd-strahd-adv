@@ -10888,7 +10888,7 @@
         "systemVersion": "3.1.2",
         "coreVersion": "11.315",
         "createdTime": 1705246794081,
-        "modifiedTime": 1722980559425,
+        "modifiedTime": 1725314240477,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       }
     },
@@ -20150,7 +20150,7 @@
         "systemVersion": "3.1.2",
         "coreVersion": "11.315",
         "createdTime": 1705247821973,
-        "modifiedTime": 1719968969026,
+        "modifiedTime": 1725314264875,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       }
     },
@@ -20183,7 +20183,347 @@
       "globalLightThreshold": null,
       "darkness": 0,
       "drawings": [],
-      "tokens": [],
+      "tokens": [
+        {
+          "name": "Treasure",
+          "displayName": 40,
+          "actorLink": false,
+          "width": 0.5,
+          "height": 0.5,
+          "lockRotation": false,
+          "rotation": 0,
+          "alpha": 1,
+          "light": {
+            "alpha": 0.5,
+            "angle": 360,
+            "bright": 0.5,
+            "coloration": 1,
+            "dim": 0,
+            "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false,
+              "type": null
+            },
+            "darkness": {
+              "min": 0,
+              "max": 1
+            },
+            "color": null,
+            "attenuation": 0.5
+          },
+          "disposition": 0,
+          "displayBars": 40,
+          "bar1": {
+            "attribute": "attributes.hp"
+          },
+          "bar2": {
+            "attribute": null
+          },
+          "flags": {
+            "autorotate": {
+              "enabled": false,
+              "offset": null
+            },
+            "LightsHUD": {
+              "lightspellstate": false,
+              "lanternconsumablestate": false,
+              "torchconsumablestate": false
+            },
+            "dnd5e-helpers": {
+              "coverLevel": 1
+            },
+            "item-piles": {
+              "data": {
+                "enabled": true,
+                "type": "container",
+                "closed": true,
+                "closedImage": "modules/sdnd-strahd-adv/images/icons/Chest_Icons/Chest_Unlocked.webp",
+                "emptyImage": "modules/sdnd-strahd-adv/images/icons/Chest_Icons/Chest_Empty.webp",
+                "openedImage": "modules/sdnd-strahd-adv/images/icons/Chest_Icons/Chest_Full.webp",
+                "lockedImage": "modules/sdnd-strahd-adv/images/icons/Chest_Icons/Chest_Locked.webp",
+                "lockedSound": "sounds/lock.wav",
+                "activePlayers": true,
+                "closeSound": "sounds/doors/wood/close.ogg",
+                "openSound": "sounds/doors/wood/open.ogg",
+                "distance": 1,
+                "macro": "",
+                "deleteWhenEmpty": "default",
+                "canStackItems": "yes",
+                "canInspectItems": true,
+                "displayItemTypes": false,
+                "description": "",
+                "overrideItemFilters": false,
+                "overrideCurrencies": false,
+                "overrideSecondaryCurrencies": false,
+                "requiredItemProperties": [],
+                "displayOne": false,
+                "showItemName": false,
+                "overrideSingleItemScale": false,
+                "singleItemScale": 1,
+                "shareItemsEnabled": false,
+                "shareCurrenciesEnabled": true,
+                "takeAllEnabled": false,
+                "splitAllEnabled": true,
+                "locked": false,
+                "closedImages": [],
+                "emptyImages": [],
+                "openedImages": [],
+                "lockedImages": [],
+                "closeSounds": [],
+                "openSounds": [],
+                "lockedSounds": [],
+                "unlockedSound": "",
+                "unlockedSounds": [],
+                "merchantImage": "",
+                "infiniteQuantity": false,
+                "infiniteCurrencies": true,
+                "purchaseOnly": false,
+                "hideNewItems": false,
+                "hideItemsWithZeroCost": false,
+                "keepZeroQuantity": false,
+                "onlyAcceptBasePrice": true,
+                "displayQuantity": "yes",
+                "buyPriceModifier": 1,
+                "sellPriceModifier": 0.5,
+                "itemTypePriceModifiers": [],
+                "actorPriceModifiers": [],
+                "tablesForPopulate": [],
+                "merchantColumns": [],
+                "hideTokenWhenClosed": false,
+                "openTimes": {
+                  "enabled": false,
+                  "status": "open",
+                  "open": {
+                    "hour": 9,
+                    "minute": 0
+                  },
+                  "close": {
+                    "hour": 18,
+                    "minute": 0
+                  }
+                },
+                "closedDays": [],
+                "closedHolidays": [],
+                "refreshItemsOnOpen": false,
+                "refreshItemsDays": [],
+                "refreshItemsHolidays": [],
+                "logMerchantActivity": false,
+                "cols": 10,
+                "rows": 5,
+                "restrictVaultAccess": false,
+                "vaultExpansion": false,
+                "baseExpansionCols": 0,
+                "baseExpansionRows": 0,
+                "vaultAccess": [],
+                "logVaultActions": false,
+                "vaultLogType": "user_actor"
+              },
+              "version": "3.0.4"
+            },
+            "token-z": {
+              "zIndex": 0
+            },
+            "monks-tokenbar": {
+              "include": "exclude"
+            },
+            "core": {
+              "occlusionRadius": null
+            },
+            "dnd5e": {
+              "tokenRing": {
+                "enabled": false,
+                "textures": {
+                  "subject": null
+                },
+                "scaleCorrection": 1,
+                "colors": {
+                  "ring": null,
+                  "background": null
+                },
+                "effects": 1
+              }
+            },
+            "simbuls-cover-calculator": {
+              "coverLevel": 1,
+              "coverLevelDead": 1,
+              "coverLevelProne": 1
+            }
+          },
+          "texture": {
+            "src": "modules/sdnd-strahd-adv/images/icons/Chest_Icons/Chest_Unlocked.webp",
+            "tint": null,
+            "scaleX": 1,
+            "scaleY": 1,
+            "offsetX": 0,
+            "offsetY": 0,
+            "rotation": 0
+          },
+          "sight": {
+            "angle": 360,
+            "enabled": false,
+            "range": 0,
+            "brightness": 1,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0.1,
+            "saturation": 0,
+            "contrast": 0
+          },
+          "detectionModes": [],
+          "appendNumber": false,
+          "prependAdjective": false,
+          "actorId": "MBE40ejmR95pHVLP",
+          "x": 1984,
+          "y": 1600,
+          "hidden": true,
+          "_id": "5SFhSKoT1ZFnV1Qg",
+          "delta": {
+            "_id": "7updqLj4JJp894al",
+            "system": {},
+            "items": [
+              {
+                "name": "Sword Hilt",
+                "type": "weapon",
+                "img": "ddb-images/other/item-Sunsword.jpeg",
+                "system": {
+                  "description": {
+                    "value": "<div class=\"ddb\">\n<p>This is a platinum hilt and guard for a an exquistite sword, but it is missing a blade..</p>\n</div>",
+                    "chat": ""
+                  },
+                  "quantity": 1,
+                  "weight": 3,
+                  "attunement": 0,
+                  "identified": false,
+                  "unidentified": {
+                    "description": "Wondrous item"
+                  },
+                  "source": {},
+                  "container": null,
+                  "price": {
+                    "value": 0,
+                    "denomination": "gp"
+                  },
+                  "rarity": "",
+                  "activation": {
+                    "type": "",
+                    "cost": null,
+                    "condition": ""
+                  },
+                  "duration": {
+                    "value": "",
+                    "units": ""
+                  },
+                  "cover": null,
+                  "crewed": false,
+                  "target": {
+                    "value": null,
+                    "width": null,
+                    "units": "",
+                    "type": "",
+                    "prompt": true
+                  },
+                  "range": {
+                    "value": null,
+                    "long": null,
+                    "units": ""
+                  },
+                  "uses": {
+                    "value": null,
+                    "max": "",
+                    "per": null,
+                    "recovery": "",
+                    "prompt": true
+                  },
+                  "consume": {
+                    "type": "",
+                    "target": null,
+                    "amount": null,
+                    "scale": false
+                  },
+                  "ability": null,
+                  "actionType": null,
+                  "attack": {
+                    "bonus": "",
+                    "flat": false
+                  },
+                  "chatFlavor": "",
+                  "critical": {
+                    "threshold": null,
+                    "damage": ""
+                  },
+                  "damage": {
+                    "parts": [],
+                    "versatile": ""
+                  },
+                  "formula": "",
+                  "save": {
+                    "ability": "",
+                    "dc": null,
+                    "scaling": "spell"
+                  },
+                  "summons": null,
+                  "armor": {
+                    "value": null
+                  },
+                  "hp": {
+                    "value": null,
+                    "max": null,
+                    "dt": null,
+                    "conditions": ""
+                  },
+                  "type": {
+                    "value": "simpleM",
+                    "baseItem": ""
+                  },
+                  "magicalBonus": null,
+                  "properties": [],
+                  "equipped": true,
+                  "proficient": null
+                },
+                "folder": "PLHyo8ytmDPplJgB",
+                "flags": {
+                  "world": {
+                    "identified_id": "CAdRy4C6pk1Ldj33"
+                  },
+                  "core": {
+                    "sourceId": "Item.RmeYJmHy8oZWt3uK"
+                  }
+                },
+                "_id": "BUGky2wx9araE6mH",
+                "effects": [],
+                "sort": 0,
+                "ownership": {
+                  "default": 0,
+                  "6yhz13iFYYklKtgA": 3
+                },
+                "_stats": {
+                  "systemId": "dnd5e",
+                  "systemVersion": "3.1.2",
+                  "coreVersion": "11.315",
+                  "createdTime": 1723159772175,
+                  "modifiedTime": 1725315019146,
+                  "lastModifiedBy": "6yhz13iFYYklKtgA"
+                }
+              }
+            ],
+            "effects": [],
+            "flags": {
+              "item-piles": {}
+            },
+            "name": null,
+            "type": null,
+            "img": null,
+            "ownership": null
+          },
+          "elevation": 0,
+          "effects": []
+        }
+      ],
       "lights": [
         {
           "_id": "iolLXJDwGqw6qzea",
@@ -28005,7 +28345,7 @@
         "systemVersion": "3.1.2",
         "coreVersion": "11.315",
         "createdTime": 1705249204098,
-        "modifiedTime": 1719968965080,
+        "modifiedTime": 1725314319845,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       }
     },
@@ -28625,7 +28965,7 @@
         "systemVersion": "3.1.2",
         "coreVersion": "11.315",
         "createdTime": 1705249701741,
-        "modifiedTime": 1719969005558,
+        "modifiedTime": 1725314237736,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       }
     },
@@ -28760,7 +29100,7 @@
         "systemVersion": "3.1.2",
         "coreVersion": "11.315",
         "createdTime": 1705249737112,
-        "modifiedTime": 1719968926646,
+        "modifiedTime": 1725314231980,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       }
     }
@@ -28959,7 +29299,7 @@
     "systemVersion": "3.1.2",
     "coreVersion": "11.315",
     "createdTime": 1705243629959,
-    "modifiedTime": 1723172859242,
+    "modifiedTime": 1725317910071,
     "lastModifiedBy": "6yhz13iFYYklKtgA"
   },
   "_key": "!adventures!iRac54lQSYCFAUA6"

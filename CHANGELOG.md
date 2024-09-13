@@ -1,3 +1,9 @@
+# v11.2.8
+# New Features
+- Sun Sword: Coded undead damage
+- Added Ireena's Sword.
+# Bug Fixes
+- Fix Svalich Woods Map.
 # v11.2.7
 # New Features
 - Change fog.

@@ -4067,7 +4067,7 @@
       "type": "weapon",
       "system": {
         "description": {
-          "value": "<div class=\"ddb\">\n<p>The <em>Sunsword</em> is a unique blade once possessed by Strahd’s brother, Sergei von Zarovich. In its original form, it had a platinum hilt and guard, and a thin crystal blade as strong as steel.</p>\n<p>Strahd employed a powerful wizard named Khazan to destroy the weapon after Sergei’s death. The first part of the process required the hilt and the blade to be separated, which Khazan accomplished. While Khazan was busying himself destroying the blade, his apprentice stole the hilt and fled. Khazan later located his apprentice’s mutilated corpse in the Svalich Woods, but the hilt was nowhere to be found. To avoid the vampire’s wrath, Khazan told Strahd that the entire weapon had been destroyed.</p>\n<p>The hilt, which is sentient, knows that it can never be reunited with its original crystal blade. It has, however, gained the properties of a sun blade.</p>\n<p><em><strong>Sentience.</strong></em> The <em>Sunsword</em> is a sentient chaotic good weapon with an &amp;Reference[int]{Intelligence} of 11, a &amp;Reference[wis]{Wisdom} of 17, and a &amp;Reference[cha]{Charisma} of 16. It has hearing and normal vision out to a range of 60 feet. The weapon communicates by transmitting emotions to the creature carrying or wielding it.</p>\n<p><em><strong>Personality.</strong></em> The <em>Sunsword</em>’s special purpose is to destroy Strahd, not so much because it wants to free the land of Barovia from evil but because it wants revenge for the loss of its crystal blade. The weapon secretly fears its own destruction.</p>\n</div>",
+          "value": "<div class=\"ddb\"><p>The <em>Sunsword</em> is a unique blade once possessed by Strahd’s brother, Sergei von Zarovich. In its original form, it had a platinum hilt and guard, and a thin crystal blade as strong as steel.</p><p>Strahd employed a powerful wizard named Khazan to destroy the weapon after Sergei’s death. The first part of the process required the hilt and the blade to be separated, which Khazan accomplished. While Khazan was busying himself destroying the blade, his apprentice stole the hilt and fled. Khazan later located his apprentice’s mutilated corpse in the Svalich Woods, but the hilt was nowhere to be found. To avoid the vampire’s wrath, Khazan told Strahd that the entire weapon had been destroyed.</p><p>The hilt, which is sentient, knows that it can never be reunited with its original crystal blade. It has, however, gained the properties of a sun blade.</p><p><em><strong>Sentience.</strong></em> The <em>Sunsword</em> is a sentient chaotic good weapon with an &amp;Reference[int]{Intelligence} of 11, a &amp;Reference[wis]{Wisdom} of 17, and a &amp;Reference[cha]{Charisma} of 16. It has hearing and normal vision out to a range of 60 feet. The weapon communicates by transmitting emotions to the creature carrying or wielding it.</p><p><em><strong>Personality.</strong></em> The <em>Sunsword</em>’s special purpose is to destroy Strahd, not so much because it wants to free the land of Barovia from evil but because it wants revenge for the loss of its crystal blade. The weapon secretly fears its own destruction.</p></div>",
           "chat": ""
         },
         "source": {
@@ -4226,7 +4226,8 @@
           "fumbleThreshold": null,
           "rollAttackPerTarget": "default",
           "itemCondition": "",
-          "otherCondition": ""
+          "otherCondition": "",
+          "onUseMacroName": "[damageBonus]function.stroudDnD.items.weapons.baneWeapon.ItemMacro"
         },
         "midiProperties": {
           "confirmTargets": "default",
@@ -4247,6 +4248,14 @@
         },
         "core": {
           "sourceId": "Actor.FiHjA78Mq3INHI9q.Item.EKtOpcrnd9KjEqys"
+        },
+        "stroud-dnd-helpers": {
+          "BaneWeaponData": {
+            "CreatureType": "undead",
+            "DieCount": 1,
+            "DamageType": "radiant",
+            "DieFaces": 8
+          }
         }
       },
       "effects": [],
@@ -4262,7 +4271,7 @@
         "systemVersion": "3.1.2",
         "coreVersion": "11.315",
         "createdTime": 1723159452163,
-        "modifiedTime": 1723159495278,
+        "modifiedTime": 1726254808090,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       }
     },
@@ -4432,9 +4441,352 @@
         "modifiedTime": 1724265821656,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       }
+    },
+    {
+      "folder": "cNcVeJ0zUdNNXRcI",
+      "name": "The Tome of Strahd",
+      "type": "loot",
+      "_id": "XbkatZ3SwqOft1qQ",
+      "img": "modules/sdnd-strahd-adv/images/tome_of_strahd.webp",
+      "system": {
+        "description": {
+          "value": "<p>@UUID[JournalEntry.ncpgsua45Lxsr4EC]{The Tome of Strahd}</p>",
+          "chat": ""
+        },
+        "source": {},
+        "identified": true,
+        "unidentified": {
+          "description": ""
+        },
+        "container": null,
+        "quantity": 1,
+        "weight": 0,
+        "price": {
+          "value": 0,
+          "denomination": "gp"
+        },
+        "rarity": "veryRare",
+        "properties": [],
+        "type": {
+          "value": "treasure",
+          "subtype": ""
+        }
+      },
+      "effects": [],
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "6yhz13iFYYklKtgA": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "dnd5e",
+        "systemVersion": "3.1.2",
+        "coreVersion": "11.315",
+        "createdTime": 1725402129898,
+        "modifiedTime": 1725403887010,
+        "lastModifiedBy": "6yhz13iFYYklKtgA"
+      }
+    },
+    {
+      "_id": "gfbrGdNavMy0qaoq",
+      "name": "Ireena's Sword",
+      "type": "weapon",
+      "img": "modules/sdnd-strahd-adv/images/icons/items/ireenas_sword.webp",
+      "system": {
+        "description": {
+          "value": "<p><em>Ireena's Blade was giving a blessing against the undead.</em></p><p>You have a bonus to attack and damage rolls made with this magic weapon.</p><p>Attacks made against undead deal an additional 1d4 radiant damage.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "book": "SRD 5.1",
+          "page": "",
+          "license": "CC-BY-4.0"
+        },
+        "quantity": 1,
+        "weight": 3,
+        "price": {
+          "value": 1000,
+          "denomination": "gp"
+        },
+        "attunement": 1,
+        "equipped": false,
+        "rarity": "uncommon",
+        "identified": true,
+        "activation": {
+          "type": "action",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": "",
+          "units": ""
+        },
+        "cover": null,
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": "",
+          "prompt": true
+        },
+        "range": {
+          "value": 5,
+          "long": null,
+          "units": "ft"
+        },
+        "uses": {
+          "value": null,
+          "max": "",
+          "per": null,
+          "recovery": "",
+          "prompt": true
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null,
+          "scale": false
+        },
+        "ability": "",
+        "actionType": "mwak",
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [
+            [
+              "1d8 + @mod",
+              "slashing"
+            ]
+          ],
+          "versatile": "1d10 + @mod"
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "spell"
+        },
+        "armor": {
+          "value": 10
+        },
+        "hp": {
+          "value": 0,
+          "max": 0,
+          "dt": null,
+          "conditions": ""
+        },
+        "properties": [
+          "mgc",
+          "ver"
+        ],
+        "proficient": null,
+        "type": {
+          "value": "martialM",
+          "baseItem": "longsword"
+        },
+        "unidentified": {
+          "description": ""
+        },
+        "container": null,
+        "crewed": false,
+        "magicalBonus": 1,
+        "attack": {
+          "bonus": "",
+          "flat": false
+        },
+        "summons": {
+          "match": {
+            "attacks": false,
+            "proficiency": false,
+            "saves": false
+          },
+          "profiles": [],
+          "bonuses": {},
+          "prompt": true
+        }
+      },
+      "effects": [],
+      "folder": "JcxQPdIhsuShmFJx",
+      "sort": 100000,
+      "ownership": {
+        "default": 0,
+        "6yhz13iFYYklKtgA": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.dnd5e.items.Item.IPkf0XNowClwXnjQ"
+        },
+        "midi-qol": {
+          "fumbleThreshold": null,
+          "rollAttackPerTarget": "default",
+          "removeAttackDamageButtons": "default",
+          "itemCondition": "",
+          "effectCondition": "",
+          "onUseMacroName": "[damageBonus]function.stroudDnD.items.weapons.baneWeapon.ItemMacro"
+        },
+        "midiProperties": {
+          "confirmTargets": "default",
+          "autoFailFriendly": false,
+          "autoSaveFriendly": false,
+          "critOther": false,
+          "offHandWeapon": false,
+          "magicdam": false,
+          "magiceffect": false,
+          "noConcentrationCheck": false,
+          "toggleEffect": false,
+          "ignoreTotalCover": false
+        },
+        "stroud-dnd-helpers": {
+          "BaneWeaponData": {
+            "CreatureType": "undead",
+            "DieFaces": 4,
+            "DieCount": 1,
+            "DamageType": "radiant"
+          }
+        }
+      },
+      "_stats": {
+        "systemId": "dnd5e",
+        "systemVersion": "3.1.2",
+        "coreVersion": "11.315",
+        "createdTime": 1661787233572,
+        "modifiedTime": 1726254971191,
+        "lastModifiedBy": "6yhz13iFYYklKtgA"
+      }
     }
   ],
-  "journal": [],
+  "journal": [
+    {
+      "folder": "Wv4mkgp6cwwAVV58",
+      "name": "The Tome of Strahd",
+      "_id": "ncpgsua45Lxsr4EC",
+      "pages": [
+        {
+          "sort": 200000,
+          "name": "Translated Text",
+          "type": "text",
+          "_id": "a4pXO1SHk2AJ5d4S",
+          "title": {
+            "show": true,
+            "level": 1
+          },
+          "image": {},
+          "text": {
+            "format": 1,
+            "content": "<p>I am the Ancient. I am the Land. My beginnings are lost in the darkness of the past. I was the warrior, I was good and just. I thundered across the land like the wrath of a just god, but the war years and the killing years wore down my soul as the wind wears stone into sand.</p><p>All goodness slipped from my life. I found my youth and strength gone, and all I had left was death. My army settled in the valley of Barovia and took power over the people in the name of a just god, but with none of a god’s grace or justice.</p><p>I called for my family, long unseated from their ancient thrones, and brought them here to settle in the castle Ravenloft. They came with a younger brother of mine, Sergei. He was handsome and youthful. I hated him for both.</p><p>From the families of the valley, one spirit shone above all others. A rare beauty, who was called “perfection,” “joy,” and “treasure.” Her name was Tatyana, and I longed for her to be mine.</p><p>I loved her with all my heart. I loved her for her youth. I loved her for her joy. But she spurned me! “Old One” was my name to her—“elder” and “brother” also. Her heart went to Sergei. They were betrothed. The date was set.</p><p>With words she called me “brother,” but when I looked into her eyes they reflected another name: “death.” It was the death of the aged that she saw in me. She loved her youth and enjoyed it. But I had squandered mine. The death she saw in me turned her from me. And so I came to hate death—my death. My hate is very strong. I would not be called “death” so soon. I made a pact with death, a pact of blood. On the day of the wedding, I killed Sergei, my brother. My pact was sealed with his blood.</p><p>I found Tatyana weeping in the garden east of the chapel. She fled from me. She would not let me explain, and a great anger swelled within me. She had to understand the pact I made for her. I pursued her. Finally, in despair, she flung herself from the walls of Ravenloft, and I watched everything I ever wanted fall from my grasp forever.</p><p>It was a thousand feet through the mists. No trace of her was ever found. Not even I know her final fate. Arrows from the castle guards pierced me to my soul, but I did not die. Nor did I live. I became undead, forever.</p><p>I have studied much since then. “Vampyr” is my new name. I still lust for life and youth, and I curse the living that took them from me. Even the sun is against me. It is the sun and its light I fear the most, but little else can harm me now. Even a stake through my heart does not kill me, though it holds me from movement. But the sword, that cursed sword that Sergei brought! I must dispose of that awful tool! I fear and hate it as much as the sun.</p><p>I have often hunted for Tatyana. I have even felt her within my grasp, but she escapes. She taunts me! She taunts me! What will it take to bend her love to me? I now reside far below Ravenloft. I live among the dead and sleep beneath the very stones of this hollow castle of despair. I shall seal shut the walls of the stairs that none may disturb me.</p>"
+          },
+          "video": {
+            "controls": true,
+            "volume": 0.5
+          },
+          "src": null,
+          "system": {},
+          "ownership": {
+            "default": -1,
+            "6yhz13iFYYklKtgA": 3
+          },
+          "flags": {},
+          "_stats": {
+            "systemId": "dnd5e",
+            "systemVersion": "3.1.2",
+            "coreVersion": "11.315",
+            "createdTime": 1725403659809,
+            "modifiedTime": 1725403703632,
+            "lastModifiedBy": "6yhz13iFYYklKtgA"
+          }
+        },
+        {
+          "sort": 100000,
+          "name": "Decipherable Page 1",
+          "type": "image",
+          "_id": "PO856AjVITRNd9od",
+          "title": {
+            "show": true,
+            "level": 1
+          },
+          "image": {
+            "caption": ""
+          },
+          "text": {
+            "format": 1
+          },
+          "video": {
+            "controls": true,
+            "volume": 0.5
+          },
+          "src": "modules/sdnd-strahd-adv/images/tome_of_strahd_page1.webp",
+          "system": {},
+          "ownership": {
+            "default": -1,
+            "6yhz13iFYYklKtgA": 3
+          },
+          "flags": {},
+          "_stats": {
+            "systemId": "dnd5e",
+            "systemVersion": "3.1.2",
+            "coreVersion": "11.315",
+            "createdTime": 1725403724352,
+            "modifiedTime": 1725403749760,
+            "lastModifiedBy": "6yhz13iFYYklKtgA"
+          }
+        },
+        {
+          "sort": 150000,
+          "name": "Decipherable Page 2",
+          "type": "image",
+          "_id": "fQHaoEuEXj7fXfWz",
+          "title": {
+            "show": true,
+            "level": 1
+          },
+          "image": {
+            "caption": ""
+          },
+          "text": {
+            "format": 1
+          },
+          "video": {
+            "controls": true,
+            "volume": 0.5
+          },
+          "src": "modules/sdnd-strahd-adv/images/tome_of_strahd_page2.webp",
+          "system": {},
+          "ownership": {
+            "default": -1,
+            "6yhz13iFYYklKtgA": 3
+          },
+          "flags": {},
+          "_stats": {
+            "systemId": "dnd5e",
+            "systemVersion": "3.1.2",
+            "coreVersion": "11.315",
+            "createdTime": 1725403774322,
+            "modifiedTime": 1725403787807,
+            "lastModifiedBy": "6yhz13iFYYklKtgA"
+          }
+        }
+      ],
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "6yhz13iFYYklKtgA": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "dnd5e",
+        "systemVersion": "3.1.2",
+        "coreVersion": "11.315",
+        "createdTime": 1725403472957,
+        "modifiedTime": 1725403856622,
+        "lastModifiedBy": "6yhz13iFYYklKtgA"
+      }
+    }
+  ],
   "scenes": [],
   "tables": [],
   "macros": [],
@@ -4791,6 +5143,60 @@
         "modifiedTime": 1723159476429,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       }
+    },
+    {
+      "name": "Handouts",
+      "sorting": "a",
+      "folder": "T633A3ZOM9ehiWR0",
+      "type": "JournalEntry",
+      "_id": "Wv4mkgp6cwwAVV58",
+      "sort": 0,
+      "color": null,
+      "flags": {},
+      "_stats": {
+        "systemId": "dnd5e",
+        "systemVersion": "3.1.2",
+        "coreVersion": "11.315",
+        "createdTime": 1725403459335,
+        "modifiedTime": 1725403459335,
+        "lastModifiedBy": "6yhz13iFYYklKtgA"
+      }
+    },
+    {
+      "name": "SDND - Curse of Strahd",
+      "sorting": "a",
+      "folder": null,
+      "type": "JournalEntry",
+      "_id": "T633A3ZOM9ehiWR0",
+      "sort": 0,
+      "color": "#ff0000",
+      "flags": {},
+      "_stats": {
+        "systemId": "dnd5e",
+        "systemVersion": "2.4.1",
+        "coreVersion": "11.315",
+        "createdTime": 1705027168419,
+        "modifiedTime": 1705027175907,
+        "lastModifiedBy": "6yhz13iFYYklKtgA"
+      }
+    },
+    {
+      "name": "Ireena's Sword",
+      "sorting": "a",
+      "folder": "0zm0KDOj9ZZntNdU",
+      "type": "Item",
+      "_id": "JcxQPdIhsuShmFJx",
+      "sort": 0,
+      "color": null,
+      "flags": {},
+      "_stats": {
+        "systemId": "dnd5e",
+        "systemVersion": "3.1.2",
+        "coreVersion": "11.315",
+        "createdTime": 1726248277479,
+        "modifiedTime": 1726248277479,
+        "lastModifiedBy": "6yhz13iFYYklKtgA"
+      }
     }
   ],
   "_id": "pDoFcLxiwLPYjAAB",
@@ -4801,7 +5207,7 @@
     "systemVersion": "3.1.2",
     "coreVersion": "11.315",
     "createdTime": 1704928346823,
-    "modifiedTime": 1724272856441,
+    "modifiedTime": 1726255121708,
     "lastModifiedBy": "6yhz13iFYYklKtgA"
   },
   "_key": "!adventures!pDoFcLxiwLPYjAAB"
