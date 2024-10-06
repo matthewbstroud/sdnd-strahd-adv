@@ -1,3 +1,12 @@
+# v12.0.0
+# New Features
+- Support Foundry V12
+- Support DND5e 3.3.1
+# v11.2.9
+# New Features
+- Scenes
+  - Populated Lake Zoravich
+- Add Vehicles
 # v11.2.8
 # New Features
 - Sun Sword: Coded undead damage
