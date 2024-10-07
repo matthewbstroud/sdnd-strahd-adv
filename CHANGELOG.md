@@ -1,3 +1,6 @@
+# v12.0.2
+# Bug Fixes
+- Missing thumbnails.
 # v12.0.1
 # New Features
 - New Maps
