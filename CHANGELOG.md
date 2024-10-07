@@ -1,7 +1,12 @@
+# v12.0.1
+# New Features
+- New Maps
+  - West Gates of Barovia
+  - Road Battle Maps
 # v12.0.0
 # New Features
 - Support Foundry V12
-- Support DND5e 3.3.1
+- Support DND5e 3.2.1
 # v11.2.9
 # New Features
 - Scenes
