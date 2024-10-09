@@ -1,6 +1,6 @@
 
 export let tokens = {
-    "morph": morph
+    "morph": foundry.utils.debounce(morph, 250)
 }
 const defaultTokenSettings = {
     "texture": {

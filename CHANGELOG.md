@@ -1,3 +1,9 @@
+# v12.0.4
+# New Features
+- Old Bonegrinder
+- Megaliths
+# Bug Fixes
+- Auto triggering fog.
 # v12.0.3
 # Bug Fixes
 - Missing thumbnails.
