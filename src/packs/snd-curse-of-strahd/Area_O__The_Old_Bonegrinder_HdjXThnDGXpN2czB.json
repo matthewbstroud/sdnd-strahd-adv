@@ -14614,9 +14614,6 @@
           "rollAttackPerTarget": "default",
           "itemCondition": "",
           "effectCondition": ""
-        },
-        "core": {
-          "sourceId": "Item.iQiM7FBq2ddMm2Nk"
         }
       },
       "_stats": {
@@ -14753,9 +14750,6 @@
           "rollAttackPerTarget": "default",
           "itemCondition": "",
           "effectCondition": ""
-        },
-        "core": {
-          "sourceId": "Item.1j2HCShSSbu9MkpC"
         }
       },
       "_stats": {
@@ -14893,9 +14887,6 @@
           "rollAttackPerTarget": "default",
           "itemCondition": "",
           "effectCondition": ""
-        },
-        "core": {
-          "sourceId": "Item.D3DKyGjV5BHCzenQ"
         }
       },
       "_stats": {
@@ -15109,11 +15100,7 @@
             "default": -1,
             "6yhz13iFYYklKtgA": 3
           },
-          "flags": {
-            "core": {
-              "sourceId": "JournalEntry.Ma0fbnJmdgbd41de.JournalEntryPage.LqNxZH7Mrui28TVg"
-            }
-          },
+          "flags": {},
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "2.4.1",
@@ -15135,7 +15122,7 @@
         "systemVersion": "3.2.1",
         "coreVersion": "11.315",
         "createdTime": 1705182674982,
-        "modifiedTime": 1728432769240,
+        "modifiedTime": 1728487779855,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       }
     }
@@ -17598,7 +17585,7 @@
         "systemVersion": "3.2.1",
         "coreVersion": "11.315",
         "createdTime": 1705183178309,
-        "modifiedTime": 1728491694851,
+        "modifiedTime": 1728492175862,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       }
     },
@@ -19245,7 +19232,7 @@
         "systemVersion": "3.2.1",
         "coreVersion": "11.315",
         "createdTime": 1705183209511,
-        "modifiedTime": 1728488858124,
+        "modifiedTime": 1728492238371,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       }
     },
@@ -21269,7 +21256,7 @@
                 "closeSound": "sounds/doors/wood/close.ogg",
                 "openSound": "sounds/doors/wood/open.ogg"
               },
-              "version": "2.6.16"
+              "version": "2.8.2"
             },
             "token-z": {
               "zIndex": 0
@@ -21795,7 +21782,7 @@
         "systemVersion": "3.2.1",
         "coreVersion": "11.315",
         "createdTime": 1705183241920,
-        "modifiedTime": 1728488893876,
+        "modifiedTime": 1728492790266,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       }
     },
@@ -22121,7 +22108,7 @@
           "width": 300,
           "height": 300,
           "rotation": 0,
-          "alpha": 1,
+          "alpha": 0.8,
           "overhead": false,
           "roof": false,
           "occlusion": {
@@ -22136,7 +22123,7 @@
               "occlusionLinkSource": false
             },
             "monks-active-tiles": {
-              "active": true,
+              "active": false,
               "record": false,
               "restriction": "all",
               "controlled": "all",
@@ -22145,9 +22132,9 @@
                 "dblclick"
               ],
               "allowpaused": false,
-              "usealpha": false,
+              "usealpha": true,
               "pointer": false,
-              "vision": true,
+              "vision": false,
               "pertoken": false,
               "minrequired": 0,
               "cooldown": null,
@@ -22177,6 +22164,9 @@
                 }
               ],
               "files": []
+            },
+            "stroud-dnd-helpers": {
+              "tagName": "hidden_passage"
             }
           },
           "video": {
@@ -22186,7 +22176,7 @@
           },
           "_id": "ID8Ln6qlmfwuL1kE",
           "hidden": true,
-          "locked": false
+          "locked": true
         },
         {
           "texture": {
@@ -22228,9 +22218,9 @@
                 "dblclick"
               ],
               "allowpaused": false,
-              "usealpha": false,
+              "usealpha": true,
               "pointer": false,
-              "vision": true,
+              "vision": false,
               "pertoken": false,
               "minrequired": 0,
               "cooldown": null,
@@ -22270,6 +22260,92 @@
           "_id": "asG6UkCXN58ATEtv",
           "hidden": false,
           "locked": false
+        },
+        {
+          "x": 2650,
+          "y": 1350,
+          "width": 100,
+          "height": 100,
+          "flags": {
+            "monks-active-tiles": {
+              "active": true,
+              "restriction": "all",
+              "controlled": "gm",
+              "trigger": [
+                "",
+                "dblclick"
+              ],
+              "pertoken": false,
+              "minrequired": 0,
+              "chance": 100,
+              "actions": [
+                {
+                  "action": "runmacro",
+                  "data": {
+                    "entity": {
+                      "id": "Compendium.stroud-dnd-helpers.SDND-GM-Macros.Macro.jcgmwmSdFQVRSm35"
+                    },
+                    "args": "hidden_passage",
+                    "runasgm": "gm"
+                  },
+                  "id": "OseqrAR1v0PJKUIm"
+                },
+                {
+                  "action": "showhide",
+                  "data": {
+                    "entity": {
+                      "id": "Scene.bMiXgHepSpV3ckbe.Tile.ID8Ln6qlmfwuL1kE",
+                      "name": "Tile: ID8Ln6qlmfwuL1kE"
+                    },
+                    "collection": "tokens",
+                    "hidden": "toggle",
+                    "fade": 3
+                  },
+                  "id": "cUmMwwXjcp7AgY1N"
+                }
+              ],
+              "record": false,
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": false,
+              "cooldown": null,
+              "fileindex": 0,
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/icons/power.webp",
+            "scaleX": 1,
+            "scaleY": 1,
+            "offsetX": 0,
+            "offsetY": 0,
+            "rotation": 0,
+            "tint": null
+          },
+          "_id": "VgTnkrFYtPtTg3J9",
+          "z": 100,
+          "rotation": 0,
+          "alpha": 1,
+          "hidden": true,
+          "locked": true,
+          "overhead": false,
+          "roof": false,
+          "occlusion": {
+            "mode": 1,
+            "alpha": 0,
+            "radius": null
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          }
         }
       ],
       "walls": [
@@ -23595,17 +23671,14 @@
         "6yhz13iFYYklKtgA": 3
       },
       "flags": {
-        "token-attacher": {},
-        "core": {
-          "sourceId": "Scene.bMiXgHepSpV3ckbe"
-        }
+        "token-attacher": {}
       },
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
         "coreVersion": "11.315",
         "createdTime": 1728489970415,
-        "modifiedTime": 1728491455883,
+        "modifiedTime": 1728493956796,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       },
       "foreground": null,
@@ -23652,11 +23725,7 @@
           "playing": false,
           "pausedTime": null,
           "sort": 0,
-          "flags": {
-            "core": {
-              "sourceId": "Playlist.741Yu5p9bqZndx8Z.PlaylistSound.DcZXwtmXPV0Nr34i"
-            }
-          }
+          "flags": {}
         }
       ],
       "mode": -1,
@@ -23672,7 +23741,7 @@
       "flags": {},
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "3.1.2",
+        "systemVersion": "3.2.1",
         "coreVersion": "11.315",
         "createdTime": 1722908652259,
         "modifiedTime": 1728487787448,
@@ -23782,11 +23851,7 @@
       "_id": "YSpvX5fI5H7Vrfog",
       "sort": 0,
       "color": null,
-      "flags": {
-        "core": {
-          "sourceId": "Folder.YSpvX5fI5H7Vrfog"
-        }
-      },
+      "flags": {},
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
@@ -23841,11 +23906,7 @@
       "description": "",
       "sort": 500000,
       "color": "#ff0000",
-      "flags": {
-        "core": {
-          "sourceId": "Folder.SgCwMBKLb1IzBVaz"
-        }
-      },
+      "flags": {},
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
@@ -23864,11 +23925,7 @@
       "_id": "D1FE3twuzlH3c5KN",
       "sort": 0,
       "color": null,
-      "flags": {
-        "core": {
-          "sourceId": "Folder.D1FE3twuzlH3c5KN"
-        }
-      },
+      "flags": {},
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
@@ -23886,11 +23943,7 @@
       "_id": "gZguhvNmnRaqyDUk",
       "sort": 0,
       "color": null,
-      "flags": {
-        "core": {
-          "sourceId": "Folder.gZguhvNmnRaqyDUk"
-        }
-      },
+      "flags": {},
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
@@ -23926,11 +23979,7 @@
       "_id": "H1MlQClWslcI5U87",
       "sort": 400000,
       "color": "#ff0000",
-      "flags": {
-        "core": {
-          "sourceId": "Folder.H1MlQClWslcI5U87"
-        }
-      },
+      "flags": {},
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
@@ -23949,7 +23998,7 @@
     "systemVersion": "3.2.1",
     "coreVersion": "11.315",
     "createdTime": 1705183676397,
-    "modifiedTime": 1728492230009,
+    "modifiedTime": 1728494365055,
     "lastModifiedBy": "6yhz13iFYYklKtgA"
   },
   "_key": "!adventures!HdjXThnDGXpN2czB"

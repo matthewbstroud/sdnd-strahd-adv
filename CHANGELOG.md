@@ -1,3 +1,7 @@
+* # v12.0.5
+# Bug Fixes
+- Missing thumbnails.
+- Megalith glitches.
 # v12.0.4
 # New Features
 - Old Bonegrinder
