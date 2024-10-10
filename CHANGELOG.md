@@ -1,4 +1,7 @@
-* # v12.0.5
+# v12.0.6
+# New Features
+- Town of Vallaki
+# v12.0.5
 # Bug Fixes
 - Missing thumbnails.
 - Megalith glitches.
