@@ -1,33 +1,153 @@
 {
-  "_id": "GcZwDbn2Wqcnfq6h",
-  "name": "Emil Toranesc",
+  "name": "Werewolf (Human Form)",
   "type": "npc",
-  "img": "modules/sdnd-strahd-adv/images/tokens/NPC/Emil_CA.webp",
+  "img": "modules/sdnd-strahd-adv/images/tokens/NPC/Werewolf_CA.webp",
   "items": [
     {
-      "name": "Multiattack (Humanoid or Hybrid Form Only)",
-      "type": "feat",
-      "flags": {
-        "ddbimporter": {
-          "dndbeyond": {}
-        },
-        "monsterMunch": {
-          "titleHTML": "<strong>Multiattack. (Humanoid or Hybrid Form Only).</strong>",
-          "fullName": "Multiattack. (Humanoid or Hybrid Form Only)."
-        }
-      },
-      "img": "icons/skills/melee/strike-weapons-orange.webp",
-      "_id": "gnc5jhk1syu7hwsd",
+      "_id": "tWfR8uJNnQxpXgDw",
+      "name": "Bite (Wolf or Hybrid Form Only)",
+      "type": "weapon",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
       "effects": [],
       "folder": null,
-      "sort": 0,
+      "sort": 100000,
+      "flags": {},
       "system": {
         "description": {
-          "value": "<p><em><strong></strong></em> The werewolf makes two attacks: two with its spear (humanoid form) or one with its bite and one with its claws (hybrid form).</p>",
+          "value": "<section class=\"secret\"><p><em>Melee Weapon Attack:</em><strong>+4 to hit,</strong>, <strong>5 ft.,</strong> one target. Hit: <strong>6 (1d8 + 2) <em>piercing damage</em></strong>. </p><p>If the target is a humanoid, it must succeed on a  <strong>DC 12 Constitution</strong> saving throw or be cursed with werewolf lycanthropy.</p></section><p>The Werewolf attacks with its Bite. If the target is a humanoid, it must make a <strong>Constitution</strong> saving throw.</p>",
           "chat": ""
         },
         "source": {
-          "custom": "Basic Rules pg 158"
+          "custom": ""
+        },
+        "quantity": 1,
+        "weight": {
+          "value": 0,
+          "units": "lb"
+        },
+        "price": {
+          "value": 0,
+          "denomination": "gp"
+        },
+        "attunement": "",
+        "equipped": true,
+        "rarity": "",
+        "identified": true,
+        "activation": {
+          "type": "action",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": "",
+          "units": ""
+        },
+        "cover": null,
+        "crewed": false,
+        "target": {
+          "value": "",
+          "width": null,
+          "units": "",
+          "type": "",
+          "prompt": true
+        },
+        "range": {
+          "value": 5,
+          "long": null,
+          "units": "ft"
+        },
+        "uses": {
+          "value": 0,
+          "max": "",
+          "per": null,
+          "recovery": "",
+          "prompt": true
+        },
+        "consume": {
+          "type": "",
+          "target": "",
+          "amount": null,
+          "scale": false
+        },
+        "ability": "str",
+        "actionType": "mwak",
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [
+            [
+              "1d8 + @mod",
+              "piercing"
+            ]
+          ],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "con",
+          "dc": null,
+          "scaling": "flat"
+        },
+        "armor": {
+          "value": 10
+        },
+        "hp": {
+          "value": 0,
+          "max": 0,
+          "dt": null,
+          "conditions": ""
+        },
+        "properties": [],
+        "proficient": 1,
+        "attuned": false,
+        "unidentified": {
+          "description": ""
+        },
+        "type": {
+          "value": "natural",
+          "baseItem": ""
+        },
+        "attack": {
+          "bonus": "",
+          "flat": false
+        },
+        "container": null,
+        "enchantment": null,
+        "summons": null,
+        "magicalBonus": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!H6Wpckpb7wPmdN4i.tWfR8uJNnQxpXgDw"
+    },
+    {
+      "_id": "abhGXKzA0XGprXED",
+      "name": "Multiattack (Humanoid or Hybrid Form Only)",
+      "type": "feat",
+      "img": "icons/skills/melee/blade-tips-triple-steel.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 200000,
+      "flags": {},
+      "system": {
+        "description": {
+          "value": "<p>The werewolf makes two attacks: one with its bite and one with its claws or spear.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": ""
         },
         "activation": {
           "type": "action",
@@ -36,7 +156,7 @@
         },
         "duration": {
           "value": "",
-          "units": "inst"
+          "units": ""
         },
         "cover": null,
         "crewed": false,
@@ -61,12 +181,12 @@
         },
         "consume": {
           "type": "",
-          "target": null,
+          "target": "",
           "amount": null,
           "scale": false
         },
         "ability": null,
-        "actionType": null,
+        "actionType": "",
         "chatFlavor": "",
         "critical": {
           "threshold": null,
@@ -80,7 +200,7 @@
         "save": {
           "ability": "",
           "dc": null,
-          "scaling": "flat"
+          "scaling": "spell"
         },
         "type": {
           "value": "",
@@ -91,7 +211,6 @@
           "value": null,
           "charged": false
         },
-        "properties": [],
         "attack": {
           "bonus": "",
           "flat": false
@@ -100,7 +219,8 @@
         "summons": null,
         "prerequisites": {
           "level": null
-        }
+        },
+        "properties": []
       },
       "ownership": {
         "default": 0
@@ -113,323 +233,37 @@
         "modifiedTime": null,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!GcZwDbn2Wqcnfq6h.gnc5jhk1syu7hwsd"
+      "_key": "!actors.items!H6Wpckpb7wPmdN4i.abhGXKzA0XGprXED"
     },
     {
-      "name": "Bite (Wolf or Hybrid Form Only)",
-      "type": "weapon",
-      "flags": {
-        "ddbimporter": {
-          "dndbeyond": {}
-        },
-        "monsterMunch": {
-          "titleHTML": "<strong>Bite (Wolf or Hybrid Form Only).</strong>",
-          "fullName": "Bite (Wolf or Hybrid Form Only)."
-        }
-      },
-      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
-      "_id": "lmiejjqzbmfewswt",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "system": {
-        "description": {
-          "value": "<p><em><strong></strong> Melee Weapon Attack:</em> +4 to hit, reach 5 ft., one target. <em>Hit:</em> 6 (1d8 + 2) piercing damage. If the target is a humanoid, it must succeed on a DC 12 Constitution saving throw or be cursed with werewolf lycanthropy.</p>",
-          "chat": ""
-        },
-        "source": {
-          "custom": "Basic Rules pg 158"
-        },
-        "quantity": 1,
-        "weight": {
-          "value": 0,
-          "units": "lb"
-        },
-        "price": {
-          "value": 0,
-          "denomination": "gp"
-        },
-        "attunement": "",
-        "equipped": true,
-        "rarity": "",
-        "identified": true,
-        "activation": {
-          "type": "action",
-          "cost": 1,
-          "condition": ""
-        },
-        "duration": {
-          "value": "",
-          "units": "inst"
-        },
-        "cover": null,
-        "crewed": false,
-        "target": {
-          "value": "",
-          "width": null,
-          "units": "",
-          "type": "",
-          "prompt": true
-        },
-        "range": {
-          "value": 5,
-          "long": null,
-          "units": "ft"
-        },
-        "uses": {
-          "value": 0,
-          "max": "",
-          "per": null,
-          "recovery": "",
-          "prompt": true
-        },
-        "consume": {
-          "type": "",
-          "target": null,
-          "amount": null,
-          "scale": false
-        },
-        "ability": "str",
-        "actionType": "mwak",
-        "chatFlavor": "",
-        "critical": {
-          "threshold": null,
-          "damage": ""
-        },
-        "damage": {
-          "parts": [
-            [
-              "1d8[piercing] + @mod",
-              "piercing"
-            ]
-          ],
-          "versatile": ""
-        },
-        "formula": "",
-        "save": {
-          "ability": "con",
-          "dc": 12,
-          "scaling": "flat"
-        },
-        "armor": {
-          "value": 10
-        },
-        "hp": {
-          "value": 0,
-          "max": 0,
-          "dt": null,
-          "conditions": ""
-        },
-        "properties": [
-          "rch"
-        ],
-        "proficient": 1,
-        "unidentified": {
-          "description": ""
-        },
-        "type": {
-          "value": "natural",
-          "baseItem": ""
-        },
-        "attack": {
-          "bonus": "",
-          "flat": false
-        },
-        "container": null,
-        "attuned": false,
-        "enchantment": null,
-        "summons": null,
-        "magicalBonus": null
-      },
-      "ownership": {
-        "default": 0
-      },
-      "_stats": {
-        "systemId": null,
-        "systemVersion": null,
-        "coreVersion": null,
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!GcZwDbn2Wqcnfq6h.lmiejjqzbmfewswt"
-    },
-    {
-      "name": "Claws (Hybrid Form Only)",
-      "type": "weapon",
-      "flags": {
-        "ddbimporter": {
-          "dndbeyond": {}
-        },
-        "monsterMunch": {
-          "titleHTML": "<strong>Claws. (Hybrid Form Only).</strong>",
-          "fullName": "Claws. (Hybrid Form Only)."
-        }
-      },
-      "img": "icons/commodities/claws/talon-red.webp",
-      "_id": "s90vuyh3211gfw6q",
-      "effects": [],
-      "folder": null,
-      "sort": 0,
-      "system": {
-        "description": {
-          "value": "<p><em><strong></strong> Melee Weapon Attack:</em> +4 to hit, reach 5 ft., one creature. <em>Hit:</em> 7 (2d4 + 2) slashing damage.</p>",
-          "chat": ""
-        },
-        "source": {
-          "custom": "Basic Rules pg 158"
-        },
-        "quantity": 1,
-        "weight": {
-          "value": 0,
-          "units": "lb"
-        },
-        "price": {
-          "value": 0,
-          "denomination": "gp"
-        },
-        "attunement": "",
-        "equipped": true,
-        "rarity": "",
-        "identified": true,
-        "activation": {
-          "type": "action",
-          "cost": 1,
-          "condition": ""
-        },
-        "duration": {
-          "value": "",
-          "units": "inst"
-        },
-        "cover": null,
-        "crewed": false,
-        "target": {
-          "value": "",
-          "width": null,
-          "units": "",
-          "type": "",
-          "prompt": true
-        },
-        "range": {
-          "value": 5,
-          "long": null,
-          "units": "ft"
-        },
-        "uses": {
-          "value": 0,
-          "max": "",
-          "per": null,
-          "recovery": "",
-          "prompt": true
-        },
-        "consume": {
-          "type": "",
-          "target": null,
-          "amount": null,
-          "scale": false
-        },
-        "ability": "str",
-        "actionType": "mwak",
-        "chatFlavor": "",
-        "critical": {
-          "threshold": null,
-          "damage": ""
-        },
-        "damage": {
-          "parts": [
-            [
-              "2d4[slashing] + @mod",
-              "slashing"
-            ]
-          ],
-          "versatile": ""
-        },
-        "formula": "",
-        "save": {
-          "ability": "",
-          "dc": null,
-          "scaling": "flat"
-        },
-        "armor": {
-          "value": 10
-        },
-        "hp": {
-          "value": 0,
-          "max": 0,
-          "dt": null,
-          "conditions": ""
-        },
-        "properties": [
-          "rch"
-        ],
-        "proficient": 1,
-        "unidentified": {
-          "description": ""
-        },
-        "type": {
-          "value": "natural",
-          "baseItem": ""
-        },
-        "attack": {
-          "bonus": "",
-          "flat": false
-        },
-        "container": null,
-        "attuned": false,
-        "enchantment": null,
-        "summons": null,
-        "magicalBonus": null
-      },
-      "ownership": {
-        "default": 0
-      },
-      "_stats": {
-        "systemId": null,
-        "systemVersion": null,
-        "coreVersion": null,
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null
-      },
-      "_key": "!actors.items!GcZwDbn2Wqcnfq6h.s90vuyh3211gfw6q"
-    },
-    {
+      "_id": "TiKtAuqd6urQ45Ds",
       "name": "Spear (Humanoid Form Only)",
       "type": "weapon",
-      "flags": {
-        "ddbimporter": {
-          "dndbeyond": {}
-        },
-        "monsterMunch": {
-          "titleHTML": "<strong>Spear (Humanoid Form Only).</strong>",
-          "fullName": "Spear (Humanoid Form Only)."
-        }
-      },
-      "img": "icons/weapons/polearms/spear-flared-green.webp",
-      "_id": "5g684okknmu187ig",
+      "img": "icons/weapons/polearms/spear-flared-worn-grey.webp",
       "effects": [],
       "folder": null,
-      "sort": 0,
+      "sort": 2700000,
+      "flags": {},
       "system": {
         "description": {
-          "value": "<p><em><strong></strong> Melee or <em>Ranged Weapon Attack:</em></em> +4 to hit, reach 5 ft. or range 20/60 ft., one creature. <em>Hit:</em> 5 (1d6 + 2) piercing damage, or 6 (1d8 + 2) piercing damage if used with two hands to make a melee attack.</p>",
+          "value": "<section class=\"secret\">\n<p>Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one creature. Hit: <strong>5 (1d6 + 2) <em>piercing damage</em></strong>, or <strong>6 (1d8 + 2) <em>piercing damage</em></strong> if used with two hands to make a melee attack.</p>\n</section>\n<p>The Werewolf attacks with its Spear.</p>",
           "chat": ""
         },
         "source": {
-          "custom": "Basic Rules pg 158"
+          "custom": "PHB pg. 149"
         },
         "quantity": 1,
         "weight": {
-          "value": 0,
+          "value": 3,
           "units": "lb"
         },
         "price": {
-          "value": 0,
+          "value": 1,
           "denomination": "gp"
         },
         "attunement": "",
         "equipped": true,
-        "rarity": "",
+        "rarity": "common",
         "identified": true,
         "activation": {
           "type": "action",
@@ -438,7 +272,7 @@
         },
         "duration": {
           "value": "",
-          "units": "inst"
+          "units": ""
         },
         "cover": null,
         "crewed": false,
@@ -463,7 +297,7 @@
         },
         "consume": {
           "type": "",
-          "target": null,
+          "target": "",
           "amount": null,
           "scale": false
         },
@@ -477,17 +311,17 @@
         "damage": {
           "parts": [
             [
-              "1d6[piercing] + @mod",
+              "1d6 + @mod",
               "piercing"
             ]
           ],
-          "versatile": "1d8[piercing] + @mod"
+          "versatile": "1d8 + @mod"
         },
         "formula": "",
         "save": {
           "ability": "",
           "dc": null,
-          "scaling": "flat"
+          "scaling": "spell"
         },
         "armor": {
           "value": 10
@@ -499,11 +333,11 @@
           "conditions": ""
         },
         "properties": [
-          "rch",
           "thr",
           "ver"
         ],
         "proficient": 1,
+        "attuned": false,
         "unidentified": {
           "description": ""
         },
@@ -516,7 +350,6 @@
           "flat": false
         },
         "container": null,
-        "attuned": false,
         "enchantment": null,
         "summons": null,
         "magicalBonus": null
@@ -532,35 +365,156 @@
         "modifiedTime": null,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!GcZwDbn2Wqcnfq6h.5g684okknmu187ig"
+      "_key": "!actors.items!H6Wpckpb7wPmdN4i.TiKtAuqd6urQ45Ds"
     },
     {
-      "name": "Shapechanger",
-      "type": "feat",
-      "flags": {
-        "ddbimporter": {
-          "dndbeyond": {}
-        },
-        "monsterMunch": {
-          "titleHTML": "<em><strong>Shapechanger.</strong></em>",
-          "fullName": "Shapechanger."
-        }
-      },
-      "img": "icons/creatures/magical/humanoid-giant-forest-blue.webp",
-      "_id": "ogt6lwvk9cctatry",
+      "_id": "36H4LGNMMEYS1Irm",
+      "name": "Claws (Hybrid Form Only)",
+      "type": "weapon",
+      "img": "icons/skills/melee/strike-slashes-red.webp",
       "effects": [],
       "folder": null,
-      "sort": 0,
+      "sort": 2800000,
+      "flags": {},
       "system": {
         "description": {
-          "value": "<p><em><strong></strong></em> The werewolf can use its action to polymorph into a wolf-humanoid hybrid or into a wolf, or back into its true form, which is humanoid. Its statistics, other than its AC, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.</p>",
+          "value": "<section class=\"secret\"><p><em>Melee Weapon Attack:</em><strong>+4 to hit,</strong>, <strong>5 ft.,</strong> one creature. Hit: <strong>7 (2d4 + 2) <em>slashing damage</em></strong>.</p><p></p></section><p>The Werewolf attacks with its Claws.</p>",
           "chat": ""
         },
         "source": {
-          "custom": "Basic Rules pg 158"
+          "custom": ""
+        },
+        "quantity": 1,
+        "weight": {
+          "value": 0,
+          "units": "lb"
+        },
+        "price": {
+          "value": 0,
+          "denomination": "gp"
+        },
+        "attunement": "",
+        "equipped": true,
+        "rarity": "",
+        "identified": true,
+        "activation": {
+          "type": "action",
+          "cost": 1,
+          "condition": ""
+        },
+        "duration": {
+          "value": "",
+          "units": ""
+        },
+        "cover": null,
+        "crewed": false,
+        "target": {
+          "value": "",
+          "width": null,
+          "units": "",
+          "type": "",
+          "prompt": true
+        },
+        "range": {
+          "value": 5,
+          "long": null,
+          "units": "ft"
+        },
+        "uses": {
+          "value": 0,
+          "max": "",
+          "per": null,
+          "recovery": "",
+          "prompt": true
+        },
+        "consume": {
+          "type": "",
+          "target": "",
+          "amount": null,
+          "scale": false
+        },
+        "ability": "str",
+        "actionType": "mwak",
+        "chatFlavor": "",
+        "critical": {
+          "threshold": null,
+          "damage": ""
+        },
+        "damage": {
+          "parts": [
+            [
+              "2d4 + @mod",
+              "slashing"
+            ]
+          ],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "spell"
+        },
+        "armor": {
+          "value": 10
+        },
+        "hp": {
+          "value": 0,
+          "max": 0,
+          "dt": null,
+          "conditions": ""
+        },
+        "properties": [],
+        "proficient": 1,
+        "attuned": false,
+        "unidentified": {
+          "description": ""
+        },
+        "type": {
+          "value": "natural",
+          "baseItem": ""
+        },
+        "attack": {
+          "bonus": "",
+          "flat": false
+        },
+        "container": null,
+        "enchantment": null,
+        "summons": null,
+        "magicalBonus": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "systemId": null,
+        "systemVersion": null,
+        "coreVersion": null,
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!actors.items!H6Wpckpb7wPmdN4i.36H4LGNMMEYS1Irm"
+    },
+    {
+      "_id": "2kHNI1T4gg879fDv",
+      "name": "Shapechanger",
+      "type": "feat",
+      "img": "icons/magic/control/silhouette-hold-change-blue.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 2900000,
+      "flags": {},
+      "system": {
+        "description": {
+          "value": "<section class=\"secret\"><p>The werewolf can use its action to <strong>polymorph</strong> into a wolf-humanoid hybrid or into a wolf, or back into its true form, which is humanoid. </p><p>Its statistics, other than its AC, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies.</p></section><p>The werewolf can use its action to <strong>polymorph</strong>, or return to its true form.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": ""
         },
         "activation": {
-          "type": "special",
+          "type": "action",
           "cost": 1,
           "condition": ""
         },
@@ -591,12 +545,12 @@
         },
         "consume": {
           "type": "",
-          "target": null,
+          "target": "",
           "amount": null,
           "scale": false
         },
         "ability": null,
-        "actionType": null,
+        "actionType": "",
         "chatFlavor": "",
         "critical": {
           "threshold": null,
@@ -643,36 +597,28 @@
         "modifiedTime": null,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!GcZwDbn2Wqcnfq6h.ogt6lwvk9cctatry"
+      "_key": "!actors.items!H6Wpckpb7wPmdN4i.2kHNI1T4gg879fDv"
     },
     {
+      "_id": "9v8vBxcPazXyBUmo",
       "name": "Keen Hearing and Smell",
       "type": "feat",
-      "flags": {
-        "ddbimporter": {
-          "dndbeyond": {}
-        },
-        "monsterMunch": {
-          "titleHTML": "<em><strong>Keen Hearing and Smell.</strong></em>",
-          "fullName": "Keen Hearing and Smell."
-        }
-      },
-      "img": "icons/commodities/biological/ear-grey-brown.webp",
-      "_id": "u7w6xtv2i9g228mi",
+      "img": "icons/creatures/mammals/wolf-howl-moon-forest-blue.webp",
       "effects": [],
       "folder": null,
-      "sort": 0,
+      "sort": 3000000,
+      "flags": {},
       "system": {
         "description": {
-          "value": "<p><em><strong></strong></em> The werewolf has advantage on Wisdom (Perception) checks that rely on hearing or smell.</p>",
+          "value": "<p>The werewolf has<strong> advantage </strong>on Wisdom (Perception) checks that rely on hearing or smell.</p>",
           "chat": ""
         },
         "source": {
-          "custom": "Basic Rules pg 158"
+          "custom": ""
         },
         "activation": {
           "type": "",
-          "cost": 0,
+          "cost": null,
           "condition": ""
         },
         "duration": {
@@ -707,7 +653,7 @@
           "scale": false
         },
         "ability": null,
-        "actionType": null,
+        "actionType": "",
         "chatFlavor": "",
         "critical": {
           "threshold": null,
@@ -754,45 +700,14 @@
         "modifiedTime": null,
         "lastModifiedBy": null
       },
-      "_key": "!actors.items!GcZwDbn2Wqcnfq6h.u7w6xtv2i9g228mi"
+      "_key": "!actors.items!H6Wpckpb7wPmdN4i.9v8vBxcPazXyBUmo"
     }
   ],
   "effects": [],
-  "folder": "WMigv1QdgygnyOXi",
-  "sort": 1000000,
+  "folder": "JvBq76KcnxIjY4N7",
   "flags": {
-    "dnd5e": {},
-    "monsterMunch": {
-      "url": "https://www.dndbeyond.com/monsters/17057-werewolf",
-      "img": "https://www.dndbeyond.com/avatars/30832/419/638063837752602245.png",
-      "tokenImg": "https://www.dndbeyond.com/avatars/0/72/636252734043190643.jpeg",
-      "spellList": {
-        "class": [],
-        "pact": [],
-        "atwill": [],
-        "innate": [],
-        "edgeCases": [],
-        "material": true
-      }
-    },
-    "ddbimporter": {
-      "id": 17057,
-      "entityTypeId": 779871897,
-      "creatureGroupId": null,
-      "creatureFlags": [],
-      "version": "2.9.67",
-      "isLegacy": false,
-      "flatAC": true
-    },
-    "core": {
-      "sourceId": "Compendium.world.ddb-lost-mines-phandelver-monsters.DW46P0O5MC6YmwC3"
-    },
-    "combat-utility-belt": {
-      "enableHideName": true,
-      "hideNameReplacement": "Unknown Human"
-    },
+    "core": {},
     "midi-qol": {
-      "onUseMacroName": "[postActiveEffects]",
       "concentration-damage": 0
     },
     "tidy5e-sheet": {
@@ -823,9 +738,10 @@
     },
     "stroud-dnd-helpers": {
       "morphData": {
-        "actorUuid": "Compendium.sdnd-strahd-adv.sdnd-cos-actors.Actor.GcZwDbn2Wqcnfq6h",
+        "actorUuid": "Compendium.sdnd-strahd-adv.sdnd-cos-actors.Actor.H6Wpckpb7wPmdN4i",
         "altActorUuid": "Compendium.sdnd-strahd-adv.sdnd-cos-actors.Actor.6ZRU3UBTBKaRFpEl",
-        "current": "Compendium.sdnd-strahd-adv.sdnd-cos-actors.Actor.GcZwDbn2Wqcnfq6h"
+        "preservedProperties": [],
+        "current": "Compendium.sdnd-strahd-adv.sdnd-cos-actors.Actor.H6Wpckpb7wPmdN4i"
       }
     }
   },
@@ -889,7 +805,7 @@
     "attributes": {
       "ac": {
         "flat": 11,
-        "calc": "",
+        "calc": "natural",
         "formula": ""
       },
       "hp": {
@@ -913,7 +829,7 @@
         "climb": null,
         "fly": null,
         "swim": null,
-        "walk": 30,
+        "walk": 40,
         "units": "ft",
         "hover": false
       },
@@ -958,32 +874,32 @@
     },
     "details": {
       "biography": {
-        "value": "<p>A werewolf is a savage predator that can appear as a humanoid, as a wolf, or in a terrifying hybrid form—a furred and well-muscled humanoid body topped by a ravening wolf’s head.</p>",
+        "value": "<p><em>Token artwork by Forgotten Adventures.</em></p>\n<p><em><img src=\"modules/sdnd-strahd-adv/images/tokens/NPC/Werewolf_Avatar.webp\" width=\"500\" height=\"403\" /></em></p>",
         "public": ""
       },
       "alignment": "Chaotic Evil",
       "race": null,
       "type": {
         "value": "humanoid",
-        "subtype": "shapechanger, human",
+        "subtype": "Human, Shapechanger",
         "swarm": "",
         "custom": ""
       },
-      "environment": "Forest, Hill",
+      "environment": "Forest",
       "cr": 3,
       "spellLevel": 0,
       "source": {
-        "custom": "Basic Rules pg 158"
+        "custom": "MM pg. 211"
       }
     },
     "traits": {
       "size": "med",
       "di": {
         "value": [
-          "silver"
+          "custom"
         ],
         "bypasses": [],
-        "custom": ""
+        "custom": "bludgeoning, piercing, and slashing from nonmagical attacks not made with silvered weapons"
       },
       "dr": {
         "value": [],
@@ -1000,8 +916,11 @@
         "custom": ""
       },
       "languages": {
-        "value": [],
-        "custom": "Common (can't speak in wolf form)"
+        "value": [
+          "common",
+          "custom"
+        ],
+        "custom": "(can't speak in wolf form)"
       },
       "dm": {
         "amount": {},
@@ -1292,6 +1211,10 @@
       "pact": {
         "value": 0,
         "override": null
+      },
+      "spell0": {
+        "value": 0,
+        "override": null
       }
     },
     "bonuses": {
@@ -1340,7 +1263,7 @@
     "6yhz13iFYYklKtgA": 3
   },
   "prototypeToken": {
-    "name": "Emil Toranesc",
+    "name": "Common Man",
     "displayName": 20,
     "actorLink": false,
     "width": 1,
@@ -1371,7 +1294,7 @@
       "color": null,
       "attenuation": 0.5
     },
-    "disposition": 0,
+    "disposition": -2,
     "displayBars": 40,
     "bar1": {
       "attribute": "attributes.hp"
@@ -1383,6 +1306,11 @@
       "autorotate": {
         "enabled": null,
         "offset": null
+      },
+      "LightsHUD": {
+        "lightspellstate": false,
+        "lanternconsumablestate": false,
+        "torchconsumablestate": false
       },
       "dnd5e-helpers": {
         "coverLevel": 1
@@ -1410,10 +1338,10 @@
     },
     "randomImg": false,
     "texture": {
-      "src": "modules/sdnd-strahd-adv/images/tokens/NPC/Emil_Token.webp",
+      "src": "modules/sdnd-strahd-adv/images/tokens/Mobs/werewolf_human_form_token.webp",
       "tint": null,
-      "scaleX": 1,
-      "scaleY": 1,
+      "scaleX": 1.1,
+      "scaleY": 1.1,
       "offsetX": 0,
       "offsetY": 0,
       "rotation": 0
@@ -1437,9 +1365,11 @@
     "systemId": "dnd5e",
     "systemVersion": "3.2.1",
     "coreVersion": "11.315",
-    "createdTime": 1728566223822,
-    "modifiedTime": 1728588606606,
+    "createdTime": 1728590001898,
+    "modifiedTime": 1728590750139,
     "lastModifiedBy": "6yhz13iFYYklKtgA"
   },
-  "_key": "!actors!GcZwDbn2Wqcnfq6h"
+  "_id": "H6Wpckpb7wPmdN4i",
+  "sort": 0,
+  "_key": "!actors!H6Wpckpb7wPmdN4i"
 }
