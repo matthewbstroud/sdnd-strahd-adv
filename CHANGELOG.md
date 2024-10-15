@@ -1,13 +1,4 @@
-# v12.0.14
-# Bug Fixes
-- Fix Module zip
-# v12.0.6
-# New Features
-- Town of Vallaki
-  - Stockyards
-  - Coffin Maker's Shop 
-  - Blue Water Inn
-# v12.0.5
+* # v12.0.5
 # Bug Fixes
 - Missing thumbnails.
 - Megalith glitches.
