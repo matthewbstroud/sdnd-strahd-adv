@@ -1,3 +1,6 @@
+# v12.0.13
+# Bug Fixes
+- Fix Module zip
 # v12.0.6
 # New Features
 - Town of Vallaki
