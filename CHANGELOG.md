@@ -1,3 +1,6 @@
+# v12.0.5
+# Bug Fixes
+- Trying to fix build
 # v12.0.6
 # New Features
 - Town of Vallaki
