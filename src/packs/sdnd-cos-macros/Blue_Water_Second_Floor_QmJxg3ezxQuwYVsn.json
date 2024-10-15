@@ -1,0 +1,25 @@
+{
+  "folder": "jiqRdEuKFTc9wBz2",
+  "name": "Blue Water Second Floor",
+  "type": "script",
+  "_id": "QmJxg3ezxQuwYVsn",
+  "author": "6yhz13iFYYklKtgA",
+  "img": "modules/stroud-dnd-helpers/images/icons/clock.webp",
+  "scope": "global",
+  "command": "let date = SimpleCalendar?.api?.timestampToDate(game.time.worldTime);\nconst hidden = !(date.hour >= 0 && date.hour < 12);\nawait stroudDnD.tagging.tokens.toggle(\"upstairs\", hidden);",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "6yhz13iFYYklKtgA": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.2.1",
+    "coreVersion": "11.315",
+    "createdTime": 1728959529994,
+    "modifiedTime": 1728960347869,
+    "lastModifiedBy": "6yhz13iFYYklKtgA"
+  },
+  "_key": "!macros!QmJxg3ezxQuwYVsn"
+}

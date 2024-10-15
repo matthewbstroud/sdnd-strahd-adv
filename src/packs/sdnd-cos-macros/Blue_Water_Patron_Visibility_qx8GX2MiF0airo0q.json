@@ -1,0 +1,25 @@
+{
+  "folder": "jiqRdEuKFTc9wBz2",
+  "name": "Blue Water Patron Visibility",
+  "type": "script",
+  "_id": "qx8GX2MiF0airo0q",
+  "author": "6yhz13iFYYklKtgA",
+  "img": "modules/stroud-dnd-helpers/images/icons/clock.webp",
+  "scope": "global",
+  "command": "let date = SimpleCalendar?.api?.timestampToDate(game.time.worldTime);\nif (date.hour >= 0 && date.hour < 12) {\n    await stroudDnD.tagging.tokens.toggle(\"staff\", true);\n    await stroudDnD.tagging.tokens.toggle(\"early\", true);\n    await stroudDnD.tagging.tokens.toggle(\"late\", true);\n} else if (date.hour >= 12 && date.hour < 19) {\n    await stroudDnD.tagging.tokens.toggle(\"staff\", false);\n    await stroudDnD.tagging.tokens.toggle(\"early\", false);\n    await stroudDnD.tagging.tokens.toggle(\"late\", true);\n}\nelse {\n    await stroudDnD.tagging.tokens.toggle(\"staff\", false);\n    await stroudDnD.tagging.tokens.toggle(\"early\", false);\n    await stroudDnD.tagging.tokens.toggle(\"late\", false);\n}",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "6yhz13iFYYklKtgA": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "3.2.1",
+    "coreVersion": "11.315",
+    "createdTime": 1728951281261,
+    "modifiedTime": 1728960335209,
+    "lastModifiedBy": "6yhz13iFYYklKtgA"
+  },
+  "_key": "!macros!qx8GX2MiF0airo0q"
+}
