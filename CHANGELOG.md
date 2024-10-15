@@ -1,3 +1,6 @@
+# v12.1.1
+# Bug Fixes
+- Fix sfx Path.
 # v12.1.0
 # New Features
 - Town of Vallaki
