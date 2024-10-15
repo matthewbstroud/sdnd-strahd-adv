@@ -46,8 +46,8 @@
 				"type": "module",
 				"manifest": "https://github.com/matthewbstroud/stroud-dnd-helpers/releases/latest/download/module.json",
 				"comaptibility": {
-					"mininum": "12.0.4",
-					"verified": "12.0.4"
+					"mininum": "12.1.2",
+					"verified": "12.1.2"
 				}
 			}
 		],
@@ -60,6 +60,18 @@
 		"styles/module.css"
 	],
 	"packs": [
+		{
+			"name": "sdnd-cos-actors",
+			"label": "Strahd Actors",
+			"path": "packs/sdnd-cos-actors.db",
+			"type": "Actor",
+			"ownership": {
+				"PLAYER": "LIMITED",
+				"ASSISTANT": "OWNER",
+				"GAMEMASTER": "OWNER"
+			},
+			"module": "sdnd-strahd-adv"
+		},
 		{
 			"name": "snd-curse-of-strahd",
 			"label": "Curse of Strahd",
@@ -114,6 +126,7 @@
 			"sorting": "a",
 			"color": "#ff0000",
 			"packs": [
+				"sdnd-cos-actors",
 				"sdnd-cos-macros",
 				"sdnd-cos-roll-tables"
 			],
