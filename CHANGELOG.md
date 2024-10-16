@@ -4,7 +4,16 @@
   - Add portals.
 # Bug Fixes
 - Area N
-  - Fix folder structure for Blue Water Inn
+  - Fix folder structures
+    - Arasek
+    - Blinsky's
+    - Blue Water Inn
+    - Burgomaster
+    - Coffin Maker
+    - St. Andral
+    - Town Square
+    - Vistani Camp
+    - Wachterhaus
 - Area Y
   - Rename Druid Circle Folder.
 - Fix sfx path.
