@@ -10,8 +10,10 @@
   - Area S
   - Area T
   - Area U
-- Area Y
-  - Rename Druid Circle Folder.
+  - Area V
+  - Area W
+  - Area X
+  - Area Y
 - Fix sfx path.
 # v12.1.2
 # Bug Fixes
