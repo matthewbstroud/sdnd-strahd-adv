@@ -3,17 +3,13 @@
 - O: Old Bone Grinder
   - Add portals.
 # Bug Fixes
-- Area N
-  - Fix folder structures
-    - Arasek
-    - Blinsky's
-    - Blue Water Inn
-    - Burgomaster
-    - Coffin Maker
-    - St. Andral
-    - Town Square
-    - Vistani Camp
-    - Wachterhaus
+- Fix folder structures
+  - Area N
+  - Area P
+  - Area Q
+  - Area S
+  - Area T
+  - Area U
 - Area Y
   - Rename Druid Circle Folder.
 - Fix sfx path.
