@@ -1,3 +1,13 @@
+# v12.1.3
+# New Features
+- O: Old Bone Grinder
+  - Add portals.
+# Bug Fixes
+- Area N
+  - Fix folder structure for Blue Water Inn
+- Area Y
+  - Rename Druid Circle Folder.
+- Fix sfx path.
 # v12.1.2
 # Bug Fixes
 - Rename Druid Circle Folder.
