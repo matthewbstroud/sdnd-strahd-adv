@@ -2142,7 +2142,7 @@
             "attenuation": 0.5
           },
           "disposition": 0,
-          "displayBars": 40,
+          "displayBars": 0,
           "bar1": {
             "attribute": "attributes.hp"
           },
@@ -2321,8 +2321,11 @@
                     "chat": ""
                   },
                   "quantity": 1,
-                  "weight": 0,
-                  "attunement": 0,
+                  "weight": {
+                    "value": 0,
+                    "units": "lb"
+                  },
+                  "attunement": "",
                   "identified": false,
                   "unidentified": {
                     "description": "Wondrous item"
@@ -2346,7 +2349,7 @@
                   "cover": null,
                   "crewed": false,
                   "target": {
-                    "value": null,
+                    "value": "",
                     "width": null,
                     "units": "",
                     "type": "",
@@ -2414,7 +2417,9 @@
                   },
                   "strength": null,
                   "equipped": true,
-                  "proficient": null
+                  "proficient": null,
+                  "attuned": false,
+                  "enchantment": null
                 },
                 "folder": "p0r3fH8jKLk1diEl",
                 "flags": {
@@ -2487,7 +2492,7 @@
             "attenuation": 0.5
           },
           "disposition": 0,
-          "displayBars": 40,
+          "displayBars": 0,
           "bar1": {
             "attribute": "attributes.hp"
           },
@@ -2674,7 +2679,10 @@
                   },
                   "container": null,
                   "quantity": 1,
-                  "weight": 0,
+                  "weight": {
+                    "value": 0,
+                    "units": "lb"
+                  },
                   "price": {
                     "value": 0,
                     "denomination": "gp"
@@ -12348,10 +12356,10 @@
       "journalEntryPage": null,
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "3.1.2",
+        "systemVersion": "3.2.1",
         "coreVersion": "11.315",
         "createdTime": 1704836371703,
-        "modifiedTime": 1721602309609,
+        "modifiedTime": 1729095999744,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       }
     },
@@ -12422,7 +12430,7 @@
             "attenuation": 0.5
           },
           "disposition": 0,
-          "displayBars": 40,
+          "displayBars": 0,
           "bar1": {
             "attribute": "attributes.hp"
           },
@@ -12607,12 +12615,15 @@
                     "license": "CC-BY-4.0"
                   },
                   "quantity": 1,
-                  "weight": 0,
+                  "weight": {
+                    "value": 0,
+                    "units": "lb"
+                  },
                   "price": {
                     "value": 320,
                     "denomination": "gp"
                   },
-                  "attunement": 0,
+                  "attunement": "",
                   "rarity": "rare",
                   "identified": true,
                   "activation": {
@@ -12626,7 +12637,7 @@
                   },
                   "cover": null,
                   "target": {
-                    "value": 60,
+                    "value": "60",
                     "width": null,
                     "units": "ft",
                     "type": "wall",
@@ -12699,7 +12710,9 @@
                   },
                   "summons": null,
                   "magicalBonus": null,
-                  "equipped": false
+                  "equipped": false,
+                  "attuned": false,
+                  "enchantment": null
                 },
                 "effects": [],
                 "folder": "epDf8I2SD3cS6ctz",
@@ -12765,7 +12778,7 @@
             "attenuation": 0.5
           },
           "disposition": 0,
-          "displayBars": 40,
+          "displayBars": 0,
           "bar1": {
             "attribute": "attributes.hp"
           },
@@ -12907,7 +12920,7 @@
             "attenuation": 0.5
           },
           "disposition": 0,
-          "displayBars": 40,
+          "displayBars": 0,
           "bar1": {
             "attribute": "attributes.hp"
           },
@@ -13049,7 +13062,7 @@
             "attenuation": 0.5
           },
           "disposition": 0,
-          "displayBars": 40,
+          "displayBars": 0,
           "bar1": {
             "attribute": "attributes.hp"
           },
@@ -13191,7 +13204,7 @@
             "attenuation": 0.5
           },
           "disposition": 0,
-          "displayBars": 40,
+          "displayBars": 0,
           "bar1": {
             "attribute": "attributes.hp"
           },
@@ -13333,7 +13346,7 @@
             "attenuation": 0.5
           },
           "disposition": 0,
-          "displayBars": 40,
+          "displayBars": 0,
           "bar1": {
             "attribute": "attributes.hp"
           },
@@ -13475,7 +13488,7 @@
             "attenuation": 0.5
           },
           "disposition": 0,
-          "displayBars": 40,
+          "displayBars": 0,
           "bar1": {
             "attribute": "attributes.hp"
           },
@@ -23462,10 +23475,10 @@
   "flags": {},
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "3.1.2",
+    "systemVersion": "3.2.1",
     "coreVersion": "11.315",
     "createdTime": 1719971361644,
-    "modifiedTime": 1723172876804,
+    "modifiedTime": 1729096159439,
     "lastModifiedBy": "6yhz13iFYYklKtgA"
   },
   "_key": "!adventures!4L2FJjtLw6lDLgsA"
