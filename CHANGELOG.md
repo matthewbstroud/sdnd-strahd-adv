@@ -1,3 +1,7 @@
+# v12.1.2
+# Bug Fixes
+- Rename Druid Circle Folder.
+- Fix sfx path.
 # v12.1.1
 # Bug Fixes
 - Fix sfx Path.
