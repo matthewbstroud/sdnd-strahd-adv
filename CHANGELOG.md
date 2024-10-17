@@ -4,6 +4,7 @@
   - Add portals.
 # Bug Fixes
 - Fix folder structures
+  - Area E
   - Area N
   - Area P
   - Area Q
