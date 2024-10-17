@@ -4,7 +4,15 @@
   - Add portals.
 # Bug Fixes
 - Fix folder structures
+  - Area A
+  - Area B
+  - Area C
+  - Area D
   - Area E
+  - Area F
+  - Area G
+  - Area H
+  - Area L
   - Area N
   - Area P
   - Area Q

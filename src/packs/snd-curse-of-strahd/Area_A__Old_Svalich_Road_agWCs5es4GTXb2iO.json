@@ -97,7 +97,39 @@
       "globalLight": true,
       "globalLightThreshold": null,
       "darkness": 0,
-      "drawings": [],
+      "drawings": [
+        {
+          "author": "uM5NQ4FonA2UvlQg",
+          "shape": {
+            "type": "r",
+            "width": 238,
+            "height": 188,
+            "radius": null,
+            "points": []
+          },
+          "x": 1472,
+          "y": 1224,
+          "z": 0,
+          "rotation": 0,
+          "bezierFactor": 0,
+          "fillType": 0,
+          "fillColor": "#FFFFFF",
+          "fillAlpha": 0.1,
+          "strokeWidth": 8,
+          "strokeColor": "#FFFFFF",
+          "strokeAlpha": 0,
+          "text": "Toggle Fog",
+          "fontFamily": "Signika",
+          "fontSize": 48,
+          "textColor": "#FFFFFF",
+          "textAlpha": 1,
+          "hidden": true,
+          "locked": true,
+          "flags": {},
+          "texture": null,
+          "_id": "tq2A5iN3lqvU7L01"
+        }
+      ],
       "tokens": [],
       "lights": [
         {
@@ -825,7 +857,7 @@
       "tiles": [
         {
           "texture": {
-            "src": "modules/sdnd-strahd-adv/images/maps/Areas/A/Old%20Svalich%20Road%20(30x30%20256px)/Old%20Svalich%20Road%20Encounter%20Day%20(Tree%20Overlay)(64).webp",
+            "src": "modules/sdnd-strahd-adv/images/maps/Areas/A/a1_old_road/trees.webp",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
@@ -882,6 +914,350 @@
               "files": []
             }
           }
+        },
+        {
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/void.webp",
+            "scaleX": 1,
+            "scaleY": 1,
+            "tint": null,
+            "offsetX": 0,
+            "offsetY": 0,
+            "rotation": 0
+          },
+          "x": 1856,
+          "y": 192,
+          "z": 100,
+          "width": 128,
+          "height": 1920,
+          "rotation": 0,
+          "alpha": 1,
+          "overhead": false,
+          "roof": false,
+          "occlusion": {
+            "mode": 1,
+            "alpha": 0,
+            "radius": null
+          },
+          "flags": {
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            },
+            "monks-active-tiles": {
+              "active": false,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                "enter"
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [
+                {
+                  "action": "chatmessage",
+                  "data": {
+                    "flavor": "",
+                    "text": "{{actor.name}} is dangerously close to the fog!",
+                    "entity": {
+                      "id": "token",
+                      "name": "Triggering Token"
+                    },
+                    "incharacter": false,
+                    "chatbubble": "true",
+                    "showto": "everyone",
+                    "language": ""
+                  },
+                  "id": "erCNfVowKbH6DyIz"
+                }
+              ],
+              "files": []
+            },
+            "stroud-dnd-helpers": {
+              "tagName": "fog_triggers"
+            }
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "hidden": true,
+          "locked": true,
+          "_id": "DZB4Sd2OeThzCOio"
+        },
+        {
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/void.webp",
+            "scaleX": 1,
+            "scaleY": 1,
+            "tint": null,
+            "offsetX": 0,
+            "offsetY": 0,
+            "rotation": 0
+          },
+          "x": 1984,
+          "y": 192,
+          "z": 100,
+          "width": 128,
+          "height": 1920,
+          "rotation": 0,
+          "alpha": 1,
+          "overhead": false,
+          "roof": false,
+          "occlusion": {
+            "mode": 1,
+            "alpha": 0,
+            "radius": null
+          },
+          "flags": {
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            },
+            "monks-active-tiles": {
+              "active": false,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                "enter"
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [
+                {
+                  "action": "chatmessage",
+                  "data": {
+                    "flavor": "",
+                    "text": "{{actor.name}} has entered the fog!",
+                    "entity": {
+                      "id": "token",
+                      "name": "Triggering Token"
+                    },
+                    "incharacter": false,
+                    "chatbubble": "true",
+                    "showto": "everyone",
+                    "language": ""
+                  },
+                  "id": "erCNfVowKbH6DyIz"
+                },
+                {
+                  "action": "pause",
+                  "data": {
+                    "pause": "pause"
+                  },
+                  "id": "bdt4cCrEs2ENsFlo"
+                }
+              ],
+              "files": []
+            },
+            "stroud-dnd-helpers": {
+              "tagName": "fog_triggers"
+            }
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "hidden": true,
+          "locked": true,
+          "_id": "7bmJOTZvVMdcxfMs"
+        },
+        {
+          "texture": {
+            "src": "modules/sdnd-strahd-adv/images/Fog_Vertical.webm",
+            "scaleX": 1,
+            "scaleY": 1,
+            "tint": null,
+            "offsetX": 0,
+            "offsetY": 0,
+            "rotation": 0
+          },
+          "x": 1504,
+          "y": 192,
+          "z": 110,
+          "width": 608,
+          "height": 1920,
+          "rotation": 180,
+          "alpha": 1,
+          "overhead": true,
+          "roof": false,
+          "occlusion": {
+            "mode": 1,
+            "alpha": 0,
+            "radius": null
+          },
+          "flags": {
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            },
+            "monks-active-tiles": {
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                ""
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [
+                {
+                  "action": "showhide",
+                  "data": {
+                    "entity": {
+                      "id": "tile",
+                      "name": "This Tile"
+                    },
+                    "collection": "tokens",
+                    "hidden": "toggle",
+                    "fade": 10
+                  },
+                  "id": "9MSxtP5qTHGgIqcL"
+                }
+              ],
+              "files": []
+            },
+            "stroud-dnd-helpers": {
+              "tagName": "the_fog"
+            }
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "hidden": true,
+          "locked": true,
+          "_id": "MgluPCbhyUfPxCHJ"
+        },
+        {
+          "x": 1536,
+          "y": 1344,
+          "width": 100,
+          "height": 100,
+          "flags": {
+            "monks-active-tiles": {
+              "active": true,
+              "restriction": "all",
+              "controlled": "gm",
+              "trigger": [
+                "dblclick"
+              ],
+              "pertoken": false,
+              "minrequired": 0,
+              "chance": 100,
+              "actions": [
+                {
+                  "action": "chatmessage",
+                  "data": {
+                    "flavor": "",
+                    "text": "An unnatural fog rolls in...",
+                    "entity": {
+                      "id": "token",
+                      "name": "Triggering Token"
+                    },
+                    "incharacter": false,
+                    "chatbubble": "false",
+                    "showto": "everyone",
+                    "language": ""
+                  },
+                  "id": "ppbLmmXn6bxkQb2O"
+                },
+                {
+                  "action": "runmacro",
+                  "data": {
+                    "entity": {
+                      "id": "Compendium.stroud-dnd-helpers.SDND-GM-Macros.Macro.dBxk9nylqrtSVVtZ"
+                    },
+                    "args": "the_fog",
+                    "runasgm": "gm"
+                  },
+                  "id": "OseqrAR1v0PJKUIm"
+                },
+                {
+                  "action": "runmacro",
+                  "data": {
+                    "entity": {
+                      "id": "Compendium.stroud-dnd-helpers.SDND-GM-Macros.Macro.jcgmwmSdFQVRSm35",
+                      "name": "ToggleTiles"
+                    },
+                    "args": "fog_triggers",
+                    "runasgm": "gm"
+                  },
+                  "id": "x1xaSWFaCwreT15F"
+                }
+              ],
+              "record": false,
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": false,
+              "cooldown": null,
+              "fileindex": 0,
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/icons/trigger_tiles.webp",
+            "scaleX": 1,
+            "scaleY": 1,
+            "offsetX": 0,
+            "offsetY": 0,
+            "rotation": 0,
+            "tint": null
+          },
+          "z": 100,
+          "rotation": 0,
+          "alpha": 1,
+          "hidden": true,
+          "locked": true,
+          "overhead": true,
+          "roof": false,
+          "occlusion": {
+            "mode": 1,
+            "alpha": 0,
+            "radius": null
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "_id": "CmMHfARSGOJL3fIM"
         }
       ],
       "walls": [
@@ -9433,7 +9809,7 @@
         "6yhz13iFYYklKtgA": 3
       },
       "background": {
-        "src": "modules/sdnd-strahd-adv/images/maps/Areas/A/Old%20Svalich%20Road%20(30x30%20256px)/Old%20Svalich%20Road%20Encounter%20Day%20(64).webp",
+        "src": "modules/sdnd-strahd-adv/images/maps/Areas/A/a1_old_road/old_road.webp",
         "offsetX": 0,
         "offsetY": 0,
         "scaleX": 1,
@@ -9451,7 +9827,7 @@
         "systemVersion": "3.2.1",
         "coreVersion": "11.315",
         "createdTime": 1709251122303,
-        "modifiedTime": 1728304855107,
+        "modifiedTime": 1729167610388,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       },
       "_id": "ZvenLOn7DoYyUbQ8"
@@ -9498,8 +9874,8 @@
             "radius": null,
             "points": []
           },
-          "x": 2175,
-          "y": 725,
+          "x": 1587.5,
+          "y": 2150,
           "z": 0,
           "rotation": 0,
           "bezierFactor": 0,
@@ -20203,7 +20579,7 @@
       "tiles": [
         {
           "texture": {
-            "src": "modules/sdnd-strahd-adv/images/maps/Areas/A/Old%20Svalich%20Road%20Campsite%20(30x30%20200px)/Tree%20Tops(100).webp",
+            "src": "modules/sdnd-strahd-adv/images/maps/Areas/A/a2_campsite/trees.webp",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
@@ -20334,19 +20710,19 @@
         },
         {
           "texture": {
-            "src": "modules/JB2A_DnD5e/Library/1st_Level/Fog_Cloud/Opacities/FogCloud_01_White_75OPA_800x800.webm",
-            "scaleX": 1.75,
-            "scaleY": 1.75,
+            "src": "modules/stroud-dnd-helpers/images/void.webp",
+            "scaleX": 1,
+            "scaleY": 1,
             "tint": null,
             "offsetX": 0,
             "offsetY": 0,
             "rotation": 0
           },
-          "x": 2850,
+          "x": 2900,
           "y": 300,
           "z": 100,
-          "width": 450,
-          "height": 450,
+          "width": 200,
+          "height": 3000,
           "rotation": 0,
           "alpha": 1,
           "overhead": false,
@@ -20363,13 +20739,12 @@
               "occlusionLinkSource": false
             },
             "monks-active-tiles": {
-              "active": true,
+              "active": false,
               "record": false,
               "restriction": "all",
-              "controlled": "gm",
+              "controlled": "all",
               "trigger": [
-                "",
-                "dblclick"
+                "enter"
               ],
               "allowpaused": false,
               "usealpha": false,
@@ -20379,26 +20754,29 @@
               "minrequired": 0,
               "cooldown": null,
               "chance": 100,
-              "fileindex": 1,
+              "fileindex": 0,
               "actions": [
                 {
-                  "action": "showhide",
+                  "action": "chatmessage",
                   "data": {
+                    "flavor": "",
+                    "text": "{{actor.name}} is dangerously close to the fog!",
                     "entity": {
-                      "id": "tile",
-                      "name": "This Tile"
+                      "id": "token",
+                      "name": "Triggering Token"
                     },
-                    "collection": "tokens",
-                    "hidden": "toggle",
-                    "fade": 5
+                    "incharacter": false,
+                    "chatbubble": "true",
+                    "showto": "everyone",
+                    "language": ""
                   },
-                  "id": "avvnQuPmDBrjK1gZ"
+                  "id": "erCNfVowKbH6DyIz"
                 }
               ],
               "files": []
             },
             "stroud-dnd-helpers": {
-              "tagName": "fogwall"
+              "tagName": "fog_triggers"
             }
           },
           "video": {
@@ -20407,24 +20785,24 @@
             "volume": 0
           },
           "hidden": true,
-          "locked": false,
-          "_id": "Tk5qDxD8XqSNeDnK"
+          "locked": true,
+          "_id": "H93JVqwZ4gWlTv5j"
         },
         {
           "texture": {
-            "src": "modules/JB2A_DnD5e/Library/1st_Level/Fog_Cloud/Opacities/FogCloud_01_White_75OPA_800x800.webm",
-            "scaleX": 1.75,
-            "scaleY": 1.75,
+            "src": "modules/stroud-dnd-helpers/images/void.webp",
+            "scaleX": 1,
+            "scaleY": 1,
             "tint": null,
             "offsetX": 0,
             "offsetY": 0,
             "rotation": 0
           },
-          "x": 2850,
-          "y": 750,
+          "x": 3100,
+          "y": 300,
           "z": 100,
-          "width": 450,
-          "height": 450,
+          "width": 200,
+          "height": 3000,
           "rotation": 0,
           "alpha": 1,
           "overhead": false,
@@ -20441,13 +20819,12 @@
               "occlusionLinkSource": false
             },
             "monks-active-tiles": {
-              "active": true,
+              "active": false,
               "record": false,
               "restriction": "all",
-              "controlled": "gm",
+              "controlled": "all",
               "trigger": [
-                "",
-                "dblclick"
+                "enter"
               ],
               "allowpaused": false,
               "usealpha": false,
@@ -20457,26 +20834,36 @@
               "minrequired": 0,
               "cooldown": null,
               "chance": 100,
-              "fileindex": 1,
+              "fileindex": 0,
               "actions": [
                 {
-                  "action": "showhide",
+                  "action": "chatmessage",
                   "data": {
+                    "flavor": "",
+                    "text": "{{actor.name}} has entered the fog!",
                     "entity": {
-                      "id": "tile",
-                      "name": "This Tile"
+                      "id": "token",
+                      "name": "Triggering Token"
                     },
-                    "collection": "tokens",
-                    "hidden": "toggle",
-                    "fade": 5
+                    "incharacter": false,
+                    "chatbubble": "true",
+                    "showto": "everyone",
+                    "language": ""
                   },
-                  "id": "avvnQuPmDBrjK1gZ"
+                  "id": "erCNfVowKbH6DyIz"
+                },
+                {
+                  "action": "pause",
+                  "data": {
+                    "pause": "pause"
+                  },
+                  "id": "bdt4cCrEs2ENsFlo"
                 }
               ],
               "files": []
             },
             "stroud-dnd-helpers": {
-              "tagName": "fogwall"
+              "tagName": "fog_triggers"
             }
           },
           "video": {
@@ -20485,30 +20872,30 @@
             "volume": 0
           },
           "hidden": true,
-          "locked": false,
-          "_id": "yWbPiguEtXEQdxQr"
+          "locked": true,
+          "_id": "yriSJi2nvZ2eZjJC"
         },
         {
           "texture": {
-            "src": "modules/JB2A_DnD5e/Library/1st_Level/Fog_Cloud/Opacities/FogCloud_01_White_75OPA_800x800.webm",
-            "scaleX": 1.75,
-            "scaleY": 1.75,
+            "src": "modules/sdnd-strahd-adv/images/Fog_Vertical.webm",
+            "scaleX": 1,
+            "scaleY": 1,
             "tint": null,
             "offsetX": 0,
             "offsetY": 0,
             "rotation": 0
           },
-          "x": 2850,
-          "y": 1200,
-          "z": 100,
-          "width": 450,
-          "height": 450,
-          "rotation": 285,
+          "x": 2200,
+          "y": 300,
+          "z": 111,
+          "width": 1100,
+          "height": 3000,
+          "rotation": 180,
           "alpha": 1,
-          "overhead": false,
+          "overhead": true,
           "roof": false,
           "occlusion": {
-            "mode": 1,
+            "mode": 0,
             "alpha": 0,
             "radius": null
           },
@@ -20522,10 +20909,9 @@
               "active": true,
               "record": false,
               "restriction": "all",
-              "controlled": "gm",
+              "controlled": "all",
               "trigger": [
-                "",
-                "dblclick"
+                ""
               ],
               "allowpaused": false,
               "usealpha": false,
@@ -20535,7 +20921,7 @@
               "minrequired": 0,
               "cooldown": null,
               "chance": 100,
-              "fileindex": 1,
+              "fileindex": 0,
               "actions": [
                 {
                   "action": "showhide",
@@ -20546,15 +20932,15 @@
                     },
                     "collection": "tokens",
                     "hidden": "toggle",
-                    "fade": 5
+                    "fade": 10
                   },
-                  "id": "avvnQuPmDBrjK1gZ"
+                  "id": "9MSxtP5qTHGgIqcL"
                 }
               ],
               "files": []
             },
             "stroud-dnd-helpers": {
-              "tagName": "fogwall"
+              "tagName": "the_fog"
             }
           },
           "video": {
@@ -20563,324 +20949,12 @@
             "volume": 0
           },
           "hidden": true,
-          "locked": false,
-          "_id": "gakAX6cp8IDgKYM1"
+          "locked": true,
+          "_id": "cC1GD8yJ9Az3uN5g"
         },
         {
-          "texture": {
-            "src": "modules/JB2A_DnD5e/Library/1st_Level/Fog_Cloud/Opacities/FogCloud_01_White_75OPA_800x800.webm",
-            "scaleX": 1.75,
-            "scaleY": 1.75,
-            "tint": null,
-            "offsetX": 0,
-            "offsetY": 0,
-            "rotation": 0
-          },
-          "x": 2850,
-          "y": 1650,
-          "z": 100,
-          "width": 450,
-          "height": 450,
-          "rotation": 0,
-          "alpha": 1,
-          "overhead": false,
-          "roof": false,
-          "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
-          },
-          "flags": {
-            "betterroofs": {
-              "brMode": false,
-              "occlusionLinkId": "",
-              "occlusionLinkSource": false
-            },
-            "monks-active-tiles": {
-              "active": true,
-              "record": false,
-              "restriction": "all",
-              "controlled": "gm",
-              "trigger": [
-                "",
-                "dblclick"
-              ],
-              "allowpaused": false,
-              "usealpha": false,
-              "pointer": false,
-              "vision": true,
-              "pertoken": false,
-              "minrequired": 0,
-              "cooldown": null,
-              "chance": 100,
-              "fileindex": 1,
-              "actions": [
-                {
-                  "action": "showhide",
-                  "data": {
-                    "entity": {
-                      "id": "tile",
-                      "name": "This Tile"
-                    },
-                    "collection": "tokens",
-                    "hidden": "toggle",
-                    "fade": 5
-                  },
-                  "id": "avvnQuPmDBrjK1gZ"
-                }
-              ],
-              "files": []
-            },
-            "stroud-dnd-helpers": {
-              "tagName": "fogwall"
-            }
-          },
-          "video": {
-            "loop": true,
-            "autoplay": true,
-            "volume": 0
-          },
-          "hidden": true,
-          "locked": false,
-          "_id": "UOS1xs7UtBtE8zNV"
-        },
-        {
-          "texture": {
-            "src": "modules/JB2A_DnD5e/Library/1st_Level/Fog_Cloud/Opacities/FogCloud_01_White_75OPA_800x800.webm",
-            "scaleX": 1.75,
-            "scaleY": 1.75,
-            "tint": null,
-            "offsetX": 0,
-            "offsetY": 0,
-            "rotation": 0
-          },
-          "x": 2850,
-          "y": 2100,
-          "z": 100,
-          "width": 450,
-          "height": 450,
-          "rotation": 0,
-          "alpha": 1,
-          "overhead": false,
-          "roof": false,
-          "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
-          },
-          "flags": {
-            "betterroofs": {
-              "brMode": false,
-              "occlusionLinkId": "",
-              "occlusionLinkSource": false
-            },
-            "monks-active-tiles": {
-              "active": true,
-              "record": false,
-              "restriction": "all",
-              "controlled": "gm",
-              "trigger": [
-                "",
-                "dblclick"
-              ],
-              "allowpaused": false,
-              "usealpha": false,
-              "pointer": false,
-              "vision": true,
-              "pertoken": false,
-              "minrequired": 0,
-              "cooldown": null,
-              "chance": 100,
-              "fileindex": 1,
-              "actions": [
-                {
-                  "action": "showhide",
-                  "data": {
-                    "entity": {
-                      "id": "tile",
-                      "name": "This Tile"
-                    },
-                    "collection": "tokens",
-                    "hidden": "toggle",
-                    "fade": 5
-                  },
-                  "id": "avvnQuPmDBrjK1gZ"
-                }
-              ],
-              "files": []
-            },
-            "stroud-dnd-helpers": {
-              "tagName": "fogwall"
-            }
-          },
-          "video": {
-            "loop": true,
-            "autoplay": true,
-            "volume": 0
-          },
-          "hidden": true,
-          "locked": false,
-          "_id": "qiStZjM9bKCUBsa3"
-        },
-        {
-          "texture": {
-            "src": "modules/JB2A_DnD5e/Library/1st_Level/Fog_Cloud/Opacities/FogCloud_01_White_75OPA_800x800.webm",
-            "scaleX": 1.75,
-            "scaleY": 1.75,
-            "tint": null,
-            "offsetX": 0,
-            "offsetY": 0,
-            "rotation": 0
-          },
-          "x": 2850,
-          "y": 2550,
-          "z": 100,
-          "width": 450,
-          "height": 450,
-          "rotation": 0,
-          "alpha": 1,
-          "overhead": false,
-          "roof": false,
-          "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
-          },
-          "flags": {
-            "betterroofs": {
-              "brMode": false,
-              "occlusionLinkId": "",
-              "occlusionLinkSource": false
-            },
-            "monks-active-tiles": {
-              "active": true,
-              "record": false,
-              "restriction": "all",
-              "controlled": "gm",
-              "trigger": [
-                "",
-                "dblclick"
-              ],
-              "allowpaused": false,
-              "usealpha": false,
-              "pointer": false,
-              "vision": true,
-              "pertoken": false,
-              "minrequired": 0,
-              "cooldown": null,
-              "chance": 100,
-              "fileindex": 1,
-              "actions": [
-                {
-                  "action": "showhide",
-                  "data": {
-                    "entity": {
-                      "id": "tile",
-                      "name": "This Tile"
-                    },
-                    "collection": "tokens",
-                    "hidden": "toggle",
-                    "fade": 5
-                  },
-                  "id": "avvnQuPmDBrjK1gZ"
-                }
-              ],
-              "files": []
-            },
-            "stroud-dnd-helpers": {
-              "tagName": "fogwall"
-            }
-          },
-          "video": {
-            "loop": true,
-            "autoplay": true,
-            "volume": 0
-          },
-          "hidden": true,
-          "locked": false,
-          "_id": "2EJRimxIvVHYqday"
-        },
-        {
-          "texture": {
-            "src": "modules/JB2A_DnD5e/Library/1st_Level/Fog_Cloud/Opacities/FogCloud_01_White_75OPA_800x800.webm",
-            "scaleX": 1.75,
-            "scaleY": 1.75,
-            "tint": null,
-            "offsetX": 0,
-            "offsetY": 0,
-            "rotation": 0
-          },
-          "x": 2850,
-          "y": 3050,
-          "z": 100,
-          "width": 450,
-          "height": 450,
-          "rotation": 30,
-          "alpha": 1,
-          "overhead": false,
-          "roof": false,
-          "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
-          },
-          "flags": {
-            "betterroofs": {
-              "brMode": false,
-              "occlusionLinkId": "",
-              "occlusionLinkSource": false
-            },
-            "monks-active-tiles": {
-              "active": true,
-              "record": false,
-              "restriction": "all",
-              "controlled": "gm",
-              "trigger": [
-                "",
-                "dblclick"
-              ],
-              "allowpaused": false,
-              "usealpha": false,
-              "pointer": false,
-              "vision": true,
-              "pertoken": false,
-              "minrequired": 0,
-              "cooldown": null,
-              "chance": 100,
-              "fileindex": 1,
-              "actions": [
-                {
-                  "action": "showhide",
-                  "data": {
-                    "entity": {
-                      "id": "tile",
-                      "name": "This Tile"
-                    },
-                    "collection": "tokens",
-                    "hidden": "toggle",
-                    "fade": 5
-                  },
-                  "id": "avvnQuPmDBrjK1gZ"
-                }
-              ],
-              "files": []
-            },
-            "stroud-dnd-helpers": {
-              "tagName": "fogwall"
-            }
-          },
-          "video": {
-            "loop": true,
-            "autoplay": true,
-            "volume": 0
-          },
-          "hidden": true,
-          "locked": false,
-          "_id": "WCmj1aDd7DevYIUs"
-        },
-        {
-          "x": 2408,
-          "y": 773,
+          "x": 1650,
+          "y": 2300,
           "width": 100,
           "height": 100,
           "flags": {
@@ -20896,15 +20970,43 @@
               "chance": 100,
               "actions": [
                 {
+                  "action": "chatmessage",
+                  "data": {
+                    "flavor": "",
+                    "text": "An unnatural fog rolls in...",
+                    "entity": {
+                      "id": "token",
+                      "name": "Triggering Token"
+                    },
+                    "incharacter": false,
+                    "chatbubble": "false",
+                    "showto": "everyone",
+                    "language": ""
+                  },
+                  "id": "ppbLmmXn6bxkQb2O"
+                },
+                {
                   "action": "runmacro",
                   "data": {
                     "entity": {
                       "id": "Compendium.stroud-dnd-helpers.SDND-GM-Macros.Macro.dBxk9nylqrtSVVtZ"
                     },
-                    "args": "fogwall",
+                    "args": "the_fog",
                     "runasgm": "gm"
                   },
                   "id": "OseqrAR1v0PJKUIm"
+                },
+                {
+                  "action": "runmacro",
+                  "data": {
+                    "entity": {
+                      "id": "Compendium.stroud-dnd-helpers.SDND-GM-Macros.Macro.jcgmwmSdFQVRSm35",
+                      "name": "ToggleTiles"
+                    },
+                    "args": "fog_triggers",
+                    "runasgm": "gm"
+                  },
+                  "id": "x1xaSWFaCwreT15F"
                 }
               ],
               "record": false,
@@ -20913,7 +21015,7 @@
               "pointer": false,
               "vision": false,
               "cooldown": null,
-              "fileindex": -1,
+              "fileindex": 0,
               "files": []
             },
             "betterroofs": {
@@ -20931,13 +21033,12 @@
             "rotation": 0,
             "tint": null
           },
-          "_id": "CEYo5WSpgF764Mnu",
           "z": 100,
           "rotation": 0,
           "alpha": 1,
           "hidden": true,
           "locked": true,
-          "overhead": false,
+          "overhead": true,
           "roof": false,
           "occlusion": {
             "mode": 1,
@@ -20948,7 +21049,8 @@
             "loop": true,
             "autoplay": true,
             "volume": 0
-          }
+          },
+          "_id": "FfOvrnO2JKDrJw5r"
         }
       ],
       "walls": [
@@ -37307,7 +37409,7 @@
         "6yhz13iFYYklKtgA": 3
       },
       "background": {
-        "src": "modules/sdnd-strahd-adv/images/maps/Areas/A/Old%20Svalich%20Road%20Campsite%20(30x30%20200px)/Old%20Svalich%20Woods%20Campsite(100).webp",
+        "src": "modules/sdnd-strahd-adv/images/maps/Areas/A/a2_campsite/campsite.webp",
         "offsetX": 0,
         "offsetY": 0,
         "scaleX": 1,
@@ -37325,7 +37427,7 @@
         "systemVersion": "3.2.1",
         "coreVersion": "11.315",
         "createdTime": 1685289785930,
-        "modifiedTime": 1729095970423,
+        "modifiedTime": 1729167612631,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       },
       "_id": "Ot2hpUIB1hqN85YF"
@@ -37517,7 +37619,7 @@
     "systemVersion": "3.2.1",
     "coreVersion": "11.315",
     "createdTime": 1704927108408,
-    "modifiedTime": 1729096205376,
+    "modifiedTime": 1729167627390,
     "lastModifiedBy": "6yhz13iFYYklKtgA"
   },
   "_key": "!adventures!agWCs5es4GTXb2iO"
