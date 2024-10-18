@@ -12,6 +12,7 @@
   - Area F
   - Area G
   - Area H
+  - Area K
   - Area L
   - Area N
   - Area P
