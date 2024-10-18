@@ -1,6 +1,7 @@
 import { promises as fs } from "fs";
 const replacements = [
     ['https://assets.forge-vtt.com/634b24b96df3a5a10e8ccd71/SFX/', 'modules/sdnd-strahd-adv/sfx/'],
+    ['https://assets.forge-vtt.com/634b24b96df3a5a10e8ccd71/custom_icons/Chest_Icons/', 'modules/sdnd-strahd-adv/images/icons/Chest_Icons/'],
     ['modules/sdnd-strahd-adv/SFX/', 'modules/sdnd-strahd-adv/sfx/'],
     ['"/custom_icons/Fireplace_Icon.webp"', '"modules/stroud-dnd-helpers/images/icons/Fireplace_Icon.webp"']
 ];

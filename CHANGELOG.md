@@ -1,3 +1,31 @@
+# v12.1.3
+# New Features
+- O: Old Bone Grinder
+  - Add portals.
+# Bug Fixes
+- Fix folder structures
+  - Area A
+  - Area B
+  - Area C
+  - Area D
+  - Area E
+  - Area F
+  - Area G
+  - Area H
+  - Area K
+  - Area L
+  - Area N
+  - Area O
+  - Area P
+  - Area Q
+  - Area S
+  - Area T
+  - Area U
+  - Area V
+  - Area W
+  - Area X
+  - Area Y
+- Fix sfx path.
 # v12.1.2
 # Bug Fixes
 - Rename Druid Circle Folder.
