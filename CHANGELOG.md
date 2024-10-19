@@ -1,3 +1,8 @@
+# v12.1.4
+# New Features
+- Zone Population
+  - Area N
+    - Burgomaster's Mansion
 # v12.1.3
 # New Features
 - O: Old Bone Grinder
