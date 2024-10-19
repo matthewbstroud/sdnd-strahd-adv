@@ -3,6 +3,7 @@
 - Zone Population
   - Area N
     - Burgomaster's Mansion
+    - Toy Maker's Shop
 # v12.1.3
 # New Features
 - O: Old Bone Grinder
