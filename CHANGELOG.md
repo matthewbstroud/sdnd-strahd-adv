@@ -4,6 +4,7 @@
   - Area N
     - Burgomaster's Mansion
     - Toy Maker's Shop
+    - Wachterhaus
 # v12.1.3
 # New Features
 - O: Old Bone Grinder
