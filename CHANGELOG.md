@@ -1,3 +1,12 @@
+# v12.1.4
+# New Features
+- Zone Population
+  - Area N
+    - Burgomaster's Mansion
+    - Town Square
+    - Toy Maker's Shop
+    - Wachterhaus
+    - Vistani Camp
 # v12.1.3
 # New Features
 - O: Old Bone Grinder
