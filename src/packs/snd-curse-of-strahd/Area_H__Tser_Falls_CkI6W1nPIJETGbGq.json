@@ -41,10 +41,12 @@
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.1.2",
-            "coreVersion": "11.315",
+            "coreVersion": "12.331",
             "createdTime": 1705009129590,
             "modifiedTime": 1720555355178,
-            "lastModifiedBy": "6yhz13iFYYklKtgA"
+            "lastModifiedBy": "6yhz13iFYYklKtgA",
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         }
       ],
@@ -57,10 +59,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1705009122331,
         "modifiedTime": 1720555355178,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       }
     }
   ],
@@ -89,14 +93,11 @@
         "color": "#000000",
         "alpha": 0.2,
         "distance": 5,
-        "units": "ft"
+        "units": "ft",
+        "style": "solidLines",
+        "thickness": 1
       },
       "tokenVision": true,
-      "fogExploration": true,
-      "fogReset": 1673722449238,
-      "globalLight": true,
-      "globalLightThreshold": null,
-      "darkness": 0,
       "drawings": [],
       "tokens": [
         {
@@ -112,7 +113,11 @@
             "offsetX": 0,
             "offsetY": 0,
             "rotation": 0,
-            "tint": null
+            "tint": "#ffffff",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0.75
           },
           "width": 1,
           "height": 1,
@@ -148,7 +153,9 @@
               "min": 0,
               "max": 1
             },
-            "color": null
+            "color": null,
+            "negative": false,
+            "priority": 0
           },
           "sight": {
             "enabled": false,
@@ -173,23 +180,8 @@
                 "elemental"
               ]
             },
-            "core": {
-              "occlusionRadius": null
-            },
-            "dnd5e": {
-              "tokenRing": {
-                "enabled": false,
-                "textures": {
-                  "subject": null
-                },
-                "scaleCorrection": 1,
-                "colors": {
-                  "ring": null,
-                  "background": null
-                },
-                "effects": 1
-              }
-            },
+            "core": {},
+            "dnd5e": {},
             "simbuls-cover-calculator": {
               "coverLevel": 1,
               "coverLevelDead": 1,
@@ -213,7 +205,25 @@
             "ownership": null
           },
           "elevation": 0,
-          "effects": []
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "texture": null,
+              "scale": 1
+            }
+          },
+          "hexagonalShape": 0,
+          "sort": 0,
+          "locked": false,
+          "occludable": {
+            "radius": 0
+          },
+          "_regions": []
         },
         {
           "name": "Gargoyle",
@@ -228,7 +238,11 @@
             "offsetX": 0,
             "offsetY": 0,
             "rotation": 0,
-            "tint": null
+            "tint": "#ffffff",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0.75
           },
           "width": 1,
           "height": 1,
@@ -264,7 +278,9 @@
               "min": 0,
               "max": 1
             },
-            "color": null
+            "color": null,
+            "negative": false,
+            "priority": 0
           },
           "sight": {
             "enabled": false,
@@ -289,23 +305,8 @@
                 "elemental"
               ]
             },
-            "core": {
-              "occlusionRadius": null
-            },
-            "dnd5e": {
-              "tokenRing": {
-                "enabled": false,
-                "textures": {
-                  "subject": null
-                },
-                "scaleCorrection": 1,
-                "colors": {
-                  "ring": null,
-                  "background": null
-                },
-                "effects": 1
-              }
-            },
+            "core": {},
+            "dnd5e": {},
             "simbuls-cover-calculator": {
               "coverLevel": 1,
               "coverLevelDead": 1,
@@ -329,7 +330,25 @@
             "ownership": null
           },
           "elevation": 0,
-          "effects": []
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "texture": null,
+              "scale": 1
+            }
+          },
+          "hexagonalShape": 0,
+          "sort": 0,
+          "locked": false,
+          "occludable": {
+            "radius": 0
+          },
+          "_regions": []
         },
         {
           "name": "Gargoyle",
@@ -344,7 +363,11 @@
             "offsetX": 0,
             "offsetY": 0,
             "rotation": 0,
-            "tint": null
+            "tint": "#ffffff",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0.75
           },
           "width": 1,
           "height": 1,
@@ -380,7 +403,9 @@
               "min": 0,
               "max": 1
             },
-            "color": null
+            "color": null,
+            "negative": false,
+            "priority": 0
           },
           "sight": {
             "enabled": false,
@@ -405,23 +430,8 @@
                 "elemental"
               ]
             },
-            "core": {
-              "occlusionRadius": null
-            },
-            "dnd5e": {
-              "tokenRing": {
-                "enabled": false,
-                "textures": {
-                  "subject": null
-                },
-                "scaleCorrection": 1,
-                "colors": {
-                  "ring": null,
-                  "background": null
-                },
-                "effects": 1
-              }
-            },
+            "core": {},
+            "dnd5e": {},
             "simbuls-cover-calculator": {
               "coverLevel": 1,
               "coverLevelDead": 1,
@@ -445,7 +455,25 @@
             "ownership": null
           },
           "elevation": 0,
-          "effects": []
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "texture": null,
+              "scale": 1
+            }
+          },
+          "hexagonalShape": 0,
+          "sort": 0,
+          "locked": false,
+          "occludable": {
+            "radius": 0
+          },
+          "_regions": []
         },
         {
           "name": "Gargoyle",
@@ -460,7 +488,11 @@
             "offsetX": 0,
             "offsetY": 0,
             "rotation": 0,
-            "tint": null
+            "tint": "#ffffff",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0.75
           },
           "width": 1,
           "height": 1,
@@ -496,7 +528,9 @@
               "min": 0,
               "max": 1
             },
-            "color": null
+            "color": null,
+            "negative": false,
+            "priority": 0
           },
           "sight": {
             "enabled": false,
@@ -521,23 +555,8 @@
                 "elemental"
               ]
             },
-            "core": {
-              "occlusionRadius": null
-            },
-            "dnd5e": {
-              "tokenRing": {
-                "enabled": false,
-                "textures": {
-                  "subject": null
-                },
-                "scaleCorrection": 1,
-                "colors": {
-                  "ring": null,
-                  "background": null
-                },
-                "effects": 1
-              }
-            },
+            "core": {},
+            "dnd5e": {},
             "simbuls-cover-calculator": {
               "coverLevel": 1,
               "coverLevelDead": 1,
@@ -561,7 +580,25 @@
             "ownership": null
           },
           "elevation": 0,
-          "effects": []
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "texture": null,
+              "scale": 1
+            }
+          },
+          "hexagonalShape": 0,
+          "sort": 0,
+          "locked": false,
+          "occludable": {
+            "radius": 0
+          },
+          "_regions": []
         }
       ],
       "lights": [
@@ -593,10 +630,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "jY36giwcPF1cmzF5",
@@ -626,10 +666,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "FoTiHkXl4m3QZ8Ar",
@@ -659,10 +702,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "ogeaoOZwzPAiu9RA",
@@ -692,10 +738,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "bamt5l6E8nccRCXE",
@@ -725,10 +774,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "C0lMDMOqlVuJqrXw",
@@ -758,10 +810,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "6DtX6JCSF995BfKn",
@@ -791,10 +846,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "SkelkduNl4wNomD5",
@@ -824,10 +882,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "aAibShMgCZYFWg9p",
@@ -857,10 +918,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         }
       ],
       "notes": [
@@ -873,20 +937,26 @@
           "global": false,
           "iconSize": 45,
           "texture": {
-            "tint": null,
+            "tint": "#ffffff",
             "src": "icons/svg/book.svg",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0
           },
           "fontFamily": "Signika",
           "fontSize": 64,
-          "textColor": "#FFFFFF",
+          "textColor": "#ffffff",
           "textAnchor": 1,
           "_id": "wimm1EEo56xNf8Rp",
-          "flags": {}
+          "flags": {},
+          "elevation": 0,
+          "sort": 0
         }
       ],
       "sounds": [
@@ -905,7 +975,16 @@
             "min": 0,
             "max": 1
           },
-          "flags": {}
+          "flags": {},
+          "elevation": 0,
+          "effects": {
+            "base": {
+              "intensity": 5
+            },
+            "muffled": {
+              "intensity": 5
+            }
+          }
         },
         {
           "path": "music/diablo4/38_Oasis.mp3",
@@ -922,7 +1001,16 @@
           "_id": "45NKevMs8eg1M6UW",
           "repeat": false,
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0,
+          "effects": {
+            "base": {
+              "intensity": 5
+            },
+            "muffled": {
+              "intensity": 5
+            }
+          }
         }
       ],
       "templates": [],
@@ -932,24 +1020,24 @@
             "src": "modules/sdnd-strahd-adv/images/maps/Areas/H/h1_falls/trees.webp",
             "scaleX": 1,
             "scaleY": 1,
-            "tint": null,
+            "tint": "#ffffff",
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
           "x": 300,
           "y": 300,
-          "z": 100,
           "width": 3000,
           "height": 3000,
           "rotation": 0,
           "alpha": 1,
-          "overhead": true,
-          "roof": false,
           "occlusion": {
             "mode": 3,
-            "alpha": 0,
-            "radius": null
+            "alpha": 0
           },
           "flags": {
             "betterroofs": {
@@ -985,7 +1073,13 @@
           },
           "_id": "jUmC5vcsxkq9mfVJ",
           "hidden": false,
-          "locked": false
+          "locked": false,
+          "elevation": 20,
+          "sort": 100,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          }
         }
       ],
       "walls": [
@@ -4813,21 +4907,68 @@
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0,
-        "tint": null
+        "tint": "#ffffff",
+        "anchorX": 0,
+        "anchorY": 0,
+        "fit": "fill",
+        "alphaThreshold": 0
       },
       "foregroundElevation": 20,
-      "fogOverlay": null,
-      "fogExploredColor": null,
-      "fogUnexploredColor": null,
       "journalEntryPage": null,
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1705008986653,
         "modifiedTime": 1729169532467,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
-      }
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "environment": {
+        "globalLight": {
+          "luminosity": 0,
+          "enabled": true,
+          "darkness": {
+            "max": 1,
+            "min": 0
+          },
+          "alpha": 0.5,
+          "bright": false,
+          "color": null,
+          "coloration": 1,
+          "saturation": 0,
+          "contrast": 0,
+          "shadows": 0
+        },
+        "darknessLevel": 0,
+        "darknessLock": false,
+        "cycle": true,
+        "base": {
+          "hue": 0,
+          "intensity": 0,
+          "luminosity": 0,
+          "saturation": 0,
+          "shadows": 0
+        },
+        "dark": {
+          "hue": 0.7138888888888889,
+          "intensity": 0,
+          "luminosity": -0.25,
+          "saturation": 0,
+          "shadows": 0
+        }
+      },
+      "fog": {
+        "exploration": true,
+        "reset": 1673722449238,
+        "overlay": null,
+        "colors": {
+          "explored": null,
+          "unexplored": null
+        }
+      },
+      "regions": []
     }
   ],
   "tables": [],
@@ -4847,11 +4988,14 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1705009115117,
         "modifiedTime": 1705009115117,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
-      }
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "description": ""
     },
     {
       "name": "Areas",
@@ -4866,10 +5010,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": 1705027185606,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       }
     },
     {
@@ -4885,10 +5031,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": 1704857070622,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       }
     },
     {
@@ -4903,11 +5051,14 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1704839237165,
         "modifiedTime": 1704857631386,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
-      }
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "description": ""
     },
     {
       "name": "SDND - Curse of Strahd",
@@ -4921,11 +5072,14 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1705027168419,
         "modifiedTime": 1705027175907,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
-      }
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "description": ""
     }
   ],
   "_id": "CkI6W1nPIJETGbGq",
@@ -4934,10 +5088,12 @@
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "3.2.1",
-    "coreVersion": "11.315",
+    "coreVersion": "12.331",
     "createdTime": 1705009422907,
-    "modifiedTime": 1729169546212,
-    "lastModifiedBy": "6yhz13iFYYklKtgA"
+    "modifiedTime": 1730046425829,
+    "lastModifiedBy": "6yhz13iFYYklKtgA",
+    "compendiumSource": null,
+    "duplicateSource": null
   },
   "_key": "!adventures!CkI6W1nPIJETGbGq"
 }

@@ -28,12 +28,15 @@
               "custom": "PHB pg. 149"
             },
             "quantity": 1,
-            "weight": 2,
+            "weight": {
+              "value": 2,
+              "units": "lb"
+            },
             "price": {
               "value": 1,
               "denomination": "gp"
             },
-            "attunement": 0,
+            "attunement": "",
             "equipped": true,
             "rarity": "common",
             "identified": true,
@@ -49,7 +52,7 @@
             "cover": null,
             "crewed": false,
             "target": {
-              "value": null,
+              "value": "",
               "width": null,
               "units": "",
               "type": "",
@@ -108,6 +111,7 @@
               "lgt"
             ],
             "proficient": 1,
+            "attuned": false,
             "unidentified": {
               "description": ""
             },
@@ -120,6 +124,7 @@
               "flat": false
             },
             "container": null,
+            "enchantment": null,
             "summons": null,
             "magicalBonus": null
           },
@@ -129,10 +134,12 @@
           "_stats": {
             "systemId": null,
             "systemVersion": null,
-            "coreVersion": null,
+            "coreVersion": "12.331",
             "createdTime": null,
             "modifiedTime": null,
-            "lastModifiedBy": null
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         }
       ],
@@ -145,6 +152,9 @@
         },
         "midi-qol": {
           "concentration-damage": 0
+        },
+        "anonymous": {
+          "showName": true
         }
       },
       "_id": "2p6p5Vx41kf5UJWT",
@@ -261,6 +271,9 @@
             },
             "limit": 1
           },
+          "hd": {
+            "spent": 0
+          },
           "death": {
             "ability": "",
             "roll": {
@@ -290,7 +303,10 @@
           "spellLevel": 0,
           "source": {
             "custom": "MM pg. 345"
-          }
+          },
+          "ideal": "",
+          "bond": "",
+          "flaw": ""
         },
         "traits": {
           "size": "med",
@@ -659,14 +675,14 @@
       },
       "prototypeToken": {
         "name": "Commoner",
-        "displayName": 20,
+        "displayName": 30,
         "actorLink": false,
         "width": 1,
         "height": 1,
         "lockRotation": false,
         "rotation": 0,
         "disposition": 0,
-        "displayBars": 20,
+        "displayBars": 40,
         "bar1": {
           "attribute": "attributes.hp"
         },
@@ -697,16 +713,22 @@
             "max": 1
           },
           "attenuation": 0.5,
-          "color": null
+          "color": null,
+          "negative": false,
+          "priority": 0
         },
         "texture": {
           "src": "systems/dnd5e/tokens/humanoid/Commoner.webp",
-          "tint": null,
+          "tint": "#ffffff",
           "scaleX": 1,
           "scaleY": 1,
           "offsetX": 0,
           "offsetY": 0,
-          "rotation": 0
+          "rotation": 0,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "fit": "contain",
+          "alphaThreshold": 0.75
         },
         "sight": {
           "angle": 360,
@@ -721,15 +743,33 @@
         },
         "detectionModes": [],
         "appendNumber": false,
-        "prependAdjective": false
+        "prependAdjective": false,
+        "hexagonalShape": 0,
+        "occludable": {
+          "radius": 0
+        },
+        "ring": {
+          "enabled": false,
+          "colors": {
+            "ring": null,
+            "background": null
+          },
+          "effects": 1,
+          "subject": {
+            "scale": 1,
+            "texture": null
+          }
+        }
       },
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "systemVersion": "3.2.1",
+        "coreVersion": "12.331",
         "createdTime": null,
-        "modifiedTime": 1723158270988,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "modifiedTime": 1728937985714,
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": "Compendium.dnd5e.monsters.SqZRuJ8lt2KGJBbq",
+        "duplicateSource": null
       }
     },
     {
@@ -756,12 +796,15 @@
               "custom": "PHB pg. 144"
             },
             "quantity": 1,
-            "weight": 10,
+            "weight": {
+              "value": 10,
+              "units": "lb"
+            },
             "price": {
               "value": 10,
               "denomination": "gp"
             },
-            "attunement": 0,
+            "attunement": "",
             "equipped": true,
             "rarity": "common",
             "identified": true,
@@ -777,7 +820,7 @@
             "cover": null,
             "crewed": false,
             "target": {
-              "value": null,
+              "value": "",
               "width": null,
               "units": "",
               "type": "",
@@ -835,6 +878,7 @@
             },
             "strength": null,
             "proficient": 1,
+            "attuned": false,
             "unidentified": {
               "description": ""
             },
@@ -847,6 +891,7 @@
               "flat": false
             },
             "container": null,
+            "enchantment": null,
             "summons": null,
             "properties": []
           },
@@ -856,10 +901,12 @@
           "_stats": {
             "systemId": null,
             "systemVersion": null,
-            "coreVersion": null,
+            "coreVersion": "12.331",
             "createdTime": null,
             "modifiedTime": null,
-            "lastModifiedBy": null
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         },
         {
@@ -880,12 +927,15 @@
               "custom": "PHB pg. 144"
             },
             "quantity": 1,
-            "weight": 6,
+            "weight": {
+              "value": 6,
+              "units": "lb"
+            },
             "price": {
               "value": 10,
               "denomination": "gp"
             },
-            "attunement": 0,
+            "attunement": "",
             "equipped": true,
             "rarity": "common",
             "identified": true,
@@ -901,7 +951,7 @@
             "cover": null,
             "crewed": false,
             "target": {
-              "value": null,
+              "value": "",
               "width": null,
               "units": "",
               "type": "",
@@ -959,6 +1009,7 @@
             },
             "strength": null,
             "proficient": 1,
+            "attuned": false,
             "unidentified": {
               "description": ""
             },
@@ -971,6 +1022,7 @@
               "flat": false
             },
             "container": null,
+            "enchantment": null,
             "summons": null,
             "properties": []
           },
@@ -980,10 +1032,12 @@
           "_stats": {
             "systemId": null,
             "systemVersion": null,
-            "coreVersion": null,
+            "coreVersion": "12.331",
             "createdTime": null,
             "modifiedTime": null,
-            "lastModifiedBy": null
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         },
         {
@@ -1015,7 +1069,7 @@
             "cover": null,
             "crewed": false,
             "target": {
-              "value": null,
+              "value": "",
               "width": null,
               "units": "",
               "type": "",
@@ -1069,7 +1123,11 @@
               "bonus": "",
               "flat": false
             },
+            "enchantment": null,
             "summons": null,
+            "prerequisites": {
+              "level": null
+            },
             "properties": []
           },
           "ownership": {
@@ -1078,10 +1136,12 @@
           "_stats": {
             "systemId": null,
             "systemVersion": null,
-            "coreVersion": null,
+            "coreVersion": "12.331",
             "createdTime": null,
             "modifiedTime": null,
-            "lastModifiedBy": null
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         },
         {
@@ -1102,12 +1162,15 @@
               "custom": "PHB pg. 149"
             },
             "quantity": 1,
-            "weight": 3,
+            "weight": {
+              "value": 3,
+              "units": "lb"
+            },
             "price": {
               "value": 25,
               "denomination": "gp"
             },
-            "attunement": 0,
+            "attunement": "",
             "equipped": true,
             "rarity": "common",
             "identified": true,
@@ -1123,7 +1186,7 @@
             "cover": null,
             "crewed": false,
             "target": {
-              "value": null,
+              "value": "",
               "width": null,
               "units": "",
               "type": "",
@@ -1183,6 +1246,7 @@
               "lgt"
             ],
             "proficient": 1,
+            "attuned": false,
             "unidentified": {
               "description": ""
             },
@@ -1195,6 +1259,7 @@
               "flat": false
             },
             "container": null,
+            "enchantment": null,
             "summons": null,
             "magicalBonus": null
           },
@@ -1204,10 +1269,12 @@
           "_stats": {
             "systemId": null,
             "systemVersion": null,
-            "coreVersion": null,
+            "coreVersion": "12.331",
             "createdTime": null,
             "modifiedTime": null,
-            "lastModifiedBy": null
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         },
         {
@@ -1228,12 +1295,15 @@
               "custom": "PHB pg. 149"
             },
             "quantity": 1,
-            "weight": 2,
+            "weight": {
+              "value": 2,
+              "units": "lb"
+            },
             "price": {
               "value": 25,
               "denomination": "gp"
             },
-            "attunement": 0,
+            "attunement": "",
             "equipped": true,
             "rarity": "common",
             "identified": true,
@@ -1249,7 +1319,7 @@
             "cover": null,
             "crewed": false,
             "target": {
-              "value": null,
+              "value": "",
               "width": null,
               "units": "",
               "type": "",
@@ -1309,6 +1379,7 @@
               "amm"
             ],
             "proficient": 1,
+            "attuned": false,
             "unidentified": {
               "description": ""
             },
@@ -1321,6 +1392,7 @@
               "flat": false
             },
             "container": null,
+            "enchantment": null,
             "summons": null,
             "magicalBonus": null
           },
@@ -1330,10 +1402,12 @@
           "_stats": {
             "systemId": null,
             "systemVersion": null,
-            "coreVersion": null,
+            "coreVersion": "12.331",
             "createdTime": null,
             "modifiedTime": null,
-            "lastModifiedBy": null
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         }
       ],
@@ -1347,6 +1421,9 @@
         },
         "midi-qol": {
           "concentration-damage": 0
+        },
+        "anonymous": {
+          "showName": true
         }
       },
       "system": {
@@ -1462,6 +1539,9 @@
             },
             "limit": 1
           },
+          "hd": {
+            "spent": 0
+          },
           "death": {
             "ability": "",
             "roll": {
@@ -1491,7 +1571,10 @@
           "spellLevel": 0,
           "source": {
             "custom": "MM pg. 166"
-          }
+          },
+          "ideal": "",
+          "bond": "",
+          "flaw": ""
         },
         "traits": {
           "size": "sm",
@@ -1863,14 +1946,14 @@
       },
       "prototypeToken": {
         "name": "Goblin",
-        "displayName": 0,
+        "displayName": 30,
         "actorLink": false,
         "width": 1,
         "height": 1,
         "lockRotation": false,
         "rotation": 0,
         "disposition": -1,
-        "displayBars": 20,
+        "displayBars": 40,
         "bar1": {
           "attribute": "attributes.hp"
         },
@@ -1881,9 +1964,7 @@
           "monks-tokenbar": {
             "include": "default"
           },
-          "core": {
-            "occlusionRadius": null
-          },
+          "core": {},
           "autorotate": {
             "enabled": null,
             "offset": null
@@ -1912,16 +1993,22 @@
             "max": 1
           },
           "color": null,
-          "attenuation": 0.5
+          "attenuation": 0.5,
+          "negative": false,
+          "priority": 0
         },
         "texture": {
           "src": "modules/sdnd-strahd-adv/images/tokens/NPC/Goblin_Token.webp",
-          "tint": null,
+          "tint": "#ffffff",
           "scaleX": 1,
           "scaleY": 1,
           "offsetX": 0,
           "offsetY": 0,
-          "rotation": 0
+          "rotation": 0,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "fit": "contain",
+          "alphaThreshold": 0.75
         },
         "sight": {
           "angle": 360,
@@ -1936,15 +2023,33 @@
         },
         "detectionModes": [],
         "appendNumber": false,
-        "prependAdjective": false
+        "prependAdjective": false,
+        "hexagonalShape": 0,
+        "occludable": {
+          "radius": 0
+        },
+        "ring": {
+          "enabled": false,
+          "colors": {
+            "ring": null,
+            "background": null
+          },
+          "effects": 1,
+          "subject": {
+            "scale": 1,
+            "texture": null
+          }
+        }
       },
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "systemVersion": "3.2.1",
+        "coreVersion": "12.331",
         "createdTime": null,
-        "modifiedTime": 1723158270988,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "modifiedTime": 1728937986068,
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": "Compendium.dnd5e.monsters.TjWQOgI3A4UAl7lC",
+        "duplicateSource": null
       }
     },
     {
@@ -2074,6 +2179,9 @@
             },
             "success": 0,
             "failure": 0
+          },
+          "hd": {
+            "spent": 0
           }
         },
         "details": {
@@ -2097,7 +2205,10 @@
             "book": "SRD 5.1",
             "page": "",
             "license": "CC-BY-4.0"
-          }
+          },
+          "ideal": "",
+          "bond": "",
+          "flaw": ""
         },
         "traits": {
           "size": "med",
@@ -2469,7 +2580,7 @@
         "lockRotation": false,
         "rotation": 0,
         "disposition": 0,
-        "displayBars": 20,
+        "displayBars": 40,
         "bar1": {
           "attribute": "attributes.hp"
         },
@@ -2504,16 +2615,22 @@
             "max": 1
           },
           "attenuation": 0.5,
-          "color": null
+          "color": null,
+          "negative": false,
+          "priority": 0
         },
         "texture": {
           "src": "systems/dnd5e/tokens/humanoid/Commoner.webp",
-          "tint": null,
+          "tint": "#ffffff",
           "scaleX": 1,
           "scaleY": 1,
           "offsetX": 0,
           "offsetY": 0,
-          "rotation": 0
+          "rotation": 0,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "fit": "contain",
+          "alphaThreshold": 0.75
         },
         "sight": {
           "angle": 360,
@@ -2528,7 +2645,23 @@
         },
         "detectionModes": [],
         "appendNumber": false,
-        "prependAdjective": false
+        "prependAdjective": false,
+        "hexagonalShape": 0,
+        "occludable": {
+          "radius": 0
+        },
+        "ring": {
+          "enabled": false,
+          "colors": {
+            "ring": null,
+            "background": null
+          },
+          "effects": 1,
+          "subject": {
+            "scale": 1,
+            "texture": null
+          }
+        }
       },
       "items": [
         {
@@ -2548,12 +2681,15 @@
               "license": "CC-BY-4.0"
             },
             "quantity": 1,
-            "weight": 2,
+            "weight": {
+              "value": 2,
+              "units": "lb"
+            },
             "price": {
               "value": 1,
               "denomination": "gp"
             },
-            "attunement": 0,
+            "attunement": "",
             "equipped": true,
             "rarity": "",
             "identified": true,
@@ -2568,7 +2704,7 @@
             },
             "cover": null,
             "target": {
-              "value": null,
+              "value": "",
               "width": null,
               "units": "",
               "type": "",
@@ -2641,7 +2777,9 @@
               "flat": false
             },
             "summons": null,
-            "magicalBonus": null
+            "magicalBonus": null,
+            "attuned": false,
+            "enchantment": null
           },
           "effects": [],
           "folder": null,
@@ -2657,10 +2795,12 @@
           "_stats": {
             "systemId": null,
             "systemVersion": null,
-            "coreVersion": null,
+            "coreVersion": "12.331",
             "createdTime": null,
             "modifiedTime": null,
-            "lastModifiedBy": null
+            "lastModifiedBy": null,
+            "compendiumSource": "Compendium.dnd5e.items.nfIRTECQIG81CvM4",
+            "duplicateSource": null
           }
         }
       ],
@@ -2678,11 +2818,13 @@
       },
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "systemVersion": "3.2.1",
+        "coreVersion": "12.331",
         "createdTime": 1661787232838,
-        "modifiedTime": 1722904216535,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "modifiedTime": 1728663612389,
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": "Compendium.dnd5e.monsters.Actor.SqZRuJ8lt2KGJBbq",
+        "duplicateSource": null
       }
     },
     {
@@ -2812,6 +2954,9 @@
             },
             "success": 0,
             "failure": 0
+          },
+          "hd": {
+            "spent": 0
           }
         },
         "details": {
@@ -2835,7 +2980,10 @@
             "book": "SRD 5.1",
             "page": "",
             "license": "CC-BY-4.0"
-          }
+          },
+          "ideal": "",
+          "bond": "",
+          "flaw": ""
         },
         "traits": {
           "size": "med",
@@ -3207,7 +3355,7 @@
         "lockRotation": false,
         "rotation": 0,
         "disposition": 0,
-        "displayBars": 20,
+        "displayBars": 40,
         "bar1": {
           "attribute": "attributes.hp"
         },
@@ -3242,16 +3390,22 @@
             "max": 1
           },
           "attenuation": 0.5,
-          "color": null
+          "color": null,
+          "negative": false,
+          "priority": 0
         },
         "texture": {
           "src": "systems/dnd5e/tokens/humanoid/Commoner.webp",
-          "tint": null,
+          "tint": "#ffffff",
           "scaleX": 1,
           "scaleY": 1,
           "offsetX": 0,
           "offsetY": 0,
-          "rotation": 0
+          "rotation": 0,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "fit": "contain",
+          "alphaThreshold": 0.75
         },
         "sight": {
           "angle": 360,
@@ -3266,7 +3420,23 @@
         },
         "detectionModes": [],
         "appendNumber": false,
-        "prependAdjective": false
+        "prependAdjective": false,
+        "hexagonalShape": 0,
+        "occludable": {
+          "radius": 0
+        },
+        "ring": {
+          "enabled": false,
+          "colors": {
+            "ring": null,
+            "background": null
+          },
+          "effects": 1,
+          "subject": {
+            "scale": 1,
+            "texture": null
+          }
+        }
       },
       "items": [
         {
@@ -3286,12 +3456,15 @@
               "license": "CC-BY-4.0"
             },
             "quantity": 1,
-            "weight": 2,
+            "weight": {
+              "value": 2,
+              "units": "lb"
+            },
             "price": {
               "value": 1,
               "denomination": "gp"
             },
-            "attunement": 0,
+            "attunement": "",
             "equipped": true,
             "rarity": "",
             "identified": true,
@@ -3306,7 +3479,7 @@
             },
             "cover": null,
             "target": {
-              "value": null,
+              "value": "",
               "width": null,
               "units": "",
               "type": "",
@@ -3379,7 +3552,9 @@
               "flat": false
             },
             "summons": null,
-            "magicalBonus": null
+            "magicalBonus": null,
+            "attuned": false,
+            "enchantment": null
           },
           "effects": [],
           "folder": null,
@@ -3395,10 +3570,12 @@
           "_stats": {
             "systemId": null,
             "systemVersion": null,
-            "coreVersion": null,
+            "coreVersion": "12.331",
             "createdTime": null,
             "modifiedTime": null,
-            "lastModifiedBy": null
+            "lastModifiedBy": null,
+            "compendiumSource": "Compendium.dnd5e.items.nfIRTECQIG81CvM4",
+            "duplicateSource": null
           }
         }
       ],
@@ -3416,11 +3593,13 @@
       },
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "systemVersion": "3.2.1",
+        "coreVersion": "12.331",
         "createdTime": 1661787232838,
-        "modifiedTime": 1722904261732,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "modifiedTime": 1728663613758,
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": "Compendium.dnd5e.monsters.Actor.SqZRuJ8lt2KGJBbq",
+        "duplicateSource": null
       }
     }
   ],
@@ -3443,7 +3622,7 @@
           },
           "text": {
             "format": 1,
-            "content": "<aside>\n<blockquote>\n<p data-content-chunk-id=\"021127b7-f520-4b16-8d59-60c20a607b0d\">To a party of seasoned adventurers such as yourselves, what you see is but another dull tavern in another dull town in some nameless province. It is but another span of time between the challenges of true adventuring.</p>\n<p data-content-chunk-id=\"411a92c2-2014-484e-aa33-e0ad60b58fdd\">Outside the tavern, a fog lies over the town this evening. The damp, cobbled pavement glistens as the lights of street lanterns dance across the slick stones. The fog chills the bones and shivers the soul of anyone outside.</p>\n<p data-content-chunk-id=\"0af1afce-d0e5-48b9-8f3d-c4d84ea52c6c\">Yet inside these tavern walls the food is hearty, and the ale is warm and frothy. A fire blazes in the hearth, and the tavern is alive with the tumbling voices of country folk.</p>\n<p data-content-chunk-id=\"5e717d28-aa91-43f8-8a29-1e2e9091e6e1\">Suddenly, the tavern door swings open, and a hush falls over the room. Framed by the lamp-lit fog, a form strides through the doorway. His heavy, booted footfalls and the jingle of his coins shatter the silence. His brightly colored clothes are draped in loose folds about him, and his hat hangs askew, hiding his eyes in shadows. Without hesitation, he walks up to your table and stands proudly in a wide stance with folded arms.</p>\n<p data-content-chunk-id=\"31849544-c716-492a-a32e-547586462c3d\">In an accented voice he says, “I have been sent to you to deliver this message. If you be creatures of honor, you will come to my Master’s aid at first light. It is not advisable to travel the Svalich Woods at night!” He pulls from his tunic a sealed letter, addressed to all of you in beautiful flowing script. He drops the letter on the table. “Take the west road from here some five hours march down through the Svalich Woods. There you will find my master in Barovia.”</p>\n<p data-content-chunk-id=\"ec57ad3e-718d-41b6-aa6f-09995c40015d\">Amid the silent stares of the patronage, the man strides to the bar and says to the wary barkeep, “Fill the glasses, one and all. Their throats are obviously parched.” He drops a purse heavy with gold on the bar. With that, he leaves.</p>\n<p data-content-chunk-id=\"24cd5c83-ae2e-4277-844d-edcbb1267c22\">The babble of tavern voices resumes, although somewhat subdued. The letter is lying before you. The seal is in the shape of a crest you don’t recognize.</p>\n</blockquote>\n</aside>\n<figure id=\"Figure4\"><a href=\"https://www.dndbeyond.com/attachments/1/831/cos19-10.png\" data-lightbox=\"1\" data-title><img src=\"https://www.dndbeyond.com/attachments/thumbnails/1/831/350/287/cos19-10.png\" /></a>\n<figcaption>STRAHD’S CREST</figcaption>\n</figure>\n<p data-content-chunk-id=\"f24aa5b1-5314-4db9-b030-9ea5fff3654a\">The characters can interrupt the messenger at any time. His name is Arrigal (NE male human <a href=\"https://www.dndbeyond.com/monsters/16790-assassin\" data-tooltip-href=\"//www.dndbeyond.com/monsters/16790-tooltip?disable-webm=1&amp;disable-webm=1\">assassin</a>), and he is a Vistani. The other tavern patrons regard his people as friendly folk who travel about in covered wagons and usually keep to themselves.</p>\n<p data-content-chunk-id=\"8bb8bdbf-c54f-4281-9693-4feebd77f8ec\">Arrigal describes Barovia as a valley of great beauty and his master as a remarkable man. If the characters question Arrigal about the identity of his master, he claims to serve Burgomaster Kolyan Indirovich, but in truth he serves Strahd. After delivering the letter, Arrigal mounts his horse and rides off. He doesn’t wait for the characters to follow him.</p>\n<p data-content-chunk-id=\"fdd4a179-f03c-47e7-bd05-74b12ff4c977\">The crest depicted on the letter’s seal belongs to Strahd, though the characters have never seen it before. Show the players Strahd’s crest.</p>\n<p data-content-chunk-id=\"80beda2a-4d4a-4e16-aba0-4e2ef2cd7e99\">The letter, which seems to have been written by the burgomaster, was actually penned by Strahd. If the characters read the letter, show the players “<a title=\"Kolyan Indirovich’s Letter (Version 1)\" href=\"https://www.dndbeyond.com/sources/cos/appendix-f-handouts#KolyanIndirovichsLetterversion1\" data-content-chunk-id=\"ff4d4174-23a8-4a36-993c-452f0c5ef4ea\">Kolyan Indirovich’s Letter (Version 1)</a>” in <a title=\"appendix F\" href=\"https://www.dndbeyond.com/sources/cos/appendix-f-handouts\" data-content-chunk-id=\"997b5ecf-76f7-45a0-a6a0-15339b08f949\">appendix F</a>. The letter is bait to lure the adventurers to Barovia. If the characters take the bait, they arrive at <a title=\"area A\" href=\"https://www.dndbeyond.com/sources/cos/the-lands-of-barovia#AOldSvalichRoad\" data-content-chunk-id=\"d31790d7-81b2-416e-ad69-c85e250f068e\">area A</a> (see <a title=\"Chapter 2\" href=\"https://www.dndbeyond.com/sources/cos/the-lands-of-barovia\" data-content-chunk-id=\"89ab1789-dd93-4328-8bb2-da11746663af\">chapter 2</a>, “The Lands of Barovia”).</p>"
+            "content": "<aside><blockquote><p data-content-chunk-id=\"021127b7-f520-4b16-8d59-60c20a607b0d\">To a party of seasoned adventurers such as yourselves, what you see is but another dull tavern in another dull town in some nameless province. It is but another span of time between the challenges of true adventuring.</p><p data-content-chunk-id=\"411a92c2-2014-484e-aa33-e0ad60b58fdd\">Outside the tavern, a fog lies over the town this evening. The damp, cobbled pavement glistens as the lights of street lanterns dance across the slick stones. The fog chills the bones and shivers the soul of anyone outside.</p><p data-content-chunk-id=\"0af1afce-d0e5-48b9-8f3d-c4d84ea52c6c\">Yet inside these tavern walls the food is hearty, and the ale is warm and frothy. A fire blazes in the hearth, and the tavern is alive with the tumbling voices of country folk.</p><p data-content-chunk-id=\"5e717d28-aa91-43f8-8a29-1e2e9091e6e1\">Suddenly, the tavern door swings open, and a hush falls over the room. Framed by the lamp-lit fog, a form strides through the doorway. His heavy, booted footfalls and the jingle of his coins shatter the silence. His brightly colored clothes are draped in loose folds about him, and his hat hangs askew, hiding his eyes in shadows. Without hesitation, he walks up to your table and stands proudly in a wide stance with folded arms.</p><p data-content-chunk-id=\"31849544-c716-492a-a32e-547586462c3d\">In an accented voice he says, “I have been sent to you to deliver this message. If you be creatures of honor, you will come to my Master’s aid at first light. It is not advisable to travel the Svalich Woods at night!” He pulls from his tunic a sealed letter, addressed to all of you in beautiful flowing script. He drops the letter on the table. “Take the west road from here some five hours march down through the Svalich Woods. There you will find my master in Barovia.”</p><p data-content-chunk-id=\"ec57ad3e-718d-41b6-aa6f-09995c40015d\">Amid the silent stares of the patronage, the man strides to the bar and says to the wary barkeep, “Fill the glasses, one and all. Their throats are obviously parched.” He drops a purse heavy with gold on the bar. With that, he leaves.</p><p data-content-chunk-id=\"24cd5c83-ae2e-4277-844d-edcbb1267c22\">The babble of tavern voices resumes, although somewhat subdued. The letter is lying before you. The seal is in the shape of a crest you don’t recognize.</p></blockquote></aside><figure id=\"Figure4\"><a href=\"https://www.dndbeyond.com/attachments/1/831/cos19-10.png\" data-lightbox=\"1\" data-title><img src=\"https://www.dndbeyond.com/attachments/thumbnails/1/831/350/287/cos19-10.png\" /></a><figcaption>STRAHD’S CREST</figcaption></figure><p data-content-chunk-id=\"f24aa5b1-5314-4db9-b030-9ea5fff3654a\">The characters can interrupt the messenger at any time. His name is Arrigal (NE male human <a href=\"https://www.dndbeyond.com/monsters/16790-assassin\" data-tooltip-href=\"//www.dndbeyond.com/monsters/16790-tooltip?disable-webm=1&amp;disable-webm=1\">assassin</a>), and he is a Vistani. The other tavern patrons regard his people as friendly folk who travel about in covered wagons and usually keep to themselves.</p><p data-content-chunk-id=\"8bb8bdbf-c54f-4281-9693-4feebd77f8ec\">Arrigal describes Barovia as a valley of great beauty and his master as a remarkable man. If the characters question Arrigal about the identity of his master, he claims to serve Burgomaster Kolyan Indirovich, but in truth he serves Strahd. After delivering the letter, Arrigal mounts his horse and rides off. He doesn’t wait for the characters to follow him.</p><p data-content-chunk-id=\"fdd4a179-f03c-47e7-bd05-74b12ff4c977\">The crest depicted on the letter’s seal belongs to Strahd, though the characters have never seen it before. Show the players Strahd’s crest.</p><p data-content-chunk-id=\"80beda2a-4d4a-4e16-aba0-4e2ef2cd7e99\">The letter, which seems to have been written by the burgomaster, was actually penned by Strahd. If the characters read the letter, show the players “<a title=\"Kolyan Indirovich’s Letter (Version 1)\" href=\"https://www.dndbeyond.com/sources/cos/appendix-f-handouts#KolyanIndirovichsLetterversion1\" data-content-chunk-id=\"ff4d4174-23a8-4a36-993c-452f0c5ef4ea\">Kolyan Indirovich’s Letter (Version 1)</a>” in <a title=\"appendix F\" href=\"https://www.dndbeyond.com/sources/cos/appendix-f-handouts\" data-content-chunk-id=\"997b5ecf-76f7-45a0-a6a0-15339b08f949\">appendix F</a>. The letter is bait to lure the adventurers to Barovia. If the characters take the bait, they arrive at <a title=\"area A\" href=\"https://www.dndbeyond.com/sources/cos/the-lands-of-barovia#AOldSvalichRoad\" data-content-chunk-id=\"d31790d7-81b2-416e-ad69-c85e250f068e\">area A</a> (see <a title=\"Chapter 2\" href=\"https://www.dndbeyond.com/sources/cos/the-lands-of-barovia\" data-content-chunk-id=\"89ab1789-dd93-4328-8bb2-da11746663af\">chapter 2</a>, “The Lands of Barovia”).</p>"
           },
           "_id": "vtQ6tdnQXQqJuKCl",
           "image": {},
@@ -3459,12 +3638,14 @@
           },
           "flags": {},
           "_stats": {
-            "systemId": null,
-            "systemVersion": null,
-            "coreVersion": null,
+            "systemId": "dnd5e",
+            "systemVersion": "3.2.1",
+            "coreVersion": "12.331",
             "createdTime": null,
-            "modifiedTime": null,
-            "lastModifiedBy": null
+            "modifiedTime": 1729083585664,
+            "lastModifiedBy": "6yhz13iFYYklKtgA",
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         }
       ],
@@ -3473,12 +3654,14 @@
         "6yhz13iFYYklKtgA": 3
       },
       "_stats": {
-        "systemId": null,
-        "systemVersion": null,
-        "coreVersion": null,
-        "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null
+        "systemId": "dnd5e",
+        "systemVersion": "3.2.1",
+        "coreVersion": "12.331",
+        "createdTime": 1729083510911,
+        "modifiedTime": 1729083585664,
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       }
     }
   ],
@@ -3507,14 +3690,11 @@
         "color": "#000000",
         "alpha": 0.2,
         "distance": 5,
-        "units": "ft"
+        "units": "ft",
+        "style": "solidLines",
+        "thickness": 1
       },
       "tokenVision": true,
-      "fogExploration": true,
-      "fogReset": 1666030070290,
-      "globalLight": false,
-      "globalLightThreshold": null,
-      "darkness": 0,
       "drawings": [],
       "tokens": [
         {
@@ -3530,7 +3710,6 @@
           "elevation": 0,
           "lockRotation": false,
           "rotation": 0,
-          "effects": [],
           "alpha": 1,
           "hidden": false,
           "light": {
@@ -3554,7 +3733,9 @@
               "max": 1
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "disposition": 0,
           "displayBars": 40,
@@ -3576,23 +3757,8 @@
             "monks-tokenbar": {
               "include": "default"
             },
-            "core": {
-              "occlusionRadius": null
-            },
-            "dnd5e": {
-              "tokenRing": {
-                "enabled": false,
-                "textures": {
-                  "subject": null
-                },
-                "scaleCorrection": 1,
-                "colors": {
-                  "ring": null,
-                  "background": null
-                },
-                "effects": 1
-              }
-            },
+            "core": {},
+            "dnd5e": {},
             "item-piles": {
               "data": {
                 "enabled": false,
@@ -3684,12 +3850,16 @@
           },
           "texture": {
             "src": "modules/caeora-maps-tokens-assets/assets/tokens/npc%27s/humans/without-shadows/BarKeep1.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0.75
           },
           "sight": {
             "angle": 360,
@@ -3702,7 +3872,6 @@
             "saturation": 0,
             "contrast": 0
           },
-          "overlayEffect": "",
           "detectionModes": [],
           "delta": {
             "flags": {
@@ -3720,7 +3889,26 @@
             "ownership": null
           },
           "appendNumber": false,
-          "prependAdjective": false
+          "prependAdjective": false,
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "texture": null,
+              "scale": 1
+            }
+          },
+          "hexagonalShape": 0,
+          "sort": 0,
+          "locked": false,
+          "occludable": {
+            "radius": 0
+          },
+          "_regions": []
         },
         {
           "_id": "WGwBShkkEI5UsTKS",
@@ -3735,7 +3923,6 @@
           "elevation": 0,
           "lockRotation": false,
           "rotation": 315,
-          "effects": [],
           "alpha": 1,
           "hidden": false,
           "light": {
@@ -3759,7 +3946,9 @@
               "max": 1
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "disposition": 0,
           "displayBars": 40,
@@ -3784,12 +3973,16 @@
           },
           "texture": {
             "src": "systems/dnd5e/tokens/humanoid/Commoner.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0.75
           },
           "sight": {
             "angle": 360,
@@ -3802,7 +3995,6 @@
             "saturation": 0,
             "contrast": 0
           },
-          "overlayEffect": "",
           "detectionModes": [],
           "delta": {
             "_id": "WGwBShkkEI5UsTKS",
@@ -3816,7 +4008,26 @@
             "flags": {}
           },
           "appendNumber": false,
-          "prependAdjective": false
+          "prependAdjective": false,
+          "hexagonalShape": 0,
+          "sort": 0,
+          "locked": false,
+          "occludable": {
+            "radius": 0
+          },
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "scale": 1,
+              "texture": null
+            }
+          },
+          "_regions": []
         },
         {
           "_id": "tQmY6ywTDtcMUnK1",
@@ -3831,7 +4042,6 @@
           "elevation": 0,
           "lockRotation": false,
           "rotation": 315,
-          "effects": [],
           "alpha": 1,
           "hidden": false,
           "light": {
@@ -3855,7 +4065,9 @@
               "max": 1
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "disposition": 0,
           "displayBars": 40,
@@ -3877,12 +4089,16 @@
           },
           "texture": {
             "src": "modules/caeora-maps-tokens-assets/assets/tokens/npc%27s/humans/without-shadows/Farmer1.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0.75
           },
           "sight": {
             "angle": 360,
@@ -3895,7 +4111,6 @@
             "saturation": 0,
             "contrast": 0
           },
-          "overlayEffect": "",
           "detectionModes": [],
           "delta": {
             "_id": "tQmY6ywTDtcMUnK1",
@@ -3909,7 +4124,26 @@
             "flags": {}
           },
           "appendNumber": false,
-          "prependAdjective": false
+          "prependAdjective": false,
+          "hexagonalShape": 0,
+          "sort": 0,
+          "locked": false,
+          "occludable": {
+            "radius": 0
+          },
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "scale": 1,
+              "texture": null
+            }
+          },
+          "_regions": []
         },
         {
           "_id": "UI7Nr0LqR8UJswAJ",
@@ -3924,7 +4158,6 @@
           "elevation": 0,
           "lockRotation": false,
           "rotation": 45,
-          "effects": [],
           "alpha": 1,
           "hidden": false,
           "light": {
@@ -3948,7 +4181,9 @@
               "max": 1
             },
             "attenuation": 0.5,
-            "color": null
+            "color": null,
+            "negative": false,
+            "priority": 0
           },
           "disposition": 0,
           "displayBars": 40,
@@ -3967,12 +4202,16 @@
           },
           "texture": {
             "src": "systems/dnd5e/tokens/humanoid/Commoner.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0.75
           },
           "sight": {
             "angle": 360,
@@ -3985,7 +4224,6 @@
             "saturation": 0,
             "contrast": 0
           },
-          "overlayEffect": "",
           "detectionModes": [],
           "delta": {
             "_id": "UI7Nr0LqR8UJswAJ",
@@ -3999,7 +4237,26 @@
             "flags": {}
           },
           "appendNumber": false,
-          "prependAdjective": false
+          "prependAdjective": false,
+          "hexagonalShape": 0,
+          "sort": 0,
+          "locked": false,
+          "occludable": {
+            "radius": 0
+          },
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "scale": 1,
+              "texture": null
+            }
+          },
+          "_regions": []
         },
         {
           "_id": "szil0OSJ4qgR1qmz",
@@ -4014,7 +4271,6 @@
           "elevation": 0,
           "lockRotation": false,
           "rotation": 45,
-          "effects": [],
           "alpha": 1,
           "hidden": false,
           "light": {
@@ -4038,7 +4294,9 @@
               "max": 1
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "disposition": 0,
           "displayBars": 40,
@@ -4060,12 +4318,16 @@
           },
           "texture": {
             "src": "modules/caeora-maps-tokens-assets/assets/tokens/npc%27s/humans/without-shadows/ShopKeep3.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 0.7,
             "scaleY": 0.7,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0.75
           },
           "sight": {
             "angle": 360,
@@ -4078,7 +4340,6 @@
             "saturation": 0,
             "contrast": 0
           },
-          "overlayEffect": "",
           "detectionModes": [],
           "delta": {
             "_id": "szil0OSJ4qgR1qmz",
@@ -4092,7 +4353,26 @@
             "flags": {}
           },
           "appendNumber": false,
-          "prependAdjective": false
+          "prependAdjective": false,
+          "hexagonalShape": 0,
+          "sort": 0,
+          "locked": false,
+          "occludable": {
+            "radius": 0
+          },
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "scale": 1,
+              "texture": null
+            }
+          },
+          "_regions": []
         },
         {
           "_id": "ZDZX1tXp2HyyEdFj",
@@ -4107,7 +4387,6 @@
           "elevation": 0,
           "lockRotation": false,
           "rotation": 315,
-          "effects": [],
           "alpha": 1,
           "hidden": false,
           "light": {
@@ -4131,7 +4410,9 @@
               "max": 1
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "disposition": 1,
           "displayBars": 40,
@@ -4156,12 +4437,16 @@
           },
           "texture": {
             "src": "modules/caeora-maps-tokens-assets/assets/tokens/npc%27s/humans/with-shadows/Farmer2.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 0.9,
             "scaleY": 0.9,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0.75
           },
           "sight": {
             "angle": 360,
@@ -4174,7 +4459,6 @@
             "saturation": 0,
             "contrast": 0
           },
-          "overlayEffect": "",
           "detectionModes": [],
           "delta": {
             "flags": {
@@ -4192,7 +4476,26 @@
             "ownership": null
           },
           "appendNumber": false,
-          "prependAdjective": false
+          "prependAdjective": false,
+          "hexagonalShape": 0,
+          "sort": 0,
+          "locked": false,
+          "occludable": {
+            "radius": 0
+          },
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "scale": 1,
+              "texture": null
+            }
+          },
+          "_regions": []
         },
         {
           "_id": "KLjhv0VAoFt6xMXb",
@@ -4207,7 +4510,6 @@
           "elevation": 0,
           "lockRotation": false,
           "rotation": 0,
-          "effects": [],
           "alpha": 1,
           "hidden": false,
           "light": {
@@ -4231,7 +4533,9 @@
               "max": 1
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "disposition": 1,
           "displayBars": 40,
@@ -4245,27 +4549,12 @@
             "monks-tokenbar": {
               "include": "default"
             },
-            "core": {
-              "occlusionRadius": null
-            },
+            "core": {},
             "autorotate": {
               "enabled": null,
               "offset": null
             },
-            "dnd5e": {
-              "tokenRing": {
-                "enabled": false,
-                "textures": {
-                  "subject": null
-                },
-                "scaleCorrection": 1,
-                "colors": {
-                  "ring": null,
-                  "background": null
-                },
-                "effects": 1
-              }
-            },
+            "dnd5e": {},
             "item-piles": {
               "data": {
                 "enabled": true,
@@ -4357,12 +4646,16 @@
           },
           "texture": {
             "src": "modules/caeora-maps-tokens-assets/assets/tokens/npc%27s/humans/with-shadows/Barmaid9.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 0.9,
             "scaleY": 0.9,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0.75
           },
           "sight": {
             "angle": 360,
@@ -4375,7 +4668,6 @@
             "saturation": 0,
             "contrast": 0
           },
-          "overlayEffect": "",
           "detectionModes": [],
           "delta": {
             "_id": "KLjhv0VAoFt6xMXb",
@@ -4422,13 +4714,16 @@
                     "custom": "PHB pg. 153"
                   },
                   "quantity": 100,
-                  "weight": 2,
+                  "weight": {
+                    "value": 2,
+                    "units": "lb"
+                  },
                   "price": {
                     "value": 0.5,
                     "denomination": "gp"
                   },
-                  "attunement": 0,
-                  "equipped": false,
+                  "attunement": "",
+                  "equipped": true,
                   "rarity": "common",
                   "identified": true,
                   "activation": {
@@ -4443,7 +4738,7 @@
                   "cover": null,
                   "crewed": false,
                   "target": {
-                    "value": 1,
+                    "value": "1",
                     "width": null,
                     "units": "",
                     "type": "creature",
@@ -4497,6 +4792,8 @@
                     "flat": false
                   },
                   "container": null,
+                  "attuned": false,
+                  "enchantment": null,
                   "summons": null,
                   "magicalBonus": null,
                   "properties": []
@@ -4507,10 +4804,12 @@
                 "_stats": {
                   "systemId": null,
                   "systemVersion": null,
-                  "coreVersion": null,
+                  "coreVersion": "12.331",
                   "createdTime": null,
                   "modifiedTime": null,
-                  "lastModifiedBy": null
+                  "lastModifiedBy": null,
+                  "compendiumSource": "Compendium.dnd5e.items.f4w4GxBi0nYXmhX4",
+                  "duplicateSource": null
                 }
               },
               {
@@ -4549,13 +4848,16 @@
                     "custom": "PHB pg. 153"
                   },
                   "quantity": 100,
-                  "weight": 5,
+                  "weight": {
+                    "value": 5,
+                    "units": "lb"
+                  },
                   "price": {
                     "value": 0.2,
                     "denomination": "gp"
                   },
-                  "attunement": 0,
-                  "equipped": false,
+                  "attunement": "",
+                  "equipped": true,
                   "rarity": "common",
                   "identified": true,
                   "activation": {
@@ -4570,7 +4872,7 @@
                   "cover": null,
                   "crewed": false,
                   "target": {
-                    "value": 0,
+                    "value": "0",
                     "width": null,
                     "units": "",
                     "type": "",
@@ -4624,6 +4926,8 @@
                     "flat": false
                   },
                   "container": null,
+                  "attuned": false,
+                  "enchantment": null,
                   "summons": null,
                   "magicalBonus": null,
                   "properties": []
@@ -4634,18 +4938,19 @@
                 "_stats": {
                   "systemId": null,
                   "systemVersion": null,
-                  "coreVersion": null,
+                  "coreVersion": "12.331",
                   "createdTime": null,
                   "modifiedTime": null,
-                  "lastModifiedBy": null
+                  "lastModifiedBy": null,
+                  "compendiumSource": "Compendium.dnd5e.items.Uv0ilmzbWvqmlCVH",
+                  "duplicateSource": null
                 }
               }
             ],
             "effects": [
               {
                 "name": "Vendor",
-                "icon": "icons/commodities/currency/coin-embossed-star-gold.webp",
-                "tint": null,
+                "tint": "#ffffff",
                 "duration": {
                   "startTime": 822,
                   "seconds": null,
@@ -4693,7 +4998,21 @@
                 "disabled": false,
                 "description": "",
                 "origin": null,
-                "statuses": []
+                "statuses": [],
+                "_stats": {
+                  "coreVersion": "12.331",
+                  "systemId": null,
+                  "systemVersion": null,
+                  "createdTime": null,
+                  "modifiedTime": null,
+                  "lastModifiedBy": null,
+                  "compendiumSource": null,
+                  "duplicateSource": null
+                },
+                "img": "icons/commodities/currency/coin-embossed-star-gold.webp",
+                "type": "base",
+                "system": {},
+                "sort": 0
               }
             ],
             "flags": {
@@ -4730,11 +5049,29 @@
               }
             },
             "name": null,
-            "type": null,
-            "ownership": null
+            "type": null
           },
           "appendNumber": false,
-          "prependAdjective": false
+          "prependAdjective": false,
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "texture": null,
+              "scale": 1
+            }
+          },
+          "hexagonalShape": 0,
+          "sort": 0,
+          "locked": false,
+          "occludable": {
+            "radius": 0
+          },
+          "_regions": []
         },
         {
           "_id": "PLSsKTcrqDIhH7dp",
@@ -4749,7 +5086,6 @@
           "elevation": 0,
           "lockRotation": false,
           "rotation": 315,
-          "effects": [],
           "alpha": 1,
           "hidden": false,
           "light": {
@@ -4773,7 +5109,9 @@
               "max": 1
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "disposition": 1,
           "displayBars": 40,
@@ -4798,12 +5136,16 @@
           },
           "texture": {
             "src": "custom_tokens/NPC/dwarf_miner.png",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 0.9,
             "scaleY": 0.9,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0.75
           },
           "sight": {
             "angle": 360,
@@ -4816,7 +5158,6 @@
             "saturation": 0,
             "contrast": 0
           },
-          "overlayEffect": "",
           "detectionModes": [],
           "delta": {
             "_id": "PLSsKTcrqDIhH7dp",
@@ -4830,7 +5171,26 @@
             "flags": {}
           },
           "appendNumber": false,
-          "prependAdjective": false
+          "prependAdjective": false,
+          "hexagonalShape": 0,
+          "sort": 0,
+          "locked": false,
+          "occludable": {
+            "radius": 0
+          },
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "scale": 1,
+              "texture": null
+            }
+          },
+          "_regions": []
         },
         {
           "_id": "gEZd8FhdnrNfHbdI",
@@ -4845,7 +5205,6 @@
           "elevation": 0,
           "lockRotation": false,
           "rotation": 180,
-          "effects": [],
           "alpha": 1,
           "hidden": false,
           "light": {
@@ -4869,7 +5228,9 @@
               "max": 1
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "disposition": 1,
           "displayBars": 40,
@@ -4894,12 +5255,16 @@
           },
           "texture": {
             "src": "modules/caeora-maps-tokens-assets/assets/tokens/npc%27s/humans/with-shadows/Cook3.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0.75
           },
           "sight": {
             "angle": 360,
@@ -4912,7 +5277,6 @@
             "saturation": 0,
             "contrast": 0
           },
-          "overlayEffect": "",
           "detectionModes": [],
           "delta": {
             "_id": "gEZd8FhdnrNfHbdI",
@@ -4926,7 +5290,26 @@
             "flags": {}
           },
           "appendNumber": false,
-          "prependAdjective": false
+          "prependAdjective": false,
+          "hexagonalShape": 0,
+          "sort": 0,
+          "locked": false,
+          "occludable": {
+            "radius": 0
+          },
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "scale": 1,
+              "texture": null
+            }
+          },
+          "_regions": []
         },
         {
           "_id": "Bu1P48NiyszyvlxA",
@@ -4941,7 +5324,6 @@
           "elevation": 0,
           "lockRotation": false,
           "rotation": 45,
-          "effects": [],
           "alpha": 1,
           "hidden": false,
           "light": {
@@ -4965,7 +5347,9 @@
               "max": 1
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "disposition": 1,
           "displayBars": 40,
@@ -4990,12 +5374,16 @@
           },
           "texture": {
             "src": "modules/caeora-maps-tokens-assets/assets/tokens/npc%27s/humans/with-shadows/Boy3.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 0.6,
             "scaleY": 0.6,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0.75
           },
           "sight": {
             "angle": 360,
@@ -5008,7 +5396,6 @@
             "saturation": 0,
             "contrast": 0
           },
-          "overlayEffect": "",
           "detectionModes": [],
           "delta": {
             "flags": {
@@ -5026,7 +5413,26 @@
             "ownership": null
           },
           "appendNumber": false,
-          "prependAdjective": false
+          "prependAdjective": false,
+          "hexagonalShape": 0,
+          "sort": 0,
+          "locked": false,
+          "occludable": {
+            "radius": 0
+          },
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "scale": 1,
+              "texture": null
+            }
+          },
+          "_regions": []
         },
         {
           "_id": "h5sqMWq7p6puXnXl",
@@ -5041,7 +5447,6 @@
           "elevation": 0,
           "lockRotation": false,
           "rotation": 90,
-          "effects": [],
           "alpha": 1,
           "hidden": false,
           "light": {
@@ -5065,7 +5470,9 @@
               "max": 1
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "disposition": 1,
           "displayBars": 40,
@@ -5090,12 +5497,16 @@
           },
           "texture": {
             "src": "modules/caeora-maps-tokens-assets/assets/tokens/npc%27s/humans/with-shadows/Old%20Woman1.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 0.9,
             "scaleY": 0.9,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0.75
           },
           "sight": {
             "angle": 360,
@@ -5108,7 +5519,6 @@
             "saturation": 0,
             "contrast": 0
           },
-          "overlayEffect": "",
           "detectionModes": [],
           "delta": {
             "flags": {
@@ -5126,7 +5536,26 @@
             "ownership": null
           },
           "appendNumber": false,
-          "prependAdjective": false
+          "prependAdjective": false,
+          "hexagonalShape": 0,
+          "sort": 0,
+          "locked": false,
+          "occludable": {
+            "radius": 0
+          },
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "scale": 1,
+              "texture": null
+            }
+          },
+          "_regions": []
         },
         {
           "_id": "XhcJhSfpPzmibHVH",
@@ -5141,7 +5570,6 @@
           "elevation": 0,
           "lockRotation": false,
           "rotation": 270,
-          "effects": [],
           "alpha": 1,
           "hidden": true,
           "light": {
@@ -5165,7 +5593,9 @@
               "max": 1
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "disposition": -1,
           "displayBars": 40,
@@ -5185,12 +5615,16 @@
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/tokens/NPC/Arrigal_Token.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 0.9,
             "scaleY": 0.9,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0.75
           },
           "sight": {
             "angle": 360,
@@ -5203,7 +5637,6 @@
             "saturation": 0,
             "contrast": 0
           },
-          "overlayEffect": "",
           "detectionModes": [],
           "delta": {
             "_id": "XhcJhSfpPzmibHVH",
@@ -5217,7 +5650,26 @@
             "flags": {}
           },
           "appendNumber": false,
-          "prependAdjective": false
+          "prependAdjective": false,
+          "hexagonalShape": 0,
+          "sort": 0,
+          "locked": false,
+          "occludable": {
+            "radius": 0
+          },
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "scale": 1,
+              "texture": null
+            }
+          },
+          "_regions": []
         }
       ],
       "lights": [
@@ -5249,10 +5701,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "QudViMmGhV7XW4Qp",
@@ -5282,10 +5737,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "XxMCq62uzVy787vl",
@@ -5315,10 +5773,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "KxLqRO1dz4rQJ6hP",
@@ -5348,10 +5809,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "86KcrYBdpycNLNzV",
@@ -5381,10 +5845,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "Rh5AnElrekUIdQcA",
@@ -5414,10 +5881,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "Z3uHrmfDq79BFDYf",
@@ -5447,10 +5917,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "9zMXCBTvJE9caPwx",
@@ -5480,10 +5953,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "MPTwXPyFUJ0kYiHT",
@@ -5513,10 +5989,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "4dAhVlyHVPhpsXNF",
@@ -5546,10 +6025,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "N6R012GlAbpqZ9Iy",
@@ -5579,10 +6061,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "f2hGtjvC2aFjk4fw",
@@ -5612,10 +6097,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "lqcx2M8lfxEdJo0c",
@@ -5645,10 +6133,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "CP2jIUic0Njbu4P7",
@@ -5678,10 +6169,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "nVkEMblv7YJjNNtY",
@@ -5711,10 +6205,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "b9kQCDYM44GGjrUO",
@@ -5744,10 +6241,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "XfAf1NmecwMDgT2B",
@@ -5777,10 +6277,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "2IcsP1QM4u7a7Wg8",
@@ -5810,10 +6313,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "tCu14ypnT5C0wGZr",
@@ -5843,10 +6349,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "2MELwEAk7DQZcJ88",
@@ -5876,10 +6385,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "oTpl01jgo0v02wY2",
@@ -5909,10 +6421,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "S4zwkDHF7YyvTOEs",
@@ -5942,10 +6457,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "dNTbbu1dWRlLoO3j",
@@ -5975,10 +6493,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "7BTuddmRO5CUXu84",
@@ -6008,10 +6529,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "85s2LrC7zg3WUusM",
@@ -6041,10 +6565,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": true,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "1gmQnV9zDbXehIvd",
@@ -6074,10 +6601,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "Kwp8sxxVj559EroK",
@@ -6107,10 +6637,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "PoQR5WHoyqRpR1JQ",
@@ -6140,10 +6673,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "znew4DZOvCKXzyxG",
@@ -6173,10 +6709,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "eOwcfdYm4Kg9nP7p",
@@ -6206,10 +6745,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "j5PYhfE9OfzWgw7f",
@@ -6239,10 +6781,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "zyiE4rGEAqW9G6K1",
@@ -6272,10 +6817,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "Gbxb7FTrdWcxo5PX",
@@ -6305,10 +6853,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "wH9YvL8jtkyhnUQx",
@@ -6338,10 +6889,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "YqMjdX7Rr7qu12JQ",
@@ -6371,10 +6925,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "4F8AcR9BMXtuA8tt",
@@ -6404,10 +6961,13 @@
               "max": 1
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "Cfpde2bI6jvjLqPB",
@@ -6437,10 +6997,13 @@
               "max": 1
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "n9PC7JYc6DlU29NP",
@@ -6470,10 +7033,13 @@
               "max": 1
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "pYsppuKhpJ6GkdbY",
@@ -6503,10 +7069,13 @@
               "max": 1
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "EVq216xLYUPnnu8L",
@@ -6536,10 +7105,13 @@
               "max": 1
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "nL0ZtdYgmCq98ukx",
@@ -6569,10 +7141,13 @@
               "max": 1
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "CCY9IFKPBJ4USKxc",
@@ -6602,10 +7177,13 @@
               "max": 1
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "jaXEszhd3trvLoA0",
@@ -6635,10 +7213,13 @@
               "max": 1
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "afuDyo3N95FzRxys",
@@ -6668,10 +7249,13 @@
               "max": 1
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "HBOB1nhseZdilhax",
@@ -6701,10 +7285,13 @@
               "max": 1
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "eiwnd8NOG8a5I8N3",
@@ -6734,10 +7321,13 @@
               "max": 1
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "M05pzwpAYjuM3ylG",
@@ -6767,10 +7357,13 @@
               "max": 1
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "H9KVs7ScGkfZpPdv",
@@ -6800,10 +7393,13 @@
               "max": 1
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         }
       ],
       "notes": [
@@ -6816,20 +7412,26 @@
           "fontFamily": "Signika",
           "fontSize": 48,
           "textAnchor": 1,
-          "textColor": "#FFFFFF",
+          "textColor": "#ffffff",
           "flags": {},
           "texture": {
             "src": "icons/svg/book.svg",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0
           },
           "pageId": null,
           "text": "",
-          "global": false
+          "global": false,
+          "elevation": 0,
+          "sort": 0
         }
       ],
       "sounds": [
@@ -6848,7 +7450,16 @@
             "min": 0,
             "max": 1
           },
-          "flags": {}
+          "flags": {},
+          "elevation": 0,
+          "effects": {
+            "base": {
+              "intensity": 5
+            },
+            "muffled": {
+              "intensity": 5
+            }
+          }
         },
         {
           "_id": "4Nnt8b7RdTekarcP",
@@ -6865,7 +7476,16 @@
             "min": 0,
             "max": 1
           },
-          "flags": {}
+          "flags": {},
+          "elevation": 0,
+          "effects": {
+            "base": {
+              "intensity": 5
+            },
+            "muffled": {
+              "intensity": 5
+            }
+          }
         },
         {
           "_id": "dagPXrCX7eKMz9MK",
@@ -6882,7 +7502,16 @@
             "min": 0,
             "max": 1
           },
-          "flags": {}
+          "flags": {},
+          "elevation": 0,
+          "effects": {
+            "base": {
+              "intensity": 5
+            },
+            "muffled": {
+              "intensity": 5
+            }
+          }
         }
       ],
       "templates": [],
@@ -8644,20 +9273,67 @@
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0,
-        "tint": null
+        "tint": "#ffffff",
+        "anchorX": 0,
+        "anchorY": 0,
+        "fit": "fill",
+        "alphaThreshold": 0
       },
       "foregroundElevation": 20,
-      "fogOverlay": null,
-      "fogExploredColor": null,
-      "fogUnexploredColor": null,
       "journalEntryPage": null,
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "systemVersion": "3.2.1",
+        "coreVersion": "12.331",
         "createdTime": 1722904240471,
-        "modifiedTime": 1723173197378,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "modifiedTime": 1730040883782,
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": "Scene.gFUapEn8vIK0WFGC",
+        "duplicateSource": null
+      },
+      "regions": [],
+      "environment": {
+        "globalLight": {
+          "luminosity": 0,
+          "enabled": false,
+          "darkness": {
+            "max": 1,
+            "min": 0
+          },
+          "alpha": 0.5,
+          "bright": false,
+          "color": null,
+          "coloration": 1,
+          "saturation": 0,
+          "contrast": 0,
+          "shadows": 0
+        },
+        "darknessLevel": 0,
+        "darknessLock": false,
+        "cycle": true,
+        "base": {
+          "hue": 0,
+          "intensity": 0,
+          "luminosity": 0,
+          "saturation": 0,
+          "shadows": 0
+        },
+        "dark": {
+          "hue": 0.7138888888888889,
+          "intensity": 0,
+          "luminosity": -0.25,
+          "saturation": 0,
+          "shadows": 0
+        }
+      },
+      "fog": {
+        "exploration": true,
+        "reset": 1666030070290,
+        "overlay": null,
+        "colors": {
+          "explored": null,
+          "unexplored": null
+        }
       }
     }
   ],
@@ -8678,11 +9354,14 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1704839429551,
         "modifiedTime": 1722218706935,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
-      }
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "description": ""
     },
     {
       "name": "Adventure Hooks",
@@ -8697,10 +9376,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": 1704839436613,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       }
     },
     {
@@ -8715,11 +9396,14 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1704839237165,
         "modifiedTime": 1704857631386,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
-      }
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "description": ""
     },
     {
       "name": "SDND - Curse of Strahd",
@@ -8727,16 +9411,18 @@
       "folder": null,
       "type": "Actor",
       "description": "",
-      "sort": -100000,
+      "sort": 100000,
       "color": "#ff0000",
       "flags": {},
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "2.4.1",
-        "coreVersion": "11.315",
+        "systemVersion": "3.2.1",
+        "coreVersion": "12.331",
         "createdTime": null,
-        "modifiedTime": 1704857642509,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "modifiedTime": 1728566149782,
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_id": "SgCwMBKLb1IzBVaz"
     },
@@ -8753,10 +9439,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.2.2",
-        "coreVersion": "10.291",
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": 1689092687175,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       }
     },
     {
@@ -8772,10 +9460,12 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
       }
     },
     {
@@ -8791,10 +9481,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": 1705027182703,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       }
     },
     {
@@ -8810,10 +9502,12 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
       }
     },
     {
@@ -8828,11 +9522,14 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1722904125436,
         "modifiedTime": 1722904125436,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
-      }
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "description": ""
     }
   ],
   "_id": "CofwxIQglX5zzpSW",
@@ -8840,10 +9537,12 @@
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "3.1.2",
-    "coreVersion": "11.315",
+    "coreVersion": "12.331",
     "createdTime": 1689094485137,
-    "modifiedTime": 1723173294595,
-    "lastModifiedBy": "6yhz13iFYYklKtgA"
+    "modifiedTime": 1730046227211,
+    "lastModifiedBy": "6yhz13iFYYklKtgA",
+    "compendiumSource": null,
+    "duplicateSource": null
   },
   "folder": null,
   "_key": "!adventures!CofwxIQglX5zzpSW"

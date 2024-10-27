@@ -526,7 +526,11 @@
       "offsetX": 0,
       "offsetY": 0,
       "rotation": 0,
-      "tint": null
+      "tint": "#ffffff",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "alphaThreshold": 0.75
     },
     "width": 1,
     "height": 1,
@@ -562,7 +566,9 @@
         "min": 0,
         "max": 1
       },
-      "color": null
+      "color": null,
+      "negative": false,
+      "priority": 0
     },
     "sight": {
       "enabled": false,
@@ -593,25 +599,26 @@
           "plant"
         ]
       },
-      "core": {
-        "occlusionRadius": null
+      "core": {},
+      "dnd5e": {}
+    },
+    "randomImg": false,
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
       },
-      "dnd5e": {
-        "tokenRing": {
-          "enabled": false,
-          "textures": {
-            "subject": ""
-          },
-          "scaleCorrection": 1,
-          "colors": {
-            "ring": "",
-            "background": ""
-          },
-          "effects": 1
-        }
+      "effects": 1,
+      "subject": {
+        "texture": null,
+        "scale": 1
       }
     },
-    "randomImg": false
+    "hexagonalShape": 0,
+    "occludable": {
+      "radius": 0
+    }
   },
   "items": [
     {
@@ -771,10 +778,12 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_key": "!actors.items!XZFwX1FPVBrFQbDi.3mRbqK636svBjmaq"
     },
@@ -904,10 +913,12 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_key": "!actors.items!XZFwX1FPVBrFQbDi.tVyRCaJfDUtv5FDF"
     }
@@ -951,11 +962,13 @@
   },
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "3.2.1",
-    "coreVersion": "11.315",
+    "systemVersion": "3.3.1",
+    "coreVersion": "12.331",
     "createdTime": 1721275340252,
-    "modifiedTime": 1728566217766,
-    "lastModifiedBy": "6yhz13iFYYklKtgA"
+    "modifiedTime": 1730040687622,
+    "lastModifiedBy": "6yhz13iFYYklKtgA",
+    "compendiumSource": "Compendium.sdnd-shared.sdnd-ddb-monsters.Actor.R5b021iOSDEbLMez",
+    "duplicateSource": null
   },
   "_key": "!actors!XZFwX1FPVBrFQbDi"
 }

@@ -41,10 +41,12 @@
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.1.2",
-            "coreVersion": "11.315",
+            "coreVersion": "12.331",
             "createdTime": 1720665673270,
             "modifiedTime": 1720665762562,
-            "lastModifiedBy": "6yhz13iFYYklKtgA"
+            "lastModifiedBy": "6yhz13iFYYklKtgA",
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         },
         {
@@ -75,10 +77,12 @@
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.2.1",
-            "coreVersion": "11.315",
+            "coreVersion": "12.331",
             "createdTime": 1720665791842,
             "modifiedTime": 1729116237536,
-            "lastModifiedBy": "6yhz13iFYYklKtgA"
+            "lastModifiedBy": "6yhz13iFYYklKtgA",
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         },
         {
@@ -109,10 +113,12 @@
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.1.2",
-            "coreVersion": "11.315",
+            "coreVersion": "12.331",
             "createdTime": 1720665830003,
             "modifiedTime": 1720666022954,
-            "lastModifiedBy": "6yhz13iFYYklKtgA"
+            "lastModifiedBy": "6yhz13iFYYklKtgA",
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         },
         {
@@ -143,10 +149,12 @@
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.2.1",
-            "coreVersion": "11.315",
+            "coreVersion": "12.331",
             "createdTime": 1720666140595,
             "modifiedTime": 1729003465176,
-            "lastModifiedBy": "6yhz13iFYYklKtgA"
+            "lastModifiedBy": "6yhz13iFYYklKtgA",
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         },
         {
@@ -173,18 +181,16 @@
             "default": -1,
             "6yhz13iFYYklKtgA": 3
           },
-          "flags": {
-            "core": {
-              "sourceId": "JournalEntry.ED831XzPWhzarQcH.JournalEntryPage.XQMyH2aW1XEXRxYv"
-            }
-          },
+          "flags": {},
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.2.1",
-            "coreVersion": "11.315",
+            "coreVersion": "12.331",
             "createdTime": 1720666820200,
             "modifiedTime": 1729117104920,
-            "lastModifiedBy": "6yhz13iFYYklKtgA"
+            "lastModifiedBy": "6yhz13iFYYklKtgA",
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         },
         {
@@ -215,10 +221,12 @@
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.2.1",
-            "coreVersion": "11.315",
+            "coreVersion": "12.331",
             "createdTime": 1720667395741,
             "modifiedTime": 1729003552032,
-            "lastModifiedBy": "6yhz13iFYYklKtgA"
+            "lastModifiedBy": "6yhz13iFYYklKtgA",
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         },
         {
@@ -249,10 +257,12 @@
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.2.1",
-            "coreVersion": "11.315",
+            "coreVersion": "12.331",
             "createdTime": 1720668018377,
             "modifiedTime": 1729117525197,
-            "lastModifiedBy": "6yhz13iFYYklKtgA"
+            "lastModifiedBy": "6yhz13iFYYklKtgA",
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         }
       ],
@@ -265,10 +275,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1720665662034,
-        "modifiedTime": 1729003552032,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "modifiedTime": 1729117525197,
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       }
     }
   ],
@@ -287,7 +299,12 @@
         "scaleY": 1,
         "offsetX": 0,
         "offsetY": 0,
-        "rotation": 0
+        "rotation": 0,
+        "anchorX": 0,
+        "anchorY": 0,
+        "fit": "fill",
+        "tint": "#ffffff",
+        "alphaThreshold": 0
       },
       "foregroundElevation": 20,
       "width": 3840,
@@ -305,14 +322,11 @@
         "color": "#000000",
         "alpha": 0.2,
         "distance": 5,
-        "units": "ft"
+        "units": "ft",
+        "style": "solidLines",
+        "thickness": 1
       },
       "tokenVision": true,
-      "fogExploration": true,
-      "fogReset": 1720669941663,
-      "globalLight": false,
-      "globalLightThreshold": null,
-      "darkness": 0,
       "drawings": [],
       "tokens": [],
       "lights": [],
@@ -326,20 +340,26 @@
           "global": false,
           "iconSize": 80,
           "texture": {
-            "tint": null,
+            "tint": "#ffffff",
             "src": "icons/svg/book.svg",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0
           },
           "fontFamily": "Signika",
           "fontSize": 32,
-          "textColor": "#FFFFFF",
+          "textColor": "#ffffff",
           "textAnchor": 1,
           "_id": "zjuYxYRGkc49Y2b6",
-          "flags": {}
+          "flags": {},
+          "elevation": 0,
+          "sort": 0
         }
       ],
       "sounds": [],
@@ -361,17 +381,60 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1720669941664,
         "modifiedTime": 1729116351277,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "foreground": null,
       "thumb": "modules/sdnd-strahd-adv/images/thumbs/UlQQ3j0Dxwvqt288-thumb.webp",
-      "fogOverlay": null,
-      "fogExploredColor": null,
-      "fogUnexploredColor": null,
-      "weather": ""
+      "weather": "",
+      "regions": [],
+      "environment": {
+        "globalLight": {
+          "luminosity": 0,
+          "enabled": false,
+          "darkness": {
+            "max": 1,
+            "min": 0
+          },
+          "alpha": 0.5,
+          "bright": false,
+          "color": null,
+          "coloration": 1,
+          "saturation": 0,
+          "contrast": 0,
+          "shadows": 0
+        },
+        "darknessLevel": 0,
+        "darknessLock": false,
+        "cycle": true,
+        "base": {
+          "hue": 0,
+          "intensity": 0,
+          "luminosity": 0,
+          "saturation": 0,
+          "shadows": 0
+        },
+        "dark": {
+          "hue": 0.7138888888888889,
+          "intensity": 0,
+          "luminosity": -0.25,
+          "saturation": 0,
+          "shadows": 0
+        }
+      },
+      "fog": {
+        "exploration": true,
+        "reset": 1720669941663,
+        "overlay": null,
+        "colors": {
+          "explored": null,
+          "unexplored": null
+        }
+      }
     },
     {
       "_id": "zaP2Oo3OKfUgPGOg",
@@ -385,7 +448,11 @@
       "width": 4000,
       "height": 4000,
       "padding": 0.1,
-      "initial": {},
+      "initial": {
+        "x": null,
+        "y": null,
+        "scale": 0.5
+      },
       "backgroundColor": "#000000",
       "grid": {
         "size": 100,
@@ -393,14 +460,11 @@
         "color": "#000000",
         "alpha": 0.2,
         "distance": 5,
-        "units": "ft"
+        "units": "ft",
+        "style": "solidLines",
+        "thickness": 1
       },
       "tokenVision": true,
-      "fogExploration": true,
-      "fogReset": 1675556273833,
-      "globalLight": false,
-      "globalLightThreshold": null,
-      "darkness": 0,
       "drawings": [],
       "tokens": [],
       "lights": [
@@ -432,10 +496,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "xnyotoE8edEICOpB",
@@ -465,10 +532,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "J6BS5dzXH94EnCTS",
@@ -498,10 +568,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "6JP1n5O7oIZGDxPy",
@@ -531,10 +604,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "2ozfZrK8S9BlE6VT",
@@ -564,10 +640,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "UvWGh39EfaHb6Bah",
@@ -597,10 +676,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "Hgi25A0Gw18uPkpR",
@@ -630,10 +712,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "XnoJGPfYHjfc7xKx",
@@ -663,10 +748,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         }
       ],
       "notes": [
@@ -679,17 +767,21 @@
           "global": false,
           "iconSize": 40,
           "texture": {
-            "tint": null,
+            "tint": "#ffffff",
             "src": "icons/svg/book.svg",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0
           },
           "fontFamily": "Signika",
           "fontSize": 32,
-          "textColor": "#FFFFFF",
+          "textColor": "#ffffff",
           "textAnchor": 1,
           "_id": "UCo0KjcLzrNKE2oh",
           "flags": {
@@ -700,7 +792,9 @@
               "slugLink": "goat-pen",
               "labelName": "Goat Pen"
             }
-          }
+          },
+          "elevation": 0,
+          "sort": 0
         }
       ],
       "sounds": [],
@@ -712,16 +806,13 @@
           "height": 4000,
           "x": 400,
           "y": 400,
-          "z": 100,
           "rotation": 0,
           "alpha": 1,
           "hidden": false,
           "locked": true,
-          "overhead": true,
           "occlusion": {
             "mode": 3,
-            "alpha": 0,
-            "radius": null
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -754,14 +845,23 @@
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/maps/Areas/U/u2_ulric_mansion/goat_pen_trees.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "elevation": 20,
+          "sort": 100,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          }
         }
       ],
       "walls": [
@@ -2879,20 +2979,67 @@
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0,
-        "tint": null
+        "tint": "#ffffff",
+        "anchorX": 0,
+        "anchorY": 0,
+        "fit": "fill",
+        "alphaThreshold": 0
       },
       "foregroundElevation": null,
-      "fogOverlay": null,
-      "fogExploredColor": null,
-      "fogUnexploredColor": null,
       "journalEntryPage": null,
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1720666056891,
         "modifiedTime": 1729116892315,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "regions": [],
+      "environment": {
+        "globalLight": {
+          "luminosity": 0,
+          "enabled": false,
+          "darkness": {
+            "max": 1,
+            "min": 0
+          },
+          "alpha": 0.5,
+          "bright": false,
+          "color": null,
+          "coloration": 1,
+          "saturation": 0,
+          "contrast": 0,
+          "shadows": 0
+        },
+        "darknessLevel": 0,
+        "darknessLock": false,
+        "cycle": true,
+        "base": {
+          "hue": 0,
+          "intensity": 0,
+          "luminosity": 0,
+          "saturation": 0,
+          "shadows": 0
+        },
+        "dark": {
+          "hue": 0.7138888888888889,
+          "intensity": 0,
+          "luminosity": -0.25,
+          "saturation": 0,
+          "shadows": 0
+        }
+      },
+      "fog": {
+        "exploration": true,
+        "reset": 1675556273833,
+        "overlay": null,
+        "colors": {
+          "explored": null,
+          "unexplored": null
+        }
       }
     },
     {
@@ -2907,7 +3054,11 @@
       "width": 3000,
       "height": 5000,
       "padding": 0.1,
-      "initial": {},
+      "initial": {
+        "x": null,
+        "y": null,
+        "scale": 0.5
+      },
       "backgroundColor": "#000000",
       "grid": {
         "size": 100,
@@ -2915,14 +3066,11 @@
         "color": "#000000",
         "alpha": 0.2,
         "distance": 5,
-        "units": "ft"
+        "units": "ft",
+        "style": "solidLines",
+        "thickness": 1
       },
       "tokenVision": true,
-      "fogExploration": true,
-      "fogReset": 1675556541229,
-      "globalLight": false,
-      "globalLightThreshold": null,
-      "darkness": 0,
       "drawings": [],
       "tokens": [],
       "lights": [
@@ -2954,10 +3102,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "r8krFSon7JeSqXzW",
@@ -2987,10 +3138,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "xv7cXF7uchJPWAOV",
@@ -3020,10 +3174,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "sgWTDqgCUObb0ktx",
@@ -3053,10 +3210,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "9gLqkhnZ7ex5oMcH",
@@ -3086,10 +3246,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "82kMkJx16YmhxmdY",
@@ -3119,10 +3282,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "IFvOxUj0qNwpZb95",
@@ -3152,10 +3318,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "EmcErV0kqdnZ2BKM",
@@ -3185,10 +3354,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "fU1C5URtDGwYtosN",
@@ -3218,10 +3390,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "haQ0IlHOJ53Algpy",
@@ -3251,10 +3426,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "biuKlNMUCUXhfcj0",
@@ -3284,10 +3462,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "GePKyOkayIeKD8lR",
@@ -3317,10 +3498,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "MVxBImUe26PWLUcz",
@@ -3350,10 +3534,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "BsJ1q6EiWWaSSl5m",
@@ -3383,10 +3570,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "kszb9ZnhEc4dTCwd",
@@ -3416,10 +3606,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "UVin7rXK7wEK0sqY",
@@ -3449,10 +3642,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "kHqqrgZcferknYKU",
@@ -3482,10 +3678,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "IWjhgSTf7ozb6xyk",
@@ -3515,10 +3714,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "GvFRrJ9hIyk4pJAB",
@@ -3548,10 +3750,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "KFokGvJ6Kk90Rn3w",
@@ -3581,10 +3786,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "3ZG2EhAnDG01RHaz",
@@ -3614,10 +3822,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "D3UzD9033xkf2IjN",
@@ -3647,10 +3858,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         }
       ],
       "notes": [
@@ -3663,20 +3877,26 @@
           "global": false,
           "iconSize": 80,
           "texture": {
-            "tint": null,
+            "tint": "#ffffff",
             "src": "icons/svg/book.svg",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0
           },
           "fontFamily": "Signika",
           "fontSize": 32,
-          "textColor": "#FFFFFF",
+          "textColor": "#ffffff",
           "textAnchor": 1,
           "_id": "M9OoyQiNQlqxkNNE",
-          "flags": {}
+          "flags": {},
+          "elevation": 0,
+          "sort": 0
         }
       ],
       "sounds": [],
@@ -3688,16 +3908,13 @@
           "height": 2500,
           "x": 300,
           "y": 500,
-          "z": 100,
           "rotation": 0,
           "alpha": 1,
           "hidden": false,
           "locked": true,
-          "overhead": false,
           "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
+            "mode": 0,
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -3716,9 +3933,18 @@
             "offsetX": 0,
             "offsetY": 0,
             "rotation": 0,
-            "tint": null
+            "tint": "#ffffff",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "sort": 100,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "elevation": 0
         },
         {
           "_id": "xZVQ1rUpjbr38Op9",
@@ -3726,16 +3952,13 @@
           "height": 2500,
           "x": 300,
           "y": 3000,
-          "z": 100,
           "rotation": 0,
           "alpha": 1,
           "hidden": false,
           "locked": true,
-          "overhead": false,
           "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
+            "mode": 0,
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -3754,9 +3977,18 @@
             "offsetX": 0,
             "offsetY": 0,
             "rotation": 0,
-            "tint": null
+            "tint": "#ffffff",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "sort": 100,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "elevation": 0
         },
         {
           "_id": "shHQqfutje22BgO6",
@@ -3764,16 +3996,13 @@
           "height": 2500,
           "x": 300,
           "y": 3000,
-          "z": 100,
           "rotation": 0,
           "alpha": 1,
           "hidden": false,
           "locked": true,
-          "overhead": true,
           "occlusion": {
             "mode": 3,
-            "alpha": 0,
-            "radius": null
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -3806,14 +4035,23 @@
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/maps/Areas/U/u2_ulric_mansion/trees_b.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "elevation": 20,
+          "sort": 100,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          }
         }
       ],
       "walls": [
@@ -6920,20 +7158,67 @@
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0,
-        "tint": null
+        "tint": "#ffffff",
+        "anchorX": 0,
+        "anchorY": 0,
+        "fit": "fill",
+        "alphaThreshold": 0
       },
       "foregroundElevation": null,
-      "fogOverlay": null,
-      "fogExploredColor": null,
-      "fogUnexploredColor": null,
       "journalEntryPage": null,
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1720666103963,
         "modifiedTime": 1729116907272,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "regions": [],
+      "environment": {
+        "globalLight": {
+          "luminosity": 0,
+          "enabled": false,
+          "darkness": {
+            "max": 1,
+            "min": 0
+          },
+          "alpha": 0.5,
+          "bright": false,
+          "color": null,
+          "coloration": 1,
+          "saturation": 0,
+          "contrast": 0,
+          "shadows": 0
+        },
+        "darknessLevel": 0,
+        "darknessLock": false,
+        "cycle": true,
+        "base": {
+          "hue": 0,
+          "intensity": 0,
+          "luminosity": 0,
+          "saturation": 0,
+          "shadows": 0
+        },
+        "dark": {
+          "hue": 0.7138888888888889,
+          "intensity": 0,
+          "luminosity": -0.25,
+          "saturation": 0,
+          "shadows": 0
+        }
+      },
+      "fog": {
+        "exploration": true,
+        "reset": 1675556541229,
+        "overlay": null,
+        "colors": {
+          "explored": null,
+          "unexplored": null
+        }
       }
     },
     {
@@ -6960,14 +7245,11 @@
         "color": "#000000",
         "alpha": 0.2,
         "distance": 5,
-        "units": "ft"
+        "units": "ft",
+        "style": "solidLines",
+        "thickness": 1
       },
       "tokenVision": true,
-      "fogExploration": true,
-      "fogReset": 1675556735643,
-      "globalLight": false,
-      "globalLightThreshold": null,
-      "darkness": 0,
       "drawings": [],
       "tokens": [],
       "lights": [
@@ -6999,10 +7281,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "Q4e1wBFgJ4Wl4hRT",
@@ -7032,10 +7317,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "bi1NvYCnKd5NdOLr",
@@ -7065,10 +7353,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "pZpcAu7zoxbSWEuU",
@@ -7098,10 +7389,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         }
       ],
       "notes": [
@@ -7114,17 +7408,21 @@
           "global": false,
           "iconSize": 40,
           "texture": {
-            "tint": null,
+            "tint": "#ffffff",
             "src": "icons/svg/book.svg",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0
           },
           "fontFamily": "Signika",
           "fontSize": 32,
-          "textColor": "#FFFFFF",
+          "textColor": "#ffffff",
           "textAnchor": 1,
           "_id": "deIP0a5yGUFkXoMp",
           "flags": {
@@ -7135,7 +7433,9 @@
               "slugLink": "cellar",
               "labelName": "Cellar"
             }
-          }
+          },
+          "elevation": 0,
+          "sort": 0
         }
       ],
       "sounds": [],
@@ -7646,20 +7946,67 @@
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0,
-        "tint": null
+        "tint": "#ffffff",
+        "anchorX": 0,
+        "anchorY": 0,
+        "fit": "fill",
+        "alphaThreshold": 0
       },
       "foregroundElevation": null,
-      "fogOverlay": null,
-      "fogExploredColor": null,
-      "fogUnexploredColor": null,
       "journalEntryPage": null,
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1720666083091,
         "modifiedTime": 1729116928109,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "regions": [],
+      "environment": {
+        "globalLight": {
+          "luminosity": 0,
+          "enabled": false,
+          "darkness": {
+            "max": 1,
+            "min": 0
+          },
+          "alpha": 0.5,
+          "bright": false,
+          "color": null,
+          "coloration": 1,
+          "saturation": 0,
+          "contrast": 0,
+          "shadows": 0
+        },
+        "darknessLevel": 0,
+        "darknessLock": false,
+        "cycle": true,
+        "base": {
+          "hue": 0,
+          "intensity": 0,
+          "luminosity": 0,
+          "saturation": 0,
+          "shadows": 0
+        },
+        "dark": {
+          "hue": 0.7138888888888889,
+          "intensity": 0,
+          "luminosity": -0.25,
+          "saturation": 0,
+          "shadows": 0
+        }
+      },
+      "fog": {
+        "exploration": true,
+        "reset": 1675556735643,
+        "overlay": null,
+        "colors": {
+          "explored": null,
+          "unexplored": null
+        }
       }
     },
     {
@@ -7686,14 +8033,11 @@
         "color": "#000000",
         "alpha": 0.2,
         "distance": 5,
-        "units": "ft"
+        "units": "ft",
+        "style": "solidLines",
+        "thickness": 1
       },
       "tokenVision": true,
-      "fogExploration": true,
-      "fogReset": 1675809668528,
-      "globalLight": false,
-      "globalLightThreshold": null,
-      "darkness": 0,
       "drawings": [],
       "tokens": [],
       "lights": [
@@ -7725,10 +8069,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "vzmHyYzBGcycFcld",
@@ -7758,10 +8105,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "sLVmYqHrV0l5B6np",
@@ -7791,10 +8141,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "DZbvzXgS2Z7ADp4x",
@@ -7824,10 +8177,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "m9t1a4ZWdyyfMdaI",
@@ -7857,10 +8213,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "mLqmC1JnAGXNe4Dy",
@@ -7890,10 +8249,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "BzJsCHbXthfnHwL0",
@@ -7923,10 +8285,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "ubEkqeuHMAswOt8x",
@@ -7956,10 +8321,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "CTtekHTJn0lpVqPD",
@@ -7989,10 +8357,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "ACG3TQ9VouJHNP8O",
@@ -8022,10 +8393,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "DYDarCtx8XVDZdtt",
@@ -8055,10 +8429,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "HYSiFBxBcVp85GSi",
@@ -8088,10 +8465,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "FCEsY0q7pSeuCved",
@@ -8121,10 +8501,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "YnbZQoV3oBjsJucg",
@@ -8154,10 +8537,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         }
       ],
       "notes": [
@@ -8170,20 +8556,26 @@
           "global": false,
           "iconSize": 80,
           "texture": {
-            "tint": null,
+            "tint": "#ffffff",
             "src": "icons/svg/book.svg",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0
           },
           "fontFamily": "Signika",
           "fontSize": 32,
-          "textColor": "#FFFFFF",
+          "textColor": "#ffffff",
           "textAnchor": 1,
           "_id": "gQUVYYXNICw5pEh9",
-          "flags": {}
+          "flags": {},
+          "elevation": 0,
+          "sort": 0
         },
         {
           "entryId": "ED831XzPWhzarQcH",
@@ -8194,17 +8586,21 @@
           "global": false,
           "iconSize": 40,
           "texture": {
-            "tint": null,
+            "tint": "#ffffff",
             "src": "icons/svg/book.svg",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0
           },
           "fontFamily": "Signika",
           "fontSize": 32,
-          "textColor": "#FFFFFF",
+          "textColor": "#ffffff",
           "textAnchor": 1,
           "_id": "rBee0qsSQOr7LIq5",
           "flags": {
@@ -8215,7 +8611,9 @@
               "slugLink": "hut-interior",
               "labelName": "Hut Interior"
             }
-          }
+          },
+          "elevation": 0,
+          "sort": 0
         }
       ],
       "sounds": [],
@@ -8227,16 +8625,13 @@
           "height": 1100,
           "x": 400,
           "y": 900,
-          "z": 100,
           "rotation": 0,
           "alpha": 1,
           "hidden": false,
           "locked": true,
-          "overhead": false,
           "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
+            "mode": 0,
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -8277,9 +8672,18 @@
             "offsetX": 0,
             "offsetY": 0,
             "rotation": 0,
-            "tint": null
+            "tint": "#ffffff",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "sort": 100,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "elevation": 0
         },
         {
           "_id": "TjgsdreJqM9B2cZN",
@@ -8287,16 +8691,13 @@
           "height": 1100,
           "x": 400,
           "y": 900,
-          "z": 100,
           "rotation": 0,
           "alpha": 1,
           "hidden": false,
           "locked": true,
-          "overhead": true,
           "occlusion": {
             "mode": 1,
-            "alpha": 0,
-            "radius": null
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -8333,14 +8734,23 @@
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/maps/Areas/U/u3_baba_lysaga/creeping_hut_roof.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "elevation": 20,
+          "sort": 100,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          }
         }
       ],
       "walls": [
@@ -9722,20 +10132,67 @@
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0,
-        "tint": null
+        "tint": "#ffffff",
+        "anchorX": 0,
+        "anchorY": 0,
+        "fit": "fill",
+        "alphaThreshold": 0
       },
       "foregroundElevation": 20,
-      "fogOverlay": null,
-      "fogExploredColor": null,
-      "fogUnexploredColor": null,
       "journalEntryPage": null,
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1719969739760,
         "modifiedTime": 1729117060815,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "regions": [],
+      "environment": {
+        "globalLight": {
+          "luminosity": 0,
+          "enabled": false,
+          "darkness": {
+            "max": 1,
+            "min": 0
+          },
+          "alpha": 0.5,
+          "bright": false,
+          "color": null,
+          "coloration": 1,
+          "saturation": 0,
+          "contrast": 0,
+          "shadows": 0
+        },
+        "darknessLevel": 0,
+        "darknessLock": false,
+        "cycle": true,
+        "base": {
+          "hue": 0,
+          "intensity": 0,
+          "luminosity": 0,
+          "saturation": 0,
+          "shadows": 0
+        },
+        "dark": {
+          "hue": 0.7138888888888889,
+          "intensity": 0,
+          "luminosity": -0.25,
+          "saturation": 0,
+          "shadows": 0
+        }
+      },
+      "fog": {
+        "exploration": true,
+        "reset": 1675809668528,
+        "overlay": null,
+        "colors": {
+          "explored": null,
+          "unexplored": null
+        }
       }
     },
     {
@@ -9762,14 +10219,11 @@
         "color": "#000000",
         "alpha": 0.2,
         "distance": 5,
-        "units": "ft"
+        "units": "ft",
+        "style": "solidLines",
+        "thickness": 1
       },
       "tokenVision": true,
-      "fogExploration": true,
-      "fogReset": 1675810360545,
-      "globalLight": false,
-      "globalLightThreshold": null,
-      "darkness": 0,
       "drawings": [],
       "tokens": [],
       "lights": [
@@ -9801,10 +10255,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "wCV6T0NICkE1bR8x",
@@ -9834,10 +10291,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "ZXrAiDlz2iru6mZi",
@@ -9867,10 +10327,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "BYtsrcJjyOphh9IX",
@@ -9900,10 +10363,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "EHwJL35NYVKLmftE",
@@ -9933,10 +10399,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "lgHcipthdfHelcXN",
@@ -9966,10 +10435,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "bZaPljUKGHz9WMo8",
@@ -9999,10 +10471,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "MMIts6DpLTdyiP1s",
@@ -10032,10 +10507,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "9WGJzArmhucNgTZp",
@@ -10065,10 +10543,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "748ExOs1K7u8bBvE",
@@ -10098,10 +10579,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "k0z7HEPco035NMCd",
@@ -10131,10 +10615,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "EMFDcWCTvPRo1KYV",
@@ -10164,10 +10651,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "7mROU2Na0ilS708V",
@@ -10197,10 +10687,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "MSsQRGJxXJ2pqZF7",
@@ -10230,10 +10723,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "stcxhiTLctRggOYT",
@@ -10263,10 +10759,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "PZwxDD3Eq7a3WPAB",
@@ -10296,10 +10795,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "vathQaUMK1CNtnWY",
@@ -10329,10 +10831,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "X3IcavXCWwlCvEJg",
@@ -10362,10 +10867,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "lwq3fMWZ70cTNzHd",
@@ -10395,10 +10903,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "h4oYZuGgewYwgs4s",
@@ -10428,10 +10939,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "gpd9rlD9oKh2xFMj",
@@ -10461,10 +10975,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "U4gMAk6nuju44EI3",
@@ -10494,10 +11011,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "ODYwy3SP0Fp3jeQv",
@@ -10527,10 +11047,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "ski3H9pkFKWMyEde",
@@ -10560,10 +11083,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "zY0ujGexZyBC3k8z",
@@ -10593,10 +11119,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "s5psdJdoACsIQkMw",
@@ -10626,10 +11155,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "7XDo9Fg9JRWF8jUP",
@@ -10659,10 +11191,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "0rnXyey26TtGSvuU",
@@ -10692,10 +11227,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "kdzCsdk4gQtmBSvo",
@@ -10725,10 +11263,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "JVghQc3iRgjFKYLP",
@@ -10758,10 +11299,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "m2BQ6HWzRrj72pFZ",
@@ -10791,10 +11335,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "fwDpql8g2n2sxW8B",
@@ -10824,10 +11371,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "qRjLfA5BEBcivUuu",
@@ -10857,10 +11407,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "5dplB0567RMSY88l",
@@ -10890,10 +11443,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "sX7hlFO68pzcxkfb",
@@ -10923,10 +11479,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         }
       ],
       "notes": [
@@ -10939,20 +11498,26 @@
           "global": false,
           "iconSize": 80,
           "texture": {
-            "tint": null,
+            "tint": "#ffffff",
             "src": "icons/svg/book.svg",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0
           },
           "fontFamily": "Signika",
           "fontSize": 32,
-          "textColor": "#FFFFFF",
+          "textColor": "#ffffff",
           "textAnchor": 1,
           "_id": "aDMw8SOLL07TsiMV",
-          "flags": {}
+          "flags": {},
+          "elevation": 0,
+          "sort": 0
         }
       ],
       "sounds": [],
@@ -15580,20 +16145,67 @@
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0,
-        "tint": null
+        "tint": "#ffffff",
+        "anchorX": 0,
+        "anchorY": 0,
+        "fit": "fill",
+        "alphaThreshold": 0
       },
       "foregroundElevation": null,
-      "fogOverlay": null,
-      "fogExploredColor": null,
-      "fogUnexploredColor": null,
       "journalEntryPage": null,
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "11.315",
-        "createdTime": null,
-        "modifiedTime": 1729117167833,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "coreVersion": "12.331",
+        "createdTime": 1729117201595,
+        "modifiedTime": 1729117207339,
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "regions": [],
+      "environment": {
+        "globalLight": {
+          "luminosity": 0,
+          "enabled": false,
+          "darkness": {
+            "max": 1,
+            "min": 0
+          },
+          "alpha": 0.5,
+          "bright": false,
+          "color": null,
+          "coloration": 1,
+          "saturation": 0,
+          "contrast": 0,
+          "shadows": 0
+        },
+        "darknessLevel": 0,
+        "darknessLock": false,
+        "cycle": true,
+        "base": {
+          "hue": 0,
+          "intensity": 0,
+          "luminosity": 0,
+          "saturation": 0,
+          "shadows": 0
+        },
+        "dark": {
+          "hue": 0.7138888888888889,
+          "intensity": 0,
+          "luminosity": -0.25,
+          "saturation": 0,
+          "shadows": 0
+        }
+      },
+      "fog": {
+        "exploration": true,
+        "reset": 1675810360545,
+        "overlay": null,
+        "colors": {
+          "explored": null,
+          "unexplored": null
+        }
       }
     },
     {
@@ -15620,14 +16232,11 @@
         "color": "#000000",
         "alpha": 0.2,
         "distance": 5,
-        "units": "ft"
+        "units": "ft",
+        "style": "solidLines",
+        "thickness": 1
       },
       "tokenVision": true,
-      "fogExploration": true,
-      "fogReset": 1675810640265,
-      "globalLight": false,
-      "globalLightThreshold": null,
-      "darkness": 0,
       "drawings": [],
       "tokens": [],
       "lights": [
@@ -15659,10 +16268,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "xXw9AbkDuTG7JPeU",
@@ -15692,10 +16304,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "gRSjafEiXgAEo3Pm",
@@ -15725,10 +16340,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "un4FJsCBky0N7rzv",
@@ -15758,10 +16376,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "Aha8taEgVlLYIpo2",
@@ -15791,10 +16412,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "mnouhBXqkWGdiz70",
@@ -15824,10 +16448,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "GVFPK2y0GEjd5kEk",
@@ -15857,10 +16484,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "qkDurVzGKNho2M8f",
@@ -15890,10 +16520,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "PHgPQj6UfBR8z3GZ",
@@ -15923,10 +16556,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "SRwpz6u0zJcM3y9T",
@@ -15956,10 +16592,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "xEAlSNYHEHBsn6k6",
@@ -15989,10 +16628,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         }
       ],
       "notes": [
@@ -16005,20 +16647,26 @@
           "global": false,
           "iconSize": 40,
           "texture": {
-            "tint": null,
+            "tint": "#ffffff",
             "src": "icons/svg/book.svg",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0
           },
           "fontFamily": "Signika",
           "fontSize": 32,
-          "textColor": "#FFFFFF",
+          "textColor": "#ffffff",
           "textAnchor": 1,
           "_id": "lqYpbkzepYHHWPPv",
-          "flags": {}
+          "flags": {},
+          "elevation": 0,
+          "sort": 0
         }
       ],
       "sounds": [],
@@ -17380,20 +18028,67 @@
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0,
-        "tint": null
+        "tint": "#ffffff",
+        "anchorX": 0,
+        "anchorY": 0,
+        "fit": "fill",
+        "alphaThreshold": 0
       },
       "foregroundElevation": 20,
-      "fogOverlay": null,
-      "fogExploredColor": null,
-      "fogUnexploredColor": null,
       "journalEntryPage": null,
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1720668062057,
         "modifiedTime": 1729117420921,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "regions": [],
+      "environment": {
+        "globalLight": {
+          "luminosity": 0,
+          "enabled": false,
+          "darkness": {
+            "max": 1,
+            "min": 0
+          },
+          "alpha": 0.5,
+          "bright": false,
+          "color": null,
+          "coloration": 1,
+          "saturation": 0,
+          "contrast": 0,
+          "shadows": 0
+        },
+        "darknessLevel": 0,
+        "darknessLock": false,
+        "cycle": true,
+        "base": {
+          "hue": 0,
+          "intensity": 0,
+          "luminosity": 0,
+          "saturation": 0,
+          "shadows": 0
+        },
+        "dark": {
+          "hue": 0.7138888888888889,
+          "intensity": 0,
+          "luminosity": -0.25,
+          "saturation": 0,
+          "shadows": 0
+        }
+      },
+      "fog": {
+        "exploration": true,
+        "reset": 1675810640265,
+        "overlay": null,
+        "colors": {
+          "explored": null,
+          "unexplored": null
+        }
       }
     },
     {
@@ -17410,7 +18105,12 @@
         "scaleY": 1,
         "offsetX": 0,
         "offsetY": 0,
-        "rotation": 0
+        "rotation": 0,
+        "anchorX": 0,
+        "anchorY": 0,
+        "fit": "fill",
+        "tint": "#ffffff",
+        "alphaThreshold": 0
       },
       "foregroundElevation": 20,
       "width": 3840,
@@ -17428,14 +18128,11 @@
         "color": "#000000",
         "alpha": 0.2,
         "distance": 5,
-        "units": "ft"
+        "units": "ft",
+        "style": "solidLines",
+        "thickness": 1
       },
       "tokenVision": true,
-      "fogExploration": true,
-      "fogReset": 1720669175985,
-      "globalLight": false,
-      "globalLightThreshold": null,
-      "darkness": 0,
       "drawings": [],
       "tokens": [],
       "lights": [],
@@ -17449,20 +18146,26 @@
           "global": false,
           "iconSize": 77,
           "texture": {
-            "tint": null,
+            "tint": "#ffffff",
             "src": "icons/svg/book.svg",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0
           },
           "fontFamily": "Signika",
           "fontSize": 32,
-          "textColor": "#FFFFFF",
+          "textColor": "#ffffff",
           "textAnchor": 1,
           "_id": "BS2HUSGzfaRqa9aR",
-          "flags": {}
+          "flags": {},
+          "elevation": 0,
+          "sort": 0
         }
       ],
       "sounds": [],
@@ -17484,17 +18187,60 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1720669175987,
         "modifiedTime": 1729117560666,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "foreground": null,
       "thumb": "modules/sdnd-strahd-adv/images/thumbs/9XszNk8o7upHulfE-thumb.webp",
-      "fogOverlay": null,
-      "fogExploredColor": null,
-      "fogUnexploredColor": null,
-      "weather": ""
+      "weather": "",
+      "regions": [],
+      "environment": {
+        "globalLight": {
+          "luminosity": 0,
+          "enabled": false,
+          "darkness": {
+            "max": 1,
+            "min": 0
+          },
+          "alpha": 0.5,
+          "bright": false,
+          "color": null,
+          "coloration": 1,
+          "saturation": 0,
+          "contrast": 0,
+          "shadows": 0
+        },
+        "darknessLevel": 0,
+        "darknessLock": false,
+        "cycle": true,
+        "base": {
+          "hue": 0,
+          "intensity": 0,
+          "luminosity": 0,
+          "saturation": 0,
+          "shadows": 0
+        },
+        "dark": {
+          "hue": 0.7138888888888889,
+          "intensity": 0,
+          "luminosity": -0.25,
+          "saturation": 0,
+          "shadows": 0
+        }
+      },
+      "fog": {
+        "exploration": true,
+        "reset": 1720669175985,
+        "overlay": null,
+        "colors": {
+          "explored": null,
+          "unexplored": null
+        }
+      }
     }
   ],
   "tables": [],
@@ -17514,11 +18260,14 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1704839237165,
         "modifiedTime": 1704857631386,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
-      }
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "description": ""
     },
     {
       "name": "U1. Swamp Ruins",
@@ -17532,11 +18281,14 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1720669925487,
         "modifiedTime": 1720669925487,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
-      }
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "description": ""
     },
     {
       "_id": "K3BrrexuEgvEQgSF",
@@ -17551,10 +18303,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": 1704857184273,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       }
     },
     {
@@ -17570,10 +18324,12 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
       }
     },
     {
@@ -17589,10 +18345,12 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
       }
     },
     {
@@ -17608,10 +18366,12 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
       }
     },
     {
@@ -17627,10 +18387,12 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
       }
     },
     {
@@ -17646,10 +18408,12 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
       }
     },
     {
@@ -17664,11 +18428,14 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1720665647179,
         "modifiedTime": 1720665647179,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
-      }
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "description": ""
     },
     {
       "name": "Areas",
@@ -17683,10 +18450,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": 1705027185606,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       }
     },
     {
@@ -17701,11 +18470,14 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1705027168419,
         "modifiedTime": 1705027175907,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
-      }
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "description": ""
     }
   ],
   "_id": "PeFa5520fNoBsjjJ",
@@ -17714,10 +18486,12 @@
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "3.2.1",
-    "coreVersion": "11.315",
+    "coreVersion": "12.331",
     "createdTime": 1719969951637,
-    "modifiedTime": 1729117573815,
-    "lastModifiedBy": "6yhz13iFYYklKtgA"
+    "modifiedTime": 1730046514954,
+    "lastModifiedBy": "6yhz13iFYYklKtgA",
+    "compendiumSource": null,
+    "duplicateSource": null
   },
   "_key": "!adventures!PeFa5520fNoBsjjJ"
 }

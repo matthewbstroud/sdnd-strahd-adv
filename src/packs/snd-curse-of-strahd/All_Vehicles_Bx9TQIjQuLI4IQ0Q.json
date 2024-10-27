@@ -217,7 +217,9 @@
             "max": 1
           },
           "color": null,
-          "attenuation": 0.5
+          "attenuation": 0.5,
+          "negative": false,
+          "priority": 0
         },
         "disposition": -1,
         "displayBars": 40,
@@ -235,12 +237,16 @@
         "randomImg": false,
         "texture": {
           "src": "custom_tokens/NPC/LargeHorseCart.png",
-          "tint": null,
+          "tint": "#ffffff",
           "scaleX": 1,
           "scaleY": 1,
           "offsetX": 0,
           "offsetY": 0,
-          "rotation": 0
+          "rotation": 0,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "fit": "contain",
+          "alphaThreshold": 0.75
         },
         "sight": {
           "angle": 360,
@@ -255,15 +261,33 @@
         },
         "detectionModes": [],
         "appendNumber": false,
-        "prependAdjective": false
+        "prependAdjective": false,
+        "hexagonalShape": 1,
+        "occludable": {
+          "radius": 0
+        },
+        "ring": {
+          "enabled": false,
+          "colors": {
+            "ring": null,
+            "background": null
+          },
+          "effects": 1,
+          "subject": {
+            "scale": 1,
+            "texture": null
+          }
+        }
       },
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": 1723173427766,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       }
     },
     {
@@ -442,13 +466,17 @@
         "appendNumber": false,
         "prependAdjective": false,
         "texture": {
-          "src": "modules/sdnd-strahd-adv/images/maps/Areas/V/Van%20Richten%27s%20Tower%20(22x30%20100px)/Ezmerelda%27s%20Wagon%20Roof%20100px.webp",
+          "src": "modules/sdnd-strahd-adv/images/maps/Areas/V/v1_vr_tower/ezmerelda_wagon_roof.webp",
           "scaleX": 1,
           "scaleY": 1,
           "offsetX": 0,
           "offsetY": 0,
           "rotation": 0,
-          "tint": null
+          "tint": "#ffffff",
+          "fit": "height",
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "alphaThreshold": 0.75
         },
         "width": 4,
         "height": 7,
@@ -484,7 +512,9 @@
             "min": 0,
             "max": 1
           },
-          "color": null
+          "color": null,
+          "negative": false,
+          "priority": 0
         },
         "sight": {
           "enabled": false,
@@ -502,25 +532,26 @@
           "monks-tokenbar": {
             "include": "default"
           },
-          "core": {
-            "occlusionRadius": null
+          "core": {},
+          "dnd5e": {}
+        },
+        "randomImg": false,
+        "ring": {
+          "enabled": false,
+          "colors": {
+            "ring": null,
+            "background": null
           },
-          "dnd5e": {
-            "tokenRing": {
-              "enabled": false,
-              "textures": {
-                "subject": ""
-              },
-              "scaleCorrection": 1,
-              "colors": {
-                "ring": "",
-                "background": ""
-              },
-              "effects": 1
-            }
+          "effects": 1,
+          "subject": {
+            "texture": null,
+            "scale": 1
           }
         },
-        "randomImg": false
+        "hexagonalShape": 0,
+        "occludable": {
+          "radius": 0
+        }
       },
       "items": [],
       "effects": [],
@@ -543,11 +574,13 @@
       },
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "systemVersion": "3.2.1",
+        "coreVersion": "12.331",
         "createdTime": 1720728320169,
-        "modifiedTime": 1723173427766,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "modifiedTime": 1729118435918,
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       }
     },
     {
@@ -629,8 +662,8 @@
             "motionless": ""
           },
           "hp": {
-            "value": null,
-            "max": null,
+            "value": 0,
+            "max": 0,
             "temp": 0,
             "tempmax": 0,
             "dt": null,
@@ -762,7 +795,9 @@
             "max": 1
           },
           "color": null,
-          "attenuation": 0.5
+          "attenuation": 0.5,
+          "negative": false,
+          "priority": 0
         },
         "disposition": 1,
         "displayBars": 40,
@@ -788,12 +823,16 @@
         "randomImg": false,
         "texture": {
           "src": "custom_tokens/NPC/LargeHorseCart.png",
-          "tint": null,
+          "tint": "#ffffff",
           "scaleX": 1,
           "scaleY": 1,
           "offsetX": 0,
           "offsetY": 0,
-          "rotation": 0
+          "rotation": 0,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "fit": "contain",
+          "alphaThreshold": 0.75
         },
         "sight": {
           "angle": 360,
@@ -808,15 +847,33 @@
         },
         "detectionModes": [],
         "appendNumber": false,
-        "prependAdjective": false
+        "prependAdjective": false,
+        "hexagonalShape": 0,
+        "occludable": {
+          "radius": 0
+        },
+        "ring": {
+          "enabled": false,
+          "colors": {
+            "ring": null,
+            "background": null
+          },
+          "effects": 1,
+          "subject": {
+            "scale": 1,
+            "texture": null
+          }
+        }
       },
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "systemVersion": "3.2.1",
+        "coreVersion": "12.331",
         "createdTime": null,
-        "modifiedTime": 1723173427766,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "modifiedTime": 1728566687200,
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       }
     },
     {
@@ -1034,7 +1091,9 @@
             "max": 1
           },
           "color": null,
-          "attenuation": 0.5
+          "attenuation": 0.5,
+          "negative": false,
+          "priority": 0
         },
         "disposition": 1,
         "displayBars": 40,
@@ -1060,12 +1119,16 @@
         "randomImg": false,
         "texture": {
           "src": "modules/sdnd-strahd-adv/images/tokens/Vehicles/Travelling_Token.webp",
-          "tint": null,
+          "tint": "#ffffff",
           "scaleX": -0.7,
           "scaleY": 0.7,
           "offsetX": 0,
           "offsetY": 0,
-          "rotation": 0
+          "rotation": 0,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "fit": "contain",
+          "alphaThreshold": 0.75
         },
         "sight": {
           "angle": 360,
@@ -1080,15 +1143,33 @@
         },
         "detectionModes": [],
         "appendNumber": false,
-        "prependAdjective": false
+        "prependAdjective": false,
+        "hexagonalShape": 0,
+        "occludable": {
+          "radius": 0
+        },
+        "ring": {
+          "enabled": false,
+          "colors": {
+            "ring": null,
+            "background": null
+          },
+          "effects": 1,
+          "subject": {
+            "scale": 1,
+            "texture": null
+          }
+        }
       },
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": 1723173427766,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": "Actor.jUG6BIcG9uNoucVl",
+        "duplicateSource": null
       }
     }
   ],
@@ -1107,20 +1188,18 @@
       "folder": null,
       "type": "Actor",
       "description": "",
-      "sort": 500000,
+      "sort": 100000,
       "color": "#ff0000",
-      "flags": {
-        "core": {
-          "sourceId": "Folder.SgCwMBKLb1IzBVaz"
-        }
-      },
+      "flags": {},
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "systemVersion": "3.2.1",
+        "coreVersion": "12.331",
         "createdTime": null,
-        "modifiedTime": 1723672478274,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "modifiedTime": 1728566149782,
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": "Folder.SgCwMBKLb1IzBVaz",
+        "duplicateSource": null
       },
       "_id": "SgCwMBKLb1IzBVaz"
     },
@@ -1131,20 +1210,18 @@
       "sorting": "a",
       "sort": 400000,
       "color": null,
-      "flags": {
-        "core": {
-          "sourceId": "Folder.zd9x2GFMK2wH9kUS"
-        }
-      },
+      "flags": {},
       "folder": "SgCwMBKLb1IzBVaz",
       "description": "",
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": 1726317879401,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       }
     }
   ],
@@ -1154,10 +1231,12 @@
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "3.1.2",
-    "coreVersion": "11.315",
+    "coreVersion": "12.331",
     "createdTime": 1726322125077,
-    "modifiedTime": 1726322125077,
-    "lastModifiedBy": "6yhz13iFYYklKtgA"
+    "modifiedTime": 1730046334539,
+    "lastModifiedBy": "6yhz13iFYYklKtgA",
+    "compendiumSource": null,
+    "duplicateSource": null
   },
   "_key": "!adventures!Bx9TQIjQuLI4IQ0Q"
 }

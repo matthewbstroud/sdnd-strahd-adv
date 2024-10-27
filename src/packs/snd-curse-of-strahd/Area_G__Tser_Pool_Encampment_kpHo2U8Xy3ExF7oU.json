@@ -41,10 +41,12 @@
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.1.2",
-            "coreVersion": "11.315",
+            "coreVersion": "12.331",
             "createdTime": 1704928881058,
             "modifiedTime": 1720554533263,
-            "lastModifiedBy": "6yhz13iFYYklKtgA"
+            "lastModifiedBy": "6yhz13iFYYklKtgA",
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         },
         {
@@ -75,10 +77,12 @@
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "2.4.1",
-            "coreVersion": "11.315",
+            "coreVersion": "12.331",
             "createdTime": 1704928988674,
             "modifiedTime": 1704929060684,
-            "lastModifiedBy": "6yhz13iFYYklKtgA"
+            "lastModifiedBy": "6yhz13iFYYklKtgA",
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         },
         {
@@ -109,10 +113,12 @@
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.1.2",
-            "coreVersion": "11.315",
+            "coreVersion": "12.331",
             "createdTime": 1704929096834,
             "modifiedTime": 1721701658755,
-            "lastModifiedBy": "6yhz13iFYYklKtgA"
+            "lastModifiedBy": "6yhz13iFYYklKtgA",
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         }
       ],
@@ -125,10 +131,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1704928876166,
         "modifiedTime": 1721701658755,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       }
     }
   ],
@@ -157,14 +165,11 @@
         "color": "#000000",
         "alpha": 0.2,
         "distance": 5,
-        "units": "ft"
+        "units": "ft",
+        "style": "solidLines",
+        "thickness": 1
       },
       "tokenVision": true,
-      "fogExploration": true,
-      "fogReset": 1673218695923,
-      "globalLight": true,
-      "globalLightThreshold": null,
-      "darkness": 1,
       "drawings": [],
       "tokens": [
         {
@@ -180,7 +185,6 @@
           "elevation": 0,
           "lockRotation": false,
           "rotation": 45,
-          "effects": [],
           "alpha": 1,
           "hidden": false,
           "light": {
@@ -204,7 +208,9 @@
               "max": 1
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "disposition": -1,
           "displayBars": 40,
@@ -224,32 +230,21 @@
             "monks-tokenbar": {
               "include": "default"
             },
-            "core": {
-              "occlusionRadius": 10
-            },
-            "dnd5e": {
-              "tokenRing": {
-                "enabled": false,
-                "textures": {
-                  "subject": null
-                },
-                "scaleCorrection": 1,
-                "colors": {
-                  "ring": null,
-                  "background": null
-                },
-                "effects": 1
-              }
-            }
+            "core": {},
+            "dnd5e": {}
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/tokens/NPC/MadamEva_Token.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 0.7,
             "scaleY": 0.7,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0.75
           },
           "sight": {
             "angle": 360,
@@ -262,7 +257,6 @@
             "saturation": 0,
             "contrast": 0
           },
-          "overlayEffect": "",
           "detectionModes": [],
           "delta": {
             "_id": "TgbAGy8M9LuNwL7Y",
@@ -276,7 +270,26 @@
             "flags": {}
           },
           "appendNumber": false,
-          "prependAdjective": false
+          "prependAdjective": false,
+          "occludable": {
+            "radius": 10
+          },
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "texture": null,
+              "scale": 1
+            }
+          },
+          "hexagonalShape": 0,
+          "sort": 0,
+          "locked": false,
+          "_regions": []
         },
         {
           "name": "Veteran",
@@ -298,9 +311,7 @@
             "monks-tokenbar": {
               "include": "default"
             },
-            "core": {
-              "occlusionRadius": null
-            },
+            "core": {},
             "autorotate": {
               "enabled": null,
               "offset": null
@@ -333,16 +344,22 @@
               "max": 1
             },
             "attenuation": 0.5,
-            "color": null
+            "color": null,
+            "negative": false,
+            "priority": 0
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/tokens/Mobs/Vistani_Male2_Token.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0.75
           },
           "sight": {
             "angle": 360,
@@ -375,7 +392,25 @@
             "ownership": null
           },
           "elevation": 0,
-          "effects": []
+          "hexagonalShape": 0,
+          "sort": 0,
+          "locked": false,
+          "occludable": {
+            "radius": 0
+          },
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "scale": 1,
+              "texture": null
+            }
+          },
+          "_regions": []
         },
         {
           "name": "Veteran",
@@ -397,9 +432,7 @@
             "monks-tokenbar": {
               "include": "default"
             },
-            "core": {
-              "occlusionRadius": null
-            },
+            "core": {},
             "autorotate": {
               "enabled": null,
               "offset": null
@@ -432,16 +465,22 @@
               "max": 1
             },
             "attenuation": 0.5,
-            "color": null
+            "color": null,
+            "negative": false,
+            "priority": 0
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/tokens/Mobs/Vistani_Male2_Token.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0.75
           },
           "sight": {
             "angle": 360,
@@ -474,7 +513,25 @@
             "ownership": null
           },
           "elevation": 0,
-          "effects": []
+          "hexagonalShape": 0,
+          "sort": 0,
+          "locked": false,
+          "occludable": {
+            "radius": 0
+          },
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "scale": 1,
+              "texture": null
+            }
+          },
+          "_regions": []
         },
         {
           "name": "Veteran",
@@ -496,9 +553,7 @@
             "monks-tokenbar": {
               "include": "default"
             },
-            "core": {
-              "occlusionRadius": null
-            },
+            "core": {},
             "autorotate": {
               "enabled": null,
               "offset": null
@@ -531,16 +586,22 @@
               "max": 1
             },
             "attenuation": 0.5,
-            "color": null
+            "color": null,
+            "negative": false,
+            "priority": 0
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/tokens/Mobs/Vistani_Male2_Token.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0.75
           },
           "sight": {
             "angle": 360,
@@ -573,7 +634,25 @@
             "ownership": null
           },
           "elevation": 0,
-          "effects": []
+          "hexagonalShape": 0,
+          "sort": 0,
+          "locked": false,
+          "occludable": {
+            "radius": 0
+          },
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "scale": 1,
+              "texture": null
+            }
+          },
+          "_regions": []
         },
         {
           "name": "Veteran",
@@ -595,9 +674,7 @@
             "monks-tokenbar": {
               "include": "default"
             },
-            "core": {
-              "occlusionRadius": null
-            },
+            "core": {},
             "autorotate": {
               "enabled": null,
               "offset": null
@@ -630,16 +707,22 @@
               "max": 1
             },
             "attenuation": 0.5,
-            "color": null
+            "color": null,
+            "negative": false,
+            "priority": 0
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/tokens/Mobs/Vistani_Male2_Token.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0.75
           },
           "sight": {
             "angle": 360,
@@ -672,7 +755,25 @@
             "ownership": null
           },
           "elevation": 0,
-          "effects": []
+          "hexagonalShape": 0,
+          "sort": 0,
+          "locked": false,
+          "occludable": {
+            "radius": 0
+          },
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "scale": 1,
+              "texture": null
+            }
+          },
+          "_regions": []
         },
         {
           "name": "Veteran",
@@ -694,9 +795,7 @@
             "monks-tokenbar": {
               "include": "default"
             },
-            "core": {
-              "occlusionRadius": null
-            },
+            "core": {},
             "autorotate": {
               "enabled": null,
               "offset": null
@@ -729,16 +828,22 @@
               "max": 1
             },
             "attenuation": 0.5,
-            "color": null
+            "color": null,
+            "negative": false,
+            "priority": 0
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/tokens/Mobs/Vistani_Male2_Token.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0.75
           },
           "sight": {
             "angle": 360,
@@ -771,7 +876,25 @@
             "ownership": null
           },
           "elevation": 0,
-          "effects": []
+          "hexagonalShape": 0,
+          "sort": 0,
+          "locked": false,
+          "occludable": {
+            "radius": 0
+          },
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "scale": 1,
+              "texture": null
+            }
+          },
+          "_regions": []
         },
         {
           "name": "Veteran",
@@ -793,9 +916,7 @@
             "monks-tokenbar": {
               "include": "default"
             },
-            "core": {
-              "occlusionRadius": null
-            },
+            "core": {},
             "autorotate": {
               "enabled": null,
               "offset": null
@@ -828,16 +949,22 @@
               "max": 1
             },
             "attenuation": 0.5,
-            "color": null
+            "color": null,
+            "negative": false,
+            "priority": 0
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/tokens/Mobs/Vistani_Male2_Token.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0.75
           },
           "sight": {
             "angle": 360,
@@ -870,7 +997,25 @@
             "ownership": null
           },
           "elevation": 0,
-          "effects": []
+          "hexagonalShape": 0,
+          "sort": 0,
+          "locked": false,
+          "occludable": {
+            "radius": 0
+          },
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "scale": 1,
+              "texture": null
+            }
+          },
+          "_regions": []
         },
         {
           "name": "Spy",
@@ -902,7 +1047,9 @@
               "max": 1
             },
             "attenuation": 0.5,
-            "color": null
+            "color": null,
+            "negative": false,
+            "priority": 0
           },
           "disposition": -1,
           "displayBars": 40,
@@ -913,9 +1060,7 @@
             "attribute": null
           },
           "flags": {
-            "core": {
-              "occlusionRadius": null
-            },
+            "core": {},
             "autorotate": {
               "enabled": null,
               "offset": null
@@ -933,7 +1078,11 @@
             "offsetX": 0,
             "offsetY": 0,
             "rotation": 0,
-            "tint": null
+            "tint": "#ffffff",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0.75
           },
           "sight": {
             "angle": 360,
@@ -973,7 +1122,25 @@
             "ownership": null
           },
           "elevation": 0,
-          "effects": []
+          "hexagonalShape": 0,
+          "sort": 0,
+          "locked": false,
+          "occludable": {
+            "radius": 0
+          },
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "scale": 1,
+              "texture": null
+            }
+          },
+          "_regions": []
         },
         {
           "name": "Spy",
@@ -1005,7 +1172,9 @@
               "max": 1
             },
             "attenuation": 0.5,
-            "color": null
+            "color": null,
+            "negative": false,
+            "priority": 0
           },
           "disposition": -1,
           "displayBars": 40,
@@ -1016,9 +1185,7 @@
             "attribute": null
           },
           "flags": {
-            "core": {
-              "occlusionRadius": null
-            },
+            "core": {},
             "autorotate": {
               "enabled": null,
               "offset": null
@@ -1036,7 +1203,11 @@
             "offsetX": 0,
             "offsetY": 0,
             "rotation": 0,
-            "tint": null
+            "tint": "#ffffff",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0.75
           },
           "sight": {
             "angle": 360,
@@ -1069,7 +1240,25 @@
             "ownership": null
           },
           "elevation": 0,
-          "effects": []
+          "hexagonalShape": 0,
+          "sort": 0,
+          "locked": false,
+          "occludable": {
+            "radius": 0
+          },
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "scale": 1,
+              "texture": null
+            }
+          },
+          "_regions": []
         },
         {
           "name": "Spy",
@@ -1101,7 +1290,9 @@
               "max": 1
             },
             "attenuation": 0.5,
-            "color": null
+            "color": null,
+            "negative": false,
+            "priority": 0
           },
           "disposition": -1,
           "displayBars": 40,
@@ -1112,9 +1303,7 @@
             "attribute": null
           },
           "flags": {
-            "core": {
-              "occlusionRadius": null
-            },
+            "core": {},
             "autorotate": {
               "enabled": null,
               "offset": null
@@ -1132,7 +1321,11 @@
             "offsetX": 0,
             "offsetY": 0,
             "rotation": 0,
-            "tint": null
+            "tint": "#ffffff",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0.75
           },
           "sight": {
             "angle": 360,
@@ -1165,7 +1358,25 @@
             "ownership": null
           },
           "elevation": 0,
-          "effects": []
+          "hexagonalShape": 0,
+          "sort": 0,
+          "locked": false,
+          "occludable": {
+            "radius": 0
+          },
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "scale": 1,
+              "texture": null
+            }
+          },
+          "_regions": []
         },
         {
           "name": "Spy",
@@ -1197,7 +1408,9 @@
               "max": 1
             },
             "attenuation": 0.5,
-            "color": null
+            "color": null,
+            "negative": false,
+            "priority": 0
           },
           "disposition": -1,
           "displayBars": 40,
@@ -1208,9 +1421,7 @@
             "attribute": null
           },
           "flags": {
-            "core": {
-              "occlusionRadius": null
-            },
+            "core": {},
             "autorotate": {
               "enabled": null,
               "offset": null
@@ -1228,7 +1439,11 @@
             "offsetX": 0,
             "offsetY": 0,
             "rotation": 0,
-            "tint": null
+            "tint": "#ffffff",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0.75
           },
           "sight": {
             "angle": 360,
@@ -1261,7 +1476,25 @@
             "ownership": null
           },
           "elevation": 0,
-          "effects": []
+          "hexagonalShape": 0,
+          "sort": 0,
+          "locked": false,
+          "occludable": {
+            "radius": 0
+          },
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "scale": 1,
+              "texture": null
+            }
+          },
+          "_regions": []
         },
         {
           "name": "Veteran",
@@ -1283,9 +1516,7 @@
             "monks-tokenbar": {
               "include": "default"
             },
-            "core": {
-              "occlusionRadius": null
-            },
+            "core": {},
             "autorotate": {
               "enabled": null,
               "offset": null
@@ -1318,16 +1549,22 @@
               "max": 1
             },
             "attenuation": 0.5,
-            "color": null
+            "color": null,
+            "negative": false,
+            "priority": 0
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/tokens/Mobs/Vistani_Male2_Token.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0.75
           },
           "sight": {
             "angle": 360,
@@ -1360,7 +1597,25 @@
             "ownership": null
           },
           "elevation": 0,
-          "effects": []
+          "hexagonalShape": 0,
+          "sort": 0,
+          "locked": false,
+          "occludable": {
+            "radius": 0
+          },
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "scale": 1,
+              "texture": null
+            }
+          },
+          "_regions": []
         },
         {
           "name": "Veteran",
@@ -1382,9 +1637,7 @@
             "monks-tokenbar": {
               "include": "default"
             },
-            "core": {
-              "occlusionRadius": null
-            },
+            "core": {},
             "autorotate": {
               "enabled": null,
               "offset": null
@@ -1417,16 +1670,22 @@
               "max": 1
             },
             "attenuation": 0.5,
-            "color": null
+            "color": null,
+            "negative": false,
+            "priority": 0
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/tokens/Mobs/Vistani_Male2_Token.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0.75
           },
           "sight": {
             "angle": 360,
@@ -1459,7 +1718,25 @@
             "ownership": null
           },
           "elevation": 0,
-          "effects": []
+          "hexagonalShape": 0,
+          "sort": 0,
+          "locked": false,
+          "occludable": {
+            "radius": 0
+          },
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "scale": 1,
+              "texture": null
+            }
+          },
+          "_regions": []
         },
         {
           "name": "Draft Horse",
@@ -1491,7 +1768,9 @@
               "max": 1
             },
             "color": null,
-            "attenuation": 0.3
+            "attenuation": 0.3,
+            "negative": false,
+            "priority": 0
           },
           "disposition": -1,
           "displayBars": 40,
@@ -1510,12 +1789,16 @@
           },
           "texture": {
             "src": "systems/dnd5e/tokens/beast/DraftHorse.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0.75
           },
           "sight": {
             "angle": 360,
@@ -1531,7 +1814,7 @@
           "detectionModes": [],
           "appendNumber": false,
           "prependAdjective": false,
-          "actorId": "CtuZcBtZxtUGW4HV",
+          "actorId": null,
           "x": 1400,
           "y": 800,
           "hidden": false,
@@ -1548,7 +1831,25 @@
             "ownership": null
           },
           "elevation": 0,
-          "effects": []
+          "hexagonalShape": 1,
+          "sort": 0,
+          "locked": false,
+          "occludable": {
+            "radius": 0
+          },
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "scale": 1,
+              "texture": null
+            }
+          },
+          "_regions": []
         },
         {
           "name": "Draft Horse",
@@ -1580,7 +1881,9 @@
               "max": 1
             },
             "color": null,
-            "attenuation": 0.3
+            "attenuation": 0.3,
+            "negative": false,
+            "priority": 0
           },
           "disposition": -1,
           "displayBars": 40,
@@ -1599,12 +1902,16 @@
           },
           "texture": {
             "src": "systems/dnd5e/tokens/beast/DraftHorse.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0.75
           },
           "sight": {
             "angle": 360,
@@ -1637,7 +1944,25 @@
             "ownership": null
           },
           "elevation": 0,
-          "effects": []
+          "hexagonalShape": 1,
+          "sort": 0,
+          "locked": false,
+          "occludable": {
+            "radius": 0
+          },
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "scale": 1,
+              "texture": null
+            }
+          },
+          "_regions": []
         },
         {
           "name": "Draft Horse",
@@ -1669,7 +1994,9 @@
               "max": 1
             },
             "color": null,
-            "attenuation": 0.3
+            "attenuation": 0.3,
+            "negative": false,
+            "priority": 0
           },
           "disposition": -1,
           "displayBars": 40,
@@ -1688,12 +2015,16 @@
           },
           "texture": {
             "src": "systems/dnd5e/tokens/beast/DraftHorse.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0.75
           },
           "sight": {
             "angle": 360,
@@ -1763,7 +2094,25 @@
             "ownership": null
           },
           "elevation": 0,
-          "effects": []
+          "hexagonalShape": 1,
+          "sort": 0,
+          "locked": false,
+          "occludable": {
+            "radius": 0
+          },
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "scale": 1,
+              "texture": null
+            }
+          },
+          "_regions": []
         },
         {
           "name": "Draft Horse",
@@ -1795,7 +2144,9 @@
               "max": 1
             },
             "color": null,
-            "attenuation": 0.3
+            "attenuation": 0.3,
+            "negative": false,
+            "priority": 0
           },
           "disposition": -1,
           "displayBars": 40,
@@ -1814,12 +2165,16 @@
           },
           "texture": {
             "src": "systems/dnd5e/tokens/beast/DraftHorse.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0.75
           },
           "sight": {
             "angle": 360,
@@ -1852,7 +2207,25 @@
             "ownership": null
           },
           "elevation": 0,
-          "effects": []
+          "hexagonalShape": 1,
+          "sort": 0,
+          "locked": false,
+          "occludable": {
+            "radius": 0
+          },
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "scale": 1,
+              "texture": null
+            }
+          },
+          "_regions": []
         },
         {
           "name": "Draft Horse",
@@ -1884,7 +2257,9 @@
               "max": 1
             },
             "color": null,
-            "attenuation": 0.3
+            "attenuation": 0.3,
+            "negative": false,
+            "priority": 0
           },
           "disposition": -1,
           "displayBars": 40,
@@ -1903,12 +2278,16 @@
           },
           "texture": {
             "src": "systems/dnd5e/tokens/beast/DraftHorse.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0.75
           },
           "sight": {
             "angle": 360,
@@ -1941,7 +2320,25 @@
             "ownership": null
           },
           "elevation": 0,
-          "effects": []
+          "hexagonalShape": 1,
+          "sort": 0,
+          "locked": false,
+          "occludable": {
+            "radius": 0
+          },
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "scale": 1,
+              "texture": null
+            }
+          },
+          "_regions": []
         },
         {
           "name": "Draft Horse",
@@ -1973,7 +2370,9 @@
               "max": 1
             },
             "color": null,
-            "attenuation": 0.3
+            "attenuation": 0.3,
+            "negative": false,
+            "priority": 0
           },
           "disposition": -1,
           "displayBars": 40,
@@ -1992,12 +2391,16 @@
           },
           "texture": {
             "src": "systems/dnd5e/tokens/beast/DraftHorse.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0.75
           },
           "sight": {
             "angle": 360,
@@ -2030,7 +2433,25 @@
             "ownership": null
           },
           "elevation": 0,
-          "effects": []
+          "hexagonalShape": 1,
+          "sort": 0,
+          "locked": false,
+          "occludable": {
+            "radius": 0
+          },
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "scale": 1,
+              "texture": null
+            }
+          },
+          "_regions": []
         },
         {
           "name": "Draft Horse",
@@ -2062,7 +2483,9 @@
               "max": 1
             },
             "color": null,
-            "attenuation": 0.3
+            "attenuation": 0.3,
+            "negative": false,
+            "priority": 0
           },
           "disposition": -1,
           "displayBars": 40,
@@ -2081,12 +2504,16 @@
           },
           "texture": {
             "src": "systems/dnd5e/tokens/beast/DraftHorse.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0.75
           },
           "sight": {
             "angle": 360,
@@ -2119,7 +2546,25 @@
             "ownership": null
           },
           "elevation": 0,
-          "effects": []
+          "hexagonalShape": 1,
+          "sort": 0,
+          "locked": false,
+          "occludable": {
+            "radius": 0
+          },
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "scale": 1,
+              "texture": null
+            }
+          },
+          "_regions": []
         },
         {
           "name": "Draft Horse",
@@ -2151,7 +2596,9 @@
               "max": 1
             },
             "color": null,
-            "attenuation": 0.3
+            "attenuation": 0.3,
+            "negative": false,
+            "priority": 0
           },
           "disposition": -1,
           "displayBars": 40,
@@ -2170,12 +2617,16 @@
           },
           "texture": {
             "src": "systems/dnd5e/tokens/beast/DraftHorse.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0.75
           },
           "sight": {
             "angle": 360,
@@ -2208,7 +2659,25 @@
             "ownership": null
           },
           "elevation": 0,
-          "effects": []
+          "hexagonalShape": 1,
+          "sort": 0,
+          "locked": false,
+          "occludable": {
+            "radius": 0
+          },
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "scale": 1,
+              "texture": null
+            }
+          },
+          "_regions": []
         }
       ],
       "lights": [
@@ -2240,14 +2709,17 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
           "flags": {
             "world": {
               "fireplace": "11f1565a-1a73-4d77-a094-321702e85405"
             }
-          }
+          },
+          "elevation": 0
         },
         {
           "_id": "1prETk7eXhM4Ks4W",
@@ -2277,10 +2749,13 @@
               "max": 1
             },
             "color": "#ff3333",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "99kCjrrMO23bjhqC",
@@ -2310,10 +2785,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "CvCVyYj2ybJR0dHu",
@@ -2343,10 +2821,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "l39arUuKeaf2jfXv",
@@ -2376,10 +2857,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "UY8qFJ3ppSmwLNNP",
@@ -2409,10 +2893,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "wbavYdCvrM0LFtli",
@@ -2442,10 +2929,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "lS7QOZvV8WL8DoQm",
@@ -2475,10 +2965,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "B2yEDq72WvrqLvKT",
@@ -2508,10 +3001,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "2sBkhnsVZIry85bj",
@@ -2541,10 +3037,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "OYKCsnjk2D9HqpcP",
@@ -2574,10 +3073,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "i8vEGfiZdn9psl0F",
@@ -2607,10 +3109,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "cGaN4qwWeaBepiY9",
@@ -2640,10 +3145,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "cxX6CjlTPBeZpDx5",
@@ -2673,10 +3181,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "1wOhMsSSMDiAX4eC",
@@ -2706,10 +3217,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "bQG3neBVr2TJITME",
@@ -2739,10 +3253,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "emIrN5ijMwpox3HZ",
@@ -2772,10 +3289,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "uP76dToTUE5bMJwb",
@@ -2805,10 +3325,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "GUH3teA9VOjPtAYw",
@@ -2838,10 +3361,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "5kv9ULdjpvxz03Iv",
@@ -2871,10 +3397,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "xjlAELYiW7fCT0GU",
@@ -2904,10 +3433,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "TgGo5YEq5rJOlOjr",
@@ -2937,10 +3469,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "UmXrzBGO6XbxQR8E",
@@ -2970,10 +3505,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "D0DEaLukAMal1HOJ",
@@ -3003,10 +3541,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "52LCSMZ4uBgAS4nH",
@@ -3036,10 +3577,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "ku06nhcwiT2e0KKo",
@@ -3069,10 +3613,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "0HKhApJyzO7ts1WL",
@@ -3102,10 +3649,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         }
       ],
       "notes": [
@@ -3118,20 +3668,26 @@
           "global": false,
           "iconSize": 40,
           "texture": {
-            "tint": null,
+            "tint": "#ffffff",
             "src": "icons/svg/book.svg",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0
           },
           "fontFamily": "Signika",
           "fontSize": 64,
-          "textColor": "#FFFFFF",
+          "textColor": "#ffffff",
           "textAnchor": 1,
           "_id": "bppsJj4zISAA4DS6",
-          "flags": {}
+          "flags": {},
+          "elevation": 0,
+          "sort": 0
         },
         {
           "entryId": "fe46PAJta2DlpZLG",
@@ -3142,20 +3698,26 @@
           "global": false,
           "iconSize": 40,
           "texture": {
-            "tint": null,
+            "tint": "#ffffff",
             "src": "icons/svg/book.svg",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0
           },
           "fontFamily": "Signika",
           "fontSize": 64,
-          "textColor": "#FFFFFF",
+          "textColor": "#ffffff",
           "textAnchor": 1,
           "_id": "TNW0gnCBtU7PJmJz",
-          "flags": {}
+          "flags": {},
+          "elevation": 0,
+          "sort": 0
         },
         {
           "entryId": "fe46PAJta2DlpZLG",
@@ -3166,20 +3728,26 @@
           "global": false,
           "iconSize": 40,
           "texture": {
-            "tint": null,
+            "tint": "#ffffff",
             "src": "icons/svg/book.svg",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0
           },
           "fontFamily": "Signika",
           "fontSize": 64,
-          "textColor": "#FFFFFF",
+          "textColor": "#ffffff",
           "textAnchor": 1,
           "_id": "XrrGor6DNtbmokZu",
-          "flags": {}
+          "flags": {},
+          "elevation": 0,
+          "sort": 0
         }
       ],
       "sounds": [
@@ -3202,6 +3770,15 @@
             "world": {
               "fireplace": "11f1565a-1a73-4d77-a094-321702e85405"
             }
+          },
+          "elevation": 0,
+          "effects": {
+            "base": {
+              "intensity": 5
+            },
+            "muffled": {
+              "intensity": 5
+            }
           }
         },
         {
@@ -3219,7 +3796,16 @@
           "_id": "vDlZtIqSFcTegBcj",
           "repeat": false,
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0,
+          "effects": {
+            "base": {
+              "intensity": 5
+            },
+            "muffled": {
+              "intensity": 5
+            }
+          }
         },
         {
           "path": "modules/sdnd-strahd-adv/images/maps/Areas/G/horse-snort-95874.mp3",
@@ -3236,7 +3822,16 @@
           "repeat": false,
           "hidden": false,
           "flags": {},
-          "_id": "cWaEXV3pTVGHTf7y"
+          "_id": "cWaEXV3pTVGHTf7y",
+          "elevation": 0,
+          "effects": {
+            "base": {
+              "intensity": 5
+            },
+            "muffled": {
+              "intensity": 5
+            }
+          }
         },
         {
           "path": "modules/sdnd-strahd-adv/images/maps/Areas/G/horse-snort-95874.mp3",
@@ -3253,7 +3848,16 @@
           "repeat": false,
           "hidden": false,
           "flags": {},
-          "_id": "yJ13U5SArAjpZh2A"
+          "_id": "yJ13U5SArAjpZh2A",
+          "elevation": 0,
+          "effects": {
+            "base": {
+              "intensity": 5
+            },
+            "muffled": {
+              "intensity": 5
+            }
+          }
         },
         {
           "path": "modules/sdnd-strahd-adv/images/maps/Areas/G/cimbalom.mp3",
@@ -3270,7 +3874,16 @@
           "_id": "pA9zOjc0ytapZIhG",
           "repeat": false,
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0,
+          "effects": {
+            "base": {
+              "intensity": 5
+            },
+            "muffled": {
+              "intensity": 5
+            }
+          }
         }
       ],
       "templates": [],
@@ -3281,16 +3894,13 @@
           "height": 100,
           "x": 1400,
           "y": 1900,
-          "z": 100,
           "rotation": 0,
           "alpha": 1,
           "hidden": true,
           "locked": true,
-          "overhead": false,
           "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
+            "mode": 0,
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -3335,33 +3945,42 @@
             "offsetX": 0,
             "offsetY": 0,
             "rotation": 0,
-            "tint": null
+            "tint": "#ffffff",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "sort": 100,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "elevation": 0
         },
         {
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/maps/Areas/G/g1_camp/trees.webp",
             "scaleX": 1,
             "scaleY": 1,
-            "tint": null,
+            "tint": "#ffffff",
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
           "x": 300,
           "y": 300,
-          "z": 100,
           "width": 3000,
           "height": 3000,
           "rotation": 0,
           "alpha": 1,
-          "overhead": true,
-          "roof": true,
           "occlusion": {
             "mode": 3,
-            "alpha": 0,
-            "radius": null
+            "alpha": 0
           },
           "flags": {
             "betterroofs": {
@@ -3397,7 +4016,13 @@
           },
           "_id": "zDZ1JjUs4R8Yj1w8",
           "hidden": false,
-          "locked": true
+          "locked": true,
+          "elevation": 20,
+          "sort": 100,
+          "restrictions": {
+            "light": true,
+            "weather": true
+          }
         }
       ],
       "walls": [
@@ -8162,20 +8787,67 @@
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0,
-        "tint": null
+        "tint": "#ffffff",
+        "anchorX": 0,
+        "anchorY": 0,
+        "fit": "fill",
+        "alphaThreshold": 0
       },
       "foregroundElevation": 20,
-      "fogOverlay": null,
-      "fogExploredColor": null,
-      "fogUnexploredColor": null,
       "journalEntryPage": null,
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1704929215485,
-        "modifiedTime": 1729169332652,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "modifiedTime": 1730040884304,
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "regions": [],
+      "environment": {
+        "globalLight": {
+          "luminosity": 0,
+          "enabled": true,
+          "darkness": {
+            "max": 1,
+            "min": 0
+          },
+          "alpha": 0.5,
+          "bright": false,
+          "color": null,
+          "coloration": 1,
+          "saturation": 0,
+          "contrast": 0,
+          "shadows": 0
+        },
+        "darknessLevel": 1,
+        "darknessLock": false,
+        "cycle": true,
+        "base": {
+          "hue": 0,
+          "intensity": 0,
+          "luminosity": 0,
+          "saturation": 0,
+          "shadows": 0
+        },
+        "dark": {
+          "hue": 0.7138888888888889,
+          "intensity": 0,
+          "luminosity": -0.25,
+          "saturation": 0,
+          "shadows": 0
+        }
+      },
+      "fog": {
+        "exploration": true,
+        "reset": 1673218695923,
+        "overlay": null,
+        "colors": {
+          "explored": null,
+          "unexplored": null
+        }
       }
     }
   ],
@@ -8196,11 +8868,14 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1704928872551,
         "modifiedTime": 1704928872551,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
-      }
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "description": ""
     },
     {
       "name": "Areas",
@@ -8215,10 +8890,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": 1705027185606,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       }
     },
     {
@@ -8234,10 +8911,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": 1704857067518,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       }
     },
     {
@@ -8252,11 +8931,14 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1704839237165,
         "modifiedTime": 1704857631386,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
-      }
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "description": ""
     },
     {
       "name": "SDND - Curse of Strahd",
@@ -8270,11 +8952,14 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1705027168419,
         "modifiedTime": 1705027175907,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
-      }
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "description": ""
     }
   ],
   "_id": "kpHo2U8Xy3ExF7oU",
@@ -8283,10 +8968,12 @@
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "3.2.1",
-    "coreVersion": "11.315",
+    "coreVersion": "12.331",
     "createdTime": 1704929363516,
-    "modifiedTime": 1729169362230,
-    "lastModifiedBy": "6yhz13iFYYklKtgA"
+    "modifiedTime": 1730046416727,
+    "lastModifiedBy": "6yhz13iFYYklKtgA",
+    "compendiumSource": null,
+    "duplicateSource": null
   },
   "_key": "!adventures!kpHo2U8Xy3ExF7oU"
 }

@@ -151,7 +151,10 @@
         "book": "SRD 5.1",
         "page": "",
         "license": "CC-BY-4.0"
-      }
+      },
+      "ideal": "",
+      "bond": "",
+      "flaw": ""
     },
     "traits": {
       "size": "med",
@@ -534,23 +537,8 @@
       "monks-tokenbar": {
         "include": "default"
       },
-      "core": {
-        "occlusionRadius": null
-      },
-      "dnd5e": {
-        "tokenRing": {
-          "enabled": false,
-          "textures": {
-            "subject": null
-          },
-          "scaleCorrection": 1,
-          "colors": {
-            "ring": null,
-            "background": null
-          },
-          "effects": 1
-        }
-      },
+      "core": {},
+      "dnd5e": {},
       "simbuls-cover-calculator": {
         "coverLevel": 1,
         "coverLevelDead": 1,
@@ -584,16 +572,22 @@
         "max": 1
       },
       "attenuation": 0.5,
-      "color": null
+      "color": null,
+      "negative": false,
+      "priority": 0
     },
     "texture": {
       "src": "modules/sdnd-strahd-adv/images/tokens/NPC/lucian_pretrovich_token.webp",
-      "tint": null,
+      "tint": "#ffffff",
       "scaleX": 0.9,
       "scaleY": 0.9,
       "offsetX": 0,
       "offsetY": 0,
-      "rotation": 0
+      "rotation": 0,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "alphaThreshold": 0.75
     },
     "sight": {
       "angle": 360,
@@ -608,7 +602,23 @@
     },
     "detectionModes": [],
     "appendNumber": false,
-    "prependAdjective": false
+    "prependAdjective": false,
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "texture": null,
+        "scale": 1
+      }
+    },
+    "hexagonalShape": 0,
+    "occludable": {
+      "radius": 0
+    }
   },
   "items": [
     {
@@ -741,10 +751,12 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.dnd5e.items.p2zChy24ZJdVqMSH",
+        "duplicateSource": null
       },
       "_key": "!actors.items!LpSTVT7vC0n26U5y.bndaCEOeIP8RgbU1"
     },
@@ -851,10 +863,12 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.dnd5e.monsterfeatures.fdmzHw875EzpXM2a",
+        "duplicateSource": null
       },
       "_key": "!actors.items!LpSTVT7vC0n26U5y.J12x6xIwx1aCEm1e"
     },
@@ -966,10 +980,12 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.dnd5e.monsterfeatures.lVrnjqBrv90VH96d",
+        "duplicateSource": null
       },
       "_key": "!actors.items!LpSTVT7vC0n26U5y.9LzZrzdWIZpjFIGV"
     },
@@ -1102,10 +1118,12 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.dnd5e.items.Ajyq6nGwF7FtLhDQ",
+        "duplicateSource": null
       },
       "_key": "!actors.items!LpSTVT7vC0n26U5y.B0jROhxuoqvfmz2B"
     },
@@ -1217,12 +1235,7 @@
         "core": {
           "sourceId": "Compendium.dnd5e.spells.n9pJzTDsAwQxJVRl"
         },
-        "dnd5e": {
-          "migratedProperties": [
-            "vocal",
-            "somatic"
-          ]
-        }
+        "dnd5e": {}
       },
       "img": "icons/magic/light/beam-rays-orange.webp",
       "effects": [],
@@ -1230,10 +1243,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.0.0",
-        "coreVersion": "10.279",
+        "coreVersion": "12.331",
         "createdTime": 1661787234221,
         "modifiedTime": 1661791116513,
-        "lastModifiedBy": "dnd5ebuilder0000"
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": "Compendium.dnd5e.spells.n9pJzTDsAwQxJVRl",
+        "duplicateSource": null
       },
       "_key": "!actors.items!LpSTVT7vC0n26U5y.n9pJzTDsAwQxJVRl"
     },
@@ -1339,11 +1354,7 @@
         "core": {
           "sourceId": "Compendium.dnd5e.spells.MUO1uYN7JR1hm4dR"
         },
-        "dnd5e": {
-          "migratedProperties": [
-            "vocal"
-          ]
-        }
+        "dnd5e": {}
       },
       "img": "icons/magic/fire/explosion-fireball-small-purple-orange.webp",
       "effects": [],
@@ -1351,10 +1362,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.0.0",
-        "coreVersion": "10.279",
+        "coreVersion": "12.331",
         "createdTime": 1661787234127,
         "modifiedTime": 1661791116513,
-        "lastModifiedBy": "dnd5ebuilder0000"
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": "Compendium.dnd5e.spells.MUO1uYN7JR1hm4dR",
+        "duplicateSource": null
       },
       "_key": "!actors.items!LpSTVT7vC0n26U5y.MUO1uYN7JR1hm4dR"
     },
@@ -1461,12 +1474,7 @@
         "core": {
           "sourceId": "Compendium.dnd5e.spells.F0GsG0SJzsIOacwV"
         },
-        "dnd5e": {
-          "migratedProperties": [
-            "vocal",
-            "somatic"
-          ]
-        }
+        "dnd5e": {}
       },
       "img": "icons/magic/life/heart-cross-blue.webp",
       "effects": [],
@@ -1474,10 +1482,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.0.0",
-        "coreVersion": "10.279",
+        "coreVersion": "12.331",
         "createdTime": 1661787234103,
         "modifiedTime": 1661791116514,
-        "lastModifiedBy": "dnd5ebuilder0000"
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": "Compendium.dnd5e.spells.F0GsG0SJzsIOacwV",
+        "duplicateSource": null
       },
       "_key": "!actors.items!LpSTVT7vC0n26U5y.F0GsG0SJzsIOacwV"
     },
@@ -1584,12 +1594,7 @@
         "core": {
           "sourceId": "Compendium.dnd5e.spells.15Fa6q1nH27XfbR8"
         },
-        "dnd5e": {
-          "migratedProperties": [
-            "vocal",
-            "somatic"
-          ]
-        }
+        "dnd5e": {}
       },
       "img": "icons/skills/melee/strike-blade-knife-orange-blue.webp",
       "effects": [],
@@ -1597,10 +1602,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.0.0",
-        "coreVersion": "10.279",
+        "coreVersion": "12.331",
         "createdTime": 1661787234054,
         "modifiedTime": 1661791116515,
-        "lastModifiedBy": "dnd5ebuilder0000"
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": "Compendium.dnd5e.spells.15Fa6q1nH27XfbR8",
+        "duplicateSource": null
       },
       "_key": "!actors.items!LpSTVT7vC0n26U5y.15Fa6q1nH27XfbR8"
     },
@@ -1707,12 +1714,7 @@
         "core": {
           "sourceId": "Compendium.dnd5e.spells.Bnn9Nzajixvow9xi"
         },
-        "dnd5e": {
-          "migratedProperties": [
-            "vocal",
-            "material"
-          ]
-        }
+        "dnd5e": {}
       },
       "img": "icons/magic/light/explosion-star-small-blue-yellow.webp",
       "effects": [],
@@ -1720,10 +1722,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.0.0",
-        "coreVersion": "10.279",
+        "coreVersion": "12.331",
         "createdTime": 1661787234093,
         "modifiedTime": 1661791116515,
-        "lastModifiedBy": "dnd5ebuilder0000"
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": "Compendium.dnd5e.spells.Bnn9Nzajixvow9xi",
+        "duplicateSource": null
       },
       "_key": "!actors.items!LpSTVT7vC0n26U5y.Bnn9Nzajixvow9xi"
     },
@@ -1835,12 +1839,7 @@
         "core": {
           "sourceId": "Compendium.dnd5e.spells.uUWb1wZgtMou0TVP"
         },
-        "dnd5e": {
-          "migratedProperties": [
-            "vocal",
-            "somatic"
-          ]
-        }
+        "dnd5e": {}
       },
       "img": "icons/magic/life/heart-cross-green.webp",
       "effects": [],
@@ -1848,10 +1847,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.0.0",
-        "coreVersion": "10.279",
+        "coreVersion": "12.331",
         "createdTime": 1661787234236,
         "modifiedTime": 1661791116516,
-        "lastModifiedBy": "dnd5ebuilder0000"
+        "lastModifiedBy": "dnd5ebuilder0000",
+        "compendiumSource": "Compendium.dnd5e.spells.uUWb1wZgtMou0TVP",
+        "duplicateSource": null
       },
       "_key": "!actors.items!LpSTVT7vC0n26U5y.uUWb1wZgtMou0TVP"
     },
@@ -1964,12 +1965,7 @@
         "core": {
           "sourceId": "Compendium.dnd5e.spells.7buEm5KhI5lP8m1z"
         },
-        "dnd5e": {
-          "migratedProperties": [
-            "vocal",
-            "somatic"
-          ]
-        },
+        "dnd5e": {},
         "midi-qol": {
           "forceCEOff": true,
           "fumbleThreshold": null,
@@ -2016,7 +2012,6 @@
       "img": "icons/magic/fire/projectile-fireball-smoke-large-blue.webp",
       "effects": [
         {
-          "icon": "icons/magic/fire/flame-burning-hand-purple.webp",
           "changes": [
             {
               "key": "flags.midi-qol.grants.advantage.attack.all",
@@ -2034,7 +2029,7 @@
             "startTurn": null,
             "combat": null
           },
-          "tint": null,
+          "tint": "#ffffff",
           "transfer": false,
           "disabled": false,
           "flags": {
@@ -2080,16 +2075,32 @@
           "name": "Guiding Bolt",
           "description": "",
           "statuses": [],
+          "_stats": {
+            "coreVersion": "12.331",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
+          },
+          "img": "icons/magic/fire/flame-burning-hand-purple.webp",
+          "type": "base",
+          "system": {},
+          "sort": 0,
           "_key": "!actors.items.effects!LpSTVT7vC0n26U5y.7buEm5KhI5lP8m1z.wgz9W1RVTa0NB3xQ"
         }
       ],
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1661787234075,
         "modifiedTime": 1728509010386,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": "Compendium.dnd5e.spells.7buEm5KhI5lP8m1z",
+        "duplicateSource": null
       },
       "folder": null,
       "_key": "!actors.items!LpSTVT7vC0n26U5y.7buEm5KhI5lP8m1z"
@@ -2199,13 +2210,7 @@
         "core": {
           "sourceId": "Compendium.dnd5e.spells.gvdA9nPuWLck4tBl"
         },
-        "dnd5e": {
-          "migratedProperties": [
-            "vocal",
-            "somatic",
-            "material"
-          ]
-        },
+        "dnd5e": {},
         "midi-qol": {
           "effectActivation": false,
           "onUseMacroName": "[postActiveEffects]function.chrisPremades.macros.sanctuary.item",
@@ -2486,10 +2491,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1661787234193,
         "modifiedTime": 1728509010386,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": "Compendium.dnd5e.spells.gvdA9nPuWLck4tBl",
+        "duplicateSource": null
       },
       "folder": null,
       "_key": "!actors.items!LpSTVT7vC0n26U5y.gvdA9nPuWLck4tBl"
@@ -2600,12 +2607,7 @@
         "core": {
           "sourceId": "Compendium.dnd5e.spells.JbxsYXxSOTZbf9I0"
         },
-        "dnd5e": {
-          "migratedProperties": [
-            "vocal",
-            "somatic"
-          ]
-        },
+        "dnd5e": {},
         "midiProperties": {
           "magicdam": true,
           "magiceffect": true,
@@ -2672,10 +2674,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1661787234115,
         "modifiedTime": 1728509010386,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": "Compendium.dnd5e.spells.JbxsYXxSOTZbf9I0",
+        "duplicateSource": null
       },
       "folder": null,
       "_key": "!actors.items!LpSTVT7vC0n26U5y.JbxsYXxSOTZbf9I0"
@@ -2786,14 +2790,7 @@
         "core": {
           "sourceId": "Compendium.dnd5e.spells.uCud2s4TjMfjiXUb"
         },
-        "dnd5e": {
-          "migratedProperties": [
-            "vocal",
-            "somatic",
-            "material",
-            "concentration"
-          ]
-        },
+        "dnd5e": {},
         "midi-qol": {
           "forceCEOff": true,
           "effectActivation": false,
@@ -3050,7 +3047,6 @@
       "img": "icons/magic/light/projectile-bolts-salvo-white.webp",
       "effects": [
         {
-          "icon": "icons/magic/defensive/shield-barrier-blades-teal.webp",
           "changes": [],
           "transfer": false,
           "_id": "7XN0MD4aruKyhVh4",
@@ -3065,7 +3061,7 @@
             "startTurn": null
           },
           "origin": null,
-          "tint": null,
+          "tint": "#ffffff",
           "flags": {
             "dfreds-convenient-effects": {
               "description": ""
@@ -3103,16 +3099,32 @@
           "name": "Spirit Guardians",
           "description": "",
           "statuses": [],
+          "_stats": {
+            "coreVersion": "12.331",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
+          },
+          "img": "icons/magic/defensive/shield-barrier-blades-teal.webp",
+          "type": "base",
+          "system": {},
+          "sort": 0,
           "_key": "!actors.items.effects!LpSTVT7vC0n26U5y.uCud2s4TjMfjiXUb.7XN0MD4aruKyhVh4"
         }
       ],
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1661787234235,
         "modifiedTime": 1728509010386,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": "Compendium.dnd5e.spells.uCud2s4TjMfjiXUb",
+        "duplicateSource": null
       },
       "folder": null,
       "_key": "!actors.items!LpSTVT7vC0n26U5y.uCud2s4TjMfjiXUb"
@@ -3132,11 +3144,13 @@
   },
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "3.2.1",
-    "coreVersion": "11.315",
+    "systemVersion": "3.3.1",
+    "coreVersion": "12.331",
     "createdTime": 1661787232808,
-    "modifiedTime": 1728566223822,
-    "lastModifiedBy": "6yhz13iFYYklKtgA"
+    "modifiedTime": 1730040691233,
+    "lastModifiedBy": "6yhz13iFYYklKtgA",
+    "compendiumSource": "Compendium.dnd5e.monsters.Actor.PVD5wRdyO7iCJPs1",
+    "duplicateSource": null
   },
   "_key": "!actors!LpSTVT7vC0n26U5y"
 }
