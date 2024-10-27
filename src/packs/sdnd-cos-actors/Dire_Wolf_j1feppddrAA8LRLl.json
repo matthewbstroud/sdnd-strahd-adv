@@ -100,10 +100,12 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_key": "!actors.items!j1feppddrAA8LRLl.K0u6bJqRtcj0cSzK"
     },
@@ -229,10 +231,12 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_key": "!actors.items!j1feppddrAA8LRLl.tx9xPDEQ8osJq6ZQ"
     },
@@ -260,7 +264,7 @@
             "startRound": null,
             "startTurn": null
           },
-          "tint": null,
+          "tint": "#ffffff",
           "transfer": true,
           "disabled": false,
           "flags": {
@@ -300,11 +304,24 @@
             }
           },
           "_id": "pDkdRYroQyFTvA58",
-          "icon": "icons/environment/wilderness/statue-hound-horned.webp",
           "origin": null,
           "name": "Pack Tactics",
           "description": "",
           "statuses": [],
+          "_stats": {
+            "coreVersion": "12.331",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
+          },
+          "img": "icons/environment/wilderness/statue-hound-horned.webp",
+          "type": "base",
+          "system": {},
+          "sort": 0,
           "_key": "!actors.items.effects!j1feppddrAA8LRLl.weFcATmtqqUJ39Pw.pDkdRYroQyFTvA58"
         }
       ],
@@ -407,10 +424,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1704858524546,
         "modifiedTime": 1704858524546,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "folder": null,
       "_key": "!actors.items!j1feppddrAA8LRLl.weFcATmtqqUJ39Pw"
@@ -1009,16 +1028,22 @@
         "max": 1
       },
       "color": null,
-      "attenuation": 0.5
+      "attenuation": 0.5,
+      "negative": false,
+      "priority": 0
     },
     "texture": {
       "src": "systems/dnd5e/tokens/beast/DireWolf.webp",
-      "tint": null,
+      "tint": "#ffffff",
       "scaleX": 1.5,
       "scaleY": 1.5,
       "offsetX": 0,
       "offsetY": 0,
-      "rotation": 0
+      "rotation": 0,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "alphaThreshold": 0.75
     },
     "sight": {
       "angle": 360,
@@ -1033,15 +1058,33 @@
     },
     "detectionModes": [],
     "appendNumber": false,
-    "prependAdjective": false
+    "prependAdjective": false,
+    "hexagonalShape": 1,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    }
   },
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "3.2.1",
-    "coreVersion": "11.315",
+    "systemVersion": "3.3.1",
+    "coreVersion": "12.331",
     "createdTime": 1704858524461,
-    "modifiedTime": 1728566217766,
-    "lastModifiedBy": "6yhz13iFYYklKtgA"
+    "modifiedTime": 1730040687644,
+    "lastModifiedBy": "6yhz13iFYYklKtgA",
+    "compendiumSource": "Compendium.dnd5e.monsters.EYiQZ3rFL25fEJY5",
+    "duplicateSource": null
   },
   "_key": "!actors!j1feppddrAA8LRLl"
 }

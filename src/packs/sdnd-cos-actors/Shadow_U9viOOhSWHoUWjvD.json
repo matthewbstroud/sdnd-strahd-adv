@@ -108,10 +108,12 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_key": "!actors.items!U9viOOhSWHoUWjvD.odeg0gdpqnnvf7cc"
     },
@@ -219,10 +221,12 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_key": "!actors.items!U9viOOhSWHoUWjvD.fcmh0dzlr391laoh"
     },
@@ -330,10 +334,12 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_key": "!actors.items!U9viOOhSWHoUWjvD.7nj3evhqu9j295o9"
     },
@@ -502,10 +508,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1704860492928,
         "modifiedTime": 1704860492928,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "folder": null,
       "_key": "!actors.items!U9viOOhSWHoUWjvD.osffs63fltfjj10l"
@@ -1130,7 +1138,9 @@
         "max": 1
       },
       "color": null,
-      "attenuation": 0.5
+      "attenuation": 0.5,
+      "negative": false,
+      "priority": 0
     },
     "disposition": -1,
     "displayBars": 40,
@@ -1151,12 +1161,16 @@
     "randomImg": false,
     "texture": {
       "src": "systems/dnd5e/tokens/undead/Shadow.webp",
-      "tint": null,
+      "tint": "#ffffff",
       "scaleX": 1,
       "scaleY": 1,
       "offsetX": 0,
       "offsetY": 0,
-      "rotation": 0
+      "rotation": 0,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "alphaThreshold": 0.75
     },
     "sight": {
       "angle": 360,
@@ -1171,15 +1185,33 @@
     },
     "detectionModes": [],
     "appendNumber": false,
-    "prependAdjective": false
+    "prependAdjective": false,
+    "hexagonalShape": 0,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    }
   },
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "3.2.1",
-    "coreVersion": "11.315",
+    "systemVersion": "3.3.1",
+    "coreVersion": "12.331",
     "createdTime": 1704860492842,
-    "modifiedTime": 1728566217766,
-    "lastModifiedBy": "6yhz13iFYYklKtgA"
+    "modifiedTime": 1730040687613,
+    "lastModifiedBy": "6yhz13iFYYklKtgA",
+    "compendiumSource": "Compendium.world.ddb-lost-mines-phandelver-monsters.mrrSbPUd9xiOaGnz",
+    "duplicateSource": null
   },
   "_key": "!actors!U9viOOhSWHoUWjvD"
 }

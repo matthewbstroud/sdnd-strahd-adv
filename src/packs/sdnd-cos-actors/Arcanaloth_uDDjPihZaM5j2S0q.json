@@ -461,7 +461,10 @@
         "page": "313",
         "custom": "",
         "license": ""
-      }
+      },
+      "ideal": "",
+      "bond": "",
+      "flaw": ""
     },
     "resources": {
       "legact": {
@@ -537,7 +540,11 @@
       "offsetX": 0,
       "offsetY": 0,
       "rotation": 0,
-      "tint": null
+      "tint": "#ffffff",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "alphaThreshold": 0.75
     },
     "width": 1,
     "height": 1,
@@ -573,7 +580,9 @@
         "min": 0,
         "max": 1
       },
-      "color": null
+      "color": null,
+      "negative": false,
+      "priority": 0
     },
     "sight": {
       "enabled": false,
@@ -604,29 +613,30 @@
       "monks-tokenbar": {
         "include": "default"
       },
-      "core": {
-        "occlusionRadius": null
-      },
+      "core": {},
       "autorotate": {
         "enabled": null,
         "offset": null
       },
-      "dnd5e": {
-        "tokenRing": {
-          "enabled": false,
-          "textures": {
-            "subject": ""
-          },
-          "scaleCorrection": 1,
-          "colors": {
-            "ring": "",
-            "background": ""
-          },
-          "effects": 1
-        }
+      "dnd5e": {}
+    },
+    "randomImg": false,
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "texture": null,
+        "scale": 1
       }
     },
-    "randomImg": false
+    "hexagonalShape": 0,
+    "occludable": {
+      "radius": 0
+    }
   },
   "items": [
     {
@@ -784,10 +794,12 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_key": "!actors.items!uDDjPihZaM5j2S0q.AbOILKnfNqClTwiJ"
     },
@@ -911,10 +923,12 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_key": "!actors.items!uDDjPihZaM5j2S0q.2dlZh8m8v1YoQ4qX"
     },
@@ -1038,10 +1052,12 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_key": "!actors.items!uDDjPihZaM5j2S0q.1dhPJYDrXDySgCMf"
     },
@@ -1165,10 +1181,12 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_key": "!actors.items!uDDjPihZaM5j2S0q.RfW1mZO2ZlvehDyX"
     },
@@ -1292,10 +1310,12 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_key": "!actors.items!uDDjPihZaM5j2S0q.cGLIFdqYeiIw1jh4"
     },
@@ -1419,10 +1439,12 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_key": "!actors.items!uDDjPihZaM5j2S0q.DNoKYts8hOzdMY7f"
     },
@@ -1463,12 +1485,7 @@
           "version": "2.9.67",
           "effectsApplied": true
         },
-        "dnd5e": {
-          "migratedProperties": [
-            "vocal",
-            "somatic"
-          ]
-        }
+        "dnd5e": {}
       },
       "system": {
         "description": {
@@ -1546,7 +1563,7 @@
         },
         "preparation": {
           "mode": "prepared",
-          "prepared": false
+          "prepared": true
         },
         "scaling": {
           "mode": "cantrip",
@@ -1570,10 +1587,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1685295933474,
         "modifiedTime": 1719926041536,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_id": "ol7saSiUPALEl6CB",
       "_key": "!actors.items!uDDjPihZaM5j2S0q.ol7saSiUPALEl6CB"
@@ -1615,12 +1634,7 @@
           "version": "2.9.67",
           "effectsApplied": true
         },
-        "dnd5e": {
-          "migratedProperties": [
-            "vocal",
-            "somatic"
-          ]
-        }
+        "dnd5e": {}
       },
       "system": {
         "description": {
@@ -1693,7 +1707,7 @@
         },
         "preparation": {
           "mode": "prepared",
-          "prepared": false
+          "prepared": true
         },
         "scaling": {
           "mode": "none",
@@ -1717,10 +1731,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1685295933994,
         "modifiedTime": 1719926043696,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_id": "42MA4BlMdgyz2TWX",
       "_key": "!actors.items!uDDjPihZaM5j2S0q.42MA4BlMdgyz2TWX"
@@ -1762,13 +1778,7 @@
           "version": "2.9.67",
           "effectsApplied": true
         },
-        "dnd5e": {
-          "migratedProperties": [
-            "somatic",
-            "material",
-            "value"
-          ]
-        }
+        "dnd5e": {}
       },
       "system": {
         "description": {
@@ -1841,7 +1851,7 @@
         },
         "preparation": {
           "mode": "prepared",
-          "prepared": false
+          "prepared": true
         },
         "scaling": {
           "mode": "none",
@@ -1854,7 +1864,8 @@
         "summons": null,
         "properties": [
           "somatic",
-          "value"
+          "value",
+          "material"
         ],
         "enchantment": null
       },
@@ -1865,10 +1876,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1685295933971,
         "modifiedTime": 1719926043415,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_id": "ke9PhirEYYBfThKD",
       "_key": "!actors.items!uDDjPihZaM5j2S0q.ke9PhirEYYBfThKD"
@@ -1910,12 +1923,7 @@
           "version": "2.9.67",
           "effectsApplied": true
         },
-        "dnd5e": {
-          "migratedProperties": [
-            "vocal",
-            "somatic"
-          ]
-        }
+        "dnd5e": {}
       },
       "system": {
         "description": {
@@ -1988,7 +1996,7 @@
         },
         "preparation": {
           "mode": "prepared",
-          "prepared": false
+          "prepared": true
         },
         "scaling": {
           "mode": "none",
@@ -2012,10 +2020,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1685295934490,
         "modifiedTime": 1719926049326,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_id": "dRsPmHWgr9y5SxYz",
       "_key": "!actors.items!uDDjPihZaM5j2S0q.dRsPmHWgr9y5SxYz"
@@ -2057,14 +2067,7 @@
           "version": "2.9.67",
           "effectsApplied": true
         },
-        "dnd5e": {
-          "migratedProperties": [
-            "vocal",
-            "somatic",
-            "ritual",
-            "concentration"
-          ]
-        }
+        "dnd5e": {}
       },
       "system": {
         "description": {
@@ -2163,10 +2166,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1685295933537,
         "modifiedTime": 1719926042352,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_id": "hUE4pOQLWzBEEiYD",
       "_key": "!actors.items!uDDjPihZaM5j2S0q.hUE4pOQLWzBEEiYD"
@@ -2208,15 +2213,7 @@
           "version": "2.9.67",
           "effectsApplied": true
         },
-        "dnd5e": {
-          "migratedProperties": [
-            "vocal",
-            "somatic",
-            "material",
-            "ritual",
-            "value"
-          ]
-        }
+        "dnd5e": {}
       },
       "system": {
         "description": {
@@ -2304,7 +2301,8 @@
           "vocal",
           "somatic",
           "ritual",
-          "value"
+          "value",
+          "material"
         ],
         "enchantment": null
       },
@@ -2315,10 +2313,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1685295934239,
         "modifiedTime": 1719926045871,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_id": "Mk5eS0qOP00x49i1",
       "_key": "!actors.items!uDDjPihZaM5j2S0q.Mk5eS0qOP00x49i1"
@@ -2329,7 +2329,6 @@
       "img": "icons/equipment/shield/kite-wooden-oak-glow.webp",
       "effects": [
         {
-          "icon": "icons/equipment/shield/kite-wooden-oak-glow.webp",
           "changes": [
             {
               "key": "system.attributes.ac.bonus",
@@ -2353,7 +2352,7 @@
             "startRound": null,
             "startTurn": null
           },
-          "tint": null,
+          "tint": "#ffffff",
           "transfer": false,
           "disabled": false,
           "flags": {
@@ -2376,6 +2375,20 @@
           "name": "Shield",
           "description": "",
           "statuses": [],
+          "_stats": {
+            "coreVersion": "12.331",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
+          },
+          "img": "icons/equipment/shield/kite-wooden-oak-glow.webp",
+          "type": "base",
+          "system": {},
+          "sort": 0,
           "_key": "!actors.items.effects!uDDjPihZaM5j2S0q.6OfC9hSsSWgdiiiW.cn16ojyj3ymyvy2t"
         }
       ],
@@ -2411,12 +2424,7 @@
           "version": "2.9.67",
           "effectsApplied": true
         },
-        "dnd5e": {
-          "migratedProperties": [
-            "vocal",
-            "somatic"
-          ]
-        },
+        "dnd5e": {},
         "midi-qol": {
           "removeAttackDamageButtons": "default",
           "forceCEOff": true
@@ -2520,10 +2528,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1685295933404,
         "modifiedTime": 1719926040693,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_id": "6OfC9hSsSWgdiiiW",
       "_key": "!actors.items!uDDjPihZaM5j2S0q.6OfC9hSsSWgdiiiW"
@@ -2561,15 +2571,7 @@
           "version": "2.9.67",
           "effectsApplied": true
         },
-        "dnd5e": {
-          "migratedProperties": [
-            "vocal",
-            "somatic",
-            "material",
-            "ritual",
-            "value"
-          ]
-        }
+        "dnd5e": {}
       },
       "system": {
         "description": {
@@ -2657,7 +2659,8 @@
           "vocal",
           "somatic",
           "ritual",
-          "value"
+          "value",
+          "material"
         ],
         "enchantment": null
       },
@@ -2668,10 +2671,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1685295934365,
         "modifiedTime": 1719926047726,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_id": "QTbgLBNIm3WgffEP",
       "_key": "!actors.items!uDDjPihZaM5j2S0q.QTbgLBNIm3WgffEP"
@@ -2714,15 +2719,7 @@
           "version": "2.9.67",
           "effectsApplied": true
         },
-        "dnd5e": {
-          "migratedProperties": [
-            "vocal",
-            "somatic",
-            "material",
-            "concentration",
-            "value"
-          ]
-        }
+        "dnd5e": {}
       },
       "system": {
         "description": {
@@ -2810,7 +2807,8 @@
           "vocal",
           "somatic",
           "concentration",
-          "value"
+          "value",
+          "material"
         ],
         "enchantment": null
       },
@@ -2821,10 +2819,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1685295934018,
         "modifiedTime": 1719926044025,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_id": "n4AGxD7UM8ETD9xe",
       "_key": "!actors.items!uDDjPihZaM5j2S0q.n4AGxD7UM8ETD9xe"
@@ -2835,7 +2835,6 @@
       "img": "icons/magic/defensive/illusion-evasion-echo-purple.webp",
       "effects": [
         {
-          "icon": "icons/magic/defensive/illusion-evasion-echo-purple.webp",
           "changes": [
             {
               "key": "macro.tokenMagic",
@@ -2853,7 +2852,7 @@
             "startRound": null,
             "startTurn": null
           },
-          "tint": null,
+          "tint": "#ffffff",
           "transfer": false,
           "disabled": false,
           "flags": {
@@ -2873,6 +2872,20 @@
           "name": "Mirror Image",
           "description": "",
           "statuses": [],
+          "_stats": {
+            "coreVersion": "12.331",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
+          },
+          "img": "icons/magic/defensive/illusion-evasion-echo-purple.webp",
+          "type": "base",
+          "system": {},
+          "sort": 0,
           "_key": "!actors.items.effects!uDDjPihZaM5j2S0q.VNh0lJNplWhARskU.kdfwg5vgjddjc4ix"
         }
       ],
@@ -2909,12 +2922,7 @@
           "version": "2.9.67",
           "effectsApplied": true
         },
-        "dnd5e": {
-          "migratedProperties": [
-            "vocal",
-            "somatic"
-          ]
-        },
+        "dnd5e": {},
         "midi-qol": {
           "removeAttackDamageButtons": "default",
           "forceCEOff": true
@@ -3018,10 +3026,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1685295934407,
         "modifiedTime": 1719926048259,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_id": "VNh0lJNplWhARskU",
       "_key": "!actors.items!uDDjPihZaM5j2S0q.VNh0lJNplWhARskU"
@@ -3060,15 +3070,7 @@
           "version": "2.9.67",
           "effectsApplied": true
         },
-        "dnd5e": {
-          "migratedProperties": [
-            "vocal",
-            "somatic",
-            "material",
-            "concentration",
-            "value"
-          ]
-        }
+        "dnd5e": {}
       },
       "system": {
         "description": {
@@ -3161,7 +3163,8 @@
           "vocal",
           "somatic",
           "concentration",
-          "value"
+          "value",
+          "material"
         ],
         "enchantment": null
       },
@@ -3172,10 +3175,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1685295934482,
         "modifiedTime": 1719926049208,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_id": "TjpeymNeLL9cFCKj",
       "_key": "!actors.items!uDDjPihZaM5j2S0q.TjpeymNeLL9cFCKj"
@@ -3218,14 +3223,7 @@
           "version": "2.9.67",
           "effectsApplied": true
         },
-        "dnd5e": {
-          "migratedProperties": [
-            "vocal",
-            "material",
-            "concentration",
-            "value"
-          ]
-        }
+        "dnd5e": {}
       },
       "system": {
         "description": {
@@ -3312,7 +3310,8 @@
         "properties": [
           "vocal",
           "concentration",
-          "value"
+          "value",
+          "material"
         ],
         "enchantment": null
       },
@@ -3323,10 +3322,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1685295934464,
         "modifiedTime": 1719926048967,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_id": "RxNSrGD6Ds2pJfkt",
       "_key": "!actors.items!uDDjPihZaM5j2S0q.RxNSrGD6Ds2pJfkt"
@@ -3368,11 +3369,7 @@
           "version": "2.9.67",
           "effectsApplied": true
         },
-        "dnd5e": {
-          "migratedProperties": [
-            "somatic"
-          ]
-        }
+        "dnd5e": {}
       },
       "system": {
         "description": {
@@ -3468,10 +3465,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1685295934500,
         "modifiedTime": 1719926049472,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_id": "fVOEPDvELDL8pHnz",
       "_key": "!actors.items!uDDjPihZaM5j2S0q.fVOEPDvELDL8pHnz"
@@ -3482,7 +3481,6 @@
       "img": "icons/magic/control/fear-fright-monster-purple-blue.webp",
       "effects": [
         {
-          "icon": "icons/magic/control/fear-fright-monster-purple-blue.webp",
           "changes": [
             {
               "key": "StatusEffect",
@@ -3500,7 +3498,7 @@
             "startRound": null,
             "startTurn": null
           },
-          "tint": null,
+          "tint": "#ffffff",
           "transfer": false,
           "disabled": false,
           "flags": {
@@ -3520,6 +3518,20 @@
           "name": "Fear",
           "description": "",
           "statuses": [],
+          "_stats": {
+            "coreVersion": "12.331",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
+          },
+          "img": "icons/magic/control/fear-fright-monster-purple-blue.webp",
+          "type": "base",
+          "system": {},
+          "sort": 0,
           "_key": "!actors.items.effects!uDDjPihZaM5j2S0q.j2Va55Uac0lMiwll.4jr58ajb07xfpzkw"
         }
       ],
@@ -3556,15 +3568,7 @@
           "version": "2.9.67",
           "effectsApplied": true
         },
-        "dnd5e": {
-          "migratedProperties": [
-            "vocal",
-            "somatic",
-            "material",
-            "concentration",
-            "value"
-          ]
-        },
+        "dnd5e": {},
         "midi-qol": {
           "removeAttackDamageButtons": "default",
           "forceCEOff": true
@@ -3659,7 +3663,8 @@
           "vocal",
           "somatic",
           "concentration",
-          "value"
+          "value",
+          "material"
         ],
         "enchantment": null
       },
@@ -3670,10 +3675,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1685295934513,
         "modifiedTime": 1719926049661,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_id": "j2Va55Uac0lMiwll",
       "_key": "!actors.items!uDDjPihZaM5j2S0q.j2Va55Uac0lMiwll"
@@ -3715,14 +3722,7 @@
           "version": "2.9.67",
           "effectsApplied": true
         },
-        "dnd5e": {
-          "migratedProperties": [
-            "vocal",
-            "somatic",
-            "material",
-            "value"
-          ]
-        }
+        "dnd5e": {}
       },
       "system": {
         "description": {
@@ -3814,7 +3814,8 @@
         "properties": [
           "vocal",
           "somatic",
-          "value"
+          "value",
+          "material"
         ],
         "enchantment": null
       },
@@ -3825,10 +3826,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1685295934002,
         "modifiedTime": 1719926043812,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_id": "vaXNBLEn0VwAKQUM",
       "_key": "!actors.items!uDDjPihZaM5j2S0q.vaXNBLEn0VwAKQUM"
@@ -3839,7 +3842,6 @@
       "img": "icons/magic/unholy/orb-swirling-teal.webp",
       "effects": [
         {
-          "icon": "icons/magic/unholy/orb-swirling-teal.webp",
           "changes": [
             {
               "key": "macro.itemMacro",
@@ -3857,7 +3859,7 @@
             "startRound": null,
             "startTurn": null
           },
-          "tint": null,
+          "tint": "#ffffff",
           "transfer": false,
           "disabled": false,
           "flags": {
@@ -3877,6 +3879,20 @@
           "name": "Banishment",
           "description": "",
           "statuses": [],
+          "_stats": {
+            "coreVersion": "12.331",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
+          },
+          "img": "icons/magic/unholy/orb-swirling-teal.webp",
+          "type": "base",
+          "system": {},
+          "sort": 0,
           "_key": "!actors.items.effects!uDDjPihZaM5j2S0q.c4wAunp2IbbiCuPa.cmznxfz5lt4edz72"
         }
       ],
@@ -3926,15 +3942,7 @@
             "compendium": null
           }
         },
-        "dnd5e": {
-          "migratedProperties": [
-            "vocal",
-            "somatic",
-            "material",
-            "concentration",
-            "value"
-          ]
-        },
+        "dnd5e": {},
         "dae": {
           "macro": {
             "data": {
@@ -4042,7 +4050,8 @@
           "vocal",
           "somatic",
           "concentration",
-          "value"
+          "value",
+          "material"
         ],
         "enchantment": null
       },
@@ -4053,10 +4062,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1685295933541,
         "modifiedTime": 1719926042396,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_id": "c4wAunp2IbbiCuPa",
       "_key": "!actors.items!uDDjPihZaM5j2S0q.c4wAunp2IbbiCuPa"
@@ -4098,11 +4109,7 @@
           "version": "2.9.67",
           "effectsApplied": true
         },
-        "dnd5e": {
-          "migratedProperties": [
-            "vocal"
-          ]
-        }
+        "dnd5e": {}
       },
       "system": {
         "description": {
@@ -4198,10 +4205,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1685295934316,
         "modifiedTime": 1719926046994,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_id": "SWHy4zW8HwsD4ttM",
       "_key": "!actors.items!uDDjPihZaM5j2S0q.SWHy4zW8HwsD4ttM"
@@ -4244,12 +4253,7 @@
           "version": "2.9.67",
           "effectsApplied": true
         },
-        "dnd5e": {
-          "migratedProperties": [
-            "vocal",
-            "ritual"
-          ]
-        }
+        "dnd5e": {}
       },
       "system": {
         "description": {
@@ -4346,10 +4350,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1685295934069,
         "modifiedTime": 1719926044702,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_id": "gjflZoKfw6PGfXPI",
       "_key": "!actors.items!uDDjPihZaM5j2S0q.gjflZoKfw6PGfXPI"
@@ -4360,7 +4366,6 @@
       "img": "icons/magic/control/encase-creature-monster-hold.webp",
       "effects": [
         {
-          "icon": "icons/magic/control/encase-creature-monster-hold.webp",
           "changes": [
             {
               "key": "StatusEffect",
@@ -4384,7 +4389,7 @@
             "startRound": null,
             "startTurn": null
           },
-          "tint": null,
+          "tint": "#ffffff",
           "transfer": false,
           "disabled": false,
           "flags": {
@@ -4404,6 +4409,20 @@
           "name": "Hold Monster",
           "description": "",
           "statuses": [],
+          "_stats": {
+            "coreVersion": "12.331",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
+          },
+          "img": "icons/magic/control/encase-creature-monster-hold.webp",
+          "type": "base",
+          "system": {},
+          "sort": 0,
           "_key": "!actors.items.effects!uDDjPihZaM5j2S0q.qNWCopTHBN3NQkcf.yzx6kdyl8a7n0jz8"
         }
       ],
@@ -4439,15 +4458,7 @@
           "version": "2.9.67",
           "effectsApplied": true
         },
-        "dnd5e": {
-          "migratedProperties": [
-            "vocal",
-            "somatic",
-            "material",
-            "concentration",
-            "value"
-          ]
-        },
+        "dnd5e": {},
         "midi-qol": {
           "removeAttackDamageButtons": "default",
           "forceCEOff": true
@@ -4542,7 +4553,8 @@
           "vocal",
           "somatic",
           "concentration",
-          "value"
+          "value",
+          "material"
         ],
         "enchantment": null
       },
@@ -4553,10 +4565,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1685295934377,
         "modifiedTime": 1719926047850,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_id": "qNWCopTHBN3NQkcf",
       "_key": "!actors.items!uDDjPihZaM5j2S0q.qNWCopTHBN3NQkcf"
@@ -4598,14 +4612,7 @@
           "version": "2.9.67",
           "effectsApplied": true
         },
-        "dnd5e": {
-          "migratedProperties": [
-            "vocal",
-            "somatic",
-            "material",
-            "value"
-          ]
-        }
+        "dnd5e": {}
       },
       "system": {
         "description": {
@@ -4697,7 +4704,8 @@
         "properties": [
           "vocal",
           "somatic",
-          "value"
+          "value",
+          "material"
         ],
         "enchantment": null
       },
@@ -4708,10 +4716,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1685295934233,
         "modifiedTime": 1719926045780,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_id": "Ft5W1xSggiofnYc9",
       "_key": "!actors.items!uDDjPihZaM5j2S0q.Ft5W1xSggiofnYc9"
@@ -4755,12 +4765,7 @@
           "version": "2.9.67",
           "effectsApplied": true
         },
-        "dnd5e": {
-          "migratedProperties": [
-            "vocal",
-            "somatic"
-          ]
-        }
+        "dnd5e": {}
       },
       "system": {
         "description": {
@@ -4862,10 +4867,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1685295933372,
         "modifiedTime": 1719926040358,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_id": "DLE9wbvdydSf0XUD",
       "_key": "!actors.items!uDDjPihZaM5j2S0q.DLE9wbvdydSf0XUD"
@@ -4876,7 +4883,6 @@
       "img": "icons/equipment/head/mask-craved-beige.webp",
       "effects": [
         {
-          "icon": "icons/equipment/head/mask-craved-beige.webp",
           "changes": [
             {
               "key": "system.traits.di.value",
@@ -4894,7 +4900,7 @@
             "startRound": null,
             "startTurn": null
           },
-          "tint": null,
+          "tint": "#ffffff",
           "transfer": false,
           "disabled": false,
           "flags": {
@@ -4914,6 +4920,20 @@
           "name": "Mind Blank",
           "description": "",
           "statuses": [],
+          "_stats": {
+            "coreVersion": "12.331",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
+          },
+          "img": "icons/equipment/head/mask-craved-beige.webp",
+          "type": "base",
+          "system": {},
+          "sort": 0,
           "_key": "!actors.items.effects!uDDjPihZaM5j2S0q.VOHQJPzxnaxJkSK3.0i3qnvjemi6awekt"
         }
       ],
@@ -4949,12 +4969,7 @@
           "version": "2.9.67",
           "effectsApplied": true
         },
-        "dnd5e": {
-          "migratedProperties": [
-            "vocal",
-            "somatic"
-          ]
-        },
+        "dnd5e": {},
         "midi-qol": {
           "removeAttackDamageButtons": "default",
           "forceCEOff": true
@@ -5058,10 +5073,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1685295934401,
         "modifiedTime": 1719926048188,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_id": "VOHQJPzxnaxJkSK3",
       "_key": "!actors.items!uDDjPihZaM5j2S0q.VOHQJPzxnaxJkSK3"
@@ -5072,7 +5089,6 @@
       "img": "icons/magic/control/debuff-energy-hold-green.webp",
       "effects": [
         {
-          "icon": "icons/magic/control/debuff-energy-hold-green.webp",
           "changes": [
             {
               "key": "system.attributes.movement.swim",
@@ -5090,7 +5106,7 @@
             "startRound": null,
             "startTurn": null
           },
-          "tint": null,
+          "tint": "#ffffff",
           "transfer": false,
           "disabled": false,
           "flags": {
@@ -5110,10 +5126,23 @@
           "name": "Alter Self",
           "description": "",
           "statuses": [],
+          "_stats": {
+            "coreVersion": "12.331",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
+          },
+          "img": "icons/magic/control/debuff-energy-hold-green.webp",
+          "type": "base",
+          "system": {},
+          "sort": 0,
           "_key": "!actors.items.effects!uDDjPihZaM5j2S0q.c6zVsUMKFBgZzQRc.1h96e5p95dybhjbu"
         },
         {
-          "icon": "icons/magic/control/debuff-energy-hold-green.webp",
           "changes": [
             {
               "key": "items.Unarmed Strike.data.damage.parts.0.0",
@@ -5149,7 +5178,7 @@
             "startRound": null,
             "startTurn": null
           },
-          "tint": null,
+          "tint": "#ffffff",
           "transfer": false,
           "disabled": false,
           "flags": {
@@ -5169,6 +5198,20 @@
           "name": "Alter Self",
           "description": "",
           "statuses": [],
+          "_stats": {
+            "coreVersion": "12.331",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
+          },
+          "img": "icons/magic/control/debuff-energy-hold-green.webp",
+          "type": "base",
+          "system": {},
+          "sort": 0,
           "_key": "!actors.items.effects!uDDjPihZaM5j2S0q.c6zVsUMKFBgZzQRc.9qldhvlg93jvksas"
         }
       ],
@@ -5204,13 +5247,7 @@
           "version": "2.9.67",
           "effectsApplied": true
         },
-        "dnd5e": {
-          "migratedProperties": [
-            "vocal",
-            "somatic",
-            "concentration"
-          ]
-        },
+        "dnd5e": {},
         "midi-qol": {
           "removeAttackDamageButtons": "default",
           "forceCEOff": true
@@ -5315,10 +5352,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1685295933418,
         "modifiedTime": 1719926040877,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_id": "c6zVsUMKFBgZzQRc",
       "_key": "!actors.items!uDDjPihZaM5j2S0q.c6zVsUMKFBgZzQRc"
@@ -5329,7 +5368,6 @@
       "img": "icons/magic/unholy/orb-glowing-purple.webp",
       "effects": [
         {
-          "icon": "icons/magic/unholy/orb-glowing-purple.webp",
           "changes": [
             {
               "key": "macro.itemMacro",
@@ -5347,7 +5385,7 @@
             "startRound": null,
             "startTurn": null
           },
-          "tint": null,
+          "tint": "#ffffff",
           "transfer": false,
           "disabled": false,
           "flags": {
@@ -5367,6 +5405,20 @@
           "name": "Darkness",
           "description": "",
           "statuses": [],
+          "_stats": {
+            "coreVersion": "12.331",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
+          },
+          "img": "icons/magic/unholy/orb-glowing-purple.webp",
+          "type": "base",
+          "system": {},
+          "sort": 0,
           "_key": "!actors.items.effects!uDDjPihZaM5j2S0q.mW93ToPCDZsjYJH3.a16g9n1eggmzmicb"
         }
       ],
@@ -5415,14 +5467,7 @@
             "compendium": null
           }
         },
-        "dnd5e": {
-          "migratedProperties": [
-            "vocal",
-            "material",
-            "concentration",
-            "value"
-          ]
-        },
+        "dnd5e": {},
         "dae": {
           "macro": {
             "data": {
@@ -5529,7 +5574,8 @@
         "properties": [
           "vocal",
           "concentration",
-          "value"
+          "value",
+          "material"
         ],
         "enchantment": null
       },
@@ -5540,10 +5586,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1685295934324,
         "modifiedTime": 1719926047136,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_id": "mW93ToPCDZsjYJH3",
       "_key": "!actors.items!uDDjPihZaM5j2S0q.mW93ToPCDZsjYJH3"
@@ -5586,15 +5634,7 @@
           "version": "2.9.67",
           "effectsApplied": true
         },
-        "dnd5e": {
-          "migratedProperties": [
-            "vocal",
-            "somatic",
-            "material",
-            "concentration",
-            "value"
-          ]
-        }
+        "dnd5e": {}
       },
       "system": {
         "description": {
@@ -5687,7 +5727,8 @@
           "vocal",
           "somatic",
           "concentration",
-          "value"
+          "value",
+          "material"
         ],
         "enchantment": null
       },
@@ -5698,10 +5739,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1685295934278,
         "modifiedTime": 1719926046469,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_id": "UWdaI1LDKB7C8tss",
       "_key": "!actors.items!uDDjPihZaM5j2S0q.UWdaI1LDKB7C8tss"
@@ -5712,7 +5755,6 @@
       "img": "icons/magic/air/fog-gas-smoke-blue-gray.webp",
       "effects": [
         {
-          "icon": "icons/magic/air/fog-gas-smoke-blue-gray.webp",
           "changes": [
             {
               "key": "macro.itemMacro",
@@ -5730,7 +5772,7 @@
             "startRound": null,
             "startTurn": null
           },
-          "tint": null,
+          "tint": "#ffffff",
           "transfer": false,
           "disabled": false,
           "flags": {
@@ -5750,6 +5792,20 @@
           "name": "Invisibility",
           "description": "",
           "statuses": [],
+          "_stats": {
+            "coreVersion": "12.331",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
+          },
+          "img": "icons/magic/air/fog-gas-smoke-blue-gray.webp",
+          "type": "base",
+          "system": {},
+          "sort": 0,
           "_key": "!actors.items.effects!uDDjPihZaM5j2S0q.ftK8eZETgyDP73yE.fnboc6c2ffaqrnww"
         }
       ],
@@ -5798,15 +5854,7 @@
             "compendium": null
           }
         },
-        "dnd5e": {
-          "migratedProperties": [
-            "vocal",
-            "somatic",
-            "material",
-            "concentration",
-            "value"
-          ]
-        },
+        "dnd5e": {},
         "dae": {
           "macro": {
             "data": {
@@ -5914,7 +5962,8 @@
           "vocal",
           "somatic",
           "concentration",
-          "value"
+          "value",
+          "material"
         ],
         "enchantment": null
       },
@@ -5925,10 +5974,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1685295933357,
         "modifiedTime": 1719926040155,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_id": "ftK8eZETgyDP73yE",
       "_key": "!actors.items!uDDjPihZaM5j2S0q.ftK8eZETgyDP73yE"
@@ -5970,12 +6021,7 @@
           "version": "2.9.67",
           "effectsApplied": true
         },
-        "dnd5e": {
-          "migratedProperties": [
-            "vocal",
-            "somatic"
-          ]
-        }
+        "dnd5e": {}
       },
       "system": {
         "description": {
@@ -6077,10 +6123,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1685295934244,
         "modifiedTime": 1719926045942,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_id": "zfE665se2T8PrL5H",
       "_key": "!actors.items!uDDjPihZaM5j2S0q.zfE665se2T8PrL5H"
@@ -6186,11 +6234,13 @@
   },
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "3.2.1",
-    "coreVersion": "11.315",
+    "systemVersion": "3.3.1",
+    "coreVersion": "12.331",
     "createdTime": 1721165607042,
-    "modifiedTime": 1728566217766,
-    "lastModifiedBy": "6yhz13iFYYklKtgA"
+    "modifiedTime": 1730040692702,
+    "lastModifiedBy": "6yhz13iFYYklKtgA",
+    "compendiumSource": "Compendium.world.ddb-lost-mines-phandelver-monsters.Actor.C0iQPkmVaSn7735q",
+    "duplicateSource": null
   },
   "_key": "!actors!uDDjPihZaM5j2S0q"
 }

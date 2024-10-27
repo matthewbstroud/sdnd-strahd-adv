@@ -41,10 +41,12 @@
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.1.2",
-            "coreVersion": "11.315",
+            "coreVersion": "12.331",
             "createdTime": 1722806289178,
             "modifiedTime": 1722806922150,
-            "lastModifiedBy": "6yhz13iFYYklKtgA"
+            "lastModifiedBy": "6yhz13iFYYklKtgA",
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         }
       ],
@@ -57,10 +59,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1722806192267,
         "modifiedTime": 1722806972755,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       }
     },
     {
@@ -96,10 +100,12 @@
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.1.2",
-            "coreVersion": "11.315",
+            "coreVersion": "12.331",
             "createdTime": 1722960625149,
             "modifiedTime": 1722960689265,
-            "lastModifiedBy": "6yhz13iFYYklKtgA"
+            "lastModifiedBy": "6yhz13iFYYklKtgA",
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         }
       ],
@@ -112,10 +118,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1722960602790,
         "modifiedTime": 1722960689265,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       }
     }
   ],
@@ -132,7 +140,11 @@
       "width": 3100,
       "height": 2200,
       "padding": 0.1,
-      "initial": {},
+      "initial": {
+        "x": null,
+        "y": null,
+        "scale": 0.5
+      },
       "backgroundColor": "#000000",
       "grid": {
         "size": 100,
@@ -140,14 +152,11 @@
         "color": "#000000",
         "alpha": 0.2,
         "distance": 5,
-        "units": "ft"
+        "units": "ft",
+        "style": "solidLines",
+        "thickness": 1
       },
       "tokenVision": true,
-      "fogExploration": true,
-      "fogReset": 1676336949639,
-      "globalLight": false,
-      "globalLightThreshold": null,
-      "darkness": 0,
       "drawings": [],
       "tokens": [],
       "lights": [
@@ -179,10 +188,13 @@
               "max": 1
             },
             "color": "#cd8737",
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         }
       ],
       "notes": [],
@@ -210,20 +222,67 @@
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0,
-        "tint": null
+        "tint": "#ffffff",
+        "anchorX": 0,
+        "anchorY": 0,
+        "fit": "fill",
+        "alphaThreshold": 0
       },
       "foregroundElevation": null,
-      "fogOverlay": null,
-      "fogExploredColor": null,
-      "fogUnexploredColor": null,
       "journalEntryPage": null,
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "2.4.1",
-        "coreVersion": "11.315",
+        "systemVersion": "3.1.2",
+        "coreVersion": "12.331",
         "createdTime": null,
-        "modifiedTime": 1705096071347,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "modifiedTime": 1723003343868,
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "regions": [],
+      "environment": {
+        "globalLight": {
+          "luminosity": 0,
+          "enabled": false,
+          "darkness": {
+            "max": 1,
+            "min": 0
+          },
+          "alpha": 0.5,
+          "bright": false,
+          "color": null,
+          "coloration": 1,
+          "saturation": 0,
+          "contrast": 0,
+          "shadows": 0
+        },
+        "darknessLevel": 0,
+        "darknessLock": false,
+        "cycle": true,
+        "base": {
+          "hue": 0,
+          "intensity": 0,
+          "luminosity": 0,
+          "saturation": 0,
+          "shadows": 0
+        },
+        "dark": {
+          "hue": 0.7138888888888889,
+          "intensity": 0,
+          "luminosity": -0.25,
+          "saturation": 0,
+          "shadows": 0
+        }
+      },
+      "fog": {
+        "exploration": true,
+        "reset": 1676336949639,
+        "overlay": null,
+        "colors": {
+          "explored": null,
+          "unexplored": null
+        }
       }
     },
     {
@@ -238,22 +297,23 @@
       "width": 4050,
       "height": 2700,
       "padding": 0.25,
-      "initial": {},
+      "initial": {
+        "x": null,
+        "y": null,
+        "scale": 0.5
+      },
       "backgroundColor": "#000000",
       "grid": {
         "size": 100,
         "type": 4,
         "color": "#000000",
-        "alpha": 0.2,
+        "alpha": 0.36,
         "distance": 0.5,
-        "units": "miles"
+        "units": "miles",
+        "style": "solidLines",
+        "thickness": 1
       },
       "tokenVision": true,
-      "fogExploration": true,
-      "fogReset": 1673102626704,
-      "globalLight": false,
-      "globalLightThreshold": null,
-      "darkness": 0,
       "drawings": [],
       "tokens": [],
       "lights": [],
@@ -285,20 +345,67 @@
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0,
-        "tint": null
+        "tint": "#ffffff",
+        "anchorX": 0,
+        "anchorY": 0,
+        "fit": "fill",
+        "alphaThreshold": 0
       },
       "foregroundElevation": null,
-      "fogOverlay": null,
-      "fogExploredColor": null,
-      "fogUnexploredColor": null,
       "journalEntryPage": null,
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": null,
-        "modifiedTime": 1720491898105,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "modifiedTime": 1723003344284,
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "regions": [],
+      "environment": {
+        "globalLight": {
+          "luminosity": 0,
+          "enabled": false,
+          "darkness": {
+            "max": 1,
+            "min": 0
+          },
+          "alpha": 0.5,
+          "bright": false,
+          "color": null,
+          "coloration": 1,
+          "saturation": 0,
+          "contrast": 0,
+          "shadows": 0
+        },
+        "darknessLevel": 0,
+        "darknessLock": false,
+        "cycle": true,
+        "base": {
+          "hue": 0,
+          "intensity": 0,
+          "luminosity": 0,
+          "saturation": 0,
+          "shadows": 0
+        },
+        "dark": {
+          "hue": 0.7138888888888889,
+          "intensity": 0,
+          "luminosity": -0.25,
+          "saturation": 0,
+          "shadows": 0
+        }
+      },
+      "fog": {
+        "exploration": true,
+        "reset": 1673102626704,
+        "overlay": null,
+        "colors": {
+          "explored": null,
+          "unexplored": null
+        }
       }
     },
     {
@@ -323,16 +430,13 @@
         "size": 100,
         "type": 4,
         "color": "#000000",
-        "alpha": 0.2,
+        "alpha": 0.36,
         "distance": 0.5,
-        "units": "miles"
+        "units": "miles",
+        "style": "solidLines",
+        "thickness": 1
       },
       "tokenVision": false,
-      "fogExploration": true,
-      "fogReset": 1673102626704,
-      "globalLight": false,
-      "globalLightThreshold": null,
-      "darkness": 0,
       "drawings": [],
       "tokens": [
         {
@@ -348,7 +452,6 @@
           "elevation": 0,
           "lockRotation": false,
           "rotation": 0,
-          "effects": [],
           "alpha": 1,
           "hidden": false,
           "light": {
@@ -372,10 +475,12 @@
               "max": 1
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "disposition": 1,
-          "displayBars": 0,
+          "displayBars": 40,
           "bar1": {
             "attribute": "attributes.hp"
           },
@@ -397,12 +502,16 @@
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/tokens/Vehicles/Travelling_Token.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": -0.7,
             "scaleY": 0.7,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0.75
           },
           "sight": {
             "angle": 360,
@@ -415,7 +524,6 @@
             "saturation": 0,
             "contrast": 0
           },
-          "overlayEffect": "",
           "detectionModes": [],
           "delta": {
             "_id": "HAST4Q9W4n73tr2r",
@@ -429,7 +537,26 @@
             "flags": {}
           },
           "appendNumber": false,
-          "prependAdjective": false
+          "prependAdjective": false,
+          "hexagonalShape": 0,
+          "sort": 0,
+          "locked": false,
+          "occludable": {
+            "radius": 0
+          },
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "scale": 1,
+              "texture": null
+            }
+          },
+          "_regions": []
         }
       ],
       "lights": [],
@@ -443,20 +570,26 @@
           "global": true,
           "iconSize": 32,
           "texture": {
-            "tint": null,
+            "tint": "#ffffff",
             "src": "icons/svg/book.svg",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0
           },
           "fontFamily": "Signika",
           "fontSize": 32,
-          "textColor": "#FFFFFF",
+          "textColor": "#ffffff",
           "textAnchor": 1,
           "_id": "97z7vkSi0FKnjz0X",
-          "flags": {}
+          "flags": {},
+          "elevation": 0,
+          "sort": 0
         },
         {
           "entryId": "dYNsBgAhaWgoQIZO",
@@ -467,20 +600,26 @@
           "global": true,
           "iconSize": 32,
           "texture": {
-            "tint": null,
+            "tint": "#ffffff",
             "src": "icons/svg/book.svg",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0
           },
           "fontFamily": "Signika",
           "fontSize": 32,
-          "textColor": "#FFFFFF",
+          "textColor": "#ffffff",
           "textAnchor": 1,
           "_id": "LkAZCtd8dTWjTMh7",
-          "flags": {}
+          "flags": {},
+          "elevation": 0,
+          "sort": 0
         },
         {
           "entryId": "0ONcPf7eMtW4hSK4",
@@ -491,20 +630,26 @@
           "global": true,
           "iconSize": 40,
           "texture": {
-            "tint": null,
+            "tint": "#ffffff",
             "src": "icons/svg/book.svg",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0
           },
           "fontFamily": "Signika",
           "fontSize": 32,
-          "textColor": "#FFFFFF",
+          "textColor": "#ffffff",
           "textAnchor": 1,
           "_id": "qDZMhIw0S9gsifVe",
-          "flags": {}
+          "flags": {},
+          "elevation": 0,
+          "sort": 0
         }
       ],
       "sounds": [],
@@ -516,16 +661,13 @@
           "height": 200,
           "x": 4800,
           "y": 2100,
-          "z": 101,
           "rotation": 0,
           "alpha": 1,
           "hidden": true,
           "locked": true,
-          "overhead": false,
           "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
+            "mode": 0,
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -575,14 +717,23 @@
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/maps/MapOfBaroviaTiles/EastGate.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "sort": 101,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "elevation": 0
         },
         {
           "_id": "SlKOIpL0yfAIvZFP",
@@ -590,16 +741,13 @@
           "height": 300,
           "x": 4000,
           "y": 2201,
-          "z": 100,
           "rotation": 0,
           "alpha": 1,
           "hidden": true,
           "locked": true,
-          "overhead": false,
           "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
+            "mode": 0,
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -649,14 +797,23 @@
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/maps/MapOfBaroviaTiles/VillageOfBarovia.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "sort": 100,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "elevation": 0
         },
         {
           "_id": "rX0mDyIbKwdQn6hW",
@@ -664,16 +821,13 @@
           "height": 200,
           "x": 4400,
           "y": 2301,
-          "z": 100,
           "rotation": 0,
           "alpha": 1,
           "hidden": true,
           "locked": true,
-          "overhead": false,
           "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
+            "mode": 0,
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -723,14 +877,23 @@
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/maps/MapOfBaroviaTiles/OldSvalichRoad2.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "sort": 100,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "elevation": 0
         },
         {
           "_id": "VbVqkgBpbI5C4m1a",
@@ -738,16 +901,13 @@
           "height": 200,
           "x": 2540,
           "y": 2200,
-          "z": 100,
           "rotation": 0,
           "alpha": 1,
           "hidden": true,
           "locked": true,
-          "overhead": false,
           "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
+            "mode": 0,
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -797,14 +957,23 @@
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/maps/MapOfBaroviaTiles/AncientMegaliths.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "sort": 100,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "elevation": 0
         },
         {
           "_id": "G6io3nU8CjaugRQr",
@@ -812,16 +981,13 @@
           "height": 200,
           "x": 2300,
           "y": 2200,
-          "z": 100,
           "rotation": 0,
           "alpha": 1,
           "hidden": true,
           "locked": true,
-          "overhead": false,
           "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
+            "mode": 0,
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -871,14 +1037,23 @@
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/maps/MapOfBaroviaTiles/Old%20Berez.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "sort": 100,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "elevation": 0
         },
         {
           "_id": "UyQ01uWiMv5iSGOZ",
@@ -886,16 +1061,13 @@
           "height": 200,
           "x": 1900,
           "y": 1300,
-          "z": 100,
           "rotation": 0,
           "alpha": 1,
           "hidden": true,
           "locked": true,
-          "overhead": false,
           "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
+            "mode": 0,
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -945,14 +1117,23 @@
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/maps/MapOfBaroviaTiles/LakeBaratok.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "sort": 100,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "elevation": 0
         },
         {
           "_id": "4LPj0tuxdvT5RVyQ",
@@ -960,16 +1141,13 @@
           "height": 1400,
           "x": 4900,
           "y": 1400,
-          "z": 100,
           "rotation": 0,
           "alpha": 1,
           "hidden": true,
           "locked": true,
-          "overhead": false,
           "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
+            "mode": 0,
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -1032,14 +1210,23 @@
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/maps/MapOfBaroviaTiles/AbandonHopeEast.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "sort": 100,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "elevation": 0
         },
         {
           "_id": "UuszvFHdJVA0Q9sR",
@@ -1047,16 +1234,13 @@
           "height": 300,
           "x": 4102,
           "y": 2500,
-          "z": 100,
           "rotation": 0,
           "alpha": 1,
           "hidden": true,
           "locked": true,
-          "overhead": false,
           "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
+            "mode": 0,
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -1106,14 +1290,23 @@
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/maps/MapOfBaroviaTiles/RiverIvlis.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "sort": 100,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "elevation": 0
         },
         {
           "_id": "Jl8uwI3BNffMDR3S",
@@ -1121,16 +1314,13 @@
           "height": 300,
           "x": 3800,
           "y": 2200,
-          "z": 100,
           "rotation": 0,
           "alpha": 1,
           "hidden": true,
           "locked": true,
-          "overhead": false,
           "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
+            "mode": 0,
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -1180,14 +1370,23 @@
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/maps/MapOfBaroviaTiles/TserPool.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "sort": 100,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "elevation": 0
         },
         {
           "_id": "5SZaLNILoSVZmZUS",
@@ -1195,16 +1394,13 @@
           "height": 300,
           "x": 4000,
           "y": 2800,
-          "z": 100,
           "rotation": 0,
           "alpha": 1,
           "hidden": false,
           "locked": true,
-          "overhead": false,
           "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
+            "mode": 0,
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -1240,14 +1436,23 @@
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/maps/MapOfBaroviaTiles/SvalichWoods_SE.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "sort": 100,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "elevation": 0
         },
         {
           "_id": "mQw6siL7nMCdS4CX",
@@ -1255,16 +1460,13 @@
           "height": 257,
           "x": 2800,
           "y": 1212,
-          "z": 103,
           "rotation": 0,
           "alpha": 1,
           "hidden": true,
           "locked": true,
-          "overhead": false,
           "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
+            "mode": 0,
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -1314,14 +1516,23 @@
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/maps/MapOfBaroviaTiles/Lake%20Zarovich.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "sort": 103,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "elevation": 0
         },
         {
           "_id": "gLxSH4jeJqX4CE8S",
@@ -1329,16 +1540,13 @@
           "height": 300,
           "x": 3700,
           "y": 2500,
-          "z": 100,
           "rotation": 0,
           "alpha": 1,
           "hidden": true,
           "locked": true,
-          "overhead": false,
           "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
+            "mode": 0,
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -1388,14 +1596,23 @@
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/maps/MapOfBaroviaTiles/RiverIvlisCrossroads.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "sort": 100,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "elevation": 0
         },
         {
           "_id": "21vmoMLvqa3TWHK9",
@@ -1403,16 +1620,13 @@
           "height": 300,
           "x": 3800,
           "y": 1900,
-          "z": 100,
           "rotation": 0,
           "alpha": 1,
           "hidden": true,
           "locked": true,
-          "overhead": false,
           "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
+            "mode": 0,
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -1462,14 +1676,23 @@
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/maps/MapOfBaroviaTiles/CastleRavenloft.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "sort": 100,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "elevation": 0
         },
         {
           "_id": "LikHj3qXBLuJ8wMZ",
@@ -1477,16 +1700,13 @@
           "height": 200,
           "x": 3200,
           "y": 2000,
-          "z": 100,
           "rotation": 0,
           "alpha": 1,
           "hidden": true,
           "locked": true,
-          "overhead": false,
           "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
+            "mode": 0,
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -1536,14 +1756,23 @@
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/maps/MapOfBaroviaTiles/TserFalls.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "sort": 100,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "elevation": 0
         },
         {
           "_id": "4cFkrkSOu7wb457n",
@@ -1551,16 +1780,13 @@
           "height": 200,
           "x": 3300,
           "y": 1800,
-          "z": 100,
           "rotation": 0,
           "alpha": 1,
           "hidden": true,
           "locked": true,
-          "overhead": false,
           "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
+            "mode": 0,
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -1610,14 +1836,23 @@
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/maps/MapOfBaroviaTiles/WestGate.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "sort": 100,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "elevation": 0
         },
         {
           "_id": "H5oqntGXmNtKiO5N",
@@ -1625,16 +1860,13 @@
           "height": 268,
           "x": 2877,
           "y": 1643,
-          "z": 100,
           "rotation": 0,
           "alpha": 1,
           "hidden": true,
           "locked": true,
-          "overhead": false,
           "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
+            "mode": 0,
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -1684,14 +1916,23 @@
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/maps/MapOfBaroviaTiles/OldMill.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "sort": 100,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "elevation": 0
         },
         {
           "_id": "ave4xT33fhhlWWCC",
@@ -1699,16 +1940,13 @@
           "height": 190,
           "x": 2800,
           "y": 1500,
-          "z": 100,
           "rotation": 0,
           "alpha": 1,
           "hidden": false,
           "locked": true,
-          "overhead": false,
           "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
+            "mode": 0,
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -1744,14 +1982,23 @@
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/maps/MapOfBaroviaTiles/OldSvalichRoad(Vallaki).webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "sort": 100,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "elevation": 0
         },
         {
           "_id": "9CnD4kWgmanKhXcI",
@@ -1759,16 +2006,13 @@
           "height": 204,
           "x": 2563,
           "y": 1432,
-          "z": 102,
           "rotation": 0,
           "alpha": 1,
           "hidden": true,
           "locked": true,
-          "overhead": false,
           "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
+            "mode": 0,
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -1818,14 +2062,23 @@
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/maps/MapOfBaroviaTiles/Vallaki.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "sort": 102,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "elevation": 0
         },
         {
           "_id": "VDakzqLgcbOWhxAe",
@@ -1833,16 +2086,13 @@
           "height": 300,
           "x": 2500,
           "y": 1000,
-          "z": 100,
           "rotation": 0,
           "alpha": 1,
           "hidden": false,
           "locked": true,
-          "overhead": false,
           "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
+            "mode": 0,
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -1878,14 +2128,23 @@
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/maps/MapOfBaroviaTiles/SvalichWoodsByLakeZarovich.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "sort": 100,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "elevation": 0
         },
         {
           "_id": "ufDIPHDuqYFgLopS",
@@ -1893,16 +2152,13 @@
           "height": 400,
           "x": 4400,
           "y": 1600,
-          "z": 100,
           "rotation": 0,
           "alpha": 1,
           "hidden": false,
           "locked": true,
-          "overhead": false,
           "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
+            "mode": 0,
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -1938,14 +2194,23 @@
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/maps/MapOfBaroviaTiles/WoodsByEastGate.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "sort": 100,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "elevation": 0
         },
         {
           "_id": "keo6VSMkRfs6zwAC",
@@ -1953,16 +2218,13 @@
           "height": 300,
           "x": 2200,
           "y": 1500,
-          "z": 100,
           "rotation": 0,
           "alpha": 1,
           "hidden": true,
           "locked": true,
-          "overhead": false,
           "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
+            "mode": 0,
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -2012,14 +2274,23 @@
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/maps/MapOfBaroviaTiles/LunaRiverCrossing.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "sort": 100,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "elevation": 0
         },
         {
           "_id": "k69YnmjvRdCAAF8q",
@@ -2027,16 +2298,13 @@
           "height": 200,
           "x": 2100,
           "y": 1900,
-          "z": 100,
           "rotation": 0,
           "alpha": 1,
           "hidden": true,
           "locked": true,
-          "overhead": false,
           "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
+            "mode": 0,
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -2086,14 +2354,23 @@
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/maps/MapOfBaroviaTiles/Argynvostholt.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "sort": 100,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "elevation": 0
         },
         {
           "_id": "SMvajGqM0T5dOvpM",
@@ -2101,16 +2378,13 @@
           "height": 274,
           "x": 2545,
           "y": 1726,
-          "z": 100,
           "rotation": 0,
           "alpha": 1,
           "hidden": false,
           "locked": true,
-          "overhead": false,
           "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
+            "mode": 0,
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -2146,14 +2420,23 @@
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/maps/MapOfBaroviaTiles/LunaRiverByCrossroad.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "sort": 100,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "elevation": 0
         },
         {
           "_id": "6NgdWVmqYVHyXUdd",
@@ -2161,16 +2444,13 @@
           "height": 430,
           "x": 1224,
           "y": 1160,
-          "z": 100,
           "rotation": 0,
           "alpha": 1,
           "hidden": false,
           "locked": true,
-          "overhead": false,
           "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
+            "mode": 0,
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -2206,14 +2486,23 @@
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/maps/MapOfBaroviaTiles/SvalichWoods_NW.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "sort": 100,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "elevation": 0
         },
         {
           "_id": "mZUclJwUeyu3I3vJ",
@@ -2221,16 +2510,13 @@
           "height": 161,
           "x": 1300,
           "y": 1400,
-          "z": 104,
           "rotation": 0,
           "alpha": 1,
           "hidden": true,
           "locked": true,
-          "overhead": false,
           "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
+            "mode": 0,
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -2280,14 +2566,23 @@
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/maps/MapOfBaroviaTiles/Krezk.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "sort": 104,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "elevation": 0
         },
         {
           "_id": "2bO3HqjC36D9eT3v",
@@ -2295,16 +2590,13 @@
           "height": 300,
           "x": 1300,
           "y": 2200,
-          "z": 100,
           "rotation": 0,
           "alpha": 1,
           "hidden": true,
           "locked": true,
-          "overhead": false,
           "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
+            "mode": 0,
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -2354,14 +2646,23 @@
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/maps/MapOfBaroviaTiles/YesterHill.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "sort": 100,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "elevation": 0
         },
         {
           "_id": "Akh2akNkqKDGx5np",
@@ -2369,16 +2670,13 @@
           "height": 197,
           "x": 1294,
           "y": 1896,
-          "z": 100,
           "rotation": 0,
           "alpha": 1,
           "hidden": true,
           "locked": true,
-          "overhead": false,
           "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
+            "mode": 0,
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -2428,14 +2726,23 @@
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/maps/MapOfBaroviaTiles/WizardOfWines.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "sort": 100,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "elevation": 0
         },
         {
           "_id": "FfG49JrGy3AvbYwM",
@@ -2443,16 +2750,13 @@
           "height": 617,
           "x": 1257,
           "y": 2512,
-          "z": 100,
           "rotation": 0,
           "alpha": 1,
           "hidden": false,
           "locked": true,
-          "overhead": false,
           "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
+            "mode": 0,
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -2488,14 +2792,23 @@
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/maps/MapOfBaroviaTiles/SouthWestCorner.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "sort": 100,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "elevation": 0
         },
         {
           "_id": "Q5xyTQVfg6bUAabL",
@@ -2503,16 +2816,13 @@
           "height": 211,
           "x": 2375,
           "y": 2648,
-          "z": 100,
           "rotation": 0,
           "alpha": 1,
           "hidden": false,
           "locked": true,
-          "overhead": false,
           "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
+            "mode": 0,
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -2548,14 +2858,23 @@
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/maps/MapOfBaroviaTiles/MountGhakis.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "sort": 100,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "elevation": 0
         },
         {
           "_id": "WHREEpzlHbTOpCvx",
@@ -2563,16 +2882,13 @@
           "height": 187,
           "x": 2430,
           "y": 2874,
-          "z": 100,
           "rotation": 0,
           "alpha": 1,
           "hidden": true,
           "locked": true,
-          "overhead": false,
           "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
+            "mode": 0,
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -2622,14 +2938,23 @@
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/maps/MapOfBaroviaTiles/AmberTemple.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "sort": 100,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "elevation": 0
         },
         {
           "_id": "Ju7ta7EvyiwZyBez",
@@ -2637,16 +2962,13 @@
           "height": 200,
           "x": 1700,
           "y": 2300,
-          "z": 100,
           "rotation": 0,
           "alpha": 1,
           "hidden": true,
           "locked": true,
-          "overhead": false,
           "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
+            "mode": 0,
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -2696,14 +3018,23 @@
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/maps/MapOfBaroviaTiles/TsolenkaPass.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "sort": 100,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "elevation": 0
         },
         {
           "_id": "4bUpXXzqhxxZUKQ1",
@@ -2711,16 +3042,13 @@
           "height": 108,
           "x": 1262,
           "y": 1592,
-          "z": 100,
           "rotation": 0,
           "alpha": 1,
           "hidden": true,
           "locked": true,
-          "overhead": false,
           "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
+            "mode": 0,
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -2770,14 +3098,23 @@
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/maps/MapOfBaroviaTiles/RavenRiver.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "sort": 100,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "elevation": 0
         },
         {
           "_id": "Qtu8aT8AsYIAhZFN",
@@ -2785,16 +3122,13 @@
           "height": 300,
           "x": 3700,
           "y": 800,
-          "z": 100,
           "rotation": 0,
           "alpha": 1,
           "hidden": false,
           "locked": true,
-          "overhead": false,
           "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
+            "mode": 0,
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -2830,14 +3164,23 @@
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/maps/MapOfBaroviaTiles/MountBaratok.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "sort": 100,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "elevation": 0
         },
         {
           "_id": "SIMUO6owm0VKpvsf",
@@ -2845,16 +3188,13 @@
           "height": 1618,
           "x": 1100,
           "y": 1200,
-          "z": 100,
           "rotation": 0,
           "alpha": 1,
           "hidden": true,
           "locked": false,
-          "overhead": false,
           "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
+            "mode": 0,
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -2917,14 +3257,23 @@
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/maps/MapOfBaroviaTiles/AbandonHopeWest.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "sort": 100,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "elevation": 0
         }
       ],
       "walls": [],
@@ -2951,20 +3300,67 @@
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0,
-        "tint": null
+        "tint": "#ffffff",
+        "anchorX": 0,
+        "anchorY": 0,
+        "fit": "fill",
+        "alphaThreshold": 0
       },
       "foregroundElevation": null,
-      "fogOverlay": null,
-      "fogExploredColor": null,
-      "fogUnexploredColor": null,
       "journalEntryPage": null,
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "systemVersion": "3.2.1",
+        "coreVersion": "12.331",
         "createdTime": 1704856935311,
-        "modifiedTime": 1722960715114,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "modifiedTime": 1729431493565,
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "regions": [],
+      "environment": {
+        "globalLight": {
+          "luminosity": 0,
+          "enabled": false,
+          "darkness": {
+            "max": 1,
+            "min": 0
+          },
+          "alpha": 0.5,
+          "bright": false,
+          "color": null,
+          "coloration": 1,
+          "saturation": 0,
+          "contrast": 0,
+          "shadows": 0
+        },
+        "darknessLevel": 0,
+        "darknessLock": false,
+        "cycle": true,
+        "base": {
+          "hue": 0,
+          "intensity": 0,
+          "luminosity": 0,
+          "saturation": 0,
+          "shadows": 0
+        },
+        "dark": {
+          "hue": 0.7138888888888889,
+          "intensity": 0,
+          "luminosity": -0.25,
+          "saturation": 0,
+          "shadows": 0
+        }
+      },
+      "fog": {
+        "exploration": true,
+        "reset": 1673102626704,
+        "overlay": null,
+        "colors": {
+          "explored": null,
+          "unexplored": null
+        }
       }
     }
   ],
@@ -2986,10 +3382,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": 1704857132061,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       }
     },
     {
@@ -3004,11 +3402,14 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1704839237165,
         "modifiedTime": 1704857631386,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
-      }
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "description": ""
     },
     {
       "name": "SDND - Curse of Strahd",
@@ -3022,11 +3423,14 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1705027168419,
         "modifiedTime": 1705027175907,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
-      }
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "description": ""
     },
     {
       "name": "Areas",
@@ -3041,10 +3445,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": 1705027185606,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       }
     },
     {
@@ -3059,11 +3465,14 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1722806966949,
         "modifiedTime": 1722806966949,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
-      }
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "description": ""
     },
     {
       "name": "I: Black Carriage",
@@ -3077,11 +3486,14 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1722960593567,
         "modifiedTime": 1722960593567,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
-      }
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "description": ""
     }
   ],
   "_id": "NDgVZ6a3bjBuY0lS",
@@ -3090,10 +3502,12 @@
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "3.1.2",
-    "coreVersion": "11.315",
+    "coreVersion": "12.331",
     "createdTime": 1722960870473,
-    "modifiedTime": 1722984285930,
-    "lastModifiedBy": "6yhz13iFYYklKtgA"
+    "modifiedTime": 1730046215345,
+    "lastModifiedBy": "6yhz13iFYYklKtgA",
+    "compendiumSource": null,
+    "duplicateSource": null
   },
   "_key": "!adventures!NDgVZ6a3bjBuY0lS"
 }

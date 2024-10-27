@@ -151,7 +151,10 @@
         "book": "SRD 5.1",
         "page": "",
         "license": "CC-BY-4.0"
-      }
+      },
+      "ideal": "",
+      "bond": "",
+      "flaw": ""
     },
     "traits": {
       "size": "med",
@@ -536,9 +539,7 @@
       "monks-tokenbar": {
         "include": "default"
       },
-      "core": {
-        "occlusionRadius": null
-      },
+      "core": {},
       "autorotate": {
         "enabled": null,
         "offset": null
@@ -567,16 +568,22 @@
         "max": 1
       },
       "attenuation": 0.5,
-      "color": null
+      "color": null,
+      "negative": false,
+      "priority": 0
     },
     "texture": {
       "src": "modules/sdnd-strahd-adv/images/tokens/Mobs/Vistani_Male2_Token.webp",
-      "tint": null,
+      "tint": "#ffffff",
       "scaleX": 1,
       "scaleY": 1,
       "offsetX": 0,
       "offsetY": 0,
-      "rotation": 0
+      "rotation": 0,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "alphaThreshold": 0.75
     },
     "sight": {
       "angle": 360,
@@ -591,7 +598,23 @@
     },
     "detectionModes": [],
     "appendNumber": false,
-    "prependAdjective": false
+    "prependAdjective": false,
+    "hexagonalShape": 0,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    }
   },
   "items": [
     {
@@ -722,19 +745,17 @@
         "core": {
           "sourceId": "Compendium.dnd5e.items.cKpJmsJmU8YaiuqG"
         },
-        "dnd5e": {
-          "migratedProperties": [
-            "stealthDisadvantage"
-          ]
-        }
+        "dnd5e": {}
       },
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.dnd5e.items.cKpJmsJmU8YaiuqG",
+        "duplicateSource": null
       },
       "_key": "!actors.items!K3E23HRU52FPScGZ.0otc04A190Q8hTBK"
     },
@@ -869,10 +890,12 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.dnd5e.items.10ZP2Bu3vnCuYMIB",
+        "duplicateSource": null
       },
       "_key": "!actors.items!K3E23HRU52FPScGZ.WaEunPCFG0EddNTt"
     },
@@ -979,10 +1002,12 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.dnd5e.monsterfeatures.EqoLg8T8EHvhJgKE",
+        "duplicateSource": null
       },
       "_key": "!actors.items!K3E23HRU52FPScGZ.wziRdUn3HafZKJ8o"
     },
@@ -1115,10 +1140,12 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.dnd5e.items.osLzOwQdPtrK3rQH",
+        "duplicateSource": null
       },
       "_key": "!actors.items!K3E23HRU52FPScGZ.cXf5q5xw30ICGxZg"
     },
@@ -1254,10 +1281,12 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.dnd5e.items.RmP0mYRn2J7K26rX",
+        "duplicateSource": null
       },
       "_key": "!actors.items!K3E23HRU52FPScGZ.6jQ7YUixkwBq2Fh8"
     }
@@ -1305,11 +1334,13 @@
   },
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "3.2.1",
-    "coreVersion": "11.315",
+    "systemVersion": "3.3.1",
+    "coreVersion": "12.331",
     "createdTime": 1661787232739,
-    "modifiedTime": 1728566217766,
-    "lastModifiedBy": "6yhz13iFYYklKtgA"
+    "modifiedTime": 1730040691037,
+    "lastModifiedBy": "6yhz13iFYYklKtgA",
+    "compendiumSource": "Compendium.dnd5e.monsters.Actor.J8xjoG4Dxb8WkHtV",
+    "duplicateSource": null
   },
   "_key": "!actors!K3E23HRU52FPScGZ"
 }

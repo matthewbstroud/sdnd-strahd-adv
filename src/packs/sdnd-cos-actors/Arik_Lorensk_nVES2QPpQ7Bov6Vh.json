@@ -97,7 +97,7 @@
         },
         "magicalBonus": null,
         "properties": [],
-        "equipped": false,
+        "equipped": true,
         "attuned": false,
         "enchantment": null
       },
@@ -132,10 +132,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1721695596930,
         "modifiedTime": 1721695804179,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": "Compendium.sdnd-shared.sdnd-common-items.Item.ksZUCaDj4EEbIuND",
+        "duplicateSource": null
       },
       "_key": "!actors.items!nVES2QPpQ7Bov6Vh.ww7G7lGjThwWXc7Y"
     },
@@ -232,7 +234,7 @@
         },
         "magicalBonus": null,
         "properties": [],
-        "equipped": false,
+        "equipped": true,
         "attuned": false,
         "enchantment": null
       },
@@ -267,10 +269,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1721695480166,
         "modifiedTime": 1721695831208,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": "Compendium.sdnd-shared.sdnd-common-items.Item.zUQey1FRktXXlK6u",
+        "duplicateSource": null
       },
       "_key": "!actors.items!nVES2QPpQ7Bov6Vh.C1TVbYXL8o2R8Cpk"
     }
@@ -963,16 +967,22 @@
         "max": 1
       },
       "color": null,
-      "attenuation": 0.5
+      "attenuation": 0.5,
+      "negative": false,
+      "priority": 0
     },
     "texture": {
       "src": "modules/sdnd-strahd-adv/images/tokens/NPC/Arik_Token.webp",
-      "tint": null,
+      "tint": "#ffffff",
       "scaleX": 1,
       "scaleY": 1,
       "offsetX": 0,
       "offsetY": 0,
-      "rotation": 0
+      "rotation": 0,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "alphaThreshold": 0.75
     },
     "sight": {
       "angle": 360,
@@ -987,15 +997,33 @@
     },
     "detectionModes": [],
     "appendNumber": false,
-    "prependAdjective": false
+    "prependAdjective": false,
+    "hexagonalShape": 0,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    }
   },
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "3.2.1",
-    "coreVersion": "11.315",
+    "systemVersion": "3.3.1",
+    "coreVersion": "12.331",
     "createdTime": 1721695772306,
-    "modifiedTime": 1728566223822,
-    "lastModifiedBy": "6yhz13iFYYklKtgA"
+    "modifiedTime": 1730040692298,
+    "lastModifiedBy": "6yhz13iFYYklKtgA",
+    "compendiumSource": "Compendium.dnd5e.monsters.SqZRuJ8lt2KGJBbq",
+    "duplicateSource": null
   },
   "_key": "!actors!nVES2QPpQ7Bov6Vh"
 }

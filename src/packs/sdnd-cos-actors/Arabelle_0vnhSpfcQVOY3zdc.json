@@ -534,27 +534,12 @@
       "monks-tokenbar": {
         "include": "default"
       },
-      "core": {
-        "occlusionRadius": null
-      },
+      "core": {},
       "autorotate": {
         "enabled": null,
         "offset": null
       },
-      "dnd5e": {
-        "tokenRing": {
-          "enabled": false,
-          "textures": {
-            "subject": null
-          },
-          "scaleCorrection": 1,
-          "colors": {
-            "ring": null,
-            "background": null
-          },
-          "effects": 1
-        }
-      },
+      "dnd5e": {},
       "simbuls-cover-calculator": {
         "coverLevel": 1,
         "coverLevelDead": 1,
@@ -584,16 +569,22 @@
         "max": 1
       },
       "attenuation": 0.5,
-      "color": null
+      "color": null,
+      "negative": false,
+      "priority": 0
     },
     "texture": {
       "src": "modules/sdnd-strahd-adv/images/tokens/NPC/arabelle_token.webp",
-      "tint": null,
+      "tint": "#ffffff",
       "scaleX": 0.8,
       "scaleY": 0.8,
       "offsetX": 0,
       "offsetY": 0,
-      "rotation": 0
+      "rotation": 0,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "alphaThreshold": 0.75
     },
     "sight": {
       "angle": 360,
@@ -608,7 +599,23 @@
     },
     "detectionModes": [],
     "appendNumber": false,
-    "prependAdjective": false
+    "prependAdjective": false,
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "texture": null,
+        "scale": 1
+      }
+    },
+    "hexagonalShape": 0,
+    "occludable": {
+      "radius": 0
+    }
   },
   "items": [
     {
@@ -714,10 +721,12 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": "Compendium.dnd5e.monsterfeatures.kfi26Jy0VLXv9TTm",
+        "duplicateSource": null
       },
       "_key": "!actors.items!0vnhSpfcQVOY3zdc.HhLmdqeivyDnsemN"
     }
@@ -736,11 +745,13 @@
   },
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "3.2.1",
-    "coreVersion": "11.315",
+    "systemVersion": "3.3.1",
+    "coreVersion": "12.331",
     "createdTime": 1661787232715,
-    "modifiedTime": 1728566223822,
-    "lastModifiedBy": "6yhz13iFYYklKtgA"
+    "modifiedTime": 1730040687563,
+    "lastModifiedBy": "6yhz13iFYYklKtgA",
+    "compendiumSource": "Compendium.dnd5e.monsters.Actor.GlaCGcgIP6YjBjGc",
+    "duplicateSource": null
   },
   "_key": "!actors!0vnhSpfcQVOY3zdc"
 }

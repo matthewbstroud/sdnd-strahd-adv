@@ -41,10 +41,12 @@
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.2.1",
-            "coreVersion": "11.315",
+            "coreVersion": "12.331",
             "createdTime": 1722957461827,
             "modifiedTime": 1729120877371,
-            "lastModifiedBy": "6yhz13iFYYklKtgA"
+            "lastModifiedBy": "6yhz13iFYYklKtgA",
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         },
         {
@@ -75,10 +77,12 @@
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.2.1",
-            "coreVersion": "11.315",
+            "coreVersion": "12.331",
             "createdTime": 1722957726242,
             "modifiedTime": 1729121377242,
-            "lastModifiedBy": "6yhz13iFYYklKtgA"
+            "lastModifiedBy": "6yhz13iFYYklKtgA",
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         },
         {
@@ -109,10 +113,12 @@
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.2.1",
-            "coreVersion": "11.315",
+            "coreVersion": "12.331",
             "createdTime": 1722957836622,
             "modifiedTime": 1729099243842,
-            "lastModifiedBy": "6yhz13iFYYklKtgA"
+            "lastModifiedBy": "6yhz13iFYYklKtgA",
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         },
         {
@@ -143,10 +149,12 @@
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.2.1",
-            "coreVersion": "11.315",
+            "coreVersion": "12.331",
             "createdTime": 1722957985493,
             "modifiedTime": 1729121806221,
-            "lastModifiedBy": "6yhz13iFYYklKtgA"
+            "lastModifiedBy": "6yhz13iFYYklKtgA",
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         },
         {
@@ -177,10 +185,12 @@
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.2.1",
-            "coreVersion": "11.315",
+            "coreVersion": "12.331",
             "createdTime": 1722958112350,
             "modifiedTime": 1729121880354,
-            "lastModifiedBy": "6yhz13iFYYklKtgA"
+            "lastModifiedBy": "6yhz13iFYYklKtgA",
+            "compendiumSource": null,
+            "duplicateSource": null
           }
         }
       ],
@@ -193,10 +203,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1722957435586,
-        "modifiedTime": 1729120877371,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "modifiedTime": 1729121880354,
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       }
     }
   ],
@@ -213,7 +225,11 @@
       "width": 3840,
       "height": 3840,
       "padding": 0.1,
-      "initial": {},
+      "initial": {
+        "x": null,
+        "y": null,
+        "scale": 0.5
+      },
       "backgroundColor": "#000000",
       "grid": {
         "size": 128,
@@ -221,14 +237,11 @@
         "color": "#000000",
         "alpha": 0.2,
         "distance": 5,
-        "units": "ft"
+        "units": "ft",
+        "style": "solidLines",
+        "thickness": 1
       },
       "tokenVision": true,
-      "fogExploration": true,
-      "fogReset": 1675807021849,
-      "globalLight": false,
-      "globalLightThreshold": null,
-      "darkness": 0,
       "drawings": [],
       "tokens": [],
       "lights": [
@@ -260,10 +273,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "a5HAHR0Gc7bWoQF6",
@@ -293,10 +309,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "SzntKzFrb12Qd7xS",
@@ -326,10 +345,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "4vgRE2Oxzem9j5pS",
@@ -359,10 +381,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         }
       ],
       "notes": [
@@ -375,20 +400,26 @@
           "global": false,
           "iconSize": 80,
           "texture": {
-            "tint": null,
+            "tint": "#ffffff",
             "src": "icons/svg/book.svg",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0
           },
           "fontFamily": "Signika",
           "fontSize": 32,
-          "textColor": "#FFFFFF",
+          "textColor": "#ffffff",
           "textAnchor": 1,
           "_id": "UmGiolhwVH5jPq3r",
-          "flags": {}
+          "flags": {},
+          "elevation": 0,
+          "sort": 0
         }
       ],
       "sounds": [],
@@ -1911,21 +1942,68 @@
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0,
-        "tint": null
+        "tint": "#ffffff",
+        "anchorX": 0,
+        "anchorY": 0,
+        "fit": "fill",
+        "alphaThreshold": 0
       },
       "foregroundElevation": null,
-      "fogOverlay": null,
-      "fogExploredColor": null,
-      "fogUnexploredColor": null,
       "journalEntryPage": null,
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1722958338940,
         "modifiedTime": 1729121444343,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
-      }
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "environment": {
+        "globalLight": {
+          "luminosity": 0,
+          "enabled": false,
+          "darkness": {
+            "max": 1,
+            "min": 0
+          },
+          "alpha": 0.5,
+          "bright": false,
+          "color": null,
+          "coloration": 1,
+          "saturation": 0,
+          "contrast": 0,
+          "shadows": 0
+        },
+        "darknessLevel": 0,
+        "darknessLock": false,
+        "cycle": true,
+        "base": {
+          "hue": 0,
+          "intensity": 0,
+          "luminosity": 0,
+          "saturation": 0,
+          "shadows": 0
+        },
+        "dark": {
+          "hue": 0.7138888888888889,
+          "intensity": 0,
+          "luminosity": -0.25,
+          "saturation": 0,
+          "shadows": 0
+        }
+      },
+      "fog": {
+        "exploration": true,
+        "reset": 1675807021849,
+        "overlay": null,
+        "colors": {
+          "explored": null,
+          "unexplored": null
+        }
+      },
+      "regions": []
     },
     {
       "_id": "tXBRAgoPr4pD38pm",
@@ -1939,7 +2017,11 @@
       "width": 2816,
       "height": 2816,
       "padding": 0.1,
-      "initial": {},
+      "initial": {
+        "x": null,
+        "y": null,
+        "scale": 0.5
+      },
       "backgroundColor": "#000000",
       "grid": {
         "size": 64,
@@ -1947,14 +2029,11 @@
         "color": "#000000",
         "alpha": 0.2,
         "distance": 5,
-        "units": "ft"
+        "units": "ft",
+        "style": "solidLines",
+        "thickness": 1
       },
       "tokenVision": true,
-      "fogExploration": true,
-      "fogReset": 1675806554904,
-      "globalLight": false,
-      "globalLightThreshold": null,
-      "darkness": 0,
       "drawings": [],
       "tokens": [],
       "lights": [
@@ -1986,10 +2065,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "f1lKtucRCahB9Jvq",
@@ -2019,10 +2101,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "zSPiP2qvhnBEX4ob",
@@ -2052,10 +2137,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "3bXGGlTdcVNk4II9",
@@ -2085,10 +2173,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "NviqsrlA7FooKX9G",
@@ -2118,10 +2209,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "DtMOAGPXsCcAYx8y",
@@ -2151,10 +2245,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         }
       ],
       "notes": [
@@ -2167,20 +2264,26 @@
           "global": false,
           "iconSize": 80,
           "texture": {
-            "tint": null,
+            "tint": "#ffffff",
             "src": "icons/svg/book.svg",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0
           },
           "fontFamily": "Signika",
           "fontSize": 32,
-          "textColor": "#FFFFFF",
+          "textColor": "#ffffff",
           "textAnchor": 1,
           "_id": "4VMcCnELTPC9Q8gl",
-          "flags": {}
+          "flags": {},
+          "elevation": 0,
+          "sort": 0
         }
       ],
       "sounds": [],
@@ -3703,21 +3806,68 @@
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0,
-        "tint": null
+        "tint": "#ffffff",
+        "anchorX": 0,
+        "anchorY": 0,
+        "fit": "fill",
+        "alphaThreshold": 0
       },
       "foregroundElevation": null,
-      "fogOverlay": null,
-      "fogExploredColor": null,
-      "fogUnexploredColor": null,
       "journalEntryPage": null,
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1722958261198,
         "modifiedTime": 1729099265845,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
-      }
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "environment": {
+        "globalLight": {
+          "luminosity": 0,
+          "enabled": false,
+          "darkness": {
+            "max": 1,
+            "min": 0
+          },
+          "alpha": 0.5,
+          "bright": false,
+          "color": null,
+          "coloration": 1,
+          "saturation": 0,
+          "contrast": 0,
+          "shadows": 0
+        },
+        "darknessLevel": 0,
+        "darknessLock": false,
+        "cycle": true,
+        "base": {
+          "hue": 0,
+          "intensity": 0,
+          "luminosity": 0,
+          "saturation": 0,
+          "shadows": 0
+        },
+        "dark": {
+          "hue": 0.7138888888888889,
+          "intensity": 0,
+          "luminosity": -0.25,
+          "saturation": 0,
+          "shadows": 0
+        }
+      },
+      "fog": {
+        "exploration": true,
+        "reset": 1675806554904,
+        "overlay": null,
+        "colors": {
+          "explored": null,
+          "unexplored": null
+        }
+      },
+      "regions": []
     },
     {
       "_id": "PxSQbXmBn7EYbbqf",
@@ -3743,14 +3893,11 @@
         "color": "#000000",
         "alpha": 0.2,
         "distance": 5,
-        "units": "ft"
+        "units": "ft",
+        "style": "solidLines",
+        "thickness": 1
       },
       "tokenVision": true,
-      "fogExploration": true,
-      "fogReset": 1675807494138,
-      "globalLight": false,
-      "globalLightThreshold": null,
-      "darkness": 0,
       "drawings": [],
       "tokens": [],
       "lights": [
@@ -3782,10 +3929,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "23LiIlA5DfckPqPX",
@@ -3815,10 +3965,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "pnfhdNmIF6PvW3Bo",
@@ -3848,10 +4001,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         },
         {
           "_id": "NMqO1k4P60K4V5Qb",
@@ -3881,10 +4037,13 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
           },
           "hidden": false,
-          "flags": {}
+          "flags": {},
+          "elevation": 0
         }
       ],
       "notes": [
@@ -3897,20 +4056,26 @@
           "global": false,
           "iconSize": 80,
           "texture": {
-            "tint": null,
+            "tint": "#ffffff",
             "src": "icons/svg/book.svg",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0
           },
           "fontFamily": "Signika",
           "fontSize": 32,
-          "textColor": "#FFFFFF",
+          "textColor": "#ffffff",
           "textAnchor": 1,
           "_id": "LY3QP8iZknzpxx70",
-          "flags": {}
+          "flags": {},
+          "elevation": 0,
+          "sort": 0
         }
       ],
       "sounds": [],
@@ -3922,16 +4087,13 @@
           "height": 3000,
           "x": 300,
           "y": 300,
-          "z": 100,
           "rotation": 0,
           "alpha": 1,
           "hidden": false,
           "locked": true,
-          "overhead": true,
           "occlusion": {
             "mode": 3,
-            "alpha": 0,
-            "radius": null
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -3964,14 +4126,23 @@
           },
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/maps/Areas/Y/y4_gulthias_tree/tree_tops.webp",
-            "tint": null,
+            "tint": "#ffffff",
             "scaleX": 1,
             "scaleY": 1,
             "offsetX": 0,
             "offsetY": 0,
-            "rotation": 0
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "elevation": 20,
+          "sort": 100,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          }
         },
         {
           "_id": "blPaT79VrQkI7ifV",
@@ -3979,16 +4150,13 @@
           "height": 100,
           "x": 1661,
           "y": 1772,
-          "z": 100,
           "rotation": 0,
           "alpha": 1,
           "hidden": false,
           "locked": false,
-          "overhead": false,
           "occlusion": {
-            "mode": 1,
-            "alpha": 0,
-            "radius": null
+            "mode": 0,
+            "alpha": 0
           },
           "video": {
             "loop": true,
@@ -4003,9 +4171,18 @@
             "offsetX": 0,
             "offsetY": 0,
             "rotation": 0,
-            "tint": null
+            "tint": "#ffffff",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "fill",
+            "alphaThreshold": 0.75
           },
-          "roof": false
+          "sort": 100,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "elevation": 0
         }
       ],
       "walls": [
@@ -7089,21 +7266,68 @@
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0,
-        "tint": null
+        "tint": "#ffffff",
+        "anchorX": 0,
+        "anchorY": 0,
+        "fit": "fill",
+        "alphaThreshold": 0
       },
       "foregroundElevation": null,
-      "fogOverlay": null,
-      "fogExploredColor": null,
-      "fogUnexploredColor": null,
       "journalEntryPage": null,
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1722958300518,
         "modifiedTime": 1729121753062,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
-      }
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "environment": {
+        "globalLight": {
+          "luminosity": 0,
+          "enabled": false,
+          "darkness": {
+            "max": 1,
+            "min": 0
+          },
+          "alpha": 0.5,
+          "bright": false,
+          "color": null,
+          "coloration": 1,
+          "saturation": 0,
+          "contrast": 0,
+          "shadows": 0
+        },
+        "darknessLevel": 0,
+        "darknessLock": false,
+        "cycle": true,
+        "base": {
+          "hue": 0,
+          "intensity": 0,
+          "luminosity": 0,
+          "saturation": 0,
+          "shadows": 0
+        },
+        "dark": {
+          "hue": 0.7138888888888889,
+          "intensity": 0,
+          "luminosity": -0.25,
+          "saturation": 0,
+          "shadows": 0
+        }
+      },
+      "fog": {
+        "exploration": true,
+        "reset": 1675807494138,
+        "overlay": null,
+        "colors": {
+          "explored": null,
+          "unexplored": null
+        }
+      },
+      "regions": []
     }
   ],
   "tables": [],
@@ -7125,7 +7349,8 @@
           "volume": 0.5,
           "fade": null,
           "sort": 0,
-          "flags": {}
+          "flags": {},
+          "channel": "music"
         }
       ],
       "mode": -1,
@@ -7142,12 +7367,15 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1722957614383,
         "modifiedTime": 1729121348965,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       },
-      "description": ""
+      "description": "",
+      "channel": "music"
     },
     {
       "folder": "5jqsi8elBMpylQF6",
@@ -7164,7 +7392,8 @@
           "volume": 0.5,
           "fade": null,
           "sort": 0,
-          "flags": {}
+          "flags": {},
+          "channel": "music"
         }
       ],
       "mode": -1,
@@ -7180,13 +7409,16 @@
       "flags": {},
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "systemVersion": "3.2.1",
+        "coreVersion": "12.331",
         "createdTime": 1722957795564,
         "modifiedTime": 1729121483119,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       },
-      "description": ""
+      "description": "",
+      "channel": "music"
     },
     {
       "folder": "5jqsi8elBMpylQF6",
@@ -7203,7 +7435,8 @@
           "volume": 0.5,
           "fade": null,
           "sort": 0,
-          "flags": {}
+          "flags": {},
+          "channel": "music"
         }
       ],
       "mode": -1,
@@ -7220,12 +7453,15 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1722957957643,
         "modifiedTime": 1729099276346,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       },
-      "description": ""
+      "description": "",
+      "channel": "music"
     },
     {
       "folder": "5jqsi8elBMpylQF6",
@@ -7242,7 +7478,8 @@
           "volume": 0.5,
           "fade": null,
           "sort": 0,
-          "flags": {}
+          "flags": {},
+          "channel": "music"
         }
       ],
       "mode": -1,
@@ -7258,13 +7495,16 @@
       "flags": {},
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "systemVersion": "3.2.1",
+        "coreVersion": "12.331",
         "createdTime": 1722958051469,
         "modifiedTime": 1729121798398,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       },
-      "description": ""
+      "description": "",
+      "channel": "music"
     },
     {
       "folder": "5jqsi8elBMpylQF6",
@@ -7275,20 +7515,21 @@
           "name": "Dream Flutes 159973",
           "path": "modules/sdnd-strahd-adv/images/maps/Areas/Y/y5_fog/dream-flutes-159973.mp3",
           "_id": "w0dyKoVjNmzyq7SN",
-          "playing": true,
+          "playing": false,
           "pausedTime": null,
           "repeat": false,
           "volume": 0.5,
           "fade": null,
           "sort": 0,
-          "flags": {}
+          "flags": {},
+          "channel": "music"
         }
       ],
       "mode": -1,
-      "playing": true,
+      "playing": false,
       "fade": null,
       "sorting": "a",
-      "seed": 239,
+      "seed": 310,
       "sort": 0,
       "ownership": {
         "default": 0,
@@ -7297,13 +7538,16 @@
       "flags": {},
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "systemVersion": "3.2.1",
+        "coreVersion": "12.331",
         "createdTime": 1722958202247,
-        "modifiedTime": 1729121919129,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "modifiedTime": 1729121950340,
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       },
-      "description": ""
+      "description": "",
+      "channel": "music"
     }
   ],
   "folders": [
@@ -7320,10 +7564,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": 1704857215894,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       }
     },
     {
@@ -7339,10 +7585,12 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
       }
     },
     {
@@ -7358,10 +7606,12 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
       }
     },
     {
@@ -7377,10 +7627,12 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
       }
     },
     {
@@ -7395,11 +7647,14 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1704839237165,
         "modifiedTime": 1704857631386,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
-      }
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "description": ""
     },
     {
       "name": "Area Y",
@@ -7413,11 +7668,14 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1722957607650,
         "modifiedTime": 1722957607650,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
-      }
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "description": ""
     },
     {
       "name": "SDND - Curse of Strahd",
@@ -7431,11 +7689,14 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1721599689716,
         "modifiedTime": 1726316727876,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
-      }
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "description": ""
     },
     {
       "name": "Y: Yester Hill",
@@ -7449,11 +7710,14 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1722957415019,
         "modifiedTime": 1722957415019,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
-      }
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "description": ""
     },
     {
       "name": "Areas",
@@ -7468,10 +7732,12 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": 1705027185606,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
       }
     },
     {
@@ -7486,11 +7752,14 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "11.315",
+        "coreVersion": "12.331",
         "createdTime": 1705027168419,
         "modifiedTime": 1705027175907,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
-      }
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": null,
+        "duplicateSource": null
+      },
+      "description": ""
     }
   ],
   "_id": "6X9Yyd4LZX7kVOfi",
@@ -7499,10 +7768,12 @@
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "3.2.1",
-    "coreVersion": "11.315",
+    "coreVersion": "12.331",
     "createdTime": 1719971521984,
-    "modifiedTime": 1729121933120,
-    "lastModifiedBy": "6yhz13iFYYklKtgA"
+    "modifiedTime": 1730046533247,
+    "lastModifiedBy": "6yhz13iFYYklKtgA",
+    "compendiumSource": null,
+    "duplicateSource": null
   },
   "_key": "!adventures!6X9Yyd4LZX7kVOfi"
 }

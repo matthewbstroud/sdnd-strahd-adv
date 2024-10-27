@@ -135,10 +135,12 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_key": "!actors.items!KyxzItJLEmjrOAZv.dgjcqhtl7nwb98fd"
     },
@@ -246,10 +248,12 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_key": "!actors.items!KyxzItJLEmjrOAZv.qnxtb5cbwjepf2yx"
     },
@@ -285,7 +289,7 @@
             "startRound": null,
             "startTurn": null
           },
-          "tint": null,
+          "tint": "#ffffff",
           "transfer": false,
           "disabled": false,
           "flags": {
@@ -301,11 +305,24 @@
             }
           },
           "_id": "pn6y2t57c9sa80k0",
-          "icon": null,
           "origin": null,
           "name": "Horrifying Visage",
           "description": "",
           "statuses": [],
+          "_stats": {
+            "coreVersion": "12.331",
+            "systemId": null,
+            "systemVersion": null,
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
+          },
+          "img": null,
+          "type": "base",
+          "system": {},
+          "sort": 0,
           "_key": "!actors.items.effects!KyxzItJLEmjrOAZv.0gudzlrfu7yvoogq.pn6y2t57c9sa80k0"
         }
       ],
@@ -400,10 +417,12 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_key": "!actors.items!KyxzItJLEmjrOAZv.0gudzlrfu7yvoogq"
     },
@@ -511,10 +530,12 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_key": "!actors.items!KyxzItJLEmjrOAZv.2rdz1iqsfhb2jtr0"
     },
@@ -622,10 +643,12 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_key": "!actors.items!KyxzItJLEmjrOAZv.kjds9fnygjbpkjko"
     },
@@ -738,10 +761,12 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": null,
+        "coreVersion": "12.331",
         "createdTime": null,
         "modifiedTime": null,
-        "lastModifiedBy": null
+        "lastModifiedBy": null,
+        "compendiumSource": null,
+        "duplicateSource": null
       },
       "_key": "!actors.items!KyxzItJLEmjrOAZv.2eofqrt7m9p3opiq"
     }
@@ -1367,7 +1392,9 @@
         "max": 1
       },
       "attenuation": 0.5,
-      "color": null
+      "color": null,
+      "negative": false,
+      "priority": 0
     },
     "disposition": -1,
     "displayBars": 40,
@@ -1381,27 +1408,12 @@
       "monks-tokenbar": {
         "include": "default"
       },
-      "core": {
-        "occlusionRadius": null
-      },
+      "core": {},
       "autorotate": {
         "enabled": null,
         "offset": null
       },
-      "dnd5e": {
-        "tokenRing": {
-          "enabled": false,
-          "textures": {
-            "subject": null
-          },
-          "scaleCorrection": 1,
-          "colors": {
-            "ring": null,
-            "background": null
-          },
-          "effects": 1
-        }
-      },
+      "dnd5e": {},
       "simbuls-cover-calculator": {
         "coverLevel": 1,
         "coverLevelDead": 1,
@@ -1416,7 +1428,11 @@
       "offsetX": 0,
       "offsetY": 0,
       "rotation": 0,
-      "tint": null
+      "tint": "#ffffff",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "alphaThreshold": 0.75
     },
     "sight": {
       "angle": 360,
@@ -1431,15 +1447,33 @@
     },
     "detectionModes": [],
     "appendNumber": false,
-    "prependAdjective": false
+    "prependAdjective": false,
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "texture": null,
+        "scale": 1
+      }
+    },
+    "hexagonalShape": 0,
+    "occludable": {
+      "radius": 0
+    }
   },
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "3.2.1",
-    "coreVersion": "11.315",
+    "systemVersion": "3.3.1",
+    "coreVersion": "12.331",
     "createdTime": 1722301280045,
-    "modifiedTime": 1728566223822,
-    "lastModifiedBy": "6yhz13iFYYklKtgA"
+    "modifiedTime": 1730040687597,
+    "lastModifiedBy": "6yhz13iFYYklKtgA",
+    "compendiumSource": "Compendium.world.ddb-lost-mines-phandelver-monsters.niifsSlZJqAnw5g2",
+    "duplicateSource": null
   },
   "_id": "KyxzItJLEmjrOAZv",
   "_key": "!actors!KyxzItJLEmjrOAZv"
