@@ -1,3 +1,6 @@
+# v12.2.2
+# Bug Fixes
+- Resistances
 # v12.2.1
 # New Features
 - Argynvostholt
