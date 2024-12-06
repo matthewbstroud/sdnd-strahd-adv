@@ -1,3 +1,8 @@
+# v12.2.2
+- New Features
+  - Break up Vallaki in Individual Areas
+# Bug Fixes
+- Resistances
 # v12.2.1
 # New Features
 - Argynvostholt
