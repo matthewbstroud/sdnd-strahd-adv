@@ -1,3 +1,8 @@
+# v12.2.3
+- New Features
+  - Area W: Wizard Of Wines
+# Bug Fixes
+- Resistances
 # v12.2.2
 - New Features
   - Break up Vallaki in Individual Areas
