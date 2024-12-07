@@ -1,5 +1,7 @@
 # v12.2.3
 - New Features
+  - Area Q: Argynvostholt
+    - Teleporter updates
   - Area W: Wizard Of Wines
 # Bug Fixes
 - Resistances
