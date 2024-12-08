@@ -922,7 +922,11 @@
           "magiceffect": false,
           "noConcentrationCheck": false,
           "toggleEffect": false,
-          "ignoreTotalCover": false
+          "ignoreTotalCover": false,
+          "idr": false,
+          "idi": false,
+          "idv": false,
+          "ida": false
         }
       },
       "system": {
@@ -970,10 +974,10 @@
           "units": ""
         },
         "uses": {
-          "value": null,
-          "max": "",
-          "per": null,
-          "recovery": "",
+          "value": 10,
+          "max": "10",
+          "per": "charges",
+          "recovery": "1d6+4",
           "prompt": true
         },
         "consume": {
@@ -1023,7 +1027,7 @@
         },
         "type": {
           "value": "simpleM",
-          "baseItem": ""
+          "baseItem": "quarterstaff"
         },
         "attack": {
           "bonus": "",
@@ -1041,10 +1045,10 @@
       },
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "3.1.2",
+        "systemVersion": "3.3.1",
         "coreVersion": "12.331",
         "createdTime": 1685295827151,
-        "modifiedTime": 1721096829610,
+        "modifiedTime": 1733589277443,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": "Compendium.world.ddb-lost-mines-phandelver-items.Item.KMGCiJe1Pwg7Ptgw",
         "duplicateSource": null
@@ -9913,6 +9917,59 @@
         "duplicateSource": null
       },
       "_id": "NtMcE2qfBMG5BOGv"
+    },
+    {
+      "folder": "el1ioB39fdUPuXAG",
+      "name": "Portrait of a Woman",
+      "type": "loot",
+      "_id": "Y4gg5sfoAfpyfhae",
+      "img": "modules/sdnd-strahd-adv/images/maps/Areas/W/portrait.webp",
+      "system": {
+        "description": {
+          "value": "<p>A painting of a beautiful woman. </p><img src=\"modules/sdnd-strahd-adv/images/maps/Areas/W/portrait.webp\" />",
+          "chat": ""
+        },
+        "source": {
+          "custom": ""
+        },
+        "identified": true,
+        "unidentified": {
+          "description": ""
+        },
+        "container": null,
+        "quantity": 1,
+        "weight": {
+          "value": 0,
+          "units": "lb"
+        },
+        "price": {
+          "value": 50,
+          "denomination": "gp"
+        },
+        "rarity": "",
+        "properties": [],
+        "type": {
+          "value": "art",
+          "subtype": ""
+        }
+      },
+      "effects": [],
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "6yhz13iFYYklKtgA": 3
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": "Item.Y4gg5sfoAfpyfhae",
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "dnd5e",
+        "systemVersion": "3.3.1",
+        "createdTime": 1733594049795,
+        "modifiedTime": 1733594127173,
+        "lastModifiedBy": "6yhz13iFYYklKtgA"
+      }
     }
   ],
   "journal": [
@@ -10639,7 +10696,7 @@
         "createdTime": 1728955678874,
         "modifiedTime": 1728955678874,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
-        "compendiumSource": "Folder.IHUdRPv2QAmX7Xls",
+        "compendiumSource": null,
         "duplicateSource": null
       },
       "description": ""
@@ -10695,7 +10752,7 @@
     "systemVersion": "3.2.1",
     "coreVersion": "12.331",
     "createdTime": 1704928346823,
-    "modifiedTime": 1733519765817,
+    "modifiedTime": 1733594492912,
     "lastModifiedBy": "6yhz13iFYYklKtgA",
     "compendiumSource": null,
     "duplicateSource": null

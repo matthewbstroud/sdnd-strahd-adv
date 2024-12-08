@@ -1,3 +1,9 @@
+# v12.2.3
+- New Features
+  - Area Q: Argynvostholt
+    - Teleporter updates
+  - Area W: Wizard Of Wines
+  - Area Y: Yester Hill
 # v12.2.2
 - New Features
   - Break up Vallaki in Individual Areas
