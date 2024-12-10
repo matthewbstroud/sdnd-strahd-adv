@@ -1,3 +1,8 @@
+# v12.2.4
+# New Features
+  - Area U: Ruins of Berez
+# Bug Fixes
+  - Fix Druid actor link.
 # v12.2.3
 - New Features
   - Area Q: Argynvostholt
