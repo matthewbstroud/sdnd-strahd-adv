@@ -2296,10 +2296,7 @@
               "chat": ""
             },
             "source": {
-              "custom": "Basic Rules, Player's Handbook pg 127",
-              "book": "SRD 5.1",
-              "page": "",
-              "license": "CC-BY-4.0"
+              "custom": "Basic Rules, Player's Handbook pg 127"
             },
             "activation": {
               "type": "action",
@@ -2311,6 +2308,7 @@
               "units": "hour"
             },
             "cover": null,
+            "crewed": false,
             "target": {
               "value": "",
               "width": null,
@@ -2374,13 +2372,12 @@
               "somatic",
               "concentration"
             ],
-            "crewed": false,
-            "summons": null,
             "attack": {
               "bonus": "",
               "flat": false
             },
             "enchantment": null,
+            "summons": null,
             "sourceClass": ""
           },
           "sort": 0,
@@ -3374,7 +3371,7 @@
       "_id": "8jBtbDBApFp8YfOJ",
       "name": "W1. The Wizard of Wines (Ground Floor).",
       "active": false,
-      "navigation": true,
+      "navigation": false,
       "navOrder": 800000,
       "navName": "",
       "foreground": null,
@@ -12478,7 +12475,7 @@
           "width": 1,
           "height": 1,
           "lockRotation": false,
-          "rotation": 95.81241495243933,
+          "rotation": 45,
           "disposition": -1,
           "displayBars": 40,
           "bar1": {
@@ -12488,9 +12485,6 @@
             "attribute": null
           },
           "flags": {
-            "monks-tokenbar": {
-              "include": "default"
-            },
             "simbuls-cover-calculator": {
               "coverLevel": 1,
               "coverLevelDead": 1,
@@ -12566,12 +12560,12 @@
               "texture": null
             }
           },
-          "actorId": "YE83OoRfBzV67bhe",
+          "actorId": "ZNclFqkkU6uQhsVO",
           "hidden": false,
           "sort": 38,
-          "_id": "WwEhyvDvn3kxXPa2",
+          "_id": "Zt10PThusp0prTSd",
           "delta": {
-            "_id": "FOU6uG12F0nah4al",
+            "_id": "b88rkvzHcE3j8GI1",
             "system": {},
             "items": [],
             "effects": [],
@@ -12580,8 +12574,8 @@
             "type": null,
             "img": null
           },
-          "x": 1719,
-          "y": 2671,
+          "x": 1732,
+          "y": 2675,
           "elevation": 0,
           "locked": false,
           "_regions": []
@@ -21628,7 +21622,7 @@
         "systemVersion": "3.2.1",
         "coreVersion": "12.331",
         "createdTime": 1719970940978,
-        "modifiedTime": 1733594305489,
+        "modifiedTime": 1733748458866,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
         "duplicateSource": null
@@ -21682,7 +21676,7 @@
       "_id": "qUVcPi2WHPQshugf",
       "name": "W2. Wizard of Wines (1st Floor).",
       "active": false,
-      "navigation": true,
+      "navigation": false,
       "navOrder": 900000,
       "navName": "",
       "foreground": null,
@@ -21709,130 +21703,6 @@
       "tokenVision": true,
       "drawings": [],
       "tokens": [
-        {
-          "name": "Druid",
-          "displayName": 20,
-          "actorLink": false,
-          "width": 1,
-          "height": 1,
-          "lockRotation": false,
-          "rotation": 0,
-          "disposition": -1,
-          "displayBars": 40,
-          "bar1": {
-            "attribute": "attributes.hp"
-          },
-          "bar2": {
-            "attribute": null
-          },
-          "flags": {
-            "monks-tokenbar": {
-              "include": "default"
-            },
-            "simbuls-cover-calculator": {
-              "coverLevel": 1,
-              "coverLevelDead": 1,
-              "coverLevelProne": 1
-            },
-            "autorotate": {
-              "enabled": null,
-              "offset": null
-            },
-            "dnd5e": {
-              "tokenRing": {
-                "effects": 1
-              }
-            }
-          },
-          "alpha": 1,
-          "light": {
-            "alpha": 1,
-            "angle": 360,
-            "bright": 0,
-            "coloration": 1,
-            "dim": 0,
-            "luminosity": 0.5,
-            "saturation": 0,
-            "contrast": 0,
-            "shadows": 0,
-            "animation": {
-              "speed": 5,
-              "intensity": 5,
-              "type": null,
-              "reverse": false
-            },
-            "darkness": {
-              "min": 0,
-              "max": 1
-            },
-            "attenuation": 0.5,
-            "color": null,
-            "negative": false,
-            "priority": 0
-          },
-          "texture": {
-            "src": "systems/dnd5e/tokens/humanoid/Druid.webp",
-            "tint": "#ffffff",
-            "scaleX": 0.8,
-            "scaleY": 0.8,
-            "offsetX": 0,
-            "offsetY": 0,
-            "rotation": 0,
-            "anchorX": 0.5,
-            "anchorY": 0.5,
-            "fit": "contain",
-            "alphaThreshold": 0.75
-          },
-          "sight": {
-            "angle": 360,
-            "enabled": false,
-            "range": 0,
-            "brightness": 1,
-            "visionMode": "basic",
-            "color": null,
-            "attenuation": 0.1,
-            "saturation": 0,
-            "contrast": 0
-          },
-          "detectionModes": [],
-          "appendNumber": false,
-          "prependAdjective": false,
-          "hexagonalShape": 0,
-          "occludable": {
-            "radius": 0
-          },
-          "ring": {
-            "enabled": false,
-            "colors": {
-              "ring": null,
-              "background": null
-            },
-            "effects": 0,
-            "subject": {
-              "scale": 1,
-              "texture": null
-            }
-          },
-          "actorId": "YE83OoRfBzV67bhe",
-          "hidden": false,
-          "sort": 0,
-          "_id": "aTgFDnwLpGKZzsqI",
-          "delta": {
-            "_id": "ZCT7bCjLlUWiGjC9",
-            "system": {},
-            "items": [],
-            "effects": [],
-            "flags": {},
-            "name": null,
-            "type": null,
-            "img": null
-          },
-          "x": 1500,
-          "y": 2300,
-          "elevation": 0,
-          "locked": false,
-          "_regions": []
-        },
         {
           "name": "Vine Blight",
           "displayName": 20,
@@ -22708,6 +22578,118 @@
           },
           "x": 2451,
           "y": 2208,
+          "elevation": 0,
+          "locked": false,
+          "_regions": []
+        },
+        {
+          "name": "Druid",
+          "displayName": 20,
+          "actorLink": false,
+          "width": 1,
+          "height": 1,
+          "lockRotation": false,
+          "rotation": 0,
+          "disposition": -1,
+          "displayBars": 40,
+          "bar1": {
+            "attribute": "attributes.hp"
+          },
+          "bar2": {
+            "attribute": null
+          },
+          "flags": {
+            "simbuls-cover-calculator": {
+              "coverLevel": 1,
+              "coverLevelDead": 1,
+              "coverLevelProne": 1
+            }
+          },
+          "alpha": 1,
+          "light": {
+            "alpha": 1,
+            "angle": 360,
+            "bright": 0,
+            "coloration": 1,
+            "dim": 0,
+            "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "speed": 5,
+              "intensity": 5,
+              "type": null,
+              "reverse": false
+            },
+            "darkness": {
+              "min": 0,
+              "max": 1
+            },
+            "attenuation": 0.5,
+            "color": null,
+            "negative": false,
+            "priority": 0
+          },
+          "texture": {
+            "src": "systems/dnd5e/tokens/humanoid/Druid.webp",
+            "tint": "#ffffff",
+            "scaleX": 1,
+            "scaleY": 1,
+            "offsetX": 0,
+            "offsetY": 0,
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0.75
+          },
+          "sight": {
+            "angle": 360,
+            "enabled": false,
+            "range": 0,
+            "brightness": 1,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0.1,
+            "saturation": 0,
+            "contrast": 0
+          },
+          "detectionModes": [],
+          "appendNumber": false,
+          "prependAdjective": false,
+          "hexagonalShape": 0,
+          "occludable": {
+            "radius": 0
+          },
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "scale": 1,
+              "texture": null
+            }
+          },
+          "actorId": "ZNclFqkkU6uQhsVO",
+          "hidden": false,
+          "sort": 6,
+          "_id": "rjrsf9kMcZ28PBWX",
+          "delta": {
+            "_id": "cgY8j6nhlHqRx106",
+            "system": {},
+            "items": [],
+            "effects": [],
+            "flags": {},
+            "name": null,
+            "type": null,
+            "img": null
+          },
+          "x": 1500,
+          "y": 2300,
           "elevation": 0,
           "locked": false,
           "_regions": []
@@ -27691,7 +27673,7 @@
         "systemVersion": "3.2.1",
         "coreVersion": "12.331",
         "createdTime": 1719970973125,
-        "modifiedTime": 1733594320175,
+        "modifiedTime": 1733748277207,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
         "duplicateSource": null
@@ -27746,7 +27728,7 @@
       "name": "W3. Wizard of Wines Cellar",
       "_id": "uxY82mYAx7ms1iWg",
       "active": false,
-      "navigation": true,
+      "navigation": false,
       "navOrder": 0,
       "navName": "",
       "background": {
@@ -27819,121 +27801,6 @@
         }
       ],
       "tokens": [
-        {
-          "name": "Druid",
-          "displayName": 20,
-          "actorLink": false,
-          "width": 1,
-          "height": 1,
-          "lockRotation": false,
-          "rotation": 0,
-          "disposition": -1,
-          "displayBars": 40,
-          "bar1": {
-            "attribute": "attributes.hp"
-          },
-          "bar2": {
-            "attribute": null
-          },
-          "flags": {
-            "monks-tokenbar": {
-              "include": "default"
-            },
-            "simbuls-cover-calculator": {
-              "coverLevel": 1,
-              "coverLevelDead": 1,
-              "coverLevelProne": 1
-            }
-          },
-          "alpha": 1,
-          "light": {
-            "alpha": 1,
-            "angle": 360,
-            "bright": 0,
-            "coloration": 1,
-            "dim": 0,
-            "luminosity": 0.5,
-            "saturation": 0,
-            "contrast": 0,
-            "shadows": 0,
-            "animation": {
-              "speed": 5,
-              "intensity": 5,
-              "type": null,
-              "reverse": false
-            },
-            "darkness": {
-              "min": 0,
-              "max": 1
-            },
-            "attenuation": 0.5,
-            "color": null,
-            "negative": false,
-            "priority": 0
-          },
-          "texture": {
-            "src": "systems/dnd5e/tokens/humanoid/Druid.webp",
-            "tint": "#ffffff",
-            "scaleX": 1,
-            "scaleY": 1,
-            "offsetX": 0,
-            "offsetY": 0,
-            "rotation": 0,
-            "anchorX": 0.5,
-            "anchorY": 0.5,
-            "fit": "contain",
-            "alphaThreshold": 0.75
-          },
-          "sight": {
-            "angle": 360,
-            "enabled": false,
-            "range": 0,
-            "brightness": 1,
-            "visionMode": "basic",
-            "color": null,
-            "attenuation": 0.1,
-            "saturation": 0,
-            "contrast": 0
-          },
-          "detectionModes": [],
-          "appendNumber": false,
-          "prependAdjective": false,
-          "hexagonalShape": 0,
-          "occludable": {
-            "radius": 0
-          },
-          "ring": {
-            "enabled": false,
-            "colors": {
-              "ring": null,
-              "background": null
-            },
-            "effects": 1,
-            "subject": {
-              "scale": 1,
-              "texture": null
-            }
-          },
-          "actorId": "YE83OoRfBzV67bhe",
-          "hidden": false,
-          "sort": 0,
-          "_id": "Yirk8dcT9sQLZ0UK",
-          "delta": {
-            "_id": "wOVfoDvAwvekmFti",
-            "system": {},
-            "items": [],
-            "effects": [],
-            "flags": {},
-            "name": null,
-            "type": null,
-            "img": null
-          },
-          "x": 2500,
-          "y": 2700,
-          "elevation": 0,
-          "locked": false,
-          "_regions": []
-        },
         {
           "name": "Needle Blight",
           "displayName": 30,
@@ -28906,6 +28773,118 @@
           },
           "x": 2300,
           "y": 2850,
+          "elevation": 0,
+          "locked": false,
+          "_regions": []
+        },
+        {
+          "name": "Druid",
+          "displayName": 20,
+          "actorLink": false,
+          "width": 1,
+          "height": 1,
+          "lockRotation": false,
+          "rotation": 0,
+          "disposition": -1,
+          "displayBars": 40,
+          "bar1": {
+            "attribute": "attributes.hp"
+          },
+          "bar2": {
+            "attribute": null
+          },
+          "flags": {
+            "simbuls-cover-calculator": {
+              "coverLevel": 1,
+              "coverLevelDead": 1,
+              "coverLevelProne": 1
+            }
+          },
+          "alpha": 1,
+          "light": {
+            "alpha": 1,
+            "angle": 360,
+            "bright": 0,
+            "coloration": 1,
+            "dim": 0,
+            "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "speed": 5,
+              "intensity": 5,
+              "type": null,
+              "reverse": false
+            },
+            "darkness": {
+              "min": 0,
+              "max": 1
+            },
+            "attenuation": 0.5,
+            "color": null,
+            "negative": false,
+            "priority": 0
+          },
+          "texture": {
+            "src": "systems/dnd5e/tokens/humanoid/Druid.webp",
+            "tint": "#ffffff",
+            "scaleX": 1,
+            "scaleY": 1,
+            "offsetX": 0,
+            "offsetY": 0,
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0.75
+          },
+          "sight": {
+            "angle": 360,
+            "enabled": false,
+            "range": 0,
+            "brightness": 1,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0.1,
+            "saturation": 0,
+            "contrast": 0
+          },
+          "detectionModes": [],
+          "appendNumber": false,
+          "prependAdjective": false,
+          "hexagonalShape": 0,
+          "occludable": {
+            "radius": 0
+          },
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "scale": 1,
+              "texture": null
+            }
+          },
+          "actorId": "ZNclFqkkU6uQhsVO",
+          "hidden": false,
+          "sort": 7,
+          "_id": "6iwsAaEIMdByzPXI",
+          "delta": {
+            "_id": "KMzkIWZg6qtOsqgI",
+            "system": {},
+            "items": [],
+            "effects": [],
+            "flags": {},
+            "name": null,
+            "type": null,
+            "img": null
+          },
+          "x": 2500,
+          "y": 2700,
           "elevation": 0,
           "locked": false,
           "_regions": []
@@ -35882,7 +35861,7 @@
         "systemVersion": "3.2.1",
         "coreVersion": "12.331",
         "createdTime": 1721094648358,
-        "modifiedTime": 1733594303504,
+        "modifiedTime": 1733748323653,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
         "duplicateSource": null
@@ -36118,7 +36097,7 @@
     "systemVersion": "3.2.1",
     "coreVersion": "12.331",
     "createdTime": 1719971120719,
-    "modifiedTime": 1733594428835,
+    "modifiedTime": 1733748583539,
     "lastModifiedBy": "6yhz13iFYYklKtgA",
     "compendiumSource": null,
     "duplicateSource": null
