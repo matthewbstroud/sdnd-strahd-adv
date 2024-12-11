@@ -958,8 +958,8 @@
             "motionless": ""
           },
           "hp": {
-            "value": null,
-            "max": null,
+            "value": 500,
+            "max": 500,
             "temp": 0,
             "tempmax": 0,
             "dt": null,
@@ -1054,11 +1054,16 @@
         "vehicleType": "water",
         "cargo": {
           "crew": [],
-          "passengers": []
+          "passengers": [
+            {
+              "name": "",
+              "quantity": 1
+            }
+          ]
         }
       },
       "ownership": {
-        "default": 0,
+        "default": 3,
         "6yhz13iFYYklKtgA": 3
       },
       "prototypeToken": {
@@ -1096,7 +1101,7 @@
           "priority": 0
         },
         "disposition": 1,
-        "displayBars": 40,
+        "displayBars": 0,
         "bar1": {
           "attribute": "attributes.hp"
         },
@@ -1113,7 +1118,21 @@
             "coverLevel": 1
           },
           "autorotate": {
-            "enabled": false
+            "enabled": false,
+            "offset": null
+          },
+          "simbuls-cover-calculator": {
+            "coverLevel": 1,
+            "coverLevelDead": 1,
+            "coverLevelProne": 1
+          },
+          "monks-tokenbar": {
+            "include": "default"
+          },
+          "dnd5e": {
+            "tokenRing": {
+              "effects": 1
+            }
           }
         },
         "randomImg": false,
@@ -1132,8 +1151,8 @@
         },
         "sight": {
           "angle": 360,
-          "enabled": false,
-          "range": 0,
+          "enabled": true,
+          "range": 300,
           "brightness": 1,
           "visionMode": "basic",
           "color": null,
@@ -1154,7 +1173,7 @@
             "ring": null,
             "background": null
           },
-          "effects": 1,
+          "effects": 0,
           "subject": {
             "scale": 1,
             "texture": null
@@ -1163,10 +1182,10 @@
       },
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "3.1.2",
+        "systemVersion": "3.3.1",
         "coreVersion": "12.331",
         "createdTime": null,
-        "modifiedTime": 1723173427766,
+        "modifiedTime": 1733867964525,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": "Actor.jUG6BIcG9uNoucVl",
         "duplicateSource": null
@@ -1198,7 +1217,7 @@
         "createdTime": null,
         "modifiedTime": 1728566149782,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
-        "compendiumSource": "Folder.SgCwMBKLb1IzBVaz",
+        "compendiumSource": null,
         "duplicateSource": null
       },
       "_id": "SgCwMBKLb1IzBVaz"
@@ -1233,7 +1252,7 @@
     "systemVersion": "3.1.2",
     "coreVersion": "12.331",
     "createdTime": 1726322125077,
-    "modifiedTime": 1730046334539,
+    "modifiedTime": 1733868114573,
     "lastModifiedBy": "6yhz13iFYYklKtgA",
     "compendiumSource": null,
     "duplicateSource": null
