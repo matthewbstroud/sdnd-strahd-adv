@@ -19,7 +19,21 @@
               "check": "",
               "save": ""
             },
-            "max": null
+            "max": null,
+            "check": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            },
+            "save": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            }
           },
           "dex": {
             "value": 12,
@@ -28,7 +42,21 @@
               "check": "",
               "save": ""
             },
-            "max": null
+            "max": null,
+            "check": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            },
+            "save": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            }
           },
           "con": {
             "value": 11,
@@ -37,7 +65,21 @@
               "check": "",
               "save": ""
             },
-            "max": null
+            "max": null,
+            "check": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            },
+            "save": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            }
           },
           "int": {
             "value": 12,
@@ -46,7 +88,21 @@
               "check": "",
               "save": ""
             },
-            "max": null
+            "max": null,
+            "check": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            },
+            "save": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            }
           },
           "wis": {
             "value": 14,
@@ -55,7 +111,21 @@
               "check": "",
               "save": ""
             },
-            "max": null
+            "max": null,
+            "check": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            },
+            "save": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            }
           },
           "cha": {
             "value": 16,
@@ -64,7 +134,21 @@
               "check": "",
               "save": ""
             },
-            "max": null
+            "max": null,
+            "check": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            },
+            "save": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            }
           }
         },
         "attributes": {
@@ -124,14 +208,22 @@
             "limit": 1
           },
           "death": {
-            "ability": "",
             "roll": {
               "min": null,
               "max": null,
               "mode": 0
             },
             "success": 0,
-            "failure": 0
+            "failure": 0,
+            "bonuses": {
+              "save": ""
+            }
+          },
+          "spell": {
+            "level": 0
+          },
+          "loyalty": {
+            "value": null
           },
           "hd": {
             "spent": 0
@@ -150,18 +242,17 @@
             "swarm": "",
             "custom": ""
           },
-          "environment": "",
           "cr": 0.125,
-          "spellLevel": 0,
-          "source": {
+          "habitat": {
             "custom": "",
-            "book": "SRD 5.1",
-            "page": "",
-            "license": "CC-BY-4.0"
+            "value": []
           },
           "ideal": "",
           "bond": "",
-          "flaw": ""
+          "flaw": "",
+          "treasure": {
+            "value": []
+          }
         },
         "traits": {
           "size": "med",
@@ -186,12 +277,14 @@
           },
           "languages": {
             "value": [],
-            "custom": "any two languages"
+            "custom": "any two languages",
+            "communication": {}
           },
           "dm": {
             "amount": {},
             "bypasses": []
-          }
+          },
+          "important": false
         },
         "currency": {
           "pp": 0,
@@ -519,10 +612,19 @@
           },
           "lair": {
             "value": false,
-            "initiative": null
+            "initiative": null,
+            "inside": false
           }
         },
-        "tools": {}
+        "tools": {},
+        "source": {
+          "custom": "",
+          "book": "SRD 5.1",
+          "page": "",
+          "license": "CC-BY-4.0",
+          "revision": 1,
+          "rules": "2014"
+        }
       },
       "prototypeToken": {
         "name": "Arabelle",
@@ -642,79 +744,135 @@
               "custom": "",
               "book": "SRD 5.1",
               "page": "",
-              "license": "CC-BY-4.0"
-            },
-            "activation": {
-              "type": "reaction",
-              "cost": 1,
-              "condition": ""
-            },
-            "duration": {
-              "value": "",
-              "units": ""
+              "license": "CC-BY-4.0",
+              "revision": 1,
+              "rules": "2024"
             },
             "cover": null,
-            "target": {
-              "value": "",
-              "width": null,
-              "units": "",
-              "type": "",
-              "prompt": true
-            },
-            "range": {
-              "value": null,
-              "long": null,
-              "units": ""
-            },
             "uses": {
-              "value": null,
               "max": "",
-              "per": null,
-              "recovery": "",
-              "prompt": true
-            },
-            "consume": {
-              "type": "",
-              "target": null,
-              "amount": null,
-              "scale": false
-            },
-            "ability": null,
-            "actionType": "",
-            "chatFlavor": "",
-            "critical": {
-              "threshold": null,
-              "damage": ""
-            },
-            "damage": {
-              "parts": [],
-              "versatile": ""
-            },
-            "formula": "",
-            "save": {
-              "ability": "",
-              "dc": null,
-              "scaling": "spell"
+              "spent": 0,
+              "recovery": []
             },
             "type": {
               "value": "",
               "subtype": ""
             },
             "requirements": "",
-            "recharge": {
-              "value": null,
-              "charged": false
-            },
             "crewed": false,
             "properties": [],
-            "attack": {
-              "bonus": "",
-              "flat": false
+            "activities": {
+              "dnd5eactivity000": {
+                "_id": "dnd5eactivity000",
+                "type": "utility",
+                "activation": {
+                  "type": "reaction",
+                  "value": 1,
+                  "condition": "",
+                  "override": false
+                },
+                "consumption": {
+                  "targets": [],
+                  "scaling": {
+                    "allowed": false,
+                    "max": ""
+                  },
+                  "spellSlot": true
+                },
+                "description": {
+                  "chatFlavor": ""
+                },
+                "duration": {
+                  "concentration": false,
+                  "value": "",
+                  "units": "",
+                  "special": "",
+                  "override": false
+                },
+                "effects": [],
+                "range": {
+                  "units": "",
+                  "special": "",
+                  "override": false
+                },
+                "target": {
+                  "template": {
+                    "count": "",
+                    "contiguous": false,
+                    "type": "",
+                    "size": "",
+                    "width": "",
+                    "height": "",
+                    "units": ""
+                  },
+                  "affects": {
+                    "count": "",
+                    "type": "",
+                    "choice": false,
+                    "special": ""
+                  },
+                  "prompt": true,
+                  "override": false
+                },
+                "uses": {
+                  "spent": 0,
+                  "max": "",
+                  "recovery": []
+                },
+                "roll": {
+                  "formula": "",
+                  "name": "",
+                  "prompt": false,
+                  "visible": false
+                },
+                "sort": 0,
+                "useConditionText": "",
+                "useConditionReason": "",
+                "effectConditionText": "",
+                "macroData": {
+                  "name": "",
+                  "command": ""
+                },
+                "ignoreTraits": {
+                  "idi": false,
+                  "idr": false,
+                  "idv": false,
+                  "ida": false
+                },
+                "midiProperties": {
+                  "ignoreTraits": [],
+                  "triggeredActivityId": "none",
+                  "triggeredActivityConditionText": "",
+                  "triggeredActivityTargets": "targets",
+                  "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
+                  "confirmTargets": "default",
+                  "autoTargetType": "any",
+                  "autoTargetAction": "default",
+                  "automationOnly": false,
+                  "otherActivityCompatible": true,
+                  "identifier": "",
+                  "displayActivityName": false,
+                  "rollMode": "default",
+                  "chooseEffects": false,
+                  "toggleEffect": false,
+                  "ignoreFullCover": false
+                },
+                "isOverTimeFlag": false,
+                "overTimeProperties": {
+                  "saveRemoves": true,
+                  "preRemoveConditionText": "",
+                  "postRemoveConditionText": ""
+                },
+                "otherActivityId": "none"
+              }
             },
-            "summons": null,
-            "enchantment": null,
+            "identifier": "",
+            "advancement": [],
+            "enchant": {},
             "prerequisites": {
-              "level": null
+              "level": null,
+              "repeatable": false
             }
           },
           "effects": [],
@@ -726,7 +884,8 @@
           "flags": {
             "core": {
               "sourceId": "Compendium.dnd5e.monsterfeatures.kfi26Jy0VLXv9TTm"
-            }
+            },
+            "dnd5e": {}
           },
           "_stats": {
             "systemId": null,
@@ -754,10 +913,10 @@
       },
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "3.2.1",
-        "coreVersion": "12.331",
+        "systemVersion": "4.4.2",
+        "coreVersion": "12.343",
         "createdTime": 1661787232715,
-        "modifiedTime": 1728684023993,
+        "modifiedTime": 1748176569161,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": "Compendium.dnd5e.monsters.Actor.GlaCGcgIP6YjBjGc",
         "duplicateSource": null
@@ -777,7 +936,21 @@
               "check": "",
               "save": ""
             },
-            "max": null
+            "max": null,
+            "check": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            },
+            "save": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            }
           },
           "dex": {
             "value": 12,
@@ -786,7 +959,21 @@
               "check": "",
               "save": ""
             },
-            "max": null
+            "max": null,
+            "check": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            },
+            "save": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            }
           },
           "con": {
             "value": 17,
@@ -795,7 +982,21 @@
               "check": "",
               "save": ""
             },
-            "max": null
+            "max": null,
+            "check": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            },
+            "save": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            }
           },
           "int": {
             "value": 9,
@@ -804,7 +1005,21 @@
               "check": "",
               "save": ""
             },
-            "max": null
+            "max": null,
+            "check": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            },
+            "save": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            }
           },
           "wis": {
             "value": 11,
@@ -813,7 +1028,21 @@
               "check": "",
               "save": ""
             },
-            "max": null
+            "max": null,
+            "check": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            },
+            "save": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            }
           },
           "cha": {
             "value": 9,
@@ -822,7 +1051,21 @@
               "check": "",
               "save": ""
             },
-            "max": null
+            "max": null,
+            "check": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            },
+            "save": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            }
           }
         },
         "attributes": {
@@ -882,14 +1125,22 @@
             "limit": 1
           },
           "death": {
-            "ability": "",
             "roll": {
               "min": null,
               "max": null,
               "mode": 0
             },
             "success": 0,
-            "failure": 0
+            "failure": 0,
+            "bonuses": {
+              "save": ""
+            }
+          },
+          "spell": {
+            "level": 0
+          },
+          "loyalty": {
+            "value": null
           },
           "hd": {
             "spent": 0
@@ -908,18 +1159,17 @@
             "swarm": "",
             "custom": ""
           },
-          "environment": "",
           "cr": 2,
-          "spellLevel": 0,
-          "source": {
+          "habitat": {
             "custom": "",
-            "book": "SRD 5.1",
-            "page": "",
-            "license": "CC-BY-4.0"
+            "value": []
           },
           "ideal": "",
           "bond": "",
-          "flaw": ""
+          "flaw": "",
+          "treasure": {
+            "value": []
+          }
         },
         "traits": {
           "size": "med",
@@ -944,12 +1194,14 @@
           },
           "languages": {
             "value": [],
-            "custom": "any one language (usually Common)"
+            "custom": "any one language (usually Common)",
+            "communication": {}
           },
           "dm": {
             "amount": {},
             "bypasses": []
-          }
+          },
+          "important": false
         },
         "currency": {
           "pp": 0,
@@ -1277,10 +1529,19 @@
           },
           "lair": {
             "value": false,
-            "initiative": null
+            "initiative": null,
+            "inside": false
           }
         },
-        "tools": {}
+        "tools": {},
+        "source": {
+          "custom": "",
+          "book": "SRD 5.1",
+          "page": "",
+          "license": "CC-BY-4.0",
+          "revision": 1,
+          "rules": "2014"
+        }
       },
       "prototypeToken": {
         "name": "Bluto",
@@ -1400,7 +1661,9 @@
               "custom": "",
               "book": "SRD 5.1",
               "page": "",
-              "license": "CC-BY-4.0"
+              "license": "CC-BY-4.0",
+              "revision": 1,
+              "rules": "2024"
             },
             "quantity": 1,
             "weight": {
@@ -1415,57 +1678,11 @@
             "equipped": true,
             "rarity": "",
             "identified": true,
-            "activation": {
-              "type": "",
-              "cost": null,
-              "condition": ""
-            },
-            "duration": {
-              "value": "",
-              "units": ""
-            },
             "cover": null,
-            "target": {
-              "value": "",
-              "width": null,
-              "units": "",
-              "type": "",
-              "prompt": true
-            },
-            "range": {
-              "value": null,
-              "long": null,
-              "units": ""
-            },
             "uses": {
-              "value": null,
               "max": "",
-              "per": null,
-              "recovery": "",
-              "prompt": true
-            },
-            "consume": {
-              "type": "",
-              "target": null,
-              "amount": null,
-              "scale": false
-            },
-            "ability": null,
-            "actionType": null,
-            "chatFlavor": "",
-            "critical": {
-              "threshold": null,
-              "damage": ""
-            },
-            "damage": {
-              "parts": [],
-              "versatile": ""
-            },
-            "formula": "",
-            "save": {
-              "ability": "",
-              "dc": null,
-              "scaling": "spell"
+              "spent": 0,
+              "recovery": []
             },
             "armor": {
               "value": 12,
@@ -1494,13 +1711,9 @@
             "container": null,
             "crewed": false,
             "properties": [],
-            "attack": {
-              "bonus": "",
-              "flat": false
-            },
-            "summons": null,
-            "attuned": false,
-            "enchantment": null
+            "activities": {},
+            "identifier": "",
+            "attuned": false
           },
           "effects": [],
           "folder": null,
@@ -1538,79 +1751,30 @@
               "custom": "",
               "book": "SRD 5.1",
               "page": "",
-              "license": "CC-BY-4.0"
-            },
-            "activation": {
-              "type": "",
-              "cost": null,
-              "condition": ""
-            },
-            "duration": {
-              "value": "",
-              "units": ""
+              "license": "CC-BY-4.0",
+              "revision": 1,
+              "rules": "2024"
             },
             "cover": null,
-            "target": {
-              "value": "",
-              "width": null,
-              "units": "",
-              "type": "",
-              "prompt": true
-            },
-            "range": {
-              "value": null,
-              "long": null,
-              "units": ""
-            },
             "uses": {
-              "value": null,
               "max": "",
-              "per": null,
-              "recovery": "",
-              "prompt": true
-            },
-            "consume": {
-              "type": "",
-              "target": null,
-              "amount": null,
-              "scale": false
-            },
-            "ability": "",
-            "actionType": "",
-            "chatFlavor": "",
-            "critical": {
-              "threshold": null,
-              "damage": ""
-            },
-            "damage": {
-              "parts": [],
-              "versatile": ""
-            },
-            "formula": "",
-            "save": {
-              "ability": "",
-              "dc": null,
-              "scaling": "spell"
+              "spent": 0,
+              "recovery": []
             },
             "type": {
               "value": "",
               "subtype": ""
             },
             "requirements": "",
-            "recharge": {
-              "value": null,
-              "charged": false
-            },
             "crewed": false,
             "properties": [],
-            "attack": {
-              "bonus": "",
-              "flat": false
-            },
-            "summons": null,
-            "enchantment": null,
+            "activities": {},
+            "identifier": "",
+            "advancement": [],
+            "enchant": {},
             "prerequisites": {
-              "level": null
+              "level": null,
+              "repeatable": false
             }
           },
           "effects": [],
@@ -1649,7 +1813,9 @@
               "custom": "",
               "book": "SRD 5.1",
               "page": "",
-              "license": "CC-BY-4.0"
+              "license": "CC-BY-4.0",
+              "revision": 1,
+              "rules": "2024"
             },
             "quantity": 1,
             "weight": {
@@ -1664,62 +1830,51 @@
             "equipped": true,
             "rarity": "",
             "identified": true,
-            "activation": {
-              "type": "action",
-              "cost": 1,
-              "condition": ""
-            },
-            "duration": {
-              "value": "",
-              "units": ""
-            },
             "cover": null,
-            "target": {
-              "value": "",
-              "width": null,
-              "units": "",
-              "type": "",
-              "prompt": true
-            },
             "range": {
-              "value": 5,
+              "value": null,
               "long": null,
-              "units": "ft"
+              "units": "ft",
+              "reach": null
             },
             "uses": {
-              "value": null,
               "max": "",
-              "per": null,
-              "recovery": "",
-              "prompt": true
-            },
-            "consume": {
-              "type": "",
-              "target": null,
-              "amount": null,
-              "scale": false
-            },
-            "ability": "str",
-            "actionType": "mwak",
-            "chatFlavor": "",
-            "critical": {
-              "threshold": null,
-              "damage": ""
+              "spent": 0,
+              "recovery": []
             },
             "damage": {
-              "parts": [
-                [
-                  "1d12 + @mod",
+              "versatile": {
+                "number": null,
+                "denomination": null,
+                "bonus": "",
+                "types": [],
+                "custom": {
+                  "enabled": false,
+                  "formula": ""
+                },
+                "scaling": {
+                  "mode": "",
+                  "number": null,
+                  "formula": ""
+                }
+              },
+              "base": {
+                "number": 1,
+                "denomination": 12,
+                "bonus": "",
+                "types": [
                   "slashing"
-                ]
-              ],
-              "versatile": ""
-            },
-            "formula": "",
-            "save": {
-              "ability": "",
-              "dc": null,
-              "scaling": "spell"
+                ],
+                "custom": {
+                  "enabled": false,
+                  "formula": ""
+                },
+                "scaling": {
+                  "mode": "",
+                  "number": null,
+                  "formula": ""
+                }
+              }
             },
             "armor": {
               "value": 10
@@ -1744,14 +1899,132 @@
             },
             "container": null,
             "crewed": false,
-            "attack": {
-              "bonus": "",
-              "flat": false
-            },
-            "summons": null,
             "magicalBonus": null,
+            "activities": {
+              "dnd5eactivity000": {
+                "_id": "dnd5eactivity000",
+                "type": "attack",
+                "activation": {
+                  "type": "action",
+                  "value": 1,
+                  "condition": "",
+                  "override": false
+                },
+                "consumption": {
+                  "targets": [],
+                  "scaling": {
+                    "allowed": false,
+                    "max": ""
+                  },
+                  "spellSlot": true
+                },
+                "description": {
+                  "chatFlavor": ""
+                },
+                "duration": {
+                  "concentration": false,
+                  "value": "",
+                  "units": "",
+                  "special": "",
+                  "override": false
+                },
+                "effects": [],
+                "range": {
+                  "units": "ft",
+                  "special": "",
+                  "override": false
+                },
+                "target": {
+                  "template": {
+                    "count": "",
+                    "contiguous": false,
+                    "type": "",
+                    "size": "",
+                    "width": "",
+                    "height": "",
+                    "units": ""
+                  },
+                  "affects": {
+                    "count": "",
+                    "type": "",
+                    "choice": false,
+                    "special": ""
+                  },
+                  "prompt": true,
+                  "override": false
+                },
+                "uses": {
+                  "spent": 0,
+                  "max": "",
+                  "recovery": []
+                },
+                "attack": {
+                  "ability": "str",
+                  "bonus": "",
+                  "critical": {
+                    "threshold": null
+                  },
+                  "flat": false,
+                  "type": {
+                    "value": "melee",
+                    "classification": "weapon"
+                  }
+                },
+                "damage": {
+                  "critical": {
+                    "bonus": ""
+                  },
+                  "includeBase": true,
+                  "parts": []
+                },
+                "sort": 0,
+                "useConditionText": "",
+                "useConditionReason": "",
+                "effectConditionText": "",
+                "macroData": {
+                  "name": "",
+                  "command": ""
+                },
+                "ignoreTraits": {
+                  "idi": false,
+                  "idr": false,
+                  "idv": false,
+                  "ida": false
+                },
+                "midiProperties": {
+                  "ignoreTraits": [],
+                  "triggeredActivityId": "none",
+                  "triggeredActivityConditionText": "",
+                  "triggeredActivityTargets": "targets",
+                  "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
+                  "confirmTargets": "default",
+                  "autoTargetType": "any",
+                  "autoTargetAction": "default",
+                  "automationOnly": false,
+                  "otherActivityCompatible": true,
+                  "identifier": "",
+                  "displayActivityName": false,
+                  "rollMode": "default",
+                  "chooseEffects": false,
+                  "toggleEffect": false,
+                  "ignoreFullCover": false
+                },
+                "isOverTimeFlag": false,
+                "overTimeProperties": {
+                  "saveRemoves": true,
+                  "preRemoveConditionText": "",
+                  "postRemoveConditionText": ""
+                },
+                "otherActivityId": "",
+                "attackMode": "oneHanded",
+                "ammunition": "",
+                "otherActivityUuid": ""
+              }
+            },
+            "identifier": "",
             "attuned": false,
-            "enchantment": null
+            "ammunition": {}
           },
           "effects": [],
           "folder": null,
@@ -1762,7 +2035,8 @@
           "flags": {
             "core": {
               "sourceId": "Compendium.dnd5e.items.1Lxk6kmoRhG8qQ0u"
-            }
+            },
+            "dnd5e": {}
           },
           "_stats": {
             "systemId": null,
@@ -1790,10 +2064,10 @@
       },
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "3.2.1",
-        "coreVersion": "12.331",
+        "systemVersion": "4.4.2",
+        "coreVersion": "12.343",
         "createdTime": 1661787233018,
-        "modifiedTime": 1728684023993,
+        "modifiedTime": 1748176572944,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": "Compendium.dnd5e.monsters.Actor.kz1t6xeXVwODpYb2",
         "duplicateSource": null
@@ -1822,6 +2096,20 @@
             "bonuses": {
               "check": "",
               "save": ""
+            },
+            "check": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            },
+            "save": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
             }
           },
           "dex": {
@@ -1831,6 +2119,20 @@
             "bonuses": {
               "check": "",
               "save": ""
+            },
+            "check": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            },
+            "save": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
             }
           },
           "con": {
@@ -1840,6 +2142,20 @@
             "bonuses": {
               "check": "",
               "save": ""
+            },
+            "check": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            },
+            "save": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
             }
           },
           "int": {
@@ -1849,6 +2165,20 @@
             "bonuses": {
               "check": "",
               "save": ""
+            },
+            "check": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            },
+            "save": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
             }
           },
           "wis": {
@@ -1858,6 +2188,20 @@
             "bonuses": {
               "check": "",
               "save": ""
+            },
+            "check": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            },
+            "save": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
             }
           },
           "cha": {
@@ -1867,6 +2211,20 @@
             "bonuses": {
               "check": "",
               "save": ""
+            },
+            "check": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            },
+            "save": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
             }
           }
         },
@@ -1921,8 +2279,7 @@
           "biography": {
             "value": "",
             "public": ""
-          },
-          "source": {}
+          }
         },
         "traits": {
           "size": "lg",
@@ -1975,6 +2332,10 @@
         "cargo": {
           "crew": [],
           "passengers": []
+        },
+        "source": {
+          "revision": 1,
+          "rules": "2014"
         }
       },
       "ownership": {
@@ -2075,10 +2436,10 @@
       },
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "3.2.1",
-        "coreVersion": "12.331",
+        "systemVersion": "4.4.2",
+        "coreVersion": "12.343",
         "createdTime": null,
-        "modifiedTime": 1728566700734,
+        "modifiedTime": 1748176572997,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
         "duplicateSource": null
@@ -2110,6 +2471,20 @@
             "bonuses": {
               "check": "",
               "save": ""
+            },
+            "check": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            },
+            "save": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
             }
           },
           "dex": {
@@ -2119,6 +2494,20 @@
             "bonuses": {
               "check": "",
               "save": ""
+            },
+            "check": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            },
+            "save": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
             }
           },
           "con": {
@@ -2128,6 +2517,20 @@
             "bonuses": {
               "check": "",
               "save": ""
+            },
+            "check": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            },
+            "save": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
             }
           },
           "int": {
@@ -2137,6 +2540,20 @@
             "bonuses": {
               "check": "",
               "save": ""
+            },
+            "check": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            },
+            "save": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
             }
           },
           "wis": {
@@ -2146,6 +2563,20 @@
             "bonuses": {
               "check": "",
               "save": ""
+            },
+            "check": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            },
+            "save": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
             }
           },
           "cha": {
@@ -2155,6 +2586,20 @@
             "bonuses": {
               "check": "",
               "save": ""
+            },
+            "check": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            },
+            "save": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
             }
           }
         },
@@ -2209,8 +2654,7 @@
           "biography": {
             "value": "",
             "public": ""
-          },
-          "source": {}
+          }
         },
         "traits": {
           "size": "lg",
@@ -2263,6 +2707,10 @@
         "cargo": {
           "crew": [],
           "passengers": []
+        },
+        "source": {
+          "revision": 1,
+          "rules": "2014"
         }
       },
       "ownership": {
@@ -2363,10 +2811,10 @@
       },
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "3.1.2",
-        "coreVersion": "12.331",
+        "systemVersion": "4.4.2",
+        "coreVersion": "12.343",
         "createdTime": null,
-        "modifiedTime": 1723173427766,
+        "modifiedTime": 1748176591099,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": "Actor.1vkedbMBeEalLEHr",
         "duplicateSource": null
@@ -2398,6 +2846,20 @@
             "bonuses": {
               "check": "",
               "save": ""
+            },
+            "check": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            },
+            "save": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
             }
           },
           "dex": {
@@ -2407,6 +2869,20 @@
             "bonuses": {
               "check": "",
               "save": ""
+            },
+            "check": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            },
+            "save": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
             }
           },
           "con": {
@@ -2416,6 +2892,20 @@
             "bonuses": {
               "check": "",
               "save": ""
+            },
+            "check": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            },
+            "save": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
             }
           },
           "int": {
@@ -2425,6 +2915,20 @@
             "bonuses": {
               "check": "",
               "save": ""
+            },
+            "check": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            },
+            "save": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
             }
           },
           "wis": {
@@ -2434,6 +2938,20 @@
             "bonuses": {
               "check": "",
               "save": ""
+            },
+            "check": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            },
+            "save": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
             }
           },
           "cha": {
@@ -2443,6 +2961,20 @@
             "bonuses": {
               "check": "",
               "save": ""
+            },
+            "check": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            },
+            "save": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
             }
           }
         },
@@ -2497,8 +3029,7 @@
           "biography": {
             "value": "",
             "public": ""
-          },
-          "source": {}
+          }
         },
         "traits": {
           "size": "lg",
@@ -2551,6 +3082,10 @@
         "cargo": {
           "crew": [],
           "passengers": []
+        },
+        "source": {
+          "revision": 1,
+          "rules": "2014"
         }
       },
       "ownership": {
@@ -2651,10 +3186,10 @@
       },
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "3.1.2",
-        "coreVersion": "12.331",
+        "systemVersion": "4.4.2",
+        "coreVersion": "12.343",
         "createdTime": null,
-        "modifiedTime": 1723173427766,
+        "modifiedTime": 1748176591082,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": "Actor.1vkedbMBeEalLEHr",
         "duplicateSource": null
@@ -4701,7 +5236,7 @@
       "folder": null,
       "type": "Actor",
       "description": "",
-      "sort": 100000,
+      "sort": 300000,
       "color": "#ff0000",
       "flags": {},
       "_stats": {
@@ -4709,7 +5244,7 @@
         "systemVersion": "3.2.1",
         "coreVersion": "12.331",
         "createdTime": null,
-        "modifiedTime": 1728566149782,
+        "modifiedTime": 1747943849391,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
         "duplicateSource": null
@@ -4744,9 +5279,9 @@
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "3.2.1",
-    "coreVersion": "12.331",
+    "coreVersion": "12.343",
     "createdTime": 1705012996493,
-    "modifiedTime": 1733515263451,
+    "modifiedTime": 1748178002809,
     "lastModifiedBy": "6yhz13iFYYklKtgA",
     "compendiumSource": null,
     "duplicateSource": null

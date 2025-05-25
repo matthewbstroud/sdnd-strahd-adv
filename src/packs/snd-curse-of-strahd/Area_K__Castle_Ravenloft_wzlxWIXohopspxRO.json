@@ -6648,7 +6648,365 @@
           "delta": {
             "_id": "e5byzRcaNblup9TS",
             "system": {},
-            "items": [],
+            "items": [
+              {
+                "name": "Misty Step",
+                "type": "spell",
+                "img": "icons/magic/control/debuff-energy-snare-brown.webp",
+                "effects": [],
+                "sort": 0,
+                "flags": {
+                  "ddbimporter": {
+                    "id": 138507,
+                    "definitionId": 2195,
+                    "entityTypeId": 435869154,
+                    "dndbeyond": {
+                      "lookup": "generic",
+                      "lookupName": "generic",
+                      "level": null,
+                      "castAtLevel": null
+                    },
+                    "originalName": "Misty Step",
+                    "sources": [
+                      {
+                        "sourceId": 1,
+                        "pageNumber": null,
+                        "sourceType": 2
+                      },
+                      {
+                        "sourceId": 2,
+                        "pageNumber": 260,
+                        "sourceType": 1
+                      }
+                    ],
+                    "tags": [
+                      "Teleportation"
+                    ],
+                    "version": "2.9.67",
+                    "effectsApplied": true,
+                    "chrisEffectsApplied": true,
+                    "chrisPreEffectName": "Misty Step"
+                  },
+                  "dnd5e": {},
+                  "midi-qol": {
+                    "forceCEOff": true,
+                    "effectActivation": false
+                  },
+                  "custom-character-sheet-sections": {
+                    "sectionName": ""
+                  },
+                  "rest-recovery": {
+                    "data": {
+                      "recovery": {
+                        "enabled": false
+                      }
+                    }
+                  },
+                  "midiProperties": {
+                    "nodam": false,
+                    "fulldam": false,
+                    "halfdam": false,
+                    "autoFailFriendly": false,
+                    "autoSaveFriendly": false,
+                    "rollOther": false,
+                    "critOther": false,
+                    "offHandWeapon": false,
+                    "magicdam": false,
+                    "magiceffect": false,
+                    "concentration": false,
+                    "toggleEffect": false,
+                    "ignoreTotalCover": false
+                  },
+                  "exportSource": {
+                    "world": "development-testing",
+                    "system": "dnd5e",
+                    "coreVersion": "10.291",
+                    "systemVersion": "2.1.5"
+                  },
+                  "autoanimations": {
+                    "id": "befa460d-2626-4e7d-b25c-edc88040a964",
+                    "label": "Misty Step",
+                    "macro": {
+                      "enable": false,
+                      "playWhen": "0"
+                    },
+                    "menu": "preset",
+                    "soundOnly": {
+                      "sound": {
+                        "enable": false,
+                        "delay": 0,
+                        "repeat": 1,
+                        "repeatDelay": 250,
+                        "startTime": 0,
+                        "volume": 0.75
+                      }
+                    },
+                    "isEnabled": true,
+                    "isCustomized": true,
+                    "fromAmmo": false,
+                    "version": 5,
+                    "presetType": "teleportation",
+                    "data": {
+                      "start": {
+                        "dbSection": "static",
+                        "enabe": true,
+                        "menuType": "spell",
+                        "animation": "mistystep",
+                        "variant": "01",
+                        "color": "blue",
+                        "options": {
+                          "delay": 0,
+                          "elevation": 1000,
+                          "fadeIn": 250,
+                          "fadeOut": 250,
+                          "isMasked": false,
+                          "opacity": 1,
+                          "isRadius": false,
+                          "playbackRate": 1,
+                          "size": 1.5
+                        },
+                        "enable": true
+                      },
+                      "between": {
+                        "dbSection": "range",
+                        "enable": false,
+                        "menuType": "weapon",
+                        "animation": "arrow",
+                        "variant": "regular",
+                        "color": "regular",
+                        "options": {
+                          "delay": 0,
+                          "elevation": 1000,
+                          "opacity": 1,
+                          "playbackRate": 1
+                        }
+                      },
+                      "end": {
+                        "dbSection": "static",
+                        "enabe": true,
+                        "menuType": "spell",
+                        "animation": "mistystep",
+                        "variant": "02",
+                        "color": "blue",
+                        "options": {
+                          "delay": 500,
+                          "elevation": 1000,
+                          "fadeIn": 250,
+                          "fadeOut": 250,
+                          "isMasked": false,
+                          "isRadius": false,
+                          "opacity": 1,
+                          "playbackRate": 1,
+                          "size": 1.5
+                        },
+                        "enable": true
+                      },
+                      "options": {
+                        "range": 30,
+                        "hideFromPlayers": false,
+                        "measureType": "alternating",
+                        "teleport": true,
+                        "speed": 120,
+                        "delayMove": 1000,
+                        "alpha": 1,
+                        "delayFade": 750,
+                        "delayReturn": 250,
+                        "checkCollision": true
+                      },
+                      "sound": {
+                        "enable": false
+                      }
+                    }
+                  },
+                  "chris-premades": {
+                    "info": {
+                      "name": "Misty Step",
+                      "version": "0.7.01"
+                    }
+                  }
+                },
+                "_id": "eiik4ajt6kq2f9gj",
+                "system": {
+                  "description": {
+                    "value": "<p>Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see.</p>",
+                    "chat": ""
+                  },
+                  "source": {
+                    "custom": "Basic Rules, Player's Handbook pg 260",
+                    "revision": 1,
+                    "rules": "2014"
+                  },
+                  "activation": {
+                    "type": "bonus",
+                    "condition": "",
+                    "value": 1
+                  },
+                  "duration": {
+                    "value": "",
+                    "units": "inst"
+                  },
+                  "target": {
+                    "affects": {
+                      "type": "self",
+                      "count": "",
+                      "choice": false
+                    },
+                    "template": {
+                      "units": "",
+                      "contiguous": false
+                    }
+                  },
+                  "range": {
+                    "units": "self"
+                  },
+                  "uses": {
+                    "max": "3",
+                    "recovery": [
+                      {
+                        "period": "day",
+                        "type": "recoverAll"
+                      }
+                    ],
+                    "spent": 0
+                  },
+                  "ability": "",
+                  "level": 2,
+                  "school": "con",
+                  "materials": {
+                    "value": "",
+                    "consumed": false,
+                    "cost": 0,
+                    "supply": 0
+                  },
+                  "preparation": {
+                    "mode": "innate",
+                    "prepared": true
+                  },
+                  "properties": [
+                    "vocal"
+                  ],
+                  "activities": {
+                    "dnd5eactivity000": {
+                      "_id": "dnd5eactivity000",
+                      "type": "utility",
+                      "activation": {
+                        "type": "action",
+                        "value": null,
+                        "override": false
+                      },
+                      "consumption": {
+                        "targets": [
+                          {
+                            "type": "itemUses",
+                            "target": "",
+                            "value": "1",
+                            "scaling": {
+                              "mode": "",
+                              "formula": ""
+                            }
+                          }
+                        ],
+                        "scaling": {
+                          "allowed": false,
+                          "max": ""
+                        },
+                        "spellSlot": true
+                      },
+                      "description": {
+                        "chatFlavor": ""
+                      },
+                      "duration": {
+                        "units": "inst",
+                        "concentration": false,
+                        "override": false
+                      },
+                      "effects": [],
+                      "range": {
+                        "override": false
+                      },
+                      "target": {
+                        "prompt": true,
+                        "template": {
+                          "contiguous": false,
+                          "units": "ft"
+                        },
+                        "affects": {
+                          "choice": false
+                        },
+                        "override": false
+                      },
+                      "uses": {
+                        "spent": 0,
+                        "max": "",
+                        "recovery": []
+                      },
+                      "roll": {
+                        "formula": "",
+                        "name": "",
+                        "prompt": false,
+                        "visible": false
+                      },
+                      "sort": 0,
+                      "useConditionText": "",
+                      "useConditionReason": "",
+                      "effectConditionText": "",
+                      "macroData": {
+                        "name": "",
+                        "command": ""
+                      },
+                      "ignoreTraits": {
+                        "idi": false,
+                        "idr": false,
+                        "idv": false,
+                        "ida": false
+                      },
+                      "midiProperties": {
+                        "ignoreTraits": [],
+                        "triggeredActivityId": "none",
+                        "triggeredActivityConditionText": "",
+                        "triggeredActivityTargets": "targets",
+                        "triggeredActivityRollAs": "self",
+                        "forceDialog": false,
+                        "confirmTargets": "default",
+                        "autoTargetType": "any",
+                        "autoTargetAction": "default",
+                        "automationOnly": false,
+                        "otherActivityCompatible": true,
+                        "identifier": "",
+                        "displayActivityName": false,
+                        "rollMode": "default",
+                        "chooseEffects": false,
+                        "toggleEffect": false,
+                        "ignoreFullCover": false
+                      },
+                      "isOverTimeFlag": false,
+                      "overTimeProperties": {
+                        "saveRemoves": true,
+                        "preRemoveConditionText": "",
+                        "postRemoveConditionText": ""
+                      },
+                      "otherActivityId": "none"
+                    }
+                  },
+                  "identifier": "misty-step"
+                },
+                "ownership": {
+                  "default": 0,
+                  "6yhz13iFYYklKtgA": 3
+                },
+                "_stats": {
+                  "systemId": "dnd5e",
+                  "systemVersion": "3.1.2",
+                  "coreVersion": "12.331",
+                  "createdTime": 1722219311787,
+                  "modifiedTime": 1722219311787,
+                  "lastModifiedBy": "6yhz13iFYYklKtgA",
+                  "compendiumSource": null,
+                  "duplicateSource": null
+                },
+                "folder": null
+              }
+            ],
             "effects": [],
             "flags": {},
             "name": null,
@@ -8014,71 +8372,57 @@
                   "unidentified": {
                     "description": "Wondrous item"
                   },
-                  "source": {},
+                  "source": {
+                    "revision": 1,
+                    "rules": "2014"
+                  },
                   "container": null,
                   "price": {
                     "value": 0,
                     "denomination": "gp"
                   },
                   "rarity": "",
-                  "activation": {
-                    "type": "",
-                    "cost": null,
-                    "condition": ""
-                  },
-                  "duration": {
-                    "value": "",
-                    "units": ""
-                  },
                   "cover": null,
                   "crewed": false,
-                  "target": {
-                    "value": "",
-                    "width": null,
-                    "units": "",
-                    "type": "",
-                    "prompt": true
-                  },
                   "range": {
                     "value": null,
                     "long": null,
-                    "units": ""
+                    "units": "",
+                    "reach": null
                   },
                   "uses": {
-                    "value": null,
                     "max": "",
-                    "per": null,
-                    "recovery": "",
-                    "prompt": true
-                  },
-                  "consume": {
-                    "type": "",
-                    "target": null,
-                    "amount": null,
-                    "scale": false
-                  },
-                  "ability": null,
-                  "actionType": null,
-                  "attack": {
-                    "bonus": "",
-                    "flat": false
-                  },
-                  "chatFlavor": "",
-                  "critical": {
-                    "threshold": null,
-                    "damage": ""
+                    "spent": 0,
+                    "recovery": []
                   },
                   "damage": {
-                    "parts": [],
-                    "versatile": ""
+                    "versatile": {
+                      "number": null,
+                      "denomination": null,
+                      "bonus": "",
+                      "types": [],
+                      "custom": {
+                        "enabled": false,
+                        "formula": ""
+                      },
+                      "scaling": {
+                        "mode": "",
+                        "number": null,
+                        "formula": ""
+                      }
+                    },
+                    "base": {
+                      "number": null,
+                      "denomination": null,
+                      "types": [],
+                      "custom": {
+                        "enabled": false
+                      },
+                      "scaling": {
+                        "number": 1
+                      }
+                    }
                   },
-                  "formula": "",
-                  "save": {
-                    "ability": "",
-                    "dc": null,
-                    "scaling": "spell"
-                  },
-                  "summons": null,
                   "armor": {
                     "value": null
                   },
@@ -8096,8 +8440,10 @@
                   "properties": [],
                   "equipped": true,
                   "proficient": null,
+                  "activities": {},
+                  "identifier": "scary-looking-mace",
                   "attuned": false,
-                  "enchantment": null
+                  "ammunition": {}
                 },
                 "folder": "KLn5LsKCpa70wSSH",
                 "flags": {
@@ -8138,7 +8484,9 @@
                     "book": "Player’s Handbook",
                     "page": "",
                     "license": "",
-                    "custom": ""
+                    "custom": "",
+                    "revision": 1,
+                    "rules": "2014"
                   },
                   "identified": true,
                   "unidentified": {
@@ -8156,64 +8504,13 @@
                   },
                   "rarity": "",
                   "attunement": "",
-                  "activation": {
-                    "type": "",
-                    "cost": null,
-                    "condition": ""
-                  },
-                  "duration": {
-                    "value": "",
-                    "units": ""
-                  },
                   "cover": null,
                   "crewed": false,
-                  "target": {
-                    "value": "",
-                    "width": null,
-                    "units": "",
-                    "type": "",
-                    "prompt": true
-                  },
-                  "range": {
-                    "value": null,
-                    "long": null,
-                    "units": ""
-                  },
                   "uses": {
-                    "value": 0,
                     "max": "",
-                    "per": null,
-                    "prompt": false,
-                    "recovery": ""
+                    "spent": 0,
+                    "recovery": []
                   },
-                  "consume": {
-                    "type": "",
-                    "target": null,
-                    "amount": null,
-                    "scale": false
-                  },
-                  "ability": null,
-                  "actionType": null,
-                  "attack": {
-                    "bonus": "",
-                    "flat": false
-                  },
-                  "chatFlavor": "",
-                  "critical": {
-                    "threshold": null,
-                    "damage": ""
-                  },
-                  "damage": {
-                    "parts": [],
-                    "versatile": ""
-                  },
-                  "formula": "",
-                  "save": {
-                    "ability": "",
-                    "dc": null,
-                    "scaling": "spell"
-                  },
-                  "summons": null,
                   "armor": {
                     "value": 16,
                     "magicalBonus": null,
@@ -8239,8 +8536,9 @@
                   "strength": 13,
                   "equipped": true,
                   "proficient": null,
-                  "attuned": false,
-                  "enchantment": null
+                  "activities": {},
+                  "identifier": "chain-mail",
+                  "attuned": false
                 },
                 "flags": {
                   "ddbimporter": {
@@ -8321,7 +8619,10 @@
                     "value": "<p>A handsome, fur-lined black cloak embroidered with golden thread.</p>",
                     "chat": ""
                   },
-                  "source": {},
+                  "source": {
+                    "revision": 1,
+                    "rules": "2014"
+                  },
                   "identified": true,
                   "unidentified": {
                     "description": ""
@@ -8341,7 +8642,8 @@
                   "type": {
                     "value": "",
                     "subtype": ""
-                  }
+                  },
+                  "identifier": "fur-lined-cloak"
                 },
                 "effects": [],
                 "sort": 0,
@@ -8368,7 +8670,9 @@
             ],
             "effects": [],
             "flags": {
-              "item-piles": {}
+              "item-piles": {
+                "data": {}
+              }
             },
             "name": null,
             "type": null,
@@ -8608,71 +8912,23 @@
                   "unidentified": {
                     "description": "Wondrous item"
                   },
-                  "source": {},
+                  "source": {
+                    "revision": 1,
+                    "rules": "2014"
+                  },
                   "container": null,
                   "price": {
                     "value": 0,
                     "denomination": "gp"
                   },
                   "rarity": "",
-                  "activation": {
-                    "type": "",
-                    "cost": null,
-                    "condition": ""
-                  },
-                  "duration": {
-                    "value": "",
-                    "units": ""
-                  },
                   "cover": null,
                   "crewed": false,
-                  "target": {
-                    "value": "",
-                    "width": null,
-                    "units": "",
-                    "type": "",
-                    "prompt": true
-                  },
-                  "range": {
-                    "value": null,
-                    "long": null,
-                    "units": ""
-                  },
                   "uses": {
-                    "value": null,
                     "max": "",
-                    "per": null,
-                    "recovery": "",
-                    "prompt": true
+                    "spent": 0,
+                    "recovery": []
                   },
-                  "consume": {
-                    "type": "",
-                    "target": null,
-                    "amount": null,
-                    "scale": false
-                  },
-                  "ability": null,
-                  "actionType": null,
-                  "attack": {
-                    "bonus": "",
-                    "flat": false
-                  },
-                  "chatFlavor": "",
-                  "critical": {
-                    "threshold": null,
-                    "damage": ""
-                  },
-                  "damage": {
-                    "parts": [],
-                    "versatile": ""
-                  },
-                  "formula": "",
-                  "save": {
-                    "ability": "",
-                    "dc": null,
-                    "scaling": "spell"
-                  },
-                  "summons": null,
                   "armor": {
                     "value": null,
                     "magicalBonus": null,
@@ -8696,8 +8952,9 @@
                   "strength": null,
                   "equipped": true,
                   "proficient": null,
-                  "attuned": false,
-                  "enchantment": null
+                  "activities": {},
+                  "identifier": "cleric-statue",
+                  "attuned": false
                 },
                 "folder": "bHsSHTuburG3nVXn",
                 "flags": {
@@ -8729,7 +8986,9 @@
             ],
             "effects": [],
             "flags": {
-              "item-piles": {}
+              "item-piles": {
+                "data": {}
+              }
             },
             "name": null,
             "type": null,
@@ -27083,7 +27342,9 @@
                     "book": "Player’s Handbook",
                     "page": "180",
                     "license": "",
-                    "custom": ""
+                    "custom": "",
+                    "revision": 1,
+                    "rules": "2014"
                   },
                   "identified": true,
                   "unidentified": {
@@ -27101,64 +27362,13 @@
                   },
                   "rarity": "veryRare",
                   "attunement": "",
-                  "activation": {
-                    "type": "",
-                    "cost": null,
-                    "condition": ""
-                  },
-                  "duration": {
-                    "value": "",
-                    "units": ""
-                  },
                   "cover": null,
                   "crewed": false,
-                  "target": {
-                    "value": "",
-                    "width": null,
-                    "units": "",
-                    "type": "",
-                    "prompt": true
-                  },
-                  "range": {
-                    "value": null,
-                    "long": null,
-                    "units": ""
-                  },
                   "uses": {
-                    "value": 0,
                     "max": "",
-                    "per": null,
-                    "prompt": false,
-                    "recovery": ""
+                    "spent": 0,
+                    "recovery": []
                   },
-                  "consume": {
-                    "type": "",
-                    "target": null,
-                    "amount": null,
-                    "scale": false
-                  },
-                  "ability": null,
-                  "actionType": null,
-                  "attack": {
-                    "bonus": "",
-                    "flat": false
-                  },
-                  "chatFlavor": "",
-                  "critical": {
-                    "threshold": null,
-                    "damage": ""
-                  },
-                  "damage": {
-                    "parts": [],
-                    "versatile": ""
-                  },
-                  "formula": "",
-                  "save": {
-                    "ability": "",
-                    "dc": null,
-                    "scaling": "spell"
-                  },
-                  "summons": null,
                   "armor": {
                     "value": null,
                     "dex": null,
@@ -27184,8 +27394,9 @@
                   "strength": 0,
                   "equipped": true,
                   "proficient": null,
-                  "attuned": false,
-                  "enchantment": null
+                  "activities": {},
+                  "identifier": "manual-of-bodily-health",
+                  "attuned": false
                 },
                 "flags": {
                   "ddbimporter": {
@@ -27326,7 +27537,11 @@
             ],
             "effects": [],
             "flags": {
-              "item-piles": {}
+              "item-piles": {
+                "data": {
+                  "locked": true
+                }
+              }
             },
             "name": null,
             "type": null,
@@ -28560,7 +28775,10 @@
                     "value": "<p>This intricate gold necklace is easily over five centuries old.</p>",
                     "chat": ""
                   },
-                  "source": {},
+                  "source": {
+                    "revision": 1,
+                    "rules": "2014"
+                  },
                   "identified": true,
                   "unidentified": {
                     "description": ""
@@ -28580,7 +28798,8 @@
                   "type": {
                     "value": "",
                     "subtype": ""
-                  }
+                  },
+                  "identifier": "helgas-gold-necklace"
                 },
                 "effects": [],
                 "sort": 0,
@@ -39813,71 +40032,23 @@
                   "unidentified": {
                     "description": "Wondrous item"
                   },
-                  "source": {},
+                  "source": {
+                    "revision": 1,
+                    "rules": "2014"
+                  },
                   "container": null,
                   "price": {
                     "value": 0,
                     "denomination": "gp"
                   },
                   "rarity": "",
-                  "activation": {
-                    "type": "",
-                    "cost": null,
-                    "condition": ""
-                  },
-                  "duration": {
-                    "value": "",
-                    "units": ""
-                  },
                   "cover": null,
                   "crewed": false,
-                  "target": {
-                    "value": "",
-                    "width": null,
-                    "units": "",
-                    "type": "",
-                    "prompt": true
-                  },
-                  "range": {
-                    "value": null,
-                    "long": null,
-                    "units": ""
-                  },
                   "uses": {
-                    "value": null,
                     "max": "",
-                    "per": null,
-                    "recovery": "",
-                    "prompt": true
+                    "spent": 0,
+                    "recovery": []
                   },
-                  "consume": {
-                    "type": "",
-                    "target": null,
-                    "amount": null,
-                    "scale": false
-                  },
-                  "ability": null,
-                  "actionType": null,
-                  "attack": {
-                    "bonus": "",
-                    "flat": false
-                  },
-                  "chatFlavor": "",
-                  "critical": {
-                    "threshold": null,
-                    "damage": ""
-                  },
-                  "damage": {
-                    "parts": [],
-                    "versatile": ""
-                  },
-                  "formula": "",
-                  "save": {
-                    "ability": "",
-                    "dc": null,
-                    "scaling": "spell"
-                  },
-                  "summons": null,
                   "armor": {
                     "value": null,
                     "magicalBonus": null,
@@ -39901,8 +40072,9 @@
                   "strength": null,
                   "equipped": true,
                   "proficient": null,
-                  "attuned": false,
-                  "enchantment": null
+                  "activities": {},
+                  "identifier": "exquisite-lute",
+                  "attuned": false
                 },
                 "folder": "4zNtjCkkSz7Mlr7m",
                 "flags": {
@@ -39934,7 +40106,9 @@
             ],
             "effects": [],
             "flags": {
-              "item-piles": {}
+              "item-piles": {
+                "data": {}
+              }
             },
             "name": null,
             "type": null,
@@ -143870,9 +144044,9 @@
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "3.2.1",
-    "coreVersion": "12.331",
+    "coreVersion": "12.343",
     "createdTime": 1705009842997,
-    "modifiedTime": 1733515270575,
+    "modifiedTime": 1748177996577,
     "lastModifiedBy": "6yhz13iFYYklKtgA",
     "compendiumSource": null,
     "duplicateSource": null
