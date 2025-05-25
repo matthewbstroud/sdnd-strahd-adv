@@ -50,81 +50,10 @@
         "lockedSound": "sounds/lock.wav",
         "closeSound": "sounds/doors/wood/close.ogg",
         "openSound": "sounds/doors/wood/open.ogg",
-        "distance": 1,
-        "macro": "",
-        "deleteWhenEmpty": "default",
-        "canStackItems": "yes",
-        "canInspectItems": true,
-        "displayItemTypes": false,
-        "description": "",
-        "overrideItemFilters": false,
-        "overrideCurrencies": false,
-        "overrideSecondaryCurrencies": false,
-        "requiredItemProperties": [],
-        "displayOne": false,
-        "showItemName": false,
-        "overrideSingleItemScale": false,
-        "singleItemScale": 1,
-        "shareItemsEnabled": false,
-        "shareCurrenciesEnabled": true,
-        "takeAllEnabled": false,
-        "splitAllEnabled": true,
         "activePlayers": true,
-        "locked": false,
-        "closedImages": [],
-        "emptyImages": [],
-        "openedImages": [],
-        "lockedImages": [],
-        "closeSounds": [],
-        "openSounds": [],
-        "lockedSounds": [],
-        "unlockedSound": "",
-        "unlockedSounds": [],
-        "merchantImage": "",
-        "infiniteQuantity": false,
-        "infiniteCurrencies": true,
-        "purchaseOnly": false,
-        "hideNewItems": false,
-        "hideItemsWithZeroCost": false,
-        "keepZeroQuantity": false,
-        "onlyAcceptBasePrice": true,
-        "displayQuantity": "yes",
-        "buyPriceModifier": 1,
-        "sellPriceModifier": 0.5,
-        "itemTypePriceModifiers": [],
-        "actorPriceModifiers": [],
-        "tablesForPopulate": [],
-        "merchantColumns": [],
-        "hideTokenWhenClosed": false,
-        "openTimes": {
-          "enabled": false,
-          "status": "open",
-          "open": {
-            "hour": 9,
-            "minute": 0
-          },
-          "close": {
-            "hour": 18,
-            "minute": 0
-          }
-        },
-        "closedDays": [],
-        "closedHolidays": [],
-        "refreshItemsOnOpen": false,
-        "refreshItemsDays": [],
-        "refreshItemsHolidays": [],
-        "logMerchantActivity": false,
-        "cols": 10,
-        "rows": 5,
-        "restrictVaultAccess": false,
-        "vaultExpansion": false,
-        "baseExpansionCols": 0,
-        "baseExpansionRows": 0,
-        "vaultAccess": [],
-        "logVaultActions": false,
-        "vaultLogType": "user_actor"
+        "merchantColumns": []
       },
-      "version": "3.0.4",
+      "version": "3.2.8",
       "sharing": null
     },
     "exportSource": {
@@ -660,6 +589,9 @@
         "value": false,
         "initiative": 0
       }
+    },
+    "source": {
+      "rules": "2014"
     }
   },
   "ownership": {
@@ -732,13 +664,17 @@
           "enabled": true,
           "type": "container",
           "closed": true,
-          "closedImage": "https://assets.forge-vtt.com/634b24b96df3a5a10e8ccd71/custom_icons/Chest_Icons/Chest_Unlocked.webp",
-          "emptyImage": "https://assets.forge-vtt.com/634b24b96df3a5a10e8ccd71/custom_icons/Chest_Icons/Chest_Empty.webp",
-          "openedImage": "https://assets.forge-vtt.com/634b24b96df3a5a10e8ccd71/custom_icons/Chest_Icons/Chest_Full.webp",
-          "lockedImage": "https://assets.forge-vtt.com/634b24b96df3a5a10e8ccd71/custom_icons/Chest_Icons/Chest_Locked.webp",
-          "lockedSound": "sounds/lock.wav"
+          "closedImage": "modules/sdnd-strahd-adv/images/icons/Chest_Icons/Chest_Unlocked.webp",
+          "emptyImage": "modules/sdnd-strahd-adv/images/icons/Chest_Icons/Chest_Empty.webp",
+          "openedImage": "modules/sdnd-strahd-adv/images/icons/Chest_Icons/Chest_Full.webp",
+          "lockedImage": "modules/sdnd-strahd-adv/images/icons/Chest_Icons/Chest_Locked.webp",
+          "lockedSound": "sounds/lock.wav",
+          "activePlayers": true,
+          "closeSound": "sounds/doors/wood/close.ogg",
+          "openSound": "sounds/doors/wood/open.ogg",
+          "merchantColumns": []
         },
-        "version": "2.6.16"
+        "version": "3.2.8"
       },
       "token-z": {
         "zIndex": 0
@@ -796,10 +732,10 @@
   },
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "3.3.1",
-    "coreVersion": "12.331",
+    "systemVersion": "4.4.2",
+    "coreVersion": "12.343",
     "createdTime": 1728566213711,
-    "modifiedTime": 1730040687603,
+    "modifiedTime": 1748178366952,
     "lastModifiedBy": "6yhz13iFYYklKtgA",
     "compendiumSource": null,
     "duplicateSource": null
