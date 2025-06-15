@@ -5924,8 +5924,8 @@
       "_id": "HDaNR6XkhqyDWMgS",
       "name": "K1. Castle Ravenloft (Ground)",
       "active": false,
-      "navigation": false,
-      "navOrder": 1100000,
+      "navigation": true,
+      "navOrder": 368750,
       "navName": "",
       "foreground": null,
       "thumb": "modules/sdnd-strahd-adv/images/thumbs/HDaNR6XkhqyDWMgS-thumb.webp",
@@ -8392,8 +8392,8 @@
                   },
                   "uses": {
                     "max": "",
-                    "spent": 0,
-                    "recovery": []
+                    "recovery": [],
+                    "spent": 0
                   },
                   "damage": {
                     "versatile": {
@@ -8508,8 +8508,8 @@
                   "crewed": false,
                   "uses": {
                     "max": "",
-                    "spent": 0,
-                    "recovery": []
+                    "recovery": [],
+                    "spent": 0
                   },
                   "armor": {
                     "value": 16,
@@ -8926,8 +8926,8 @@
                   "crewed": false,
                   "uses": {
                     "max": "",
-                    "spent": 0,
-                    "recovery": []
+                    "recovery": [],
+                    "spent": 0
                   },
                   "armor": {
                     "value": null,
@@ -9014,6 +9014,119 @@
           "occludable": {
             "radius": 0
           },
+          "_regions": []
+        },
+        {
+          "name": "Dewey Finn",
+          "displayName": 30,
+          "actorLink": true,
+          "width": 1,
+          "height": 1,
+          "lockRotation": false,
+          "rotation": 270,
+          "alpha": 1,
+          "light": {
+            "alpha": 0.5,
+            "angle": 360,
+            "bright": 0,
+            "coloration": 1,
+            "dim": 0,
+            "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false,
+              "type": null
+            },
+            "darkness": {
+              "min": 0,
+              "max": 1
+            },
+            "color": null,
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
+          },
+          "disposition": 1,
+          "displayBars": 40,
+          "bar1": {
+            "attribute": "attributes.hp"
+          },
+          "bar2": {
+            "attribute": null
+          },
+          "flags": {
+            "simbuls-cover-calculator": {
+              "coverLevel": 1,
+              "coverLevelDead": 1,
+              "coverLevelProne": 1
+            },
+            "monks-active-tiles": {}
+          },
+          "texture": {
+            "src": "custom_tokens/PC/Mines_Origami/Dewey_Token.png",
+            "tint": "#ffffff",
+            "scaleX": 1,
+            "scaleY": 1,
+            "offsetX": 0,
+            "offsetY": 0,
+            "rotation": 0,
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "fit": "contain",
+            "alphaThreshold": 0.75
+          },
+          "sight": {
+            "angle": 360,
+            "enabled": true,
+            "range": 60,
+            "brightness": 0,
+            "visionMode": "darkvision",
+            "color": null,
+            "attenuation": 0,
+            "saturation": -1,
+            "contrast": 0
+          },
+          "detectionModes": [],
+          "appendNumber": false,
+          "prependAdjective": false,
+          "hexagonalShape": 0,
+          "occludable": {
+            "radius": 0
+          },
+          "ring": {
+            "enabled": false,
+            "colors": {
+              "ring": null,
+              "background": null
+            },
+            "effects": 1,
+            "subject": {
+              "scale": 1,
+              "texture": null
+            }
+          },
+          "actorId": "QqaomANo6iwTBy1i",
+          "hidden": true,
+          "sort": 0,
+          "_id": "87eO97QJNnfYxigs",
+          "delta": {
+            "_id": "Uqs7HJRovnalRfsT",
+            "system": {},
+            "items": [],
+            "effects": [],
+            "flags": {},
+            "name": null,
+            "type": null,
+            "img": null
+          },
+          "x": 5120,
+          "y": 3920,
+          "elevation": 0,
+          "locked": false,
           "_regions": []
         }
       ],
@@ -14397,6 +14510,881 @@
             "weather": false
           },
           "elevation": 0
+        },
+        {
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/icons/ladder_ascending_auto.webp",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "tint": "#ffffff",
+            "alphaThreshold": 0.75
+          },
+          "x": 3840,
+          "y": 2960,
+          "width": 160,
+          "height": 80,
+          "elevation": 0,
+          "sort": 101,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "_id": "nFKuQ5jm1H6xIYg0",
+          "rotation": 0,
+          "alpha": 0.5,
+          "hidden": false,
+          "locked": true,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                "enter"
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [
+                {
+                  "action": "teleport",
+                  "data": {
+                    "entity": {
+                      "id": "token",
+                      "name": "Triggering Token"
+                    },
+                    "location": {
+                      "id": "Scene.LkvRMo9TI5uiaa81.Tile.KDVOiMwYcljHHT3S",
+                      "name": "landing zone"
+                    },
+                    "position": "relative",
+                    "remotesnap": true,
+                    "animatepan": false,
+                    "triggerremote": false,
+                    "deletesource": false,
+                    "preservesettings": true,
+                    "avoidtokens": true,
+                    "colour": ""
+                  },
+                  "id": "gBePSFHzKK7po6qj"
+                }
+              ],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          }
+        },
+        {
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/icons/ladder_ascending_auto.webp",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "tint": "#ffffff",
+            "alphaThreshold": 0.75
+          },
+          "x": 4320,
+          "y": 2960,
+          "width": 160,
+          "height": 80,
+          "elevation": 0,
+          "sort": 101,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "rotation": 0,
+          "alpha": 0.5,
+          "hidden": false,
+          "locked": true,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                "enter"
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [
+                {
+                  "action": "teleport",
+                  "data": {
+                    "entity": {
+                      "id": "token",
+                      "name": "Triggering Token"
+                    },
+                    "location": {
+                      "id": "Scene.LkvRMo9TI5uiaa81.Tile.sUnBh26iczB8kDpw",
+                      "name": "Tile: sUnBh26iczB8kDpw"
+                    },
+                    "position": "relative",
+                    "remotesnap": true,
+                    "animatepan": false,
+                    "triggerremote": false,
+                    "deletesource": false,
+                    "preservesettings": true,
+                    "avoidtokens": true,
+                    "colour": ""
+                  },
+                  "id": "gBePSFHzKK7po6qj"
+                }
+              ],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "_id": "P0mk81OF7GepKNwo"
+        },
+        {
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/void.webp",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "tint": "#ffffff",
+            "alphaThreshold": 0.75
+          },
+          "x": 3840,
+          "y": 2800,
+          "width": 160,
+          "height": 160,
+          "elevation": 0,
+          "sort": 101,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "rotation": 0,
+          "alpha": 0,
+          "hidden": true,
+          "locked": false,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                ""
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "_id": "7jz93PMXnvZgVHbg"
+        },
+        {
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/void.webp",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "tint": "#ffffff",
+            "alphaThreshold": 0.75
+          },
+          "x": 4320,
+          "y": 2880,
+          "width": 160,
+          "height": 80,
+          "elevation": 0,
+          "sort": 101,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "rotation": 0,
+          "alpha": 0,
+          "hidden": true,
+          "locked": true,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                ""
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "_id": "WLyIpR2V9EQ3dnRC"
+        },
+        {
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/icons/ladder_descending_auto.webp",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "tint": "#ffffff",
+            "alphaThreshold": 0.75
+          },
+          "x": 5120,
+          "y": 2560,
+          "width": 160,
+          "height": 160,
+          "elevation": 0,
+          "sort": 101,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "rotation": 0,
+          "alpha": 0.5,
+          "hidden": false,
+          "locked": true,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                "enter"
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [
+                {
+                  "action": "teleport",
+                  "data": {
+                    "entity": {
+                      "id": "token",
+                      "name": "Triggering Token"
+                    },
+                    "location": {
+                      "id": "Scene.XbgLiKfRFMyoVU3J.Tile.9QUkKsBBNx2MeSkc",
+                      "name": "Tile: 9QUkKsBBNx2MeSkc"
+                    },
+                    "position": "relative",
+                    "remotesnap": true,
+                    "animatepan": false,
+                    "triggerremote": false,
+                    "deletesource": false,
+                    "preservesettings": true,
+                    "avoidtokens": true,
+                    "colour": ""
+                  },
+                  "id": "gBePSFHzKK7po6qj"
+                }
+              ],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "_id": "TiHcdMYIM49T7Dpr"
+        },
+        {
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/void.webp",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "tint": "#ffffff",
+            "alphaThreshold": 0.75
+          },
+          "x": 5280,
+          "y": 2560,
+          "width": 160,
+          "height": 160,
+          "elevation": 0,
+          "sort": 101,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "rotation": 0,
+          "alpha": 0,
+          "hidden": true,
+          "locked": true,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                ""
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "_id": "Im3WfzXHiVQPxzrR"
+        },
+        {
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/icons/ladder_descending_auto.webp",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "tint": "#ffffff",
+            "alphaThreshold": 0.75
+          },
+          "x": 5760,
+          "y": 2720,
+          "width": 160,
+          "height": 160,
+          "elevation": 0,
+          "sort": 101,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "rotation": 0,
+          "alpha": 0.5,
+          "hidden": false,
+          "locked": true,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                "enter"
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [
+                {
+                  "action": "teleport",
+                  "data": {
+                    "entity": {
+                      "id": "token",
+                      "name": "Triggering Token"
+                    },
+                    "location": {
+                      "id": "Scene.XbgLiKfRFMyoVU3J.Tile.znV3vlwoE4yr7M71",
+                      "name": "Tile: znV3vlwoE4yr7M71"
+                    },
+                    "position": "relative",
+                    "remotesnap": true,
+                    "animatepan": false,
+                    "triggerremote": false,
+                    "deletesource": false,
+                    "preservesettings": true,
+                    "avoidtokens": true,
+                    "colour": ""
+                  },
+                  "id": "gBePSFHzKK7po6qj"
+                }
+              ],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "_id": "rYZg3jDXjpFXdYKc"
+        },
+        {
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/void.webp",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "tint": "#ffffff",
+            "alphaThreshold": 0.75
+          },
+          "x": 5760,
+          "y": 2560,
+          "width": 160,
+          "height": 120,
+          "elevation": 0,
+          "sort": 101,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "rotation": 0,
+          "alpha": 0,
+          "hidden": true,
+          "locked": true,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                ""
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "_id": "c5aRNhkC6DH8b9Qi"
+        },
+        {
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/icons/ladder_descending_auto.webp",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "tint": "#ffffff",
+            "alphaThreshold": 0.75
+          },
+          "x": 5120,
+          "y": 3840,
+          "width": 160,
+          "height": 160,
+          "elevation": 0,
+          "sort": 101,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "rotation": 0,
+          "alpha": 0.5,
+          "hidden": false,
+          "locked": false,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                "enter"
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [
+                {
+                  "action": "teleport",
+                  "data": {
+                    "entity": {
+                      "id": "token",
+                      "name": "Triggering Token"
+                    },
+                    "location": {
+                      "id": "Scene.XbgLiKfRFMyoVU3J.Tile.Q3S5YpQZ87RjCbPx",
+                      "name": "Tile: Q3S5YpQZ87RjCbPx"
+                    },
+                    "position": "center",
+                    "remotesnap": true,
+                    "animatepan": false,
+                    "triggerremote": false,
+                    "deletesource": false,
+                    "preservesettings": true,
+                    "avoidtokens": true,
+                    "colour": ""
+                  },
+                  "id": "gBePSFHzKK7po6qj"
+                }
+              ],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "_id": "1F4lwzeifszzwPls"
+        },
+        {
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/void.webp",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "tint": "#ffffff",
+            "alphaThreshold": 0.75
+          },
+          "x": 4960,
+          "y": 3840,
+          "width": 160,
+          "height": 160,
+          "elevation": 0,
+          "sort": 101,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "rotation": 0,
+          "alpha": 0,
+          "hidden": true,
+          "locked": true,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                ""
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "_id": "nm8XmejXYPj2RV0a"
+        },
+        {
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/icons/ladder_ascending_auto.webp",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "tint": "#ffffff",
+            "alphaThreshold": 0.75
+          },
+          "x": 4960,
+          "y": 4000,
+          "width": 160,
+          "height": 160,
+          "elevation": 0,
+          "sort": 101,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "rotation": 0,
+          "alpha": 0.5,
+          "hidden": false,
+          "locked": false,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                "enter"
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [
+                {
+                  "action": "teleport",
+                  "data": {
+                    "entity": {
+                      "id": "token",
+                      "name": "Triggering Token"
+                    },
+                    "location": {
+                      "id": "Scene.LkvRMo9TI5uiaa81.Tile.rH1mNrUechHzB7vf",
+                      "name": "Tile: rH1mNrUechHzB7vf"
+                    },
+                    "position": "relative",
+                    "remotesnap": true,
+                    "animatepan": false,
+                    "triggerremote": false,
+                    "deletesource": false,
+                    "preservesettings": true,
+                    "avoidtokens": true,
+                    "colour": ""
+                  },
+                  "id": "gBePSFHzKK7po6qj"
+                }
+              ],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "_id": "f9nhMVGNgakrRelT"
         }
       ],
       "walls": [
@@ -26918,9 +27906,9 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "12.331",
+        "coreVersion": "12.343",
         "createdTime": 1709218111993,
-        "modifiedTime": 1729431493218,
+        "modifiedTime": 1749997312497,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
         "duplicateSource": null
@@ -26974,7 +27962,7 @@
       "_id": "LkvRMo9TI5uiaa81",
       "name": "K2. Castle Ravenloft (1st Floor)",
       "active": false,
-      "navigation": false,
+      "navigation": true,
       "navOrder": 737500,
       "navName": "",
       "foreground": null,
@@ -27366,8 +28354,8 @@
                   "crewed": false,
                   "uses": {
                     "max": "",
-                    "spent": 0,
-                    "recovery": []
+                    "recovery": [],
+                    "spent": 0
                   },
                   "armor": {
                     "value": null,
@@ -32773,6 +33761,567 @@
             "weather": false
           },
           "elevation": 0
+        },
+        {
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/icons/ladder_descending_auto.webp",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "tint": "#ffffff",
+            "alphaThreshold": 0.75
+          },
+          "x": 3840,
+          "y": 2880,
+          "width": 160,
+          "height": 80,
+          "elevation": 0,
+          "sort": 101,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "rotation": 0,
+          "alpha": 0.5,
+          "hidden": false,
+          "locked": false,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                "enter"
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [
+                {
+                  "action": "teleport",
+                  "data": {
+                    "entity": {
+                      "id": "token",
+                      "name": "Triggering Token"
+                    },
+                    "location": {
+                      "id": "Scene.HDaNR6XkhqyDWMgS.Tile.7jz93PMXnvZgVHbg",
+                      "name": "Tile: 7jz93PMXnvZgVHbg"
+                    },
+                    "position": "relative",
+                    "remotesnap": true,
+                    "animatepan": false,
+                    "triggerremote": false,
+                    "deletesource": false,
+                    "preservesettings": true,
+                    "avoidtokens": true,
+                    "colour": ""
+                  },
+                  "id": "gBePSFHzKK7po6qj"
+                }
+              ],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "_id": "uLR9piiQp8vtfz8A"
+        },
+        {
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/icons/ladder_descending_auto.webp",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "tint": "#ffffff",
+            "alphaThreshold": 0.75
+          },
+          "x": 4320,
+          "y": 2880,
+          "width": 160,
+          "height": 80,
+          "elevation": 0,
+          "sort": 101,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "rotation": 0,
+          "alpha": 0.5,
+          "hidden": false,
+          "locked": false,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                "enter"
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [
+                {
+                  "action": "teleport",
+                  "data": {
+                    "entity": {
+                      "id": "token",
+                      "name": "Triggering Token"
+                    },
+                    "location": {
+                      "id": "Scene.HDaNR6XkhqyDWMgS.Tile.WLyIpR2V9EQ3dnRC",
+                      "name": "Tile: WLyIpR2V9EQ3dnRC"
+                    },
+                    "position": "random",
+                    "remotesnap": true,
+                    "animatepan": false,
+                    "triggerremote": false,
+                    "deletesource": false,
+                    "preservesettings": true,
+                    "avoidtokens": true,
+                    "colour": ""
+                  },
+                  "id": "gBePSFHzKK7po6qj"
+                }
+              ],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "_id": "1BlmZnrHoZUEZRKx"
+        },
+        {
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/void.webp",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "tint": "#ffffff",
+            "alphaThreshold": 0.75
+          },
+          "x": 3840,
+          "y": 2960,
+          "width": 160,
+          "height": 80,
+          "elevation": 0,
+          "sort": 101,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "rotation": 0,
+          "alpha": 0,
+          "hidden": true,
+          "locked": true,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "flags": {
+            "monks-active-tiles": {
+              "name": "landing zone",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                ""
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "_id": "KDVOiMwYcljHHT3S"
+        },
+        {
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/void.webp",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "tint": "#ffffff",
+            "alphaThreshold": 0.75
+          },
+          "x": 4320,
+          "y": 2960,
+          "width": 160,
+          "height": 80,
+          "elevation": 0,
+          "sort": 101,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "rotation": 0,
+          "alpha": 0,
+          "hidden": true,
+          "locked": true,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                ""
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "_id": "sUnBh26iczB8kDpw"
+        },
+        {
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/void.webp",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "tint": "#ffffff",
+            "alphaThreshold": 0.75
+          },
+          "x": 4960,
+          "y": 3840,
+          "width": 160,
+          "height": 160,
+          "elevation": 0,
+          "sort": 101,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "rotation": 0,
+          "alpha": 0,
+          "hidden": true,
+          "locked": false,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                ""
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "_id": "rH1mNrUechHzB7vf"
+        },
+        {
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/icons/ladder_descending_auto.webp",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "tint": "#ffffff",
+            "alphaThreshold": 0.75
+          },
+          "x": 5120,
+          "y": 3840,
+          "width": 160,
+          "height": 160,
+          "elevation": 0,
+          "sort": 101,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "rotation": 0,
+          "alpha": 0.5,
+          "hidden": false,
+          "locked": false,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                "enter"
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [
+                {
+                  "action": "teleport",
+                  "data": {
+                    "entity": {
+                      "id": "token",
+                      "name": "Triggering Token"
+                    },
+                    "location": {
+                      "id": "Scene.HDaNR6XkhqyDWMgS.Tile.nm8XmejXYPj2RV0a",
+                      "name": "Tile: nm8XmejXYPj2RV0a"
+                    },
+                    "position": "center",
+                    "remotesnap": true,
+                    "animatepan": false,
+                    "triggerremote": false,
+                    "deletesource": false,
+                    "preservesettings": true,
+                    "avoidtokens": true,
+                    "colour": ""
+                  },
+                  "id": "gBePSFHzKK7po6qj"
+                }
+              ],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "_id": "BNuWsj1ZcgL8uuYe"
+        },
+        {
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/icons/ladder_ascending_auto.webp",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "tint": "#ffffff",
+            "alphaThreshold": 0.75
+          },
+          "x": 4960,
+          "y": 4000,
+          "width": 160,
+          "height": 160,
+          "elevation": 0,
+          "sort": 101,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "rotation": 0,
+          "alpha": 0.5,
+          "hidden": false,
+          "locked": false,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                "enter"
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [
+                {
+                  "action": "teleport",
+                  "data": {
+                    "entity": {
+                      "id": "token",
+                      "name": "Triggering Token"
+                    },
+                    "location": {
+                      "id": "Scene.TzZKMpE2XUyr6JgH.Tile.LByw8NOBZ3wHal9W",
+                      "name": "Tile: LByw8NOBZ3wHal9W"
+                    },
+                    "position": "center",
+                    "remotesnap": true,
+                    "animatepan": false,
+                    "triggerremote": false,
+                    "deletesource": false,
+                    "preservesettings": true,
+                    "avoidtokens": true,
+                    "colour": ""
+                  },
+                  "id": "gBePSFHzKK7po6qj"
+                }
+              ],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "_id": "doJVQ9xfupn782wO"
         }
       ],
       "walls": [
@@ -38558,9 +40107,9 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "12.331",
+        "coreVersion": "12.343",
         "createdTime": 1721268414958,
-        "modifiedTime": 1729431493365,
+        "modifiedTime": 1749997371423,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
         "duplicateSource": null
@@ -38614,7 +40163,7 @@
       "_id": "TzZKMpE2XUyr6JgH",
       "name": "K3. Castle Ravenloft (2nd Floor)",
       "active": false,
-      "navigation": false,
+      "navigation": true,
       "navOrder": 875000,
       "navName": "",
       "foreground": null,
@@ -40046,8 +41595,8 @@
                   "crewed": false,
                   "uses": {
                     "max": "",
-                    "spent": 0,
-                    "recovery": []
+                    "recovery": [],
+                    "spent": 0
                   },
                   "armor": {
                     "value": null,
@@ -44197,6 +45746,410 @@
             "weather": false
           },
           "elevation": 0
+        },
+        {
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/icons/ladder_descending_auto.webp",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "tint": "#ffffff",
+            "alphaThreshold": 0.75
+          },
+          "x": 4000,
+          "y": 2880,
+          "width": 160,
+          "height": 160,
+          "elevation": 0,
+          "sort": 101,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "rotation": 0,
+          "alpha": 0.5,
+          "hidden": false,
+          "locked": true,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                "enter"
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [
+                {
+                  "action": "teleport",
+                  "data": {
+                    "entity": {
+                      "id": "token",
+                      "name": "Triggering Token"
+                    },
+                    "location": {
+                      "id": "Scene.XbgLiKfRFMyoVU3J.Tile.sT1fFo7Bavk3zSCw",
+                      "name": "Tile: sT1fFo7Bavk3zSCw"
+                    },
+                    "position": "center",
+                    "remotesnap": true,
+                    "animatepan": false,
+                    "triggerremote": false,
+                    "deletesource": false,
+                    "preservesettings": true,
+                    "avoidtokens": true,
+                    "colour": ""
+                  },
+                  "id": "gBePSFHzKK7po6qj"
+                }
+              ],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "_id": "0BYLeqiY46xSoBto"
+        },
+        {
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/void.webp",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "tint": "#ffffff",
+            "alphaThreshold": 0.75
+          },
+          "x": 4160,
+          "y": 2880,
+          "width": 160,
+          "height": 160,
+          "elevation": 0,
+          "sort": 101,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "rotation": 0,
+          "alpha": 0,
+          "hidden": true,
+          "locked": false,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                ""
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "_id": "EOINF2ZlcbjCxPoI"
+        },
+        {
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/icons/ladder_ascending_auto.webp",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "tint": "#ffffff",
+            "alphaThreshold": 0.75
+          },
+          "x": 4960,
+          "y": 4000,
+          "width": 160,
+          "height": 160,
+          "elevation": 0,
+          "sort": 101,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "rotation": 0,
+          "alpha": 0.5,
+          "hidden": false,
+          "locked": false,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                "enter"
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [
+                {
+                  "action": "teleport",
+                  "data": {
+                    "entity": {
+                      "id": "token",
+                      "name": "Triggering Token"
+                    },
+                    "location": {
+                      "id": "Scene.XbgLiKfRFMyoVU3J.Tile.Q3S5YpQZ87RjCbPx",
+                      "name": "Tile: Q3S5YpQZ87RjCbPx"
+                    },
+                    "position": "center",
+                    "remotesnap": true,
+                    "animatepan": false,
+                    "triggerremote": false,
+                    "deletesource": false,
+                    "preservesettings": true,
+                    "avoidtokens": true,
+                    "colour": ""
+                  },
+                  "id": "gBePSFHzKK7po6qj"
+                }
+              ],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "_id": "Qfdsoya39OeH331u"
+        },
+        {
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/void.webp",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "tint": "#ffffff",
+            "alphaThreshold": 0.75
+          },
+          "x": 4960,
+          "y": 3840,
+          "width": 160,
+          "height": 160,
+          "elevation": 0,
+          "sort": 101,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "rotation": 0,
+          "alpha": 0,
+          "hidden": true,
+          "locked": false,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                ""
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "_id": "LByw8NOBZ3wHal9W"
+        },
+        {
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/icons/ladder_descending_auto.webp",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "tint": "#ffffff",
+            "alphaThreshold": 0.75
+          },
+          "x": 5120,
+          "y": 3840,
+          "width": 160,
+          "height": 160,
+          "elevation": 0,
+          "sort": 101,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "rotation": 0,
+          "alpha": 0.5,
+          "hidden": false,
+          "locked": false,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                "enter"
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [
+                {
+                  "action": "teleport",
+                  "data": {
+                    "entity": {
+                      "id": "token",
+                      "name": "Triggering Token"
+                    },
+                    "location": {
+                      "id": "Scene.LkvRMo9TI5uiaa81.Tile.rH1mNrUechHzB7vf",
+                      "name": "Tile: rH1mNrUechHzB7vf"
+                    },
+                    "position": "center",
+                    "remotesnap": true,
+                    "animatepan": false,
+                    "triggerremote": false,
+                    "deletesource": false,
+                    "preservesettings": true,
+                    "avoidtokens": true,
+                    "colour": ""
+                  },
+                  "id": "gBePSFHzKK7po6qj"
+                }
+              ],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "_id": "TUqW1JAsqfNBi3zo"
         }
       ],
       "walls": [
@@ -55324,9 +57277,9 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "12.331",
+        "coreVersion": "12.343",
         "createdTime": 1719957911536,
-        "modifiedTime": 1729431493451,
+        "modifiedTime": 1749997377217,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": "Scene.HDaNR6XkhqyDWMgS",
         "duplicateSource": null
@@ -122982,8 +124935,8 @@
     {
       "_id": "XbgLiKfRFMyoVU3J",
       "name": "K9a. Castle Ravenloft (Upper Dungeon)",
-      "active": false,
-      "navigation": false,
+      "active": true,
+      "navigation": true,
       "navOrder": 0,
       "navName": "",
       "foreground": null,
@@ -123020,7 +124973,7 @@
             "points": []
           },
           "x": 5750,
-          "y": 2530,
+          "y": 2460,
           "rotation": 0,
           "bezierFactor": 0,
           "fillType": 0,
@@ -124065,7 +126018,7 @@
             "fit": "fill",
             "alphaThreshold": 0.75
           },
-          "sort": 100,
+          "sort": 99,
           "restrictions": {
             "light": false,
             "weather": false
@@ -124240,6 +126193,791 @@
             "light": false,
             "weather": false
           }
+        },
+        {
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/icons/ladder_ascending_auto.webp",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "tint": "#ffffff",
+            "alphaThreshold": 0.75
+          },
+          "x": 5280,
+          "y": 2400,
+          "width": 160,
+          "height": 160,
+          "elevation": 0,
+          "sort": 101,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "rotation": 0,
+          "alpha": 0.5,
+          "hidden": false,
+          "locked": true,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                "enter"
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [
+                {
+                  "action": "teleport",
+                  "data": {
+                    "entity": {
+                      "id": "token",
+                      "name": "Triggering Token"
+                    },
+                    "location": {
+                      "id": "Scene.HDaNR6XkhqyDWMgS.Tile.Im3WfzXHiVQPxzrR",
+                      "name": "Tile: Im3WfzXHiVQPxzrR"
+                    },
+                    "position": "relative",
+                    "remotesnap": true,
+                    "animatepan": false,
+                    "triggerremote": false,
+                    "deletesource": false,
+                    "preservesettings": true,
+                    "avoidtokens": true,
+                    "colour": ""
+                  },
+                  "id": "gBePSFHzKK7po6qj"
+                }
+              ],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "_id": "ORTN1bDy6POfJFes"
+        },
+        {
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/void.webp",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "tint": "#ffffff",
+            "alphaThreshold": 0.75
+          },
+          "x": 5440,
+          "y": 2400,
+          "width": 160,
+          "height": 160,
+          "elevation": 0,
+          "sort": 101,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "rotation": 0,
+          "alpha": 0,
+          "hidden": true,
+          "locked": true,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                ""
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "_id": "9QUkKsBBNx2MeSkc"
+        },
+        {
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/icons/ladder_ascending_auto.webp",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "tint": "#ffffff",
+            "alphaThreshold": 0.75
+          },
+          "x": 5760,
+          "y": 2600,
+          "width": 160,
+          "height": 160,
+          "elevation": 0,
+          "sort": 101,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "rotation": 0,
+          "alpha": 0.5,
+          "hidden": false,
+          "locked": true,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                "enter"
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [
+                {
+                  "action": "teleport",
+                  "data": {
+                    "entity": {
+                      "id": "token",
+                      "name": "Triggering Token"
+                    },
+                    "location": {
+                      "id": "Scene.HDaNR6XkhqyDWMgS.Tile.c5aRNhkC6DH8b9Qi",
+                      "name": "Tile: c5aRNhkC6DH8b9Qi"
+                    },
+                    "position": "relative",
+                    "remotesnap": true,
+                    "animatepan": false,
+                    "triggerremote": false,
+                    "deletesource": false,
+                    "preservesettings": true,
+                    "avoidtokens": true,
+                    "colour": ""
+                  },
+                  "id": "gBePSFHzKK7po6qj"
+                }
+              ],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "_id": "dplEyZwAq8pAb3iT"
+        },
+        {
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/void.webp",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "tint": "#ffffff",
+            "alphaThreshold": 0.75
+          },
+          "x": 5760,
+          "y": 2800,
+          "width": 160,
+          "height": 80,
+          "elevation": 0,
+          "sort": 101,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "rotation": 0,
+          "alpha": 0,
+          "hidden": true,
+          "locked": true,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                ""
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "_id": "znV3vlwoE4yr7M71"
+        },
+        {
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/icons/ladder_descending_auto.webp",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "tint": "#ffffff",
+            "alphaThreshold": 0.75
+          },
+          "x": 4000,
+          "y": 2560,
+          "width": 160,
+          "height": 160,
+          "elevation": 0,
+          "sort": 101,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "rotation": 0,
+          "alpha": 0.5,
+          "hidden": false,
+          "locked": true,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                "enter"
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [
+                {
+                  "action": "teleport",
+                  "data": {
+                    "entity": {
+                      "id": "token",
+                      "name": "Triggering Token"
+                    },
+                    "location": {
+                      "id": "Scene.Lkq1jJSoIYb3M7JQ.Tile.mfG1iVsmJDoKjKLZ",
+                      "name": "Tile: mfG1iVsmJDoKjKLZ"
+                    },
+                    "position": "center",
+                    "remotesnap": true,
+                    "animatepan": false,
+                    "triggerremote": false,
+                    "deletesource": false,
+                    "preservesettings": true,
+                    "avoidtokens": true,
+                    "colour": ""
+                  },
+                  "id": "gBePSFHzKK7po6qj"
+                }
+              ],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "_id": "hxaoXYrLgZ2P0vyl"
+        },
+        {
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/icons/ladder_ascending_auto.webp",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "tint": "#ffffff",
+            "alphaThreshold": 0.75
+          },
+          "x": 4000,
+          "y": 3040,
+          "width": 160,
+          "height": 160,
+          "elevation": 0,
+          "sort": 101,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "rotation": 0,
+          "alpha": 0.5,
+          "hidden": false,
+          "locked": false,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                "enter"
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [
+                {
+                  "action": "teleport",
+                  "data": {
+                    "entity": {
+                      "id": "token",
+                      "name": "Triggering Token"
+                    },
+                    "location": {
+                      "id": "Scene.TzZKMpE2XUyr6JgH.Tile.EOINF2ZlcbjCxPoI",
+                      "name": "Tile: EOINF2ZlcbjCxPoI"
+                    },
+                    "position": "center",
+                    "remotesnap": true,
+                    "animatepan": false,
+                    "triggerremote": false,
+                    "deletesource": false,
+                    "preservesettings": true,
+                    "avoidtokens": true,
+                    "colour": ""
+                  },
+                  "id": "gBePSFHzKK7po6qj"
+                }
+              ],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "_id": "gaRmc9Z8tETTVJ12"
+        },
+        {
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/void.webp",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "tint": "#ffffff",
+            "alphaThreshold": 0.75
+          },
+          "x": 4160,
+          "y": 2560,
+          "width": 160,
+          "height": 160,
+          "elevation": 0,
+          "sort": 101,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "rotation": 0,
+          "alpha": 0,
+          "hidden": true,
+          "locked": true,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                ""
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "_id": "J0nuzbzuot8zyqYd"
+        },
+        {
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/void.webp",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "tint": "#ffffff",
+            "alphaThreshold": 0.75
+          },
+          "x": 4160,
+          "y": 3040,
+          "width": 160,
+          "height": 160,
+          "elevation": 0,
+          "sort": 101,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "rotation": 0,
+          "alpha": 0,
+          "hidden": true,
+          "locked": true,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                ""
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "_id": "sT1fFo7Bavk3zSCw"
+        },
+        {
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/icons/ladder_ascending_auto.webp",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "tint": "#ffffff",
+            "alphaThreshold": 0.75
+          },
+          "x": 4960,
+          "y": 4000,
+          "width": 160,
+          "height": 160,
+          "elevation": 0,
+          "sort": 101,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "rotation": 0,
+          "alpha": 0.5,
+          "hidden": false,
+          "locked": false,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                "enter"
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [
+                {
+                  "action": "teleport",
+                  "data": {
+                    "entity": {
+                      "id": "token",
+                      "name": "Triggering Token"
+                    },
+                    "location": {
+                      "id": "Scene.HDaNR6XkhqyDWMgS.Tile.nm8XmejXYPj2RV0a",
+                      "name": "Tile: nm8XmejXYPj2RV0a"
+                    },
+                    "position": "center",
+                    "remotesnap": true,
+                    "animatepan": false,
+                    "triggerremote": false,
+                    "deletesource": false,
+                    "preservesettings": true,
+                    "avoidtokens": true,
+                    "colour": ""
+                  },
+                  "id": "gBePSFHzKK7po6qj"
+                }
+              ],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "_id": "uZRiNrJ08GCRL19t"
+        },
+        {
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/void.webp",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "tint": "#ffffff",
+            "alphaThreshold": 0.75
+          },
+          "x": 4960,
+          "y": 3840,
+          "width": 160,
+          "height": 160,
+          "elevation": 0,
+          "sort": 101,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "rotation": 0,
+          "alpha": 0,
+          "hidden": true,
+          "locked": false,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                ""
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "_id": "Q3S5YpQZ87RjCbPx"
         }
       ],
       "walls": [
@@ -127166,9 +129904,9 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "12.331",
+        "coreVersion": "12.343",
         "createdTime": 1721592066190,
-        "modifiedTime": 1729284842285,
+        "modifiedTime": 1749997318990,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
         "duplicateSource": null
@@ -127222,7 +129960,7 @@
       "_id": "Lkq1jJSoIYb3M7JQ",
       "name": "K9b. Castle Ravenloft (Lower Dungeon)",
       "active": false,
-      "navigation": false,
+      "navigation": true,
       "navOrder": 0,
       "navName": "",
       "foreground": null,
@@ -132141,6 +134879,163 @@
             "weather": false
           },
           "elevation": 0
+        },
+        {
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/icons/ladder_ascending_auto.webp",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "tint": "#ffffff",
+            "alphaThreshold": 0.75
+          },
+          "x": 4000,
+          "y": 2560,
+          "width": 160,
+          "height": 160,
+          "elevation": 0,
+          "sort": 101,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "rotation": 0,
+          "alpha": 0.5,
+          "hidden": false,
+          "locked": true,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                "enter"
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [
+                {
+                  "action": "teleport",
+                  "data": {
+                    "entity": {
+                      "id": "token",
+                      "name": "Triggering Token"
+                    },
+                    "location": {
+                      "id": "Scene.XbgLiKfRFMyoVU3J.Tile.J0nuzbzuot8zyqYd",
+                      "name": "Tile: J0nuzbzuot8zyqYd"
+                    },
+                    "position": "center",
+                    "remotesnap": true,
+                    "animatepan": false,
+                    "triggerremote": false,
+                    "deletesource": false,
+                    "preservesettings": true,
+                    "avoidtokens": true,
+                    "colour": ""
+                  },
+                  "id": "gBePSFHzKK7po6qj"
+                }
+              ],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "_id": "sLmFdQnd9z5cWnTp"
+        },
+        {
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/void.webp",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "tint": "#ffffff",
+            "alphaThreshold": 0.75
+          },
+          "x": 4000,
+          "y": 2720,
+          "width": 160,
+          "height": 160,
+          "elevation": 0,
+          "sort": 101,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "rotation": 0,
+          "alpha": 0,
+          "hidden": true,
+          "locked": true,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                ""
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "_id": "mfG1iVsmJDoKjKLZ"
         }
       ],
       "walls": [
@@ -141686,9 +144581,9 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "12.331",
+        "coreVersion": "12.343",
         "createdTime": 1721593495844,
-        "modifiedTime": 1730041478589,
+        "modifiedTime": 1749997075759,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
         "duplicateSource": null
@@ -144046,7 +146941,7 @@
     "systemVersion": "3.2.1",
     "coreVersion": "12.343",
     "createdTime": 1705009842997,
-    "modifiedTime": 1748177996577,
+    "modifiedTime": 1749997432564,
     "lastModifiedBy": "6yhz13iFYYklKtgA",
     "compendiumSource": null,
     "duplicateSource": null
