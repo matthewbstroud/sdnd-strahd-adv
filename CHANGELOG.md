@@ -1,3 +1,9 @@
+# v12.4.2
+# New Features
+  - Area V: Van Richten's Tower
+    - Implement stairs
+  - Area W: Wizard of Wines
+    - Implement stairs
 # v12.4.1
 # New Features
   - Area K: Castle Ravenloft
