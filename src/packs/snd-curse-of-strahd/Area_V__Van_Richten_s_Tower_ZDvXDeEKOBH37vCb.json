@@ -362,7 +362,7 @@
       "name": "V1. Van Richten’s Tower (Ground Floor)",
       "active": false,
       "navigation": false,
-      "navOrder": 700000,
+      "navOrder": 975000,
       "navName": "",
       "foreground": null,
       "thumb": "modules/sdnd-strahd-adv/images/thumbs/NujGRZv7TxBFUwpT-thumb.webp",
@@ -1425,7 +1425,7 @@
           "rotation": 0,
           "alpha": 1,
           "hidden": false,
-          "locked": true,
+          "locked": false,
           "occlusion": {
             "mode": 0,
             "alpha": 0
@@ -1447,8 +1447,7 @@
               "restriction": "all",
               "controlled": "gm",
               "trigger": [
-                "",
-                "dblclick"
+                ""
               ],
               "allowpaused": false,
               "usealpha": false,
@@ -1459,22 +1458,12 @@
               "cooldown": null,
               "chance": 50,
               "fileindex": 0,
-              "actions": [
-                {
-                  "action": "showhide",
-                  "data": {
-                    "entity": {
-                      "id": "tile",
-                      "name": "This Tile"
-                    },
-                    "collection": "tokens",
-                    "hidden": "toggle",
-                    "fade": 1
-                  },
-                  "id": "rbsFgCU3hzBTPRhY"
-                }
-              ],
-              "files": []
+              "actions": [],
+              "files": [],
+              "name": "Elevator_0"
+            },
+            "stroud-dnd-helpers": {
+              "tagName": "First Floor Elevator"
             }
           },
           "sort": 100,
@@ -1483,6 +1472,339 @@
             "weather": false
           },
           "elevation": 0
+        },
+        {
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                "dblclick"
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [
+                {
+                  "action": "teleport",
+                  "data": {
+                    "entity": {
+                      "id": "token",
+                      "name": "Triggering Token"
+                    },
+                    "location": {
+                      "id": "Scene.zqbxmKbL4QbicKiM.Tile.TtqC8Pr9VwNQA6IN",
+                      "name": "Tile: TtqC8Pr9VwNQA6IN"
+                    },
+                    "position": "relative",
+                    "remotesnap": true,
+                    "animatepan": false,
+                    "triggerremote": false,
+                    "deletesource": false,
+                    "preservesettings": true,
+                    "avoidtokens": false,
+                    "colour": "#ff0000"
+                  },
+                  "id": "O9Gz5KVTFJxqdN0w"
+                }
+              ],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            },
+            "stroud-dnd-helpers": {
+              "tagName": "First Floor Elevator"
+            }
+          },
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/icons/ladder_ascending.webp",
+            "scaleX": 1,
+            "scaleY": 1,
+            "tint": "#ffffff",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "rotation": 0,
+            "alphaThreshold": 0.75
+          },
+          "x": 1350,
+          "y": 1150,
+          "sort": 102,
+          "width": 50,
+          "height": 50,
+          "rotation": 0,
+          "alpha": 0.5,
+          "elevation": 0,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "_id": "EYttArVAHmY1MPb8",
+          "hidden": false,
+          "locked": true
+        },
+        {
+          "x": 1500,
+          "y": 1050,
+          "width": 50,
+          "height": 50,
+          "flags": {
+            "monks-active-tiles": {
+              "active": true,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                "",
+                "dblclick"
+              ],
+              "pertoken": false,
+              "minrequired": 0,
+              "chance": 100,
+              "actions": [
+                {
+                  "action": "runmacro",
+                  "data": {
+                    "entity": {
+                      "id": "Compendium.stroud-dnd-helpers.SDND-GM-Macros.Macro.PaPNLtneogY3NvCs"
+                    },
+                    "args": "\"First Floor Elevator\"",
+                    "runasgm": "gm"
+                  },
+                  "id": "OseqrAR1v0PJKUIm"
+                }
+              ],
+              "name": "",
+              "record": false,
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": false,
+              "cooldown": null,
+              "fileindex": 0,
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "_id": "WB4eItI5uLQft04U",
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/icons/toggle_tiles.webp",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "tint": "#ffffff",
+            "alphaThreshold": 0.75
+          },
+          "elevation": 0,
+          "sort": 103,
+          "rotation": 0,
+          "alpha": 1,
+          "hidden": true,
+          "locked": true,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          }
+        },
+        {
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                "dblclick"
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [
+                {
+                  "action": "teleport",
+                  "data": {
+                    "entity": {
+                      "id": "token",
+                      "name": "Triggering Token"
+                    },
+                    "location": {
+                      "id": "Scene.zqbxmKbL4QbicKiM.Tile.3yYj7IH6kbEVRIGB",
+                      "name": "Scaf_1_fb"
+                    },
+                    "position": "center",
+                    "remotesnap": true,
+                    "animatepan": false,
+                    "triggerremote": false,
+                    "deletesource": false,
+                    "preservesettings": true,
+                    "avoidtokens": false,
+                    "colour": "#ff0000"
+                  },
+                  "id": "O9Gz5KVTFJxqdN0w"
+                }
+              ],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            },
+            "stroud-dnd-helpers": {
+              "tagName": "First Floor Elevator"
+            }
+          },
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/icons/ladder_ascending.webp",
+            "scaleX": 1,
+            "scaleY": 1,
+            "tint": "#ffffff",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "rotation": 0,
+            "alphaThreshold": 0.75
+          },
+          "x": 1050,
+          "y": 1350,
+          "sort": 102,
+          "width": 50,
+          "height": 50,
+          "rotation": 0,
+          "alpha": 0.5,
+          "elevation": 0,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "hidden": false,
+          "locked": false,
+          "_id": "B82LCQnKM4K2Qqur"
+        },
+        {
+          "flags": {
+            "monks-active-tiles": {
+              "name": "Scaf_0",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                ""
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/void.webp",
+            "scaleX": 1,
+            "scaleY": 1,
+            "tint": "#ffffff",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "rotation": 0,
+            "alphaThreshold": 0.75
+          },
+          "x": 1000,
+          "y": 1400,
+          "sort": 104,
+          "width": 100,
+          "height": 100,
+          "rotation": 0,
+          "alpha": 1,
+          "elevation": 0,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "_id": "QL3pFQYHOuRnQSV4",
+          "hidden": true,
+          "locked": false
         }
       ],
       "walls": [
@@ -2494,9 +2816,9 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "12.331",
+        "coreVersion": "12.343",
         "createdTime": 1719970603466,
-        "modifiedTime": 1729431494260,
+        "modifiedTime": 1750195534621,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
         "duplicateSource": null
@@ -2551,7 +2873,7 @@
       "name": "V2. Van Richten’s Tower (1st Floor)",
       "active": false,
       "navigation": false,
-      "navOrder": 0,
+      "navOrder": 1075000,
       "navName": "",
       "foreground": null,
       "thumb": "modules/sdnd-strahd-adv/images/thumbs/zqbxmKbL4QbicKiM-thumb.webp",
@@ -2945,8 +3267,7 @@
               "restriction": "all",
               "controlled": "gm",
               "trigger": [
-                "",
-                "dblclick"
+                ""
               ],
               "allowpaused": false,
               "usealpha": false,
@@ -2957,22 +3278,9 @@
               "cooldown": null,
               "chance": 50,
               "fileindex": 0,
-              "actions": [
-                {
-                  "action": "showhide",
-                  "data": {
-                    "entity": {
-                      "id": "tile",
-                      "name": "This Tile"
-                    },
-                    "collection": "tokens",
-                    "hidden": "toggle",
-                    "fade": 1
-                  },
-                  "id": "rbsFgCU3hzBTPRhY"
-                }
-              ],
-              "files": []
+              "actions": [],
+              "files": [],
+              "name": "Elevator_1"
             }
           },
           "_id": "TtqC8Pr9VwNQA6IN",
@@ -2982,6 +3290,512 @@
             "weather": false
           },
           "elevation": 0
+        },
+        {
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                "dblclick"
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [
+                {
+                  "action": "teleport",
+                  "data": {
+                    "entity": {
+                      "id": "token",
+                      "name": "Triggering Token"
+                    },
+                    "location": {
+                      "id": "Scene.apSEO786aX6hNU0y.Tile.DAtbs7I7zp39sWmJ",
+                      "name": "Elevator_2"
+                    },
+                    "position": "relative",
+                    "remotesnap": true,
+                    "animatepan": false,
+                    "triggerremote": false,
+                    "deletesource": false,
+                    "preservesettings": true,
+                    "avoidtokens": false,
+                    "colour": "#ff0000"
+                  },
+                  "id": "O9Gz5KVTFJxqdN0w"
+                }
+              ],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            },
+            "stroud-dnd-helpers": {
+              "tagName": "First Floor Elevator"
+            }
+          },
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/icons/ladder_ascending.webp",
+            "scaleX": 1,
+            "scaleY": 1,
+            "tint": "#ffffff",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "rotation": 0,
+            "alphaThreshold": 0.75
+          },
+          "x": 1350,
+          "y": 1150,
+          "sort": 102,
+          "width": 50,
+          "height": 50,
+          "rotation": 0,
+          "alpha": 0.5,
+          "elevation": 0,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "hidden": false,
+          "locked": false,
+          "_id": "ay4bVhsHVbCNrzid"
+        },
+        {
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                "dblclick"
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [
+                {
+                  "action": "teleport",
+                  "data": {
+                    "entity": {
+                      "id": "token",
+                      "name": "Triggering Token"
+                    },
+                    "location": {
+                      "id": "Scene.NujGRZv7TxBFUwpT.Tile.5iKHFvFgExQXIOTE",
+                      "name": "Elevator_0"
+                    },
+                    "position": "relative",
+                    "remotesnap": true,
+                    "animatepan": false,
+                    "triggerremote": false,
+                    "deletesource": false,
+                    "preservesettings": true,
+                    "avoidtokens": false,
+                    "colour": "#ff0000"
+                  },
+                  "id": "O9Gz5KVTFJxqdN0w"
+                }
+              ],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            },
+            "stroud-dnd-helpers": {
+              "tagName": "First Floor Elevator"
+            }
+          },
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/icons/ladder_descending.webp",
+            "scaleX": 1,
+            "scaleY": 1,
+            "tint": "#ffffff",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "rotation": 0,
+            "alphaThreshold": 0.75
+          },
+          "x": 1300,
+          "y": 1150,
+          "sort": 102,
+          "width": 50,
+          "height": 50,
+          "rotation": 0,
+          "alpha": 0.5,
+          "elevation": 0,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "hidden": false,
+          "locked": false,
+          "_id": "oQRTT5Z38cTg7Nga"
+        },
+        {
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                "dblclick"
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [
+                {
+                  "action": "teleport",
+                  "data": {
+                    "entity": {
+                      "id": "token",
+                      "name": "Triggering Token"
+                    },
+                    "location": {
+                      "id": "Scene.NujGRZv7TxBFUwpT.Tile.QL3pFQYHOuRnQSV4",
+                      "name": "Scaf_0"
+                    },
+                    "position": "relative",
+                    "remotesnap": true,
+                    "animatepan": false,
+                    "triggerremote": false,
+                    "deletesource": false,
+                    "preservesettings": true,
+                    "avoidtokens": false,
+                    "colour": "#ff0000"
+                  },
+                  "id": "O9Gz5KVTFJxqdN0w"
+                }
+              ],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            },
+            "stroud-dnd-helpers": {
+              "tagName": "First Floor Elevator"
+            }
+          },
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/icons/ladder_descending.webp",
+            "scaleX": 1,
+            "scaleY": 1,
+            "tint": "#ffffff",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "rotation": 0,
+            "alphaThreshold": 0.75
+          },
+          "x": 1050,
+          "y": 1350,
+          "sort": 102,
+          "width": 50,
+          "height": 50,
+          "rotation": 0,
+          "alpha": 0.5,
+          "elevation": 0,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "hidden": false,
+          "locked": false,
+          "_id": "961wprY9TLBfLnxT"
+        },
+        {
+          "flags": {
+            "monks-active-tiles": {
+              "name": "Scaf_1_fb",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                ""
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/void.webp",
+            "scaleX": 1,
+            "scaleY": 1,
+            "tint": "#ffffff",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "rotation": 0,
+            "alphaThreshold": 0.75
+          },
+          "x": 1050,
+          "y": 1250,
+          "sort": 104,
+          "width": 50,
+          "height": 100,
+          "rotation": 0,
+          "alpha": 1,
+          "elevation": 0,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "hidden": true,
+          "locked": false,
+          "_id": "3yYj7IH6kbEVRIGB"
+        },
+        {
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                "dblclick"
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [
+                {
+                  "action": "teleport",
+                  "data": {
+                    "entity": {
+                      "id": "token",
+                      "name": "Triggering Token"
+                    },
+                    "location": {
+                      "id": "Scene.apSEO786aX6hNU0y.Tile.M60sP2Qc5s0mCMuF",
+                      "name": "Scaf_2"
+                    },
+                    "position": "center",
+                    "remotesnap": true,
+                    "animatepan": false,
+                    "triggerremote": false,
+                    "deletesource": false,
+                    "preservesettings": true,
+                    "avoidtokens": false,
+                    "colour": "#ff0000"
+                  },
+                  "id": "O9Gz5KVTFJxqdN0w"
+                }
+              ],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            },
+            "stroud-dnd-helpers": {
+              "tagName": "First Floor Elevator"
+            }
+          },
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/icons/ladder_ascending.webp",
+            "scaleX": 1,
+            "scaleY": 1,
+            "tint": "#ffffff",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "rotation": 0,
+            "alphaThreshold": 0.75
+          },
+          "x": 1213,
+          "y": 977,
+          "sort": 102,
+          "width": 50,
+          "height": 50,
+          "rotation": 0,
+          "alpha": 0.5,
+          "elevation": 0,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "hidden": false,
+          "locked": true,
+          "_id": "FLjlGYn9fXfejyjW"
+        },
+        {
+          "flags": {
+            "monks-active-tiles": {
+              "name": "Scaf_1_fa",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                ""
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/void.webp",
+            "scaleX": 1,
+            "scaleY": 1,
+            "tint": "#ffffff",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "rotation": 0,
+            "alphaThreshold": 0.75
+          },
+          "x": 1100,
+          "y": 950,
+          "sort": 104,
+          "width": 100,
+          "height": 50,
+          "rotation": 0,
+          "alpha": 1,
+          "elevation": 0,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "hidden": true,
+          "locked": false,
+          "_id": "g6mRxXcabFmpYkZD"
         }
       ],
       "walls": [
@@ -2990,8 +3804,8 @@
           "c": [
             1050,
             1375,
-            1037,
-            1212
+            1025,
+            1213
           ],
           "light": 0,
           "move": 20,
@@ -3011,10 +3825,10 @@
         {
           "_id": "zg5ApN3HrDqSObW6",
           "c": [
-            1037,
-            1200,
-            1037,
-            1087
+            1025,
+            1213,
+            1025,
+            1088
           ],
           "light": 0,
           "move": 20,
@@ -3034,33 +3848,10 @@
         {
           "_id": "ZwWGVFzqRpHnOU87",
           "c": [
-            1037,
-            1087,
-            1062,
-            1037
-          ],
-          "light": 0,
-          "move": 20,
-          "sight": 0,
-          "sound": 0,
-          "dir": 0,
-          "door": 0,
-          "ds": 0,
-          "flags": {},
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          }
-        },
-        {
-          "_id": "U0zo7Y49m5E46E0A",
-          "c": [
-            1062,
-            1037,
             1025,
-            1012
+            1088,
+            1025,
+            1013
           ],
           "light": 0,
           "move": 20,
@@ -4042,9 +4833,9 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "12.331",
+        "coreVersion": "12.343",
         "createdTime": 1719970613989,
-        "modifiedTime": 1729120410798,
+        "modifiedTime": 1750195536249,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
         "duplicateSource": null
@@ -4099,7 +4890,7 @@
       "name": "V3. Van Richten’s Tower (2nd Floor)",
       "active": false,
       "navigation": false,
-      "navOrder": 0,
+      "navOrder": 1175000,
       "navName": "",
       "foreground": null,
       "thumb": "modules/sdnd-strahd-adv/images/thumbs/apSEO786aX6hNU0y-thumb.webp",
@@ -4457,8 +5248,7 @@
               "restriction": "all",
               "controlled": "gm",
               "trigger": [
-                "",
-                "dblclick"
+                ""
               ],
               "allowpaused": false,
               "usealpha": false,
@@ -4469,22 +5259,9 @@
               "cooldown": null,
               "chance": 50,
               "fileindex": 0,
-              "actions": [
-                {
-                  "action": "showhide",
-                  "data": {
-                    "entity": {
-                      "id": "tile",
-                      "name": "This Tile"
-                    },
-                    "collection": "tokens",
-                    "hidden": "toggle",
-                    "fade": 1
-                  },
-                  "id": "rbsFgCU3hzBTPRhY"
-                }
-              ],
-              "files": []
+              "actions": [],
+              "files": [],
+              "name": "Elevator_2"
             }
           },
           "_id": "DAtbs7I7zp39sWmJ",
@@ -4494,6 +5271,352 @@
             "weather": false
           },
           "elevation": 0
+        },
+        {
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                "dblclick"
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [
+                {
+                  "action": "teleport",
+                  "data": {
+                    "entity": {
+                      "id": "token",
+                      "name": "Triggering Token"
+                    },
+                    "location": {
+                      "id": "Scene.zqbxmKbL4QbicKiM.Tile.TtqC8Pr9VwNQA6IN",
+                      "name": "Elevator_1"
+                    },
+                    "position": "relative",
+                    "remotesnap": true,
+                    "animatepan": false,
+                    "triggerremote": false,
+                    "deletesource": false,
+                    "preservesettings": true,
+                    "avoidtokens": false,
+                    "colour": "#ff0000"
+                  },
+                  "id": "O9Gz5KVTFJxqdN0w"
+                }
+              ],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            },
+            "stroud-dnd-helpers": {
+              "tagName": "First Floor Elevator"
+            }
+          },
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/icons/ladder_descending.webp",
+            "scaleX": 1,
+            "scaleY": 1,
+            "tint": "#ffffff",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "rotation": 0,
+            "alphaThreshold": 0.75
+          },
+          "x": 1600,
+          "y": 1650,
+          "sort": 102,
+          "width": 50,
+          "height": 50,
+          "rotation": 0,
+          "alpha": 0.5,
+          "elevation": 0,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "hidden": false,
+          "locked": false,
+          "_id": "TvewKagFjOiLwI2Y"
+        },
+        {
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                "dblclick"
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [
+                {
+                  "action": "teleport",
+                  "data": {
+                    "entity": {
+                      "id": "token",
+                      "name": "Triggering Token"
+                    },
+                    "location": {
+                      "id": "Scene.xnIetFduR7Fv39PV.Tile.jfhjJACI6xPhEE9s",
+                      "name": "Elevator_3"
+                    },
+                    "position": "relative",
+                    "remotesnap": true,
+                    "animatepan": false,
+                    "triggerremote": false,
+                    "deletesource": false,
+                    "preservesettings": true,
+                    "avoidtokens": false,
+                    "colour": "#ff0000"
+                  },
+                  "id": "O9Gz5KVTFJxqdN0w"
+                }
+              ],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            },
+            "stroud-dnd-helpers": {
+              "tagName": "First Floor Elevator"
+            }
+          },
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/icons/ladder_ascending.webp",
+            "scaleX": 1,
+            "scaleY": 1,
+            "tint": "#ffffff",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "rotation": 0,
+            "alphaThreshold": 0.75
+          },
+          "x": 1650,
+          "y": 1650,
+          "sort": 102,
+          "width": 50,
+          "height": 50,
+          "rotation": 0,
+          "alpha": 0.5,
+          "elevation": 0,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "hidden": false,
+          "locked": false,
+          "_id": "ZijQcOiw4CanYKZV"
+        },
+        {
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                "dblclick"
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [
+                {
+                  "action": "teleport",
+                  "data": {
+                    "entity": {
+                      "id": "token",
+                      "name": "Triggering Token"
+                    },
+                    "location": {
+                      "id": "Scene.zqbxmKbL4QbicKiM.Tile.g6mRxXcabFmpYkZD",
+                      "name": "Scaf_1_fa"
+                    },
+                    "position": "center",
+                    "remotesnap": true,
+                    "animatepan": false,
+                    "triggerremote": false,
+                    "deletesource": false,
+                    "preservesettings": true,
+                    "avoidtokens": false,
+                    "colour": "#ff0000"
+                  },
+                  "id": "O9Gz5KVTFJxqdN0w"
+                }
+              ],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            },
+            "stroud-dnd-helpers": {
+              "tagName": "First Floor Elevator"
+            }
+          },
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/icons/ladder_descending.webp",
+            "scaleX": 1,
+            "scaleY": 1,
+            "tint": "#ffffff",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "rotation": 0,
+            "alphaThreshold": 0.75
+          },
+          "x": 1522,
+          "y": 1473,
+          "sort": 102,
+          "width": 50,
+          "height": 50,
+          "rotation": 0,
+          "alpha": 0.5,
+          "elevation": 0,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "hidden": false,
+          "locked": false,
+          "_id": "cm307SuxLJrswvtN"
+        },
+        {
+          "flags": {
+            "monks-active-tiles": {
+              "name": "Scaf_2",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                ""
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/void.webp",
+            "scaleX": 1,
+            "scaleY": 1,
+            "tint": "#ffffff",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "rotation": 0,
+            "alphaThreshold": 0.75
+          },
+          "x": 1400,
+          "y": 1500,
+          "sort": 104,
+          "width": 100,
+          "height": 100,
+          "rotation": 0,
+          "alpha": 1,
+          "elevation": 0,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "hidden": true,
+          "locked": false,
+          "_id": "M60sP2Qc5s0mCMuF"
         }
       ],
       "walls": [
@@ -5407,9 +6530,9 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "12.331",
+        "coreVersion": "12.343",
         "createdTime": 1719970624243,
-        "modifiedTime": 1729120415134,
+        "modifiedTime": 1750195538169,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
         "duplicateSource": null
@@ -5464,7 +6587,7 @@
       "name": "V4. Van Richten’s Tower (3rd Floor)",
       "active": false,
       "navigation": false,
-      "navOrder": 0,
+      "navOrder": 1275000,
       "navName": "",
       "foreground": null,
       "thumb": "modules/sdnd-strahd-adv/images/thumbs/xnIetFduR7Fv39PV-thumb.webp",
@@ -5576,13 +6699,20 @@
           "appendNumber": false,
           "prependAdjective": false,
           "actorId": "CuKLs0fcyWvOs7Km",
-          "x": 1228,
-          "y": 995,
+          "x": 1233,
+          "y": 985,
           "hidden": true,
           "_id": "GXcdqyH4Vg48rKbp",
           "delta": {
             "_id": "iQylyB2apwP5G7lL",
-            "system": {},
+            "system": {
+              "attributes": {
+                "hp": {
+                  "temp": null,
+                  "tempmax": null
+                }
+              }
+            },
             "items": [],
             "effects": [],
             "flags": {},
@@ -5725,8 +6855,8 @@
           "appendNumber": false,
           "prependAdjective": false,
           "actorId": "MBE40ejmR95pHVLP",
-          "x": 1254,
-          "y": 998,
+          "x": 1250,
+          "y": 950,
           "hidden": true,
           "_id": "KLvj4I7L4DG4t1K2",
           "delta": {
@@ -6052,7 +7182,8 @@
                   "id": "VeJvDRXHQkr0etL3"
                 }
               ],
-              "files": []
+              "files": [],
+              "name": "Elevator_3"
             }
           },
           "sort": 100,
@@ -6061,6 +7192,99 @@
             "weather": false
           },
           "elevation": 0
+        },
+        {
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                "dblclick"
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [
+                {
+                  "action": "teleport",
+                  "data": {
+                    "entity": {
+                      "id": "token",
+                      "name": "Triggering Token"
+                    },
+                    "location": {
+                      "id": "Scene.apSEO786aX6hNU0y.Tile.DAtbs7I7zp39sWmJ",
+                      "name": "Elevator_2"
+                    },
+                    "position": "relative",
+                    "remotesnap": true,
+                    "animatepan": false,
+                    "triggerremote": false,
+                    "deletesource": false,
+                    "preservesettings": true,
+                    "avoidtokens": false,
+                    "colour": "#ff0000"
+                  },
+                  "id": "O9Gz5KVTFJxqdN0w"
+                }
+              ],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            },
+            "stroud-dnd-helpers": {
+              "tagName": "First Floor Elevator"
+            }
+          },
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/icons/ladder_descending.webp",
+            "scaleX": 1,
+            "scaleY": 1,
+            "tint": "#ffffff",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "rotation": 0,
+            "alphaThreshold": 0.75
+          },
+          "x": 1300,
+          "y": 1150,
+          "sort": 102,
+          "width": 50,
+          "height": 50,
+          "rotation": 0,
+          "alpha": 0.5,
+          "elevation": 0,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "hidden": false,
+          "locked": false,
+          "_id": "akPHgLyr1UkRTJcC"
         }
       ],
       "walls": [
@@ -7461,9 +8685,9 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "12.331",
+        "coreVersion": "12.343",
         "createdTime": 1719970636070,
-        "modifiedTime": 1729431494284,
+        "modifiedTime": 1750195540487,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
         "duplicateSource": null
@@ -7991,7 +9215,7 @@
     "systemVersion": "3.2.1",
     "coreVersion": "12.343",
     "createdTime": 1719970860959,
-    "modifiedTime": 1748178308661,
+    "modifiedTime": 1750195558056,
     "lastModifiedBy": "6yhz13iFYYklKtgA",
     "compendiumSource": null,
     "duplicateSource": null
