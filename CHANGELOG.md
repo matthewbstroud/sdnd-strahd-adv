@@ -1,3 +1,6 @@
+# v12.4.3
+# New Features
+  - Area X: The Amber Temple
 # v12.4.2
 # New Features
   - Area V: Van Richten's Tower
