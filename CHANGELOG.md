@@ -1,3 +1,10 @@
+# v12.4.4
+# New Features  
+  - Area S: Abby
+    - Finish stairs and NPCs
+  - Area U: 
+    - Ulrich Mansion
+      - Fix stairs
 # v12.4.3
 # New Features
   - Area X: The Amber Temple
