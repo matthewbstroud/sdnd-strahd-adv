@@ -1,3 +1,7 @@
+# v12.4.5
+# New Features
+- Yester Hill Additions
+  - Magic Items
 # v12.4.4
 # New Features  
   - Area S: Abby
@@ -221,4 +225,5 @@
 - Conversion to Foundry Version 11
 # v1.0.0: Initial Release of Curse of Strahd Adventure Pack
 - Includes starter scenes
+
 
