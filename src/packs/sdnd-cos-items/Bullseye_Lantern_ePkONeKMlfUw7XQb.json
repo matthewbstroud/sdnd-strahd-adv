@@ -1,0 +1,336 @@
+{
+  "_id": "ePkONeKMlfUw7XQb",
+  "name": "Bullseye Lantern",
+  "type": "consumable",
+  "img": "icons/sundries/lights/lantern-iron-yellow.webp",
+  "effects": [
+    {
+      "tint": "#ffffff",
+      "duration": {
+        "startTime": null,
+        "seconds": 21600,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "flags": {
+        "core": {
+          "statusId": "Convenient Effect: Bullseye Lantern",
+          "overlay": false
+        },
+        "isConvenient": true,
+        "convenientDescription": "",
+        "dae": {
+          "selfTarget": false,
+          "stackable": "none",
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": [],
+          "transfer": true
+        },
+        "dnd5e-helpers": {
+          "rest-effect": "Ignore"
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "None",
+          "radius": null,
+          "alignment": "",
+          "type": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false
+        }
+      },
+      "origin": "Item.4pGTyOjKGOC6gOkY",
+      "transfer": true,
+      "changes": [
+        {
+          "key": "ATL.light.dim",
+          "mode": 5,
+          "value": "120",
+          "priority": 50
+        },
+        {
+          "key": "ATL.light.bright",
+          "mode": 5,
+          "value": "60",
+          "priority": 50
+        },
+        {
+          "key": "ATL.light.angle",
+          "mode": 5,
+          "value": "52.5",
+          "priority": 50
+        },
+        {
+          "key": "ATL.light.color",
+          "mode": 5,
+          "value": "#cd8737",
+          "priority": 50
+        }
+      ],
+      "_id": "oebhzsx8l2empa4a",
+      "disabled": false,
+      "name": "Bullseye Lantern",
+      "description": "",
+      "statuses": [],
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.343",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.2",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "img": null,
+      "type": "base",
+      "system": {},
+      "sort": 0,
+      "_key": "!items.effects!ePkONeKMlfUw7XQb.oebhzsx8l2empa4a"
+    }
+  ],
+  "folder": "DbLBIQY0Tx3hnH4n",
+  "flags": {
+    "core": {
+      "sourceId": "Compendium.dnd5e.items.UkWdyJYQTfVX2cJW"
+    },
+    "lights-hud-ate": {
+      "enable": true,
+      "use-basic": true,
+      "use-advanced": null,
+      "vision-type": "nochange",
+      "bright-sight-basic": null,
+      "dim-sight-basic": null,
+      "sight-angle-basic": null,
+      "light-source": "lantern-bullseye",
+      "bright-basic": 60,
+      "dim-basic": 120,
+      "alpha-basic": null,
+      "angle-basic": 52.5,
+      "light-luminosity": 2,
+      "animation-speed": 2,
+      "animation-type": "torch",
+      "color-basic": "#cd8737",
+      "lock-rotation": null,
+      "apply-as-atl-ate": true,
+      "name": null
+    },
+    "midi-qol": {
+      "effectActivation": false,
+      "forceCEOff": false
+    },
+    "midiProperties": {
+      "nodam": false,
+      "fulldam": false,
+      "halfdam": false,
+      "rollOther": false,
+      "critOther": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "concentration": false,
+      "toggleEffect": false
+    },
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p>A bullseye lantern casts bright light in a 60-foot cone and dim light for an additional 60 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "PHB pg. 152",
+      "revision": 1,
+      "rules": "2014"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 2,
+      "units": "lb"
+    },
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "common",
+    "identified": true,
+    "uses": {
+      "max": "1",
+      "autoDestroy": false,
+      "spent": 0,
+      "recovery": []
+    },
+    "damage": {
+      "base": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      },
+      "replace": false
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "trinket",
+      "subtype": ""
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "6",
+          "units": "hour",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "sort": 0,
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "none"
+      }
+    },
+    "identifier": "bullseye-lantern",
+    "container": null,
+    "attuned": false,
+    "magicalBonus": null,
+    "properties": []
+  },
+  "_stats": {
+    "compendiumSource": "Compendium.dnd5e.items.UkWdyJYQTfVX2cJW",
+    "duplicateSource": null,
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.2",
+    "createdTime": 1755207533686,
+    "modifiedTime": 1755207533686,
+    "lastModifiedBy": "Xhr6fVPGIbvrReaZ"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "Xhr6fVPGIbvrReaZ": 3
+  },
+  "_key": "!items!ePkONeKMlfUw7XQb"
+}

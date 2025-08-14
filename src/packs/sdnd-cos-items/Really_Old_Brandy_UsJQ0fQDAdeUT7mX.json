@@ -1,0 +1,243 @@
+{
+  "_id": "UsJQ0fQDAdeUT7mX",
+  "name": "Really Old Brandy",
+  "type": "consumable",
+  "img": "icons/consumables/drinks/alcohol-spirits-bottle-blue.webp",
+  "effects": [],
+  "folder": "zPbMtOEWAIlK9B06",
+  "flags": {
+    "midi-qol": {
+      "effectActivation": false,
+      "onUseMacroName": "[preItemRoll]ItemMacro"
+    },
+    "midiProperties": {
+      "nodam": false,
+      "fulldam": false,
+      "halfdam": false,
+      "rollOther": false,
+      "critOther": false,
+      "magicdam": false,
+      "magiceffect": false,
+      "concentration": false,
+      "toggleEffect": false
+    },
+    "itemacro": {
+      "macro": {
+        "_id": null,
+        "name": "Really Old Brandy",
+        "type": "script",
+        "author": "6yhz13iFYYklKtgA",
+        "img": "icons/svg/dice-target.svg",
+        "scope": "global",
+        "command": "let actor;\nlet buzzed = \"Buzzed\";\nlet poisoned = \"Alcohol Poisoning\";\nconst speaker = ChatMessage.getSpeaker();\nif (speaker.token)\n    actor = game.actors.tokens[speaker.token];\nactor ??= game.actors.get(speaker.actor);\nif (!actor)\n    return;\n\nif (game.dfreds.effectInterface.hasEffectApplied(buzzed, actor.uuid)) {\n    ChatMessage.create({\n        user: game.user.id,\n        speaker: ChatMessage.getSpeaker(),\n        content: \"Drinks to much brandy and turns a bit green...\",\n        type: CONST.CHAT_MESSAGE_TYPES.EMOTE\n    });\n    if (!game.dfreds.effectInterface.hasEffectApplied(poisoned, actor.uuid)) {\n        game.dfreds.effectInterface.addEffect({ effectName: poisoned, uuid: actor.uuid });\n    }\n}\nelse {\n    game.dfreds.effectInterface.addEffect({ effectName: buzzed, uuid: actor.uuid });\n    var newHp = actor.data.data.attributes.hp.value + 1;\n    var maxHp = actor.data.data.attributes.hp.max;\n    var message = \"Pops the cork on the brandy and takes a sip.  He gets a warm feeling\";\n    if (newHp < maxHp) {\n        message +=  \" and feels better.\";\n        ChatMessage.create({\n            user: game.user.id,\n            speaker: ChatMessage.getSpeaker(),\n            content: \"Pops the cork on the brandy and takes a sip.  He gets a warm feeling and feels better.\",\n            type: CONST.CHAT_MESSAGE_TYPES.OOC\n        });\n        actor.update({\"data.attributes.hp.value\": newHp});\n    }\n    else {\n        message += \".\";\n    }\n    ChatMessage.create({\n        user: game.user.id,\n        speaker: ChatMessage.getSpeaker(),\n        content: message,\n        type: CONST.CHAT_MESSAGE_TYPES.OOC\n    });\n\n}\nawait item.update({\"data.quantity\": (item.data.data.quantity - 1)});\nif (item.data.data.quantity == 0) {\n    item.delete();\n}",
+        "folder": null,
+        "sort": 0,
+        "permission": {
+          "default": 0
+        },
+        "flags": {}
+      }
+    },
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "system": {
+    "description": {
+      "value": "<p>This is a fine brandy, but seems to be very very old...</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "revision": 1,
+      "rules": "2024"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 1,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "equipped": false,
+    "rarity": "uncommon",
+    "identified": true,
+    "uses": {
+      "max": "1",
+      "autoDestroy": false,
+      "spent": 0,
+      "recovery": []
+    },
+    "damage": {
+      "base": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      },
+      "replace": false
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "type": {
+      "value": "potion",
+      "subtype": ""
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "heal",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "healing": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "whole",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "sort": 0,
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "forceDialog": false,
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        }
+      }
+    },
+    "identifier": "really-old-brandy",
+    "container": null,
+    "attuned": false,
+    "magicalBonus": null,
+    "properties": []
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.2",
+    "createdTime": 1755207533686,
+    "modifiedTime": 1755207533686,
+    "lastModifiedBy": "Xhr6fVPGIbvrReaZ"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "Xhr6fVPGIbvrReaZ": 3
+  },
+  "_key": "!items!UsJQ0fQDAdeUT7mX"
+}
