@@ -1,3 +1,8 @@
+# v12.4.6
+# New Features
+- More content changes
+# Bug Fixes
+- Restructure item references.
 # v12.4.5
 # New Features
 - Yester Hill Additions
@@ -225,5 +230,6 @@
 - Conversion to Foundry Version 11
 # v1.0.0: Initial Release of Curse of Strahd Adventure Pack
 - Includes starter scenes
+
 
 

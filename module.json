@@ -50,6 +50,24 @@
 				}
 			},
 			{
+				"id": "item-piles",
+				"type": "module",
+				"manifest": "https://github.com/fantasycalendar/FoundryVTT-ItemPiles/releases/latest/download/module.json",
+				"comaptibility": {
+					"minimum": "3.2.13",
+					"verified": "3.2.13"
+				}
+			},
+			{
+				"id": "itempilesdnd5e",
+				"type": "module",
+				"manifest": "https://github.com/fantasycalendar/FoundryVTT-ItemPilesDnD5e/releases/latest/download/module.json",
+				"comaptibility": {
+					"minimum": "1.0.4",
+					"verified": "1.0.4"
+				}
+			},
+			{
 				"id": "stroud-dnd-helpers",
 				"type": "module",
 				"manifest": "https://github.com/matthewbstroud/stroud-dnd-helpers/releases/latest/download/module.json",
@@ -73,6 +91,18 @@
 			"label": "Strahd Actors",
 			"path": "packs/sdnd-cos-actors.db",
 			"type": "Actor",
+			"ownership": {
+				"PLAYER": "LIMITED",
+				"ASSISTANT": "OWNER",
+				"GAMEMASTER": "OWNER"
+			},
+			"module": "sdnd-strahd-adv"
+		},
+		{
+			"name": "sdnd-cos-items",
+			"label": "Strahd Items",
+			"path": "packs/sdnd-cos-items.db",
+			"type": "Item",
 			"ownership": {
 				"PLAYER": "LIMITED",
 				"ASSISTANT": "OWNER",
@@ -135,6 +165,7 @@
 			"color": "#ff0000",
 			"packs": [
 				"sdnd-cos-actors",
+				"sdnd-cos-items",
 				"sdnd-cos-macros",
 				"sdnd-cos-roll-tables"
 			],
