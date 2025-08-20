@@ -19622,192 +19622,6 @@
           }
         },
         {
-          "name": "Regeneration",
-          "type": "feat",
-          "flags": {
-            "ddbimporter": {
-              "dndbeyond": {}
-            },
-            "monsterMunch": {
-              "titleHTML": "<em><strong>Regeneration.</strong></em>",
-              "fullName": "Regeneration."
-            },
-            "dnd5e": {}
-          },
-          "img": "icons/magic/life/heart-cross-strong-purple-orange.webp",
-          "_id": "zw9h02rvzfk95nyc",
-          "effects": [],
-          "folder": null,
-          "sort": 0,
-          "system": {
-            "description": {
-              "value": "<p><em><strong></strong></em> The vampire regains 10 hit points at the start of its turn if it has at least 1 hit point and isn't in sunlight or running water. If the vampire takes radiant damage or damage from holy water, this trait doesn't function at the start of the vampire's next turn.</p>",
-              "chat": ""
-            },
-            "source": {
-              "custom": "Basic Rules pg 354",
-              "revision": 1,
-              "rules": "2024"
-            },
-            "cover": null,
-            "crewed": false,
-            "uses": {
-              "max": "0",
-              "spent": 0,
-              "recovery": []
-            },
-            "type": {
-              "value": "",
-              "subtype": ""
-            },
-            "requirements": "",
-            "activities": {
-              "dnd5eactivity000": {
-                "_id": "dnd5eactivity000",
-                "type": "damage",
-                "activation": {
-                  "type": "",
-                  "value": 0,
-                  "condition": "",
-                  "override": false
-                },
-                "consumption": {
-                  "targets": [],
-                  "scaling": {
-                    "allowed": false,
-                    "max": ""
-                  },
-                  "spellSlot": true
-                },
-                "description": {
-                  "chatFlavor": ""
-                },
-                "duration": {
-                  "concentration": false,
-                  "units": "",
-                  "special": "",
-                  "override": false
-                },
-                "effects": [],
-                "range": {
-                  "units": "",
-                  "special": "",
-                  "override": false
-                },
-                "target": {
-                  "template": {
-                    "count": "",
-                    "contiguous": false,
-                    "type": "",
-                    "size": "",
-                    "width": "",
-                    "height": "",
-                    "units": ""
-                  },
-                  "affects": {
-                    "count": "",
-                    "type": "",
-                    "choice": false,
-                    "special": ""
-                  },
-                  "prompt": true,
-                  "override": false
-                },
-                "uses": {
-                  "spent": 0,
-                  "max": "",
-                  "recovery": []
-                },
-                "damage": {
-                  "critical": {
-                    "allow": false,
-                    "bonus": ""
-                  },
-                  "parts": [
-                    {
-                      "number": null,
-                      "denomination": null,
-                      "bonus": "",
-                      "types": [
-                        "healing"
-                      ],
-                      "custom": {
-                        "enabled": false,
-                        "formula": ""
-                      },
-                      "scaling": {
-                        "mode": "whole",
-                        "number": null,
-                        "formula": ""
-                      }
-                    }
-                  ]
-                },
-                "sort": 0,
-                "useConditionText": "",
-                "useConditionReason": "",
-                "effectConditionText": "",
-                "macroData": {
-                  "name": "",
-                  "command": ""
-                },
-                "ignoreTraits": {
-                  "idi": false,
-                  "idr": false,
-                  "idv": false,
-                  "ida": false
-                },
-                "midiProperties": {
-                  "ignoreTraits": [],
-                  "triggeredActivityId": "none",
-                  "triggeredActivityConditionText": "",
-                  "triggeredActivityTargets": "targets",
-                  "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
-                  "confirmTargets": "default",
-                  "autoTargetType": "any",
-                  "autoTargetAction": "default",
-                  "automationOnly": false,
-                  "otherActivityCompatible": true,
-                  "identifier": "",
-                  "displayActivityName": false,
-                  "rollMode": "default",
-                  "chooseEffects": false,
-                  "toggleEffect": false,
-                  "ignoreFullCover": false
-                },
-                "isOverTimeFlag": false,
-                "overTimeProperties": {
-                  "saveRemoves": true,
-                  "preRemoveConditionText": "",
-                  "postRemoveConditionText": ""
-                }
-              }
-            },
-            "identifier": "",
-            "advancement": [],
-            "enchant": {},
-            "prerequisites": {
-              "level": null,
-              "repeatable": false
-            },
-            "properties": []
-          },
-          "ownership": {
-            "default": 0
-          },
-          "_stats": {
-            "systemId": null,
-            "systemVersion": null,
-            "coreVersion": "12.331",
-            "createdTime": null,
-            "modifiedTime": null,
-            "lastModifiedBy": null,
-            "compendiumSource": null,
-            "duplicateSource": null
-          }
-        },
-        {
           "name": "Spider Climb",
           "type": "feat",
           "flags": {
@@ -20500,6 +20314,229 @@
           },
           "_id": "C1Y7BoFANkEcwq2i",
           "sort": 0
+        },
+        {
+          "_id": "YzKjtQNTM9XyvjuV",
+          "name": "Regeneration",
+          "ownership": {
+            "default": 0,
+            "6yhz13iFYYklKtgA": 3
+          },
+          "type": "feat",
+          "system": {
+            "description": {
+              "value": "<section class=\"secret\" id=\"secret-PI44U608F3oGgQsA\"><p>the [[lookup @name lowercase]] regains <strong>10 hit points</strong> at the start of its turn if it has at least <strong>1 hit point</strong>.</p></section><p>the [[lookup @name lowercase]] regains <strong>10 hit points</strong> at the start of its turn.</p>",
+              "chat": ""
+            },
+            "source": {
+              "custom": "",
+              "book": "SRD 5.1",
+              "page": "",
+              "license": "CC-BY-4.0",
+              "rules": "2014",
+              "revision": 1
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            },
+            "type": {
+              "value": "monster",
+              "subtype": ""
+            },
+            "requirements": "",
+            "activities": {
+              "dnd5eactivity000": {
+                "_id": "dnd5eactivity000",
+                "type": "heal",
+                "activation": {
+                  "type": "",
+                  "value": null,
+                  "condition": "",
+                  "override": false
+                },
+                "consumption": {
+                  "targets": [],
+                  "scaling": {
+                    "allowed": false,
+                    "max": ""
+                  },
+                  "spellSlot": true
+                },
+                "description": {
+                  "chatFlavor": ""
+                },
+                "duration": {
+                  "concentration": false,
+                  "value": "",
+                  "units": "inst",
+                  "special": "",
+                  "override": false
+                },
+                "effects": [],
+                "range": {
+                  "units": "self",
+                  "special": "",
+                  "override": false
+                },
+                "target": {
+                  "template": {
+                    "count": "",
+                    "contiguous": false,
+                    "type": "",
+                    "size": "",
+                    "width": "",
+                    "height": "",
+                    "units": ""
+                  },
+                  "affects": {
+                    "count": "",
+                    "type": "",
+                    "choice": false,
+                    "special": ""
+                  },
+                  "prompt": true,
+                  "override": false
+                },
+                "uses": {
+                  "spent": 0,
+                  "max": "",
+                  "recovery": []
+                },
+                "healing": {
+                  "number": null,
+                  "denomination": 0,
+                  "bonus": "",
+                  "types": [],
+                  "custom": {
+                    "enabled": true,
+                    "formula": "10"
+                  },
+                  "scaling": {
+                    "mode": "whole",
+                    "number": null,
+                    "formula": ""
+                  }
+                },
+                "sort": 0,
+                "useConditionText": "",
+                "useConditionReason": "",
+                "effectConditionText": "",
+                "macroData": {
+                  "name": "",
+                  "command": ""
+                },
+                "ignoreTraits": {
+                  "idi": false,
+                  "idr": false,
+                  "idv": false,
+                  "ida": false
+                },
+                "midiProperties": {
+                  "ignoreTraits": [],
+                  "triggeredActivityId": "none",
+                  "triggeredActivityConditionText": "",
+                  "triggeredActivityTargets": "targets",
+                  "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
+                  "confirmTargets": "default",
+                  "autoTargetType": "any",
+                  "autoTargetAction": "default",
+                  "automationOnly": false,
+                  "otherActivityCompatible": true,
+                  "identifier": "",
+                  "displayActivityName": false,
+                  "rollMode": "default",
+                  "chooseEffects": false,
+                  "toggleEffect": false,
+                  "ignoreFullCover": false
+                },
+                "isOverTimeFlag": false,
+                "overTimeProperties": {
+                  "saveRemoves": true,
+                  "preRemoveConditionText": "",
+                  "postRemoveConditionText": ""
+                },
+                "name": ""
+              }
+            },
+            "enchant": {},
+            "prerequisites": {
+              "level": null,
+              "repeatable": false
+            },
+            "properties": [],
+            "identifier": "regeneration",
+            "advancement": [],
+            "cover": null,
+            "crewed": false
+          },
+          "flags": {
+            "midi-qol": {
+              "rollAttackPerTarget": "default",
+              "removeAttackDamageButtons": "default",
+              "itemCondition": "",
+              "reactionCondition": "",
+              "otherCondition": "",
+              "effectCondition": ""
+            },
+            "midiProperties": {
+              "autoFailFriendly": false,
+              "autoSaveFriendly": false,
+              "magicdam": false,
+              "magiceffect": false,
+              "noConcentrationCheck": false,
+              "toggleEffect": false,
+              "ignoreTotalCover": false
+            },
+            "dnd5e": {
+              "riders": {
+                "activity": [],
+                "effect": []
+              }
+            },
+            "chris-premades": {
+              "config": {
+                "generic": {
+                  "genericRegeneration": {
+                    "applied": true,
+                    "damageTypes": [
+                      "radiant"
+                    ],
+                    "showIcons": true,
+                    "threshold": 0,
+                    "zeroHP": false,
+                    "critical": false
+                  }
+                }
+              },
+              "macros": {
+                "midi": {
+                  "actor": [
+                    "genericRegeneration"
+                  ]
+                },
+                "combat": [
+                  "genericRegeneration"
+                ]
+              }
+            }
+          },
+          "img": "icons/skills/wounds/anatomy-organ-heart-red.webp",
+          "effects": [],
+          "folder": null,
+          "sort": 0,
+          "_stats": {
+            "duplicateSource": null,
+            "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.Av7H0ymGdPeTsnwV",
+            "coreVersion": "12.343",
+            "systemId": "dnd5e",
+            "systemVersion": "4.4.2",
+            "createdTime": 1755695963495,
+            "modifiedTime": 1755695963495,
+            "lastModifiedBy": "6yhz13iFYYklKtgA"
+          }
         }
       ],
       "effects": [],
@@ -65351,7 +65388,7 @@
           "value": "treasure",
           "subtype": ""
         },
-        "identifier": "golden-goblet"
+        "identifier": "bronze-crown"
       },
       "effects": [],
       "sort": 0,
@@ -65373,7 +65410,7 @@
         "systemId": "dnd5e",
         "systemVersion": "4.4.2",
         "createdTime": 1750445774759,
-        "modifiedTime": 1750445809428,
+        "modifiedTime": 1755696552142,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       },
       "_id": "juW7tYLki2x2fy1x"
@@ -65540,7 +65577,7 @@
           "value": "treasure",
           "subtype": ""
         },
-        "identifier": "golden-goblet"
+        "identifier": "copper-chalice"
       },
       "effects": [],
       "sort": 0,
@@ -65562,7 +65599,7 @@
         "systemId": "dnd5e",
         "systemVersion": "4.4.2",
         "createdTime": 1750445469174,
-        "modifiedTime": 1750445536531,
+        "modifiedTime": 1755696552208,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       },
       "_id": "p0UhoGTFQ4hLSYuQ"
@@ -65602,7 +65639,7 @@
           "value": "treasure",
           "subtype": ""
         },
-        "identifier": "bronze-urn"
+        "identifier": "crystal-ball"
       },
       "effects": [],
       "sort": 0,
@@ -65627,7 +65664,7 @@
         "systemId": "dnd5e",
         "systemVersion": "4.4.2",
         "createdTime": 1750445716275,
-        "modifiedTime": 1750445752596,
+        "modifiedTime": 1755696552260,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       },
       "_id": "IVkTKvcCBLfgKpLa"
@@ -65862,7 +65899,7 @@
           "value": "treasure",
           "subtype": ""
         },
-        "identifier": "electrum-candelabra"
+        "identifier": "gilded-chariot"
       },
       "effects": [],
       "sort": 0,
@@ -65887,7 +65924,7 @@
         "systemId": "dnd5e",
         "systemVersion": "4.4.2",
         "createdTime": 1750444946297,
-        "modifiedTime": 1750444985495,
+        "modifiedTime": 1755696552367,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       },
       "_id": "W23r5XmBIC5AiHUm"
@@ -65927,7 +65964,7 @@
           "value": "treasure",
           "subtype": ""
         },
-        "identifier": "golden-goblet"
+        "identifier": "gilded-skull"
       },
       "effects": [],
       "sort": 0,
@@ -65949,7 +65986,7 @@
         "systemId": "dnd5e",
         "systemVersion": "4.4.2",
         "createdTime": 1750445564975,
-        "modifiedTime": 1750445620628,
+        "modifiedTime": 1755696552416,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       },
       "_id": "myYPPXOztVSVdz8O"
@@ -66178,7 +66215,7 @@
           "value": "treasure",
           "subtype": ""
         },
-        "identifier": "exquisite-rug"
+        "identifier": "saint-statue"
       },
       "effects": [],
       "sort": 0,
@@ -66203,7 +66240,7 @@
         "systemId": "dnd5e",
         "systemVersion": "4.4.2",
         "createdTime": 1750445099167,
-        "modifiedTime": 1750445178028,
+        "modifiedTime": 1755696552719,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       },
       "_id": "keeg0XIDMi8hMIy9"
@@ -66243,7 +66280,7 @@
           "value": "treasure",
           "subtype": ""
         },
-        "identifier": "wooden-throne"
+        "identifier": "wooden-pony"
       },
       "effects": [],
       "sort": 0,
@@ -66268,7 +66305,7 @@
         "systemId": "dnd5e",
         "systemVersion": "4.4.2",
         "createdTime": 1750445849746,
-        "modifiedTime": 1750445859587,
+        "modifiedTime": 1755696552816,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       },
       "_id": "5NHYIGUw3WMv4rIY"
@@ -66373,7 +66410,7 @@
           "value": "treasure",
           "subtype": ""
         },
-        "identifier": "wooden-throne"
+        "identifier": "marble-vase"
       },
       "effects": [],
       "sort": 0,
@@ -66398,7 +66435,7 @@
         "systemId": "dnd5e",
         "systemVersion": "4.4.2",
         "createdTime": 1750766636080,
-        "modifiedTime": 1750766678829,
+        "modifiedTime": 1755696552565,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       },
       "_id": "gvxhi8715xyCbAZ1"
@@ -66438,7 +66475,7 @@
           "value": "treasure",
           "subtype": ""
         },
-        "identifier": "wooden-throne"
+        "identifier": "wooden-coin"
       },
       "effects": [],
       "sort": 0,
@@ -66463,7 +66500,7 @@
         "systemId": "dnd5e",
         "systemVersion": "4.4.2",
         "createdTime": 1750766726456,
-        "modifiedTime": 1750766799019,
+        "modifiedTime": 1755696552768,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       },
       "_id": "0ynMDnYu1QXGtD1m"
@@ -66503,7 +66540,7 @@
           "value": "treasure",
           "subtype": ""
         },
-        "identifier": "golden-goblet"
+        "identifier": "obsidian-scepter"
       },
       "effects": [],
       "sort": 0,
@@ -66525,7 +66562,7 @@
         "systemId": "dnd5e",
         "systemVersion": "4.4.2",
         "createdTime": 1750766889850,
-        "modifiedTime": 1750766972365,
+        "modifiedTime": 1755696552614,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       },
       "_id": "7oWmJx4wM1Fe1WSy"
@@ -67063,7 +67100,7 @@
           "value": "resource",
           "subtype": ""
         },
-        "identifier": "cap-of-ettercap-fungi"
+        "identifier": "iron-ingot"
       },
       "effects": [],
       "folder": "8zjBs1wvz39eaU0m",
@@ -67089,7 +67126,7 @@
         "systemId": "dnd5e",
         "systemVersion": "4.4.2",
         "createdTime": 1750445267046,
-        "modifiedTime": 1750445406044,
+        "modifiedTime": 1755696552468,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       },
       "ownership": {
@@ -69319,7 +69356,41 @@
         "thickness": 1
       },
       "tokenVision": true,
-      "drawings": [],
+      "drawings": [
+        {
+          "_id": "bSzqbc6QGqn9HTPV",
+          "author": "6yhz13iFYYklKtgA",
+          "shape": {
+            "type": "r",
+            "width": 238,
+            "height": 63,
+            "radius": null,
+            "points": []
+          },
+          "x": 837.5,
+          "y": 1225,
+          "elevation": 0,
+          "sort": 0,
+          "rotation": 0,
+          "bezierFactor": 0,
+          "fillType": 0,
+          "fillColor": "#ffffff",
+          "fillAlpha": 0.1,
+          "strokeWidth": 0,
+          "strokeColor": "#ffffff",
+          "strokeAlpha": 1,
+          "texture": null,
+          "text": "Macro kills lights and summons spectres",
+          "fontFamily": "Signika",
+          "fontSize": 12,
+          "textColor": "#ffffff",
+          "textAlpha": 1,
+          "hidden": true,
+          "locked": true,
+          "interface": false,
+          "flags": {}
+        }
+      ],
       "tokens": [
         {
           "name": "Treasure",
@@ -69824,7 +69895,7 @@
           "actorId": "MBE40ejmR95pHVLP",
           "x": 950,
           "y": 1425,
-          "hidden": false,
+          "hidden": true,
           "_id": "0rpBgZKXOSrwkxQu",
           "delta": {
             "_id": "0rpBgZKXOSrwkxQu",
@@ -72066,7 +72137,7 @@
           "width": 1,
           "height": 1,
           "lockRotation": false,
-          "rotation": 90,
+          "rotation": 270,
           "disposition": -1,
           "displayBars": 40,
           "bar1": {
@@ -72172,8 +72243,8 @@
             "type": null,
             "img": null
           },
-          "x": 2750,
-          "y": 1950,
+          "x": 2743,
+          "y": 1927,
           "elevation": 0,
           "locked": false,
           "_regions": []
@@ -72185,7 +72256,7 @@
           "width": 0.5,
           "height": 0.5,
           "lockRotation": false,
-          "rotation": 0,
+          "rotation": 178.85423716182487,
           "disposition": -1,
           "displayBars": 40,
           "bar1": {
@@ -72617,7 +72688,7 @@
             "img": null
           },
           "x": 2763,
-          "y": 1925,
+          "y": 1900,
           "elevation": 0,
           "locked": false,
           "_regions": []
@@ -74107,7 +74178,7 @@
                     "value": "<p>Contains the following spells:</p><ul><li><p>Level 1</p><ul><li><p>Detect Magic</p></li><li><p>Magic Missile</p></li><li><p>Shield</p></li><li><p>Thunderwave</p></li></ul></li><li><p>Level 2</p><ul><li><p>Acid Arrow</p></li><li><p>Detect Thoughts</p></li><li><p>Invisibility</p></li><li><p>Mirror Image</p></li></ul></li><li><p>Level 3</p><ul><li><p>Animate Dead</p></li><li><p>Counterspell</p></li><li><p>Dispel Magic</p></li><li><p>Fireball</p></li></ul></li><li><p>Level 4</p><ul><li><p>Blight</p></li><li><p>Dimension Door</p></li></ul></li><li><p>Level 5</p><ul><li><p>Cloudkill</p></li><li><p>Scrying</p></li></ul></li><li><p>Level 6</p><ul><li><p>Disintegrate</p></li><li><p>Globe of Invulnerability</p></li></ul></li><li><p>Level 7</p><ul><li><p>Finger of Death</p></li><li><p>Plane Shift</p></li></ul></li><li><p>Level 8</p><ul><li><p>Dominate Monster</p></li><li><p>Power Word Stun</p></li></ul></li><li><p>Level 9</p><ul><li><p>Power Word Kill</p></li></ul></li></ul><p></p>",
                     "chat": ""
                   },
-                  "identifier": "new-item",
+                  "identifier": "the-incants-of-exethanter",
                   "source": {
                     "revision": 1,
                     "rules": "2024"
@@ -76433,7 +76504,7 @@
           "y": 1300,
           "rotation": 0,
           "alpha": 1,
-          "hidden": false,
+          "hidden": true,
           "locked": true,
           "occlusion": {
             "mode": 0,
@@ -79371,9 +79442,9 @@
           "_id": "StHWdJHUUviJapsV",
           "c": [
             1600,
-            2675,
+            2663,
             1600,
-            2725
+            2738
           ],
           "light": 20,
           "move": 20,
@@ -79396,7 +79467,7 @@
             1600,
             2600,
             1600,
-            2625
+            2638
           ],
           "light": 20,
           "move": 20,
@@ -79417,7 +79488,7 @@
           "_id": "7rFcHiJt4oTVdov0",
           "c": [
             1600,
-            2775,
+            2763,
             1600,
             2800
           ],
@@ -80127,51 +80198,12 @@
           }
         },
         {
-          "_id": "r2UcUN1ZOSWIaQ72",
-          "c": [
-            1700,
-            2637,
-            1700,
-            2675
-          ],
-          "light": 10,
-          "move": 20,
-          "sight": 10,
-          "sound": 20,
-          "dir": 0,
-          "door": 0,
-          "ds": 0,
-          "flags": {
-            "dnd5e-helpers": {
-              "coverLevel": 3
-            },
-            "betterroofs": {
-              "externalWall": false
-            },
-            "monks-active-tiles": {
-              "entity": "",
-              "open": false,
-              "close": false,
-              "lock": false,
-              "checklock": false,
-              "secret": false
-            },
-            "smartdoors": {}
-          },
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          }
-        },
-        {
           "_id": "cGkyAOEfA7slGlxS",
           "c": [
             1700,
-            2675,
+            2663,
             1700,
-            2725
+            2738
           ],
           "light": 20,
           "move": 20,
@@ -80205,49 +80237,10 @@
           }
         },
         {
-          "_id": "2nCEuXePB0Ty4ALU",
-          "c": [
-            1700,
-            2725,
-            1700,
-            2775
-          ],
-          "light": 10,
-          "move": 20,
-          "sight": 10,
-          "sound": 20,
-          "dir": 0,
-          "door": 0,
-          "ds": 0,
-          "flags": {
-            "dnd5e-helpers": {
-              "coverLevel": 3
-            },
-            "betterroofs": {
-              "externalWall": false
-            },
-            "monks-active-tiles": {
-              "entity": "",
-              "open": false,
-              "close": false,
-              "lock": false,
-              "checklock": false,
-              "secret": false
-            },
-            "smartdoors": {}
-          },
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          }
-        },
-        {
           "_id": "6KebzEmFPrtceefw",
           "c": [
             1700,
-            2775,
+            2763,
             1700,
             2800
           ],
@@ -80303,86 +80296,8 @@
           "sound": 20,
           "dir": 0,
           "door": 2,
-          "ds": 0,
+          "ds": 2,
           "flags": {},
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          }
-        },
-        {
-          "_id": "b998XuS64G4hq929",
-          "c": [
-            1600,
-            2625,
-            1600,
-            2675
-          ],
-          "light": 10,
-          "move": 20,
-          "sight": 10,
-          "sound": 20,
-          "dir": 0,
-          "door": 0,
-          "ds": 0,
-          "flags": {
-            "dnd5e-helpers": {
-              "coverLevel": 3
-            },
-            "betterroofs": {
-              "externalWall": false
-            },
-            "monks-active-tiles": {
-              "entity": "",
-              "open": false,
-              "close": false,
-              "lock": false,
-              "checklock": false,
-              "secret": false
-            },
-            "smartdoors": {}
-          },
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          }
-        },
-        {
-          "_id": "IV6SXjyTyLOU7r2W",
-          "c": [
-            1600,
-            2725,
-            1600,
-            2775
-          ],
-          "light": 10,
-          "move": 20,
-          "sight": 10,
-          "sound": 20,
-          "dir": 0,
-          "door": 0,
-          "ds": 0,
-          "flags": {
-            "dnd5e-helpers": {
-              "coverLevel": 3
-            },
-            "betterroofs": {
-              "externalWall": false
-            },
-            "monks-active-tiles": {
-              "entity": "",
-              "open": false,
-              "close": false,
-              "lock": false,
-              "checklock": false,
-              "secret": false
-            },
-            "smartdoors": {}
-          },
           "threshold": {
             "light": null,
             "sight": null,
@@ -85137,6 +85052,98 @@
             }
           },
           "doorSound": ""
+        },
+        {
+          "light": 10,
+          "sight": 10,
+          "sound": 10,
+          "move": 20,
+          "c": [
+            2738,
+            1925,
+            2738,
+            1975
+          ],
+          "_id": "B92Z1MPv61e081pC",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "light": 10,
+          "sight": 10,
+          "sound": 10,
+          "move": 20,
+          "c": [
+            2738,
+            1925,
+            2750,
+            1925
+          ],
+          "_id": "AsVqALJ9FxmGBQDt",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "light": 10,
+          "sight": 10,
+          "sound": 10,
+          "move": 20,
+          "c": [
+            2750,
+            1925,
+            2750,
+            1975
+          ],
+          "_id": "tCJaP7iGCGmL3Wan",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
+        },
+        {
+          "light": 10,
+          "sight": 10,
+          "sound": 10,
+          "move": 20,
+          "c": [
+            2750,
+            1975,
+            2738,
+            1975
+          ],
+          "_id": "AuHaQ0YKLQBdvoZ0",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "flags": {}
         }
       ],
       "playlist": null,
@@ -85172,7 +85179,7 @@
         "systemVersion": "3.2.1",
         "coreVersion": "12.343",
         "createdTime": 1704836371703,
-        "modifiedTime": 1755264205389,
+        "modifiedTime": 1755696554747,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
         "duplicateSource": null
@@ -86789,7 +86796,7 @@
                     "value": "treasure",
                     "subtype": ""
                   },
-                  "identifier": "exquisite-rug"
+                  "identifier": "saint-statue"
                 },
                 "effects": [],
                 "sort": 0,
@@ -87529,7 +87536,7 @@
                     "value": "treasure",
                     "subtype": ""
                   },
-                  "identifier": "electrum-candelabra"
+                  "identifier": "gilded-chariot"
                 },
                 "effects": [],
                 "sort": 0,
@@ -88098,7 +88105,7 @@
                     "value": "treasure",
                     "subtype": ""
                   },
-                  "identifier": "golden-goblet"
+                  "identifier": "childs-sarcophagus"
                 },
                 "effects": [],
                 "sort": 0,
@@ -88333,7 +88340,7 @@
                     "value": "treasure",
                     "subtype": ""
                   },
-                  "identifier": "wooden-throne"
+                  "identifier": "wooden-coin"
                 },
                 "effects": [],
                 "sort": 0,
@@ -88401,7 +88408,7 @@
                     "value": "treasure",
                     "subtype": ""
                   },
-                  "identifier": "golden-goblet"
+                  "identifier": "obsidian-scepter"
                 },
                 "effects": [],
                 "sort": 0,
@@ -88472,7 +88479,7 @@
                   "unidentified": {
                     "description": ""
                   },
-                  "identifier": "the-blade-of-truth-copy",
+                  "identifier": "snow-dwarf-and-the-seven-wights",
                   "container": null,
                   "properties": [],
                   "type": {
@@ -88701,7 +88708,7 @@
                     "value": "treasure",
                     "subtype": ""
                   },
-                  "identifier": "bronze-urn"
+                  "identifier": "crystal-ball"
                 },
                 "effects": [],
                 "sort": 0,
@@ -88769,7 +88776,7 @@
                     "value": "treasure",
                     "subtype": ""
                   },
-                  "identifier": "golden-goblet"
+                  "identifier": "bronze-crown"
                 },
                 "effects": [],
                 "sort": 0,
@@ -88834,7 +88841,7 @@
                     "value": "treasure",
                     "subtype": ""
                   },
-                  "identifier": "wooden-throne"
+                  "identifier": "wooden-pony"
                 },
                 "effects": [],
                 "sort": 0,
@@ -88902,7 +88909,7 @@
                     "value": "treasure",
                     "subtype": ""
                   },
-                  "identifier": "wooden-throne"
+                  "identifier": "marble-vase"
                 },
                 "effects": [],
                 "sort": 0,
@@ -89134,7 +89141,7 @@
                     "value": "resource",
                     "subtype": ""
                   },
-                  "identifier": "cap-of-ettercap-fungi"
+                  "identifier": "iron-ingot"
                 },
                 "effects": [],
                 "folder": "8zjBs1wvz39eaU0m",
@@ -89208,7 +89215,7 @@
                     "value": "treasure",
                     "subtype": ""
                   },
-                  "identifier": "golden-goblet"
+                  "identifier": "copper-chalice"
                 },
                 "effects": [],
                 "sort": 0,
@@ -90629,7 +90636,7 @@
                     "value": "treasure",
                     "subtype": ""
                   },
-                  "identifier": "golden-goblet"
+                  "identifier": "golden-hawk"
                 },
                 "effects": [],
                 "sort": 0,
@@ -105941,7 +105948,7 @@
         "systemVersion": "3.2.1",
         "coreVersion": "12.343",
         "createdTime": 1719971196961,
-        "modifiedTime": 1755264208528,
+        "modifiedTime": 1755696557727,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
         "duplicateSource": null
@@ -106678,7 +106685,7 @@
     "systemVersion": "3.2.1",
     "coreVersion": "12.343",
     "createdTime": 1719971361644,
-    "modifiedTime": 1755264364843,
+    "modifiedTime": 1755696793863,
     "lastModifiedBy": "6yhz13iFYYklKtgA",
     "compendiumSource": null,
     "duplicateSource": null
