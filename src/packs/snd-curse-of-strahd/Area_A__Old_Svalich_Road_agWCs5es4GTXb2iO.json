@@ -4,7 +4,988 @@
   "caption": "Area A: Old Svalich Road",
   "sort": 0,
   "description": "<p><span style=\"font-family:Roboto, Helvetica, sans-serif\">Black pools of water stand like dark mirrors in and around the muddy roadway. Giant trees loom on both sides of the road, their branches clawing at the mist.</span></p>",
-  "actors": [],
+  "actors": [
+    {
+      "name": "Commoner",
+      "type": "npc",
+      "img": "systems/dnd5e/tokens/humanoid/Commoner.webp",
+      "items": [
+        {
+          "_id": "HwktDnB8qdr0BYGZ",
+          "name": "Club",
+          "type": "weapon",
+          "img": "icons/weapons/clubs/club-simple-barbed.webp",
+          "effects": [],
+          "folder": null,
+          "sort": 100000,
+          "flags": {
+            "dnd5e": {}
+          },
+          "system": {
+            "description": {
+              "value": "<section class=\"secret\">\n<p><em>Melee Weapon Attack:</em><strong>+2 to hit,</strong>, <strong>5 ft.,</strong> one target. Hit: <strong>2 (1d4) <em>bludgeoning damage</em></strong>.</p></section>\n<p>The Commoner attacks with their Club.</p>",
+              "chat": ""
+            },
+            "source": {
+              "custom": "PHB pg. 149",
+              "revision": 1,
+              "rules": "2024"
+            },
+            "quantity": 1,
+            "weight": {
+              "value": 2,
+              "units": "lb"
+            },
+            "price": {
+              "value": 1,
+              "denomination": "gp"
+            },
+            "attunement": "",
+            "equipped": true,
+            "rarity": "common",
+            "identified": true,
+            "cover": null,
+            "crewed": false,
+            "range": {
+              "value": null,
+              "long": null,
+              "units": "ft",
+              "reach": null
+            },
+            "uses": {
+              "max": "",
+              "spent": 0,
+              "recovery": []
+            },
+            "damage": {
+              "versatile": {
+                "number": null,
+                "denomination": null,
+                "bonus": "",
+                "types": [],
+                "custom": {
+                  "enabled": false,
+                  "formula": ""
+                },
+                "scaling": {
+                  "mode": "",
+                  "number": null,
+                  "formula": ""
+                }
+              },
+              "base": {
+                "number": 1,
+                "denomination": 4,
+                "bonus": "",
+                "types": [
+                  "bludgeoning"
+                ],
+                "custom": {
+                  "enabled": false,
+                  "formula": ""
+                },
+                "scaling": {
+                  "mode": "",
+                  "number": null,
+                  "formula": ""
+                }
+              }
+            },
+            "armor": {
+              "value": 10
+            },
+            "hp": {
+              "value": 0,
+              "max": 0,
+              "dt": null,
+              "conditions": ""
+            },
+            "properties": [
+              "lgt"
+            ],
+            "proficient": 1,
+            "attuned": false,
+            "unidentified": {
+              "description": ""
+            },
+            "type": {
+              "value": "simpleM",
+              "baseItem": ""
+            },
+            "activities": {
+              "dnd5eactivity000": {
+                "_id": "dnd5eactivity000",
+                "type": "attack",
+                "activation": {
+                  "type": "action",
+                  "value": 1,
+                  "condition": "",
+                  "override": false
+                },
+                "consumption": {
+                  "targets": [],
+                  "scaling": {
+                    "allowed": false,
+                    "max": ""
+                  },
+                  "spellSlot": true
+                },
+                "description": {
+                  "chatFlavor": ""
+                },
+                "duration": {
+                  "concentration": false,
+                  "value": "",
+                  "units": "",
+                  "special": "",
+                  "override": false
+                },
+                "effects": [],
+                "range": {
+                  "units": "ft",
+                  "special": "",
+                  "override": false
+                },
+                "target": {
+                  "template": {
+                    "count": "",
+                    "contiguous": false,
+                    "type": "",
+                    "size": "",
+                    "width": "",
+                    "height": "",
+                    "units": ""
+                  },
+                  "affects": {
+                    "count": "",
+                    "type": "",
+                    "choice": false,
+                    "special": ""
+                  },
+                  "prompt": true,
+                  "override": false
+                },
+                "uses": {
+                  "spent": 0,
+                  "max": "",
+                  "recovery": []
+                },
+                "attack": {
+                  "ability": "str",
+                  "bonus": "",
+                  "critical": {
+                    "threshold": null
+                  },
+                  "flat": false,
+                  "type": {
+                    "value": "melee",
+                    "classification": "weapon"
+                  }
+                },
+                "damage": {
+                  "critical": {
+                    "bonus": ""
+                  },
+                  "includeBase": true,
+                  "parts": []
+                },
+                "sort": 0,
+                "useConditionText": "",
+                "useConditionReason": "",
+                "effectConditionText": "",
+                "macroData": {
+                  "name": "",
+                  "command": ""
+                },
+                "ignoreTraits": {
+                  "idi": false,
+                  "idr": false,
+                  "idv": false,
+                  "ida": false
+                },
+                "midiProperties": {
+                  "ignoreTraits": [],
+                  "triggeredActivityId": "none",
+                  "triggeredActivityConditionText": "",
+                  "triggeredActivityTargets": "targets",
+                  "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
+                  "confirmTargets": "default",
+                  "autoTargetType": "any",
+                  "autoTargetAction": "default",
+                  "automationOnly": false,
+                  "otherActivityCompatible": true,
+                  "identifier": "",
+                  "displayActivityName": false,
+                  "rollMode": "default",
+                  "chooseEffects": false,
+                  "toggleEffect": false,
+                  "ignoreFullCover": false
+                },
+                "isOverTimeFlag": false,
+                "overTimeProperties": {
+                  "saveRemoves": true,
+                  "preRemoveConditionText": "",
+                  "postRemoveConditionText": ""
+                },
+                "otherActivityId": "",
+                "attackMode": "oneHanded",
+                "ammunition": "",
+                "otherActivityUuid": ""
+              }
+            },
+            "identifier": "",
+            "container": null,
+            "ammunition": {},
+            "magicalBonus": null
+          },
+          "ownership": {
+            "default": 0
+          },
+          "_stats": {
+            "systemId": null,
+            "systemVersion": null,
+            "coreVersion": "12.331",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
+          }
+        }
+      ],
+      "effects": [],
+      "folder": "JvBq76KcnxIjY4N7",
+      "sort": 250000,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.dnd5e.monsters.SqZRuJ8lt2KGJBbq"
+        },
+        "midi-qol": {
+          "concentration-damage": 0
+        },
+        "anonymous": {
+          "showName": true
+        }
+      },
+      "_id": "2p6p5Vx41kf5UJWT",
+      "system": {
+        "abilities": {
+          "str": {
+            "value": 10,
+            "proficient": 0,
+            "max": null,
+            "bonuses": {
+              "check": "",
+              "save": ""
+            },
+            "save": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            },
+            "check": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            }
+          },
+          "dex": {
+            "value": 10,
+            "proficient": 0,
+            "max": null,
+            "bonuses": {
+              "check": "",
+              "save": ""
+            },
+            "save": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            },
+            "check": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            }
+          },
+          "con": {
+            "value": 10,
+            "proficient": 0,
+            "max": null,
+            "bonuses": {
+              "check": "",
+              "save": ""
+            },
+            "save": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            },
+            "check": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            }
+          },
+          "int": {
+            "value": 10,
+            "proficient": 0,
+            "max": null,
+            "bonuses": {
+              "check": "",
+              "save": ""
+            },
+            "save": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            },
+            "check": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            }
+          },
+          "wis": {
+            "value": 10,
+            "proficient": 0,
+            "max": null,
+            "bonuses": {
+              "check": "",
+              "save": ""
+            },
+            "save": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            },
+            "check": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            }
+          },
+          "cha": {
+            "value": 10,
+            "proficient": 0,
+            "max": null,
+            "bonuses": {
+              "check": "",
+              "save": ""
+            },
+            "save": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            },
+            "check": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            }
+          }
+        },
+        "attributes": {
+          "ac": {
+            "flat": 10,
+            "calc": "natural",
+            "formula": ""
+          },
+          "hp": {
+            "value": 4,
+            "max": 4,
+            "temp": 0,
+            "tempmax": 0,
+            "formula": "1d8"
+          },
+          "init": {
+            "ability": "",
+            "bonus": "0",
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
+          },
+          "movement": {
+            "burrow": null,
+            "climb": null,
+            "fly": null,
+            "swim": null,
+            "walk": 30,
+            "units": "ft",
+            "hover": false
+          },
+          "attunement": {
+            "max": 3
+          },
+          "senses": {
+            "darkvision": null,
+            "blindsight": null,
+            "tremorsense": null,
+            "truesight": null,
+            "units": "ft",
+            "special": ""
+          },
+          "spellcasting": "",
+          "spell": {
+            "level": 0
+          },
+          "exhaustion": 0,
+          "concentration": {
+            "ability": "",
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            },
+            "bonuses": {
+              "save": ""
+            },
+            "limit": 1
+          },
+          "loyalty": {
+            "value": null
+          },
+          "hd": {
+            "spent": 0
+          },
+          "death": {
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            },
+            "success": 0,
+            "failure": 0,
+            "bonuses": {
+              "save": ""
+            }
+          }
+        },
+        "details": {
+          "biography": {
+            "value": "<p>A label of pure disrespect the caste of citizens in our realm known as the “Commoner” are anything but! Commoners come in all races, social classes, professions, and personalities. Be they a sly Dragonborn merchant, a boisterous Human tavern owner, or an elvish glassblower of supreme skills, the commoner befits those often outside the nobility. Commoners may be intelligent or foolish, mighty or cowardly; certainly a commoner should be admired for their uniqueness in our world. A commoner may be found wherever humanoids exist: cities, villages, out on the roads, forests, mountains, anywhere that has felt the touch of humanoids you may find a commoner there.</p>\n<p><strong>Power to the Proletariat.</strong> A certain fact about commoners is that they are often more average citizens of our world. They are not like the bold adventurer and prefer to live their lives under the presumption of peace outside of their city walls. This is not to say, however, that even a single commoner (though more often mob mentality rules) can rise up and begin a stunning brawl of their own. Beware, adventurers, for even a seemingly simple commoner can fight dirty and surprise a seasoned fighter. However, a majority of commoners are less skilled in the martial arts, so do not be surprised if they reach for uncommon weapons to defend themselves including: clubs, broken bottles, chairs, barrels, stones, and cookware. Be they within a city or out on the open trail, it is always wise to maintain peace with the common-folk, for they may hide a set of skills or clever information that lies deep below their simple venere.</p>\n<ul>\n<li><em>Token artwork by Forgotten Adventures.</em></li>\n<li><em>Bestiary entry by Penelope (Vyrnali).</em></li>\n</ul>",
+            "public": ""
+          },
+          "alignment": "Any",
+          "race": null,
+          "type": {
+            "value": "humanoid",
+            "subtype": "",
+            "swarm": "",
+            "custom": ""
+          },
+          "cr": 0,
+          "ideal": "",
+          "bond": "",
+          "flaw": "",
+          "habitat": {
+            "value": [],
+            "custom": ""
+          },
+          "treasure": {
+            "value": []
+          }
+        },
+        "traits": {
+          "size": "med",
+          "di": {
+            "value": [],
+            "bypasses": [],
+            "custom": ""
+          },
+          "dr": {
+            "value": [],
+            "bypasses": [],
+            "custom": ""
+          },
+          "dv": {
+            "value": [],
+            "bypasses": [],
+            "custom": ""
+          },
+          "ci": {
+            "value": [],
+            "custom": ""
+          },
+          "languages": {
+            "value": [],
+            "custom": "any one language (usually Common)",
+            "communication": {}
+          },
+          "dm": {
+            "amount": {},
+            "bypasses": []
+          },
+          "important": false
+        },
+        "currency": {
+          "pp": 0,
+          "gp": 0,
+          "ep": 0,
+          "sp": 0,
+          "cp": 0
+        },
+        "skills": {
+          "acr": {
+            "value": 0,
+            "ability": "dex",
+            "bonuses": {
+              "check": "",
+              "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
+          },
+          "ani": {
+            "value": 0,
+            "ability": "wis",
+            "bonuses": {
+              "check": "",
+              "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
+          },
+          "arc": {
+            "value": 0,
+            "ability": "int",
+            "bonuses": {
+              "check": "",
+              "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
+          },
+          "ath": {
+            "value": 0,
+            "ability": "str",
+            "bonuses": {
+              "check": "",
+              "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
+          },
+          "dec": {
+            "value": 0,
+            "ability": "cha",
+            "bonuses": {
+              "check": "",
+              "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
+          },
+          "his": {
+            "value": 0,
+            "ability": "int",
+            "bonuses": {
+              "check": "",
+              "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
+          },
+          "ins": {
+            "value": 0,
+            "ability": "wis",
+            "bonuses": {
+              "check": "",
+              "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
+          },
+          "itm": {
+            "value": 0,
+            "ability": "cha",
+            "bonuses": {
+              "check": "",
+              "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
+          },
+          "inv": {
+            "value": 0,
+            "ability": "int",
+            "bonuses": {
+              "check": "",
+              "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
+          },
+          "med": {
+            "value": 0,
+            "ability": "wis",
+            "bonuses": {
+              "check": "",
+              "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
+          },
+          "nat": {
+            "value": 0,
+            "ability": "int",
+            "bonuses": {
+              "check": "",
+              "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
+          },
+          "prc": {
+            "value": 0,
+            "ability": "wis",
+            "bonuses": {
+              "check": "",
+              "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
+          },
+          "prf": {
+            "value": 0,
+            "ability": "cha",
+            "bonuses": {
+              "check": "",
+              "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
+          },
+          "per": {
+            "value": 0,
+            "ability": "cha",
+            "bonuses": {
+              "check": "",
+              "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
+          },
+          "rel": {
+            "value": 0,
+            "ability": "int",
+            "bonuses": {
+              "check": "",
+              "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
+          },
+          "slt": {
+            "value": 0,
+            "ability": "dex",
+            "bonuses": {
+              "check": "",
+              "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
+          },
+          "ste": {
+            "value": 0,
+            "ability": "dex",
+            "bonuses": {
+              "check": "",
+              "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
+          },
+          "sur": {
+            "value": 0,
+            "ability": "wis",
+            "bonuses": {
+              "check": "",
+              "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
+          }
+        },
+        "tools": {},
+        "spells": {
+          "spell1": {
+            "value": 0,
+            "override": null
+          },
+          "spell2": {
+            "value": 0,
+            "override": null
+          },
+          "spell3": {
+            "value": 0,
+            "override": null
+          },
+          "spell4": {
+            "value": 0,
+            "override": null
+          },
+          "spell5": {
+            "value": 0,
+            "override": null
+          },
+          "spell6": {
+            "value": 0,
+            "override": null
+          },
+          "spell7": {
+            "value": 0,
+            "override": null
+          },
+          "spell8": {
+            "value": 0,
+            "override": null
+          },
+          "spell9": {
+            "value": 0,
+            "override": null
+          },
+          "pact": {
+            "value": 0,
+            "override": null
+          },
+          "spell0": {
+            "value": 0,
+            "override": null
+          }
+        },
+        "bonuses": {
+          "mwak": {
+            "attack": "0",
+            "damage": ""
+          },
+          "rwak": {
+            "attack": "0",
+            "damage": ""
+          },
+          "msak": {
+            "attack": "0",
+            "damage": ""
+          },
+          "rsak": {
+            "attack": "0",
+            "damage": ""
+          },
+          "abilities": {
+            "check": "",
+            "save": "",
+            "skill": ""
+          },
+          "spell": {
+            "dc": "0"
+          }
+        },
+        "resources": {
+          "legact": {
+            "value": 0,
+            "max": 0
+          },
+          "legres": {
+            "value": 0,
+            "max": 0
+          },
+          "lair": {
+            "value": false,
+            "initiative": 0,
+            "inside": false
+          }
+        },
+        "source": {
+          "custom": "MM pg. 345",
+          "revision": 1,
+          "rules": "2014"
+        }
+      },
+      "ownership": {
+        "default": 0,
+        "6yhz13iFYYklKtgA": 3
+      },
+      "prototypeToken": {
+        "name": "Commoner",
+        "displayName": 30,
+        "actorLink": false,
+        "width": 1,
+        "height": 1,
+        "lockRotation": false,
+        "rotation": 0,
+        "disposition": 0,
+        "displayBars": 40,
+        "bar1": {
+          "attribute": "attributes.hp"
+        },
+        "bar2": {
+          "attribute": null
+        },
+        "flags": {},
+        "randomImg": false,
+        "alpha": 1,
+        "light": {
+          "alpha": 1,
+          "angle": 360,
+          "bright": 0,
+          "coloration": 1,
+          "dim": 0,
+          "luminosity": 0.5,
+          "saturation": 0,
+          "contrast": 0,
+          "shadows": 0,
+          "animation": {
+            "speed": 5,
+            "intensity": 5,
+            "type": null,
+            "reverse": false
+          },
+          "darkness": {
+            "min": 0,
+            "max": 1
+          },
+          "attenuation": 0.5,
+          "color": null,
+          "negative": false,
+          "priority": 0
+        },
+        "texture": {
+          "src": "systems/dnd5e/tokens/humanoid/Commoner.webp",
+          "tint": "#ffffff",
+          "scaleX": 1,
+          "scaleY": 1,
+          "offsetX": 0,
+          "offsetY": 0,
+          "rotation": 0,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "fit": "contain",
+          "alphaThreshold": 0.75
+        },
+        "sight": {
+          "angle": 360,
+          "enabled": false,
+          "range": 0,
+          "brightness": 1,
+          "visionMode": "basic",
+          "color": null,
+          "attenuation": 0.1,
+          "saturation": 0,
+          "contrast": 0
+        },
+        "detectionModes": [],
+        "appendNumber": false,
+        "prependAdjective": false,
+        "hexagonalShape": 0,
+        "occludable": {
+          "radius": 0
+        },
+        "ring": {
+          "enabled": false,
+          "colors": {
+            "ring": null,
+            "background": null
+          },
+          "effects": 1,
+          "subject": {
+            "scale": 1,
+            "texture": null
+          }
+        }
+      },
+      "_stats": {
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.2",
+        "coreVersion": "12.343",
+        "createdTime": null,
+        "modifiedTime": 1754774807271,
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": "Compendium.dnd5e.monsters.SqZRuJ8lt2KGJBbq",
+        "duplicateSource": null
+      }
+    }
+  ],
   "combats": [],
   "items": [],
   "journal": [
@@ -17668,9 +18649,9 @@
                     "description": "",
                     "statuses": [],
                     "_stats": {
-                      "coreVersion": "12.343",
-                      "systemId": "dnd5e",
-                      "systemVersion": "4.4.2",
+                      "coreVersion": "12.331",
+                      "systemId": null,
+                      "systemVersion": null,
                       "createdTime": null,
                       "modifiedTime": null,
                       "lastModifiedBy": null,
@@ -17728,11 +18709,11 @@
                 },
                 "_stats": {
                   "systemId": "dnd5e",
-                  "systemVersion": "4.4.2",
-                  "coreVersion": "12.343",
-                  "createdTime": null,
-                  "modifiedTime": null,
-                  "lastModifiedBy": null,
+                  "systemVersion": "3.1.2",
+                  "coreVersion": "12.331",
+                  "createdTime": 1683514103567,
+                  "modifiedTime": 1723571941848,
+                  "lastModifiedBy": "uM5NQ4FonA2UvlQg",
                   "compendiumSource": "Item.ppRCjd1jqTkEmu40",
                   "duplicateSource": null
                 },
@@ -17913,9 +18894,9 @@
                     "description": "",
                     "statuses": [],
                     "_stats": {
-                      "coreVersion": "12.343",
-                      "systemId": "dnd5e",
-                      "systemVersion": "4.4.2",
+                      "coreVersion": "12.331",
+                      "systemId": null,
+                      "systemVersion": null,
                       "createdTime": null,
                       "modifiedTime": null,
                       "lastModifiedBy": null,
@@ -17971,11 +18952,11 @@
                 },
                 "_stats": {
                   "systemId": "dnd5e",
-                  "systemVersion": "4.4.2",
-                  "coreVersion": "12.343",
-                  "createdTime": null,
-                  "modifiedTime": null,
-                  "lastModifiedBy": null,
+                  "systemVersion": "3.1.2",
+                  "coreVersion": "12.331",
+                  "createdTime": 1683514619221,
+                  "modifiedTime": 1723571941848,
+                  "lastModifiedBy": "uM5NQ4FonA2UvlQg",
                   "compendiumSource": "Item.UE4A2LA9q42kmBUs",
                   "duplicateSource": null
                 },
@@ -18174,11 +19155,11 @@
                 },
                 "_stats": {
                   "systemId": "dnd5e",
-                  "systemVersion": "4.4.2",
-                  "coreVersion": "12.343",
-                  "createdTime": null,
-                  "modifiedTime": null,
-                  "lastModifiedBy": null,
+                  "systemVersion": "3.1.2",
+                  "coreVersion": "12.331",
+                  "createdTime": 1683514150166,
+                  "modifiedTime": 1723571941848,
+                  "lastModifiedBy": "uM5NQ4FonA2UvlQg",
                   "compendiumSource": "Item.n56uRsqKING0GSgu",
                   "duplicateSource": null
                 },
@@ -18406,9 +19387,9 @@
                     "description": "",
                     "statuses": [],
                     "_stats": {
-                      "coreVersion": "12.343",
-                      "systemId": "dnd5e",
-                      "systemVersion": "4.4.2",
+                      "coreVersion": "12.331",
+                      "systemId": null,
+                      "systemVersion": null,
                       "createdTime": null,
                       "modifiedTime": null,
                       "lastModifiedBy": null,
@@ -18463,11 +19444,11 @@
                 },
                 "_stats": {
                   "systemId": "dnd5e",
-                  "systemVersion": "4.4.2",
-                  "coreVersion": "12.343",
-                  "createdTime": null,
-                  "modifiedTime": null,
-                  "lastModifiedBy": null,
+                  "systemVersion": "3.1.2",
+                  "coreVersion": "12.331",
+                  "createdTime": 1694419884363,
+                  "modifiedTime": 1723571941848,
+                  "lastModifiedBy": "uM5NQ4FonA2UvlQg",
                   "compendiumSource": "Item.ZTCrWHYrzbkr1tIE",
                   "duplicateSource": null
                 },
@@ -18675,11 +19656,11 @@
                 },
                 "_stats": {
                   "systemId": "dnd5e",
-                  "systemVersion": "4.4.2",
-                  "coreVersion": "12.343",
-                  "createdTime": null,
-                  "modifiedTime": null,
-                  "lastModifiedBy": null,
+                  "systemVersion": "3.1.2",
+                  "coreVersion": "12.331",
+                  "createdTime": 1683515482996,
+                  "modifiedTime": 1723571941848,
+                  "lastModifiedBy": "uM5NQ4FonA2UvlQg",
                   "compendiumSource": "Item.IY6XqdyqiP1vJaOc",
                   "duplicateSource": null
                 },
@@ -18887,11 +19868,11 @@
                 },
                 "_stats": {
                   "systemId": "dnd5e",
-                  "systemVersion": "4.4.2",
-                  "coreVersion": "12.343",
-                  "createdTime": null,
-                  "modifiedTime": null,
-                  "lastModifiedBy": null,
+                  "systemVersion": "3.1.2",
+                  "coreVersion": "12.331",
+                  "createdTime": 1679968839193,
+                  "modifiedTime": 1723571941848,
+                  "lastModifiedBy": "uM5NQ4FonA2UvlQg",
                   "compendiumSource": "Item.y7rWoaFbRfvpZJ70",
                   "duplicateSource": null
                 },
@@ -19116,11 +20097,11 @@
                 },
                 "_stats": {
                   "systemId": "dnd5e",
-                  "systemVersion": "4.4.2",
-                  "coreVersion": "12.343",
-                  "createdTime": null,
-                  "modifiedTime": null,
-                  "lastModifiedBy": null,
+                  "systemVersion": "3.1.2",
+                  "coreVersion": "12.331",
+                  "createdTime": 1689196989789,
+                  "modifiedTime": 1723571941848,
+                  "lastModifiedBy": "uM5NQ4FonA2UvlQg",
                   "compendiumSource": "Item.lckC67MKHRwZ6gMJ",
                   "duplicateSource": null
                 },
@@ -19328,11 +20309,11 @@
                 },
                 "_stats": {
                   "systemId": "dnd5e",
-                  "systemVersion": "4.4.2",
-                  "coreVersion": "12.343",
-                  "createdTime": null,
-                  "modifiedTime": null,
-                  "lastModifiedBy": null,
+                  "systemVersion": "3.1.2",
+                  "coreVersion": "12.331",
+                  "createdTime": 1683515091815,
+                  "modifiedTime": 1723571941848,
+                  "lastModifiedBy": "uM5NQ4FonA2UvlQg",
                   "compendiumSource": "Item.sSilsbHlLMFOE6Fi",
                   "duplicateSource": null
                 },
@@ -19540,11 +20521,11 @@
                 },
                 "_stats": {
                   "systemId": "dnd5e",
-                  "systemVersion": "4.4.2",
-                  "coreVersion": "12.343",
-                  "createdTime": null,
-                  "modifiedTime": null,
-                  "lastModifiedBy": null,
+                  "systemVersion": "3.1.2",
+                  "coreVersion": "12.331",
+                  "createdTime": 1683514455755,
+                  "modifiedTime": 1723571941848,
+                  "lastModifiedBy": "uM5NQ4FonA2UvlQg",
                   "compendiumSource": "Item.q9H6Mwftiezo0CIA",
                   "duplicateSource": null
                 },
@@ -19750,11 +20731,11 @@
                 },
                 "_stats": {
                   "systemId": "dnd5e",
-                  "systemVersion": "4.4.2",
-                  "coreVersion": "12.343",
-                  "createdTime": null,
-                  "modifiedTime": null,
-                  "lastModifiedBy": null,
+                  "systemVersion": "3.1.2",
+                  "coreVersion": "12.331",
+                  "createdTime": 1683514294946,
+                  "modifiedTime": 1723571941848,
+                  "lastModifiedBy": "uM5NQ4FonA2UvlQg",
                   "compendiumSource": "Item.wRIbIWOUGEn4LLD0",
                   "duplicateSource": null
                 },
@@ -19982,9 +20963,9 @@
                     "description": "",
                     "statuses": [],
                     "_stats": {
-                      "coreVersion": "12.343",
-                      "systemId": "dnd5e",
-                      "systemVersion": "4.4.2",
+                      "coreVersion": "12.331",
+                      "systemId": null,
+                      "systemVersion": null,
                       "createdTime": null,
                       "modifiedTime": null,
                       "lastModifiedBy": null,
@@ -20039,11 +21020,11 @@
                 },
                 "_stats": {
                   "systemId": "dnd5e",
-                  "systemVersion": "4.4.2",
-                  "coreVersion": "12.343",
-                  "createdTime": null,
-                  "modifiedTime": null,
-                  "lastModifiedBy": null,
+                  "systemVersion": "3.1.2",
+                  "coreVersion": "12.331",
+                  "createdTime": 1694765764741,
+                  "modifiedTime": 1723571941848,
+                  "lastModifiedBy": "uM5NQ4FonA2UvlQg",
                   "compendiumSource": "Item.5xjAnHSxZLNgdeCk",
                   "duplicateSource": null
                 },
@@ -20224,9 +21205,9 @@
                     "description": "",
                     "statuses": [],
                     "_stats": {
-                      "coreVersion": "12.343",
-                      "systemId": "dnd5e",
-                      "systemVersion": "4.4.2",
+                      "coreVersion": "12.331",
+                      "systemId": null,
+                      "systemVersion": null,
                       "createdTime": null,
                       "modifiedTime": null,
                       "lastModifiedBy": null,
@@ -20282,11 +21263,11 @@
                 },
                 "_stats": {
                   "systemId": "dnd5e",
-                  "systemVersion": "4.4.2",
-                  "coreVersion": "12.343",
-                  "createdTime": null,
-                  "modifiedTime": null,
-                  "lastModifiedBy": null,
+                  "systemVersion": "3.1.2",
+                  "coreVersion": "12.331",
+                  "createdTime": 1683514724592,
+                  "modifiedTime": 1723571941848,
+                  "lastModifiedBy": "uM5NQ4FonA2UvlQg",
                   "compendiumSource": "Item.W7zuHZmhd7itA0FU",
                   "duplicateSource": null
                 },
@@ -20494,11 +21475,11 @@
                 },
                 "_stats": {
                   "systemId": "dnd5e",
-                  "systemVersion": "4.4.2",
-                  "coreVersion": "12.343",
-                  "createdTime": null,
-                  "modifiedTime": null,
-                  "lastModifiedBy": null,
+                  "systemVersion": "3.1.2",
+                  "coreVersion": "12.331",
+                  "createdTime": 1683514783307,
+                  "modifiedTime": 1723571941848,
+                  "lastModifiedBy": "uM5NQ4FonA2UvlQg",
                   "compendiumSource": "Item.pe8M2D9ZVOSPGhwd",
                   "duplicateSource": null
                 },
@@ -20707,11 +21688,11 @@
                 },
                 "_stats": {
                   "systemId": "dnd5e",
-                  "systemVersion": "4.4.2",
-                  "coreVersion": "12.343",
-                  "createdTime": null,
-                  "modifiedTime": null,
-                  "lastModifiedBy": null,
+                  "systemVersion": "3.1.2",
+                  "coreVersion": "12.331",
+                  "createdTime": 1699086048416,
+                  "modifiedTime": 1723571941848,
+                  "lastModifiedBy": "uM5NQ4FonA2UvlQg",
                   "compendiumSource": "Item.PX8o0Ed07rlTL40q",
                   "duplicateSource": null
                 },
@@ -20958,9 +21939,9 @@
                   "default": 0
                 },
                 "_stats": {
-                  "systemId": "dnd5e",
-                  "systemVersion": "4.4.2",
-                  "coreVersion": "12.343",
+                  "systemId": null,
+                  "systemVersion": null,
+                  "coreVersion": "12.331",
                   "createdTime": null,
                   "modifiedTime": null,
                   "lastModifiedBy": null,
@@ -20997,9 +21978,9 @@
                   }
                 },
                 "_stats": {
-                  "coreVersion": "12.343",
-                  "systemId": "dnd5e",
-                  "systemVersion": "4.4.2",
+                  "coreVersion": "12.331",
+                  "systemId": null,
+                  "systemVersion": null,
                   "createdTime": null,
                   "modifiedTime": null,
                   "lastModifiedBy": null,
@@ -21279,7 +22260,7 @@
           "hidden": false,
           "_id": "CLnwQkxIQsFBUGrG",
           "delta": {
-            "_id": "aLNh2J7DNAhNadLg",
+            "_id": "CLnwQkxIQsFBUGrG",
             "system": {
               "abilities": {
                 "str": {
@@ -22057,9 +23038,9 @@
                     "description": "",
                     "statuses": [],
                     "_stats": {
-                      "coreVersion": "12.343",
-                      "systemId": "dnd5e",
-                      "systemVersion": "4.4.2",
+                      "coreVersion": "12.331",
+                      "systemId": null,
+                      "systemVersion": null,
                       "createdTime": null,
                       "modifiedTime": null,
                       "lastModifiedBy": null,
@@ -22117,11 +23098,11 @@
                 },
                 "_stats": {
                   "systemId": "dnd5e",
-                  "systemVersion": "4.4.2",
-                  "coreVersion": "12.343",
-                  "createdTime": null,
-                  "modifiedTime": null,
-                  "lastModifiedBy": null,
+                  "systemVersion": "3.1.2",
+                  "coreVersion": "12.331",
+                  "createdTime": 1683514103567,
+                  "modifiedTime": 1723573536143,
+                  "lastModifiedBy": "uM5NQ4FonA2UvlQg",
                   "compendiumSource": "Item.ppRCjd1jqTkEmu40",
                   "duplicateSource": null
                 },
@@ -22302,9 +23283,9 @@
                     "description": "",
                     "statuses": [],
                     "_stats": {
-                      "coreVersion": "12.343",
-                      "systemId": "dnd5e",
-                      "systemVersion": "4.4.2",
+                      "coreVersion": "12.331",
+                      "systemId": null,
+                      "systemVersion": null,
                       "createdTime": null,
                       "modifiedTime": null,
                       "lastModifiedBy": null,
@@ -22360,11 +23341,11 @@
                 },
                 "_stats": {
                   "systemId": "dnd5e",
-                  "systemVersion": "4.4.2",
-                  "coreVersion": "12.343",
-                  "createdTime": null,
-                  "modifiedTime": null,
-                  "lastModifiedBy": null,
+                  "systemVersion": "3.1.2",
+                  "coreVersion": "12.331",
+                  "createdTime": 1683514619221,
+                  "modifiedTime": 1723573536143,
+                  "lastModifiedBy": "uM5NQ4FonA2UvlQg",
                   "compendiumSource": "Item.UE4A2LA9q42kmBUs",
                   "duplicateSource": null
                 },
@@ -22563,11 +23544,11 @@
                 },
                 "_stats": {
                   "systemId": "dnd5e",
-                  "systemVersion": "4.4.2",
-                  "coreVersion": "12.343",
-                  "createdTime": null,
-                  "modifiedTime": null,
-                  "lastModifiedBy": null,
+                  "systemVersion": "3.1.2",
+                  "coreVersion": "12.331",
+                  "createdTime": 1683514150166,
+                  "modifiedTime": 1723573536143,
+                  "lastModifiedBy": "uM5NQ4FonA2UvlQg",
                   "compendiumSource": "Item.n56uRsqKING0GSgu",
                   "duplicateSource": null
                 },
@@ -22795,9 +23776,9 @@
                     "description": "",
                     "statuses": [],
                     "_stats": {
-                      "coreVersion": "12.343",
-                      "systemId": "dnd5e",
-                      "systemVersion": "4.4.2",
+                      "coreVersion": "12.331",
+                      "systemId": null,
+                      "systemVersion": null,
                       "createdTime": null,
                       "modifiedTime": null,
                       "lastModifiedBy": null,
@@ -22852,11 +23833,11 @@
                 },
                 "_stats": {
                   "systemId": "dnd5e",
-                  "systemVersion": "4.4.2",
-                  "coreVersion": "12.343",
-                  "createdTime": null,
-                  "modifiedTime": null,
-                  "lastModifiedBy": null,
+                  "systemVersion": "3.1.2",
+                  "coreVersion": "12.331",
+                  "createdTime": 1694419884363,
+                  "modifiedTime": 1723573536143,
+                  "lastModifiedBy": "uM5NQ4FonA2UvlQg",
                   "compendiumSource": "Item.ZTCrWHYrzbkr1tIE",
                   "duplicateSource": null
                 },
@@ -23064,11 +24045,11 @@
                 },
                 "_stats": {
                   "systemId": "dnd5e",
-                  "systemVersion": "4.4.2",
-                  "coreVersion": "12.343",
-                  "createdTime": null,
-                  "modifiedTime": null,
-                  "lastModifiedBy": null,
+                  "systemVersion": "3.1.2",
+                  "coreVersion": "12.331",
+                  "createdTime": 1683515482996,
+                  "modifiedTime": 1723573536143,
+                  "lastModifiedBy": "uM5NQ4FonA2UvlQg",
                   "compendiumSource": "Item.IY6XqdyqiP1vJaOc",
                   "duplicateSource": null
                 },
@@ -23276,11 +24257,11 @@
                 },
                 "_stats": {
                   "systemId": "dnd5e",
-                  "systemVersion": "4.4.2",
-                  "coreVersion": "12.343",
-                  "createdTime": null,
-                  "modifiedTime": null,
-                  "lastModifiedBy": null,
+                  "systemVersion": "3.1.2",
+                  "coreVersion": "12.331",
+                  "createdTime": 1679968839193,
+                  "modifiedTime": 1723573536143,
+                  "lastModifiedBy": "uM5NQ4FonA2UvlQg",
                   "compendiumSource": "Item.y7rWoaFbRfvpZJ70",
                   "duplicateSource": null
                 },
@@ -23505,11 +24486,11 @@
                 },
                 "_stats": {
                   "systemId": "dnd5e",
-                  "systemVersion": "4.4.2",
-                  "coreVersion": "12.343",
-                  "createdTime": null,
-                  "modifiedTime": null,
-                  "lastModifiedBy": null,
+                  "systemVersion": "3.1.2",
+                  "coreVersion": "12.331",
+                  "createdTime": 1689196989789,
+                  "modifiedTime": 1723573536143,
+                  "lastModifiedBy": "uM5NQ4FonA2UvlQg",
                   "compendiumSource": "Item.lckC67MKHRwZ6gMJ",
                   "duplicateSource": null
                 },
@@ -23717,11 +24698,11 @@
                 },
                 "_stats": {
                   "systemId": "dnd5e",
-                  "systemVersion": "4.4.2",
-                  "coreVersion": "12.343",
-                  "createdTime": null,
-                  "modifiedTime": null,
-                  "lastModifiedBy": null,
+                  "systemVersion": "3.1.2",
+                  "coreVersion": "12.331",
+                  "createdTime": 1683515091815,
+                  "modifiedTime": 1723573536143,
+                  "lastModifiedBy": "uM5NQ4FonA2UvlQg",
                   "compendiumSource": "Item.sSilsbHlLMFOE6Fi",
                   "duplicateSource": null
                 },
@@ -23929,11 +24910,11 @@
                 },
                 "_stats": {
                   "systemId": "dnd5e",
-                  "systemVersion": "4.4.2",
-                  "coreVersion": "12.343",
-                  "createdTime": null,
-                  "modifiedTime": null,
-                  "lastModifiedBy": null,
+                  "systemVersion": "3.1.2",
+                  "coreVersion": "12.331",
+                  "createdTime": 1683514455755,
+                  "modifiedTime": 1723573536143,
+                  "lastModifiedBy": "uM5NQ4FonA2UvlQg",
                   "compendiumSource": "Item.q9H6Mwftiezo0CIA",
                   "duplicateSource": null
                 },
@@ -24139,11 +25120,11 @@
                 },
                 "_stats": {
                   "systemId": "dnd5e",
-                  "systemVersion": "4.4.2",
-                  "coreVersion": "12.343",
-                  "createdTime": null,
-                  "modifiedTime": null,
-                  "lastModifiedBy": null,
+                  "systemVersion": "3.1.2",
+                  "coreVersion": "12.331",
+                  "createdTime": 1683514294946,
+                  "modifiedTime": 1723573536143,
+                  "lastModifiedBy": "uM5NQ4FonA2UvlQg",
                   "compendiumSource": "Item.wRIbIWOUGEn4LLD0",
                   "duplicateSource": null
                 },
@@ -24371,9 +25352,9 @@
                     "description": "",
                     "statuses": [],
                     "_stats": {
-                      "coreVersion": "12.343",
-                      "systemId": "dnd5e",
-                      "systemVersion": "4.4.2",
+                      "coreVersion": "12.331",
+                      "systemId": null,
+                      "systemVersion": null,
                       "createdTime": null,
                       "modifiedTime": null,
                       "lastModifiedBy": null,
@@ -24428,11 +25409,11 @@
                 },
                 "_stats": {
                   "systemId": "dnd5e",
-                  "systemVersion": "4.4.2",
-                  "coreVersion": "12.343",
-                  "createdTime": null,
-                  "modifiedTime": null,
-                  "lastModifiedBy": null,
+                  "systemVersion": "3.1.2",
+                  "coreVersion": "12.331",
+                  "createdTime": 1694765764741,
+                  "modifiedTime": 1723573536143,
+                  "lastModifiedBy": "uM5NQ4FonA2UvlQg",
                   "compendiumSource": "Item.5xjAnHSxZLNgdeCk",
                   "duplicateSource": null
                 },
@@ -24613,9 +25594,9 @@
                     "description": "",
                     "statuses": [],
                     "_stats": {
-                      "coreVersion": "12.343",
-                      "systemId": "dnd5e",
-                      "systemVersion": "4.4.2",
+                      "coreVersion": "12.331",
+                      "systemId": null,
+                      "systemVersion": null,
                       "createdTime": null,
                       "modifiedTime": null,
                       "lastModifiedBy": null,
@@ -24671,11 +25652,11 @@
                 },
                 "_stats": {
                   "systemId": "dnd5e",
-                  "systemVersion": "4.4.2",
-                  "coreVersion": "12.343",
-                  "createdTime": null,
-                  "modifiedTime": null,
-                  "lastModifiedBy": null,
+                  "systemVersion": "3.1.2",
+                  "coreVersion": "12.331",
+                  "createdTime": 1683514724592,
+                  "modifiedTime": 1723573536143,
+                  "lastModifiedBy": "uM5NQ4FonA2UvlQg",
                   "compendiumSource": "Item.W7zuHZmhd7itA0FU",
                   "duplicateSource": null
                 },
@@ -24883,11 +25864,11 @@
                 },
                 "_stats": {
                   "systemId": "dnd5e",
-                  "systemVersion": "4.4.2",
-                  "coreVersion": "12.343",
-                  "createdTime": null,
-                  "modifiedTime": null,
-                  "lastModifiedBy": null,
+                  "systemVersion": "3.1.2",
+                  "coreVersion": "12.331",
+                  "createdTime": 1683514783307,
+                  "modifiedTime": 1723573536143,
+                  "lastModifiedBy": "uM5NQ4FonA2UvlQg",
                   "compendiumSource": "Item.pe8M2D9ZVOSPGhwd",
                   "duplicateSource": null
                 },
@@ -25096,11 +26077,11 @@
                 },
                 "_stats": {
                   "systemId": "dnd5e",
-                  "systemVersion": "4.4.2",
-                  "coreVersion": "12.343",
-                  "createdTime": null,
-                  "modifiedTime": null,
-                  "lastModifiedBy": null,
+                  "systemVersion": "3.1.2",
+                  "coreVersion": "12.331",
+                  "createdTime": 1699086048416,
+                  "modifiedTime": 1723573536143,
+                  "lastModifiedBy": "uM5NQ4FonA2UvlQg",
                   "compendiumSource": "Item.PX8o0Ed07rlTL40q",
                   "duplicateSource": null
                 },
@@ -25164,12 +26145,12 @@
                 },
                 "_stats": {
                   "systemId": "dnd5e",
-                  "systemVersion": "4.4.2",
-                  "coreVersion": "12.343",
-                  "createdTime": null,
-                  "modifiedTime": null,
-                  "lastModifiedBy": null,
-                  "compendiumSource": "Item.WBs5e7HfUnyZE8ok",
+                  "systemVersion": "3.1.2",
+                  "coreVersion": "12.331",
+                  "createdTime": 1724265763879,
+                  "modifiedTime": 1724265846765,
+                  "lastModifiedBy": "6yhz13iFYYklKtgA",
+                  "compendiumSource": "Compendium.sdnd-strahd-adv.sdnd-cos-items.Item.WBs5e7HfUnyZE8ok",
                   "duplicateSource": null
                 }
               }
@@ -43152,7 +44133,7 @@
         "systemVersion": "3.2.1",
         "coreVersion": "12.343",
         "createdTime": 1685289785930,
-        "modifiedTime": 1748176608856,
+        "modifiedTime": 1755264202600,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
         "duplicateSource": null
@@ -43403,6 +44384,48 @@
         "duplicateSource": null
       },
       "description": ""
+    },
+    {
+      "name": "Mobs",
+      "type": "Actor",
+      "sorting": "a",
+      "sort": 200000,
+      "color": null,
+      "flags": {},
+      "_id": "JvBq76KcnxIjY4N7",
+      "folder": "SgCwMBKLb1IzBVaz",
+      "description": "",
+      "_stats": {
+        "systemId": "dnd5e",
+        "systemVersion": "2.2.2",
+        "coreVersion": "12.331",
+        "createdTime": null,
+        "modifiedTime": 1689092687175,
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": "Folder.JvBq76KcnxIjY4N7",
+        "duplicateSource": null
+      }
+    },
+    {
+      "name": "SDND - Curse of Strahd",
+      "sorting": "a",
+      "folder": null,
+      "type": "Actor",
+      "description": "",
+      "sort": 300000,
+      "color": "#ff0000",
+      "flags": {},
+      "_stats": {
+        "systemId": "dnd5e",
+        "systemVersion": "3.2.1",
+        "coreVersion": "12.331",
+        "createdTime": null,
+        "modifiedTime": 1747943849391,
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": "Folder.SgCwMBKLb1IzBVaz",
+        "duplicateSource": null
+      },
+      "_id": "SgCwMBKLb1IzBVaz"
     }
   ],
   "_id": "agWCs5es4GTXb2iO",
@@ -43413,7 +44436,7 @@
     "systemVersion": "3.2.1",
     "coreVersion": "12.343",
     "createdTime": 1704927108408,
-    "modifiedTime": 1748177925433,
+    "modifiedTime": 1755780282612,
     "lastModifiedBy": "6yhz13iFYYklKtgA",
     "compendiumSource": null,
     "duplicateSource": null

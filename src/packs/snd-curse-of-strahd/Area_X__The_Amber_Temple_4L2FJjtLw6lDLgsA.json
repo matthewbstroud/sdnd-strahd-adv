@@ -11004,12 +11004,28 @@
               }
             },
             "midi-qol": {
-              "removeAttackDamageButtons": "default"
+              "removeAttackDamageButtons": "default",
+              "rollAttackPerTarget": "default",
+              "itemCondition": "",
+              "reactionCondition": "",
+              "otherCondition": "",
+              "effectCondition": ""
             },
             "midiProperties": {
-              "confirmTargets": "default"
+              "confirmTargets": "default",
+              "autoFailFriendly": false,
+              "autoSaveFriendly": false,
+              "magicdam": false,
+              "magiceffect": false,
+              "noConcentrationCheck": false,
+              "toggleEffect": false,
+              "ignoreTotalCover": false
             },
-            "dnd5e": {}
+            "dnd5e": {
+              "riders": {
+                "activity": []
+              }
+            }
           },
           "img": "icons/skills/melee/strike-weapons-orange.webp",
           "folder": null,
@@ -11024,8 +11040,8 @@
             "systemId": "dnd5e",
             "systemVersion": "4.4.2",
             "createdTime": null,
-            "modifiedTime": null,
-            "lastModifiedBy": null
+            "modifiedTime": 1755707243251,
+            "lastModifiedBy": "6yhz13iFYYklKtgA"
           }
         },
         {
@@ -11721,6 +11737,7 @@
             "magicalBonus": null,
             "properties": [
               "hvy",
+              "mgc",
               "two"
             ],
             "proficient": 1,
@@ -11866,7 +11883,8 @@
             },
             "identifier": "",
             "attuned": false,
-            "ammunition": {}
+            "ammunition": {},
+            "mastery": ""
           },
           "effects": [],
           "flags": {
@@ -11900,12 +11918,29 @@
               }
             },
             "midi-qol": {
-              "removeAttackDamageButtons": "default"
+              "removeAttackDamageButtons": "default",
+              "fumbleThreshold": null,
+              "rollAttackPerTarget": "default",
+              "itemCondition": "",
+              "reactionCondition": "",
+              "otherCondition": "",
+              "effectCondition": ""
             },
             "midiProperties": {
-              "confirmTargets": "default"
+              "confirmTargets": "default",
+              "autoFailFriendly": false,
+              "autoSaveFriendly": false,
+              "magicdam": false,
+              "magiceffect": false,
+              "noConcentrationCheck": false,
+              "toggleEffect": false,
+              "ignoreTotalCover": false
             },
-            "dnd5e": {}
+            "dnd5e": {
+              "riders": {
+                "activity": []
+              }
+            }
           },
           "img": "icons/weapons/swords/sword-guard.webp",
           "folder": null,
@@ -11920,8 +11955,8 @@
             "systemId": "dnd5e",
             "systemVersion": "4.4.2",
             "createdTime": null,
-            "modifiedTime": null,
-            "lastModifiedBy": null
+            "modifiedTime": 1755707198668,
+            "lastModifiedBy": "6yhz13iFYYklKtgA"
           }
         },
         {
@@ -11986,10 +12021,27 @@
               }
             },
             "midi-qol": {
-              "removeAttackDamageButtons": "default"
+              "removeAttackDamageButtons": "default",
+              "rollAttackPerTarget": "default",
+              "itemCondition": "",
+              "reactionCondition": "",
+              "otherCondition": "",
+              "effectCondition": ""
             },
             "midiProperties": {
-              "confirmTargets": "default"
+              "confirmTargets": "default",
+              "autoFailFriendly": false,
+              "autoSaveFriendly": false,
+              "magicdam": false,
+              "magiceffect": false,
+              "noConcentrationCheck": false,
+              "toggleEffect": false,
+              "ignoreTotalCover": false
+            },
+            "dnd5e": {
+              "riders": {
+                "activity": []
+              }
             }
           },
           "img": "icons/creatures/magical/humanoid-giant-forest-blue.webp",
@@ -12005,8 +12057,8 @@
             "systemId": "dnd5e",
             "systemVersion": "4.4.2",
             "createdTime": null,
-            "modifiedTime": null,
-            "lastModifiedBy": null
+            "modifiedTime": 1755707337965,
+            "lastModifiedBy": "6yhz13iFYYklKtgA"
           }
         },
         {
@@ -12104,79 +12156,171 @@
               "chat": ""
             },
             "source": {
-              "book": "Monster Manual",
-              "page": "278",
               "custom": "",
-              "license": "",
+              "book": "SRD 5.1",
+              "page": "",
+              "license": "CC-BY-4.0",
               "revision": 1,
-              "rules": "2024"
+              "rules": "2014"
             },
             "cover": null,
-            "crewed": false,
             "uses": {
               "max": "",
-              "recovery": [],
-              "spent": 0
+              "spent": 0,
+              "recovery": []
             },
             "type": {
-              "value": "monster",
+              "value": "",
               "subtype": ""
             },
-            "properties": [],
             "requirements": "",
-            "activities": {},
-            "identifier": "",
-            "advancement": [],
-            "enchant": {},
+            "crewed": false,
+            "properties": [],
             "prerequisites": {
               "level": null,
               "repeatable": false
-            }
+            },
+            "activities": {},
+            "identifier": "magic-resistance",
+            "advancement": [],
+            "enchant": {}
           },
-          "effects": [],
+          "effects": [
+            {
+              "name": "Magic Resistance",
+              "img": "icons/magic/defensive/shield-barrier-glowing-blue.webp",
+              "origin": "Actor.YadU72LnrMd5fHez.Item.vUyYxadU3cXz7Zqf",
+              "_id": "j2PE5UmM8lYn1jhA",
+              "type": "base",
+              "system": {},
+              "changes": [
+                {
+                  "key": "flags.midi-qol.grants.advantage.attack.save",
+                  "mode": 0,
+                  "value": "1",
+                  "priority": 20
+                }
+              ],
+              "disabled": false,
+              "duration": {
+                "startTime": null,
+                "seconds": null,
+                "combat": null,
+                "rounds": null,
+                "turns": null,
+                "startRound": null,
+                "startTurn": null
+              },
+              "description": "",
+              "tint": "#ffffff",
+              "transfer": true,
+              "statuses": [],
+              "sort": 0,
+              "flags": {
+                "dae": {
+                  "disableCondition": "",
+                  "disableIncapacitated": false,
+                  "stackable": "multi",
+                  "showIcon": false,
+                  "durationExpression": "",
+                  "macroRepeat": "none",
+                  "specialDuration": []
+                },
+                "dnd5e": {
+                  "riders": {
+                    "statuses": []
+                  }
+                },
+                "core": {
+                  "overlay": false
+                },
+                "ActiveAuras": {
+                  "isAura": false,
+                  "aura": "None",
+                  "nameOverride": "",
+                  "radius": "",
+                  "alignment": "",
+                  "type": "",
+                  "customCheck": "",
+                  "ignoreSelf": false,
+                  "height": false,
+                  "hidden": false,
+                  "displayTemp": false,
+                  "hostile": false,
+                  "onlyOnce": false,
+                  "wallsBlock": "system",
+                  "statuses": []
+                }
+              },
+              "_stats": {
+                "compendiumSource": null,
+                "duplicateSource": null,
+                "coreVersion": "12.343",
+                "systemId": "dnd5e",
+                "systemVersion": "4.4.2",
+                "createdTime": null,
+                "modifiedTime": null,
+                "lastModifiedBy": null
+              }
+            }
+          ],
           "flags": {
+            "core": {
+              "sourceId": "Compendium.dnd5e.monsterfeatures.Hc6MqLQhPTI1KOvm"
+            },
+            "midi-qol": {
+              "rollAttackPerTarget": "default",
+              "removeAttackDamageButtons": "default",
+              "itemCondition": "",
+              "reactionCondition": "",
+              "otherCondition": "",
+              "effectCondition": "",
+              "-=onUseMacroName": null
+            },
+            "midiProperties": {
+              "autoFailFriendly": false,
+              "autoSaveFriendly": false,
+              "magicdam": false,
+              "magiceffect": false,
+              "noConcentrationCheck": false,
+              "toggleEffect": false,
+              "ignoreTotalCover": false
+            },
+            "dnd5e": {
+              "riders": {
+                "activity": [],
+                "effect": []
+              }
+            },
             "ddbimporter": {
               "levelBonus": false,
               "dndbeyond": {}
             },
-            "monsterMunch": {
-              "titleHTML": "<em><strong>Magic Resistance.</strong></em>",
-              "fullName": "Magic Resistance.",
-              "actionCopy": false,
-              "type": "special",
-              "actionInfo": {
-                "damage": {
-                  "parts": [],
-                  "versatile": ""
-                },
-                "baseAbility": null,
-                "toHit": 0,
-                "proficient": false,
-                "extraAttackBonus": 0
+            "chris-premades": {
+              "-=macros": null,
+              "info": {
+                "source": "stroud-dnd-helpers.SDND-Features",
+                "version": 1750272108520,
+                "rules": "legacy"
               }
-            },
-            "midi-qol": {
-              "removeAttackDamageButtons": "default"
-            },
-            "midiProperties": {
-              "confirmTargets": "default"
             }
           },
           "img": "icons/magic/defensive/shield-barrier-glowing-blue.webp",
           "folder": null,
-          "sort": 0,
+          "sort": 200000,
           "ownership": {
-            "default": 0
+            "default": 0,
+            "6yhz13iFYYklKtgA": 3
           },
           "_stats": {
-            "compendiumSource": null,
+            "compendiumSource": "Compendium.dnd5e.monsterfeatures.Hc6MqLQhPTI1KOvm",
             "duplicateSource": null,
             "coreVersion": "12.343",
             "systemId": "dnd5e",
             "systemVersion": "4.4.2",
             "createdTime": null,
-            "modifiedTime": null,
-            "lastModifiedBy": null
+            "modifiedTime": 1755707176070,
+            "lastModifiedBy": "6yhz13iFYYklKtgA"
           }
         },
         {
@@ -12241,10 +12385,27 @@
               }
             },
             "midi-qol": {
-              "removeAttackDamageButtons": "default"
+              "removeAttackDamageButtons": "default",
+              "rollAttackPerTarget": "default",
+              "itemCondition": "",
+              "reactionCondition": "",
+              "otherCondition": "",
+              "effectCondition": ""
             },
             "midiProperties": {
-              "confirmTargets": "default"
+              "confirmTargets": "default",
+              "autoFailFriendly": false,
+              "autoSaveFriendly": false,
+              "magicdam": false,
+              "magiceffect": false,
+              "noConcentrationCheck": false,
+              "toggleEffect": false,
+              "ignoreTotalCover": false
+            },
+            "dnd5e": {
+              "riders": {
+                "activity": []
+              }
             }
           },
           "img": "icons/skills/melee/weapons-crossed-swords-teal.webp",
@@ -12260,214 +12421,8 @@
             "systemId": "dnd5e",
             "systemVersion": "4.4.2",
             "createdTime": null,
-            "modifiedTime": null,
-            "lastModifiedBy": null
-          }
-        },
-        {
-          "_id": "i3mawk4QyKNjkT1y",
-          "name": "Regeneration",
-          "type": "feat",
-          "system": {
-            "description": {
-              "value": "<div class=\"ddb\">\n<section class=\"secret\">\n<p><em><strong>Regeneration.</strong></em> The slaad regains [[/damage 10 type=heal average=false]] hit points at the start of its turn if it has at least 1 hit point.</p>\n</section>\nThe [[lookup @name]] uses [[lookup @item.name]].\n</div>",
-              "chat": ""
-            },
-            "source": {
-              "book": "Monster Manual",
-              "page": "278",
-              "custom": "",
-              "license": "",
-              "revision": 1,
-              "rules": "2024"
-            },
-            "cover": null,
-            "crewed": false,
-            "uses": {
-              "max": "",
-              "recovery": [],
-              "spent": 0
-            },
-            "type": {
-              "value": "monster",
-              "subtype": ""
-            },
-            "properties": [],
-            "requirements": "",
-            "activities": {
-              "dnd5eactivity000": {
-                "_id": "dnd5eactivity000",
-                "type": "heal",
-                "activation": {
-                  "type": "special",
-                  "value": 1,
-                  "condition": "",
-                  "override": false
-                },
-                "consumption": {
-                  "targets": [],
-                  "scaling": {
-                    "allowed": false,
-                    "max": ""
-                  },
-                  "spellSlot": true
-                },
-                "description": {
-                  "chatFlavor": ""
-                },
-                "duration": {
-                  "concentration": false,
-                  "value": "",
-                  "units": "",
-                  "special": "",
-                  "override": false
-                },
-                "effects": [],
-                "range": {
-                  "units": "",
-                  "special": "",
-                  "override": false
-                },
-                "target": {
-                  "template": {
-                    "count": "",
-                    "contiguous": false,
-                    "type": "",
-                    "size": "",
-                    "width": "",
-                    "height": "",
-                    "units": ""
-                  },
-                  "affects": {
-                    "count": "",
-                    "type": "self",
-                    "choice": false,
-                    "special": ""
-                  },
-                  "prompt": true,
-                  "override": false
-                },
-                "uses": {
-                  "spent": 0,
-                  "max": "",
-                  "recovery": []
-                },
-                "healing": {
-                  "number": null,
-                  "denomination": null,
-                  "bonus": "",
-                  "types": [
-                    "healing"
-                  ],
-                  "custom": {
-                    "enabled": true,
-                    "formula": "+ 10"
-                  },
-                  "scaling": {
-                    "mode": "whole",
-                    "number": null,
-                    "formula": ""
-                  }
-                },
-                "sort": 0,
-                "useConditionText": "",
-                "useConditionReason": "",
-                "effectConditionText": "",
-                "macroData": {
-                  "name": "",
-                  "command": ""
-                },
-                "ignoreTraits": {
-                  "idi": false,
-                  "idr": false,
-                  "idv": false,
-                  "ida": false
-                },
-                "midiProperties": {
-                  "ignoreTraits": [],
-                  "triggeredActivityId": "none",
-                  "triggeredActivityConditionText": "",
-                  "triggeredActivityTargets": "targets",
-                  "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
-                  "confirmTargets": "default",
-                  "autoTargetType": "any",
-                  "autoTargetAction": "default",
-                  "automationOnly": false,
-                  "otherActivityCompatible": true,
-                  "identifier": "",
-                  "displayActivityName": false,
-                  "rollMode": "default",
-                  "chooseEffects": false,
-                  "toggleEffect": false,
-                  "ignoreFullCover": false
-                },
-                "isOverTimeFlag": false,
-                "overTimeProperties": {
-                  "saveRemoves": true,
-                  "preRemoveConditionText": "",
-                  "postRemoveConditionText": ""
-                }
-              }
-            },
-            "identifier": "",
-            "advancement": [],
-            "enchant": {},
-            "prerequisites": {
-              "level": null,
-              "repeatable": false
-            }
-          },
-          "effects": [],
-          "flags": {
-            "ddbimporter": {
-              "levelBonus": false,
-              "dndbeyond": {}
-            },
-            "monsterMunch": {
-              "titleHTML": "<em><strong>Regeneration.</strong></em>",
-              "fullName": "Regeneration.",
-              "actionCopy": false,
-              "type": "special",
-              "actionInfo": {
-                "damage": {
-                  "parts": [
-                    [
-                      "+ 10",
-                      "healing"
-                    ]
-                  ],
-                  "versatile": ""
-                },
-                "baseAbility": null,
-                "toHit": 0,
-                "proficient": false,
-                "extraAttackBonus": 0
-              }
-            },
-            "midi-qol": {
-              "removeAttackDamageButtons": "default"
-            },
-            "midiProperties": {
-              "confirmTargets": "default"
-            },
-            "dnd5e": {}
-          },
-          "img": "icons/magic/life/heart-cross-strong-purple-orange.webp",
-          "folder": null,
-          "sort": 0,
-          "ownership": {
-            "default": 0
-          },
-          "_stats": {
-            "compendiumSource": null,
-            "duplicateSource": null,
-            "coreVersion": "12.343",
-            "systemId": "dnd5e",
-            "systemVersion": "4.4.2",
-            "createdTime": null,
-            "modifiedTime": null,
-            "lastModifiedBy": null
+            "modifiedTime": 1755707191312,
+            "lastModifiedBy": "6yhz13iFYYklKtgA"
           }
         },
         {
@@ -15598,6 +15553,227 @@
           },
           "sort": 0,
           "_id": "2p8Yd12zd2paRd3O"
+        },
+        {
+          "_id": "gWrIC5PSgJ4dM9pP",
+          "name": "Regeneration",
+          "ownership": {
+            "default": 0,
+            "6yhz13iFYYklKtgA": 3
+          },
+          "type": "feat",
+          "system": {
+            "description": {
+              "value": "<section class=\"secret\" id=\"secret-PI44U608F3oGgQsA\"><p>the [[lookup @name lowercase]] regains <strong>10 hit points</strong> at the start of its turn if it has at least <strong>1 hit point</strong>.</p></section><p>the [[lookup @name lowercase]] regains <strong>10 hit points</strong> at the start of its turn.</p>",
+              "chat": ""
+            },
+            "source": {
+              "custom": "",
+              "book": "SRD 5.1",
+              "page": "",
+              "license": "CC-BY-4.0",
+              "rules": "2014",
+              "revision": 1
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            },
+            "type": {
+              "value": "monster",
+              "subtype": ""
+            },
+            "requirements": "",
+            "activities": {
+              "dnd5eactivity000": {
+                "_id": "dnd5eactivity000",
+                "type": "heal",
+                "activation": {
+                  "type": "",
+                  "value": null,
+                  "condition": "",
+                  "override": false
+                },
+                "consumption": {
+                  "targets": [],
+                  "scaling": {
+                    "allowed": false,
+                    "max": ""
+                  },
+                  "spellSlot": true
+                },
+                "description": {
+                  "chatFlavor": ""
+                },
+                "duration": {
+                  "concentration": false,
+                  "value": "",
+                  "units": "inst",
+                  "special": "",
+                  "override": false
+                },
+                "effects": [],
+                "range": {
+                  "units": "self",
+                  "special": "",
+                  "override": false
+                },
+                "target": {
+                  "template": {
+                    "count": "",
+                    "contiguous": false,
+                    "type": "",
+                    "size": "",
+                    "width": "",
+                    "height": "",
+                    "units": ""
+                  },
+                  "affects": {
+                    "count": "",
+                    "type": "",
+                    "choice": false,
+                    "special": ""
+                  },
+                  "prompt": true,
+                  "override": false
+                },
+                "uses": {
+                  "spent": 0,
+                  "max": "",
+                  "recovery": []
+                },
+                "healing": {
+                  "number": null,
+                  "denomination": 0,
+                  "bonus": "",
+                  "types": [],
+                  "custom": {
+                    "enabled": true,
+                    "formula": "10"
+                  },
+                  "scaling": {
+                    "mode": "whole",
+                    "number": null,
+                    "formula": ""
+                  }
+                },
+                "sort": 0,
+                "useConditionText": "",
+                "useConditionReason": "",
+                "effectConditionText": "",
+                "macroData": {
+                  "name": "",
+                  "command": ""
+                },
+                "ignoreTraits": {
+                  "idi": false,
+                  "idr": false,
+                  "idv": false,
+                  "ida": false
+                },
+                "midiProperties": {
+                  "ignoreTraits": [],
+                  "triggeredActivityId": "none",
+                  "triggeredActivityConditionText": "",
+                  "triggeredActivityTargets": "targets",
+                  "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
+                  "confirmTargets": "default",
+                  "autoTargetType": "any",
+                  "autoTargetAction": "default",
+                  "automationOnly": false,
+                  "otherActivityCompatible": true,
+                  "identifier": "",
+                  "displayActivityName": false,
+                  "rollMode": "default",
+                  "chooseEffects": false,
+                  "toggleEffect": false,
+                  "ignoreFullCover": false
+                },
+                "isOverTimeFlag": false,
+                "overTimeProperties": {
+                  "saveRemoves": true,
+                  "preRemoveConditionText": "",
+                  "postRemoveConditionText": ""
+                },
+                "name": ""
+              }
+            },
+            "enchant": {},
+            "prerequisites": {
+              "level": null,
+              "repeatable": false
+            },
+            "properties": [],
+            "identifier": "regeneration",
+            "advancement": [],
+            "cover": null,
+            "crewed": false
+          },
+          "flags": {
+            "midi-qol": {
+              "rollAttackPerTarget": "default",
+              "removeAttackDamageButtons": "default",
+              "itemCondition": "",
+              "reactionCondition": "",
+              "otherCondition": "",
+              "effectCondition": ""
+            },
+            "midiProperties": {
+              "autoFailFriendly": false,
+              "autoSaveFriendly": false,
+              "magicdam": false,
+              "magiceffect": false,
+              "noConcentrationCheck": false,
+              "toggleEffect": false,
+              "ignoreTotalCover": false
+            },
+            "dnd5e": {
+              "riders": {
+                "activity": [],
+                "effect": []
+              }
+            },
+            "chris-premades": {
+              "config": {
+                "generic": {
+                  "genericRegeneration": {
+                    "applied": true,
+                    "damageTypes": [],
+                    "showIcons": false,
+                    "threshold": 0,
+                    "zeroHP": false,
+                    "critical": false
+                  }
+                }
+              },
+              "macros": {
+                "midi": {
+                  "actor": [
+                    "genericRegeneration"
+                  ]
+                },
+                "combat": [
+                  "genericRegeneration"
+                ]
+              }
+            }
+          },
+          "img": "icons/skills/wounds/anatomy-organ-heart-red.webp",
+          "effects": [],
+          "folder": null,
+          "sort": 0,
+          "_stats": {
+            "duplicateSource": null,
+            "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.Av7H0ymGdPeTsnwV",
+            "coreVersion": "12.343",
+            "systemId": "dnd5e",
+            "systemVersion": "4.4.2",
+            "createdTime": 1755707005401,
+            "modifiedTime": 1755707027038,
+            "lastModifiedBy": "6yhz13iFYYklKtgA"
+          }
         }
       ],
       "effects": [],
@@ -26053,7 +26229,7 @@
         "createdTime": 1719926018787,
         "modifiedTime": 1754774811503,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
-        "compendiumSource": null,
+        "compendiumSource": "Actor.jW1A4zEGjXJ9VBX4",
         "duplicateSource": null
       }
     },
@@ -27511,7 +27687,7 @@
         "createdTime": null,
         "modifiedTime": 1754774826859,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
-        "compendiumSource": null,
+        "compendiumSource": "Actor.uLqL2LdllVgLamR7",
         "duplicateSource": null
       }
     },
@@ -62393,6 +62569,1995 @@
         "modifiedTime": 1754774811052,
         "lastModifiedBy": "6yhz13iFYYklKtgA"
       }
+    },
+    {
+      "_id": "pztFWii1yzjMLgCB",
+      "name": "Ghast",
+      "type": "npc",
+      "img": "modules/sdnd-strahd-adv/images/tokens/Mobs/Ghast_CA.jpeg",
+      "items": [
+        {
+          "name": "Bite",
+          "type": "weapon",
+          "flags": {
+            "ddbimporter": {
+              "dndbeyond": {}
+            },
+            "monsterMunch": {
+              "titleHTML": "<strong>Bite.</strong>",
+              "fullName": "Bite."
+            },
+            "dnd5e": {}
+          },
+          "effects": [],
+          "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+          "_id": "ke94pxiie1btmi46",
+          "folder": null,
+          "sort": 0,
+          "system": {
+            "description": {
+              "value": "<p><em><strong></strong> Melee Weapon Attack:</em> +3 to hit, reach 5 ft., one creature. <em>Hit:</em> 12 (2d8 + 3) piercing damage.</p>",
+              "chat": ""
+            },
+            "source": {
+              "custom": "Basic Rules pg 311",
+              "revision": 1,
+              "rules": "2024"
+            },
+            "quantity": 1,
+            "weight": {
+              "value": 0,
+              "units": "lb"
+            },
+            "price": {
+              "value": 0,
+              "denomination": "gp"
+            },
+            "attunement": "",
+            "equipped": true,
+            "rarity": "",
+            "identified": true,
+            "cover": null,
+            "crewed": false,
+            "range": {
+              "value": 5,
+              "long": null,
+              "units": "ft",
+              "reach": null
+            },
+            "uses": {
+              "max": "0",
+              "spent": 0,
+              "recovery": []
+            },
+            "damage": {
+              "versatile": {
+                "number": null,
+                "denomination": null,
+                "bonus": "",
+                "types": [],
+                "custom": {
+                  "enabled": false,
+                  "formula": ""
+                },
+                "scaling": {
+                  "mode": "",
+                  "number": null,
+                  "formula": ""
+                }
+              },
+              "base": {
+                "number": null,
+                "denomination": null,
+                "bonus": "",
+                "types": [
+                  "piercing"
+                ],
+                "custom": {
+                  "enabled": true,
+                  "formula": "2d8[piercing] + @mod"
+                },
+                "scaling": {
+                  "mode": "",
+                  "number": null,
+                  "formula": ""
+                }
+              }
+            },
+            "armor": {
+              "value": 10
+            },
+            "hp": {
+              "value": 0,
+              "max": 0,
+              "dt": null,
+              "conditions": ""
+            },
+            "properties": [
+              "rch"
+            ],
+            "proficient": 1,
+            "unidentified": {
+              "description": ""
+            },
+            "type": {
+              "value": "natural",
+              "baseItem": ""
+            },
+            "activities": {
+              "dnd5eactivity000": {
+                "_id": "dnd5eactivity000",
+                "type": "attack",
+                "activation": {
+                  "type": "action",
+                  "value": 1,
+                  "condition": "",
+                  "override": false
+                },
+                "consumption": {
+                  "targets": [],
+                  "scaling": {
+                    "allowed": false,
+                    "max": ""
+                  },
+                  "spellSlot": true
+                },
+                "description": {
+                  "chatFlavor": ""
+                },
+                "duration": {
+                  "concentration": false,
+                  "units": "inst",
+                  "special": "",
+                  "override": false
+                },
+                "effects": [],
+                "range": {
+                  "value": "5",
+                  "units": "ft",
+                  "special": "",
+                  "override": false
+                },
+                "target": {
+                  "template": {
+                    "count": "",
+                    "contiguous": false,
+                    "type": "",
+                    "size": "",
+                    "width": "",
+                    "height": "",
+                    "units": ""
+                  },
+                  "affects": {
+                    "count": "",
+                    "type": "",
+                    "choice": false,
+                    "special": ""
+                  },
+                  "prompt": true,
+                  "override": false
+                },
+                "uses": {
+                  "spent": 0,
+                  "max": "",
+                  "recovery": []
+                },
+                "attack": {
+                  "ability": "str",
+                  "bonus": "",
+                  "critical": {
+                    "threshold": null
+                  },
+                  "flat": false,
+                  "type": {
+                    "value": "melee",
+                    "classification": "weapon"
+                  }
+                },
+                "damage": {
+                  "critical": {
+                    "bonus": ""
+                  },
+                  "includeBase": true,
+                  "parts": []
+                },
+                "sort": 0,
+                "useConditionText": "",
+                "useConditionReason": "",
+                "effectConditionText": "",
+                "macroData": {
+                  "name": "",
+                  "command": ""
+                },
+                "ignoreTraits": {
+                  "idi": false,
+                  "idr": false,
+                  "idv": false,
+                  "ida": false
+                },
+                "midiProperties": {
+                  "ignoreTraits": [],
+                  "triggeredActivityId": "none",
+                  "triggeredActivityConditionText": "",
+                  "triggeredActivityTargets": "targets",
+                  "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
+                  "confirmTargets": "default",
+                  "autoTargetType": "any",
+                  "autoTargetAction": "default",
+                  "automationOnly": false,
+                  "otherActivityCompatible": true,
+                  "identifier": "",
+                  "displayActivityName": false,
+                  "rollMode": "default",
+                  "chooseEffects": false,
+                  "toggleEffect": false,
+                  "ignoreFullCover": false
+                },
+                "isOverTimeFlag": false,
+                "overTimeProperties": {
+                  "saveRemoves": true,
+                  "preRemoveConditionText": "",
+                  "postRemoveConditionText": ""
+                },
+                "otherActivityId": "",
+                "attackMode": "oneHanded",
+                "ammunition": "",
+                "otherActivityUuid": ""
+              }
+            },
+            "identifier": "",
+            "container": null,
+            "attuned": false,
+            "ammunition": {},
+            "magicalBonus": null
+          },
+          "ownership": {
+            "default": 0
+          },
+          "_stats": {
+            "systemId": null,
+            "systemVersion": null,
+            "coreVersion": "12.331",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
+          }
+        },
+        {
+          "name": "Turning Defiance",
+          "type": "feat",
+          "flags": {
+            "ddbimporter": {
+              "dndbeyond": {}
+            },
+            "monsterMunch": {
+              "titleHTML": "<em><strong>Turning Defiance.</strong></em>",
+              "fullName": "Turning Defiance."
+            }
+          },
+          "effects": [],
+          "img": "icons/skills/toxins/poison-bottle-corked-fire-green.webp",
+          "_id": "phfsxb4t9gs102f7",
+          "folder": null,
+          "sort": 0,
+          "system": {
+            "description": {
+              "value": "<p><em><strong></strong></em> The ghast and any ghouls within 30 feet of it have advantage on saving throws against effects that turn undead.</p>",
+              "chat": ""
+            },
+            "source": {
+              "custom": "Basic Rules pg 311",
+              "revision": 1,
+              "rules": "2024"
+            },
+            "cover": null,
+            "crewed": false,
+            "uses": {
+              "max": "0",
+              "spent": 0,
+              "recovery": []
+            },
+            "type": {
+              "value": "",
+              "subtype": ""
+            },
+            "requirements": "",
+            "activities": {},
+            "identifier": "",
+            "advancement": [],
+            "enchant": {},
+            "prerequisites": {
+              "level": null,
+              "repeatable": false
+            },
+            "properties": []
+          },
+          "ownership": {
+            "default": 0
+          },
+          "_stats": {
+            "systemId": null,
+            "systemVersion": null,
+            "coreVersion": "12.331",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "compendiumSource": null,
+            "duplicateSource": null
+          }
+        },
+        {
+          "name": "Claws",
+          "type": "weapon",
+          "flags": {
+            "ddbimporter": {
+              "dndbeyond": {},
+              "effectsApplied": true,
+              "chrisEffectsApplied": true,
+              "chrisPreEffectName": "Claws"
+            },
+            "monsterMunch": {
+              "titleHTML": "<strong>Claws.</strong>",
+              "fullName": "Claws."
+            },
+            "midiProperties": {
+              "fulldam": true,
+              "nodam": false,
+              "halfdam": false,
+              "autoFailFriendly": false,
+              "autoSaveFriendly": false,
+              "rollOther": false,
+              "critOther": false,
+              "offHandWeapon": false,
+              "magicdam": false,
+              "magiceffect": false,
+              "concentration": false,
+              "toggleEffect": false,
+              "ignoreTotalCover": false,
+              "noConcentrationCheck": false
+            },
+            "custom-character-sheet-sections": {
+              "sectionName": ""
+            },
+            "rest-recovery": {
+              "data": {
+                "recovery": {
+                  "enabled": false
+                }
+              }
+            },
+            "midi-qol": {
+              "fumbleThreshold": null,
+              "effectActivation": false,
+              "rollAttackPerTarget": "default",
+              "removeAttackDamageButtons": "default",
+              "itemCondition": "",
+              "reactionCondition": "",
+              "otherCondition": "",
+              "effectCondition": ""
+            },
+            "dnd5e": {
+              "riders": {
+                "activity": []
+              }
+            }
+          },
+          "effects": [
+            {
+              "changes": [
+                {
+                  "key": "macro.CE",
+                  "mode": 0,
+                  "value": "Paralyzed",
+                  "priority": 20
+                },
+                {
+                  "key": "flags.midi-qol.OverTime",
+                  "mode": 0,
+                  "value": "turn=end,\nrollType=save,\nsaveAbility=con,\nsaveDC=10,\nlabel=Ghast Claws (end of turn)",
+                  "priority": 20
+                }
+              ],
+              "duration": {
+                "seconds": null,
+                "startTime": null,
+                "combat": null,
+                "rounds": null,
+                "turns": null,
+                "startRound": null,
+                "startTurn": null
+              },
+              "tint": "#ffffff",
+              "transfer": false,
+              "disabled": false,
+              "flags": {
+                "dae": {
+                  "transfer": false,
+                  "stackable": "noneName",
+                  "selfTarget": false,
+                  "selfTargetAlways": false,
+                  "durationExpression": "",
+                  "macroRepeat": "none",
+                  "specialDuration": []
+                },
+                "ddbimporter": {
+                  "disabled": false
+                },
+                "midi-qol": {
+                  "forceCEOff": true
+                },
+                "dfreds-convenient-effects": {
+                  "description": ""
+                },
+                "core": {
+                  "statusId": ""
+                },
+                "ActiveAuras": {
+                  "isAura": false,
+                  "aura": "None",
+                  "radius": "undefined",
+                  "alignment": "",
+                  "type": "",
+                  "ignoreSelf": false,
+                  "height": false,
+                  "hidden": false,
+                  "displayTemp": false,
+                  "hostile": false,
+                  "onlyOnce": false
+                }
+              },
+              "_id": "k0hLkPW1JZ7uS2N8",
+              "origin": null,
+              "name": "Ghast Claws",
+              "description": "",
+              "statuses": [],
+              "_stats": {
+                "coreVersion": "12.331",
+                "systemId": null,
+                "systemVersion": null,
+                "createdTime": null,
+                "modifiedTime": null,
+                "lastModifiedBy": null,
+                "compendiumSource": null,
+                "duplicateSource": null
+              },
+              "img": "icons/commodities/claws/claws-white.webp",
+              "type": "base",
+              "system": {},
+              "sort": 0
+            }
+          ],
+          "img": "icons/commodities/claws/claws-white.webp",
+          "_id": "v387bx6ujumrcbsd",
+          "sort": 0,
+          "system": {
+            "description": {
+              "value": "<p><em><strong></strong> Melee Weapon Attack:</em> +5 to hit, reach 5 ft., one target. <em>Hit:</em> 10 (2d6 + 3) slashing damage. If the target is a creature other than an undead, it must succeed on a DC 10 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>",
+              "chat": ""
+            },
+            "source": {
+              "custom": "Basic Rules pg 311",
+              "revision": 1,
+              "rules": "2014"
+            },
+            "quantity": 1,
+            "weight": {
+              "value": 0,
+              "units": "lb"
+            },
+            "price": {
+              "value": 0,
+              "denomination": "gp"
+            },
+            "attunement": "",
+            "equipped": true,
+            "rarity": "",
+            "identified": true,
+            "cover": null,
+            "crewed": false,
+            "range": {
+              "value": 5,
+              "long": null,
+              "units": "ft",
+              "reach": null
+            },
+            "uses": {
+              "max": "",
+              "spent": 0,
+              "recovery": []
+            },
+            "damage": {
+              "versatile": {
+                "number": null,
+                "denomination": null,
+                "bonus": "",
+                "types": [],
+                "custom": {
+                  "enabled": false,
+                  "formula": ""
+                },
+                "scaling": {
+                  "mode": "",
+                  "number": null,
+                  "formula": ""
+                }
+              },
+              "base": {
+                "number": null,
+                "denomination": null,
+                "bonus": "",
+                "types": [
+                  "slashing"
+                ],
+                "custom": {
+                  "enabled": true,
+                  "formula": "2d6[slashing] + @mod"
+                },
+                "scaling": {
+                  "mode": "",
+                  "number": null,
+                  "formula": ""
+                }
+              }
+            },
+            "armor": {
+              "value": 10
+            },
+            "hp": {
+              "value": 0,
+              "max": 0,
+              "dt": null,
+              "conditions": ""
+            },
+            "properties": [
+              "rch"
+            ],
+            "proficient": 1,
+            "unidentified": {
+              "description": ""
+            },
+            "type": {
+              "value": "natural",
+              "baseItem": ""
+            },
+            "activities": {
+              "dnd5eactivity000": {
+                "_id": "dnd5eactivity000",
+                "type": "attack",
+                "activation": {
+                  "type": "action",
+                  "value": 1,
+                  "condition": "",
+                  "override": false
+                },
+                "consumption": {
+                  "targets": [],
+                  "scaling": {
+                    "allowed": false,
+                    "max": ""
+                  },
+                  "spellSlot": true
+                },
+                "description": {
+                  "chatFlavor": ""
+                },
+                "duration": {
+                  "concentration": false,
+                  "value": "1",
+                  "units": "minute",
+                  "special": "",
+                  "override": false
+                },
+                "effects": [
+                  {
+                    "_id": "k0hLkPW1JZ7uS2N8"
+                  }
+                ],
+                "range": {
+                  "value": "5",
+                  "units": "ft",
+                  "special": "",
+                  "override": false
+                },
+                "target": {
+                  "template": {
+                    "count": "",
+                    "contiguous": false,
+                    "type": "",
+                    "size": "",
+                    "width": "",
+                    "height": "",
+                    "units": ""
+                  },
+                  "affects": {
+                    "count": "",
+                    "type": "",
+                    "choice": false,
+                    "special": ""
+                  },
+                  "prompt": true,
+                  "override": false
+                },
+                "uses": {
+                  "spent": 0,
+                  "max": "",
+                  "recovery": []
+                },
+                "attack": {
+                  "ability": "str",
+                  "bonus": "",
+                  "critical": {
+                    "threshold": null
+                  },
+                  "flat": false,
+                  "type": {
+                    "value": "melee",
+                    "classification": "weapon"
+                  }
+                },
+                "damage": {
+                  "critical": {
+                    "bonus": ""
+                  },
+                  "includeBase": true,
+                  "parts": []
+                },
+                "sort": 0,
+                "useConditionText": "",
+                "useConditionReason": "",
+                "effectConditionText": "",
+                "macroData": {
+                  "name": "",
+                  "command": ""
+                },
+                "ignoreTraits": {
+                  "idi": false,
+                  "idr": false,
+                  "idv": false,
+                  "ida": false
+                },
+                "midiProperties": {
+                  "ignoreTraits": [],
+                  "triggeredActivityId": "none",
+                  "triggeredActivityConditionText": "",
+                  "triggeredActivityTargets": "targets",
+                  "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
+                  "confirmTargets": "default",
+                  "autoTargetType": "any",
+                  "autoTargetAction": "default",
+                  "automationOnly": false,
+                  "otherActivityCompatible": true,
+                  "identifier": "",
+                  "displayActivityName": false,
+                  "rollMode": "default",
+                  "chooseEffects": false,
+                  "toggleEffect": false,
+                  "ignoreFullCover": false
+                },
+                "isOverTimeFlag": false,
+                "overTimeProperties": {
+                  "saveRemoves": true,
+                  "preRemoveConditionText": "",
+                  "postRemoveConditionText": ""
+                },
+                "otherActivityId": "",
+                "attackMode": "oneHanded",
+                "ammunition": "",
+                "otherActivityUuid": ""
+              },
+              "dnd5eactivity100": {
+                "_id": "dnd5eactivity100",
+                "type": "save",
+                "activation": {
+                  "type": "action",
+                  "value": 1,
+                  "condition": "",
+                  "override": false
+                },
+                "consumption": {
+                  "targets": [],
+                  "scaling": {
+                    "allowed": false,
+                    "max": ""
+                  },
+                  "spellSlot": true
+                },
+                "description": {
+                  "chatFlavor": ""
+                },
+                "duration": {
+                  "concentration": false,
+                  "value": "1",
+                  "units": "minute",
+                  "special": "",
+                  "override": false
+                },
+                "effects": [
+                  {
+                    "_id": "k0hLkPW1JZ7uS2N8",
+                    "onSave": false
+                  }
+                ],
+                "range": {
+                  "value": "5",
+                  "units": "ft",
+                  "special": "",
+                  "override": false
+                },
+                "target": {
+                  "template": {
+                    "count": "",
+                    "contiguous": false,
+                    "type": "",
+                    "size": "",
+                    "width": "",
+                    "height": "",
+                    "units": ""
+                  },
+                  "affects": {
+                    "count": "",
+                    "type": "",
+                    "choice": false,
+                    "special": ""
+                  },
+                  "prompt": true,
+                  "override": false
+                },
+                "uses": {
+                  "spent": 0,
+                  "max": "",
+                  "recovery": []
+                },
+                "damage": {
+                  "onSave": "half",
+                  "parts": [],
+                  "critical": {
+                    "allow": false
+                  }
+                },
+                "save": {
+                  "ability": [
+                    "con"
+                  ],
+                  "dc": {
+                    "calculation": "",
+                    "formula": "10"
+                  }
+                },
+                "sort": 0,
+                "useConditionText": "",
+                "useConditionReason": "",
+                "effectConditionText": "",
+                "macroData": {
+                  "name": "",
+                  "command": ""
+                },
+                "ignoreTraits": {
+                  "idi": false,
+                  "idr": false,
+                  "idv": false,
+                  "ida": false
+                },
+                "midiProperties": {
+                  "ignoreTraits": [],
+                  "triggeredActivityId": "none",
+                  "triggeredActivityConditionText": "",
+                  "triggeredActivityTargets": "targets",
+                  "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
+                  "confirmTargets": "default",
+                  "autoTargetType": "any",
+                  "autoTargetAction": "default",
+                  "automationOnly": false,
+                  "otherActivityCompatible": true,
+                  "identifier": "",
+                  "displayActivityName": false,
+                  "rollMode": "default",
+                  "chooseEffects": false,
+                  "toggleEffect": false,
+                  "ignoreFullCover": false
+                },
+                "isOverTimeFlag": false,
+                "overTimeProperties": {
+                  "saveRemoves": true,
+                  "preRemoveConditionText": "",
+                  "postRemoveConditionText": ""
+                },
+                "otherActivityId": ""
+              }
+            },
+            "identifier": "claws",
+            "container": null,
+            "attuned": false,
+            "ammunition": {},
+            "magicalBonus": null,
+            "mastery": ""
+          },
+          "ownership": {
+            "default": 0,
+            "6yhz13iFYYklKtgA": 3
+          },
+          "_stats": {
+            "systemId": "dnd5e",
+            "systemVersion": "4.4.2",
+            "coreVersion": "12.343",
+            "createdTime": 1704860319632,
+            "modifiedTime": 1750766344876,
+            "lastModifiedBy": "6yhz13iFYYklKtgA",
+            "compendiumSource": null,
+            "duplicateSource": null
+          },
+          "folder": null
+        },
+        {
+          "name": "Stench",
+          "type": "feat",
+          "flags": {
+            "ddbimporter": {
+              "dndbeyond": {},
+              "effectsApplied": true,
+              "chrisEffectsApplied": true,
+              "chrisPreEffectName": "Stench"
+            },
+            "monsterMunch": {
+              "titleHTML": "<em><strong>Stench.</strong></em>",
+              "fullName": "Stench."
+            },
+            "midiProperties": {
+              "fulldam": false,
+              "nodam": false,
+              "halfdam": false,
+              "autoFailFriendly": false,
+              "autoSaveFriendly": false,
+              "rollOther": false,
+              "critOther": false,
+              "offHandWeapon": false,
+              "magicdam": false,
+              "magiceffect": false,
+              "concentration": false,
+              "toggleEffect": false,
+              "ignoreTotalCover": false
+            },
+            "custom-character-sheet-sections": {
+              "sectionName": ""
+            },
+            "rest-recovery": {
+              "data": {
+                "recovery": {
+                  "enabled": false
+                }
+              }
+            },
+            "midi-qol": {
+              "effectActivation": false
+            },
+            "dnd5e": {}
+          },
+          "effects": [
+            {
+              "changes": [
+                {
+                  "key": "macro.CE",
+                  "mode": 0,
+                  "value": "Poisoned",
+                  "priority": 20
+                }
+              ],
+              "duration": {
+                "seconds": null,
+                "startTime": null,
+                "combat": null,
+                "rounds": null,
+                "turns": null,
+                "startRound": null,
+                "startTurn": null
+              },
+              "tint": "#ffffff",
+              "transfer": false,
+              "disabled": false,
+              "flags": {
+                "dae": {
+                  "transfer": false,
+                  "stackable": "noneName",
+                  "specialDuration": [
+                    "turnStart"
+                  ],
+                  "selfTarget": false,
+                  "selfTargetAlways": false,
+                  "durationExpression": "",
+                  "macroRepeat": "none"
+                },
+                "ddbimporter": {
+                  "disabled": false
+                },
+                "midi-qol": {
+                  "forceCEOff": true
+                },
+                "dfreds-convenient-effects": {
+                  "description": ""
+                },
+                "core": {
+                  "statusId": ""
+                },
+                "ActiveAuras": {
+                  "isAura": false,
+                  "aura": "None",
+                  "radius": "undefined",
+                  "alignment": "",
+                  "type": "",
+                  "ignoreSelf": false,
+                  "height": false,
+                  "hidden": false,
+                  "displayTemp": false,
+                  "hostile": false,
+                  "onlyOnce": false
+                }
+              },
+              "_id": "5tjU2PYaqPysfQnl",
+              "origin": null,
+              "name": "Stench",
+              "description": "",
+              "statuses": [],
+              "_stats": {
+                "coreVersion": "12.331",
+                "systemId": null,
+                "systemVersion": null,
+                "createdTime": null,
+                "modifiedTime": null,
+                "lastModifiedBy": null,
+                "compendiumSource": null,
+                "duplicateSource": null
+              },
+              "img": "icons/magic/air/fog-gas-smoke-dense-green.webp",
+              "type": "base",
+              "system": {},
+              "sort": 0
+            },
+            {
+              "changes": [
+                {
+                  "key": "flags.chris-premades.monster.ghast.feature.stenchImmune",
+                  "mode": 5,
+                  "value": "true",
+                  "priority": 20
+                }
+              ],
+              "transfer": true,
+              "_id": "RoDg8PDw3WyERURT",
+              "disabled": false,
+              "duration": {
+                "startTime": null,
+                "seconds": null,
+                "combat": null,
+                "rounds": null,
+                "turns": null,
+                "startRound": null,
+                "startTurn": null
+              },
+              "origin": null,
+              "tint": "#ffffff",
+              "flags": {
+                "dfreds-convenient-effects": {
+                  "description": ""
+                },
+                "dae": {
+                  "selfTarget": false,
+                  "selfTargetAlways": false,
+                  "stackable": "noneName",
+                  "durationExpression": "",
+                  "macroRepeat": "none",
+                  "specialDuration": []
+                },
+                "core": {
+                  "statusId": ""
+                },
+                "ActiveAuras": {
+                  "isAura": false,
+                  "aura": "None",
+                  "radius": "undefined",
+                  "alignment": "",
+                  "type": "",
+                  "ignoreSelf": false,
+                  "height": false,
+                  "hidden": false,
+                  "displayTemp": false,
+                  "hostile": false,
+                  "onlyOnce": false
+                },
+                "effectmacro": {
+                  "onEachTurn": {
+                    "script": "await chrisPremades.macros.monster.ghast.stench(token, origin, 5, 86400);"
+                  }
+                }
+              },
+              "name": "Stench Immunity",
+              "description": "",
+              "statuses": [],
+              "_stats": {
+                "coreVersion": "12.331",
+                "systemId": null,
+                "systemVersion": null,
+                "createdTime": null,
+                "modifiedTime": null,
+                "lastModifiedBy": null,
+                "compendiumSource": null,
+                "duplicateSource": null
+              },
+              "img": "icons/magic/air/fog-gas-smoke-dense-green.webp",
+              "type": "base",
+              "system": {},
+              "sort": 0
+            }
+          ],
+          "img": "icons/magic/air/fog-gas-smoke-dense-green.webp",
+          "_id": "6jv8vavz0nmehrsh",
+          "sort": 0,
+          "system": {
+            "description": {
+              "value": "<p><em><strong></strong></em> Any creature that starts its turn within 5 feet of the ghast must succeed on a DC 10 Constitution saving throw or be poisoned until the start of its next turn. On a successful saving throw, the creature is immune to the ghast's Stench for 24 hours.</p>",
+              "chat": ""
+            },
+            "source": {
+              "custom": "Basic Rules pg 311",
+              "revision": 1,
+              "rules": "2014"
+            },
+            "cover": null,
+            "crewed": false,
+            "uses": {
+              "max": "",
+              "spent": 0,
+              "recovery": []
+            },
+            "type": {
+              "value": "monster",
+              "subtype": ""
+            },
+            "requirements": "",
+            "activities": {
+              "dnd5eactivity000": {
+                "_id": "dnd5eactivity000",
+                "type": "save",
+                "activation": {
+                  "type": "special",
+                  "value": 1,
+                  "condition": "",
+                  "override": false
+                },
+                "consumption": {
+                  "targets": [],
+                  "scaling": {
+                    "allowed": false,
+                    "max": ""
+                  },
+                  "spellSlot": true
+                },
+                "description": {
+                  "chatFlavor": ""
+                },
+                "duration": {
+                  "concentration": false,
+                  "value": "2",
+                  "units": "round",
+                  "special": "",
+                  "override": false
+                },
+                "effects": [
+                  {
+                    "_id": "5tjU2PYaqPysfQnl",
+                    "onSave": false
+                  }
+                ],
+                "range": {
+                  "units": "",
+                  "special": "",
+                  "override": false
+                },
+                "target": {
+                  "template": {
+                    "count": "",
+                    "contiguous": false,
+                    "type": "",
+                    "size": "",
+                    "width": "",
+                    "height": "",
+                    "units": ""
+                  },
+                  "affects": {
+                    "count": "1",
+                    "type": "creature",
+                    "choice": false,
+                    "special": ""
+                  },
+                  "prompt": true,
+                  "override": false
+                },
+                "uses": {
+                  "spent": 0,
+                  "max": "",
+                  "recovery": []
+                },
+                "damage": {
+                  "onSave": "half",
+                  "parts": [],
+                  "critical": {
+                    "allow": false
+                  }
+                },
+                "save": {
+                  "ability": [
+                    "con"
+                  ],
+                  "dc": {
+                    "calculation": "",
+                    "formula": "10"
+                  }
+                },
+                "sort": 0,
+                "useConditionText": "",
+                "useConditionReason": "",
+                "effectConditionText": "",
+                "macroData": {
+                  "name": "",
+                  "command": ""
+                },
+                "ignoreTraits": {
+                  "idi": false,
+                  "idr": false,
+                  "idv": false,
+                  "ida": false
+                },
+                "midiProperties": {
+                  "ignoreTraits": [],
+                  "triggeredActivityId": "none",
+                  "triggeredActivityConditionText": "",
+                  "triggeredActivityTargets": "targets",
+                  "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
+                  "confirmTargets": "default",
+                  "autoTargetType": "any",
+                  "autoTargetAction": "default",
+                  "automationOnly": false,
+                  "otherActivityCompatible": true,
+                  "identifier": "",
+                  "displayActivityName": false,
+                  "rollMode": "default",
+                  "chooseEffects": false,
+                  "toggleEffect": false,
+                  "ignoreFullCover": false
+                },
+                "isOverTimeFlag": false,
+                "overTimeProperties": {
+                  "saveRemoves": true,
+                  "preRemoveConditionText": "",
+                  "postRemoveConditionText": ""
+                },
+                "otherActivityId": ""
+              }
+            },
+            "identifier": "stench",
+            "advancement": [],
+            "enchant": {},
+            "prerequisites": {
+              "level": null,
+              "repeatable": false
+            },
+            "properties": []
+          },
+          "ownership": {
+            "default": 0,
+            "6yhz13iFYYklKtgA": 3
+          },
+          "_stats": {
+            "systemId": "dnd5e",
+            "systemVersion": "2.4.1",
+            "coreVersion": "12.331",
+            "createdTime": 1704860319632,
+            "modifiedTime": 1704860319632,
+            "lastModifiedBy": "6yhz13iFYYklKtgA",
+            "compendiumSource": null,
+            "duplicateSource": null
+          },
+          "folder": null
+        }
+      ],
+      "effects": [],
+      "folder": "HVgPUd5OjxKCjiLI",
+      "sort": 700000,
+      "flags": {
+        "dnd5e": {},
+        "monsterMunch": {
+          "url": "https://www.dndbeyond.com/monsters/16870-ghast",
+          "img": "https://www.dndbeyond.com/avatars/67/670/636460720350525290.png",
+          "tokenImg": "https://www.dndbeyond.com/avatars/0/410/636252786514280516.jpeg",
+          "spellList": {
+            "class": [],
+            "pact": [],
+            "atwill": [],
+            "innate": [],
+            "edgeCases": [],
+            "material": true
+          },
+          "overTime": [
+            "Claws",
+            "Stench"
+          ]
+        },
+        "ddbimporter": {
+          "id": 16870,
+          "entityTypeId": 779871897,
+          "creatureGroupId": null,
+          "creatureFlags": [],
+          "version": "2.9.67",
+          "isLegacy": false,
+          "flatAC": true
+        },
+        "core": {
+          "sourceId": "Compendium.world.ddb-lost-mines-phandelver-monsters.trTWCkB3yT4cxTge"
+        },
+        "combat-utility-belt": {
+          "enableHideName": true,
+          "hideNameReplacement": "Unknown Creature"
+        },
+        "midi-qol": {
+          "concentration-damage": 0
+        },
+        "tidy5e-sheet": {
+          "death": {
+            "success": 0,
+            "failure": 0
+          },
+          "maxPreparedSpells": null,
+          "gender": "",
+          "age": "",
+          "height": "",
+          "weight": "",
+          "eyes": "",
+          "skin": "",
+          "hair": "",
+          "notes1": {
+            "name": ""
+          },
+          "notes2": {
+            "name": ""
+          },
+          "notes3": {
+            "name": ""
+          },
+          "notes4": {
+            "name": ""
+          }
+        }
+      },
+      "system": {
+        "abilities": {
+          "str": {
+            "value": 16,
+            "proficient": 0,
+            "max": null,
+            "bonuses": {
+              "check": "",
+              "save": ""
+            },
+            "check": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            },
+            "save": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            }
+          },
+          "dex": {
+            "value": 17,
+            "proficient": 0,
+            "max": null,
+            "bonuses": {
+              "check": "",
+              "save": ""
+            },
+            "check": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            },
+            "save": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            }
+          },
+          "con": {
+            "value": 10,
+            "proficient": 0,
+            "max": null,
+            "bonuses": {
+              "check": "",
+              "save": ""
+            },
+            "check": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            },
+            "save": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            }
+          },
+          "int": {
+            "value": 11,
+            "proficient": 0,
+            "max": null,
+            "bonuses": {
+              "check": "",
+              "save": ""
+            },
+            "check": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            },
+            "save": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            }
+          },
+          "wis": {
+            "value": 10,
+            "proficient": 0,
+            "max": null,
+            "bonuses": {
+              "check": "",
+              "save": ""
+            },
+            "check": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            },
+            "save": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            }
+          },
+          "cha": {
+            "value": 8,
+            "proficient": 0,
+            "max": null,
+            "bonuses": {
+              "check": "",
+              "save": ""
+            },
+            "check": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            },
+            "save": {
+              "roll": {
+                "min": null,
+                "max": null,
+                "mode": 0
+              }
+            }
+          }
+        },
+        "attributes": {
+          "ac": {
+            "flat": 13,
+            "calc": "natural",
+            "formula": ""
+          },
+          "hp": {
+            "value": 36,
+            "max": 36,
+            "temp": null,
+            "tempmax": null,
+            "formula": "8d8"
+          },
+          "init": {
+            "ability": "",
+            "bonus": "0",
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
+          },
+          "movement": {
+            "burrow": null,
+            "climb": null,
+            "fly": null,
+            "swim": null,
+            "walk": 30,
+            "units": "ft",
+            "hover": false
+          },
+          "attunement": {
+            "max": 3
+          },
+          "senses": {
+            "darkvision": 60,
+            "blindsight": null,
+            "tremorsense": null,
+            "truesight": null,
+            "units": "ft",
+            "special": ""
+          },
+          "spellcasting": "",
+          "spell": {
+            "level": 0
+          },
+          "exhaustion": 0,
+          "concentration": {
+            "ability": "",
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            },
+            "bonuses": {
+              "save": ""
+            },
+            "limit": 1
+          },
+          "loyalty": {
+            "value": null
+          },
+          "hd": {
+            "spent": 0
+          },
+          "death": {
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            },
+            "success": 0,
+            "failure": 0,
+            "bonuses": {
+              "save": ""
+            }
+          }
+        },
+        "details": {
+          "biography": {
+            "value": "",
+            "public": ""
+          },
+          "alignment": "Chaotic Evil",
+          "race": null,
+          "type": {
+            "value": "undead",
+            "subtype": "",
+            "swarm": "",
+            "custom": ""
+          },
+          "cr": 2,
+          "habitat": {
+            "custom": "Swamp, Underdark, Urban",
+            "value": []
+          },
+          "ideal": "",
+          "bond": "",
+          "flaw": "",
+          "treasure": {
+            "value": []
+          }
+        },
+        "traits": {
+          "size": "med",
+          "di": {
+            "value": [
+              "poison"
+            ],
+            "bypasses": [],
+            "custom": ""
+          },
+          "dr": {
+            "value": [
+              "necrotic"
+            ],
+            "bypasses": [],
+            "custom": ""
+          },
+          "dv": {
+            "value": [],
+            "bypasses": [],
+            "custom": ""
+          },
+          "ci": {
+            "value": [
+              "charmed",
+              "exhaustion",
+              "poisoned"
+            ],
+            "custom": ""
+          },
+          "languages": {
+            "value": [
+              "common"
+            ],
+            "custom": "",
+            "communication": {}
+          },
+          "dm": {
+            "amount": {},
+            "bypasses": []
+          },
+          "important": false
+        },
+        "currency": {
+          "pp": 0,
+          "gp": 0,
+          "ep": 0,
+          "sp": 0,
+          "cp": 0
+        },
+        "skills": {
+          "acr": {
+            "value": 0,
+            "ability": "dex",
+            "bonuses": {
+              "check": "",
+              "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
+          },
+          "ani": {
+            "value": 0,
+            "ability": "wis",
+            "bonuses": {
+              "check": "",
+              "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
+          },
+          "arc": {
+            "value": 0,
+            "ability": "int",
+            "bonuses": {
+              "check": "",
+              "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
+          },
+          "ath": {
+            "value": 0,
+            "ability": "str",
+            "bonuses": {
+              "check": "",
+              "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
+          },
+          "dec": {
+            "value": 0,
+            "ability": "cha",
+            "bonuses": {
+              "check": "",
+              "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
+          },
+          "his": {
+            "value": 0,
+            "ability": "int",
+            "bonuses": {
+              "check": "",
+              "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
+          },
+          "ins": {
+            "value": 0,
+            "ability": "wis",
+            "bonuses": {
+              "check": "",
+              "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
+          },
+          "itm": {
+            "value": 0,
+            "ability": "cha",
+            "bonuses": {
+              "check": "",
+              "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
+          },
+          "inv": {
+            "value": 0,
+            "ability": "int",
+            "bonuses": {
+              "check": "",
+              "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
+          },
+          "med": {
+            "value": 0,
+            "ability": "wis",
+            "bonuses": {
+              "check": "",
+              "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
+          },
+          "nat": {
+            "value": 0,
+            "ability": "int",
+            "bonuses": {
+              "check": "",
+              "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
+          },
+          "prc": {
+            "value": 0,
+            "ability": "wis",
+            "bonuses": {
+              "check": "",
+              "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
+          },
+          "prf": {
+            "value": 0,
+            "ability": "cha",
+            "bonuses": {
+              "check": "",
+              "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
+          },
+          "per": {
+            "value": 0,
+            "ability": "cha",
+            "bonuses": {
+              "check": "",
+              "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
+          },
+          "rel": {
+            "value": 0,
+            "ability": "int",
+            "bonuses": {
+              "check": "",
+              "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
+          },
+          "slt": {
+            "value": 0,
+            "ability": "dex",
+            "bonuses": {
+              "check": "",
+              "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
+          },
+          "ste": {
+            "value": 0,
+            "ability": "dex",
+            "bonuses": {
+              "check": "",
+              "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
+          },
+          "sur": {
+            "value": 0,
+            "ability": "wis",
+            "bonuses": {
+              "check": "",
+              "passive": ""
+            },
+            "roll": {
+              "min": null,
+              "max": null,
+              "mode": 0
+            }
+          }
+        },
+        "tools": {},
+        "spells": {
+          "spell1": {
+            "value": 0,
+            "override": null
+          },
+          "spell2": {
+            "value": 0,
+            "override": null
+          },
+          "spell3": {
+            "value": 0,
+            "override": null
+          },
+          "spell4": {
+            "value": 0,
+            "override": null
+          },
+          "spell5": {
+            "value": 0,
+            "override": null
+          },
+          "spell6": {
+            "value": 0,
+            "override": null
+          },
+          "spell7": {
+            "value": 0,
+            "override": null
+          },
+          "spell8": {
+            "value": 0,
+            "override": null
+          },
+          "spell9": {
+            "value": 0,
+            "override": null
+          },
+          "pact": {
+            "value": 0,
+            "override": null
+          }
+        },
+        "bonuses": {
+          "mwak": {
+            "attack": "0",
+            "damage": ""
+          },
+          "rwak": {
+            "attack": "0",
+            "damage": ""
+          },
+          "msak": {
+            "attack": "0",
+            "damage": ""
+          },
+          "rsak": {
+            "attack": "0",
+            "damage": ""
+          },
+          "abilities": {
+            "check": "",
+            "save": "",
+            "skill": ""
+          },
+          "spell": {
+            "dc": "0"
+          }
+        },
+        "resources": {
+          "legact": {
+            "value": 0,
+            "max": 0
+          },
+          "legres": {
+            "value": 0,
+            "max": 0
+          },
+          "lair": {
+            "value": false,
+            "initiative": 0,
+            "inside": false
+          }
+        },
+        "source": {
+          "custom": "Basic Rules pg 311",
+          "revision": 1,
+          "rules": "2014"
+        }
+      },
+      "ownership": {
+        "default": 0,
+        "6yhz13iFYYklKtgA": 3
+      },
+      "prototypeToken": {
+        "name": "Ghast",
+        "displayName": 20,
+        "actorLink": false,
+        "width": 1,
+        "height": 1,
+        "lockRotation": false,
+        "rotation": 0,
+        "alpha": 1,
+        "light": {
+          "alpha": 0.5,
+          "angle": 360,
+          "bright": 0,
+          "coloration": 1,
+          "dim": 0,
+          "luminosity": 0.5,
+          "saturation": 0,
+          "contrast": 0,
+          "shadows": 0,
+          "animation": {
+            "speed": 5,
+            "intensity": 5,
+            "reverse": false,
+            "type": null
+          },
+          "darkness": {
+            "min": 0,
+            "max": 1
+          },
+          "color": null,
+          "attenuation": 0.5,
+          "negative": false,
+          "priority": 0
+        },
+        "disposition": -1,
+        "displayBars": 40,
+        "bar1": {
+          "attribute": "attributes.hp"
+        },
+        "bar2": {
+          "attribute": null
+        },
+        "flags": {
+          "autorotate": {
+            "enabled": null
+          }
+        },
+        "randomImg": false,
+        "texture": {
+          "src": "systems/dnd5e/tokens/undead/Ghast.webp",
+          "tint": "#ffffff",
+          "scaleX": 1,
+          "scaleY": 1,
+          "offsetX": 0,
+          "offsetY": 0,
+          "rotation": 0,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "fit": "contain",
+          "alphaThreshold": 0.75
+        },
+        "sight": {
+          "angle": 360,
+          "enabled": false,
+          "range": 60,
+          "brightness": 0,
+          "visionMode": "basic",
+          "color": null,
+          "attenuation": 0.1,
+          "saturation": 0,
+          "contrast": 0
+        },
+        "detectionModes": [],
+        "appendNumber": false,
+        "prependAdjective": false,
+        "hexagonalShape": 0,
+        "occludable": {
+          "radius": 0
+        },
+        "ring": {
+          "enabled": false,
+          "colors": {
+            "ring": null,
+            "background": null
+          },
+          "effects": 1,
+          "subject": {
+            "scale": 1,
+            "texture": null
+          }
+        }
+      },
+      "_stats": {
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.2",
+        "coreVersion": "12.343",
+        "createdTime": 1704860319555,
+        "modifiedTime": 1754774813023,
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "compendiumSource": "Compendium.world.ddb-lost-mines-phandelver-monsters.trTWCkB3yT4cxTge",
+        "duplicateSource": null
+      }
     }
   ],
   "combats": [],
@@ -92238,8 +94403,166 @@
           "delta": {
             "_id": "QEF1V4b756Y7tvdR",
             "system": {},
-            "items": [],
-            "effects": [],
+            "items": [
+              {
+                "_id": "zsYxX82V3toKaqeq",
+                "name": "Magic Resistance",
+                "type": "feat",
+                "system": {
+                  "description": {
+                    "value": "<div class=\"ddb\">\n<section class=\"secret\">\n<p><em><strong>Magic Resistance.</strong></em> The slaad has advantage on saving throws against spells and other magical effects.</p>\n</section>\nThe [[lookup @name]] uses [[lookup @item.name]].\n</div>",
+                    "chat": ""
+                  },
+                  "source": {
+                    "book": "Monster Manual",
+                    "page": "278",
+                    "custom": "",
+                    "license": "",
+                    "revision": 1,
+                    "rules": "2024"
+                  },
+                  "cover": null,
+                  "crewed": false,
+                  "uses": {
+                    "max": "",
+                    "recovery": [],
+                    "spent": 0
+                  },
+                  "type": {
+                    "value": "monster",
+                    "subtype": ""
+                  },
+                  "properties": [],
+                  "requirements": "",
+                  "activities": {},
+                  "identifier": "",
+                  "advancement": [],
+                  "enchant": {},
+                  "prerequisites": {
+                    "level": null,
+                    "repeatable": false
+                  }
+                },
+                "effects": [],
+                "flags": {
+                  "ddbimporter": {
+                    "levelBonus": false,
+                    "dndbeyond": {}
+                  },
+                  "monsterMunch": {
+                    "titleHTML": "<em><strong>Magic Resistance.</strong></em>",
+                    "fullName": "Magic Resistance.",
+                    "actionCopy": false,
+                    "type": "special",
+                    "actionInfo": {
+                      "damage": {
+                        "parts": [],
+                        "versatile": ""
+                      },
+                      "baseAbility": null,
+                      "toHit": 0,
+                      "proficient": false,
+                      "extraAttackBonus": 0
+                    }
+                  },
+                  "midi-qol": {
+                    "removeAttackDamageButtons": "default",
+                    "rollAttackPerTarget": "default",
+                    "itemCondition": "",
+                    "reactionCondition": "",
+                    "otherCondition": "",
+                    "effectCondition": ""
+                  },
+                  "midiProperties": {
+                    "confirmTargets": "default",
+                    "autoFailFriendly": false,
+                    "autoSaveFriendly": false,
+                    "magicdam": false,
+                    "magiceffect": false,
+                    "noConcentrationCheck": false,
+                    "toggleEffect": false,
+                    "ignoreTotalCover": false
+                  },
+                  "dnd5e": {
+                    "riders": {
+                      "activity": []
+                    }
+                  }
+                },
+                "img": "icons/magic/defensive/shield-barrier-glowing-blue.webp",
+                "folder": null,
+                "sort": 0,
+                "ownership": {
+                  "default": 0
+                },
+                "_stats": {
+                  "compendiumSource": null,
+                  "duplicateSource": null,
+                  "coreVersion": "12.343",
+                  "systemId": "dnd5e",
+                  "systemVersion": "4.4.2",
+                  "createdTime": null,
+                  "modifiedTime": 1755707125429,
+                  "lastModifiedBy": "6yhz13iFYYklKtgA"
+                }
+              }
+            ],
+            "effects": [
+              {
+                "name": "Invisible",
+                "_id": "dnd5einvisible00",
+                "img": "systems/dnd5e/icons/svg/statuses/invisible.svg",
+                "statuses": [
+                  "invisible"
+                ],
+                "description": "@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixCRule.JournalEntryPage.MQIZ1zRLWRcNOtPN inline]",
+                "type": "base",
+                "system": {},
+                "changes": [
+                  {
+                    "key": "flags.midi-qol.advantage.attack.all",
+                    "mode": 0,
+                    "value": "1",
+                    "priority": 20
+                  },
+                  {
+                    "key": "flags.midi-qol.grants.disadvantage.attack.all",
+                    "mode": 0,
+                    "value": "1",
+                    "priority": 20
+                  }
+                ],
+                "disabled": false,
+                "duration": {
+                  "startTime": -38952337982,
+                  "seconds": null,
+                  "combat": null,
+                  "rounds": null,
+                  "turns": null,
+                  "startRound": null,
+                  "startTurn": null
+                },
+                "origin": null,
+                "tint": "#ffffff",
+                "transfer": false,
+                "sort": 0,
+                "flags": {
+                  "dae": {
+                    "specialDuration": []
+                  }
+                },
+                "_stats": {
+                  "compendiumSource": null,
+                  "duplicateSource": null,
+                  "coreVersion": "12.343",
+                  "systemId": "dnd5e",
+                  "systemVersion": "4.4.2",
+                  "createdTime": 1755707395140,
+                  "modifiedTime": 1755707395140,
+                  "lastModifiedBy": "6yhz13iFYYklKtgA"
+                }
+              }
+            ],
             "flags": {},
             "name": null,
             "type": null,
@@ -96870,7 +99193,7 @@
           "flags": {
             "monks-active-tiles": {
               "name": "",
-              "active": false,
+              "active": true,
               "record": false,
               "restriction": "all",
               "controlled": "all",
@@ -96888,15 +99211,6 @@
               "fileindex": 0,
               "actions": [
                 {
-                  "action": "activate",
-                  "data": {
-                    "entity": "",
-                    "collection": "tiles",
-                    "activate": "deactivate"
-                  },
-                  "id": "MargX6FFKADfhwd4"
-                },
-                {
                   "action": "runmacro",
                   "data": {
                     "entity": {
@@ -96907,6 +99221,15 @@
                     "runasgm": "gm"
                   },
                   "id": "xokNV38Jz2vrApcS"
+                },
+                {
+                  "action": "activate",
+                  "data": {
+                    "entity": "",
+                    "collection": "tiles",
+                    "activate": "deactivate"
+                  },
+                  "id": "MargX6FFKADfhwd4"
                 }
               ],
               "files": []
@@ -105948,7 +108271,7 @@
         "systemVersion": "3.2.1",
         "coreVersion": "12.343",
         "createdTime": 1719971196961,
-        "modifiedTime": 1755696557727,
+        "modifiedTime": 1755707064199,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
         "duplicateSource": null
@@ -106685,7 +109008,7 @@
     "systemVersion": "3.2.1",
     "coreVersion": "12.343",
     "createdTime": 1719971361644,
-    "modifiedTime": 1755696793863,
+    "modifiedTime": 1755709861682,
     "lastModifiedBy": "6yhz13iFYYklKtgA",
     "compendiumSource": null,
     "duplicateSource": null

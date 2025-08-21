@@ -1,6 +1,7 @@
 # v12.4.7
 # Bug Fixes
 - Fix Sunsword.
+- Update All Adventures to contain the required actors.
 # v12.4.6
 # New Features
 - More content changes
