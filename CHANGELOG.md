@@ -1,6 +1,11 @@
+# v12.4.7
+# Bug Fixes
+- Fix Sunsword.
+- Update All Adventures to contain the required actors.
 # v12.4.6
 # New Features
 - More content changes
+- Add Items Compendium
 # Bug Fixes
 - Restructure item references.
 # v12.4.5
@@ -230,6 +235,7 @@
 - Conversion to Foundry Version 11
 # v1.0.0: Initial Release of Curse of Strahd Adventure Pack
 - Includes starter scenes
+
 
 
 
