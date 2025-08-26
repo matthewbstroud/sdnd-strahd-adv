@@ -1,3 +1,6 @@
+# v12.4.8
+# Bug Fixes
+- Fix issues with Area T
 # v12.4.7
 # Bug Fixes
 - Fix Sunsword.
@@ -235,6 +238,7 @@
 - Conversion to Foundry Version 11
 # v1.0.0: Initial Release of Curse of Strahd Adventure Pack
 - Includes starter scenes
+
 
 
 
