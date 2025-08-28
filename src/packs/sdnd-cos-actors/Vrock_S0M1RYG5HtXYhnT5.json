@@ -739,12 +739,13 @@
         },
         "source": {
           "custom": "",
-          "book": "",
+          "book": "SRD 5.1",
           "page": "",
           "license": "CC-BY-4.0",
-          "rules": "2014",
-          "revision": 1
+          "revision": 1,
+          "rules": "2014"
         },
+        "cover": null,
         "uses": {
           "max": "",
           "spent": 0,
@@ -755,27 +756,137 @@
           "subtype": ""
         },
         "requirements": "",
+        "crewed": false,
         "properties": [],
-        "activities": {},
-        "enchant": {},
         "prerequisites": {
           "level": null,
           "repeatable": false
         },
+        "activities": {},
         "identifier": "magic-resistance",
         "advancement": [],
-        "cover": null,
-        "crewed": false
+        "enchant": {}
       },
-      "effects": [],
+      "effects": [
+        {
+          "name": "Magic Resistance",
+          "img": "icons/magic/defensive/shield-barrier-glowing-blue.webp",
+          "origin": "Actor.YadU72LnrMd5fHez.Item.vUyYxadU3cXz7Zqf",
+          "_id": "j2PE5UmM8lYn1jhA",
+          "type": "base",
+          "system": {},
+          "changes": [
+            {
+              "key": "flags.midi-qol.grants.advantage.attack.save",
+              "mode": 0,
+              "value": "1",
+              "priority": 20
+            }
+          ],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "dae": {
+              "disableCondition": "",
+              "disableIncapacitated": false,
+              "stackable": "multi",
+              "showIcon": false,
+              "durationExpression": "",
+              "macroRepeat": "none",
+              "specialDuration": []
+            },
+            "dnd5e": {
+              "riders": {
+                "statuses": []
+              }
+            },
+            "core": {
+              "overlay": false
+            },
+            "ActiveAuras": {
+              "isAura": false,
+              "aura": "None",
+              "nameOverride": "",
+              "radius": "",
+              "alignment": "",
+              "type": "",
+              "customCheck": "",
+              "ignoreSelf": false,
+              "height": false,
+              "hidden": false,
+              "displayTemp": false,
+              "hostile": false,
+              "onlyOnce": false,
+              "wallsBlock": "system",
+              "statuses": []
+            }
+          },
+          "_stats": {
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "coreVersion": "12.343",
+            "systemId": "dnd5e",
+            "systemVersion": "4.4.2",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null
+          },
+          "_key": "!actors.items.effects!S0M1RYG5HtXYhnT5.mViCCkDhb1mA9oO6.j2PE5UmM8lYn1jhA"
+        }
+      ],
       "folder": null,
-      "sort": 0,
+      "sort": 200000,
       "ownership": {
-        "default": 0
+        "default": 0,
+        "6yhz13iFYYklKtgA": 3
       },
       "flags": {
         "core": {
           "sourceId": "Compendium.dnd5e.monsterfeatures.Hc6MqLQhPTI1KOvm"
+        },
+        "midi-qol": {
+          "rollAttackPerTarget": "default",
+          "removeAttackDamageButtons": "default",
+          "itemCondition": "",
+          "reactionCondition": "",
+          "otherCondition": "",
+          "effectCondition": "",
+          "-=onUseMacroName": null
+        },
+        "midiProperties": {
+          "autoFailFriendly": false,
+          "autoSaveFriendly": false,
+          "magicdam": false,
+          "magiceffect": false,
+          "noConcentrationCheck": false,
+          "toggleEffect": false,
+          "ignoreTotalCover": false
+        },
+        "dnd5e": {
+          "riders": {
+            "activity": [],
+            "effect": []
+          }
+        },
+        "chris-premades": {
+          "-=macros": null,
+          "info": {
+            "source": "stroud-dnd-helpers.SDND-Features",
+            "rules": "legacy"
+          }
         }
       },
       "_stats": {
@@ -785,8 +896,8 @@
         "systemId": "dnd5e",
         "systemVersion": "4.4.2",
         "createdTime": null,
-        "modifiedTime": null,
-        "lastModifiedBy": null
+        "modifiedTime": 1756411433403,
+        "lastModifiedBy": "6yhz13iFYYklKtgA"
       },
       "_key": "!actors.items!S0M1RYG5HtXYhnT5.mViCCkDhb1mA9oO6"
     },
