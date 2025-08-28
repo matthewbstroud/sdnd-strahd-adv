@@ -1,0 +1,27 @@
+{
+  "folder": "qvJU7ZF1yaDMXqev",
+  "name": "ToggleGreenFlame",
+  "type": "script",
+  "_id": "ImOQHEZ0TwoMjFWp",
+  "author": "6yhz13iFYYklKtgA",
+  "img": "icons/svg/dice-target.svg",
+  "scope": "global",
+  "command": "const sceneIds = [ 't1.1', 't1.2', 't1.3' ];\n   let scenes = game.scenes.filter(s => sceneIds.includes(s.getFlag('stroud-dnd-helpers', 'id')));\n   for (let scene of scenes) {\n       await stroudDnD.tagging.lighting.toggle(\"green_flame\", null, scene);\n   }",
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "6yhz13iFYYklKtgA": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.343",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.2",
+    "createdTime": 1756407105199,
+    "modifiedTime": 1756408719099,
+    "lastModifiedBy": "6yhz13iFYYklKtgA"
+  },
+  "_key": "!macros!ImOQHEZ0TwoMjFWp"
+}
