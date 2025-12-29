@@ -1,3 +1,8 @@
+# v12.4.10
+# New Features
+- Added sun protected vampires.
+# Bug Fixes
+- Fix bug description here.
 # v12.4.9
 # Bug Fixes
 - Fix more issues with Area T
@@ -241,6 +246,7 @@
 - Conversion to Foundry Version 11
 # v1.0.0: Initial Release of Curse of Strahd Adventure Pack
 - Includes starter scenes
+
 
 
 
