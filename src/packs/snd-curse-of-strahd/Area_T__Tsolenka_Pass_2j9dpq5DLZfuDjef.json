@@ -63,12 +63,6 @@
           "version": "3.2.14",
           "sharing": null
         },
-        "exportSource": {
-          "world": "curse_of_strahd",
-          "system": "dnd5e",
-          "coreVersion": "11.315",
-          "systemVersion": "3.1.2"
-        },
         "tidy5e-sheet": {
           "death": {
             "success": 0,
@@ -260,13 +254,10 @@
             }
           },
           "movement": {
-            "burrow": null,
-            "climb": null,
-            "fly": null,
-            "swim": null,
-            "walk": 30,
+            "walk": "30",
             "units": "ft",
-            "hover": false
+            "hover": false,
+            "ignoredDifficultTerrain": []
           },
           "attunement": {
             "max": 3
@@ -308,11 +299,13 @@
           "spell": {
             "level": 0
           },
-          "loyalty": {
-            "value": null
-          },
+          "loyalty": {},
           "hd": {
             "spent": 0
+          },
+          "price": {
+            "value": null,
+            "denomination": "gp"
           }
         },
         "details": {
@@ -686,12 +679,12 @@
         },
         "resources": {
           "legact": {
-            "value": 0,
-            "max": 0
+            "max": 0,
+            "spent": 0
           },
           "legres": {
-            "value": 0,
-            "max": 0
+            "max": 0,
+            "spent": 0
           },
           "lair": {
             "value": false,
@@ -704,16 +697,6 @@
           "custom": "",
           "revision": 1
         }
-      },
-      "ownership": {
-        "default": 2,
-        "6yhz13iFYYklKtgA": 3,
-        "nI44NHqYFA6fYSaA": 2,
-        "2o6fMFw0qQuhf5nV": 2,
-        "6A5pacAU8kbNm9PQ": 2,
-        "al3K6JMdvNPhJSGp": 2,
-        "PAsMQtGinm9l3io7": 2,
-        "39APwqo8boJ5in8b": 2
       },
       "prototypeToken": {
         "name": "Treasure",
@@ -836,20 +819,36 @@
             "scale": 1
           }
         },
-        "hexagonalShape": 0,
         "occludable": {
           "radius": 0
-        }
+        },
+        "turnMarker": {
+          "mode": 1,
+          "animation": null,
+          "src": null,
+          "disposition": false
+        },
+        "movementAction": null
       },
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "4.4.2",
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": 1754747181387,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "curse_of_strahd",
+          "uuid": null,
+          "coreVersion": "11.315",
+          "systemId": "dnd5e",
+          "systemVersion": "3.1.2"
+        }
+      },
+      "ownership": {
+        "default": 2
       }
     },
     {
@@ -1321,13 +1320,11 @@
             "bonus": ""
           },
           "movement": {
-            "burrow": null,
-            "climb": null,
-            "fly": 50,
-            "swim": null,
-            "walk": 0,
+            "fly": "50",
+            "walk": "0",
             "units": "ft",
-            "hover": false
+            "hover": false,
+            "ignoredDifficultTerrain": []
           },
           "attunement": {
             "max": 3
@@ -1386,6 +1383,10 @@
           },
           "hd": {
             "spent": 0
+          },
+          "price": {
+            "value": null,
+            "denomination": "gp"
           }
         },
         "details": {
@@ -1413,12 +1414,12 @@
         },
         "resources": {
           "legact": {
-            "value": 0,
-            "max": 0
+            "max": 0,
+            "spent": 0
           },
           "legres": {
-            "value": 0,
-            "max": 0
+            "max": 0,
+            "spent": 0
           },
           "lair": {
             "value": false,
@@ -1592,10 +1593,16 @@
             "scale": 1
           }
         },
-        "hexagonalShape": 0,
         "occludable": {
           "radius": 0
-        }
+        },
+        "turnMarker": {
+          "mode": 1,
+          "animation": null,
+          "src": null,
+          "disposition": false
+        },
+        "movementAction": null
       },
       "items": [
         {
@@ -1633,7 +1640,6 @@
             "attunement": "",
             "equipped": true,
             "cover": null,
-            "crewed": false,
             "range": {
               "value": null,
               "long": null,
@@ -1737,7 +1743,7 @@
                     "size": "",
                     "width": "",
                     "height": "",
-                    "units": ""
+                    "units": "ft"
                   },
                   "affects": {
                     "count": "",
@@ -1784,7 +1790,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -1792,7 +1799,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -1803,7 +1809,17 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -1814,7 +1830,17 @@
                 "otherActivityId": "",
                 "attackMode": "oneHanded",
                 "ammunition": "",
-                "otherActivityUuid": ""
+                "otherActivityUuid": "",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true,
+                "attackRollPerTarget": "default",
+                "fumbleThreshold": 1
               },
               "dnd5eactivity100": {
                 "_id": "dnd5eactivity100",
@@ -1857,7 +1883,7 @@
                     "size": "",
                     "width": "",
                     "height": "",
-                    "units": ""
+                    "units": "ft"
                   },
                   "affects": {
                     "count": "",
@@ -1901,7 +1927,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -1909,7 +1936,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -1920,7 +1946,17 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -1928,12 +1964,24 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": ""
+                "otherActivityId": "",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true,
+                "friendlySave": "default"
               }
             },
             "identifier": "",
             "attuned": false,
-            "ammunition": {}
+            "ammunition": {},
+            "crew": {
+              "value": []
+            }
           },
           "effects": [],
           "flags": {
@@ -1971,18 +2019,19 @@
           "img": "icons/skills/wounds/injury-hand-blood-red.webp",
           "folder": null,
           "sort": 0,
-          "ownership": {
-            "default": 0
-          },
           "_stats": {
             "systemId": null,
             "systemVersion": null,
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": null,
             "modifiedTime": null,
             "lastModifiedBy": null,
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -2039,13 +2088,13 @@
                 "duration": {
                   "concentration": false,
                   "value": "",
-                  "units": "",
+                  "units": "inst",
                   "special": "",
                   "override": false
                 },
                 "effects": [],
                 "range": {
-                  "units": "",
+                  "units": "self",
                   "special": "",
                   "override": false
                 },
@@ -2057,7 +2106,7 @@
                     "size": "",
                     "width": "",
                     "height": "",
-                    "units": ""
+                    "units": "ft"
                   },
                   "affects": {
                     "count": "",
@@ -2110,7 +2159,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -2118,7 +2168,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -2129,13 +2178,30 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
                   "saveRemoves": true,
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
+                },
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
                 }
               }
             },
@@ -2144,7 +2210,8 @@
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             }
           },
           "effects": [],
@@ -2179,18 +2246,19 @@
           "img": "icons/magic/control/debuff-energy-snare-purple-blue.webp",
           "folder": null,
           "sort": 0,
-          "ownership": {
-            "default": 0
-          },
           "_stats": {
             "systemId": null,
             "systemVersion": null,
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": null,
             "modifiedTime": null,
             "lastModifiedBy": null,
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -2229,7 +2297,8 @@
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             }
           },
           "effects": [],
@@ -2258,28 +2327,25 @@
           "img": "icons/magic/nature/root-vine-thorned-fire-purple.webp",
           "folder": null,
           "sort": 0,
-          "ownership": {
-            "default": 0
-          },
           "_stats": {
             "systemId": null,
             "systemVersion": null,
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": null,
             "modifiedTime": null,
             "lastModifiedBy": null,
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         }
       ],
       "effects": [],
       "folder": "HVgPUd5OjxKCjiLI",
       "sort": 125000,
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
-      },
       "flags": {
         "dnd5e": {},
         "monsterMunch": {
@@ -2306,9 +2372,7 @@
           "isLegacy": false,
           "flatAC": false
         },
-        "core": {
-          "sourceId": "Compendium.world.ddb-lost-mines-phandelver-monsters.Actor.d1cqJZNGLLuPzR33"
-        },
+        "core": {},
         "anonymous": {
           "showName": true
         }
@@ -2316,12 +2380,16 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "4.4.2",
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "createdTime": 1720663746454,
         "modifiedTime": 1754774831851,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": "Compendium.world.ddb-lost-mines-phandelver-monsters.Actor.d1cqJZNGLLuPzR33",
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "ownership": {
+        "default": 0
       }
     },
     {
@@ -2492,13 +2560,14 @@
             }
           },
           "movement": {
-            "burrow": 0,
-            "climb": 0,
-            "fly": 60,
-            "swim": 0,
-            "walk": 40,
+            "burrow": "0",
+            "climb": "0",
+            "fly": "60",
+            "swim": "0",
+            "walk": "40",
             "units": "ft",
-            "hover": false
+            "hover": false,
+            "ignoredDifficultTerrain": []
           },
           "attunement": {
             "max": 3
@@ -2545,6 +2614,10 @@
           },
           "loyalty": {
             "value": null
+          },
+          "price": {
+            "value": null,
+            "denomination": "gp"
           }
         },
         "details": {
@@ -2941,12 +3014,12 @@
         },
         "resources": {
           "legact": {
-            "value": 0,
-            "max": 0
+            "max": 0,
+            "spent": 0
           },
           "legres": {
-            "value": 0,
-            "max": 0
+            "max": 0,
+            "spent": 0
           },
           "lair": {
             "value": false,
@@ -3043,7 +3116,6 @@
         "detectionModes": [],
         "appendNumber": false,
         "prependAdjective": false,
-        "hexagonalShape": 1,
         "occludable": {
           "radius": 0
         },
@@ -3058,7 +3130,14 @@
             "scale": 1,
             "texture": null
           }
-        }
+        },
+        "turnMarker": {
+          "mode": 1,
+          "animation": null,
+          "src": null,
+          "disposition": false
+        },
+        "movementAction": null
       },
       "items": [
         {
@@ -3076,9 +3155,10 @@
               "book": "SRD 5.1",
               "page": "",
               "license": "CC-BY-4.0",
-              "rules": "2014",
-              "revision": 1
+              "revision": 1,
+              "rules": "2014"
             },
+            "cover": null,
             "uses": {
               "max": "",
               "spent": 0,
@@ -3089,17 +3169,17 @@
               "subtype": ""
             },
             "requirements": "",
+            "crewed": false,
             "properties": [],
-            "activities": {},
-            "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             },
+            "activities": {},
             "identifier": "magic-resistance",
             "advancement": [],
-            "cover": null,
-            "crewed": false
+            "enchant": {}
           },
           "effects": [
             {
@@ -3171,33 +3251,27 @@
               "_stats": {
                 "compendiumSource": null,
                 "duplicateSource": null,
-                "coreVersion": "12.343",
+                "coreVersion": "13.351",
                 "systemId": "dnd5e",
                 "systemVersion": "4.4.2",
                 "createdTime": null,
                 "modifiedTime": null,
-                "lastModifiedBy": null
+                "lastModifiedBy": null,
+                "exportSource": null
               }
             }
           ],
           "folder": null,
           "sort": 200000,
-          "ownership": {
-            "default": 0,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {
-            "core": {
-              "sourceId": "Compendium.dnd5e.monsterfeatures.Hc6MqLQhPTI1KOvm"
-            },
+            "core": {},
             "midi-qol": {
               "rollAttackPerTarget": "default",
               "removeAttackDamageButtons": "default",
               "itemCondition": "",
               "reactionCondition": "",
               "otherCondition": "",
-              "effectCondition": "",
-              "-=onUseMacroName": null
+              "effectCondition": ""
             },
             "midiProperties": {
               "autoFailFriendly": false,
@@ -3215,7 +3289,6 @@
               }
             },
             "chris-premades": {
-              "-=macros": null,
               "info": {
                 "source": "stroud-dnd-helpers.SDND-Features",
                 "rules": "legacy"
@@ -3225,12 +3298,16 @@
           "_stats": {
             "compendiumSource": "Compendium.dnd5e.monsterfeatures.Hc6MqLQhPTI1KOvm",
             "duplicateSource": null,
-            "coreVersion": "12.343",
+            "coreVersion": "13.351",
             "systemId": "dnd5e",
             "systemVersion": "4.4.2",
             "createdTime": null,
             "modifiedTime": 1756411367880,
-            "lastModifiedBy": "6yhz13iFYYklKtgA"
+            "lastModifiedBy": "6yhz13iFYYklKtgA",
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -3286,13 +3363,13 @@
                 "duration": {
                   "concentration": false,
                   "value": "",
-                  "units": "",
+                  "units": "inst",
                   "special": "",
                   "override": false
                 },
                 "effects": [],
                 "range": {
-                  "units": "",
+                  "units": "self",
                   "special": "",
                   "override": false
                 },
@@ -3304,7 +3381,7 @@
                     "size": "",
                     "width": "",
                     "height": "",
-                    "units": ""
+                    "units": "ft"
                   },
                   "affects": {
                     "count": "",
@@ -3338,7 +3415,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -3346,7 +3424,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -3357,7 +3434,17 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -3365,13 +3452,22 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": "none"
+                "otherActivityId": "none",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true
               }
             },
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             },
             "identifier": "multiattack",
             "advancement": [],
@@ -3381,23 +3477,22 @@
           "effects": [],
           "folder": null,
           "sort": 0,
-          "ownership": {
-            "default": 0
-          },
           "flags": {
-            "core": {
-              "sourceId": "Compendium.dnd5e.monsterfeatures.EqoLg8T8EHvhJgKE"
-            }
+            "core": {}
           },
           "_stats": {
             "compendiumSource": "Compendium.dnd5e.monsterfeatures.EqoLg8T8EHvhJgKE",
             "duplicateSource": null,
-            "coreVersion": "12.343",
+            "coreVersion": "13.351",
             "systemId": "dnd5e",
             "systemVersion": "4.4.2",
             "createdTime": null,
             "modifiedTime": null,
-            "lastModifiedBy": null
+            "lastModifiedBy": null,
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -3496,7 +3591,6 @@
               "baseItem": ""
             },
             "container": null,
-            "crewed": false,
             "activities": {
               "dnd5eactivity000": {
                 "_id": "dnd5eactivity000",
@@ -3521,7 +3615,7 @@
                 "duration": {
                   "concentration": false,
                   "value": "",
-                  "units": "",
+                  "units": "inst",
                   "special": "",
                   "override": false
                 },
@@ -3540,7 +3634,7 @@
                     "size": "",
                     "width": "",
                     "height": "",
-                    "units": ""
+                    "units": "ft"
                   },
                   "affects": {
                     "count": "",
@@ -3587,7 +3681,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -3595,7 +3690,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -3606,7 +3700,17 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -3617,30 +3721,44 @@
                 "otherActivityId": "",
                 "attackMode": "oneHanded",
                 "ammunition": "",
-                "otherActivityUuid": ""
+                "otherActivityUuid": "",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true,
+                "attackRollPerTarget": "default",
+                "fumbleThreshold": 1
               }
             },
             "attuned": false,
             "ammunition": {},
             "magicalBonus": null,
-            "identifier": "beak"
+            "identifier": "beak",
+            "crew": {
+              "value": []
+            }
           },
           "effects": [],
           "folder": null,
           "sort": 0,
-          "ownership": {
-            "default": 0
-          },
           "flags": {},
           "_stats": {
             "compendiumSource": null,
             "duplicateSource": null,
-            "coreVersion": "12.343",
+            "coreVersion": "13.351",
             "systemId": "dnd5e",
             "systemVersion": "4.4.2",
             "createdTime": null,
             "modifiedTime": null,
-            "lastModifiedBy": null
+            "lastModifiedBy": null,
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -3739,7 +3857,6 @@
               "baseItem": ""
             },
             "container": null,
-            "crewed": false,
             "activities": {
               "dnd5eactivity000": {
                 "_id": "dnd5eactivity000",
@@ -3764,7 +3881,7 @@
                 "duration": {
                   "concentration": false,
                   "value": "",
-                  "units": "",
+                  "units": "inst",
                   "special": "",
                   "override": false
                 },
@@ -3783,7 +3900,7 @@
                     "size": "",
                     "width": "",
                     "height": "",
-                    "units": ""
+                    "units": "ft"
                   },
                   "affects": {
                     "count": "",
@@ -3830,7 +3947,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -3838,7 +3956,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -3849,7 +3966,17 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -3860,30 +3987,44 @@
                 "otherActivityId": "",
                 "attackMode": "oneHanded",
                 "ammunition": "",
-                "otherActivityUuid": ""
+                "otherActivityUuid": "",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true,
+                "attackRollPerTarget": "default",
+                "fumbleThreshold": 1
               }
             },
             "attuned": false,
             "ammunition": {},
             "magicalBonus": null,
-            "identifier": "talons"
+            "identifier": "talons",
+            "crew": {
+              "value": []
+            }
           },
           "effects": [],
           "folder": null,
           "sort": 0,
-          "ownership": {
-            "default": 0
-          },
           "flags": {},
           "_stats": {
             "compendiumSource": null,
             "duplicateSource": null,
-            "coreVersion": "12.343",
+            "coreVersion": "13.351",
             "systemId": "dnd5e",
             "systemVersion": "4.4.2",
             "createdTime": null,
             "modifiedTime": null,
-            "lastModifiedBy": null
+            "lastModifiedBy": null,
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -3955,7 +4096,7 @@
                 "duration": {
                   "concentration": false,
                   "value": "",
-                  "units": "",
+                  "units": "inst",
                   "special": "",
                   "override": false
                 },
@@ -4035,7 +4176,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -4043,7 +4185,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -4054,7 +4195,17 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -4062,13 +4213,23 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": ""
+                "otherActivityId": "",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true,
+                "friendlySave": "default"
               }
             },
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             },
             "identifier": "spores",
             "advancement": [],
@@ -4078,23 +4239,22 @@
           "effects": [],
           "folder": null,
           "sort": 0,
-          "ownership": {
-            "default": 0
-          },
           "flags": {
-            "core": {
-              "sourceId": "Compendium.dnd5e.monsterfeatures.ihWvcWsnfqW2HFlA"
-            }
+            "core": {}
           },
           "_stats": {
             "compendiumSource": "Compendium.dnd5e.monsterfeatures.ihWvcWsnfqW2HFlA",
             "duplicateSource": null,
-            "coreVersion": "12.343",
+            "coreVersion": "13.351",
             "systemId": "dnd5e",
             "systemVersion": "4.4.2",
             "createdTime": null,
             "modifiedTime": null,
-            "lastModifiedBy": null
+            "lastModifiedBy": null,
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -4165,7 +4325,7 @@
                 "duration": {
                   "concentration": false,
                   "value": "",
-                  "units": "",
+                  "units": "inst",
                   "special": "",
                   "override": false
                 },
@@ -4228,7 +4388,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -4236,7 +4397,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -4247,7 +4407,17 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -4255,13 +4425,23 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": ""
+                "otherActivityId": "",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true,
+                "friendlySave": "default"
               }
             },
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             },
             "identifier": "stunning-screech",
             "advancement": [],
@@ -4271,45 +4451,44 @@
           "effects": [],
           "folder": null,
           "sort": 0,
-          "ownership": {
-            "default": 0
-          },
           "flags": {
-            "core": {
-              "sourceId": "Compendium.dnd5e.monsterfeatures.aD3HKoBnJtZL6cDj"
-            }
+            "core": {}
           },
           "_stats": {
             "compendiumSource": "Compendium.dnd5e.monsterfeatures.aD3HKoBnJtZL6cDj",
             "duplicateSource": null,
-            "coreVersion": "12.343",
+            "coreVersion": "13.351",
             "systemId": "dnd5e",
             "systemVersion": "4.4.2",
             "createdTime": null,
             "modifiedTime": null,
-            "lastModifiedBy": null
+            "lastModifiedBy": null,
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         }
       ],
       "effects": [],
       "folder": "clQ89T1fKMW6YFKM",
       "sort": 100000,
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
-      },
       "flags": {},
       "_stats": {
         "duplicateSource": "Actor.0KKouIqMAtLaBSp2",
         "compendiumSource": "Compendium.dnd5e.monsters.Actor.6oc29m5uzzzb0pk3",
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "systemId": "dnd5e",
         "systemVersion": "4.4.2",
         "createdTime": 1756410452148,
         "modifiedTime": 1756410473415,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "exportSource": null
       },
-      "_id": "XWl1iQPElsbALIKu"
+      "_id": "XWl1iQPElsbALIKu",
+      "ownership": {
+        "default": 0
+      }
     },
     {
       "name": "Vrok (Left)",
@@ -4479,13 +4658,14 @@
             }
           },
           "movement": {
-            "burrow": 0,
-            "climb": 0,
-            "fly": 60,
-            "swim": 0,
-            "walk": 40,
+            "burrow": "0",
+            "climb": "0",
+            "fly": "60",
+            "swim": "0",
+            "walk": "40",
             "units": "ft",
-            "hover": false
+            "hover": false,
+            "ignoredDifficultTerrain": []
           },
           "attunement": {
             "max": 3
@@ -4532,6 +4712,10 @@
           },
           "loyalty": {
             "value": null
+          },
+          "price": {
+            "value": null,
+            "denomination": "gp"
           }
         },
         "details": {
@@ -4928,12 +5112,12 @@
         },
         "resources": {
           "legact": {
-            "value": 0,
-            "max": 0
+            "max": 0,
+            "spent": 0
           },
           "legres": {
-            "value": 0,
-            "max": 0
+            "max": 0,
+            "spent": 0
           },
           "lair": {
             "value": false,
@@ -5030,7 +5214,6 @@
         "detectionModes": [],
         "appendNumber": false,
         "prependAdjective": false,
-        "hexagonalShape": 1,
         "occludable": {
           "radius": 0
         },
@@ -5045,7 +5228,14 @@
             "scale": 1,
             "texture": null
           }
-        }
+        },
+        "turnMarker": {
+          "mode": 1,
+          "animation": null,
+          "src": null,
+          "disposition": false
+        },
+        "movementAction": null
       },
       "items": [
         {
@@ -5063,9 +5253,10 @@
               "book": "SRD 5.1",
               "page": "",
               "license": "CC-BY-4.0",
-              "rules": "2014",
-              "revision": 1
+              "revision": 1,
+              "rules": "2014"
             },
+            "cover": null,
             "uses": {
               "max": "",
               "spent": 0,
@@ -5076,17 +5267,17 @@
               "subtype": ""
             },
             "requirements": "",
+            "crewed": false,
             "properties": [],
-            "activities": {},
-            "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             },
+            "activities": {},
             "identifier": "magic-resistance",
             "advancement": [],
-            "cover": null,
-            "crewed": false
+            "enchant": {}
           },
           "effects": [
             {
@@ -5158,33 +5349,27 @@
               "_stats": {
                 "compendiumSource": null,
                 "duplicateSource": null,
-                "coreVersion": "12.343",
+                "coreVersion": "13.351",
                 "systemId": "dnd5e",
                 "systemVersion": "4.4.2",
                 "createdTime": null,
                 "modifiedTime": null,
-                "lastModifiedBy": null
+                "lastModifiedBy": null,
+                "exportSource": null
               }
             }
           ],
           "folder": null,
           "sort": 200000,
-          "ownership": {
-            "default": 0,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {
-            "core": {
-              "sourceId": "Compendium.dnd5e.monsterfeatures.Hc6MqLQhPTI1KOvm"
-            },
+            "core": {},
             "midi-qol": {
               "rollAttackPerTarget": "default",
               "removeAttackDamageButtons": "default",
               "itemCondition": "",
               "reactionCondition": "",
               "otherCondition": "",
-              "effectCondition": "",
-              "-=onUseMacroName": null
+              "effectCondition": ""
             },
             "midiProperties": {
               "autoFailFriendly": false,
@@ -5202,7 +5387,6 @@
               }
             },
             "chris-premades": {
-              "-=macros": null,
               "info": {
                 "source": "stroud-dnd-helpers.SDND-Features",
                 "rules": "legacy"
@@ -5212,12 +5396,16 @@
           "_stats": {
             "compendiumSource": "Compendium.dnd5e.monsterfeatures.Hc6MqLQhPTI1KOvm",
             "duplicateSource": null,
-            "coreVersion": "12.343",
+            "coreVersion": "13.351",
             "systemId": "dnd5e",
             "systemVersion": "4.4.2",
             "createdTime": null,
             "modifiedTime": 1756411375740,
-            "lastModifiedBy": "6yhz13iFYYklKtgA"
+            "lastModifiedBy": "6yhz13iFYYklKtgA",
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -5273,13 +5461,13 @@
                 "duration": {
                   "concentration": false,
                   "value": "",
-                  "units": "",
+                  "units": "inst",
                   "special": "",
                   "override": false
                 },
                 "effects": [],
                 "range": {
-                  "units": "",
+                  "units": "self",
                   "special": "",
                   "override": false
                 },
@@ -5291,7 +5479,7 @@
                     "size": "",
                     "width": "",
                     "height": "",
-                    "units": ""
+                    "units": "ft"
                   },
                   "affects": {
                     "count": "",
@@ -5325,7 +5513,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -5333,7 +5522,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -5344,7 +5532,17 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -5352,13 +5550,22 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": "none"
+                "otherActivityId": "none",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true
               }
             },
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             },
             "identifier": "multiattack",
             "advancement": [],
@@ -5368,23 +5575,22 @@
           "effects": [],
           "folder": null,
           "sort": 0,
-          "ownership": {
-            "default": 0
-          },
           "flags": {
-            "core": {
-              "sourceId": "Compendium.dnd5e.monsterfeatures.EqoLg8T8EHvhJgKE"
-            }
+            "core": {}
           },
           "_stats": {
             "compendiumSource": "Compendium.dnd5e.monsterfeatures.EqoLg8T8EHvhJgKE",
             "duplicateSource": null,
-            "coreVersion": "12.343",
+            "coreVersion": "13.351",
             "systemId": "dnd5e",
             "systemVersion": "4.4.2",
             "createdTime": null,
             "modifiedTime": null,
-            "lastModifiedBy": null
+            "lastModifiedBy": null,
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -5483,7 +5689,6 @@
               "baseItem": ""
             },
             "container": null,
-            "crewed": false,
             "activities": {
               "dnd5eactivity000": {
                 "_id": "dnd5eactivity000",
@@ -5508,7 +5713,7 @@
                 "duration": {
                   "concentration": false,
                   "value": "",
-                  "units": "",
+                  "units": "inst",
                   "special": "",
                   "override": false
                 },
@@ -5527,7 +5732,7 @@
                     "size": "",
                     "width": "",
                     "height": "",
-                    "units": ""
+                    "units": "ft"
                   },
                   "affects": {
                     "count": "",
@@ -5574,7 +5779,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -5582,7 +5788,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -5593,7 +5798,17 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -5604,30 +5819,44 @@
                 "otherActivityId": "",
                 "attackMode": "oneHanded",
                 "ammunition": "",
-                "otherActivityUuid": ""
+                "otherActivityUuid": "",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true,
+                "attackRollPerTarget": "default",
+                "fumbleThreshold": 1
               }
             },
             "attuned": false,
             "ammunition": {},
             "magicalBonus": null,
-            "identifier": "beak"
+            "identifier": "beak",
+            "crew": {
+              "value": []
+            }
           },
           "effects": [],
           "folder": null,
           "sort": 0,
-          "ownership": {
-            "default": 0
-          },
           "flags": {},
           "_stats": {
             "compendiumSource": null,
             "duplicateSource": null,
-            "coreVersion": "12.343",
+            "coreVersion": "13.351",
             "systemId": "dnd5e",
             "systemVersion": "4.4.2",
             "createdTime": null,
             "modifiedTime": null,
-            "lastModifiedBy": null
+            "lastModifiedBy": null,
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -5726,7 +5955,6 @@
               "baseItem": ""
             },
             "container": null,
-            "crewed": false,
             "activities": {
               "dnd5eactivity000": {
                 "_id": "dnd5eactivity000",
@@ -5751,7 +5979,7 @@
                 "duration": {
                   "concentration": false,
                   "value": "",
-                  "units": "",
+                  "units": "inst",
                   "special": "",
                   "override": false
                 },
@@ -5770,7 +5998,7 @@
                     "size": "",
                     "width": "",
                     "height": "",
-                    "units": ""
+                    "units": "ft"
                   },
                   "affects": {
                     "count": "",
@@ -5817,7 +6045,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -5825,7 +6054,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -5836,7 +6064,17 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -5847,30 +6085,44 @@
                 "otherActivityId": "",
                 "attackMode": "oneHanded",
                 "ammunition": "",
-                "otherActivityUuid": ""
+                "otherActivityUuid": "",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true,
+                "attackRollPerTarget": "default",
+                "fumbleThreshold": 1
               }
             },
             "attuned": false,
             "ammunition": {},
             "magicalBonus": null,
-            "identifier": "talons"
+            "identifier": "talons",
+            "crew": {
+              "value": []
+            }
           },
           "effects": [],
           "folder": null,
           "sort": 0,
-          "ownership": {
-            "default": 0
-          },
           "flags": {},
           "_stats": {
             "compendiumSource": null,
             "duplicateSource": null,
-            "coreVersion": "12.343",
+            "coreVersion": "13.351",
             "systemId": "dnd5e",
             "systemVersion": "4.4.2",
             "createdTime": null,
             "modifiedTime": null,
-            "lastModifiedBy": null
+            "lastModifiedBy": null,
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -5942,7 +6194,7 @@
                 "duration": {
                   "concentration": false,
                   "value": "",
-                  "units": "",
+                  "units": "inst",
                   "special": "",
                   "override": false
                 },
@@ -6022,7 +6274,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -6030,7 +6283,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -6041,7 +6293,17 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -6049,13 +6311,23 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": ""
+                "otherActivityId": "",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true,
+                "friendlySave": "default"
               }
             },
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             },
             "identifier": "spores",
             "advancement": [],
@@ -6065,23 +6337,22 @@
           "effects": [],
           "folder": null,
           "sort": 0,
-          "ownership": {
-            "default": 0
-          },
           "flags": {
-            "core": {
-              "sourceId": "Compendium.dnd5e.monsterfeatures.ihWvcWsnfqW2HFlA"
-            }
+            "core": {}
           },
           "_stats": {
             "compendiumSource": "Compendium.dnd5e.monsterfeatures.ihWvcWsnfqW2HFlA",
             "duplicateSource": null,
-            "coreVersion": "12.343",
+            "coreVersion": "13.351",
             "systemId": "dnd5e",
             "systemVersion": "4.4.2",
             "createdTime": null,
             "modifiedTime": null,
-            "lastModifiedBy": null
+            "lastModifiedBy": null,
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -6152,7 +6423,7 @@
                 "duration": {
                   "concentration": false,
                   "value": "",
-                  "units": "",
+                  "units": "inst",
                   "special": "",
                   "override": false
                 },
@@ -6215,7 +6486,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -6223,7 +6495,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -6234,7 +6505,17 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -6242,13 +6523,23 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": ""
+                "otherActivityId": "",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true,
+                "friendlySave": "default"
               }
             },
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             },
             "identifier": "stunning-screech",
             "advancement": [],
@@ -6258,45 +6549,44 @@
           "effects": [],
           "folder": null,
           "sort": 0,
-          "ownership": {
-            "default": 0
-          },
           "flags": {
-            "core": {
-              "sourceId": "Compendium.dnd5e.monsterfeatures.aD3HKoBnJtZL6cDj"
-            }
+            "core": {}
           },
           "_stats": {
             "compendiumSource": "Compendium.dnd5e.monsterfeatures.aD3HKoBnJtZL6cDj",
             "duplicateSource": null,
-            "coreVersion": "12.343",
+            "coreVersion": "13.351",
             "systemId": "dnd5e",
             "systemVersion": "4.4.2",
             "createdTime": null,
             "modifiedTime": null,
-            "lastModifiedBy": null
+            "lastModifiedBy": null,
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         }
       ],
       "effects": [],
       "folder": "clQ89T1fKMW6YFKM",
       "sort": 100000,
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
-      },
       "flags": {},
       "_stats": {
         "duplicateSource": "Actor.qrKWkfBsrjPRrAus",
         "compendiumSource": "Compendium.dnd5e.monsters.Actor.6oc29m5uzzzb0pk3",
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "systemId": "dnd5e",
         "systemVersion": "4.4.2",
         "createdTime": 1756410390173,
         "modifiedTime": 1756411391306,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "exportSource": null
       },
-      "_id": "0KKouIqMAtLaBSp2"
+      "_id": "0KKouIqMAtLaBSp2",
+      "ownership": {
+        "default": 0
+      }
     }
   ],
   "combats": [],
@@ -6327,20 +6617,21 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.1.2",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": 1720662863922,
             "modifiedTime": 1720662915108,
             "lastModifiedBy": "6yhz13iFYYklKtgA",
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "category": null,
+          "ownership": {
+            "default": -1
           }
         },
         {
@@ -6363,20 +6654,21 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.1.2",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": 1720662935599,
             "modifiedTime": 1720663014119,
             "lastModifiedBy": "6yhz13iFYYklKtgA",
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "category": null,
+          "ownership": {
+            "default": -1
           }
         },
         {
@@ -6399,20 +6691,21 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.1.2",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": 1720663080085,
             "modifiedTime": 1720663091881,
             "lastModifiedBy": "6yhz13iFYYklKtgA",
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "category": null,
+          "ownership": {
+            "default": -1
           }
         },
         {
@@ -6435,20 +6728,21 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.1.2",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": 1720663200087,
             "modifiedTime": 1720663210593,
             "lastModifiedBy": "6yhz13iFYYklKtgA",
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "category": null,
+          "ownership": {
+            "default": -1
           }
         },
         {
@@ -6471,20 +6765,21 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.1.2",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": 1720663245566,
             "modifiedTime": 1720663291541,
             "lastModifiedBy": "6yhz13iFYYklKtgA",
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "category": null,
+          "ownership": {
+            "default": -1
           }
         },
         {
@@ -6507,20 +6802,21 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.1.2",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": 1720663377322,
             "modifiedTime": 1720663400842,
             "lastModifiedBy": "6yhz13iFYYklKtgA",
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "category": null,
+          "ownership": {
+            "default": -1
           }
         },
         {
@@ -6544,20 +6840,21 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.1.2",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": 1720663437346,
             "modifiedTime": 1720663751849,
             "lastModifiedBy": "6yhz13iFYYklKtgA",
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "category": null,
+          "ownership": {
+            "default": -1
           }
         },
         {
@@ -6581,20 +6878,21 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.1.2",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": 1720665255728,
             "modifiedTime": 1720665467728,
             "lastModifiedBy": "6yhz13iFYYklKtgA",
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "category": null,
+          "ownership": {
+            "default": -1
           }
         },
         {
@@ -6617,20 +6915,21 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.1.2",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": 1720665440826,
             "modifiedTime": 1720665463425,
             "lastModifiedBy": "6yhz13iFYYklKtgA",
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "category": null,
+          "ownership": {
+            "default": -1
           }
         },
         {
@@ -6653,38 +6952,40 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.1.2",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": 1720665491729,
             "modifiedTime": 1720665515069,
             "lastModifiedBy": "6yhz13iFYYklKtgA",
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "category": null,
+          "ownership": {
+            "default": -1
           }
         }
       ],
       "sort": 0,
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
-      },
       "flags": {},
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": 1720662855704,
         "modifiedTime": 1720665515069,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "categories": [],
+      "ownership": {
+        "default": 0
       }
     }
   ],
@@ -6692,7 +6993,6 @@
     {
       "_id": "1nmiKL2XvzbfrZIo",
       "name": "T1.1. Tsolenka Gate (Ground)",
-      "active": false,
       "navigation": true,
       "navOrder": 0,
       "navName": "",
@@ -6838,9 +7138,6 @@
             "contrast": 0
           },
           "detectionModes": [],
-          "appendNumber": false,
-          "prependAdjective": false,
-          "hexagonalShape": 1,
           "occludable": {
             "radius": 0
           },
@@ -6868,13 +7165,23 @@
             "flags": {},
             "name": null,
             "type": null,
-            "img": null
+            "img": null,
+            "ownership": null
           },
           "x": 1900,
           "y": 2200,
           "elevation": 0,
           "locked": false,
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "name": "Vrock",
@@ -6960,9 +7267,6 @@
             "contrast": 0
           },
           "detectionModes": [],
-          "appendNumber": false,
-          "prependAdjective": false,
-          "hexagonalShape": 1,
           "occludable": {
             "radius": 0
           },
@@ -6990,13 +7294,23 @@
             "flags": {},
             "name": null,
             "type": null,
-            "img": null
+            "img": null,
+            "ownership": null
           },
           "x": 1500,
           "y": 2200,
           "elevation": 0,
           "locked": false,
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         }
       ],
       "lights": [
@@ -8569,7 +8883,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "h2qchVAZLV03HXUy",
@@ -8592,7 +8907,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "4ZRh2Q2pTv0hZHB0",
@@ -8615,7 +8931,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ArAKs62Isbo0q6Cg",
@@ -8638,7 +8955,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "OFDngiUC0zEBCUlt",
@@ -8661,7 +8979,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "xDoJrFFnqgNERk8q",
@@ -8684,7 +9003,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "2tUE6vf9ktP2npjN",
@@ -8707,7 +9027,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "A9lB0tiOA0UDEZcP",
@@ -8730,7 +9051,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "0bHjjH96QwYq62AW",
@@ -8753,7 +9075,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "1ZvFMgnET3I4pGQk",
@@ -8776,7 +9099,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "l5J5mWwWbT8SSECr",
@@ -8799,7 +9123,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "GqgYWDLqwFb3aRMo",
@@ -8822,7 +9147,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "EUaIfXuJpo5bxNSc",
@@ -8845,7 +9171,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "o2MC8XRYgj8dGROh",
@@ -8868,7 +9195,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "tWigsp4lkFpGvYjL",
@@ -8891,7 +9219,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "LqjdACCqDzB8YOcn",
@@ -8914,7 +9243,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "vlJE2ff9TnvU25s1",
@@ -8937,7 +9267,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "EG9g5M0RwnKXXPv0",
@@ -8960,7 +9291,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "CuReeQB2EmwFKoVU",
@@ -8983,7 +9315,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "9ynHfehGh1ji2JVJ",
@@ -9006,7 +9339,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "vOTrNXn8J98I2p68",
@@ -9029,7 +9363,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "UpaiX25twhf8sDMc",
@@ -9052,7 +9387,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ZX1GtZ2OenI7ShPN",
@@ -9075,7 +9411,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "QgsPJWXq2k4I5WlA",
@@ -9098,7 +9435,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "pB012uFZw4cwET2v",
@@ -9121,7 +9459,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Eo0WgnYbrYTMNGYL",
@@ -9144,7 +9483,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "48SmfRN4ncOyhKqy",
@@ -9183,7 +9523,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "UaJVZpJ7rMbIyDGA",
@@ -9222,7 +9563,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "dT8hrmiYiyp1kYBZ",
@@ -9261,7 +9603,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "NP97QnUYgdRw4xuK",
@@ -9284,7 +9627,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "apGqerYiPnTQuXIb",
@@ -9307,7 +9651,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Cgjkheda1nUwaUN4",
@@ -9330,7 +9675,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "YNafcu406DCF1l0M",
@@ -9353,7 +9699,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ZS9ZrAJq5E8IBKZh",
@@ -9376,7 +9723,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "HIxcKL3uW3wsoc7M",
@@ -9399,7 +9747,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "AMmAb5XEvZBBxkIH",
@@ -9422,7 +9771,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "bwJuy8IdXoesLEqb",
@@ -9445,7 +9795,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "bntYsLwIXXKjq87L",
@@ -9468,7 +9819,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "tMcB8UJ3HVoPbwWF",
@@ -9491,7 +9843,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "VEC1gL5AVI7EHX2m",
@@ -9514,7 +9867,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "G7ZiUV82uylz0iW3",
@@ -9537,7 +9891,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "aZSxwJJitM5UdauP",
@@ -9560,7 +9915,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "BleUEFaRdwoyD85m",
@@ -9583,7 +9939,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "asI5x48iU0iE5F4Q",
@@ -9606,7 +9963,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "T3R03Gol2bkxiNAZ",
@@ -9629,7 +9987,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "YcmOjlVUyoNw1YEl",
@@ -9652,7 +10011,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "MXhWeOR2L6807JfB",
@@ -9675,7 +10035,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "oDoK65u8koewIoFm",
@@ -9698,7 +10059,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "C0y3iwXZOXVbMsk5",
@@ -9721,7 +10083,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "D8AimCykAhpwUy4M",
@@ -9744,7 +10107,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ut7dtKeXBnscXGcq",
@@ -9767,7 +10131,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "nRJSpGNlGWIlwuA0",
@@ -9790,7 +10155,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "hYbL5fy6ajc5r2Fe",
@@ -9813,7 +10179,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "SlaMQOBpTUHvKdCX",
@@ -9836,7 +10203,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "vNuuAYna8cfmCZig",
@@ -9859,7 +10227,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "bbSjMVu8AWMTwsRR",
@@ -9882,7 +10251,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "aaG4HutBLyiYIA4K",
@@ -9905,7 +10275,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "zHgW0GbPdVkEfJIQ",
@@ -9928,7 +10299,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ITDLgM1oO80d7wcz",
@@ -9951,7 +10323,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "JU3EqfCZkijGZ6iA",
@@ -9974,7 +10347,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "SUsG9Rs9ijjLn3N8",
@@ -9997,7 +10371,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "KNCApCssgOBcPOxd",
@@ -10020,7 +10395,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "R5yTaMnqwes4C74Q",
@@ -10043,7 +10419,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "rxYwoozgETM1gWaz",
@@ -10066,7 +10443,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Ea1utT0R4sg2jlWp",
@@ -10089,7 +10467,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "l6AyH7wZchLoRhag",
@@ -10112,7 +10491,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "eFciyVzby9mkIGcN",
@@ -10135,7 +10515,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "9E3I7yPak7Zqz2RQ",
@@ -10158,7 +10539,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "xGOcXwlkHZKiD9Pi",
@@ -10181,7 +10563,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "qgul9FOIXJROkr9C",
@@ -10204,7 +10587,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "8yjQciZC1OSHeNOD",
@@ -10227,7 +10611,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "9ixz3RXUSBN7byDV",
@@ -10250,7 +10635,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "e8vZ9bUVJCbNlAZn",
@@ -10273,7 +10659,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "IocItUAOq8wuEfTQ",
@@ -10296,7 +10683,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "d8Gp6tV9vURgxLZt",
@@ -10319,7 +10707,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "DzgLGxH2EXOUd1Ws",
@@ -10342,7 +10731,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "6yhEY8xX7gsZqj1N",
@@ -10365,7 +10755,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "0mEbDDhvEPea57bw",
@@ -10388,7 +10779,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "XknUsPyfwbZYIl9U",
@@ -10411,7 +10803,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "G7BDp0HPEfg2XkNv",
@@ -10434,7 +10827,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "P2KIKTtwBi0PgyxF",
@@ -10457,7 +10851,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Ci3GINhc0O0uPg6s",
@@ -10480,7 +10875,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "HPJk8aIUrwBOsQRz",
@@ -10503,7 +10899,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "TMjUZuXNpGWclMvB",
@@ -10526,7 +10923,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "yhpzHuqZR2liTxat",
@@ -10549,7 +10947,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "bZOQqqJI7mwMteQ5",
@@ -10572,7 +10971,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "f9QfXWPFcgGqO5Of",
@@ -10595,7 +10995,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "IlOIhDXWxkfKxOet",
@@ -10618,7 +11019,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Qs0xPONZ2JpgkWY6",
@@ -10641,7 +11043,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "J0Hv2SQfAPAFclzw",
@@ -10664,7 +11067,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "4n9XYznGpBEmjrkv",
@@ -10687,7 +11091,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         }
       ],
       "playlist": null,
@@ -10701,10 +11106,6 @@
         "stroud-dnd-helpers": {
           "id": "t1.1"
         }
-      },
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
       },
       "background": {
         "src": "modules/sdnd-strahd-adv/images/maps/Areas/T/t1_gate/ground_floor.webp",
@@ -10724,12 +11125,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "createdTime": 1719969260402,
         "modifiedTime": 1756412262973,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "regions": [],
       "environment": {
@@ -10768,18 +11170,20 @@
       },
       "fog": {
         "exploration": true,
-        "reset": 1675811289459,
         "overlay": null,
         "colors": {
           "explored": null,
           "unexplored": null
         }
-      }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "active": false
     },
     {
       "_id": "rF225DFPHAHqSDrE",
       "name": "T1.2. Tsolenka Gate (1st Floor)",
-      "active": false,
       "navigation": true,
       "navOrder": 0,
       "navName": "",
@@ -10891,9 +11295,6 @@
             "contrast": 0
           },
           "detectionModes": [],
-          "appendNumber": false,
-          "prependAdjective": false,
-          "hexagonalShape": 1,
           "occludable": {
             "radius": 0
           },
@@ -10921,13 +11322,23 @@
             "flags": {},
             "name": null,
             "type": null,
-            "img": null
+            "img": null,
+            "ownership": null
           },
           "x": 1500,
           "y": 2200,
           "elevation": 0,
           "locked": false,
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "name": "Vrock",
@@ -11013,9 +11424,6 @@
             "contrast": 0
           },
           "detectionModes": [],
-          "appendNumber": false,
-          "prependAdjective": false,
-          "hexagonalShape": 1,
           "occludable": {
             "radius": 0
           },
@@ -11043,13 +11451,23 @@
             "flags": {},
             "name": null,
             "type": null,
-            "img": null
+            "img": null,
+            "ownership": null
           },
           "x": 1900,
           "y": 2200,
           "elevation": 0,
           "locked": false,
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         }
       ],
       "lights": [
@@ -11932,7 +12350,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "cshdsN3W31EFhLOE",
@@ -11955,7 +12374,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "HpWCYNkNFgFeBN9e",
@@ -11978,7 +12398,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "FxqjO1N7pmRMZEdx",
@@ -12001,7 +12422,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "g0DstpfizXZeEGGA",
@@ -12024,7 +12446,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "7vg08nhAiPQgteN2",
@@ -12047,7 +12470,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "nBDdlNDQH8rta3DP",
@@ -12070,7 +12494,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "EzvYZLYr1fPgBpXt",
@@ -12093,7 +12518,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "jweLEm1QQ9mQQRAo",
@@ -12116,7 +12542,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Z953FtTttzun14cn",
@@ -12139,7 +12566,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "KrP50poytVUDzcrF",
@@ -12178,7 +12606,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "w9FPBzxslG5wopZh",
@@ -12217,7 +12646,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "OoNA5rdrikIVG2K5",
@@ -12256,7 +12686,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "qnD5t5PFpVdRRo0O",
@@ -12279,7 +12710,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "xq6TtOw125LZJHHX",
@@ -12302,7 +12734,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Esaaiv0otNnfLIrG",
@@ -12325,7 +12758,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "x5onxzQRpT4uo0E2",
@@ -12348,7 +12782,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "YrquzLp5E0DBLt7Y",
@@ -12371,7 +12806,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "e5WoVbVVlqhIBHbB",
@@ -12394,7 +12830,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "KGkMOBRaQhZFGey8",
@@ -12417,7 +12854,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "rNZXYHdprFcAIxRM",
@@ -12440,7 +12878,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "rVmZYEbGgXYPT20n",
@@ -12463,7 +12902,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "FRccmvYQ9VozZSnS",
@@ -12486,7 +12926,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "JNKxSIt6gZ2iqpPF",
@@ -12509,7 +12950,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "H4BA19z87nWaYbvv",
@@ -12532,7 +12974,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "FXnvd7PTecZ5PIFn",
@@ -12555,7 +12998,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "LMDKidcZa4bLOO4s",
@@ -12594,7 +13038,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "pvoUE8eH1qFpnevD",
@@ -12617,7 +13062,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "MXd8jeqCrNHTpXdN",
@@ -12640,7 +13086,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "JSskY5JTOYhok67y",
@@ -12663,7 +13110,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "VAjd69IkCcFHusnA",
@@ -12686,7 +13134,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         }
       ],
       "playlist": null,
@@ -12700,10 +13149,6 @@
         "stroud-dnd-helpers": {
           "id": "t1.2"
         }
-      },
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
       },
       "background": {
         "src": "modules/sdnd-strahd-adv/images/maps/Areas/T/t1_gate/first_floor.webp",
@@ -12723,12 +13168,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "createdTime": 1719969281904,
         "modifiedTime": 1756411633570,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "regions": [],
       "environment": {
@@ -12767,18 +13213,20 @@
       },
       "fog": {
         "exploration": true,
-        "reset": 1675811348862,
         "overlay": null,
         "colors": {
           "explored": null,
           "unexplored": null
         }
-      }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "active": false
     },
     {
       "_id": "2RYQglwKSuIQnBZm",
       "name": "T1.3. Tsolenka Gate (Roof)",
-      "active": false,
       "navigation": true,
       "navOrder": 0,
       "navName": "",
@@ -12810,8 +13258,6 @@
           "name": "Snow Maiden",
           "displayName": 20,
           "actorLink": false,
-          "appendNumber": false,
-          "prependAdjective": false,
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/tokens/Mobs/snow_maiden.webp",
             "scaleX": 0.9,
@@ -12930,20 +13376,26 @@
               "scale": 1
             }
           },
-          "hexagonalShape": 0,
           "sort": 0,
           "locked": false,
           "occludable": {
             "radius": 0
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "name": "Snow Maiden",
           "displayName": 20,
           "actorLink": false,
-          "appendNumber": false,
-          "prependAdjective": false,
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/tokens/Mobs/snow_maiden.webp",
             "scaleX": 0.9,
@@ -13062,20 +13514,26 @@
               "scale": 1
             }
           },
-          "hexagonalShape": 0,
           "sort": 0,
           "locked": false,
           "occludable": {
             "radius": 0
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "name": "Snow Maiden",
           "displayName": 20,
           "actorLink": false,
-          "appendNumber": false,
-          "prependAdjective": false,
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/tokens/Mobs/snow_maiden.webp",
             "scaleX": 0.9,
@@ -13194,20 +13652,26 @@
               "scale": 1
             }
           },
-          "hexagonalShape": 0,
           "sort": 0,
           "locked": false,
           "occludable": {
             "radius": 0
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "name": "Snow Maiden",
           "displayName": 20,
           "actorLink": false,
-          "appendNumber": false,
-          "prependAdjective": false,
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/tokens/Mobs/snow_maiden.webp",
             "scaleX": 0.9,
@@ -13326,20 +13790,26 @@
               "scale": 1
             }
           },
-          "hexagonalShape": 0,
           "sort": 0,
           "locked": false,
           "occludable": {
             "radius": 0
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "name": "Snow Maiden",
           "displayName": 20,
           "actorLink": false,
-          "appendNumber": false,
-          "prependAdjective": false,
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/tokens/Mobs/snow_maiden.webp",
             "scaleX": 0.9,
@@ -13458,20 +13928,26 @@
               "scale": 1
             }
           },
-          "hexagonalShape": 0,
           "sort": 0,
           "locked": false,
           "occludable": {
             "radius": 0
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "name": "Snow Maiden",
           "displayName": 20,
           "actorLink": false,
-          "appendNumber": false,
-          "prependAdjective": false,
           "texture": {
             "src": "modules/sdnd-strahd-adv/images/tokens/Mobs/snow_maiden.webp",
             "scaleX": 0.9,
@@ -13590,13 +14066,21 @@
               "scale": 1
             }
           },
-          "hexagonalShape": 0,
           "sort": 0,
           "locked": false,
           "occludable": {
             "radius": 0
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "name": "Vrock",
@@ -13682,9 +14166,6 @@
             "contrast": 0
           },
           "detectionModes": [],
-          "appendNumber": false,
-          "prependAdjective": false,
-          "hexagonalShape": 1,
           "occludable": {
             "radius": 0
           },
@@ -13712,13 +14193,23 @@
             "flags": {},
             "name": null,
             "type": null,
-            "img": null
+            "img": null,
+            "ownership": null
           },
           "x": 1900,
           "y": 2200,
           "elevation": 0,
           "locked": false,
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "name": "Vrock",
@@ -13804,9 +14295,6 @@
             "contrast": 0
           },
           "detectionModes": [],
-          "appendNumber": false,
-          "prependAdjective": false,
-          "hexagonalShape": 1,
           "occludable": {
             "radius": 0
           },
@@ -13834,13 +14322,23 @@
             "flags": {},
             "name": null,
             "type": null,
-            "img": null
+            "img": null,
+            "ownership": null
           },
           "x": 1500,
           "y": 2200,
           "elevation": 0,
           "locked": false,
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         }
       ],
       "lights": [
@@ -15042,7 +15540,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ZS9ZrAJq5E8IBKZh",
@@ -15065,7 +15564,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "HIxcKL3uW3wsoc7M",
@@ -15088,7 +15588,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "AMmAb5XEvZBBxkIH",
@@ -15111,7 +15612,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "bwJuy8IdXoesLEqb",
@@ -15134,7 +15636,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "bntYsLwIXXKjq87L",
@@ -15157,7 +15660,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "tMcB8UJ3HVoPbwWF",
@@ -15180,7 +15684,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "VEC1gL5AVI7EHX2m",
@@ -15203,7 +15708,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "G7ZiUV82uylz0iW3",
@@ -15226,7 +15732,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "aZSxwJJitM5UdauP",
@@ -15249,7 +15756,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "BleUEFaRdwoyD85m",
@@ -15272,7 +15780,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "asI5x48iU0iE5F4Q",
@@ -15295,7 +15804,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "T3R03Gol2bkxiNAZ",
@@ -15318,7 +15828,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "YcmOjlVUyoNw1YEl",
@@ -15341,7 +15852,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "MXhWeOR2L6807JfB",
@@ -15364,7 +15876,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "oDoK65u8koewIoFm",
@@ -15387,7 +15900,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "C0y3iwXZOXVbMsk5",
@@ -15410,7 +15924,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "D8AimCykAhpwUy4M",
@@ -15433,7 +15948,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ut7dtKeXBnscXGcq",
@@ -15456,7 +15972,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "nRJSpGNlGWIlwuA0",
@@ -15479,7 +15996,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "hYbL5fy6ajc5r2Fe",
@@ -15502,7 +16020,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "SlaMQOBpTUHvKdCX",
@@ -15525,7 +16044,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "vNuuAYna8cfmCZig",
@@ -15548,7 +16068,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "bbSjMVu8AWMTwsRR",
@@ -15571,7 +16092,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "aaG4HutBLyiYIA4K",
@@ -15594,7 +16116,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "zHgW0GbPdVkEfJIQ",
@@ -15617,7 +16140,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ITDLgM1oO80d7wcz",
@@ -15640,7 +16164,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "JU3EqfCZkijGZ6iA",
@@ -15663,7 +16188,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "SUsG9Rs9ijjLn3N8",
@@ -15686,7 +16212,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "KNCApCssgOBcPOxd",
@@ -15709,7 +16236,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "R5yTaMnqwes4C74Q",
@@ -15732,7 +16260,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "rxYwoozgETM1gWaz",
@@ -15755,7 +16284,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Ea1utT0R4sg2jlWp",
@@ -15778,7 +16308,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "l6AyH7wZchLoRhag",
@@ -15801,7 +16332,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "eFciyVzby9mkIGcN",
@@ -15824,7 +16356,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "9E3I7yPak7Zqz2RQ",
@@ -15847,7 +16380,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "xGOcXwlkHZKiD9Pi",
@@ -15870,7 +16404,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "qgul9FOIXJROkr9C",
@@ -15893,7 +16428,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "8yjQciZC1OSHeNOD",
@@ -15916,7 +16452,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "9ixz3RXUSBN7byDV",
@@ -15939,7 +16476,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "e8vZ9bUVJCbNlAZn",
@@ -15962,7 +16500,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "IocItUAOq8wuEfTQ",
@@ -15985,7 +16524,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "d8Gp6tV9vURgxLZt",
@@ -16008,7 +16548,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "DzgLGxH2EXOUd1Ws",
@@ -16031,7 +16572,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "6mGBcHI1jHGkQIS5",
@@ -16054,7 +16596,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "1K049tjiXicN02CO",
@@ -16077,7 +16620,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "k7qYzj1kQgzNm8CS",
@@ -16100,7 +16644,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "7ozvbn36ekhupr3H",
@@ -16123,7 +16668,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Dv4EzVAXrjVO3XD4",
@@ -16146,7 +16692,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "IdZSGKcixKnluGOm",
@@ -16169,7 +16716,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "QOsIXcvXbJHs6inA",
@@ -16192,7 +16740,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "FcHCjNYNSAlTAdVG",
@@ -16215,7 +16764,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "XANpvIdJXzjLeq1s",
@@ -16238,7 +16788,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "DQQv8DPVsOL6P2By",
@@ -16261,7 +16812,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "uzkNxseO3SDmXSUz",
@@ -16284,7 +16836,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "SrRJTchMKecsznyH",
@@ -16307,7 +16860,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "h1ubUaE1kwfSenFH",
@@ -16330,7 +16884,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "PpWK2z2Qg6am83mG",
@@ -16353,7 +16908,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "mBAeRP8oEvvlAk9k",
@@ -16376,7 +16932,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "6PXyGRHo3Bh1gd89",
@@ -16399,7 +16956,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "rBE0qVTPWj7Fm273",
@@ -16422,7 +16980,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "EMlOZ4hwLWNpIDV4",
@@ -16445,7 +17004,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "BmMfcpiQ84XVyZOG",
@@ -16468,7 +17028,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "gVPHSRtOhehDnnUv",
@@ -16491,7 +17052,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Z6viDfxtfb6OgH4v",
@@ -16514,7 +17076,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "z5OvoENUJY846HRU",
@@ -16537,7 +17100,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "zjL2Gczr828895Hs",
@@ -16560,7 +17124,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "lYMX6sVJ7n6TgQFJ",
@@ -16583,7 +17148,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "fy1EMuQ8f81MO3C2",
@@ -16606,7 +17172,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "oSEv6vY81pADG3T9",
@@ -16629,7 +17196,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "8TaLHpFH42HQCv74",
@@ -16652,7 +17220,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "St2ZWPR76oOigssS",
@@ -16675,7 +17244,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "4Ig5LLLyxqsIYS90",
@@ -16698,7 +17268,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "BOJ8LszLVcmGLAV5",
@@ -16721,7 +17292,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         }
       ],
       "playlist": null,
@@ -16735,10 +17307,6 @@
         "stroud-dnd-helpers": {
           "id": "t1.3"
         }
-      },
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
       },
       "background": {
         "src": "modules/sdnd-strahd-adv/images/maps/Areas/T/t1_gate/roof.webp",
@@ -16758,12 +17326,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "createdTime": 1719969296522,
         "modifiedTime": 1756411670219,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "regions": [],
       "environment": {
@@ -16802,18 +17371,20 @@
       },
       "fog": {
         "exploration": true,
-        "reset": 1675811289459,
         "overlay": null,
         "colors": {
           "explored": null,
           "unexplored": null
         }
-      }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "active": false
     },
     {
       "_id": "WuklPpu9bIWP6qga",
       "name": "Tsolenka Bridge",
-      "active": false,
       "navigation": true,
       "navOrder": 0,
       "navName": "",
@@ -17601,7 +18172,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ZYcnVbeLIvBVhGGJ",
@@ -17624,7 +18196,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "AV0arE7lhDnr9F1i",
@@ -17647,7 +18220,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "e6tcbVlZmCaVAGYe",
@@ -17670,7 +18244,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "XppflmqI0M2apRo0",
@@ -17693,7 +18268,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "wA6BTIjWS7zF3uST",
@@ -17716,7 +18292,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "4teDPHTBNf96s7NU",
@@ -17739,7 +18316,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "a5u0li4p6nCLd5OH",
@@ -17762,7 +18340,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "DYFjMtzOR36Ro8XS",
@@ -17785,7 +18364,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "VkOtxpnfZeyiOGex",
@@ -17808,7 +18388,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "UciFaAO78RH9A9Lu",
@@ -17831,7 +18412,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "hkM2qoHBIcGpfeXF",
@@ -17854,7 +18436,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "kagzhgjqsyqV8I1M",
@@ -17877,7 +18460,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "eEU5HhsSwsHLZF6l",
@@ -17900,7 +18484,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "2hqQXznaPRQpIaNq",
@@ -17923,7 +18508,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "o7J8mnbQQD1IssIE",
@@ -17946,7 +18532,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "RwEEfiXrV4xVPRbI",
@@ -17969,7 +18556,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "0L4WknijOoNJgVTg",
@@ -17992,7 +18580,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "DxW9z90w6N0bTzWG",
@@ -18015,7 +18604,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "AWWCF6ZyzJiKFxrX",
@@ -18038,7 +18628,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "VmtjNtDYSPw1Q8aY",
@@ -18061,7 +18652,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "caxj7tYLQkhVf16f",
@@ -18084,7 +18676,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "VrDw6XN8ts5LVYVx",
@@ -18107,7 +18700,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "4MiEgUfhrx8845HZ",
@@ -18130,7 +18724,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "7MWX4PgGy1ihMBIL",
@@ -18153,7 +18748,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "6IOHFA990p0327NP",
@@ -18176,7 +18772,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "WvxRTLwU85uMruvF",
@@ -18199,7 +18796,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "lHodGp0xLx88wbk8",
@@ -18232,7 +18830,8 @@
             "sight": 5,
             "sound": null,
             "attenuation": true
-          }
+          },
+          "animation": null
         },
         {
           "_id": "CuW29wGfmCyFAI63",
@@ -18265,7 +18864,8 @@
             "sight": 5,
             "sound": null,
             "attenuation": true
-          }
+          },
+          "animation": null
         },
         {
           "_id": "dUBVzdvu2EdxPBKi",
@@ -18298,7 +18898,8 @@
             "sight": 5,
             "sound": null,
             "attenuation": true
-          }
+          },
+          "animation": null
         },
         {
           "_id": "8usCG0PlJDogsag9",
@@ -18321,7 +18922,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "v0JBMJ34AOl588tK",
@@ -18344,7 +18946,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Wqn7C9pMHwRvyhC3",
@@ -18367,7 +18970,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "W8WmaH3u4R8nDg2q",
@@ -18390,7 +18994,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "7kaJqq412aIkAITj",
@@ -18413,7 +19018,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "aMVqu9yx8uJZ0rBv",
@@ -18436,7 +19042,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "F5lksVaFczL2RmrE",
@@ -18459,7 +19066,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "cMqm4aWzhjg1upa6",
@@ -18482,7 +19090,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "qRpXMqdQDmce7Hee",
@@ -18505,7 +19114,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "D5KHA0t7KOSPvOyV",
@@ -18528,7 +19138,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "nOj1zioYcqOoHl6F",
@@ -18551,7 +19162,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ZsYJwpZOkYEXeKu9",
@@ -18574,7 +19186,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "fm5NpEHX48WZ3KRv",
@@ -18597,7 +19210,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "rYh0cbnkQnjh5O4C",
@@ -18620,7 +19234,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "4gAeXpEfDj0yx5qw",
@@ -18643,7 +19258,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "WEqmES7sXm8CLEK1",
@@ -18666,7 +19282,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "6fJfqVFMYjGgtrab",
@@ -18689,7 +19306,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "HpMNBcuGmROq38B0",
@@ -18712,7 +19330,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "3ToDqz9siGjpDt5F",
@@ -18735,7 +19354,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "vgRfZq0nJAdQJpNO",
@@ -18758,7 +19378,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "iTQfy7KqlJJm8013",
@@ -18781,7 +19402,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "4jARaD7D5UU5egmi",
@@ -18804,7 +19426,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "yWBP3SYLKr9RX29s",
@@ -18827,7 +19450,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "xOhvijAhIsAqlgS6",
@@ -18850,7 +19474,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "OEpy6zn1zgQybNUz",
@@ -18873,7 +19498,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "7t7nqCfK1sd5VLrE",
@@ -18896,7 +19522,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "tgI4sHVmKGkmrpCU",
@@ -18919,7 +19546,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ofcOv3UCDngv7zWm",
@@ -18942,7 +19570,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "6v2Ci989N4x5dK1U",
@@ -18965,7 +19594,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "0eWEZL4hSHsR8e1H",
@@ -18988,7 +19618,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "7vu9c3YvSdrAlVah",
@@ -19011,7 +19642,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "PnhcmCsS9iXUxzBi",
@@ -19034,7 +19666,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "eJRAo3yovBMyeUl5",
@@ -19057,7 +19690,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "5hNuP1lMxsVZT8hd",
@@ -19080,7 +19714,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Zej588GfWLXZtGO8",
@@ -19103,7 +19738,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "wpJl54adF0i2V4G3",
@@ -19126,7 +19762,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "yQ5p90KDYOgixpsh",
@@ -19149,7 +19786,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "fw5Q7bQ7gBKyIFAS",
@@ -19172,7 +19810,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "lXwITmKmo6Sl1Oba",
@@ -19195,7 +19834,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ixjTntFsDpWYWXkD",
@@ -19218,7 +19858,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "eL1A6NPQ6IL1yZmg",
@@ -19241,7 +19882,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "apsGWRS2eqIKpaQf",
@@ -19264,7 +19906,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "CuEwVorWV3Ei61Fy",
@@ -19287,7 +19930,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "UHQfj4rxdgZnRlBn",
@@ -19310,7 +19954,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "jnxm3cFn4utOkHOs",
@@ -19333,7 +19978,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "cc6PCbpS7qirsoXR",
@@ -19356,7 +20002,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "CEEVXLcoI5jhXmGi",
@@ -19379,7 +20026,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "97fmt70Uk1y1nw3s",
@@ -19402,7 +20050,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "uSMMLTRTcokeR5rW",
@@ -19425,7 +20074,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "alAN5L8WIKjyj687",
@@ -19448,7 +20098,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ziwZuWGpcXL4ARXd",
@@ -19471,7 +20122,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Cn0oYjREn0MJa8Ms",
@@ -19494,7 +20146,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "CqnEX5Ye2yqXCWII",
@@ -19517,7 +20170,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "H2VJm2TcxULMby1V",
@@ -19540,7 +20194,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ovS93Oop94bPCbdM",
@@ -19563,7 +20218,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Ut7y3MGSRvObEPTG",
@@ -19586,7 +20242,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "4WXzD3t49RiBwryy",
@@ -19609,7 +20266,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "tUn5zbEFk3IJ60Pw",
@@ -19632,7 +20290,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "xl50YeQ12qJnDc7W",
@@ -19655,7 +20314,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         }
       ],
       "playlist": null,
@@ -19666,10 +20326,6 @@
       "sort": 200000,
       "flags": {
         "token-attacher": {}
-      },
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
       },
       "background": {
         "src": "modules/sdnd-strahd-adv/images/maps/Areas/T/t2_bridge/ground_floor.webp",
@@ -19689,12 +20345,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "createdTime": 1720665425989,
         "modifiedTime": 1756408977852,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "regions": [],
       "environment": {
@@ -19733,13 +20390,16 @@
       },
       "fog": {
         "exploration": true,
-        "reset": 1675811662365,
         "overlay": null,
         "colors": {
           "explored": null,
           "unexplored": null
         }
-      }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "active": false
     }
   ],
   "tables": [],
@@ -19760,12 +20420,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": 1704857181418,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
@@ -19781,12 +20442,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
@@ -19802,12 +20464,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
@@ -19822,12 +20485,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": 1704839237165,
         "modifiedTime": 1704857631386,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "description": ""
     },
@@ -19843,12 +20507,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": 1720662839528,
         "modifiedTime": 1720662839528,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "description": ""
     },
@@ -19865,12 +20530,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": 1705027185606,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
@@ -19885,12 +20551,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": 1705027168419,
         "modifiedTime": 1705027175907,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "description": ""
     },
@@ -19906,12 +20573,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": 1747943849391,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_id": "SgCwMBKLb1IzBVaz"
     },
@@ -19928,12 +20596,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.2.2",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": 1689092675085,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
@@ -19949,12 +20618,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.2.2",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": 1689092687175,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
@@ -19970,12 +20640,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
@@ -19991,12 +20662,13 @@
       "_stats": {
         "compendiumSource": null,
         "duplicateSource": null,
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "systemId": "dnd5e",
         "systemVersion": "4.4.2",
         "createdTime": 1756410380790,
         "modifiedTime": 1756410380790,
-        "lastModifiedBy": "6yhz13iFYYklKtgA"
+        "lastModifiedBy": "6yhz13iFYYklKtgA",
+        "exportSource": null
       }
     },
     {
@@ -20012,12 +20684,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.2.2",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": 1689092704006,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       }
     }
   ],
@@ -20027,12 +20700,13 @@
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "3.2.1",
-    "coreVersion": "12.343",
+    "coreVersion": "13.351",
     "createdTime": 1719969562120,
-    "modifiedTime": 1756412285951,
+    "modifiedTime": 1767281839147,
     "lastModifiedBy": "6yhz13iFYYklKtgA",
     "compendiumSource": null,
-    "duplicateSource": null
+    "duplicateSource": null,
+    "exportSource": null
   },
   "_key": "!adventures!2j9dpq5DLZfuDjef"
 }

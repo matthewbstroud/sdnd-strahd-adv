@@ -15,9 +15,7 @@
       "folder": "zd9x2GFMK2wH9kUS",
       "sort": 900000,
       "flags": {
-        "core": {
-          "sourceId": "Actor.jUG6BIcG9uNoucVl"
-        },
+        "core": {},
         "midi-qol": {
           "concentration-damage": 0
         }
@@ -167,8 +165,7 @@
           "ac": {
             "flat": null,
             "calc": "default",
-            "formula": "",
-            "motionless": ""
+            "formula": ""
           },
           "hp": {
             "value": 500,
@@ -188,33 +185,48 @@
             }
           },
           "movement": {
-            "burrow": null,
-            "climb": null,
-            "fly": null,
-            "swim": null,
-            "walk": 30,
+            "walk": "30",
             "units": "ft",
-            "hover": false
+            "hover": false,
+            "ignoredDifficultTerrain": []
           },
           "actions": {
             "stations": false,
-            "value": 0,
             "thresholds": {
               "0": null,
               "1": null,
               "2": null
-            }
+            },
+            "max": 0,
+            "spent": 0
           },
           "capacity": {
             "creature": "",
-            "cargo": 0
+            "cargo": {
+              "value": 0,
+              "units": "tn"
+            }
+          },
+          "price": {
+            "value": null,
+            "denomination": "gp"
+          },
+          "quality": {
+            "value": 4
+          },
+          "travel": {
+            "paces": {},
+            "speeds": {},
+            "time": 24,
+            "units": "mph"
           }
         },
         "details": {
           "biography": {
             "value": "",
             "public": ""
-          }
+          },
+          "type": "water"
         },
         "traits": {
           "size": "lg",
@@ -254,6 +266,15 @@
           "dm": {
             "amount": {},
             "bypasses": []
+          },
+          "weight": {
+            "units": "lb"
+          },
+          "keel": {
+            "units": "ft"
+          },
+          "beam": {
+            "units": "ft"
           }
         },
         "currency": {
@@ -263,7 +284,6 @@
           "sp": 0,
           "cp": 0
         },
-        "vehicleType": "water",
         "cargo": {
           "crew": [],
           "passengers": [
@@ -276,11 +296,16 @@
         "source": {
           "rules": "2014",
           "revision": 1
+        },
+        "crew": {
+          "value": []
+        },
+        "draft": {
+          "value": []
+        },
+        "passengers": {
+          "value": []
         }
-      },
-      "ownership": {
-        "default": 3,
-        "6yhz13iFYYklKtgA": 3
       },
       "prototypeToken": {
         "name": "Travelling Party",
@@ -379,7 +404,6 @@
         "detectionModes": [],
         "appendNumber": false,
         "prependAdjective": false,
-        "hexagonalShape": 0,
         "occludable": {
           "radius": 0
         },
@@ -394,17 +418,28 @@
             "scale": 1,
             "texture": null
           }
-        }
+        },
+        "turnMarker": {
+          "mode": 1,
+          "animation": null,
+          "src": null,
+          "disposition": false
+        },
+        "movementAction": null
       },
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "4.4.2",
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": 1755779191295,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": "Actor.jUG6BIcG9uNoucVl",
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "ownership": {
+        "default": 3
       }
     }
   ],
@@ -436,38 +471,40 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.1.2",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": 1722806289178,
             "modifiedTime": 1722806922150,
             "lastModifiedBy": "6yhz13iFYYklKtgA",
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "category": null,
+          "ownership": {
+            "default": -1
           }
         }
       ],
       "sort": 100000,
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
-      },
       "flags": {},
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": 1722806192267,
         "modifiedTime": 1722806972755,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "categories": [],
+      "ownership": {
+        "default": 0
       }
     },
     {
@@ -495,38 +532,40 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.1.2",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": 1722960625149,
             "modifiedTime": 1722960689265,
             "lastModifiedBy": "6yhz13iFYYklKtgA",
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "category": null,
+          "ownership": {
+            "default": -1
           }
         }
       ],
       "sort": 0,
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
-      },
       "flags": {},
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": 1722960602790,
         "modifiedTime": 1722960689265,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "categories": [],
+      "ownership": {
+        "default": 0
       }
     }
   ],
@@ -534,7 +573,6 @@
     {
       "_id": "UbBKrX8XSzSCcyM9",
       "name": "Bandit Camp",
-      "active": false,
       "navigation": false,
       "navOrder": 0,
       "navName": "",
@@ -614,10 +652,6 @@
       "flags": {
         "token-attacher": {}
       },
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
-      },
       "background": {
         "src": "modules/sdnd-strahd-adv/images/maps/BanditCamp.webp",
         "offsetX": 0,
@@ -636,12 +670,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": 1723003343868,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "regions": [],
       "environment": {
@@ -680,18 +715,20 @@
       },
       "fog": {
         "exploration": true,
-        "reset": 1676336949639,
         "overlay": null,
         "colors": {
           "explored": null,
           "unexplored": null
         }
-      }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "active": false
     },
     {
       "_id": "xSmrTq9oeLpLiwnC",
       "name": "Barovia - Full",
-      "active": false,
       "navigation": false,
       "navOrder": 0,
       "navName": "",
@@ -737,10 +774,6 @@
         },
         "token-attacher": {}
       },
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
-      },
       "background": {
         "src": "modules/sdnd-strahd-adv/images/maps/Map%20of%20Barovia%20-%204k%20-%20All%20Names%20-%20Without%20Hex.webp",
         "offsetX": 0,
@@ -759,12 +792,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": 1751311166680,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "regions": [],
       "environment": {
@@ -803,18 +837,20 @@
       },
       "fog": {
         "exploration": true,
-        "reset": 1673102626704,
         "overlay": null,
         "colors": {
           "explored": null,
           "unexplored": null
         }
-      }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "active": false
     },
     {
       "_id": "KRwdpAjIkWGmVSTN",
       "name": "Map of Barovia",
-      "active": false,
       "navigation": true,
       "navOrder": 0,
       "navName": "",
@@ -950,12 +986,9 @@
             "system": {},
             "items": [],
             "effects": [],
-            "ownership": null,
-            "flags": {}
+            "flags": {},
+            "ownership": null
           },
-          "appendNumber": false,
-          "prependAdjective": false,
-          "hexagonalShape": 0,
           "sort": 0,
           "locked": false,
           "occludable": {
@@ -973,7 +1006,16 @@
               "texture": null
             }
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 0,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         }
       ],
       "lights": [],
@@ -3706,10 +3748,6 @@
         },
         "token-attacher": {}
       },
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
-      },
       "background": {
         "src": "modules/sdnd-strahd-adv/images/maps/Map%20of%20Barovia%20-%204k%20-%20No%20Names%20-%20Without%20Hex.webp",
         "offsetX": 0,
@@ -3728,12 +3766,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "createdTime": 1704856935311,
-        "modifiedTime": 1755459245486,
+        "modifiedTime": 1755781095980,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "regions": [],
       "environment": {
@@ -3772,13 +3811,16 @@
       },
       "fog": {
         "exploration": true,
-        "reset": 1673102626704,
         "overlay": null,
         "colors": {
           "explored": null,
           "unexplored": null
         }
-      }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "active": false
     }
   ],
   "tables": [],
@@ -3799,12 +3841,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": 1704857132061,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
@@ -3819,12 +3862,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": 1704839237165,
         "modifiedTime": 1704857631386,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "description": ""
     },
@@ -3840,12 +3884,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": 1705027168419,
         "modifiedTime": 1705027175907,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "description": ""
     },
@@ -3862,12 +3907,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": 1705027185606,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
@@ -3882,12 +3928,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": 1722806966949,
         "modifiedTime": 1722806966949,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "description": ""
     },
@@ -3903,12 +3950,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": 1722960593567,
         "modifiedTime": 1722960593567,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "description": ""
     },
@@ -3925,12 +3973,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": 1726317879401,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
-        "compendiumSource": "Folder.zd9x2GFMK2wH9kUS",
-        "duplicateSource": null
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
@@ -3945,12 +3994,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": 1747943849391,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
-        "compendiumSource": "Folder.SgCwMBKLb1IzBVaz",
-        "duplicateSource": null
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_id": "SgCwMBKLb1IzBVaz"
     }
@@ -3961,12 +4011,13 @@
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "3.1.2",
-    "coreVersion": "12.343",
+    "coreVersion": "13.351",
     "createdTime": 1722960870473,
-    "modifiedTime": 1755780625927,
+    "modifiedTime": 1767281717012,
     "lastModifiedBy": "6yhz13iFYYklKtgA",
     "compendiumSource": null,
-    "duplicateSource": null
+    "duplicateSource": null,
+    "exportSource": null
   },
   "_key": "!adventures!NDgVZ6a3bjBuY0lS"
 }

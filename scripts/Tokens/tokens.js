@@ -21,7 +21,7 @@ const morphData = {
 }
 
 async function morph(tokenId) {
-    let token = await canvas.scene.tokens.get(tokenId);
+    let token = canvas.scene.tokens.get(tokenId);
     const actorName = await token.actor?.getFlag("sdnd-strahd-adv", "actorName");
     const md = morphData[actorName];
     if (!md) {

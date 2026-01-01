@@ -1,3 +1,8 @@
+# v13.5.0
+# New Features
+- Foundry V13 Support.
+- DnD5e v5 support.
+- Sun Protected Vampires
 # v12.4.10
 # New Features
 - Added sun protected vampires.

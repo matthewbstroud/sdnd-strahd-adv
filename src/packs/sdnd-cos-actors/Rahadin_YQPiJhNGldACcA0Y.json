@@ -144,7 +144,8 @@
         },
         "speed": {
           "value": null,
-          "conditions": ""
+          "conditions": "",
+          "units": "ft"
         },
         "strength": 0,
         "proficient": 1,
@@ -165,7 +166,10 @@
         "summons": null,
         "properties": [],
         "activities": {},
-        "identifier": ""
+        "identifier": "",
+        "crew": {
+          "value": []
+        }
       },
       "ownership": {
         "default": 0,
@@ -174,12 +178,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!YQPiJhNGldACcA0Y.8793lvfpzkmaauyf"
     },
@@ -283,7 +288,8 @@
         "summons": null,
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         },
         "activities": {
           "dnd5eactivity000": {
@@ -315,7 +321,7 @@
             },
             "effects": [],
             "range": {
-              "units": "",
+              "units": "self",
               "special": "",
               "override": false
             },
@@ -327,7 +333,7 @@
                 "size": "",
                 "width": "",
                 "height": "",
-                "units": ""
+                "units": "ft"
               },
               "affects": {
                 "count": "",
@@ -361,7 +367,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -380,7 +387,17 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
@@ -388,7 +405,15 @@
               "preRemoveConditionText": "",
               "postRemoveConditionText": ""
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "otherActivityAsParentType": true
           }
         },
         "identifier": "",
@@ -401,12 +426,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!YQPiJhNGldACcA0Y.2nz3d5tm7yswaozw"
     },
@@ -615,7 +641,7 @@
                 "size": "",
                 "width": "",
                 "height": "",
-                "units": ""
+                "units": "ft"
               },
               "affects": {
                 "count": "",
@@ -662,7 +688,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -681,7 +708,17 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
@@ -692,11 +729,24 @@
             "otherActivityId": "",
             "attackMode": "oneHanded",
             "ammunition": "",
-            "otherActivityUuid": ""
+            "otherActivityUuid": "",
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "otherActivityAsParentType": true,
+            "attackRollPerTarget": "default",
+            "fumbleThreshold": 1
           }
         },
         "identifier": "",
-        "ammunition": {}
+        "ammunition": {},
+        "crew": {
+          "value": []
+        }
       },
       "ownership": {
         "default": 0
@@ -704,12 +754,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!YQPiJhNGldACcA0Y.cv868wc6a3perk4r"
     },
@@ -775,7 +826,7 @@
         "range": {
           "value": null,
           "long": null,
-          "units": "",
+          "units": "ft",
           "reach": null
         },
         "uses": {
@@ -906,7 +957,7 @@
             },
             "effects": [],
             "range": {
-              "units": "",
+              "units": "self",
               "special": "",
               "override": false
             },
@@ -918,7 +969,7 @@
                 "size": "",
                 "width": "",
                 "height": "",
-                "units": ""
+                "units": "ft"
               },
               "affects": {
                 "count": "",
@@ -983,7 +1034,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1002,7 +1054,17 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
@@ -1013,11 +1075,24 @@
             "otherActivityId": "",
             "attackMode": "oneHanded",
             "ammunition": "",
-            "otherActivityUuid": ""
+            "otherActivityUuid": "",
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "otherActivityAsParentType": true,
+            "attackRollPerTarget": "default",
+            "fumbleThreshold": 1
           }
         },
         "identifier": "",
-        "ammunition": {}
+        "ammunition": {},
+        "crew": {
+          "value": []
+        }
       },
       "ownership": {
         "default": 0
@@ -1025,12 +1100,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!YQPiJhNGldACcA0Y.0j6xhq0880vg65iy"
     },
@@ -1138,7 +1214,8 @@
         "summons": null,
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         },
         "properties": [],
         "activities": {
@@ -1165,13 +1242,13 @@
             "duration": {
               "concentration": false,
               "value": "",
-              "units": "",
+              "units": "inst",
               "special": "",
               "override": false
             },
             "effects": [],
             "range": {
-              "units": "",
+              "units": "self",
               "special": "",
               "override": false
             },
@@ -1183,7 +1260,7 @@
                 "size": "",
                 "width": "",
                 "height": "",
-                "units": ""
+                "units": "ft"
               },
               "affects": {
                 "count": "",
@@ -1245,7 +1322,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1264,7 +1342,17 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
@@ -1272,7 +1360,16 @@
               "preRemoveConditionText": "",
               "postRemoveConditionText": ""
             },
-            "otherActivityId": ""
+            "otherActivityId": "",
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "otherActivityAsParentType": true,
+            "friendlySave": "default"
           }
         },
         "identifier": "",
@@ -1285,12 +1382,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!YQPiJhNGldACcA0Y.dotwn3zso7er2thf"
     },
@@ -1392,7 +1490,8 @@
         "summons": null,
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         },
         "properties": [],
         "activities": {},
@@ -1406,12 +1505,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!YQPiJhNGldACcA0Y.ei7d9ysjgxghivja"
     },
@@ -1513,7 +1613,8 @@
         "summons": null,
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         },
         "properties": [],
         "activities": {},
@@ -1527,12 +1628,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!YQPiJhNGldACcA0Y.x6rkmdtqy9sqorm7"
     },
@@ -1634,7 +1736,8 @@
         "summons": null,
         "prerequisites": {
           "level": null,
-          "repeatable": false
+          "repeatable": false,
+          "items": []
         },
         "properties": [],
         "activities": {},
@@ -1648,12 +1751,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!YQPiJhNGldACcA0Y.c83uq0f6jauiwugh"
     },
@@ -1731,7 +1835,7 @@
             "choice": false
           },
           "template": {
-            "units": "",
+            "units": "ft",
             "contiguous": false
           }
         },
@@ -1840,7 +1944,8 @@
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "prompt": true,
@@ -1876,7 +1981,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -1895,7 +2001,17 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
@@ -1903,10 +2019,20 @@
               "preRemoveConditionText": "",
               "postRemoveConditionText": ""
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "otherActivityAsParentType": true
           }
         },
-        "identifier": ""
+        "identifier": "",
+        "method": "innate",
+        "prepared": 1
       },
       "ownership": {
         "default": 0,
@@ -1915,12 +2041,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!YQPiJhNGldACcA0Y.xqrwe39luph2080k"
     },
@@ -1968,14 +2095,15 @@
           "description": "",
           "statuses": [],
           "_stats": {
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "systemId": null,
             "systemVersion": null,
             "createdTime": null,
             "modifiedTime": null,
             "lastModifiedBy": null,
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
           },
           "img": "icons/skills/melee/strike-blade-hooked-green-purple.webp",
           "type": "base",
@@ -2173,11 +2301,13 @@
             },
             "effects": [
               {
-                "_id": "baujg1hua2mbqto3"
+                "_id": "baujg1hua2mbqto3",
+                "level": {}
               }
             ],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "prompt": true,
@@ -2213,7 +2343,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -2232,7 +2363,17 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
@@ -2240,10 +2381,20 @@
               "preRemoveConditionText": "",
               "postRemoveConditionText": ""
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "otherActivityAsParentType": true
           }
         },
-        "identifier": ""
+        "identifier": "",
+        "method": "innate",
+        "prepared": 1
       },
       "ownership": {
         "default": 0,
@@ -2252,12 +2403,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!YQPiJhNGldACcA0Y.oql68qncc0p87yps"
     },
@@ -2442,7 +2594,8 @@
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "prompt": true,
@@ -2478,7 +2631,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -2497,7 +2651,17 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
@@ -2505,10 +2669,20 @@
               "preRemoveConditionText": "",
               "postRemoveConditionText": ""
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "otherActivityAsParentType": true
           }
         },
-        "identifier": ""
+        "identifier": "",
+        "method": "innate",
+        "prepared": 1
       },
       "ownership": {
         "default": 0,
@@ -2517,12 +2691,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!YQPiJhNGldACcA0Y.kukq50jl7vpl3g3c"
     },
@@ -2593,12 +2768,6 @@
           "concentration": false,
           "toggleEffect": false,
           "ignoreTotalCover": false
-        },
-        "exportSource": {
-          "world": "development-testing",
-          "system": "dnd5e",
-          "coreVersion": "10.291",
-          "systemVersion": "2.1.5"
         },
         "autoanimations": {
           "id": "befa460d-2626-4e7d-b25c-edc88040a964",
@@ -2737,7 +2906,7 @@
             "choice": false
           },
           "template": {
-            "units": "",
+            "units": "ft",
             "contiguous": false
           }
         },
@@ -2844,7 +3013,8 @@
             },
             "effects": [],
             "range": {
-              "override": false
+              "override": false,
+              "units": "self"
             },
             "target": {
               "prompt": true,
@@ -2880,7 +3050,8 @@
               "idi": false,
               "idr": false,
               "idv": false,
-              "ida": false
+              "ida": false,
+              "idm": false
             },
             "midiProperties": {
               "ignoreTraits": [],
@@ -2899,7 +3070,17 @@
               "rollMode": "default",
               "chooseEffects": false,
               "toggleEffect": false,
-              "ignoreFullCover": false
+              "ignoreFullCover": false,
+              "autoConsume": false,
+              "forceConsumeDialog": "default",
+              "forceRollDialog": "default",
+              "forceDamageDialog": "default",
+              "otherActivityAsParentType": true,
+              "removeChatButtons": "default",
+              "magicEffect": false,
+              "magicDamage": false,
+              "noConcentrationCheck": false,
+              "autoCEEffects": "default"
             },
             "isOverTimeFlag": false,
             "overTimeProperties": {
@@ -2907,10 +3088,20 @@
               "preRemoveConditionText": "",
               "postRemoveConditionText": ""
             },
-            "otherActivityId": "none"
+            "otherActivityId": "none",
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "otherActivityAsParentType": true
           }
         },
-        "identifier": "misty-step"
+        "identifier": "misty-step",
+        "method": "innate",
+        "prepared": 1
       },
       "ownership": {
         "default": 0,
@@ -2919,12 +3110,19 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": 1722219311787,
         "modifiedTime": 1722219311787,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "development-testing",
+          "uuid": null,
+          "coreVersion": "10.291",
+          "systemId": "dnd5e",
+          "systemVersion": "2.1.5"
+        }
       },
       "folder": null,
       "_key": "!actors.items!YQPiJhNGldACcA0Y.eiik4ajt6kq2f9gj"
@@ -2982,9 +3180,7 @@
       "isLegacy": false,
       "flatAC": true
     },
-    "core": {
-      "sourceId": "Compendium.world.ddb-lost-mines-phandelver-monsters.m3f6w9POfKycfKyp"
-    },
+    "core": {},
     "midi-qol": {
       "concentration-damage": 0
     },
@@ -3183,9 +3379,10 @@
         "climb": null,
         "fly": null,
         "swim": null,
-        "walk": 35,
+        "walk": "35",
         "units": "ft",
-        "hover": false
+        "hover": false,
+        "ignoredDifficultTerrain": []
       },
       "attunement": {
         "max": 3
@@ -3233,6 +3430,10 @@
       },
       "loyalty": {
         "value": null
+      },
+      "price": {
+        "value": null,
+        "denomination": "gp"
       }
     },
     "details": {
@@ -3615,11 +3816,13 @@
     "resources": {
       "legact": {
         "value": 0,
-        "max": 0
+        "max": 0,
+        "spent": 0
       },
       "legres": {
         "value": 0,
-        "max": 0
+        "max": 0,
+        "spent": 0
       },
       "lair": {
         "value": false,
@@ -3718,7 +3921,6 @@
     "detectionModes": [],
     "appendNumber": false,
     "prependAdjective": false,
-    "hexagonalShape": 0,
     "occludable": {
       "radius": 0
     },
@@ -3733,17 +3935,25 @@
         "scale": 1,
         "texture": null
       }
-    }
+    },
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null
   },
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "4.4.2",
-    "coreVersion": "12.343",
+    "systemVersion": "5.2.4",
+    "coreVersion": "13.351",
     "createdTime": 1722219311737,
-    "modifiedTime": 1748178368903,
+    "modifiedTime": 1767281643149,
     "lastModifiedBy": "6yhz13iFYYklKtgA",
     "compendiumSource": "Compendium.world.ddb-lost-mines-phandelver-monsters.m3f6w9POfKycfKyp",
-    "duplicateSource": null
+    "duplicateSource": null,
+    "exportSource": null
   },
   "_key": "!actors!YQPiJhNGldACcA0Y"
 }

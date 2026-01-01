@@ -46,7 +46,6 @@
             "rarity": "common",
             "identified": true,
             "cover": null,
-            "crewed": false,
             "range": {
               "value": null,
               "long": null,
@@ -137,7 +136,7 @@
                 "duration": {
                   "concentration": false,
                   "value": "",
-                  "units": "",
+                  "units": "inst",
                   "special": "",
                   "override": false
                 },
@@ -155,7 +154,7 @@
                     "size": "",
                     "width": "",
                     "height": "",
-                    "units": ""
+                    "units": "ft"
                   },
                   "affects": {
                     "count": "",
@@ -202,7 +201,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -210,7 +210,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -221,7 +220,17 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -232,26 +241,40 @@
                 "otherActivityId": "",
                 "attackMode": "oneHanded",
                 "ammunition": "",
-                "otherActivityUuid": ""
+                "otherActivityUuid": "",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true,
+                "attackRollPerTarget": "default",
+                "fumbleThreshold": 1
               }
             },
             "identifier": "",
             "container": null,
             "ammunition": {},
-            "magicalBonus": null
-          },
-          "ownership": {
-            "default": 0
+            "magicalBonus": null,
+            "crew": {
+              "value": []
+            }
           },
           "_stats": {
             "systemId": null,
             "systemVersion": null,
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": null,
             "modifiedTime": null,
             "lastModifiedBy": null,
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         }
       ],
@@ -259,9 +282,7 @@
       "folder": "E8qvJN3Vzs3DFHNC",
       "sort": 200000,
       "flags": {
-        "core": {
-          "sourceId": "Compendium.dnd5e.monsters.SqZRuJ8lt2KGJBbq"
-        },
+        "core": {},
         "midi-qol": {
           "concentration-damage": 0
         },
@@ -456,13 +477,10 @@
             }
           },
           "movement": {
-            "burrow": null,
-            "climb": null,
-            "fly": null,
-            "swim": null,
-            "walk": 30,
+            "walk": "30",
             "units": "ft",
-            "hover": false
+            "hover": false,
+            "ignoredDifficultTerrain": []
           },
           "attunement": {
             "max": 3
@@ -509,6 +527,10 @@
             "bonuses": {
               "save": ""
             }
+          },
+          "price": {
+            "value": null,
+            "denomination": "gp"
           }
         },
         "details": {
@@ -886,12 +908,12 @@
         },
         "resources": {
           "legact": {
-            "value": 0,
-            "max": 0
+            "max": 0,
+            "spent": 0
           },
           "legres": {
-            "value": 0,
-            "max": 0
+            "max": 0,
+            "spent": 0
           },
           "lair": {
             "value": false,
@@ -904,10 +926,6 @@
           "revision": 1,
           "rules": "2014"
         }
-      },
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
       },
       "prototypeToken": {
         "name": "Commoner",
@@ -984,7 +1002,6 @@
         "detectionModes": [],
         "appendNumber": false,
         "prependAdjective": false,
-        "hexagonalShape": 0,
         "occludable": {
           "radius": 0
         },
@@ -999,17 +1016,28 @@
             "scale": 1,
             "texture": null
           }
-        }
+        },
+        "turnMarker": {
+          "mode": 1,
+          "animation": null,
+          "src": null,
+          "disposition": false
+        },
+        "movementAction": null
       },
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "4.4.2",
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": 1754774808142,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": "Compendium.dnd5e.monsters.SqZRuJ8lt2KGJBbq",
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "ownership": {
+        "default": 0
       }
     }
   ],
@@ -1043,35 +1071,38 @@
           "src": null,
           "system": {},
           "sort": 0,
-          "ownership": {
-            "default": -1
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.1.2",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": null,
             "modifiedTime": 1721697813673,
             "lastModifiedBy": "6yhz13iFYYklKtgA",
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "category": null,
+          "ownership": {
+            "default": -1
           }
         }
       ],
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
-      },
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": 1720548892961,
         "modifiedTime": 1721697813673,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "categories": [],
+      "ownership": {
+        "default": 0
       }
     }
   ],
@@ -1079,7 +1110,6 @@
     {
       "_id": "fhu1xtw5rjsz1HiB",
       "name": "Body In Woods",
-      "active": false,
       "navigation": false,
       "navOrder": 800000,
       "navName": "",
@@ -1255,9 +1285,7 @@
                 "folder": "oDI9ynWcq39UUWEW",
                 "sort": 0,
                 "flags": {
-                  "core": {
-                    "sourceId": "Item.SkL0ecaeBxltCTF2"
-                  }
+                  "core": {}
                 },
                 "system": {
                   "description": {
@@ -1267,7 +1295,7 @@
                   "source": {
                     "custom": "",
                     "revision": 1,
-                    "rules": "2024"
+                    "rules": "2014"
                   },
                   "quantity": 1,
                   "weight": {
@@ -1291,31 +1319,23 @@
                     "subtype": ""
                   }
                 },
-                "ownership": {
-                  "default": 0,
-                  "6yhz13iFYYklKtgA": 3
-                },
                 "_stats": {
                   "systemId": null,
                   "systemVersion": null,
-                  "coreVersion": "12.331",
+                  "coreVersion": "13.351",
                   "createdTime": null,
                   "modifiedTime": null,
                   "lastModifiedBy": null,
-                  "compendiumSource": "Compendium.sdnd-strahd-adv.sdnd-cos-items.Item.SkL0ecaeBxltCTF2",
-                  "duplicateSource": null
+                  "compendiumSource": "Item.SkL0ecaeBxltCTF2",
+                  "duplicateSource": null,
+                  "exportSource": null
+                },
+                "ownership": {
+                  "default": 0
                 }
               }
             ],
             "effects": [],
-            "ownership": {
-              "nI44NHqYFA6fYSaA": 0,
-              "2o6fMFw0qQuhf5nV": 0,
-              "6A5pacAU8kbNm9PQ": 0,
-              "al3K6JMdvNPhJSGp": 0,
-              "PAsMQtGinm9l3io7": 0,
-              "39APwqo8boJ5in8b": 0
-            },
             "flags": {
               "core": {
                 "sheetClass": "dnd5e.LootSheetNPC5e"
@@ -1347,11 +1367,9 @@
             },
             "name": null,
             "type": null,
-            "img": null
+            "img": null,
+            "ownership": null
           },
-          "appendNumber": false,
-          "prependAdjective": false,
-          "hexagonalShape": 0,
           "sort": 0,
           "locked": false,
           "occludable": {
@@ -1369,7 +1387,16 @@
               "texture": null
             }
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "_id": "Ym9gkyxLSEO4QEDz",
@@ -1466,12 +1493,9 @@
             "system": {},
             "items": [],
             "effects": [],
-            "ownership": null,
-            "flags": {}
+            "flags": {},
+            "ownership": null
           },
-          "appendNumber": false,
-          "prependAdjective": false,
-          "hexagonalShape": 1,
           "sort": 0,
           "locked": false,
           "occludable": {
@@ -1489,7 +1513,16 @@
               "texture": null
             }
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "_id": "8ELTwsCMeDdezFEo",
@@ -1586,12 +1619,9 @@
             "system": {},
             "items": [],
             "effects": [],
-            "ownership": null,
-            "flags": {}
+            "flags": {},
+            "ownership": null
           },
-          "appendNumber": false,
-          "prependAdjective": false,
-          "hexagonalShape": 1,
           "sort": 0,
           "locked": false,
           "occludable": {
@@ -1609,7 +1639,16 @@
               "texture": null
             }
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "_id": "4QFNLgGz27RqroIb",
@@ -1706,12 +1745,9 @@
             "system": {},
             "items": [],
             "effects": [],
-            "ownership": null,
-            "flags": {}
+            "flags": {},
+            "ownership": null
           },
-          "appendNumber": false,
-          "prependAdjective": false,
-          "hexagonalShape": 1,
           "sort": 0,
           "locked": false,
           "occludable": {
@@ -1729,7 +1765,16 @@
               "texture": null
             }
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "_id": "Xgi40nw3Aoh3ew98",
@@ -1826,12 +1871,9 @@
             "system": {},
             "items": [],
             "effects": [],
-            "ownership": null,
-            "flags": {}
+            "flags": {},
+            "ownership": null
           },
-          "appendNumber": false,
-          "prependAdjective": false,
-          "hexagonalShape": 1,
           "sort": 0,
           "locked": false,
           "occludable": {
@@ -1849,7 +1891,16 @@
               "texture": null
             }
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "_id": "fPSARnMk4E1Y9GY8",
@@ -1946,12 +1997,9 @@
             "system": {},
             "items": [],
             "effects": [],
-            "ownership": null,
-            "flags": {}
+            "flags": {},
+            "ownership": null
           },
-          "appendNumber": false,
-          "prependAdjective": false,
-          "hexagonalShape": 1,
           "sort": 0,
           "locked": false,
           "occludable": {
@@ -1969,7 +2017,16 @@
               "texture": null
             }
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "_id": "g1mfCK3tWch59ruQ",
@@ -2053,12 +2110,9 @@
             "system": {},
             "items": [],
             "effects": [],
-            "ownership": null,
-            "flags": {}
+            "flags": {},
+            "ownership": null
           },
-          "appendNumber": false,
-          "prependAdjective": false,
-          "hexagonalShape": 0,
           "sort": 0,
           "locked": false,
           "occludable": {
@@ -2076,7 +2130,16 @@
               "texture": null
             }
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "_id": "JAH9kQ8uTNHupYkA",
@@ -2160,12 +2223,9 @@
             "system": {},
             "items": [],
             "effects": [],
-            "ownership": null,
-            "flags": {}
+            "flags": {},
+            "ownership": null
           },
-          "appendNumber": false,
-          "prependAdjective": false,
-          "hexagonalShape": 0,
           "sort": 0,
           "locked": false,
           "occludable": {
@@ -2183,7 +2243,16 @@
               "texture": null
             }
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "_id": "Au5J2f9gTQW8EX3F",
@@ -2273,12 +2342,9 @@
             "system": {},
             "items": [],
             "effects": [],
-            "ownership": null,
-            "flags": {}
+            "flags": {},
+            "ownership": null
           },
-          "appendNumber": false,
-          "prependAdjective": false,
-          "hexagonalShape": 0,
           "sort": 0,
           "locked": false,
           "occludable": {
@@ -2296,7 +2362,16 @@
               "texture": null
             }
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "_id": "bzqnrBZjtL4XSIGW",
@@ -2380,12 +2455,9 @@
             "system": {},
             "items": [],
             "effects": [],
-            "ownership": null,
-            "flags": {}
+            "flags": {},
+            "ownership": null
           },
-          "appendNumber": false,
-          "prependAdjective": false,
-          "hexagonalShape": 0,
           "sort": 0,
           "locked": false,
           "occludable": {
@@ -2403,7 +2475,16 @@
               "texture": null
             }
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "_id": "FxiGBmqFxkF6xgTg",
@@ -2487,12 +2568,9 @@
             "system": {},
             "items": [],
             "effects": [],
-            "ownership": null,
-            "flags": {}
+            "flags": {},
+            "ownership": null
           },
-          "appendNumber": false,
-          "prependAdjective": false,
-          "hexagonalShape": 0,
           "sort": 0,
           "locked": false,
           "occludable": {
@@ -2510,7 +2588,16 @@
               "texture": null
             }
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "_id": "sOey0hLAgyvHk6zD",
@@ -2594,12 +2681,9 @@
             "system": {},
             "items": [],
             "effects": [],
-            "ownership": null,
-            "flags": {}
+            "flags": {},
+            "ownership": null
           },
-          "appendNumber": false,
-          "prependAdjective": false,
-          "hexagonalShape": 0,
           "sort": 0,
           "locked": false,
           "occludable": {
@@ -2617,7 +2701,16 @@
               "texture": null
             }
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "_id": "zmjhUjpskC0EhcU5",
@@ -2701,12 +2794,9 @@
             "system": {},
             "items": [],
             "effects": [],
-            "ownership": null,
-            "flags": {}
+            "flags": {},
+            "ownership": null
           },
-          "appendNumber": false,
-          "prependAdjective": false,
-          "hexagonalShape": 0,
           "sort": 0,
           "locked": false,
           "occludable": {
@@ -2724,7 +2814,16 @@
               "texture": null
             }
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "_id": "5sV67BZHS0wutlOh",
@@ -2808,12 +2907,9 @@
             "system": {},
             "items": [],
             "effects": [],
-            "ownership": null,
-            "flags": {}
+            "flags": {},
+            "ownership": null
           },
-          "appendNumber": false,
-          "prependAdjective": false,
-          "hexagonalShape": 0,
           "sort": 0,
           "locked": false,
           "occludable": {
@@ -2831,7 +2927,16 @@
               "texture": null
             }
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "_id": "rfXYxS4IPBKgS9r3",
@@ -2915,12 +3020,9 @@
             "system": {},
             "items": [],
             "effects": [],
-            "ownership": null,
-            "flags": {}
+            "flags": {},
+            "ownership": null
           },
-          "appendNumber": false,
-          "prependAdjective": false,
-          "hexagonalShape": 0,
           "sort": 0,
           "locked": false,
           "occludable": {
@@ -2938,7 +3040,16 @@
               "texture": null
             }
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "_id": "vK9bkCWwx73Rmb8L",
@@ -3022,12 +3133,9 @@
             "system": {},
             "items": [],
             "effects": [],
-            "ownership": null,
-            "flags": {}
+            "flags": {},
+            "ownership": null
           },
-          "appendNumber": false,
-          "prependAdjective": false,
-          "hexagonalShape": 0,
           "sort": 0,
           "locked": false,
           "occludable": {
@@ -3045,7 +3153,16 @@
               "texture": null
             }
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "_id": "kxwYoT90agUOcHR4",
@@ -3129,12 +3246,9 @@
             "system": {},
             "items": [],
             "effects": [],
-            "ownership": null,
-            "flags": {}
+            "flags": {},
+            "ownership": null
           },
-          "appendNumber": false,
-          "prependAdjective": false,
-          "hexagonalShape": 0,
           "sort": 0,
           "locked": false,
           "occludable": {
@@ -3152,7 +3266,16 @@
               "texture": null
             }
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "_id": "PkED2JzgZsB77rcK",
@@ -3236,12 +3359,9 @@
             "system": {},
             "items": [],
             "effects": [],
-            "ownership": null,
-            "flags": {}
+            "flags": {},
+            "ownership": null
           },
-          "appendNumber": false,
-          "prependAdjective": false,
-          "hexagonalShape": 0,
           "sort": 0,
           "locked": false,
           "occludable": {
@@ -3259,7 +3379,16 @@
               "texture": null
             }
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "_id": "uXQfYqOE5Nl9Z9jb",
@@ -3343,12 +3472,9 @@
             "system": {},
             "items": [],
             "effects": [],
-            "ownership": null,
-            "flags": {}
+            "flags": {},
+            "ownership": null
           },
-          "appendNumber": false,
-          "prependAdjective": false,
-          "hexagonalShape": 0,
           "sort": 0,
           "locked": false,
           "occludable": {
@@ -3366,7 +3492,16 @@
               "texture": null
             }
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "_id": "Q0qGBVZkRHd4rjv0",
@@ -3450,12 +3585,9 @@
             "system": {},
             "items": [],
             "effects": [],
-            "ownership": null,
-            "flags": {}
+            "flags": {},
+            "ownership": null
           },
-          "appendNumber": false,
-          "prependAdjective": false,
-          "hexagonalShape": 0,
           "sort": 0,
           "locked": false,
           "occludable": {
@@ -3473,7 +3605,16 @@
               "texture": null
             }
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "_id": "7tcqe16LFDLsQyjI",
@@ -3557,12 +3698,9 @@
             "system": {},
             "items": [],
             "effects": [],
-            "ownership": null,
-            "flags": {}
+            "flags": {},
+            "ownership": null
           },
-          "appendNumber": false,
-          "prependAdjective": false,
-          "hexagonalShape": 0,
           "sort": 0,
           "locked": false,
           "occludable": {
@@ -3580,7 +3718,16 @@
               "texture": null
             }
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "_id": "DUtgT7pNGWT2jIDG",
@@ -3664,12 +3811,9 @@
             "system": {},
             "items": [],
             "effects": [],
-            "ownership": null,
-            "flags": {}
+            "flags": {},
+            "ownership": null
           },
-          "appendNumber": false,
-          "prependAdjective": false,
-          "hexagonalShape": 0,
           "sort": 0,
           "locked": false,
           "occludable": {
@@ -3687,7 +3831,16 @@
               "texture": null
             }
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "_id": "MNhZtQLYBXn4n6dq",
@@ -3771,12 +3924,9 @@
             "system": {},
             "items": [],
             "effects": [],
-            "ownership": null,
-            "flags": {}
+            "flags": {},
+            "ownership": null
           },
-          "appendNumber": false,
-          "prependAdjective": false,
-          "hexagonalShape": 0,
           "sort": 0,
           "locked": false,
           "occludable": {
@@ -3794,7 +3944,16 @@
               "texture": null
             }
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "_id": "NCMndTweLTn3ATU0",
@@ -3878,12 +4037,9 @@
             "system": {},
             "items": [],
             "effects": [],
-            "ownership": null,
-            "flags": {}
+            "flags": {},
+            "ownership": null
           },
-          "appendNumber": false,
-          "prependAdjective": false,
-          "hexagonalShape": 0,
           "sort": 0,
           "locked": false,
           "occludable": {
@@ -3901,7 +4057,16 @@
               "texture": null
             }
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "_id": "7bcFV6493SJGyfTa",
@@ -3985,12 +4150,9 @@
             "system": {},
             "items": [],
             "effects": [],
-            "ownership": null,
-            "flags": {}
+            "flags": {},
+            "ownership": null
           },
-          "appendNumber": false,
-          "prependAdjective": false,
-          "hexagonalShape": 0,
           "sort": 0,
           "locked": false,
           "occludable": {
@@ -4008,7 +4170,16 @@
               "texture": null
             }
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "_id": "dG4KyVNZxnuAn6Gl",
@@ -4106,9 +4277,6 @@
             "effects": [],
             "ownership": null
           },
-          "appendNumber": false,
-          "prependAdjective": false,
-          "hexagonalShape": 0,
           "sort": 0,
           "locked": false,
           "occludable": {
@@ -4126,7 +4294,16 @@
               "texture": null
             }
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         }
       ],
       "lights": [
@@ -5795,7 +5972,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "K9sMwWL4CuEhA4Hu",
@@ -5818,7 +5996,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "BoqAcfHdmMYD8EDD",
@@ -5841,7 +6020,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "eMNpSQ7FN1hEYEbT",
@@ -5864,7 +6044,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "dq31m4xRRN9rvIoG",
@@ -5887,7 +6068,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ZL3UcChLzxr4ap6o",
@@ -5910,7 +6092,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "pcnCLjsvjk91veEC",
@@ -5933,7 +6116,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "xZyu3eGTHwzW9ZzY",
@@ -5956,7 +6140,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "vw5xlana5P2YygZA",
@@ -5979,7 +6164,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "eAf9Rt7uuOPoEAZs",
@@ -6002,7 +6188,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "nthDqLyIAGDUoLul",
@@ -6025,7 +6212,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ftwgy7tNc3ScV1xt",
@@ -6048,7 +6236,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "2ZpHl3AqjZVxIJy7",
@@ -6071,7 +6260,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "tJKm5qo2A1XKTzkL",
@@ -6094,7 +6284,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "DN93QmQagBEXrQmR",
@@ -6117,7 +6308,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "tUlaZMyFXcqSUOs8",
@@ -6140,7 +6332,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "fMEH7IUmfn4zgSgv",
@@ -6163,7 +6356,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "atqZjRhXDgeqgLPN",
@@ -6186,7 +6380,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "3Q6RViwNwvQppeQH",
@@ -6209,7 +6404,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "p8ZscZdKQzJ6ieXh",
@@ -6232,7 +6428,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "fvZR2hvLfzUk7wlM",
@@ -6255,7 +6452,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "QpnniYyH0hYwDfq4",
@@ -6278,7 +6476,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "w7y1zVUcJ4nF4oKr",
@@ -6301,7 +6500,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "fucnAkIu7dsOYKyt",
@@ -6324,7 +6524,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "aEUY8H1O6XJ0VQeg",
@@ -6347,7 +6548,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "yMaPDDgYka0mm0Cu",
@@ -6370,7 +6572,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "EQmJqMJkR04JzP2b",
@@ -6393,7 +6596,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Td0MXYUACs9BvjqR",
@@ -6416,7 +6620,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "zN1mPQeDhY2oCfoC",
@@ -6439,7 +6644,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Vo5vZ38lD3ENOmZ3",
@@ -6462,7 +6668,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Xeejo30zDYlrNEgi",
@@ -6485,7 +6692,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "0Btv2DI1HerOwxha",
@@ -6508,7 +6716,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "K1SxnQI5VKOMr4Yi",
@@ -6531,7 +6740,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ol0lrZeYW42s4fEt",
@@ -6554,7 +6764,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Uj6HjsKks8YbRch1",
@@ -6577,7 +6788,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Zut0FSWvEPPYbOvB",
@@ -6600,7 +6812,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "cPJya6GbGKe2aO1s",
@@ -6623,7 +6836,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "u1rXQC81zHMVHxsY",
@@ -6646,7 +6860,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "qC4er3ZJ4tuTKLNR",
@@ -6669,7 +6884,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "IdT5W0LaFpa4vxjh",
@@ -6692,7 +6908,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "AvDnnk4wIF8asTaz",
@@ -6715,7 +6932,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "NakufbKWDroHGMv3",
@@ -6738,7 +6956,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "nCaxHI5gehDr9DEH",
@@ -6761,7 +6980,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "tXOr5ZXLVmPyeCpM",
@@ -6784,7 +7004,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "qg6BiidMVVArC7iV",
@@ -6807,7 +7028,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "3k76bb6LziBWiIvQ",
@@ -6830,7 +7052,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "8kpf3BIT8bGUNze0",
@@ -6853,7 +7076,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "XsN7YctmovpCbCSt",
@@ -6876,7 +7100,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "qOQb1zZX5CnB0QjC",
@@ -6899,7 +7124,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "9Icgpi5AyxkZb3Yb",
@@ -6922,7 +7148,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "WUsrfYyaShkYVQIU",
@@ -6945,7 +7172,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Xbywnt7AbjigOLYp",
@@ -6968,7 +7196,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "TSQrYWShQoZt1u21",
@@ -6991,7 +7220,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "vsPPuFWdYviR7K4B",
@@ -7014,7 +7244,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "opHmxBX22PwZJUX3",
@@ -7037,7 +7268,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "AqQQHbKc0y56c6QT",
@@ -7060,7 +7292,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "kIy8oNmmuGIunOM4",
@@ -7083,7 +7316,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "p1xCO91Y6dCggj2F",
@@ -7106,7 +7340,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "me1eafWvzM8yBylL",
@@ -7129,7 +7364,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "786YAGyE6Tm9QTvM",
@@ -7152,7 +7388,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "3u0sYqrcxdhNTApZ",
@@ -7175,7 +7412,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "kj2rXK1tenlg6dCW",
@@ -7198,7 +7436,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "CYZcv2oZtBwFo01E",
@@ -7221,7 +7460,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "TonylxxzjKFUD05r",
@@ -7244,7 +7484,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "EberHvfeoR3434uk",
@@ -7267,7 +7508,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "2BilRMJwAC6wnHsc",
@@ -7290,7 +7532,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "stLMEKnd21qrtSQF",
@@ -7313,7 +7556,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "qeJq6XLuATCskd8H",
@@ -7336,7 +7580,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "g3og3Tx0kvWtl3Si",
@@ -7359,7 +7604,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "0zCbopHhz1gQ75oV",
@@ -7382,7 +7628,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ipqKfBpaIwpiPutf",
@@ -7405,7 +7652,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "F9IZ6pnrv3ryoQed",
@@ -7428,7 +7676,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "flWhvZk0fYXE7bKg",
@@ -7451,7 +7700,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "29ORP6M92HsuObo0",
@@ -7474,7 +7724,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "OCTCE1vjau3RC3lf",
@@ -7497,7 +7748,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "8qsGkIR0XCipDq4h",
@@ -7520,7 +7772,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Putkmohqb6YpbYot",
@@ -7543,7 +7796,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "fRWwipSzlLjV0x69",
@@ -7566,7 +7820,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "n2dKL4uDTSdwIB6V",
@@ -7589,7 +7844,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ERhp9oRZwJap9dex",
@@ -7612,7 +7868,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "vxqBYVtKDvDRYwbu",
@@ -7635,7 +7892,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "aOQxFIAE4J4XAQ12",
@@ -7658,7 +7916,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Zb9euVL5Hq0RQpdA",
@@ -7681,7 +7940,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "xpzuarwQNFhKHC8f",
@@ -7704,7 +7964,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "SW1S1PwCVPE8suaD",
@@ -7727,7 +7988,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "gGrVwBTihC59BVNZ",
@@ -7750,7 +8012,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "6UHZhauOgglczJPS",
@@ -7773,7 +8036,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "3t5myrxZaWFzGZ1y",
@@ -7796,7 +8060,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "zZ2rZZu34YDTHBko",
@@ -7819,7 +8084,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "MhjATKxbbWFE5u5B",
@@ -7842,7 +8108,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "1NUO1MML7TjL7a9r",
@@ -7865,7 +8132,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "T6VAjnli5GMg3DG0",
@@ -7888,7 +8156,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "DSwQhox5fcNs2zx4",
@@ -7911,7 +8180,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "FdY1mgPy8iYcSr3k",
@@ -7934,7 +8204,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "WI8l8Il2eSxZBLje",
@@ -7957,7 +8228,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "hCGoZ8JRMbNvsIJT",
@@ -7980,7 +8252,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "WgHuGCd8LrrdHlTL",
@@ -8003,7 +8276,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "qE7X5v7Q7JiH5Rk2",
@@ -8026,7 +8300,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "kYmLjhNSTdYJkp1H",
@@ -8049,7 +8324,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "m1Ckij5bPLmk4ROT",
@@ -8072,7 +8348,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "xYYd2rzjHAGGNyhI",
@@ -8095,7 +8372,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "2m6Is78Fl0AkqGO2",
@@ -8118,7 +8396,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "hI1p6M9UGtAHhl0W",
@@ -8141,7 +8420,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "g4VJ9CV8JU6E33wW",
@@ -8164,7 +8444,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "EJeYizLIibs0GL6t",
@@ -8187,7 +8468,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "S01kIua38jZh3W45",
@@ -8210,7 +8492,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "8EkDpNMgbvLNEeCd",
@@ -8233,7 +8516,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "t3N7SiZk9zbRciiC",
@@ -8256,7 +8540,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "NtdD5lTAUsmLXF9S",
@@ -8279,7 +8564,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ErNjEngyxc0Flwb1",
@@ -8302,7 +8588,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ZgyZXBArawydeuSO",
@@ -8325,7 +8612,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "OisJAIMBKUwsQLqq",
@@ -8348,7 +8636,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "nhGPyaTrVrrPjLCO",
@@ -8371,7 +8660,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "SjKz297FXp66yS6v",
@@ -8394,7 +8684,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "OHglMqjq6HEM2caR",
@@ -8417,7 +8708,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Etmt3Z5pj1vADIG6",
@@ -8440,7 +8732,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "apCN10Y4LSdx8VRz",
@@ -8463,7 +8756,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "aozsvJuzrdLlyPnB",
@@ -8486,7 +8780,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "3sIyfP7FeBsXyKot",
@@ -8509,7 +8804,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "vkA1tx53zRfdF8Vb",
@@ -8532,7 +8828,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "PsBcfMRmaOggUDMs",
@@ -8555,7 +8852,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "jFDFg3PqB2fU1uKQ",
@@ -8578,7 +8876,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "XoqnVdWiRnFOS003",
@@ -8601,7 +8900,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "OHCeL48ywvqgNHU1",
@@ -8624,7 +8924,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "CdKI1WmJcjMnauKX",
@@ -8647,7 +8948,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "POog1hEUDPrwGrF1",
@@ -8670,7 +8972,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "olifQZDFN4Aityzs",
@@ -8693,7 +8996,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "0nANPZoTIuUExNS1",
@@ -8716,7 +9020,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "J0ZYbfQnUTY0LZRU",
@@ -8739,7 +9044,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "YettkD52fBv1VCJY",
@@ -8762,7 +9068,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "nDYCR3pRTgSiTzYk",
@@ -8785,7 +9092,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "VI7IVzGa4IaM9xEU",
@@ -8808,7 +9116,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "yiewRb8UXipXKwwh",
@@ -8831,7 +9140,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "r0j5zX1r9NQFyjKW",
@@ -8854,7 +9164,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "w6vxHA4i92cRSSYK",
@@ -8877,7 +9188,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "BlVPlvzTtK8xHcdb",
@@ -8900,7 +9212,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ncevNJPMCYSHpBhP",
@@ -8923,7 +9236,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Ng3N9eiSEMRCAzQY",
@@ -8946,7 +9260,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "MsCcl4s38WKHKPtq",
@@ -8969,7 +9284,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ZiXUQeYtIytjbRPK",
@@ -8992,7 +9308,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "USOcSSAfvHziCsqm",
@@ -9015,7 +9332,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "YMB0ZPUHlpMqPcqC",
@@ -9038,7 +9356,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "s4Khj5NU2nw8HtOe",
@@ -9061,7 +9380,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "rLtcsk8sVeRtwWgR",
@@ -9084,7 +9404,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "JsjErFD8mGEyl7PB",
@@ -9107,7 +9428,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "awF7ngkvP5UFmuCi",
@@ -9130,7 +9452,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "QeVmwoXyyI1gDyHm",
@@ -9153,7 +9476,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "1LKNYGJ8gSfVMizO",
@@ -9176,7 +9500,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "h23iejdDY4XTjIlB",
@@ -9199,7 +9524,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "qJdU63ZtkeesbIJX",
@@ -9222,7 +9548,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "xTS3uXLogdFXXzvu",
@@ -9245,7 +9572,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "hYmNvDvXzmno6n4e",
@@ -9268,7 +9596,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "oyRERqf6qeSSFsPj",
@@ -9291,7 +9620,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "DwJvzQS6uI8Yrzop",
@@ -9314,7 +9644,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "MvOjv70Q0IhVIYMM",
@@ -9337,7 +9668,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ESUpctz8yRmnqwXE",
@@ -9360,7 +9692,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ZPQ8VaAz2ZOuDvPI",
@@ -9383,7 +9716,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "KoCypQxpewGp7t1d",
@@ -9406,7 +9740,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "sKMPhjsGIKNA8vU7",
@@ -9429,7 +9764,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Rtrq5jfqKGHhLVPz",
@@ -9452,7 +9788,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "jendTrU29K9XMcX9",
@@ -9475,7 +9812,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "9tqTmS45hNZqscfJ",
@@ -9498,7 +9836,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "5VKKjtFS4nCnvjFf",
@@ -9521,7 +9860,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "5gjMRkgLgNHBt0ZF",
@@ -9544,7 +9884,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ZS787aCh5DptO6X3",
@@ -9567,7 +9908,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "cOMNbY1SiZoWzY0n",
@@ -9590,7 +9932,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Wjq9O1JCiM3qdFDP",
@@ -9613,7 +9956,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "lW0Y5iigEq4d4QFK",
@@ -9636,7 +9980,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "rcFK1EFDX0ZQbX7h",
@@ -9659,7 +10004,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "QrxtSoTgLv7rskTU",
@@ -9682,7 +10028,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "CaC96k6i0wdV7sI2",
@@ -9705,7 +10052,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "5DHx6RhhDarZCZmZ",
@@ -9728,7 +10076,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "mratdOnIOlKJih2F",
@@ -9751,7 +10100,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ibOHQv5olZUFMfdM",
@@ -9774,7 +10124,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "K4bW6lrPO8N9kAAT",
@@ -9797,7 +10148,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "2oslHxBJPlEsoI5p",
@@ -9820,7 +10172,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "lnLJ5K4zP5LKy38d",
@@ -9843,7 +10196,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "6sXIvtsEc94tKJiu",
@@ -9866,7 +10220,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "EkO60JlkM8n1H3B3",
@@ -9889,7 +10244,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Esl5skUwVSpFIlxY",
@@ -9912,7 +10268,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "4Bk4Bf6QCewcviKV",
@@ -9935,7 +10292,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "wXf0Wxjz0IvKBNTH",
@@ -9958,7 +10316,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "xhtctetvf5NbRsUZ",
@@ -9981,7 +10340,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "HHkqjttGxECP7GXS",
@@ -10004,7 +10364,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "qRKaLo2WN2OBBMLL",
@@ -10027,7 +10388,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "TTQfzYKBuid2pGm4",
@@ -10050,7 +10412,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "EQYRIYoAcN8CUBkj",
@@ -10073,7 +10436,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "2bTgYXG1KqFUQpAN",
@@ -10096,7 +10460,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "BzmD2UxGRpU6hm0S",
@@ -10119,7 +10484,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "KiFCHaAbarYgkg5l",
@@ -10142,7 +10508,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "eszhcP4yRFm4Y3br",
@@ -10165,7 +10532,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Imw2auRLstKX0MKo",
@@ -10188,7 +10556,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "QonK2tYtk1hIyaAn",
@@ -10211,7 +10580,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "KQTqvLHvSdddi5Xt",
@@ -10234,7 +10604,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "43qjzYtwkoYysXje",
@@ -10257,7 +10628,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "TAiLhK5F8wePL24q",
@@ -10280,7 +10652,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "loiY0pCoFQNCpBbj",
@@ -10303,7 +10676,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "7e6ZIw0IxZfH0fhx",
@@ -10326,7 +10700,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "CRkadBLJWJkhg19f",
@@ -10349,7 +10724,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "9BDA0Vs6AUWRx5nd",
@@ -10372,7 +10748,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Tw7ibkWzX9D611HR",
@@ -10395,7 +10772,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "WZZlOkQ0vBfDho58",
@@ -10418,7 +10796,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "vIYZ8WTYrqNRKZzc",
@@ -10441,7 +10820,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "RCqquCC02elNKwv4",
@@ -10464,7 +10844,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "J0D0Gg6jyuEKHFUH",
@@ -10487,7 +10868,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "WoCdgs0jRBmtNTeK",
@@ -10510,7 +10892,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "yRXfDgLlguDRHYfL",
@@ -10533,7 +10916,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ykQSKK4YM60uhczg",
@@ -10556,7 +10940,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "gvyFk9S3ffuT5uHP",
@@ -10579,7 +10964,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "04WeX3NVWD3ja0WR",
@@ -10602,7 +10988,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "eZS1TutqPUr2fWVs",
@@ -10625,7 +11012,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "h6ygSE64tmAN9KeS",
@@ -10648,7 +11036,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "yAqF6zOdNj5Bp1tI",
@@ -10671,7 +11060,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "G30Q0CfUY9kzt5dL",
@@ -10694,7 +11084,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "JgoGiu2vkxl60dcS",
@@ -10717,7 +11108,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "9xJxH3CUmiJZIBFM",
@@ -10740,7 +11132,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "qPtteWt3xvPMA6CF",
@@ -10763,7 +11156,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "TugHMUcZ6ijTdspW",
@@ -10786,7 +11180,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "h4cxq6pAL3XBwMIy",
@@ -10809,7 +11204,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "dCEWnvbBXVQRE4Dx",
@@ -10832,7 +11228,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ljuyQMwSJM8VdK0s",
@@ -10855,7 +11252,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "6Bm2R4YMXojHyLh6",
@@ -10878,7 +11276,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "0iRZwcuJcQB7PqR6",
@@ -10901,7 +11300,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "7XfXO8t3TO2TgogX",
@@ -10924,7 +11324,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "jfo8rXAdN678tSLE",
@@ -10947,7 +11348,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "DXayi1feDPynCwCv",
@@ -10970,7 +11372,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "xcSUCCNcA5MYQPu9",
@@ -10993,7 +11396,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "5n8q4G8XzpTzGnLB",
@@ -11016,7 +11420,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "woRYcNd2sO2Ub3Gl",
@@ -11039,7 +11444,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "6Hxly45hTay2MNTu",
@@ -11062,7 +11468,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "RpGMrnvhNOWwm0hH",
@@ -11085,7 +11492,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "g12GyLA29Z4jFyur",
@@ -11108,7 +11516,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Tp1SML9memzDMqUR",
@@ -11131,7 +11540,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "t7HKRZSCKBllUVK5",
@@ -11154,7 +11564,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "IaFg9EpTDWG7wr6K",
@@ -11177,7 +11588,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "2zDQJ7mVHV5i8S2v",
@@ -11200,7 +11612,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "kCTEevJUqmYyGNwJ",
@@ -11223,7 +11636,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "JwXHNhoUdV9dwclQ",
@@ -11246,7 +11660,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "WRMuoIqIcycaV9bm",
@@ -11269,7 +11684,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "PcMbwKOVh9dOrXuP",
@@ -11292,7 +11708,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "3M404hXqXI7wpRNv",
@@ -11315,7 +11732,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "N8CCoTbWMDa2gmX8",
@@ -11338,7 +11756,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "W6ufhDkZtlvulgyJ",
@@ -11361,7 +11780,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "RvwYDqdnSuShdoQ2",
@@ -11384,7 +11804,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "3nhc1zQVZzixywoS",
@@ -11407,7 +11828,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "SrKb02rwfeFjLoYI",
@@ -11430,7 +11852,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "sIbSUWaVEEwnpwEE",
@@ -11453,7 +11876,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "bQpsoRzxkcNGtruk",
@@ -11476,7 +11900,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "YYOMvsZTCmxijbCx",
@@ -11499,7 +11924,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "27xNH5ASChUSlT5t",
@@ -11522,7 +11948,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Y2LsJ1ryhKDnSLYf",
@@ -11545,7 +11972,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "sDCZi6CZZ1zsPe2n",
@@ -11568,7 +11996,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "bBWaB3mOg9Kp0Ork",
@@ -11591,7 +12020,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Eo9m3hPEVeUiJwu7",
@@ -11614,7 +12044,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "xqrKvoASLxRB69v3",
@@ -11637,7 +12068,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "gbbgIGjqJkoFwVPM",
@@ -11660,7 +12092,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "STmkh781DwZs8KPb",
@@ -11683,7 +12116,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "X59GqsIfH9w1RBwB",
@@ -11706,7 +12140,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "hcoL3sZ38E4ZEcJ1",
@@ -11729,7 +12164,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "GpcUnrdRxVCqXM1y",
@@ -11752,7 +12188,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "cTY0uPFfZIWRSmpn",
@@ -11775,7 +12212,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "px3R6QtBD7SovSIe",
@@ -11798,7 +12236,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "HcABwQm93ZV8e0TS",
@@ -11821,7 +12260,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "lkOCSM9KmQHwXue4",
@@ -11844,7 +12284,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "vZfIzXRqBYljGPse",
@@ -11867,7 +12308,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "AUTPMhWAsh1P736W",
@@ -11890,7 +12332,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "S6tQmdRb6Xy7EICS",
@@ -11913,7 +12356,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "x2LwR45RDd4JeBm3",
@@ -11936,7 +12380,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "xCJqY810CYJMimWc",
@@ -11959,7 +12404,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "5ceb6adsWtILpu3y",
@@ -11982,7 +12428,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "7aaTgWPqUA8L30Dh",
@@ -12005,7 +12452,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "A1up57xpaeqUG6JL",
@@ -12028,7 +12476,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "rErq8f12TlaOfAcd",
@@ -12051,7 +12500,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "5BXlEvwRNonlUQnx",
@@ -12074,7 +12524,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "pQIJ5GUrsW1zZdmo",
@@ -12097,7 +12548,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "C076JKgTdRZJu9qY",
@@ -12120,7 +12572,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "QUhohZjWgtsmPFxs",
@@ -12143,7 +12596,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "1DLlHpBVpzcEdCJT",
@@ -12166,7 +12620,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "jlxglZeqrFmSznxJ",
@@ -12189,7 +12644,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "nplHWFHmN1f8ShVu",
@@ -12212,7 +12668,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "3JuuWW6z3yOxtN36",
@@ -12235,7 +12692,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "p1qz8viu6UywvyUI",
@@ -12258,7 +12716,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "dI04RKzP6ioKKbC5",
@@ -12281,7 +12740,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "uARwhkMqlyr2pWTb",
@@ -12304,7 +12764,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "TvX52cfegtf02Cz3",
@@ -12327,7 +12788,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "5LudlmHELEA0jaww",
@@ -12350,7 +12812,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "NOinPcFhKmzOGFyv",
@@ -12373,7 +12836,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "x7o9NJ6yiqQadN1x",
@@ -12396,7 +12860,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "zpUgaGfJoLCbly78",
@@ -12419,7 +12884,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "2Vu3tKPKqSO3ZwrX",
@@ -12442,7 +12908,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "iMzRprWZ5rw5cm9v",
@@ -12465,7 +12932,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Tc7uOSNUmb2sCKFr",
@@ -12488,7 +12956,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "EQvRAHSTTElQQKNf",
@@ -12511,7 +12980,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "3WjUL6ETf8H38pIy",
@@ -12534,7 +13004,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ZZpRBlZFwaTAMQH4",
@@ -12557,7 +13028,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "2i6fFAcMgi7rFUGf",
@@ -12580,7 +13052,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "cd1uMIo2pZu46ctK",
@@ -12603,7 +13076,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "TsTWteJK7MX3gLQY",
@@ -12626,7 +13100,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "JpfkqMcdv2KPlbRX",
@@ -12649,7 +13124,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "SJZSjTZKjR19JYnq",
@@ -12672,7 +13148,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "fxUwMrWWy0yToZgs",
@@ -12695,7 +13172,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "a7EicUE4E0KofjrP",
@@ -12718,7 +13196,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "eFCHpuWX0vJgKdv5",
@@ -12741,7 +13220,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "9ckpM3p06VYiWbsy",
@@ -12764,7 +13244,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "JG0T0eAoN7q5VfgE",
@@ -12787,7 +13268,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "QcAARFMpWYquXE6j",
@@ -12810,7 +13292,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "9O17gHE6kz3rrJ7d",
@@ -12833,7 +13316,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "kUC4WyE6gyyPnhl7",
@@ -12856,7 +13340,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ipQc6PhbLObxueMH",
@@ -12879,7 +13364,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "o3a6tStZVs7Rxv1J",
@@ -12902,7 +13388,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "qm1fH3mv9JpBQvmj",
@@ -12925,7 +13412,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "0RifepJn7HGjmGlP",
@@ -12948,7 +13436,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "jr2pZ3uUHDpJ9ajN",
@@ -12971,7 +13460,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Uyq8AQNhPtm8BF3Z",
@@ -12994,7 +13484,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "PGEIVJRa6pBho6AG",
@@ -13017,7 +13508,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "cU34gNvpP8JhJyQd",
@@ -13040,7 +13532,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "U1YkotLv5IaOOLmV",
@@ -13063,7 +13556,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "laH9AmSWxTx9krgC",
@@ -13086,7 +13580,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "UA9yBaf7l8L2FdIo",
@@ -13109,7 +13604,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "vlH8CVARf7YFefut",
@@ -13132,7 +13628,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "5f7sdMdOkKNeWsXP",
@@ -13155,7 +13652,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "BKY7CnQhIw4DlvxB",
@@ -13178,7 +13676,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "027k2GYRHP7sM2vk",
@@ -13201,7 +13700,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "9BFZhtIeMEjdF7xf",
@@ -13224,7 +13724,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "GYraOWzppFGvD1pD",
@@ -13247,7 +13748,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "56lfqtoWFM8nY6eL",
@@ -13270,7 +13772,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "j5a8E8k2OGMRzUG9",
@@ -13293,7 +13796,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "XXMJPDuSKAJAiWFE",
@@ -13316,7 +13820,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "u0QEFOxTlnSwGAMc",
@@ -13339,7 +13844,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Bx0yC2aEEnm1sZ5g",
@@ -13362,7 +13868,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "IlmjYaZOFRgsVXGy",
@@ -13385,7 +13892,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "K4bT9uEj5Y8V40S8",
@@ -13408,7 +13916,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "JK3skknU5ts5aKUD",
@@ -13431,7 +13940,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "lDunmBXwG0txC4HJ",
@@ -13454,7 +13964,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "A8dB2TKcMBtbrZ6h",
@@ -13477,7 +13988,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "8Z3ReKB3GuWfbdHW",
@@ -13500,7 +14012,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "vz6Cr7E1KKu5Ywaf",
@@ -13523,7 +14036,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Wzt7hehFZOQkBwQU",
@@ -13546,7 +14060,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "QahcWIZqMNoVpJm9",
@@ -13569,7 +14084,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "mRlXsYPgD0mSL5lK",
@@ -13592,7 +14108,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ZCHC6GPaV7DTQiLs",
@@ -13615,7 +14132,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "zdLD830rSmsnpm1I",
@@ -13638,7 +14156,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "0tbBHISwRV1mV5zZ",
@@ -13661,7 +14180,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "5CEgJpAvDW82SwpO",
@@ -13684,7 +14204,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "GhASiduHs0haozDl",
@@ -13707,7 +14228,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "LyGWAePZeskkA1kJ",
@@ -13730,7 +14252,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "vBv64jweEdsHio9L",
@@ -13753,7 +14276,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "scHnRFDefSTzvKpi",
@@ -13776,7 +14300,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ivCNHqdzzvrh9obi",
@@ -13799,7 +14324,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "fX98HDN3JxVzZUYm",
@@ -13822,7 +14348,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "FeQOm8OD2rqgDN3e",
@@ -13845,7 +14372,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "xOYeP0LFDtochqf8",
@@ -13868,7 +14396,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "5JjObS09QPYbDTVG",
@@ -13891,7 +14420,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "kx7YwGXB1nI5EzfK",
@@ -13914,7 +14444,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "qpJwTuVKAMa0Mxdt",
@@ -13937,7 +14468,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "WxMOli4Pm3JvUyZd",
@@ -13960,7 +14492,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "OfGcKBQiW5aSJJwV",
@@ -13983,7 +14516,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "EkQ4Dy4GpxZVTpFt",
@@ -14006,7 +14540,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "pxAPcSPoynIJDbHY",
@@ -14029,7 +14564,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "IgAGhiw8bDVdf6j1",
@@ -14052,7 +14588,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "TYqwNlVx2jycIPWm",
@@ -14075,7 +14612,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "D4UoquT3Ozl3YjUS",
@@ -14098,7 +14636,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "sFyVI12Ypke2OOaF",
@@ -14121,7 +14660,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "NV5D5GCSw97BXBrC",
@@ -14144,7 +14684,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "G4Zw4mZGr92WGTu6",
@@ -14167,7 +14708,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Hw4FyeVUbnLmYklz",
@@ -14190,7 +14732,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "zng3bn5Y39bFG55P",
@@ -14213,7 +14756,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "MeNgNgKnb6nsC5Jm",
@@ -14236,7 +14780,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "IfXtRSxhx96d1kv6",
@@ -14259,7 +14804,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "zjjGlIvnCaREsH7Q",
@@ -14282,7 +14828,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "4ePhFHvwdvQbe7or",
@@ -14305,7 +14852,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "kMA1dSRcptE5XwHR",
@@ -14328,7 +14876,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "B7btfsVCSNaepaJz",
@@ -14351,7 +14900,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "L5W31bZLEXH69Epp",
@@ -14374,7 +14924,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "TTWGNC98VxGUwcA2",
@@ -14397,7 +14948,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "8h1082A3VAPI2FQS",
@@ -14420,7 +14972,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "jSP4q6JcU5rmxRxx",
@@ -14443,7 +14996,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "VW9wvjscpMRjzogm",
@@ -14466,7 +15020,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "EXPCcS1HQk6fgyXF",
@@ -14489,7 +15044,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "OatAfaI3UngLQWih",
@@ -14512,7 +15068,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "bFwojQqMQIi4U0tl",
@@ -14535,7 +15092,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "NfVx6oh1yZiKtiUE",
@@ -14558,7 +15116,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "oN4v5UdUv8fYliRE",
@@ -14581,7 +15140,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "7LoZ03UNtrOhX1q0",
@@ -14604,7 +15164,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "VvuiM8jqG3ge1VHk",
@@ -14627,7 +15188,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "d7n79NxGZk7hLEnb",
@@ -14650,7 +15212,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "FZWYTA7Zw3edyH2q",
@@ -14673,7 +15236,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "HfheUc9KyyPAzMAN",
@@ -14696,7 +15260,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "LO3GCSdjaxhmc5YU",
@@ -14719,7 +15284,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "oX3qtEckIDM3dBYS",
@@ -14742,7 +15308,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "s4bofPt81teeNXXV",
@@ -14765,7 +15332,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "igq3E752VKh1R9c3",
@@ -14788,7 +15356,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "8fS5er7SYGiG6dO6",
@@ -14811,7 +15380,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "9E2IJW0X5Erci4ZR",
@@ -14834,7 +15404,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "d3Y24N7dC31eEbk8",
@@ -14857,7 +15428,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "pvXVm3fo1PbdmqLz",
@@ -14880,7 +15452,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "9ld6YB930QR3QrDs",
@@ -14903,7 +15476,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "3tEb0pcUQ4XOU5lC",
@@ -14926,7 +15500,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "qTZ3zTIqFz3V0OrL",
@@ -14949,7 +15524,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "GGvZnVJCoCiN8yw7",
@@ -14972,7 +15548,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "3fMd2yWFdwcgrZEL",
@@ -14995,7 +15572,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "GbktS9n4mLOONdNz",
@@ -15018,7 +15596,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "kEPfer3l8Seqt71I",
@@ -15041,7 +15620,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "M7qwgfhxmYqDublj",
@@ -15064,7 +15644,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "vE9j1gioXSiAIwXw",
@@ -15087,7 +15668,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "hEXGecgnmii1SYdl",
@@ -15110,7 +15692,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "BctNy04PQx0bubTr",
@@ -15133,7 +15716,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "tAeNwqj9Y5WMIpXI",
@@ -15156,7 +15740,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "y2nwma8tLgUgmKRw",
@@ -15179,7 +15764,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Tjmg2uEhyoL4uULo",
@@ -15202,7 +15788,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "bSWJx3GTjcSMxaVK",
@@ -15225,7 +15812,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ulE2i4oze5g50AVA",
@@ -15248,7 +15836,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "tmpQClyTMMtMGDTb",
@@ -15271,7 +15860,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "4vwmPPvV6YvDncpA",
@@ -15294,7 +15884,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "e8EU569vMrkW3SiW",
@@ -15317,7 +15908,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "iMy4NOYoaXwjUpFC",
@@ -15340,7 +15932,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "EzSYlNT0enrHLImV",
@@ -15363,7 +15956,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "daIFXDb41QXgsnEn",
@@ -15386,7 +15980,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "JmrdOvSxQuFZYKXN",
@@ -15409,7 +16004,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "mxeICKWHW9YIYCDF",
@@ -15432,7 +16028,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "l9dFhJ5l0YH0mwEt",
@@ -15455,7 +16052,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "hgKxUafC1b27Y2CJ",
@@ -15478,7 +16076,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "H9y99XZwhvUyi8i9",
@@ -15501,7 +16100,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "GuvGSaNl4YHvNGN6",
@@ -15524,7 +16124,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "jstaNF0ctXXoUee0",
@@ -15547,7 +16148,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "PJ7xvABuWLcMa988",
@@ -15570,7 +16172,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "X22w9r4OXt2tUBx0",
@@ -15593,7 +16196,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "v0SP3Xx5ffMwozQc",
@@ -15616,7 +16220,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "YtjpG0X00H0iWZ9t",
@@ -15639,7 +16244,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "xHMBzPJESB5eSGwC",
@@ -15662,7 +16268,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "QlMhhUJAfRRoEePd",
@@ -15685,7 +16292,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "3RNFnAVyHsdiPcVU",
@@ -15708,7 +16316,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "mc7NBh9KhIZHTqhd",
@@ -15731,7 +16340,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "LePQNXfDrzaugFv4",
@@ -15754,7 +16364,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "l00sqvRVVMFp6L7w",
@@ -15777,7 +16388,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "baBNXUn1QR9mXd0X",
@@ -15800,7 +16412,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "rYWipC3K8DgSpKj7",
@@ -15823,7 +16436,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "7eDkqDqIDL7srVpE",
@@ -15846,7 +16460,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "HoUnbgjousdE1Wq6",
@@ -15869,7 +16484,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "A705kqGKSxfZiLJI",
@@ -15892,7 +16508,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "1LVnuvMZdpNKL3oq",
@@ -15915,7 +16532,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Jx8eWoER50dHq9dT",
@@ -15938,7 +16556,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "t69PI6GW4gktOPHE",
@@ -15961,7 +16580,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "rRfeMQQmzgKF6PCo",
@@ -15984,7 +16604,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "9r47gbXS4vMFM5qU",
@@ -16007,7 +16628,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ndov7oWFyoqHD8uJ",
@@ -16030,7 +16652,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "78mWjF34gaH0txhi",
@@ -16053,7 +16676,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "qoywlz7LGbhIbUTy",
@@ -16076,7 +16700,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "1IVzgZ86jdrJXOs9",
@@ -16099,7 +16724,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "eApu4EXN0XNSRkQe",
@@ -16122,7 +16748,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "VaPeT16oOt7SQBl7",
@@ -16145,7 +16772,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "LRjSK59rE3fdzPZX",
@@ -16168,7 +16796,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "y3pxQk3cUfKH2xKt",
@@ -16191,7 +16820,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "shiLCoqspzHfwsnl",
@@ -16214,7 +16844,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "AFMPZJ4LvKtpXa7F",
@@ -16237,7 +16868,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "4S2Onyb6LJu5le8v",
@@ -16260,7 +16892,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "g0UMKdy3ggpbIDzb",
@@ -16283,7 +16916,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "a4o59f2GzT5W3NBh",
@@ -16306,7 +16940,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "AAngko5sJjSwMcBm",
@@ -16329,7 +16964,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "qdbfkFSoybs6Ev29",
@@ -16352,7 +16988,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "1B5UNsTgKcBynFg2",
@@ -16375,7 +17012,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "7e5NcpoZCoVyDgAW",
@@ -16398,7 +17036,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "1n8UDkFP9GXVgyDU",
@@ -16421,7 +17060,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "52hM4xok8F989tyZ",
@@ -16444,7 +17084,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "7TtZPVMHdDXr8XA3",
@@ -16467,7 +17108,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "kxL0gEorA7PQFdQ9",
@@ -16490,7 +17132,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Ny64HXp4AmFSsONl",
@@ -16513,7 +17156,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "TvfsnyTZq7KRwZY7",
@@ -16536,7 +17180,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Rfukmrw7S4x5Z2uI",
@@ -16559,7 +17204,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "NGqGoPrUZB8dfpkY",
@@ -16582,7 +17228,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "i7UtiuJ3CGmXHLkH",
@@ -16605,7 +17252,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "DcAXIaVXueTtxoJX",
@@ -16628,7 +17276,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "qfaSU7BRCN8AfK4q",
@@ -16651,7 +17300,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "sbfu378Ha7jwINSP",
@@ -16674,7 +17324,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "i5DEgWMmy8MPKPjC",
@@ -16697,7 +17348,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "2eNfUEmvfejj0BXD",
@@ -16720,7 +17372,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "bXNADUWxbzXfkat5",
@@ -16743,7 +17396,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "S4juqCVdQ36jEPA1",
@@ -16766,7 +17420,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "djhNcM9huE2zwUY3",
@@ -16789,7 +17444,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "f1SSYXL5FFpSoD2b",
@@ -16812,7 +17468,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "dAysMiW5LQHCaVEC",
@@ -16835,7 +17492,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "bhUPrbeEZwmEclKE",
@@ -16858,7 +17516,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Rof50H8RNX0GGnpn",
@@ -16881,7 +17540,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "UnWno1pZUL9DTyR8",
@@ -16904,7 +17564,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "gzpFboBixLBPfEju",
@@ -16927,7 +17588,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "APZboSaGt3j7Ftqt",
@@ -16950,7 +17612,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "w0UzNMaFpwHZcSws",
@@ -16973,7 +17636,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "6Ev3GUB2VsQ3MiJO",
@@ -16996,7 +17660,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "6vfMQZySkVFB8yyN",
@@ -17019,7 +17684,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "cbCGZnhS9IjJlF04",
@@ -17042,7 +17708,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "o5wqP6RbDVNmHFjs",
@@ -17065,7 +17732,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "fnzwDtIgfERNqHCA",
@@ -17088,7 +17756,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "u8WGYTY6ftbc5eCd",
@@ -17111,7 +17780,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "T8SIq1AppeCdMgtP",
@@ -17134,7 +17804,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "qCUIHae3y4L3FklE",
@@ -17157,7 +17828,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "CejHtaUrWzdAcQPH",
@@ -17180,7 +17852,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "6o9mc250AaQpa02G",
@@ -17203,7 +17876,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "xGDUqdWdQHotwN20",
@@ -17226,7 +17900,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "c7wZnrCA58wJ11c0",
@@ -17249,7 +17924,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "s399tIxijua4WT6x",
@@ -17272,7 +17948,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "69HFemJCt0ZLkmBu",
@@ -17295,7 +17972,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "gIgWBtgcJeGd2188",
@@ -17318,7 +17996,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "8ortbEXlCwChBPnE",
@@ -17341,7 +18020,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "vYv4RB3iTWuiX4DD",
@@ -17364,7 +18044,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "CCrId9TeN9WbgTwc",
@@ -17387,7 +18068,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "28fjbDmsM4GnfQT7",
@@ -17410,7 +18092,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "W3L2xGbrilqu0R6H",
@@ -17433,7 +18116,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Zo7aCTPKFfh8j0HM",
@@ -17456,7 +18140,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "69gd2S7irpSicVLu",
@@ -17479,7 +18164,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "PHrj3EwTm5e93FDn",
@@ -17502,7 +18188,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "YouADvYvesxeY2Ro",
@@ -17525,7 +18212,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "qB6EcEsXbrn9iWwx",
@@ -17548,7 +18236,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Ix8RdPkfoFLb5KpW",
@@ -17571,7 +18260,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "T7ZWhlGwFzh6M5eO",
@@ -17594,7 +18284,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "GkeSzdcuap6K2seK",
@@ -17617,7 +18308,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "v3VsDwpjWXeY5Lnl",
@@ -17640,7 +18332,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Y72Xk5TpvHOkx9K0",
@@ -17663,7 +18356,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "AXXcRDoo4SMrqy9e",
@@ -17686,7 +18380,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "W0HIHFKd3xYFtkoF",
@@ -17709,7 +18404,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "SU7dvAVw0qLhoYkr",
@@ -17732,7 +18428,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "iJxXMfqsAVPZnWwO",
@@ -17755,7 +18452,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "5Awa2bKbag3bKKFI",
@@ -17778,7 +18476,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         }
       ],
       "playlist": null,
@@ -17789,10 +18488,6 @@
       "sort": 0,
       "flags": {
         "token-attacher": {}
-      },
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
       },
       "background": {
         "src": "modules/sdnd-strahd-adv/images/maps/Areas/C/c1_woods/woods.webp",
@@ -17812,12 +18507,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "createdTime": 1719943605477,
         "modifiedTime": 1755264199348,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "regions": [],
       "environment": {
@@ -17856,13 +18552,16 @@
       },
       "fog": {
         "exploration": true,
-        "reset": 1673215417001,
         "overlay": null,
         "colors": {
           "explored": null,
           "unexplored": null
         }
-      }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "active": false
     }
   ],
   "tables": [],
@@ -17885,9 +18584,7 @@
           "fade": null,
           "sort": 0,
           "flags": {
-            "core": {
-              "sourceId": "Playlist.L0VkBaqJusgpldbn.PlaylistSound.zmPuKoDqMZPNAOb3"
-            }
+            "core": {}
           },
           "description": "",
           "channel": "music"
@@ -17899,23 +18596,23 @@
       "sorting": "a",
       "seed": null,
       "sort": 0,
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
-      },
       "flags": {},
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": 1721697800646,
         "modifiedTime": 1721697808176,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "description": "",
-      "channel": "music"
+      "channel": "music",
+      "ownership": {
+        "default": 0
+      }
     }
   ],
   "folders": [
@@ -17932,12 +18629,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": 1704857041528,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
@@ -17952,12 +18650,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": 1704839237165,
         "modifiedTime": 1704857631386,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "description": ""
     },
@@ -17974,12 +18673,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
@@ -17995,12 +18695,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": 1705027185606,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
@@ -18015,12 +18716,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": 1721697774429,
         "modifiedTime": 1721697774429,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "description": ""
     },
@@ -18036,12 +18738,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": 1721599689716,
         "modifiedTime": 1726316727876,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "description": ""
     },
@@ -18057,12 +18760,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": 1705027168419,
         "modifiedTime": 1705027175907,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "description": ""
     },
@@ -18079,12 +18783,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.2.2",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": 1689092704006,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
-        "compendiumSource": "Folder.E8qvJN3Vzs3DFHNC",
-        "duplicateSource": null
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
@@ -18099,12 +18804,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": 1747943849391,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
-        "compendiumSource": "Folder.SgCwMBKLb1IzBVaz",
-        "duplicateSource": null
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_id": "SgCwMBKLb1IzBVaz"
     }
@@ -18115,12 +18821,13 @@
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "3.2.1",
-    "coreVersion": "12.343",
+    "coreVersion": "13.351",
     "createdTime": 1704927741568,
-    "modifiedTime": 1755780108490,
+    "modifiedTime": 1767281765749,
     "lastModifiedBy": "6yhz13iFYYklKtgA",
     "compendiumSource": null,
-    "duplicateSource": null
+    "duplicateSource": null,
+    "exportSource": null
   },
   "_key": "!adventures!7UyVw3jbjZ2DVH7z"
 }
