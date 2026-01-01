@@ -1,0 +1,3708 @@
+{
+  "name": "Vampire (SP)",
+  "type": "npc",
+  "img": "modules/sdnd-strahd-adv/images/tokens/Mobs/vampire_sp_ca.webp",
+  "items": [
+    {
+      "name": "Multiattack (Vampire Form Only)",
+      "type": "feat",
+      "flags": {
+        "ddbimporter": {
+          "dndbeyond": {}
+        },
+        "monsterMunch": {
+          "titleHTML": "<strong>Multiattack. (Vampire Form Only).</strong>",
+          "fullName": "Multiattack. (Vampire Form Only)."
+        }
+      },
+      "img": "icons/skills/melee/strike-weapons-orange.webp",
+      "_id": "d7wvw02f4tuoys7b",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "system": {
+        "description": {
+          "value": "<p><em><strong></strong></em> The vampire makes two attacks, only one of which can be a bite attack.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "Basic Rules pg 352",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "cover": null,
+        "crewed": false,
+        "uses": {
+          "max": "0",
+          "spent": 0,
+          "recovery": []
+        },
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "requirements": "",
+        "properties": [],
+        "activities": {},
+        "identifier": "",
+        "advancement": [],
+        "enchant": {},
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.2",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!P113gyPtVb7GQSzb.d7wvw02f4tuoys7b"
+    },
+    {
+      "name": "Unarmed Strike (Vampire Form Only)",
+      "type": "weapon",
+      "flags": {
+        "ddbimporter": {
+          "dndbeyond": {}
+        },
+        "monsterMunch": {
+          "titleHTML": "<strong>Unarmed Strike (Vampire Form Only).</strong>",
+          "fullName": "Unarmed Strike (Vampire Form Only)."
+        },
+        "dnd5e": {}
+      },
+      "img": "icons/equipment/hand/gauntlet-simple-leather-brown-gold.webp",
+      "_id": "tpnos2eo5zoq4k8e",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "system": {
+        "description": {
+          "value": "<p><em><strong></strong> Melee Weapon Attack:</em> +9 to hit, reach 5 ft., one creature. <em>Hit:</em> 8 (1d8 + 4) bludgeoning damage. Instead of dealing damage, the vampire can grapple the target (escape DC 18).</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "Basic Rules pg 352",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "quantity": 1,
+        "weight": {
+          "value": 0,
+          "units": "lb"
+        },
+        "price": {
+          "value": 0,
+          "denomination": "gp"
+        },
+        "attunement": "",
+        "equipped": true,
+        "rarity": "",
+        "identified": true,
+        "cover": null,
+        "crewed": false,
+        "range": {
+          "value": 5,
+          "long": null,
+          "units": "ft",
+          "reach": null
+        },
+        "uses": {
+          "max": "0",
+          "spent": 0,
+          "recovery": []
+        },
+        "damage": {
+          "versatile": {
+            "number": null,
+            "denomination": null,
+            "bonus": "",
+            "types": [],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "base": {
+            "number": null,
+            "denomination": null,
+            "bonus": "",
+            "types": [
+              "bludgeoning"
+            ],
+            "custom": {
+              "enabled": true,
+              "formula": "1d8[bludgeoning] + @mod"
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          }
+        },
+        "armor": {
+          "value": 10
+        },
+        "hp": {
+          "value": 0,
+          "max": 0,
+          "dt": null,
+          "conditions": ""
+        },
+        "properties": [
+          "rch"
+        ],
+        "proficient": 1,
+        "unidentified": {
+          "description": ""
+        },
+        "type": {
+          "baseItem": "",
+          "value": "simpleM"
+        },
+        "activities": {
+          "dnd5eactivity000": {
+            "_id": "dnd5eactivity000",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": 1,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": true
+            },
+            "description": {
+              "chatFlavor": ""
+            },
+            "duration": {
+              "concentration": false,
+              "units": "inst",
+              "special": "",
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "value": "5",
+              "units": "ft",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "affects": {
+                "count": "",
+                "type": "",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": true,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "max": "",
+              "recovery": []
+            },
+            "attack": {
+              "ability": "str",
+              "bonus": "",
+              "critical": {
+                "threshold": null
+              },
+              "flat": false,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "critical": {
+                "bonus": ""
+              },
+              "includeBase": true,
+              "parts": []
+            },
+            "sort": 0,
+            "useConditionText": "",
+            "useConditionReason": "",
+            "effectConditionText": "",
+            "macroData": {
+              "name": "",
+              "command": ""
+            },
+            "ignoreTraits": {
+              "idi": false,
+              "idr": false,
+              "idv": false,
+              "ida": false
+            },
+            "midiProperties": {
+              "ignoreTraits": [],
+              "triggeredActivityId": "none",
+              "triggeredActivityConditionText": "",
+              "triggeredActivityTargets": "targets",
+              "triggeredActivityRollAs": "self",
+              "forceDialog": false,
+              "confirmTargets": "default",
+              "autoTargetType": "any",
+              "autoTargetAction": "default",
+              "automationOnly": false,
+              "otherActivityCompatible": true,
+              "identifier": "",
+              "displayActivityName": false,
+              "rollMode": "default",
+              "chooseEffects": false,
+              "toggleEffect": false,
+              "ignoreFullCover": false
+            },
+            "isOverTimeFlag": false,
+            "overTimeProperties": {
+              "saveRemoves": true,
+              "preRemoveConditionText": "",
+              "postRemoveConditionText": ""
+            },
+            "otherActivityId": "",
+            "attackMode": "oneHanded",
+            "ammunition": "",
+            "otherActivityUuid": ""
+          }
+        },
+        "identifier": "",
+        "container": null,
+        "attuned": false,
+        "ammunition": {},
+        "magicalBonus": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.2",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!P113gyPtVb7GQSzb.tpnos2eo5zoq4k8e"
+    },
+    {
+      "name": "Bite (Bat or Vampire Form Only)",
+      "type": "weapon",
+      "flags": {
+        "ddbimporter": {
+          "dndbeyond": {}
+        },
+        "monsterMunch": {
+          "titleHTML": "<strong>Bite.</strong>",
+          "fullName": "Bite."
+        },
+        "midi-qol": {
+          "fumbleThreshold": null,
+          "rollAttackPerTarget": "default",
+          "removeAttackDamageButtons": "default",
+          "itemCondition": "",
+          "effectCondition": "",
+          "onUseMacroName": "[postCleanup]function.stroudDnD.spells.DrainingAttack.itemMacro,[preActiveEffects]function.stroudDnD.spells.DrainingAttack.itemMacro",
+          "reactionCondition": "",
+          "otherCondition": ""
+        },
+        "midiProperties": {
+          "confirmTargets": "default",
+          "autoFailFriendly": false,
+          "autoSaveFriendly": false,
+          "critOther": false,
+          "offHandWeapon": false,
+          "magicdam": false,
+          "magiceffect": false,
+          "noConcentrationCheck": false,
+          "toggleEffect": false,
+          "ignoreTotalCover": false,
+          "idr": false,
+          "idi": false,
+          "idv": false,
+          "ida": false
+        },
+        "stroud-dnd-helpers": {
+          "drainingAttack": {
+            "damageType": "necrotic"
+          }
+        },
+        "chris-premades": {
+          "info": {
+            "source": "stroud-dnd-helpers.SDND-Spells"
+          }
+        },
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        }
+      },
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "_id": "0dvrrv1792p7mbcf",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "system": {
+        "description": {
+          "value": "<p><em><strong></strong> Melee Weapon Attack:</em> +9 to hit, reach 5 ft., one willing creature, or a creature that is grappled by the vampire, incapacitated, or restrained. <em>Hit:</em> 7 (1d6 + 4) piercing damage plus 10 (3d6) necrotic damage. The target’s hit point maximum is reduced by an amount equal to the necrotic damage taken, and the vampire regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0. A humanoid slain in this way and then buried in the ground rises the following night as a vampire spawn under the vampire’s control.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "Basic Rules pg 352",
+          "revision": 1,
+          "rules": "2014"
+        },
+        "quantity": 1,
+        "weight": {
+          "value": 0,
+          "units": "lb"
+        },
+        "price": {
+          "value": 0,
+          "denomination": "gp"
+        },
+        "attunement": "",
+        "equipped": true,
+        "rarity": "",
+        "identified": true,
+        "cover": null,
+        "crewed": false,
+        "range": {
+          "value": 5,
+          "long": null,
+          "units": "ft",
+          "reach": null
+        },
+        "uses": {
+          "max": "0",
+          "spent": 0,
+          "recovery": []
+        },
+        "damage": {
+          "versatile": {
+            "number": null,
+            "denomination": null,
+            "bonus": "",
+            "types": [],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "base": {
+            "number": null,
+            "denomination": null,
+            "bonus": "",
+            "types": [
+              "piercing"
+            ],
+            "custom": {
+              "enabled": true,
+              "formula": "1d6[piercing] + @mod"
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          }
+        },
+        "armor": {
+          "value": 10
+        },
+        "hp": {
+          "value": 0,
+          "max": 0,
+          "dt": null,
+          "conditions": ""
+        },
+        "properties": [
+          "rch"
+        ],
+        "proficient": null,
+        "unidentified": {
+          "description": ""
+        },
+        "type": {
+          "value": "natural",
+          "baseItem": ""
+        },
+        "activities": {
+          "dnd5eactivity000": {
+            "_id": "dnd5eactivity000",
+            "type": "attack",
+            "activation": {
+              "type": "special",
+              "value": 1,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": true
+            },
+            "description": {
+              "chatFlavor": ""
+            },
+            "duration": {
+              "concentration": false,
+              "units": "inst",
+              "special": "",
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "value": "5",
+              "units": "ft",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "affects": {
+                "count": "",
+                "type": "",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": true,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "max": "",
+              "recovery": []
+            },
+            "attack": {
+              "ability": "str",
+              "bonus": "",
+              "critical": {
+                "threshold": null
+              },
+              "flat": false,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "critical": {
+                "bonus": ""
+              },
+              "includeBase": true,
+              "parts": [
+                {
+                  "number": null,
+                  "denomination": null,
+                  "bonus": "",
+                  "types": [
+                    "necrotic"
+                  ],
+                  "custom": {
+                    "enabled": true,
+                    "formula": "3d6[necrotic]"
+                  },
+                  "scaling": {
+                    "mode": "whole",
+                    "number": null,
+                    "formula": ""
+                  }
+                }
+              ]
+            },
+            "sort": 0,
+            "useConditionText": "",
+            "useConditionReason": "",
+            "effectConditionText": "",
+            "macroData": {
+              "name": "",
+              "command": ""
+            },
+            "ignoreTraits": {
+              "idi": false,
+              "idr": false,
+              "idv": false,
+              "ida": false
+            },
+            "midiProperties": {
+              "ignoreTraits": [],
+              "triggeredActivityId": "none",
+              "triggeredActivityConditionText": "",
+              "triggeredActivityTargets": "targets",
+              "triggeredActivityRollAs": "self",
+              "forceDialog": false,
+              "confirmTargets": "default",
+              "autoTargetType": "any",
+              "autoTargetAction": "default",
+              "automationOnly": false,
+              "otherActivityCompatible": true,
+              "identifier": "",
+              "displayActivityName": false,
+              "rollMode": "default",
+              "chooseEffects": false,
+              "toggleEffect": false,
+              "ignoreFullCover": false
+            },
+            "isOverTimeFlag": false,
+            "overTimeProperties": {
+              "saveRemoves": true,
+              "preRemoveConditionText": "",
+              "postRemoveConditionText": ""
+            },
+            "otherActivityId": "",
+            "attackMode": "oneHanded",
+            "ammunition": "",
+            "otherActivityUuid": ""
+          }
+        },
+        "identifier": "bite-bat-or-vampire-form-only",
+        "container": null,
+        "attuned": false,
+        "ammunition": {},
+        "magicalBonus": null,
+        "mastery": ""
+      },
+      "ownership": {
+        "default": 0,
+        "6yhz13iFYYklKtgA": 3
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.2",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!P113gyPtVb7GQSzb.0dvrrv1792p7mbcf"
+    },
+    {
+      "name": "Charm",
+      "type": "feat",
+      "flags": {
+        "ddbimporter": {
+          "dndbeyond": {}
+        },
+        "monsterMunch": {
+          "titleHTML": "<strong>Charm.</strong>",
+          "fullName": "Charm."
+        }
+      },
+      "img": "icons/commodities/currency/coin-engraved-sun-smile-copper.webp",
+      "_id": "yflfflq6gzrimy6b",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "system": {
+        "description": {
+          "value": "<p><em><strong></strong></em> The vampire targets one humanoid it can see within 30 feet of it. If the target can see the vampire, the target must succeed on a DC 17 Wisdom saving throw against this magic or be charmed by the vampire. The charmed target regards the vampire as a trusted friend to be heeded and protected. Although the target isn’t under the vampire’s control, it takes the vampire’s requests or actions in the most favorable way it can, and it is a willing target for the vampire’s bite attack.</p><p>Each time the vampire or the vampire’s companions do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the vampire is destroyed, is on a different plane of existence than the target, or takes a bonus action to end the effect.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "Basic Rules pg 352",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "cover": null,
+        "crewed": false,
+        "uses": {
+          "max": "0",
+          "spent": 0,
+          "recovery": []
+        },
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "requirements": "",
+        "properties": [],
+        "activities": {},
+        "identifier": "",
+        "advancement": [],
+        "enchant": {},
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.2",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!P113gyPtVb7GQSzb.yflfflq6gzrimy6b"
+    },
+    {
+      "name": "Children of the Night (1/Day)",
+      "type": "feat",
+      "flags": {
+        "ddbimporter": {
+          "dndbeyond": {}
+        },
+        "monsterMunch": {
+          "titleHTML": "<strong>Children of the Night (1/Day).</strong>",
+          "fullName": "Children of the Night (1/Day)."
+        }
+      },
+      "img": "icons/creatures/mammals/bats-movement-flying-black.webp",
+      "_id": "7u0hfe8k7z65mxw7",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "system": {
+        "description": {
+          "value": "<p><em><strong></strong></em> The vampire magically calls 2d4 swarm of bats;swarms of bats or swarm of rats;rats, provided that the sun isn’t up. While outdoors, the vampire can call 3d6 wolf;wolves instead. The called creatures arrive in 1d4 rounds, acting as allies of the vampire and obeying its spoken commands. The beasts remain for 1 hour, until the vampire dies, or until the vampire dismisses them as a bonus action.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "Basic Rules pg 352",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "cover": null,
+        "crewed": false,
+        "uses": {
+          "max": "1",
+          "recovery": [
+            {
+              "period": "day",
+              "type": "recoverAll"
+            }
+          ],
+          "spent": 0
+        },
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "requirements": "",
+        "properties": [],
+        "activities": {},
+        "identifier": "",
+        "advancement": [],
+        "enchant": {},
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.2",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!P113gyPtVb7GQSzb.7u0hfe8k7z65mxw7"
+    },
+    {
+      "name": "Lair Actions",
+      "type": "feat",
+      "flags": {
+        "ddbimporter": {
+          "dndbeyond": {}
+        },
+        "dnd5e": {}
+      },
+      "img": "icons/environment/settlement/watchtower-silhouette-yellow.webp",
+      "_id": "8y2glnr2wes8q50m",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "system": {
+        "description": {
+          "value": "",
+          "chat": ""
+        },
+        "source": {
+          "custom": "Basic Rules pg 352",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "cover": null,
+        "crewed": false,
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "requirements": "",
+        "activities": {
+          "dnd5eactivity000": {
+            "_id": "dnd5eactivity000",
+            "type": "utility",
+            "activation": {
+              "type": "lair",
+              "value": 0,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": true
+            },
+            "description": {
+              "chatFlavor": ""
+            },
+            "duration": {
+              "concentration": false,
+              "units": "",
+              "special": "",
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "units": "",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "affects": {
+                "count": "",
+                "type": "",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": true,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "max": "",
+              "recovery": []
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            },
+            "sort": 0,
+            "useConditionText": "",
+            "useConditionReason": "",
+            "effectConditionText": "",
+            "macroData": {
+              "name": "",
+              "command": ""
+            },
+            "ignoreTraits": {
+              "idi": false,
+              "idr": false,
+              "idv": false,
+              "ida": false
+            },
+            "midiProperties": {
+              "ignoreTraits": [],
+              "triggeredActivityId": "none",
+              "triggeredActivityConditionText": "",
+              "triggeredActivityTargets": "targets",
+              "triggeredActivityRollAs": "self",
+              "forceDialog": false,
+              "confirmTargets": "default",
+              "autoTargetType": "any",
+              "autoTargetAction": "default",
+              "automationOnly": false,
+              "otherActivityCompatible": true,
+              "identifier": "",
+              "displayActivityName": false,
+              "rollMode": "default",
+              "chooseEffects": false,
+              "toggleEffect": false,
+              "ignoreFullCover": false
+            },
+            "isOverTimeFlag": false,
+            "overTimeProperties": {
+              "saveRemoves": true,
+              "preRemoveConditionText": "",
+              "postRemoveConditionText": ""
+            },
+            "otherActivityId": "none"
+          }
+        },
+        "identifier": "",
+        "advancement": [],
+        "enchant": {},
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        },
+        "properties": []
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.2",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!P113gyPtVb7GQSzb.8y2glnr2wes8q50m"
+    },
+    {
+      "name": "Regional Effects",
+      "type": "feat",
+      "flags": {
+        "ddbimporter": {
+          "dndbeyond": {}
+        }
+      },
+      "img": "icons/magic/air/wind-tornado-funnel-damage-blue.webp",
+      "_id": "091lmckztjcr9tns",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "system": {
+        "description": {
+          "value": "<h4>Regional Effects</h4><p>The region surrounding a vampire’s lair is warped by the creature’s unnatural presence, creating any of the following effects:</p><ul>\n<li>There’s a noticeable increase in the populations of bats, rats, and wolves in the region.</li>\n<li>Plants within 500 feet of the lair wither, and their stems and branches become twisted and thorny.</li>\n<li>Shadows cast within 500 feet of the lair seem abnormally gaunt and sometimes move as though alive.</li>\n<li>A creeping fog clings to the ground within 500 feet of the vampire’s lair. The fog occasionally takes eerie forms, such as grasping claws and writhing serpents.</li>\n</ul><p>If the vampire is destroyed, these effects end after 2d6 days.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "Basic Rules pg 352",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "cover": null,
+        "crewed": false,
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "requirements": "",
+        "activities": {},
+        "identifier": "",
+        "advancement": [],
+        "enchant": {},
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        },
+        "properties": []
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.2",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!P113gyPtVb7GQSzb.091lmckztjcr9tns"
+    },
+    {
+      "name": "A Vampire’s Lair",
+      "type": "feat",
+      "flags": {
+        "ddbimporter": {
+          "dndbeyond": {}
+        }
+      },
+      "img": "icons/magic/time/day-night-sunset-sunrise.webp",
+      "_id": "i3ey590w6terhdq7",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "system": {
+        "description": {
+          "value": "<h3>A Vampire’s Lair</h3><p>A vampire chooses a grand yet defensible location for its lair, such as a castle, fortified manor, or walled abbey. It hides its coffin in an underground crypt or vault guarded by vampire spawn or other loyal creatures of the night.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "Basic Rules pg 352",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "cover": null,
+        "crewed": false,
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "requirements": "",
+        "activities": {},
+        "identifier": "",
+        "advancement": [],
+        "enchant": {},
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        },
+        "properties": []
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.2",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!P113gyPtVb7GQSzb.i3ey590w6terhdq7"
+    },
+    {
+      "name": "Legendary Actions",
+      "type": "feat",
+      "flags": {
+        "ddbimporter": {
+          "dndbeyond": {}
+        },
+        "monsterMunch": {
+          "actionCopy": false
+        }
+      },
+      "img": "icons/skills/targeting/target-strike-triple-blue.webp",
+      "_id": "q835e7f3w5p38k8w",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "system": {
+        "description": {
+          "value": "<p>The vampire can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. The vampire regains spent legendary actions at the start of its turn.</p>\n<p><strong>Move.</strong> The vampire moves up to its speed without provoking opportunity attacks.</p>\n<p><strong>Unarmed Strike.</strong> The vampire makes one unarmed strike.</p>\n<p><strong>Bite (Costs 2 Actions).</strong> The vampire makes one bite attack.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "Basic Rules pg 352",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "cover": null,
+        "crewed": false,
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "requirements": "",
+        "activities": {},
+        "identifier": "",
+        "advancement": [],
+        "enchant": {},
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        },
+        "properties": []
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.2",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!P113gyPtVb7GQSzb.q835e7f3w5p38k8w"
+    },
+    {
+      "name": "Move",
+      "type": "feat",
+      "flags": {
+        "ddbimporter": {
+          "dndbeyond": {}
+        },
+        "monsterMunch": {
+          "actionCopy": false
+        },
+        "dnd5e": {}
+      },
+      "img": "icons/magic/control/debuff-energy-snare-blue.webp",
+      "_id": "mxx709ptq0nh8tdy",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "system": {
+        "description": {
+          "value": "<p><strong></strong> The vampire moves up to its speed without provoking opportunity attacks.</p><p><strong>Unarmed Strike.</strong> The vampire makes one unarmed strike.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "Basic Rules pg 352",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "cover": null,
+        "crewed": false,
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "requirements": "",
+        "activities": {
+          "dnd5eactivity000": {
+            "_id": "dnd5eactivity000",
+            "type": "utility",
+            "activation": {
+              "type": "legendary",
+              "value": 1,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [
+                {
+                  "type": "attribute",
+                  "target": "resources.legact.value",
+                  "value": "1",
+                  "scaling": {
+                    "mode": "",
+                    "formula": ""
+                  }
+                }
+              ],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": true
+            },
+            "description": {
+              "chatFlavor": ""
+            },
+            "duration": {
+              "concentration": false,
+              "units": "",
+              "special": "",
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "units": "",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "affects": {
+                "count": "",
+                "type": "",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": true,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "max": "",
+              "recovery": []
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            },
+            "sort": 0,
+            "useConditionText": "",
+            "useConditionReason": "",
+            "effectConditionText": "",
+            "macroData": {
+              "name": "",
+              "command": ""
+            },
+            "ignoreTraits": {
+              "idi": false,
+              "idr": false,
+              "idv": false,
+              "ida": false
+            },
+            "midiProperties": {
+              "ignoreTraits": [],
+              "triggeredActivityId": "none",
+              "triggeredActivityConditionText": "",
+              "triggeredActivityTargets": "targets",
+              "triggeredActivityRollAs": "self",
+              "forceDialog": false,
+              "confirmTargets": "default",
+              "autoTargetType": "any",
+              "autoTargetAction": "default",
+              "automationOnly": false,
+              "otherActivityCompatible": true,
+              "identifier": "",
+              "displayActivityName": false,
+              "rollMode": "default",
+              "chooseEffects": false,
+              "toggleEffect": false,
+              "ignoreFullCover": false
+            },
+            "isOverTimeFlag": false,
+            "overTimeProperties": {
+              "saveRemoves": true,
+              "preRemoveConditionText": "",
+              "postRemoveConditionText": ""
+            },
+            "otherActivityId": "none"
+          }
+        },
+        "identifier": "",
+        "advancement": [],
+        "enchant": {},
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        },
+        "properties": []
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.2",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!P113gyPtVb7GQSzb.mxx709ptq0nh8tdy"
+    },
+    {
+      "name": "Unarmed Strike (Vampire Form Only)",
+      "type": "weapon",
+      "flags": {
+        "ddbimporter": {
+          "dndbeyond": {}
+        },
+        "monsterMunch": {
+          "titleHTML": "<strong>Unarmed Strike (Vampire Form Only).</strong>",
+          "fullName": "Unarmed Strike (Vampire Form Only).",
+          "actionCopy": true
+        },
+        "midi-qol": {
+          "fumbleThreshold": null,
+          "rollAttackPerTarget": "default",
+          "removeAttackDamageButtons": "default",
+          "itemCondition": "",
+          "effectCondition": ""
+        },
+        "midiProperties": {
+          "confirmTargets": "default",
+          "autoFailFriendly": false,
+          "autoSaveFriendly": false,
+          "critOther": false,
+          "offHandWeapon": false,
+          "magicdam": false,
+          "magiceffect": false,
+          "noConcentrationCheck": false,
+          "toggleEffect": false,
+          "ignoreTotalCover": false,
+          "idr": false,
+          "idi": false,
+          "idv": false,
+          "ida": false
+        },
+        "dnd5e": {}
+      },
+      "img": "icons/equipment/hand/gauntlet-simple-leather-brown-gold.webp",
+      "_id": "40j0exiuz7xbalnl",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "system": {
+        "description": {
+          "value": "<p><em><strong></strong> Melee Weapon Attack:</em> +9 to hit, reach 5 ft., one creature. <em>Hit:</em> 8 (1d8 + 4) bludgeoning damage. Instead of dealing damage, the vampire can grapple the target (escape DC 18).</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "Basic Rules pg 352",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "quantity": 1,
+        "weight": {
+          "value": 0,
+          "units": "lb"
+        },
+        "price": {
+          "value": 0,
+          "denomination": "gp"
+        },
+        "attunement": "",
+        "equipped": true,
+        "rarity": "",
+        "identified": true,
+        "cover": null,
+        "crewed": false,
+        "range": {
+          "value": 5,
+          "long": null,
+          "units": "ft",
+          "reach": null
+        },
+        "uses": {
+          "max": "0",
+          "spent": 0,
+          "recovery": []
+        },
+        "damage": {
+          "versatile": {
+            "number": null,
+            "denomination": null,
+            "bonus": "",
+            "types": [],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "base": {
+            "number": null,
+            "denomination": null,
+            "bonus": "",
+            "types": [
+              "bludgeoning"
+            ],
+            "custom": {
+              "enabled": true,
+              "formula": "1d8[bludgeoning] + @mod"
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          }
+        },
+        "armor": {
+          "value": 10
+        },
+        "hp": {
+          "value": 0,
+          "max": 0,
+          "dt": null,
+          "conditions": ""
+        },
+        "properties": [
+          "rch"
+        ],
+        "proficient": 1,
+        "unidentified": {
+          "description": ""
+        },
+        "type": {
+          "baseItem": "",
+          "value": "simpleM"
+        },
+        "activities": {
+          "dnd5eactivity000": {
+            "_id": "dnd5eactivity000",
+            "type": "attack",
+            "activation": {
+              "type": "legendary",
+              "value": 1,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [
+                {
+                  "type": "attribute",
+                  "target": "resources.legact.value",
+                  "value": "1",
+                  "scaling": {
+                    "mode": "",
+                    "formula": ""
+                  }
+                }
+              ],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": true
+            },
+            "description": {
+              "chatFlavor": ""
+            },
+            "duration": {
+              "concentration": false,
+              "units": "inst",
+              "special": "",
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "value": "5",
+              "units": "ft",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "affects": {
+                "count": "",
+                "type": "",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": true,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "max": "",
+              "recovery": []
+            },
+            "attack": {
+              "ability": "str",
+              "bonus": "",
+              "critical": {
+                "threshold": null
+              },
+              "flat": false,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "critical": {
+                "bonus": ""
+              },
+              "includeBase": true,
+              "parts": []
+            },
+            "sort": 0,
+            "useConditionText": "",
+            "useConditionReason": "",
+            "effectConditionText": "",
+            "macroData": {
+              "name": "",
+              "command": ""
+            },
+            "ignoreTraits": {
+              "idi": false,
+              "idr": false,
+              "idv": false,
+              "ida": false
+            },
+            "midiProperties": {
+              "ignoreTraits": [],
+              "triggeredActivityId": "none",
+              "triggeredActivityConditionText": "",
+              "triggeredActivityTargets": "targets",
+              "triggeredActivityRollAs": "self",
+              "forceDialog": false,
+              "confirmTargets": "default",
+              "autoTargetType": "any",
+              "autoTargetAction": "default",
+              "automationOnly": false,
+              "otherActivityCompatible": true,
+              "identifier": "",
+              "displayActivityName": false,
+              "rollMode": "default",
+              "chooseEffects": false,
+              "toggleEffect": false,
+              "ignoreFullCover": false
+            },
+            "isOverTimeFlag": false,
+            "overTimeProperties": {
+              "saveRemoves": true,
+              "preRemoveConditionText": "",
+              "postRemoveConditionText": ""
+            },
+            "otherActivityId": "",
+            "attackMode": "oneHanded",
+            "ammunition": "",
+            "otherActivityUuid": ""
+          }
+        },
+        "identifier": "",
+        "container": null,
+        "attuned": false,
+        "ammunition": {},
+        "magicalBonus": null
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.2",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!P113gyPtVb7GQSzb.40j0exiuz7xbalnl"
+    },
+    {
+      "name": "Bite (Costs 2 Actions)",
+      "type": "feat",
+      "flags": {
+        "ddbimporter": {
+          "dndbeyond": {}
+        },
+        "monsterMunch": {
+          "actionCopy": false
+        },
+        "dnd5e": {}
+      },
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "_id": "nyubmd7mugl46q2w",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "system": {
+        "description": {
+          "value": "<p><strong></strong> The vampire makes one bite attack.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "Basic Rules pg 352",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "cover": null,
+        "crewed": false,
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "requirements": "",
+        "activities": {
+          "dnd5eactivity000": {
+            "_id": "dnd5eactivity000",
+            "type": "utility",
+            "activation": {
+              "type": "legendary",
+              "value": 2,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [
+                {
+                  "type": "attribute",
+                  "target": "resources.legact.value",
+                  "value": "2",
+                  "scaling": {
+                    "mode": "",
+                    "formula": ""
+                  }
+                }
+              ],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": true
+            },
+            "description": {
+              "chatFlavor": ""
+            },
+            "duration": {
+              "concentration": false,
+              "units": "",
+              "special": "",
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "units": "",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "affects": {
+                "count": "",
+                "type": "",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": true,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "max": "",
+              "recovery": []
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            },
+            "sort": 0,
+            "useConditionText": "",
+            "useConditionReason": "",
+            "effectConditionText": "",
+            "macroData": {
+              "name": "",
+              "command": ""
+            },
+            "ignoreTraits": {
+              "idi": false,
+              "idr": false,
+              "idv": false,
+              "ida": false
+            },
+            "midiProperties": {
+              "ignoreTraits": [],
+              "triggeredActivityId": "none",
+              "triggeredActivityConditionText": "",
+              "triggeredActivityTargets": "targets",
+              "triggeredActivityRollAs": "self",
+              "forceDialog": false,
+              "confirmTargets": "default",
+              "autoTargetType": "any",
+              "autoTargetAction": "default",
+              "automationOnly": false,
+              "otherActivityCompatible": true,
+              "identifier": "",
+              "displayActivityName": false,
+              "rollMode": "default",
+              "chooseEffects": false,
+              "toggleEffect": false,
+              "ignoreFullCover": false
+            },
+            "isOverTimeFlag": false,
+            "overTimeProperties": {
+              "saveRemoves": true,
+              "preRemoveConditionText": "",
+              "postRemoveConditionText": ""
+            },
+            "otherActivityId": "none"
+          }
+        },
+        "identifier": "",
+        "advancement": [],
+        "enchant": {},
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        },
+        "properties": []
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.2",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!P113gyPtVb7GQSzb.nyubmd7mugl46q2w"
+    },
+    {
+      "name": "Shapechanger",
+      "type": "feat",
+      "flags": {
+        "ddbimporter": {
+          "dndbeyond": {}
+        },
+        "monsterMunch": {
+          "titleHTML": "<em><strong>Shapechanger.</strong></em>",
+          "fullName": "Shapechanger."
+        }
+      },
+      "img": "icons/creatures/magical/humanoid-giant-forest-blue.webp",
+      "_id": "4zhzan6oovaeh629",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "system": {
+        "description": {
+          "value": "<p><em><strong></strong></em> If the vampire isn’t in sunlight or running water, it can use its action to polymorph into a Tiny bat or a Medium cloud of mist, or back into its true form.</p><p>While in bat form, the vampire can’t speak, its walking speed is 5 feet, and it has a flying speed of 30 feet. Its statistics, other than its size and speed, are unchanged. Anything it is wearing transforms with it, but nothing it is carrying does. It reverts to its true form if it dies.</p><p>While in mist form, the vampire can’t take any actions, speak, or manipulate objects. It is weightless, has a flying speed of 20 feet, can hover, and can enter a hostile creature’s space and stop there. In addition, if air can pass through a space, the mist can do so without squeezing, and it can’t pass through water. It has advantage on Strength, Dexterity, and Constitution saving throws, and it is immune to all nonmagical damage, except the damage it takes from sunlight.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "Basic Rules pg 352",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "cover": null,
+        "crewed": false,
+        "uses": {
+          "max": "0",
+          "spent": 0,
+          "recovery": []
+        },
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "requirements": "",
+        "activities": {},
+        "identifier": "",
+        "advancement": [],
+        "enchant": {},
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        },
+        "properties": []
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.2",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!P113gyPtVb7GQSzb.4zhzan6oovaeh629"
+    },
+    {
+      "name": "Legendary Resistance (3/Day)",
+      "type": "feat",
+      "flags": {
+        "ddbimporter": {
+          "dndbeyond": {}
+        },
+        "monsterMunch": {
+          "titleHTML": "<em><strong>Legendary Resistance (3/Day).</strong></em>",
+          "fullName": "Legendary Resistance (3/Day)."
+        },
+        "dnd5e": {}
+      },
+      "img": "icons/magic/water/orb-water-bubbles.webp",
+      "_id": "5z91ix0ypzl24gpf",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "system": {
+        "description": {
+          "value": "<p><em><strong></strong></em> If the vampire fails a saving throw, it can choose to succeed instead.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "Basic Rules pg 352",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "cover": null,
+        "crewed": false,
+        "uses": {
+          "max": "3",
+          "recovery": [
+            {
+              "period": "day",
+              "type": "recoverAll"
+            }
+          ],
+          "spent": 0
+        },
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "requirements": "",
+        "activities": {
+          "dnd5eactivity000": {
+            "_id": "dnd5eactivity000",
+            "type": "utility",
+            "activation": {
+              "type": "special",
+              "value": 0,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [
+                {
+                  "type": "attribute",
+                  "target": "resources.legres.value",
+                  "value": "1",
+                  "scaling": {
+                    "mode": "",
+                    "formula": ""
+                  }
+                }
+              ],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": true
+            },
+            "description": {
+              "chatFlavor": ""
+            },
+            "duration": {
+              "concentration": false,
+              "units": "",
+              "special": "",
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "units": "",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "affects": {
+                "count": "",
+                "type": "",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": true,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "max": "",
+              "recovery": []
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            },
+            "sort": 0,
+            "useConditionText": "",
+            "useConditionReason": "",
+            "effectConditionText": "",
+            "macroData": {
+              "name": "",
+              "command": ""
+            },
+            "ignoreTraits": {
+              "idi": false,
+              "idr": false,
+              "idv": false,
+              "ida": false
+            },
+            "midiProperties": {
+              "ignoreTraits": [],
+              "triggeredActivityId": "none",
+              "triggeredActivityConditionText": "",
+              "triggeredActivityTargets": "targets",
+              "triggeredActivityRollAs": "self",
+              "forceDialog": false,
+              "confirmTargets": "default",
+              "autoTargetType": "any",
+              "autoTargetAction": "default",
+              "automationOnly": false,
+              "otherActivityCompatible": true,
+              "identifier": "",
+              "displayActivityName": false,
+              "rollMode": "default",
+              "chooseEffects": false,
+              "toggleEffect": false,
+              "ignoreFullCover": false
+            },
+            "isOverTimeFlag": false,
+            "overTimeProperties": {
+              "saveRemoves": true,
+              "preRemoveConditionText": "",
+              "postRemoveConditionText": ""
+            },
+            "otherActivityId": "none"
+          }
+        },
+        "identifier": "",
+        "advancement": [],
+        "enchant": {},
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        },
+        "properties": []
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.2",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!P113gyPtVb7GQSzb.5z91ix0ypzl24gpf"
+    },
+    {
+      "name": "Misty Escape",
+      "type": "feat",
+      "flags": {
+        "ddbimporter": {
+          "dndbeyond": {}
+        },
+        "monsterMunch": {
+          "titleHTML": "<em><strong>Misty Escape.</strong></em>",
+          "fullName": "Misty Escape."
+        }
+      },
+      "img": "icons/magic/air/wind-stream-purple.webp",
+      "_id": "972im2p5997jzky6",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "system": {
+        "description": {
+          "value": "<p><em><strong></strong></em> When it drops to 0 hit points outside its resting place, the vampire transforms into a cloud of mist (as in the Shapechanger trait) instead of falling unconscious, provided that it isn’t in sunlight or running water. If it can’t transform, it is destroyed.</p><p>While it has 0 hit points in mist form, it can’t revert to its vampire form, and it must reach its resting place within 2 hours or be destroyed. Once in its resting place, it reverts to its vampire form. It is then paralyzed until it regains at least 1 hit point. After spending 1 hour in its resting place with 0 hit points, it regains 1 hit point.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "Basic Rules pg 352",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "cover": null,
+        "crewed": false,
+        "uses": {
+          "max": "0",
+          "spent": 0,
+          "recovery": []
+        },
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "requirements": "",
+        "activities": {},
+        "identifier": "",
+        "advancement": [],
+        "enchant": {},
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        },
+        "properties": []
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.2",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!P113gyPtVb7GQSzb.972im2p5997jzky6"
+    },
+    {
+      "name": "Spider Climb",
+      "type": "feat",
+      "flags": {
+        "ddbimporter": {
+          "dndbeyond": {}
+        },
+        "monsterMunch": {
+          "titleHTML": "<em><strong>Spider Climb.</strong></em>",
+          "fullName": "Spider Climb."
+        }
+      },
+      "img": "icons/creatures/invertebrates/spider-beetle-runed-green.webp",
+      "_id": "vltj44l22dll2yw0",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "system": {
+        "description": {
+          "value": "<p><em><strong></strong></em> The vampire can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "Basic Rules pg 352",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "cover": null,
+        "crewed": false,
+        "uses": {
+          "max": "0",
+          "spent": 0,
+          "recovery": []
+        },
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "requirements": "",
+        "activities": {},
+        "identifier": "",
+        "advancement": [],
+        "enchant": {},
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        },
+        "properties": []
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.2",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!P113gyPtVb7GQSzb.vltj44l22dll2yw0"
+    },
+    {
+      "name": "Vampire Weaknesses",
+      "type": "feat",
+      "flags": {
+        "ddbimporter": {
+          "dndbeyond": {}
+        },
+        "monsterMunch": {
+          "titleHTML": "<em><strong>Vampire Weaknesses.</strong></em>",
+          "fullName": "Vampire Weaknesses."
+        }
+      },
+      "img": "icons/equipment/back/cloak-collared-red-gold.webp",
+      "_id": "iqfg0pf5y1gich3q",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "system": {
+        "description": {
+          "value": "<p><em><strong></strong></em> The vampire has the following flaws:</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "Basic Rules pg 352",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "cover": null,
+        "crewed": false,
+        "uses": {
+          "max": "0",
+          "spent": 0,
+          "recovery": []
+        },
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "requirements": "",
+        "activities": {},
+        "identifier": "",
+        "advancement": [],
+        "enchant": {},
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        },
+        "properties": []
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.2",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!P113gyPtVb7GQSzb.iqfg0pf5y1gich3q"
+    },
+    {
+      "name": "Forbiddance",
+      "type": "feat",
+      "flags": {
+        "ddbimporter": {
+          "dndbeyond": {}
+        },
+        "monsterMunch": {
+          "titleHTML": "<em>Forbiddance.</em>",
+          "fullName": "Forbiddance."
+        }
+      },
+      "img": "icons/magic/air/wind-vortex-swirl-blue.webp",
+      "_id": "s4ygtwhyiu9iw5ry",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "system": {
+        "description": {
+          "value": "<p><em></em> The vampire can’t enter a residence without an invitation from one of the occupants.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "Basic Rules pg 352",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "cover": null,
+        "crewed": false,
+        "uses": {
+          "max": "0",
+          "spent": 0,
+          "recovery": []
+        },
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "requirements": "",
+        "activities": {},
+        "identifier": "",
+        "advancement": [],
+        "enchant": {},
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        },
+        "properties": []
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.2",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!P113gyPtVb7GQSzb.s4ygtwhyiu9iw5ry"
+    },
+    {
+      "name": "Harmed by Running Water",
+      "type": "feat",
+      "flags": {
+        "ddbimporter": {
+          "dndbeyond": {}
+        },
+        "monsterMunch": {
+          "titleHTML": "<em>Harmed by Running Water.</em>",
+          "fullName": "Harmed by Running Water."
+        }
+      },
+      "img": "icons/magic/water/vortex-water-whirlpool-blue.webp",
+      "_id": "39c1kx2j1x6rgmfr",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "system": {
+        "description": {
+          "value": "<p><em></em> The vampire takes 20 acid damage if it ends its turn in running water.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "Basic Rules pg 352",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "cover": null,
+        "crewed": false,
+        "uses": {
+          "max": "0",
+          "spent": 0,
+          "recovery": []
+        },
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "requirements": "",
+        "activities": {},
+        "identifier": "",
+        "advancement": [],
+        "enchant": {},
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        },
+        "properties": []
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.2",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!P113gyPtVb7GQSzb.39c1kx2j1x6rgmfr"
+    },
+    {
+      "name": "Stake to the Heart",
+      "type": "feat",
+      "flags": {
+        "ddbimporter": {
+          "dndbeyond": {}
+        },
+        "monsterMunch": {
+          "titleHTML": "<em>Stake to the Heart.</em>",
+          "fullName": "Stake to the Heart."
+        }
+      },
+      "img": "icons/sundries/survival/stake-rough-heavy-brown.webp",
+      "_id": "mvzgc1sdkzp06wec",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "system": {
+        "description": {
+          "value": "<p><em></em> If a piercing weapon made of wood is driven into the vampire’s heart while the vampire is incapacitated in its resting place, the vampire is paralyzed until the stake is removed.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "Basic Rules pg 352",
+          "revision": 1,
+          "rules": "2024"
+        },
+        "cover": null,
+        "crewed": false,
+        "uses": {
+          "max": "0",
+          "spent": 0,
+          "recovery": []
+        },
+        "type": {
+          "value": "",
+          "subtype": ""
+        },
+        "requirements": "",
+        "activities": {},
+        "identifier": "",
+        "advancement": [],
+        "enchant": {},
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        },
+        "properties": []
+      },
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.2",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!P113gyPtVb7GQSzb.mvzgc1sdkzp06wec"
+    },
+    {
+      "_id": "lZw7SLzlBSvPHLN3",
+      "name": "Regeneration",
+      "ownership": {
+        "default": 0,
+        "6yhz13iFYYklKtgA": 3
+      },
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "<section class=\"secret\" id=\"secret-PI44U608F3oGgQsA\"><p>the [[lookup @name lowercase]] regains <strong>20 hit points</strong> at the start of its turn if it has at least <strong>1 hit point</strong>.</p></section><p>the [[lookup @name lowercase]] regains <strong>20 hit points</strong> at the start of its turn.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "book": "SRD 5.1",
+          "page": "",
+          "license": "CC-BY-4.0",
+          "rules": "2014",
+          "revision": 1
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "requirements": "",
+        "activities": {
+          "dnd5eactivity000": {
+            "_id": "dnd5eactivity000",
+            "type": "heal",
+            "activation": {
+              "type": "",
+              "value": null,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": true
+            },
+            "description": {
+              "chatFlavor": ""
+            },
+            "duration": {
+              "concentration": false,
+              "value": "",
+              "units": "inst",
+              "special": "",
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "units": "self",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "affects": {
+                "count": "",
+                "type": "",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": true,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "max": "",
+              "recovery": []
+            },
+            "healing": {
+              "number": null,
+              "denomination": 0,
+              "bonus": "",
+              "types": [],
+              "custom": {
+                "enabled": true,
+                "formula": "20"
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": null,
+                "formula": ""
+              }
+            },
+            "sort": 0,
+            "useConditionText": "",
+            "useConditionReason": "",
+            "effectConditionText": "",
+            "macroData": {
+              "name": "",
+              "command": ""
+            },
+            "ignoreTraits": {
+              "idi": false,
+              "idr": false,
+              "idv": false,
+              "ida": false
+            },
+            "midiProperties": {
+              "ignoreTraits": [],
+              "triggeredActivityId": "none",
+              "triggeredActivityConditionText": "",
+              "triggeredActivityTargets": "targets",
+              "triggeredActivityRollAs": "self",
+              "forceDialog": false,
+              "confirmTargets": "default",
+              "autoTargetType": "any",
+              "autoTargetAction": "default",
+              "automationOnly": false,
+              "otherActivityCompatible": true,
+              "identifier": "",
+              "displayActivityName": false,
+              "rollMode": "default",
+              "chooseEffects": false,
+              "toggleEffect": false,
+              "ignoreFullCover": false
+            },
+            "isOverTimeFlag": false,
+            "overTimeProperties": {
+              "saveRemoves": true,
+              "preRemoveConditionText": "",
+              "postRemoveConditionText": ""
+            },
+            "name": ""
+          }
+        },
+        "enchant": {},
+        "prerequisites": {
+          "level": null,
+          "repeatable": false
+        },
+        "properties": [],
+        "identifier": "regeneration",
+        "advancement": [],
+        "cover": null,
+        "crewed": false
+      },
+      "flags": {
+        "midi-qol": {
+          "rollAttackPerTarget": "default",
+          "removeAttackDamageButtons": "default",
+          "itemCondition": "",
+          "reactionCondition": "",
+          "otherCondition": "",
+          "effectCondition": ""
+        },
+        "midiProperties": {
+          "autoFailFriendly": false,
+          "autoSaveFriendly": false,
+          "magicdam": false,
+          "magiceffect": false,
+          "noConcentrationCheck": false,
+          "toggleEffect": false,
+          "ignoreTotalCover": false
+        },
+        "dnd5e": {
+          "riders": {
+            "activity": [],
+            "effect": []
+          }
+        },
+        "chris-premades": {
+          "config": {
+            "generic": {
+              "genericRegeneration": {
+                "applied": true,
+                "damageTypes": [
+                  "radiant"
+                ],
+                "showIcons": true,
+                "threshold": 0,
+                "zeroHP": false,
+                "critical": false
+              }
+            }
+          },
+          "macros": {
+            "midi": {
+              "actor": [
+                "genericRegeneration"
+              ]
+            },
+            "combat": [
+              "genericRegeneration"
+            ]
+          }
+        }
+      },
+      "img": "icons/skills/wounds/anatomy-organ-heart-red.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "_stats": {
+        "duplicateSource": null,
+        "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.Av7H0ymGdPeTsnwV",
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.2",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!P113gyPtVb7GQSzb.lZw7SLzlBSvPHLN3"
+    },
+    {
+      "_id": "pxV260o8hJw09TWm",
+      "name": "Studded Leather Armor +1",
+      "type": "equipment",
+      "img": "icons/equipment/chest/breastplate-rivited-red.webp",
+      "system": {
+        "description": {
+          "value": "<p><em>This armor has been embellished with powerful runes, crafted in sorcerous fires, blessed by a powerful being, or some other event has seen it bequeathed with enhanced protection for the wearer.</em></p>\n<p>You have a bonus to AC while wearing this armor.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "book": "SRD 5.1",
+          "page": "",
+          "license": "CC-BY-4.0",
+          "rules": "2014",
+          "revision": 1
+        },
+        "quantity": 1,
+        "weight": {
+          "value": 13,
+          "units": "lb"
+        },
+        "price": {
+          "value": 1545,
+          "denomination": "gp"
+        },
+        "attunement": "",
+        "rarity": "rare",
+        "identified": true,
+        "cover": null,
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "armor": {
+          "value": 12,
+          "dex": null,
+          "magicalBonus": 1
+        },
+        "hp": {
+          "value": 0,
+          "max": 0,
+          "dt": null,
+          "conditions": ""
+        },
+        "speed": {
+          "value": null,
+          "conditions": ""
+        },
+        "strength": null,
+        "proficient": null,
+        "type": {
+          "value": "light",
+          "baseItem": "studded"
+        },
+        "unidentified": {
+          "description": ""
+        },
+        "container": null,
+        "crewed": false,
+        "properties": [
+          "mgc"
+        ],
+        "activities": {},
+        "identifier": "studded-leather-armor-1",
+        "attuned": false,
+        "equipped": true
+      },
+      "effects": [],
+      "folder": "JqTP017wj3uxDJ8g",
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "6yhz13iFYYklKtgA": 3
+      },
+      "flags": {},
+      "_stats": {
+        "duplicateSource": null,
+        "compendiumSource": "Compendium.dnd5e.items.Item.STxsp9Ao3pS2T4gt",
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.2",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!P113gyPtVb7GQSzb.pxV260o8hJw09TWm"
+    },
+    {
+      "folder": "pF66FwEEAUVt1GM1",
+      "name": "Sunlight Sensitivity",
+      "type": "equipment",
+      "_id": "rXOfsxSyeCCgsPyS",
+      "img": "icons/magic/nature/symbol-sun-yellow.webp",
+      "system": {
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "",
+          "chat": ""
+        },
+        "identifier": "new-item",
+        "source": {
+          "revision": 1,
+          "rules": "2024"
+        },
+        "identified": true,
+        "unidentified": {
+          "description": ""
+        },
+        "container": null,
+        "quantity": 1,
+        "weight": {
+          "value": 0,
+          "units": "lb"
+        },
+        "price": {
+          "value": 0,
+          "denomination": "gp"
+        },
+        "rarity": "",
+        "attunement": "",
+        "cover": null,
+        "crewed": false,
+        "armor": {
+          "value": null,
+          "magicalBonus": null,
+          "dex": null
+        },
+        "proficient": null,
+        "properties": [],
+        "strength": null,
+        "type": {
+          "value": "trinket",
+          "baseItem": ""
+        },
+        "attuned": false,
+        "equipped": true
+      },
+      "effects": [
+        {
+          "name": "Sunlight Sensitivity",
+          "img": "icons/magic/nature/symbol-sun-yellow.webp",
+          "origin": "Item.k0fpj6cOccnx7vqd",
+          "_id": "h5jUf2x3ruBiVvbV",
+          "type": "base",
+          "system": {},
+          "changes": [
+            {
+              "key": "flags.midi-qol.OverTime",
+              "mode": 0,
+              "value": "turn=start,damageRoll=5,damageType=radiant",
+              "priority": 2000
+            },
+            {
+              "key": "system.bonuses.All-Attacks",
+              "mode": 2,
+              "value": "-2",
+              "priority": 20
+            },
+            {
+              "key": "system.bonuses.abilities.check",
+              "mode": 2,
+              "value": "-2",
+              "priority": 20
+            }
+          ],
+          "disabled": false,
+          "duration": {
+            "startTime": -38952337958,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": 10,
+            "startTurn": 0
+          },
+          "description": "",
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "dae": {
+              "disableCondition": "",
+              "disableIncapacitated": false,
+              "stackable": "multi",
+              "showIcon": false,
+              "durationExpression": "",
+              "macroRepeat": "none",
+              "specialDuration": []
+            },
+            "dnd5e": {
+              "riders": {
+                "statuses": []
+              }
+            },
+            "core": {
+              "overlay": false
+            },
+            "ActiveAuras": {
+              "isAura": false,
+              "aura": "None",
+              "nameOverride": "",
+              "radius": "",
+              "alignment": "",
+              "type": "",
+              "customCheck": "",
+              "ignoreSelf": false,
+              "height": false,
+              "hidden": false,
+              "displayTemp": false,
+              "hostile": false,
+              "onlyOnce": false,
+              "wallsBlock": "system",
+              "statuses": []
+            },
+            "effectmacro": {}
+          },
+          "_stats": {
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "coreVersion": "13.351",
+            "systemId": "dnd5e",
+            "systemVersion": "4.4.2",
+            "createdTime": null,
+            "modifiedTime": null,
+            "lastModifiedBy": null,
+            "exportSource": null
+          },
+          "_key": "!actors.items.effects!P113gyPtVb7GQSzb.rXOfsxSyeCCgsPyS.h5jUf2x3ruBiVvbV"
+        }
+      ],
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "6yhz13iFYYklKtgA": 3
+      },
+      "flags": {
+        "midi-qol": {
+          "rollAttackPerTarget": "default",
+          "removeAttackDamageButtons": "default",
+          "itemCondition": "",
+          "reactionCondition": "",
+          "otherCondition": "",
+          "effectCondition": ""
+        },
+        "midiProperties": {
+          "autoFailFriendly": false,
+          "autoSaveFriendly": false,
+          "magicdam": false,
+          "magiceffect": false,
+          "noConcentrationCheck": false,
+          "toggleEffect": false,
+          "ignoreTotalCover": false
+        },
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Item.k0fpj6cOccnx7vqd",
+        "duplicateSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "4.4.2",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      },
+      "_key": "!actors.items!P113gyPtVb7GQSzb.rXOfsxSyeCCgsPyS"
+    }
+  ],
+  "effects": [],
+  "folder": "yozaKbxurwUqonXs",
+  "sort": 200000,
+  "flags": {
+    "dnd5e": {},
+    "monsterMunch": {
+      "url": "https://www.dndbeyond.com/monsters/17043-vampire",
+      "img": "https://www.dndbeyond.com/avatars/30836/366/638063935246957286.png",
+      "tokenImg": "https://www.dndbeyond.com/avatars/0/90/636252738664754793.jpeg",
+      "spellList": {
+        "class": [],
+        "pact": [],
+        "atwill": [],
+        "innate": [],
+        "edgeCases": [],
+        "material": true
+      }
+    },
+    "ddbimporter": {
+      "id": 17043,
+      "entityTypeId": 779871897,
+      "creatureGroupId": null,
+      "creatureFlags": [],
+      "version": "2.9.67",
+      "isLegacy": false,
+      "flatAC": true
+    },
+    "core": {},
+    "midi-qol": {
+      "concentration-damage": 0
+    },
+    "tidy5e-sheet": {
+      "death": {
+        "success": 0,
+        "failure": 0
+      },
+      "maxPreparedSpells": null,
+      "gender": "",
+      "age": "",
+      "height": "",
+      "weight": "",
+      "eyes": "",
+      "skin": "",
+      "hair": "",
+      "notes1": {
+        "name": ""
+      },
+      "notes2": {
+        "name": ""
+      },
+      "notes3": {
+        "name": ""
+      },
+      "notes4": {
+        "name": ""
+      }
+    }
+  },
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 18,
+        "proficient": 0,
+        "max": null,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "dex": {
+        "value": 18,
+        "proficient": 1,
+        "max": null,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "con": {
+        "value": 18,
+        "proficient": 0,
+        "max": null,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "int": {
+        "value": 17,
+        "proficient": 0,
+        "max": null,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "wis": {
+        "value": 15,
+        "proficient": 1,
+        "max": null,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "cha": {
+        "value": 18,
+        "proficient": 1,
+        "max": null,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 16,
+        "calc": "default",
+        "formula": ""
+      },
+      "hp": {
+        "value": 144,
+        "max": 144,
+        "temp": null,
+        "tempmax": null,
+        "formula": "17d8 + 68"
+      },
+      "init": {
+        "ability": "",
+        "bonus": "0",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "movement": {
+        "burrow": null,
+        "climb": null,
+        "fly": null,
+        "swim": null,
+        "walk": 30,
+        "units": "ft",
+        "hover": false
+      },
+      "attunement": {
+        "max": 3
+      },
+      "senses": {
+        "darkvision": 120,
+        "blindsight": null,
+        "tremorsense": null,
+        "truesight": null,
+        "units": "ft",
+        "special": ""
+      },
+      "spellcasting": "str",
+      "spell": {
+        "level": 0
+      },
+      "exhaustion": 0,
+      "concentration": {
+        "ability": "",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "bonuses": {
+          "save": ""
+        },
+        "limit": 1
+      },
+      "loyalty": {
+        "value": null
+      },
+      "hd": {
+        "spent": 0
+      },
+      "death": {
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "success": 0,
+        "failure": 0,
+        "bonuses": {
+          "save": ""
+        }
+      }
+    },
+    "details": {
+      "biography": {
+        "value": "",
+        "public": ""
+      },
+      "alignment": "Lawful Evil",
+      "race": null,
+      "type": {
+        "value": "undead",
+        "subtype": "shapechanger",
+        "swarm": "",
+        "custom": ""
+      },
+      "cr": 13,
+      "habitat": {
+        "custom": "Urban",
+        "value": []
+      },
+      "ideal": "",
+      "bond": "",
+      "flaw": "",
+      "treasure": {
+        "value": []
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "bypasses": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [
+          "bludgeoning",
+          "necrotic",
+          "piercing",
+          "slashing"
+        ],
+        "bypasses": [
+          "mgc"
+        ],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "bypasses": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "the languages it knew in life",
+        "communication": {}
+      },
+      "dm": {
+        "amount": {},
+        "bypasses": []
+      },
+      "important": false
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "ep": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "skills": {
+      "acr": {
+        "value": 0,
+        "ability": "dex",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "ani": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "arc": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "ath": {
+        "value": 0,
+        "ability": "str",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "dec": {
+        "value": 0,
+        "ability": "cha",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "his": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "ins": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "itm": {
+        "value": 0,
+        "ability": "cha",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "inv": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "med": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "nat": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "prc": {
+        "value": 1,
+        "ability": "wis",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "prf": {
+        "value": 0,
+        "ability": "cha",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "per": {
+        "value": 0,
+        "ability": "cha",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "rel": {
+        "value": 0,
+        "ability": "int",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "slt": {
+        "value": 0,
+        "ability": "dex",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "ste": {
+        "value": 1,
+        "ability": "dex",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "sur": {
+        "value": 0,
+        "ability": "wis",
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      }
+    },
+    "tools": {},
+    "spells": {
+      "spell1": {
+        "value": 0,
+        "override": null
+      },
+      "spell2": {
+        "value": 0,
+        "override": null
+      },
+      "spell3": {
+        "value": 0,
+        "override": null
+      },
+      "spell4": {
+        "value": 0,
+        "override": null
+      },
+      "spell5": {
+        "value": 0,
+        "override": null
+      },
+      "spell6": {
+        "value": 0,
+        "override": null
+      },
+      "spell7": {
+        "value": 0,
+        "override": null
+      },
+      "spell8": {
+        "value": 0,
+        "override": null
+      },
+      "spell9": {
+        "value": 0,
+        "override": null
+      },
+      "pact": {
+        "value": 0,
+        "override": null
+      }
+    },
+    "bonuses": {
+      "mwak": {
+        "attack": "0",
+        "damage": ""
+      },
+      "rwak": {
+        "attack": "0",
+        "damage": ""
+      },
+      "msak": {
+        "attack": "0",
+        "damage": ""
+      },
+      "rsak": {
+        "attack": "0",
+        "damage": ""
+      },
+      "abilities": {
+        "check": "",
+        "save": "",
+        "skill": ""
+      },
+      "spell": {
+        "dc": "0"
+      }
+    },
+    "resources": {
+      "legact": {
+        "value": 3,
+        "max": 3
+      },
+      "legres": {
+        "value": 3,
+        "max": 3
+      },
+      "lair": {
+        "value": false,
+        "initiative": null,
+        "inside": false
+      }
+    },
+    "source": {
+      "custom": "Basic Rules pg 352",
+      "revision": 1,
+      "rules": "2014"
+    }
+  },
+  "ownership": {
+    "default": 0,
+    "6yhz13iFYYklKtgA": 3
+  },
+  "prototypeToken": {
+    "name": "Vampire",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false,
+        "type": null
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "attenuation": 0.5,
+      "color": null,
+      "negative": false,
+      "priority": 0
+    },
+    "disposition": -1,
+    "displayBars": 40,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": "resources.legact"
+    },
+    "flags": {
+      "monks-tokenbar": {
+        "include": "default"
+      },
+      "core": {},
+      "autorotate": {
+        "enabled": null,
+        "offset": null
+      }
+    },
+    "randomImg": false,
+    "texture": {
+      "src": "modules/sdnd-strahd-adv/images/tokens/Mobs/vampire_m_sp.webp",
+      "scaleX": 1.2,
+      "scaleY": 1.2,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "alphaThreshold": 0.75
+    },
+    "sight": {
+      "angle": 360,
+      "enabled": false,
+      "range": 120,
+      "brightness": 0,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "appendNumber": false,
+    "prependAdjective": false,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 0,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null
+  },
+  "_stats": {
+    "compendiumSource": "Compendium.world.ddb-lost-mines-phandelver-monsters.zERWNBykTbpJIjBs",
+    "duplicateSource": "Actor.Slgxxki7BJgyRM7o",
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "4.4.2",
+    "createdTime": 1766852176659,
+    "modifiedTime": 1767281642706,
+    "lastModifiedBy": "6yhz13iFYYklKtgA",
+    "exportSource": null
+  },
+  "_id": "P113gyPtVb7GQSzb",
+  "_key": "!actors!P113gyPtVb7GQSzb"
+}

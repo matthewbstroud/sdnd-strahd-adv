@@ -3,7 +3,7 @@
   "img": "modules/sdnd-strahd-adv/images/maps/Areas/N/n6_coffin_maker/coffin_maker_ext.webp",
   "caption": "This uninviting shop is two stories tall and has a sign shaped like a coffin above the front door. All of the window shutters are closed up tight, and a deathly silence surrounds the establishment.",
   "sort": 200000,
-  "description": "<p><span style=\"font-family:Roboto, Helvetica, sans-serif\">Henrik van der Voort (LE male human <a class=\"tooltip-hover monster-tooltip\" href=\"https://www.dndbeyond.com/monsters/16829-commoner\" data-tooltip-href=\"//www.dndbeyond.com/monsters/16829-tooltip?disable-webm=1&amp;disable-webm=1\" style=\"box-sizing:inherit;-webkit-tap-highlight-color:transparent;outline:0px;color:var(--compendium-monster-tooltip,#bc0f0f) !important;text-decoration:none;font-weight:bold !important;cursor:pointer;font-family:Roboto, Helvetica, sans-serif;font-size:16px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;letter-spacing:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;background-color:rgb(249, 249, 249)\">commoner</a>) is a mediocre carpenter and a troubled, lonely man. He profits from the deaths of others, and no one desires his company, because of the ghastly nature of his handiwork. One night several months ago, Strahd visited Henrik in the guise of an imposing, well-dressed nobleman named Vasili von Holtz and promised the coffin maker “good business” in exchange for his help. Since then, Henrik’s workshop has become the lair of a pack of vampire spawn—former adventurers who were turned by Strahd. These vampires are lying low for the time being.</span></p>",
+  "description": "<p><span style=\"font-family:Roboto, Helvetica, sans-serif\">Henrik van der Voort (LE male human </span><span class=\"tooltip-hover monster-tooltip\" data-tooltip-href=\"//www.dndbeyond.com/monsters/16829-tooltip?disable-webm=1&amp;disable-webm=1\" style=\"box-sizing:inherit;-webkit-tap-highlight-color:transparent;outline:0px;color:var(--compendium-monster-tooltip,#bc0f0f) !important;text-decoration:none;font-weight:bold !important;cursor:pointer;font-family:Roboto, Helvetica, sans-serif;font-size:16px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;letter-spacing:normal;orphans:2;text-align:start;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;background-color:rgb(249, 249, 249)\"><strong>commoner</strong></span><span style=\"font-family:Roboto, Helvetica, sans-serif\">) is a mediocre carpenter and a troubled, lonely man. He profits from the deaths of others, and no one desires his company, because of the ghastly nature of his handiwork. One night several months ago, Strahd visited Henrik in the guise of an imposing, well-dressed nobleman named Vasili von Holtz and promised the coffin maker “good business” in exchange for his help. Since then, Henrik’s workshop has become the lair of a pack of vampire spawn—former adventurers who were turned by Strahd. These vampires are lying low for the time being.</span></p>",
   "actors": [
     {
       "name": "Henrik van der Voort",
@@ -173,13 +173,14 @@
             }
           },
           "movement": {
-            "burrow": 0,
-            "climb": 0,
-            "fly": 0,
-            "swim": 0,
-            "walk": 25,
+            "burrow": "0",
+            "climb": "0",
+            "fly": "0",
+            "swim": "0",
+            "walk": "25",
             "units": "ft",
-            "hover": false
+            "hover": false,
+            "ignoredDifficultTerrain": []
           },
           "attunement": {
             "max": 3
@@ -226,6 +227,10 @@
           },
           "loyalty": {
             "value": null
+          },
+          "price": {
+            "value": null,
+            "denomination": "gp"
           }
         },
         "details": {
@@ -602,12 +607,12 @@
         },
         "resources": {
           "legact": {
-            "value": 0,
-            "max": 0
+            "max": 0,
+            "spent": 0
           },
           "legres": {
-            "value": 0,
-            "max": 0
+            "max": 0,
+            "spent": 0
           },
           "lair": {
             "value": false,
@@ -723,10 +728,16 @@
             "scale": 1
           }
         },
-        "hexagonalShape": 0,
         "occludable": {
           "radius": 0
-        }
+        },
+        "turnMarker": {
+          "mode": 1,
+          "animation": null,
+          "src": null,
+          "disposition": false
+        },
+        "movementAction": null
       },
       "items": [
         {
@@ -779,7 +790,8 @@
             },
             "speed": {
               "value": null,
-              "conditions": ""
+              "conditions": "",
+              "units": "ft"
             },
             "strength": null,
             "proficient": 1,
@@ -791,32 +803,33 @@
               "baseItem": "chainshirt"
             },
             "container": null,
-            "crewed": false,
             "properties": [],
             "attuned": false,
             "activities": {},
-            "identifier": ""
+            "identifier": "",
+            "crew": {
+              "value": []
+            }
           },
           "effects": [],
           "folder": null,
           "sort": 0,
-          "ownership": {
-            "default": 0
-          },
           "flags": {
-            "core": {
-              "sourceId": "Compendium.dnd5e.items.p2zChy24ZJdVqMSH"
-            }
+            "core": {}
           },
           "_stats": {
             "systemId": null,
             "systemVersion": null,
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": null,
             "modifiedTime": null,
             "lastModifiedBy": null,
             "compendiumSource": "Compendium.dnd5e.items.p2zChy24ZJdVqMSH",
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -852,7 +865,8 @@
             "properties": [],
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             },
             "activities": {},
             "identifier": "",
@@ -862,23 +876,22 @@
           "effects": [],
           "folder": null,
           "sort": 0,
-          "ownership": {
-            "default": 0
-          },
           "flags": {
-            "core": {
-              "sourceId": "Compendium.dnd5e.monsterfeatures.fdmzHw875EzpXM2a"
-            }
+            "core": {}
           },
           "_stats": {
             "systemId": null,
             "systemVersion": null,
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": null,
             "modifiedTime": null,
             "lastModifiedBy": null,
             "compendiumSource": "Compendium.dnd5e.monsterfeatures.fdmzHw875EzpXM2a",
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -914,7 +927,8 @@
             "properties": [],
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             },
             "activities": {
               "dnd5eactivity000": {
@@ -940,13 +954,13 @@
                 "duration": {
                   "concentration": false,
                   "value": "",
-                  "units": "",
+                  "units": "inst",
                   "special": "",
                   "override": false
                 },
                 "effects": [],
                 "range": {
-                  "units": "",
+                  "units": "self",
                   "special": "",
                   "override": false
                 },
@@ -958,7 +972,7 @@
                     "size": "",
                     "width": "",
                     "height": "",
-                    "units": ""
+                    "units": "ft"
                   },
                   "affects": {
                     "count": "",
@@ -1011,7 +1025,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -1019,7 +1034,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -1030,13 +1044,30 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
                   "saveRemoves": true,
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
+                },
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
                 }
               },
               "dnd5eactivity200": {
@@ -1062,13 +1093,13 @@
                 "duration": {
                   "concentration": false,
                   "value": "",
-                  "units": "",
+                  "units": "inst",
                   "special": "",
                   "override": false
                 },
                 "effects": [],
                 "range": {
-                  "units": "",
+                  "units": "self",
                   "special": "",
                   "override": false
                 },
@@ -1080,7 +1111,7 @@
                     "size": "",
                     "width": "",
                     "height": "",
-                    "units": ""
+                    "units": "ft"
                   },
                   "affects": {
                     "count": "",
@@ -1131,7 +1162,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -1139,7 +1171,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -1150,13 +1181,30 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
                   "saveRemoves": true,
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
+                },
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
                 }
               }
             },
@@ -1167,24 +1215,23 @@
           "effects": [],
           "folder": null,
           "sort": 0,
-          "ownership": {
-            "default": 0
-          },
           "flags": {
-            "core": {
-              "sourceId": "Compendium.dnd5e.monsterfeatures.lVrnjqBrv90VH96d"
-            },
+            "core": {},
             "dnd5e": {}
           },
           "_stats": {
             "systemId": null,
             "systemVersion": null,
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": null,
             "modifiedTime": null,
             "lastModifiedBy": null,
             "compendiumSource": "Compendium.dnd5e.monsterfeatures.lVrnjqBrv90VH96d",
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -1281,7 +1328,6 @@
               "baseItem": "mace"
             },
             "container": null,
-            "crewed": false,
             "attuned": false,
             "magicalBonus": null,
             "activities": {
@@ -1308,7 +1354,7 @@
                 "duration": {
                   "concentration": false,
                   "value": "",
-                  "units": "",
+                  "units": "inst",
                   "special": "",
                   "override": false
                 },
@@ -1326,7 +1372,7 @@
                     "size": "",
                     "width": "",
                     "height": "",
-                    "units": ""
+                    "units": "ft"
                   },
                   "affects": {
                     "count": "",
@@ -1373,7 +1419,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -1381,7 +1428,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -1392,7 +1438,17 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -1403,41 +1459,50 @@
                 "otherActivityId": "",
                 "attackMode": "oneHanded",
                 "ammunition": "",
-                "otherActivityUuid": ""
+                "otherActivityUuid": "",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true,
+                "attackRollPerTarget": "default",
+                "fumbleThreshold": 1
               }
             },
             "identifier": "",
-            "ammunition": {}
+            "ammunition": {},
+            "crew": {
+              "value": []
+            }
           },
           "effects": [],
           "folder": null,
           "sort": 0,
-          "ownership": {
-            "default": 0
-          },
           "flags": {
-            "core": {
-              "sourceId": "Compendium.dnd5e.items.Ajyq6nGwF7FtLhDQ"
-            },
+            "core": {},
             "dnd5e": {}
           },
           "_stats": {
             "systemId": null,
             "systemVersion": null,
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": null,
             "modifiedTime": null,
             "lastModifiedBy": null,
             "compendiumSource": "Compendium.dnd5e.items.Ajyq6nGwF7FtLhDQ",
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
           "_id": "n9pJzTDsAwQxJVRl",
           "name": "Sacred Flame",
-          "ownership": {
-            "default": 0
-          },
           "type": "spell",
           "system": {
             "description": {
@@ -1468,7 +1533,7 @@
                 "choice": false
               },
               "template": {
-                "units": "",
+                "units": "ft",
                 "contiguous": false
               }
             },
@@ -1489,10 +1554,6 @@
               "consumed": false,
               "cost": 0,
               "supply": 0
-            },
-            "preparation": {
-              "mode": "prepared",
-              "prepared": true
             },
             "properties": [
               "vocal",
@@ -1525,7 +1586,8 @@
                 },
                 "effects": [],
                 "range": {
-                  "override": false
+                  "override": false,
+                  "units": "self"
                 },
                 "target": {
                   "prompt": true,
@@ -1589,7 +1651,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -1597,7 +1660,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -1608,7 +1670,17 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -1616,16 +1688,25 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": ""
+                "otherActivityId": "",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true,
+                "friendlySave": "default"
               }
             },
-            "identifier": "sacred-flame"
+            "identifier": "sacred-flame",
+            "method": "spell",
+            "prepared": 1
           },
           "sort": 0,
           "flags": {
-            "core": {
-              "sourceId": "Compendium.dnd5e.spells.n9pJzTDsAwQxJVRl"
-            },
+            "core": {},
             "dnd5e": {}
           },
           "img": "icons/magic/light/beam-rays-orange.webp",
@@ -1634,20 +1715,21 @@
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "2.0.0",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": 1661787234221,
             "modifiedTime": 1661791116513,
             "lastModifiedBy": "dnd5ebuilder0000",
             "compendiumSource": "Compendium.dnd5e.spells.n9pJzTDsAwQxJVRl",
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
           "_id": "MUO1uYN7JR1hm4dR",
           "name": "Thaumaturgy",
-          "ownership": {
-            "default": 0
-          },
           "type": "spell",
           "system": {
             "description": {
@@ -1676,7 +1758,7 @@
                 "choice": false
               },
               "template": {
-                "units": "",
+                "units": "ft",
                 "contiguous": false
               }
             },
@@ -1697,10 +1779,6 @@
               "consumed": false,
               "cost": 0,
               "supply": 0
-            },
-            "preparation": {
-              "mode": "prepared",
-              "prepared": true
             },
             "properties": [
               "vocal"
@@ -1732,7 +1810,8 @@
                 },
                 "effects": [],
                 "range": {
-                  "override": false
+                  "override": false,
+                  "units": "self"
                 },
                 "target": {
                   "prompt": true,
@@ -1768,7 +1847,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -1776,7 +1856,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -1787,7 +1866,17 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -1795,16 +1884,24 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": "none"
+                "otherActivityId": "none",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true
               }
             },
-            "identifier": "thaumaturgy"
+            "identifier": "thaumaturgy",
+            "method": "spell",
+            "prepared": 1
           },
           "sort": 0,
           "flags": {
-            "core": {
-              "sourceId": "Compendium.dnd5e.spells.MUO1uYN7JR1hm4dR"
-            },
+            "core": {},
             "dnd5e": {}
           },
           "img": "icons/magic/fire/explosion-fireball-small-purple-orange.webp",
@@ -1813,20 +1910,21 @@
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "2.0.0",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": 1661787234127,
             "modifiedTime": 1661791116513,
             "lastModifiedBy": "dnd5ebuilder0000",
             "compendiumSource": "Compendium.dnd5e.spells.MUO1uYN7JR1hm4dR",
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
           "_id": "F0GsG0SJzsIOacwV",
           "name": "Lesser Restoration",
-          "ownership": {
-            "default": 0
-          },
           "type": "spell",
           "system": {
             "description": {
@@ -1857,7 +1955,7 @@
                 "choice": false
               },
               "template": {
-                "units": "",
+                "units": "ft",
                 "contiguous": false
               }
             },
@@ -1877,10 +1975,6 @@
               "consumed": false,
               "cost": 0,
               "supply": 0
-            },
-            "preparation": {
-              "mode": "prepared",
-              "prepared": true
             },
             "properties": [
               "vocal",
@@ -1913,7 +2007,8 @@
                 },
                 "effects": [],
                 "range": {
-                  "override": false
+                  "override": false,
+                  "units": "self"
                 },
                 "target": {
                   "prompt": true,
@@ -1949,7 +2044,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -1957,7 +2053,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -1968,7 +2063,17 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -1976,16 +2081,24 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": "none"
+                "otherActivityId": "none",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true
               }
             },
-            "identifier": "lesser-restoration"
+            "identifier": "lesser-restoration",
+            "method": "spell",
+            "prepared": 1
           },
           "sort": 0,
           "flags": {
-            "core": {
-              "sourceId": "Compendium.dnd5e.spells.F0GsG0SJzsIOacwV"
-            },
+            "core": {},
             "dnd5e": {}
           },
           "img": "icons/magic/life/heart-cross-blue.webp",
@@ -1994,20 +2107,21 @@
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "2.0.0",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": 1661787234103,
             "modifiedTime": 1661791116514,
             "lastModifiedBy": "dnd5ebuilder0000",
             "compendiumSource": "Compendium.dnd5e.spells.F0GsG0SJzsIOacwV",
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
           "_id": "15Fa6q1nH27XfbR8",
           "name": "Dispel Magic",
-          "ownership": {
-            "default": 0
-          },
           "type": "spell",
           "system": {
             "description": {
@@ -2038,7 +2152,7 @@
                 "choice": false
               },
               "template": {
-                "units": "",
+                "units": "ft",
                 "contiguous": false
               }
             },
@@ -2059,10 +2173,6 @@
               "consumed": false,
               "cost": 0,
               "supply": 0
-            },
-            "preparation": {
-              "mode": "prepared",
-              "prepared": true
             },
             "properties": [
               "vocal",
@@ -2095,7 +2205,8 @@
                 },
                 "effects": [],
                 "range": {
-                  "override": false
+                  "override": false,
+                  "units": "self"
                 },
                 "target": {
                   "prompt": true,
@@ -2131,7 +2242,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -2139,7 +2251,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -2150,7 +2261,17 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -2158,16 +2279,24 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": "none"
+                "otherActivityId": "none",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true
               }
             },
-            "identifier": "dispel-magic"
+            "identifier": "dispel-magic",
+            "method": "spell",
+            "prepared": 1
           },
           "sort": 0,
           "flags": {
-            "core": {
-              "sourceId": "Compendium.dnd5e.spells.15Fa6q1nH27XfbR8"
-            },
+            "core": {},
             "dnd5e": {}
           },
           "img": "icons/skills/melee/strike-blade-knife-orange-blue.webp",
@@ -2176,20 +2305,21 @@
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "2.0.0",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": 1661787234054,
             "modifiedTime": 1661791116515,
             "lastModifiedBy": "dnd5ebuilder0000",
             "compendiumSource": "Compendium.dnd5e.spells.15Fa6q1nH27XfbR8",
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
           "_id": "Bnn9Nzajixvow9xi",
           "name": "Light",
-          "ownership": {
-            "default": 0
-          },
           "type": "spell",
           "system": {
             "description": {
@@ -2220,7 +2350,7 @@
                 "choice": false
               },
               "template": {
-                "units": "",
+                "units": "ft",
                 "contiguous": false
               }
             },
@@ -2240,10 +2370,6 @@
               "consumed": false,
               "cost": 0,
               "supply": 0
-            },
-            "preparation": {
-              "mode": "prepared",
-              "prepared": true
             },
             "properties": [
               "vocal",
@@ -2276,7 +2402,8 @@
                 },
                 "effects": [],
                 "range": {
-                  "override": false
+                  "override": false,
+                  "units": "self"
                 },
                 "target": {
                   "prompt": true,
@@ -2322,7 +2449,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -2330,7 +2458,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -2341,7 +2468,17 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -2349,16 +2486,25 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": ""
+                "otherActivityId": "",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true,
+                "friendlySave": "default"
               }
             },
-            "identifier": "light"
+            "identifier": "light",
+            "method": "spell",
+            "prepared": 1
           },
           "sort": 0,
           "flags": {
-            "core": {
-              "sourceId": "Compendium.dnd5e.spells.Bnn9Nzajixvow9xi"
-            },
+            "core": {},
             "dnd5e": {}
           },
           "img": "icons/magic/light/explosion-star-small-blue-yellow.webp",
@@ -2367,20 +2513,21 @@
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "2.0.0",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": 1661787234093,
             "modifiedTime": 1661791116515,
             "lastModifiedBy": "dnd5ebuilder0000",
             "compendiumSource": "Compendium.dnd5e.spells.Bnn9Nzajixvow9xi",
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
           "_id": "uUWb1wZgtMou0TVP",
           "name": "Cure Wounds",
-          "ownership": {
-            "default": 0
-          },
           "type": "spell",
           "system": {
             "description": {
@@ -2411,7 +2558,7 @@
                 "choice": false
               },
               "template": {
-                "units": "",
+                "units": "ft",
                 "contiguous": false
               }
             },
@@ -2431,10 +2578,6 @@
               "consumed": false,
               "cost": 0,
               "supply": 0
-            },
-            "preparation": {
-              "mode": "prepared",
-              "prepared": true
             },
             "properties": [
               "vocal",
@@ -2467,7 +2610,8 @@
                 },
                 "effects": [],
                 "range": {
-                  "override": false
+                  "override": false,
+                  "units": "self"
                 },
                 "target": {
                   "prompt": true,
@@ -2514,7 +2658,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -2522,7 +2667,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -2533,23 +2677,40 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
                   "saveRemoves": true,
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
+                },
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
                 }
               }
             },
-            "identifier": "cure-wounds"
+            "identifier": "cure-wounds",
+            "method": "spell",
+            "prepared": 1
           },
           "sort": 0,
           "flags": {
-            "core": {
-              "sourceId": "Compendium.dnd5e.spells.uUWb1wZgtMou0TVP"
-            },
+            "core": {},
             "dnd5e": {}
           },
           "img": "icons/magic/life/heart-cross-green.webp",
@@ -2558,21 +2719,21 @@
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "2.0.0",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": 1661787234236,
             "modifiedTime": 1661791116516,
             "lastModifiedBy": "dnd5ebuilder0000",
             "compendiumSource": "Compendium.dnd5e.spells.uUWb1wZgtMou0TVP",
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
           "_id": "7buEm5KhI5lP8m1z",
           "name": "Guiding Bolt",
-          "ownership": {
-            "default": 0,
-            "6yhz13iFYYklKtgA": 3
-          },
           "type": "spell",
           "system": {
             "description": {
@@ -2603,7 +2764,7 @@
                 "choice": false
               },
               "template": {
-                "units": "",
+                "units": "ft",
                 "contiguous": false
               }
             },
@@ -2624,10 +2785,6 @@
               "consumed": false,
               "cost": 0,
               "supply": 0
-            },
-            "preparation": {
-              "mode": "prepared",
-              "prepared": true
             },
             "properties": [
               "vocal",
@@ -2660,11 +2817,13 @@
                 },
                 "effects": [
                   {
-                    "_id": "wgz9W1RVTa0NB3xQ"
+                    "_id": "wgz9W1RVTa0NB3xQ",
+                    "level": {}
                   }
                 ],
                 "range": {
-                  "override": false
+                  "override": false,
+                  "units": "self"
                 },
                 "target": {
                   "prompt": true,
@@ -2731,7 +2890,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -2739,7 +2899,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -2750,7 +2909,17 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -2761,16 +2930,26 @@
                 "otherActivityId": "",
                 "attackMode": "oneHanded",
                 "ammunition": "",
-                "otherActivityUuid": ""
+                "otherActivityUuid": "",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true,
+                "attackRollPerTarget": "default",
+                "fumbleThreshold": 1
               }
             },
-            "identifier": "guiding-bolt"
+            "identifier": "guiding-bolt",
+            "method": "spell",
+            "prepared": 1
           },
           "sort": 0,
           "flags": {
-            "core": {
-              "sourceId": "Compendium.dnd5e.spells.7buEm5KhI5lP8m1z"
-            },
+            "core": {},
             "dnd5e": {},
             "midi-qol": {
               "forceCEOff": true,
@@ -2882,14 +3061,15 @@
               "description": "",
               "statuses": [],
               "_stats": {
-                "coreVersion": "12.331",
+                "coreVersion": "13.351",
                 "systemId": null,
                 "systemVersion": null,
                 "createdTime": null,
                 "modifiedTime": null,
                 "lastModifiedBy": null,
                 "compendiumSource": null,
-                "duplicateSource": null
+                "duplicateSource": null,
+                "exportSource": null
               },
               "img": "icons/magic/fire/flame-burning-hand-purple.webp",
               "type": "base",
@@ -2900,22 +3080,22 @@
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.2.1",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": 1661787234075,
             "modifiedTime": 1728509010386,
             "lastModifiedBy": "6yhz13iFYYklKtgA",
             "compendiumSource": "Compendium.dnd5e.spells.7buEm5KhI5lP8m1z",
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
           },
-          "folder": null
+          "folder": null,
+          "ownership": {
+            "default": 0
+          }
         },
         {
           "_id": "gvdA9nPuWLck4tBl",
           "name": "Sanctuary",
-          "ownership": {
-            "default": 0,
-            "6yhz13iFYYklKtgA": 3
-          },
           "type": "spell",
           "system": {
             "description": {
@@ -2946,7 +3126,7 @@
                 "choice": false
               },
               "template": {
-                "units": "",
+                "units": "ft",
                 "contiguous": false
               }
             },
@@ -2967,10 +3147,6 @@
               "consumed": false,
               "cost": 0,
               "supply": 0
-            },
-            "preparation": {
-              "mode": "prepared",
-              "prepared": true
             },
             "properties": [
               "vocal",
@@ -3004,7 +3180,8 @@
                 },
                 "effects": [],
                 "range": {
-                  "override": false
+                  "override": false,
+                  "units": "self"
                 },
                 "target": {
                   "prompt": true,
@@ -3040,7 +3217,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -3048,7 +3226,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -3059,7 +3236,17 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -3067,16 +3254,24 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": "none"
+                "otherActivityId": "none",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true
               }
             },
-            "identifier": "sanctuary"
+            "identifier": "sanctuary",
+            "method": "spell",
+            "prepared": 1
           },
           "sort": 0,
           "flags": {
-            "core": {
-              "sourceId": "Compendium.dnd5e.spells.gvdA9nPuWLck4tBl"
-            },
+            "core": {},
             "dnd5e": {},
             "midi-qol": {
               "effectActivation": false,
@@ -3103,12 +3298,6 @@
               "autoSaveFriendly": false,
               "confirmTargets": "default",
               "noConcentrationCheck": false
-            },
-            "exportSource": {
-              "world": "development-testing",
-              "system": "dnd5e",
-              "coreVersion": "10.291",
-              "systemVersion": "2.1.4"
             },
             "custom-character-sheet-sections": {
               "sectionName": ""
@@ -3358,14 +3547,24 @@
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.2.1",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": 1661787234193,
             "modifiedTime": 1728509010386,
             "lastModifiedBy": "6yhz13iFYYklKtgA",
             "compendiumSource": "Compendium.dnd5e.spells.gvdA9nPuWLck4tBl",
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": {
+              "worldId": "development-testing",
+              "uuid": null,
+              "coreVersion": "10.291",
+              "systemId": "dnd5e",
+              "systemVersion": "2.1.4"
+            }
           },
-          "folder": null
+          "folder": null,
+          "ownership": {
+            "default": 0
+          }
         },
         {
           "_id": "JbxsYXxSOTZbf9I0",
@@ -3399,7 +3598,7 @@
                 "choice": false
               },
               "template": {
-                "units": "",
+                "units": "ft",
                 "contiguous": false
               }
             },
@@ -3420,10 +3619,6 @@
               "consumed": false,
               "cost": 0,
               "supply": 0
-            },
-            "preparation": {
-              "mode": "prepared",
-              "prepared": true
             },
             "properties": [
               "vocal",
@@ -3456,7 +3651,8 @@
                 },
                 "effects": [],
                 "range": {
-                  "override": false
+                  "override": false,
+                  "units": "self"
                 },
                 "target": {
                   "prompt": true,
@@ -3492,7 +3688,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -3500,7 +3697,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -3511,7 +3707,17 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -3519,21 +3725,25 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": "none"
+                "otherActivityId": "none",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true
               }
             },
-            "identifier": "spiritual-weapon"
+            "identifier": "spiritual-weapon",
+            "method": "spell",
+            "prepared": 1
           },
           "effects": [],
           "sort": 0,
-          "ownership": {
-            "default": 0,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {
-            "core": {
-              "sourceId": "Compendium.dnd5e.spells.JbxsYXxSOTZbf9I0"
-            },
+            "core": {},
             "dnd5e": {},
             "midiProperties": {
               "magicdam": true,
@@ -3567,12 +3777,6 @@
             "custom-character-sheet-sections": {
               "sectionName": ""
             },
-            "exportSource": {
-              "world": "development-testing",
-              "system": "dnd5e",
-              "coreVersion": "10.303",
-              "systemVersion": "2.2.1"
-            },
             "rest-recovery": {
               "data": {
                 "recovery": {
@@ -3601,22 +3805,28 @@
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.2.1",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": 1661787234115,
             "modifiedTime": 1728509010386,
             "lastModifiedBy": "6yhz13iFYYklKtgA",
             "compendiumSource": "Compendium.dnd5e.spells.JbxsYXxSOTZbf9I0",
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": {
+              "worldId": "development-testing",
+              "uuid": null,
+              "coreVersion": "10.303",
+              "systemId": "dnd5e",
+              "systemVersion": "2.2.1"
+            }
           },
-          "folder": null
+          "folder": null,
+          "ownership": {
+            "default": 0
+          }
         },
         {
           "_id": "uCud2s4TjMfjiXUb",
           "name": "Spirit Guardians",
-          "ownership": {
-            "default": 0,
-            "6yhz13iFYYklKtgA": 3
-          },
           "type": "spell",
           "system": {
             "description": {
@@ -3647,7 +3857,7 @@
                 "choice": false
               },
               "template": {
-                "units": "",
+                "units": "ft",
                 "contiguous": false
               }
             },
@@ -3668,10 +3878,6 @@
               "consumed": false,
               "cost": 0,
               "supply": 0
-            },
-            "preparation": {
-              "mode": "prepared",
-              "prepared": true
             },
             "properties": [
               "vocal",
@@ -3706,11 +3912,13 @@
                 },
                 "effects": [
                   {
-                    "_id": "7XN0MD4aruKyhVh4"
+                    "_id": "7XN0MD4aruKyhVh4",
+                    "level": {}
                   }
                 ],
                 "range": {
-                  "override": false
+                  "override": false,
+                  "units": "self"
                 },
                 "target": {
                   "prompt": true,
@@ -3746,7 +3954,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -3754,7 +3963,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -3765,7 +3973,17 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -3773,16 +3991,24 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": "none"
+                "otherActivityId": "none",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true
               }
             },
-            "identifier": "spirit-guardians"
+            "identifier": "spirit-guardians",
+            "method": "spell",
+            "prepared": 1
           },
           "sort": 0,
           "flags": {
-            "core": {
-              "sourceId": "Compendium.dnd5e.spells.uCud2s4TjMfjiXUb"
-            },
+            "core": {},
             "dnd5e": {},
             "midi-qol": {
               "forceCEOff": true,
@@ -3822,12 +4048,6 @@
               "concentration": false,
               "toggleEffect": false,
               "ignoreTotalCover": false
-            },
-            "exportSource": {
-              "world": "development-testing",
-              "system": "dnd5e",
-              "coreVersion": "10.291",
-              "systemVersion": "2.1.5"
             },
             "autoanimations": {
               "id": "94d1404a-d867-4f61-990f-ac34477b63cf",
@@ -4093,14 +4313,15 @@
               "description": "",
               "statuses": [],
               "_stats": {
-                "coreVersion": "12.331",
+                "coreVersion": "13.351",
                 "systemId": null,
                 "systemVersion": null,
                 "createdTime": null,
                 "modifiedTime": null,
                 "lastModifiedBy": null,
                 "compendiumSource": null,
-                "duplicateSource": null
+                "duplicateSource": null,
+                "exportSource": null
               },
               "img": "icons/magic/defensive/shield-barrier-blades-teal.webp",
               "type": "base",
@@ -4111,39 +4332,47 @@
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.2.1",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": 1661787234235,
             "modifiedTime": 1728509010386,
             "lastModifiedBy": "6yhz13iFYYklKtgA",
             "compendiumSource": "Compendium.dnd5e.spells.uCud2s4TjMfjiXUb",
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": {
+              "worldId": "development-testing",
+              "uuid": null,
+              "coreVersion": "10.291",
+              "systemId": "dnd5e",
+              "systemVersion": "2.1.5"
+            }
           },
-          "folder": null
+          "folder": null,
+          "ownership": {
+            "default": 0
+          }
         }
       ],
       "effects": [],
       "folder": "yQI0JyaL0tbtIrNC",
       "sort": 100000,
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
-      },
       "flags": {
-        "core": {
-          "sourceId": "Compendium.dnd5e.monsters.Actor.PVD5wRdyO7iCJPs1"
-        }
+        "core": {}
       },
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "4.4.2",
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "createdTime": 1661787232808,
         "modifiedTime": 1754774817551,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": "Compendium.dnd5e.monsters.Actor.PVD5wRdyO7iCJPs1",
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
-      "_id": "FZir5b74YYCGBq31"
+      "_id": "FZir5b74YYCGBq31",
+      "ownership": {
+        "default": 0
+      }
     },
     {
       "_id": "MBE40ejmR95pHVLP",
@@ -4202,12 +4431,6 @@
           },
           "version": "3.2.14",
           "sharing": null
-        },
-        "exportSource": {
-          "world": "curse_of_strahd",
-          "system": "dnd5e",
-          "coreVersion": "11.315",
-          "systemVersion": "3.1.2"
         },
         "tidy5e-sheet": {
           "death": {
@@ -4400,13 +4623,10 @@
             }
           },
           "movement": {
-            "burrow": null,
-            "climb": null,
-            "fly": null,
-            "swim": null,
-            "walk": 30,
+            "walk": "30",
             "units": "ft",
-            "hover": false
+            "hover": false,
+            "ignoredDifficultTerrain": []
           },
           "attunement": {
             "max": 3
@@ -4448,11 +4668,13 @@
           "spell": {
             "level": 0
           },
-          "loyalty": {
-            "value": null
-          },
+          "loyalty": {},
           "hd": {
             "spent": 0
+          },
+          "price": {
+            "value": null,
+            "denomination": "gp"
           }
         },
         "details": {
@@ -4826,12 +5048,12 @@
         },
         "resources": {
           "legact": {
-            "value": 0,
-            "max": 0
+            "max": 0,
+            "spent": 0
           },
           "legres": {
-            "value": 0,
-            "max": 0
+            "max": 0,
+            "spent": 0
           },
           "lair": {
             "value": false,
@@ -4844,16 +5066,6 @@
           "custom": "",
           "revision": 1
         }
-      },
-      "ownership": {
-        "default": 2,
-        "6yhz13iFYYklKtgA": 3,
-        "nI44NHqYFA6fYSaA": 2,
-        "2o6fMFw0qQuhf5nV": 2,
-        "6A5pacAU8kbNm9PQ": 2,
-        "al3K6JMdvNPhJSGp": 2,
-        "PAsMQtGinm9l3io7": 2,
-        "39APwqo8boJ5in8b": 2
       },
       "prototypeToken": {
         "name": "Treasure",
@@ -4976,20 +5188,36 @@
             "scale": 1
           }
         },
-        "hexagonalShape": 0,
         "occludable": {
           "radius": 0
-        }
+        },
+        "turnMarker": {
+          "mode": 1,
+          "animation": null,
+          "src": null,
+          "disposition": false
+        },
+        "movementAction": null
       },
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "4.4.2",
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": 1754747181387,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
-        "compendiumSource": "Actor.MBE40ejmR95pHVLP",
-        "duplicateSource": null
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "curse_of_strahd",
+          "uuid": null,
+          "coreVersion": "11.315",
+          "systemId": "dnd5e",
+          "systemVersion": "3.1.2"
+        }
+      },
+      "ownership": {
+        "default": 2
       }
     },
     {
@@ -5044,21 +5272,23 @@
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             }
-          },
-          "ownership": {
-            "default": 0
           },
           "_stats": {
             "systemId": null,
             "systemVersion": null,
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": null,
             "modifiedTime": null,
             "lastModifiedBy": null,
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -5103,7 +5333,6 @@
             "rarity": "",
             "identified": true,
             "cover": null,
-            "crewed": false,
             "range": {
               "value": 5,
               "long": null,
@@ -5211,7 +5440,7 @@
                     "size": "",
                     "width": "",
                     "height": "",
-                    "units": ""
+                    "units": "ft"
                   },
                   "affects": {
                     "count": "",
@@ -5247,6 +5476,13 @@
                   "parts": []
                 },
                 "sort": 0,
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
                 "useConditionText": "",
                 "useConditionReason": "",
                 "effectConditionText": "",
@@ -5258,7 +5494,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -5266,18 +5503,27 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
                   "automationOnly": false,
                   "otherActivityCompatible": true,
+                  "otherActivityAsParentType": true,
                   "identifier": "",
                   "displayActivityName": false,
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -5286,29 +5532,36 @@
                   "postRemoveConditionText": ""
                 },
                 "otherActivityId": "",
+                "otherActivityAsParentType": true,
                 "attackMode": "oneHanded",
                 "ammunition": "",
-                "otherActivityUuid": ""
+                "otherActivityUuid": "",
+                "attackRollPerTarget": "default",
+                "fumbleThreshold": 1
               }
             },
             "identifier": "",
             "container": null,
             "attuned": false,
             "ammunition": {},
-            "magicalBonus": null
-          },
-          "ownership": {
-            "default": 0
+            "magicalBonus": null,
+            "crew": {
+              "value": []
+            }
           },
           "_stats": {
             "systemId": null,
             "systemVersion": null,
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": null,
             "modifiedTime": null,
             "lastModifiedBy": null,
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -5356,22 +5609,24 @@
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             },
             "properties": []
-          },
-          "ownership": {
-            "default": 0
           },
           "_stats": {
             "systemId": null,
             "systemVersion": null,
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": null,
             "modifiedTime": null,
             "lastModifiedBy": null,
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -5419,22 +5674,24 @@
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             },
             "properties": []
-          },
-          "ownership": {
-            "default": 0
           },
           "_stats": {
             "systemId": null,
             "systemVersion": null,
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": null,
             "modifiedTime": null,
             "lastModifiedBy": null,
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -5482,22 +5739,24 @@
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             },
             "properties": []
-          },
-          "ownership": {
-            "default": 0
           },
           "_stats": {
             "systemId": null,
             "systemVersion": null,
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": null,
             "modifiedTime": null,
             "lastModifiedBy": null,
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -5545,22 +5804,24 @@
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             },
             "properties": []
-          },
-          "ownership": {
-            "default": 0
           },
           "_stats": {
             "systemId": null,
             "systemVersion": null,
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": null,
             "modifiedTime": null,
             "lastModifiedBy": null,
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -5608,22 +5869,24 @@
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             },
             "properties": []
-          },
-          "ownership": {
-            "default": 0
           },
           "_stats": {
             "systemId": null,
             "systemVersion": null,
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": null,
             "modifiedTime": null,
             "lastModifiedBy": null,
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -5671,22 +5934,24 @@
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             },
             "properties": []
-          },
-          "ownership": {
-            "default": 0
           },
           "_stats": {
             "systemId": null,
             "systemVersion": null,
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": null,
             "modifiedTime": null,
             "lastModifiedBy": null,
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -5732,7 +5997,6 @@
               }
             },
             "dnd5e": {
-              "persistSourceMigration": true,
               "riders": {
                 "activity": []
               },
@@ -5773,7 +6037,6 @@
             "rarity": "",
             "identified": true,
             "cover": null,
-            "crewed": false,
             "range": {
               "value": 5,
               "long": null,
@@ -5884,7 +6147,7 @@
                     "size": "",
                     "width": "",
                     "height": "",
-                    "units": ""
+                    "units": "ft"
                   },
                   "affects": {
                     "count": "",
@@ -5938,6 +6201,13 @@
                   ]
                 },
                 "sort": 0,
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
                 "useConditionText": "",
                 "useConditionReason": "",
                 "effectConditionText": "",
@@ -5949,7 +6219,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -5957,18 +6228,27 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
                   "automationOnly": false,
                   "otherActivityCompatible": true,
+                  "otherActivityAsParentType": true,
                   "identifier": "",
                   "displayActivityName": false,
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -5977,41 +6257,43 @@
                   "postRemoveConditionText": ""
                 },
                 "otherActivityId": "",
+                "otherActivityAsParentType": true,
                 "attackMode": "oneHanded",
                 "ammunition": "",
-                "otherActivityUuid": ""
+                "otherActivityUuid": "",
+                "attackRollPerTarget": "default",
+                "fumbleThreshold": 1
               }
             },
             "identifier": "vampire-bite-spawn",
             "ammunition": {},
             "attuned": false,
             "equipped": true,
-            "mastery": ""
-          },
-          "ownership": {
-            "default": 0,
-            "6yhz13iFYYklKtgA": 3
+            "mastery": "",
+            "crew": {
+              "value": []
+            }
           },
           "_stats": {
             "compendiumSource": "Compendium.stroud-dnd-helpers.SDND-Spells.Item.fok19Gn07Vbbq0Qa",
             "duplicateSource": null,
-            "coreVersion": "12.343",
+            "coreVersion": "13.351",
             "systemId": "dnd5e",
             "systemVersion": "4.4.2",
             "createdTime": 1748177594461,
             "modifiedTime": 1750249027423,
-            "lastModifiedBy": "6yhz13iFYYklKtgA"
+            "lastModifiedBy": "6yhz13iFYYklKtgA",
+            "exportSource": null
           },
           "_id": "C1Y7BoFANkEcwq2i",
-          "sort": 0
+          "sort": 0,
+          "ownership": {
+            "default": 0
+          }
         },
         {
           "_id": "YzKjtQNTM9XyvjuV",
           "name": "Regeneration",
-          "ownership": {
-            "default": 0,
-            "6yhz13iFYYklKtgA": 3
-          },
           "type": "feat",
           "system": {
             "description": {
@@ -6078,7 +6360,7 @@
                     "size": "",
                     "width": "",
                     "height": "",
-                    "units": ""
+                    "units": "ft"
                   },
                   "affects": {
                     "count": "",
@@ -6110,6 +6392,14 @@
                   }
                 },
                 "sort": 0,
+                "name": "",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
                 "useConditionText": "",
                 "useConditionReason": "",
                 "effectConditionText": "",
@@ -6121,7 +6411,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -6129,32 +6420,41 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
                   "automationOnly": false,
                   "otherActivityCompatible": true,
+                  "otherActivityAsParentType": true,
                   "identifier": "",
                   "displayActivityName": false,
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
                   "saveRemoves": true,
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
-                },
-                "name": ""
+                }
               }
             },
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             },
             "properties": [],
             "identifier": "regeneration",
@@ -6220,12 +6520,200 @@
           "_stats": {
             "duplicateSource": null,
             "compendiumSource": "Compendium.dnd5e.monsterfeatures.Item.Av7H0ymGdPeTsnwV",
-            "coreVersion": "12.343",
+            "coreVersion": "13.351",
             "systemId": "dnd5e",
             "systemVersion": "4.4.2",
             "createdTime": 1755695963495,
             "modifiedTime": 1755695963495,
-            "lastModifiedBy": "6yhz13iFYYklKtgA"
+            "lastModifiedBy": "6yhz13iFYYklKtgA",
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
+          }
+        },
+        {
+          "folder": "pF66FwEEAUVt1GM1",
+          "name": "Sunlight Hypersensitivity",
+          "type": "equipment",
+          "img": "icons/magic/nature/symbol-sun-yellow.webp",
+          "system": {
+            "activities": {},
+            "uses": {
+              "spent": 0,
+              "recovery": [],
+              "max": ""
+            },
+            "description": {
+              "value": "",
+              "chat": ""
+            },
+            "identifier": "new-item",
+            "source": {
+              "revision": 1,
+              "rules": "2024"
+            },
+            "identified": true,
+            "unidentified": {
+              "description": ""
+            },
+            "container": null,
+            "quantity": 1,
+            "weight": {
+              "value": 0,
+              "units": "lb"
+            },
+            "price": {
+              "value": 0,
+              "denomination": "gp"
+            },
+            "rarity": "",
+            "attunement": "",
+            "cover": null,
+            "armor": {
+              "value": null,
+              "magicalBonus": null,
+              "dex": null
+            },
+            "proficient": null,
+            "properties": [],
+            "strength": null,
+            "type": {
+              "value": "trinket",
+              "baseItem": ""
+            },
+            "attuned": false,
+            "equipped": true,
+            "crew": {
+              "value": []
+            }
+          },
+          "effects": [
+            {
+              "name": "Sunlight Hypesensitivity",
+              "img": "icons/magic/nature/symbol-sun-yellow.webp",
+              "origin": "Item.bfgAXde1y4BuyJsB",
+              "_id": "h5jUf2x3ruBiVvbV",
+              "type": "base",
+              "system": {},
+              "changes": [
+                {
+                  "key": "flags.midi-qol.OverTime",
+                  "mode": 0,
+                  "value": "turn=start,damageRoll=20,damageType=radiant",
+                  "priority": 2000
+                },
+                {
+                  "key": "flags.midi-qol.disadvantage.attack.all",
+                  "mode": 0,
+                  "value": "1",
+                  "priority": 20
+                }
+              ],
+              "disabled": false,
+              "duration": {
+                "startTime": -38952337964,
+                "seconds": null,
+                "combat": null,
+                "rounds": null,
+                "turns": null,
+                "startRound": 9,
+                "startTurn": 6
+              },
+              "description": "",
+              "tint": "#ffffff",
+              "transfer": true,
+              "statuses": [],
+              "sort": 0,
+              "flags": {
+                "dae": {
+                  "disableCondition": "",
+                  "disableIncapacitated": false,
+                  "stackable": "multi",
+                  "showIcon": false,
+                  "durationExpression": "",
+                  "macroRepeat": "none",
+                  "specialDuration": []
+                },
+                "dnd5e": {
+                  "riders": {
+                    "statuses": []
+                  }
+                },
+                "core": {
+                  "overlay": false
+                },
+                "ActiveAuras": {
+                  "isAura": false,
+                  "aura": "None",
+                  "nameOverride": "",
+                  "radius": "",
+                  "alignment": "",
+                  "type": "",
+                  "customCheck": "",
+                  "ignoreSelf": false,
+                  "height": false,
+                  "hidden": false,
+                  "displayTemp": false,
+                  "hostile": false,
+                  "onlyOnce": false,
+                  "wallsBlock": "system",
+                  "statuses": []
+                },
+                "effectmacro": {}
+              },
+              "_stats": {
+                "compendiumSource": null,
+                "duplicateSource": null,
+                "coreVersion": "13.351",
+                "systemId": "dnd5e",
+                "systemVersion": "4.4.2",
+                "createdTime": null,
+                "modifiedTime": null,
+                "lastModifiedBy": null,
+                "exportSource": null
+              }
+            }
+          ],
+          "sort": 0,
+          "flags": {
+            "midi-qol": {
+              "rollAttackPerTarget": "default",
+              "removeAttackDamageButtons": "default",
+              "itemCondition": "",
+              "reactionCondition": "",
+              "otherCondition": "",
+              "effectCondition": ""
+            },
+            "midiProperties": {
+              "autoFailFriendly": false,
+              "autoSaveFriendly": false,
+              "magicdam": false,
+              "magiceffect": false,
+              "noConcentrationCheck": false,
+              "toggleEffect": false,
+              "ignoreTotalCover": false
+            },
+            "dnd5e": {
+              "riders": {
+                "activity": []
+              }
+            }
+          },
+          "_stats": {
+            "compendiumSource": "Item.k0fpj6cOccnx7vqd",
+            "duplicateSource": "Item.k0fpj6cOccnx7vqd",
+            "coreVersion": "13.351",
+            "systemId": "dnd5e",
+            "systemVersion": "4.4.2",
+            "createdTime": 1766850593577,
+            "modifiedTime": 1766850593577,
+            "lastModifiedBy": "6yhz13iFYYklKtgA",
+            "exportSource": null
+          },
+          "_id": "f7ksdcv8LrebxsDy",
+          "ownership": {
+            "default": 0
           }
         }
       ],
@@ -6258,9 +6746,7 @@
           "isLegacy": false,
           "flatAC": true
         },
-        "core": {
-          "sourceId": "Compendium.world.ddb-lost-mines-phandelver-monsters.unee9rKut00KrGxO"
-        },
+        "core": {},
         "midi-qol": {
           "concentration-damage": 0
         },
@@ -6455,13 +6941,10 @@
             }
           },
           "movement": {
-            "burrow": null,
-            "climb": null,
-            "fly": null,
-            "swim": null,
-            "walk": 30,
+            "walk": "30",
             "units": "ft",
-            "hover": false
+            "hover": false,
+            "ignoredDifficultTerrain": []
           },
           "attunement": {
             "max": 3
@@ -6508,6 +6991,10 @@
             "bonuses": {
               "save": ""
             }
+          },
+          "price": {
+            "value": null,
+            "denomination": "gp"
           }
         },
         "details": {
@@ -6888,12 +7375,12 @@
         },
         "resources": {
           "legact": {
-            "value": 0,
-            "max": 0
+            "max": 0,
+            "spent": 0
           },
           "legres": {
-            "value": 0,
-            "max": 0
+            "max": 0,
+            "spent": 0
           },
           "lair": {
             "value": false,
@@ -6906,10 +7393,6 @@
           "revision": 1,
           "rules": "2014"
         }
-      },
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
       },
       "prototypeToken": {
         "name": "Vampire Spawn",
@@ -6986,7 +7469,6 @@
         "detectionModes": [],
         "appendNumber": false,
         "prependAdjective": false,
-        "hexagonalShape": 0,
         "occludable": {
           "radius": 0
         },
@@ -7001,17 +7483,28 @@
             "scale": 1,
             "texture": null
           }
-        }
+        },
+        "turnMarker": {
+          "mode": 1,
+          "animation": null,
+          "src": null,
+          "disposition": false
+        },
+        "movementAction": null
       },
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "4.4.2",
-        "coreVersion": "12.343",
+        "systemVersion": "5.2.4",
+        "coreVersion": "13.351",
         "createdTime": null,
-        "modifiedTime": 1754774836771,
+        "modifiedTime": 1767279846352,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": "Compendium.world.ddb-lost-mines-phandelver-monsters.unee9rKut00KrGxO",
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "ownership": {
+        "default": 0
       }
     }
   ],
@@ -7056,14 +7549,7 @@
       "effects": [],
       "folder": "oDI9ynWcq39UUWEW",
       "flags": {
-        "exportSource": {
-          "system": "dnd5e",
-          "coreVersion": "11.315",
-          "systemVersion": "3.1.2"
-        },
-        "core": {
-          "sourceId": "Compendium.stroud-dnd-helpers.SDND-Items.Item.X1zZhd56NQdNGs6n"
-        },
+        "core": {},
         "dnd5e": {
           "riders": {
             "activity": []
@@ -7073,19 +7559,25 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "4.4.2",
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "createdTime": 1723338340157,
         "modifiedTime": 1748176600249,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": "Compendium.stroud-dnd-helpers.SDND-Items.Item.X1zZhd56NQdNGs6n",
-        "duplicateSource": null
-      },
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": null,
+          "uuid": null,
+          "coreVersion": "11.315",
+          "systemId": "dnd5e",
+          "systemVersion": "3.1.2"
+        }
       },
       "sort": 250000,
-      "_id": "6uSfn20sokbmbPu0"
+      "_id": "6uSfn20sokbmbPu0",
+      "ownership": {
+        "default": 0
+      }
     }
   ],
   "journal": [
@@ -7114,20 +7606,21 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.2.1",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": 1705180025697,
             "modifiedTime": 1729001129116,
             "lastModifiedBy": "6yhz13iFYYklKtgA",
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "category": null,
+          "ownership": {
+            "default": -1
           }
         },
         {
@@ -7150,20 +7643,21 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "2.4.1",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": 1705180173700,
             "modifiedTime": 1705180198675,
             "lastModifiedBy": "6yhz13iFYYklKtgA",
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "category": null,
+          "ownership": {
+            "default": -1
           }
         },
         {
@@ -7186,20 +7680,21 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "2.4.1",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": 1705180214502,
             "modifiedTime": 1705180233304,
             "lastModifiedBy": "6yhz13iFYYklKtgA",
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "category": null,
+          "ownership": {
+            "default": -1
           }
         },
         {
@@ -7222,20 +7717,21 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "2.4.1",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": 1705180246205,
             "modifiedTime": 1705180263599,
             "lastModifiedBy": "6yhz13iFYYklKtgA",
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "category": null,
+          "ownership": {
+            "default": -1
           }
         },
         {
@@ -7258,20 +7754,21 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "2.4.1",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": 1705180272629,
             "modifiedTime": 1705180295805,
             "lastModifiedBy": "6yhz13iFYYklKtgA",
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "category": null,
+          "ownership": {
+            "default": -1
           }
         },
         {
@@ -7294,20 +7791,21 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "2.4.1",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": 1705180305766,
             "modifiedTime": 1705180347370,
             "lastModifiedBy": "6yhz13iFYYklKtgA",
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "category": null,
+          "ownership": {
+            "default": -1
           }
         },
         {
@@ -7330,38 +7828,40 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "2.4.1",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": 1705180356004,
             "modifiedTime": 1705180396873,
             "lastModifiedBy": "6yhz13iFYYklKtgA",
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "category": null,
+          "ownership": {
+            "default": -1
           }
         }
       ],
       "sort": 0,
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
-      },
       "flags": {},
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": 1705180018585,
         "modifiedTime": 1729001129116,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "categories": [],
+      "ownership": {
+        "default": 0
       }
     },
     {
@@ -7389,20 +7889,21 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "2.4.1",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": 1705182155283,
             "modifiedTime": 1705182204854,
             "lastModifiedBy": "6yhz13iFYYklKtgA",
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "category": null,
+          "ownership": {
+            "default": -1
           }
         },
         {
@@ -7425,20 +7926,21 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "2.4.1",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": 1705182219617,
             "modifiedTime": 1705182253465,
             "lastModifiedBy": "6yhz13iFYYklKtgA",
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "category": null,
+          "ownership": {
+            "default": -1
           }
         },
         {
@@ -7461,20 +7963,21 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "2.4.1",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": 1705182271386,
             "modifiedTime": 1705182293734,
             "lastModifiedBy": "6yhz13iFYYklKtgA",
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "category": null,
+          "ownership": {
+            "default": -1
           }
         },
         {
@@ -7497,38 +8000,40 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "2.4.1",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": 1705182307655,
             "modifiedTime": 1705182357323,
             "lastModifiedBy": "6yhz13iFYYklKtgA",
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "category": null,
+          "ownership": {
+            "default": -1
           }
         }
       ],
       "sort": 0,
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
-      },
       "flags": {},
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": 1705182141538,
         "modifiedTime": 1705182357323,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "categories": [],
+      "ownership": {
+        "default": 0
       }
     }
   ],
@@ -7537,7 +8042,6 @@
       "folder": "a3odF4zqSdAJoyC7",
       "name": "Map of Vallaki",
       "_id": "TejIo4jE3GxVxBvR",
-      "active": false,
       "navigation": true,
       "navOrder": 0,
       "navName": "",
@@ -7662,9 +8166,6 @@
             "contrast": 0
           },
           "detectionModes": [],
-          "appendNumber": false,
-          "prependAdjective": false,
-          "hexagonalShape": 0,
           "occludable": {
             "radius": 0
           },
@@ -7692,13 +8193,23 @@
             "flags": {},
             "name": null,
             "type": null,
-            "img": null
+            "img": null,
+            "ownership": null
           },
           "x": 2000,
           "y": 900,
           "elevation": 0,
           "locked": false,
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         }
       ],
       "lights": [],
@@ -8441,22 +8952,19 @@
       "journal": null,
       "journalEntryPage": null,
       "sort": 0,
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
-      },
       "flags": {
         "token-attacher": {}
       },
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": 1705025441292,
         "modifiedTime": 1733515895920,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "foreground": null,
       "thumb": "modules/sdnd-strahd-adv/images/thumbs/TejIo4jE3GxVxBvR-thumb.webp",
@@ -8498,18 +9006,20 @@
       },
       "fog": {
         "exploration": true,
-        "reset": 1705025441290,
         "overlay": null,
         "colors": {
           "explored": null,
           "unexplored": null
         }
-      }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "active": false
     },
     {
       "_id": "2Np80maxuxqaFltL",
       "name": "N6.1. Coffin Shop (Ground Floor)",
-      "active": false,
       "navigation": false,
       "navOrder": 0,
       "navName": "",
@@ -8620,8 +9130,6 @@
             "contrast": 0
           },
           "detectionModes": [],
-          "appendNumber": false,
-          "prependAdjective": false,
           "actorId": "FZir5b74YYCGBq31",
           "x": 900,
           "y": 1800,
@@ -8634,9 +9142,6 @@
               {
                 "_id": "n9pJzTDsAwQxJVRl",
                 "name": "Sacred Flame",
-                "ownership": {
-                  "default": 0
-                },
                 "type": "spell",
                 "system": {
                   "description": {
@@ -8667,7 +9172,7 @@
                       "choice": false
                     },
                     "template": {
-                      "units": "",
+                      "units": "ft",
                       "contiguous": false
                     }
                   },
@@ -8688,10 +9193,6 @@
                     "consumed": false,
                     "cost": 0,
                     "supply": 0
-                  },
-                  "preparation": {
-                    "mode": "prepared",
-                    "prepared": true
                   },
                   "properties": [
                     "vocal",
@@ -8724,7 +9225,8 @@
                       },
                       "effects": [],
                       "range": {
-                        "override": false
+                        "override": false,
+                        "units": "self"
                       },
                       "target": {
                         "prompt": true,
@@ -8788,7 +9290,8 @@
                         "idi": false,
                         "idr": false,
                         "idv": false,
-                        "ida": false
+                        "ida": false,
+                        "idm": false
                       },
                       "midiProperties": {
                         "ignoreTraits": [],
@@ -8796,7 +9299,6 @@
                         "triggeredActivityConditionText": "",
                         "triggeredActivityTargets": "targets",
                         "triggeredActivityRollAs": "self",
-                        "forceDialog": false,
                         "confirmTargets": "default",
                         "autoTargetType": "any",
                         "autoTargetAction": "default",
@@ -8807,7 +9309,17 @@
                         "rollMode": "default",
                         "chooseEffects": false,
                         "toggleEffect": false,
-                        "ignoreFullCover": false
+                        "ignoreFullCover": false,
+                        "autoConsume": false,
+                        "forceConsumeDialog": "default",
+                        "forceRollDialog": "default",
+                        "forceDamageDialog": "default",
+                        "otherActivityAsParentType": true,
+                        "removeChatButtons": "default",
+                        "magicEffect": false,
+                        "magicDamage": false,
+                        "noConcentrationCheck": false,
+                        "autoCEEffects": "default"
                       },
                       "isOverTimeFlag": false,
                       "overTimeProperties": {
@@ -8815,16 +9327,25 @@
                         "preRemoveConditionText": "",
                         "postRemoveConditionText": ""
                       },
-                      "otherActivityId": ""
+                      "otherActivityId": "",
+                      "flags": {},
+                      "visibility": {
+                        "level": {},
+                        "requireAttunement": false,
+                        "requireIdentification": false,
+                        "requireMagic": false
+                      },
+                      "otherActivityAsParentType": true,
+                      "friendlySave": "default"
                     }
                   },
-                  "identifier": "sacred-flame"
+                  "identifier": "sacred-flame",
+                  "method": "spell",
+                  "prepared": 1
                 },
                 "sort": 0,
                 "flags": {
-                  "core": {
-                    "sourceId": "Compendium.dnd5e.spells.n9pJzTDsAwQxJVRl"
-                  },
+                  "core": {},
                   "dnd5e": {}
                 },
                 "img": "icons/magic/light/beam-rays-orange.webp",
@@ -8833,20 +9354,21 @@
                 "_stats": {
                   "systemId": "dnd5e",
                   "systemVersion": "2.0.0",
-                  "coreVersion": "12.331",
+                  "coreVersion": "13.351",
                   "createdTime": 1661787234221,
                   "modifiedTime": 1661791116513,
                   "lastModifiedBy": "dnd5ebuilder0000",
                   "compendiumSource": "Compendium.dnd5e.spells.n9pJzTDsAwQxJVRl",
-                  "duplicateSource": null
+                  "duplicateSource": null,
+                  "exportSource": null
+                },
+                "ownership": {
+                  "default": 0
                 }
               },
               {
                 "_id": "MUO1uYN7JR1hm4dR",
                 "name": "Thaumaturgy",
-                "ownership": {
-                  "default": 0
-                },
                 "type": "spell",
                 "system": {
                   "description": {
@@ -8875,7 +9397,7 @@
                       "choice": false
                     },
                     "template": {
-                      "units": "",
+                      "units": "ft",
                       "contiguous": false
                     }
                   },
@@ -8896,10 +9418,6 @@
                     "consumed": false,
                     "cost": 0,
                     "supply": 0
-                  },
-                  "preparation": {
-                    "mode": "prepared",
-                    "prepared": true
                   },
                   "properties": [
                     "vocal"
@@ -8931,7 +9449,8 @@
                       },
                       "effects": [],
                       "range": {
-                        "override": false
+                        "override": false,
+                        "units": "self"
                       },
                       "target": {
                         "prompt": true,
@@ -8967,7 +9486,8 @@
                         "idi": false,
                         "idr": false,
                         "idv": false,
-                        "ida": false
+                        "ida": false,
+                        "idm": false
                       },
                       "midiProperties": {
                         "ignoreTraits": [],
@@ -8975,7 +9495,6 @@
                         "triggeredActivityConditionText": "",
                         "triggeredActivityTargets": "targets",
                         "triggeredActivityRollAs": "self",
-                        "forceDialog": false,
                         "confirmTargets": "default",
                         "autoTargetType": "any",
                         "autoTargetAction": "default",
@@ -8986,7 +9505,17 @@
                         "rollMode": "default",
                         "chooseEffects": false,
                         "toggleEffect": false,
-                        "ignoreFullCover": false
+                        "ignoreFullCover": false,
+                        "autoConsume": false,
+                        "forceConsumeDialog": "default",
+                        "forceRollDialog": "default",
+                        "forceDamageDialog": "default",
+                        "otherActivityAsParentType": true,
+                        "removeChatButtons": "default",
+                        "magicEffect": false,
+                        "magicDamage": false,
+                        "noConcentrationCheck": false,
+                        "autoCEEffects": "default"
                       },
                       "isOverTimeFlag": false,
                       "overTimeProperties": {
@@ -8994,16 +9523,24 @@
                         "preRemoveConditionText": "",
                         "postRemoveConditionText": ""
                       },
-                      "otherActivityId": "none"
+                      "otherActivityId": "none",
+                      "flags": {},
+                      "visibility": {
+                        "level": {},
+                        "requireAttunement": false,
+                        "requireIdentification": false,
+                        "requireMagic": false
+                      },
+                      "otherActivityAsParentType": true
                     }
                   },
-                  "identifier": "thaumaturgy"
+                  "identifier": "thaumaturgy",
+                  "method": "spell",
+                  "prepared": 1
                 },
                 "sort": 0,
                 "flags": {
-                  "core": {
-                    "sourceId": "Compendium.dnd5e.spells.MUO1uYN7JR1hm4dR"
-                  },
+                  "core": {},
                   "dnd5e": {}
                 },
                 "img": "icons/magic/fire/explosion-fireball-small-purple-orange.webp",
@@ -9012,20 +9549,21 @@
                 "_stats": {
                   "systemId": "dnd5e",
                   "systemVersion": "2.0.0",
-                  "coreVersion": "12.331",
+                  "coreVersion": "13.351",
                   "createdTime": 1661787234127,
                   "modifiedTime": 1661791116513,
                   "lastModifiedBy": "dnd5ebuilder0000",
                   "compendiumSource": "Compendium.dnd5e.spells.MUO1uYN7JR1hm4dR",
-                  "duplicateSource": null
+                  "duplicateSource": null,
+                  "exportSource": null
+                },
+                "ownership": {
+                  "default": 0
                 }
               },
               {
                 "_id": "F0GsG0SJzsIOacwV",
                 "name": "Lesser Restoration",
-                "ownership": {
-                  "default": 0
-                },
                 "type": "spell",
                 "system": {
                   "description": {
@@ -9056,7 +9594,7 @@
                       "choice": false
                     },
                     "template": {
-                      "units": "",
+                      "units": "ft",
                       "contiguous": false
                     }
                   },
@@ -9076,10 +9614,6 @@
                     "consumed": false,
                     "cost": 0,
                     "supply": 0
-                  },
-                  "preparation": {
-                    "mode": "prepared",
-                    "prepared": true
                   },
                   "properties": [
                     "vocal",
@@ -9112,7 +9646,8 @@
                       },
                       "effects": [],
                       "range": {
-                        "override": false
+                        "override": false,
+                        "units": "self"
                       },
                       "target": {
                         "prompt": true,
@@ -9148,7 +9683,8 @@
                         "idi": false,
                         "idr": false,
                         "idv": false,
-                        "ida": false
+                        "ida": false,
+                        "idm": false
                       },
                       "midiProperties": {
                         "ignoreTraits": [],
@@ -9156,7 +9692,6 @@
                         "triggeredActivityConditionText": "",
                         "triggeredActivityTargets": "targets",
                         "triggeredActivityRollAs": "self",
-                        "forceDialog": false,
                         "confirmTargets": "default",
                         "autoTargetType": "any",
                         "autoTargetAction": "default",
@@ -9167,7 +9702,17 @@
                         "rollMode": "default",
                         "chooseEffects": false,
                         "toggleEffect": false,
-                        "ignoreFullCover": false
+                        "ignoreFullCover": false,
+                        "autoConsume": false,
+                        "forceConsumeDialog": "default",
+                        "forceRollDialog": "default",
+                        "forceDamageDialog": "default",
+                        "otherActivityAsParentType": true,
+                        "removeChatButtons": "default",
+                        "magicEffect": false,
+                        "magicDamage": false,
+                        "noConcentrationCheck": false,
+                        "autoCEEffects": "default"
                       },
                       "isOverTimeFlag": false,
                       "overTimeProperties": {
@@ -9175,16 +9720,24 @@
                         "preRemoveConditionText": "",
                         "postRemoveConditionText": ""
                       },
-                      "otherActivityId": "none"
+                      "otherActivityId": "none",
+                      "flags": {},
+                      "visibility": {
+                        "level": {},
+                        "requireAttunement": false,
+                        "requireIdentification": false,
+                        "requireMagic": false
+                      },
+                      "otherActivityAsParentType": true
                     }
                   },
-                  "identifier": "lesser-restoration"
+                  "identifier": "lesser-restoration",
+                  "method": "spell",
+                  "prepared": 1
                 },
                 "sort": 0,
                 "flags": {
-                  "core": {
-                    "sourceId": "Compendium.dnd5e.spells.F0GsG0SJzsIOacwV"
-                  },
+                  "core": {},
                   "dnd5e": {}
                 },
                 "img": "icons/magic/life/heart-cross-blue.webp",
@@ -9193,20 +9746,21 @@
                 "_stats": {
                   "systemId": "dnd5e",
                   "systemVersion": "2.0.0",
-                  "coreVersion": "12.331",
+                  "coreVersion": "13.351",
                   "createdTime": 1661787234103,
                   "modifiedTime": 1661791116514,
                   "lastModifiedBy": "dnd5ebuilder0000",
                   "compendiumSource": "Compendium.dnd5e.spells.F0GsG0SJzsIOacwV",
-                  "duplicateSource": null
+                  "duplicateSource": null,
+                  "exportSource": null
+                },
+                "ownership": {
+                  "default": 0
                 }
               },
               {
                 "_id": "15Fa6q1nH27XfbR8",
                 "name": "Dispel Magic",
-                "ownership": {
-                  "default": 0
-                },
                 "type": "spell",
                 "system": {
                   "description": {
@@ -9237,7 +9791,7 @@
                       "choice": false
                     },
                     "template": {
-                      "units": "",
+                      "units": "ft",
                       "contiguous": false
                     }
                   },
@@ -9258,10 +9812,6 @@
                     "consumed": false,
                     "cost": 0,
                     "supply": 0
-                  },
-                  "preparation": {
-                    "mode": "prepared",
-                    "prepared": true
                   },
                   "properties": [
                     "vocal",
@@ -9294,7 +9844,8 @@
                       },
                       "effects": [],
                       "range": {
-                        "override": false
+                        "override": false,
+                        "units": "self"
                       },
                       "target": {
                         "prompt": true,
@@ -9330,7 +9881,8 @@
                         "idi": false,
                         "idr": false,
                         "idv": false,
-                        "ida": false
+                        "ida": false,
+                        "idm": false
                       },
                       "midiProperties": {
                         "ignoreTraits": [],
@@ -9338,7 +9890,6 @@
                         "triggeredActivityConditionText": "",
                         "triggeredActivityTargets": "targets",
                         "triggeredActivityRollAs": "self",
-                        "forceDialog": false,
                         "confirmTargets": "default",
                         "autoTargetType": "any",
                         "autoTargetAction": "default",
@@ -9349,7 +9900,17 @@
                         "rollMode": "default",
                         "chooseEffects": false,
                         "toggleEffect": false,
-                        "ignoreFullCover": false
+                        "ignoreFullCover": false,
+                        "autoConsume": false,
+                        "forceConsumeDialog": "default",
+                        "forceRollDialog": "default",
+                        "forceDamageDialog": "default",
+                        "otherActivityAsParentType": true,
+                        "removeChatButtons": "default",
+                        "magicEffect": false,
+                        "magicDamage": false,
+                        "noConcentrationCheck": false,
+                        "autoCEEffects": "default"
                       },
                       "isOverTimeFlag": false,
                       "overTimeProperties": {
@@ -9357,16 +9918,24 @@
                         "preRemoveConditionText": "",
                         "postRemoveConditionText": ""
                       },
-                      "otherActivityId": "none"
+                      "otherActivityId": "none",
+                      "flags": {},
+                      "visibility": {
+                        "level": {},
+                        "requireAttunement": false,
+                        "requireIdentification": false,
+                        "requireMagic": false
+                      },
+                      "otherActivityAsParentType": true
                     }
                   },
-                  "identifier": "dispel-magic"
+                  "identifier": "dispel-magic",
+                  "method": "spell",
+                  "prepared": 1
                 },
                 "sort": 0,
                 "flags": {
-                  "core": {
-                    "sourceId": "Compendium.dnd5e.spells.15Fa6q1nH27XfbR8"
-                  },
+                  "core": {},
                   "dnd5e": {}
                 },
                 "img": "icons/skills/melee/strike-blade-knife-orange-blue.webp",
@@ -9375,20 +9944,21 @@
                 "_stats": {
                   "systemId": "dnd5e",
                   "systemVersion": "2.0.0",
-                  "coreVersion": "12.331",
+                  "coreVersion": "13.351",
                   "createdTime": 1661787234054,
                   "modifiedTime": 1661791116515,
                   "lastModifiedBy": "dnd5ebuilder0000",
                   "compendiumSource": "Compendium.dnd5e.spells.15Fa6q1nH27XfbR8",
-                  "duplicateSource": null
+                  "duplicateSource": null,
+                  "exportSource": null
+                },
+                "ownership": {
+                  "default": 0
                 }
               },
               {
                 "_id": "Bnn9Nzajixvow9xi",
                 "name": "Light",
-                "ownership": {
-                  "default": 0
-                },
                 "type": "spell",
                 "system": {
                   "description": {
@@ -9419,7 +9989,7 @@
                       "choice": false
                     },
                     "template": {
-                      "units": "",
+                      "units": "ft",
                       "contiguous": false
                     }
                   },
@@ -9439,10 +10009,6 @@
                     "consumed": false,
                     "cost": 0,
                     "supply": 0
-                  },
-                  "preparation": {
-                    "mode": "prepared",
-                    "prepared": true
                   },
                   "properties": [
                     "vocal",
@@ -9475,7 +10041,8 @@
                       },
                       "effects": [],
                       "range": {
-                        "override": false
+                        "override": false,
+                        "units": "self"
                       },
                       "target": {
                         "prompt": true,
@@ -9521,7 +10088,8 @@
                         "idi": false,
                         "idr": false,
                         "idv": false,
-                        "ida": false
+                        "ida": false,
+                        "idm": false
                       },
                       "midiProperties": {
                         "ignoreTraits": [],
@@ -9529,7 +10097,6 @@
                         "triggeredActivityConditionText": "",
                         "triggeredActivityTargets": "targets",
                         "triggeredActivityRollAs": "self",
-                        "forceDialog": false,
                         "confirmTargets": "default",
                         "autoTargetType": "any",
                         "autoTargetAction": "default",
@@ -9540,7 +10107,17 @@
                         "rollMode": "default",
                         "chooseEffects": false,
                         "toggleEffect": false,
-                        "ignoreFullCover": false
+                        "ignoreFullCover": false,
+                        "autoConsume": false,
+                        "forceConsumeDialog": "default",
+                        "forceRollDialog": "default",
+                        "forceDamageDialog": "default",
+                        "otherActivityAsParentType": true,
+                        "removeChatButtons": "default",
+                        "magicEffect": false,
+                        "magicDamage": false,
+                        "noConcentrationCheck": false,
+                        "autoCEEffects": "default"
                       },
                       "isOverTimeFlag": false,
                       "overTimeProperties": {
@@ -9548,16 +10125,25 @@
                         "preRemoveConditionText": "",
                         "postRemoveConditionText": ""
                       },
-                      "otherActivityId": ""
+                      "otherActivityId": "",
+                      "flags": {},
+                      "visibility": {
+                        "level": {},
+                        "requireAttunement": false,
+                        "requireIdentification": false,
+                        "requireMagic": false
+                      },
+                      "otherActivityAsParentType": true,
+                      "friendlySave": "default"
                     }
                   },
-                  "identifier": "light"
+                  "identifier": "light",
+                  "method": "spell",
+                  "prepared": 1
                 },
                 "sort": 0,
                 "flags": {
-                  "core": {
-                    "sourceId": "Compendium.dnd5e.spells.Bnn9Nzajixvow9xi"
-                  },
+                  "core": {},
                   "dnd5e": {}
                 },
                 "img": "icons/magic/light/explosion-star-small-blue-yellow.webp",
@@ -9566,20 +10152,21 @@
                 "_stats": {
                   "systemId": "dnd5e",
                   "systemVersion": "2.0.0",
-                  "coreVersion": "12.331",
+                  "coreVersion": "13.351",
                   "createdTime": 1661787234093,
                   "modifiedTime": 1661791116515,
                   "lastModifiedBy": "dnd5ebuilder0000",
                   "compendiumSource": "Compendium.dnd5e.spells.Bnn9Nzajixvow9xi",
-                  "duplicateSource": null
+                  "duplicateSource": null,
+                  "exportSource": null
+                },
+                "ownership": {
+                  "default": 0
                 }
               },
               {
                 "_id": "uUWb1wZgtMou0TVP",
                 "name": "Cure Wounds",
-                "ownership": {
-                  "default": 0
-                },
                 "type": "spell",
                 "system": {
                   "description": {
@@ -9610,7 +10197,7 @@
                       "choice": false
                     },
                     "template": {
-                      "units": "",
+                      "units": "ft",
                       "contiguous": false
                     }
                   },
@@ -9630,10 +10217,6 @@
                     "consumed": false,
                     "cost": 0,
                     "supply": 0
-                  },
-                  "preparation": {
-                    "mode": "prepared",
-                    "prepared": true
                   },
                   "properties": [
                     "vocal",
@@ -9666,7 +10249,8 @@
                       },
                       "effects": [],
                       "range": {
-                        "override": false
+                        "override": false,
+                        "units": "self"
                       },
                       "target": {
                         "prompt": true,
@@ -9713,7 +10297,8 @@
                         "idi": false,
                         "idr": false,
                         "idv": false,
-                        "ida": false
+                        "ida": false,
+                        "idm": false
                       },
                       "midiProperties": {
                         "ignoreTraits": [],
@@ -9721,7 +10306,6 @@
                         "triggeredActivityConditionText": "",
                         "triggeredActivityTargets": "targets",
                         "triggeredActivityRollAs": "self",
-                        "forceDialog": false,
                         "confirmTargets": "default",
                         "autoTargetType": "any",
                         "autoTargetAction": "default",
@@ -9732,23 +10316,40 @@
                         "rollMode": "default",
                         "chooseEffects": false,
                         "toggleEffect": false,
-                        "ignoreFullCover": false
+                        "ignoreFullCover": false,
+                        "autoConsume": false,
+                        "forceConsumeDialog": "default",
+                        "forceRollDialog": "default",
+                        "forceDamageDialog": "default",
+                        "otherActivityAsParentType": true,
+                        "removeChatButtons": "default",
+                        "magicEffect": false,
+                        "magicDamage": false,
+                        "noConcentrationCheck": false,
+                        "autoCEEffects": "default"
                       },
                       "isOverTimeFlag": false,
                       "overTimeProperties": {
                         "saveRemoves": true,
                         "preRemoveConditionText": "",
                         "postRemoveConditionText": ""
+                      },
+                      "flags": {},
+                      "visibility": {
+                        "level": {},
+                        "requireAttunement": false,
+                        "requireIdentification": false,
+                        "requireMagic": false
                       }
                     }
                   },
-                  "identifier": "cure-wounds"
+                  "identifier": "cure-wounds",
+                  "method": "spell",
+                  "prepared": 1
                 },
                 "sort": 0,
                 "flags": {
-                  "core": {
-                    "sourceId": "Compendium.dnd5e.spells.uUWb1wZgtMou0TVP"
-                  },
+                  "core": {},
                   "dnd5e": {}
                 },
                 "img": "icons/magic/life/heart-cross-green.webp",
@@ -9757,21 +10358,21 @@
                 "_stats": {
                   "systemId": "dnd5e",
                   "systemVersion": "2.0.0",
-                  "coreVersion": "12.331",
+                  "coreVersion": "13.351",
                   "createdTime": 1661787234236,
                   "modifiedTime": 1661791116516,
                   "lastModifiedBy": "dnd5ebuilder0000",
                   "compendiumSource": "Compendium.dnd5e.spells.uUWb1wZgtMou0TVP",
-                  "duplicateSource": null
+                  "duplicateSource": null,
+                  "exportSource": null
+                },
+                "ownership": {
+                  "default": 0
                 }
               },
               {
                 "_id": "7buEm5KhI5lP8m1z",
                 "name": "Guiding Bolt",
-                "ownership": {
-                  "default": 0,
-                  "6yhz13iFYYklKtgA": 3
-                },
                 "type": "spell",
                 "system": {
                   "description": {
@@ -9802,7 +10403,7 @@
                       "choice": false
                     },
                     "template": {
-                      "units": "",
+                      "units": "ft",
                       "contiguous": false
                     }
                   },
@@ -9823,10 +10424,6 @@
                     "consumed": false,
                     "cost": 0,
                     "supply": 0
-                  },
-                  "preparation": {
-                    "mode": "prepared",
-                    "prepared": true
                   },
                   "properties": [
                     "vocal",
@@ -9859,11 +10456,13 @@
                       },
                       "effects": [
                         {
-                          "_id": "wgz9W1RVTa0NB3xQ"
+                          "_id": "wgz9W1RVTa0NB3xQ",
+                          "level": {}
                         }
                       ],
                       "range": {
-                        "override": false
+                        "override": false,
+                        "units": "self"
                       },
                       "target": {
                         "prompt": true,
@@ -9930,7 +10529,8 @@
                         "idi": false,
                         "idr": false,
                         "idv": false,
-                        "ida": false
+                        "ida": false,
+                        "idm": false
                       },
                       "midiProperties": {
                         "ignoreTraits": [],
@@ -9938,7 +10538,6 @@
                         "triggeredActivityConditionText": "",
                         "triggeredActivityTargets": "targets",
                         "triggeredActivityRollAs": "self",
-                        "forceDialog": false,
                         "confirmTargets": "default",
                         "autoTargetType": "any",
                         "autoTargetAction": "default",
@@ -9949,7 +10548,17 @@
                         "rollMode": "default",
                         "chooseEffects": false,
                         "toggleEffect": false,
-                        "ignoreFullCover": false
+                        "ignoreFullCover": false,
+                        "autoConsume": false,
+                        "forceConsumeDialog": "default",
+                        "forceRollDialog": "default",
+                        "forceDamageDialog": "default",
+                        "otherActivityAsParentType": true,
+                        "removeChatButtons": "default",
+                        "magicEffect": false,
+                        "magicDamage": false,
+                        "noConcentrationCheck": false,
+                        "autoCEEffects": "default"
                       },
                       "isOverTimeFlag": false,
                       "overTimeProperties": {
@@ -9960,16 +10569,26 @@
                       "otherActivityId": "",
                       "attackMode": "oneHanded",
                       "ammunition": "",
-                      "otherActivityUuid": ""
+                      "otherActivityUuid": "",
+                      "flags": {},
+                      "visibility": {
+                        "level": {},
+                        "requireAttunement": false,
+                        "requireIdentification": false,
+                        "requireMagic": false
+                      },
+                      "otherActivityAsParentType": true,
+                      "attackRollPerTarget": "default",
+                      "fumbleThreshold": 1
                     }
                   },
-                  "identifier": "guiding-bolt"
+                  "identifier": "guiding-bolt",
+                  "method": "spell",
+                  "prepared": 1
                 },
                 "sort": 0,
                 "flags": {
-                  "core": {
-                    "sourceId": "Compendium.dnd5e.spells.7buEm5KhI5lP8m1z"
-                  },
+                  "core": {},
                   "dnd5e": {},
                   "midi-qol": {
                     "forceCEOff": true,
@@ -10081,14 +10700,15 @@
                     "description": "",
                     "statuses": [],
                     "_stats": {
-                      "coreVersion": "12.331",
+                      "coreVersion": "13.351",
                       "systemId": null,
                       "systemVersion": null,
                       "createdTime": null,
                       "modifiedTime": null,
                       "lastModifiedBy": null,
                       "compendiumSource": null,
-                      "duplicateSource": null
+                      "duplicateSource": null,
+                      "exportSource": null
                     },
                     "img": "icons/magic/fire/flame-burning-hand-purple.webp",
                     "type": "base",
@@ -10099,22 +10719,22 @@
                 "_stats": {
                   "systemId": "dnd5e",
                   "systemVersion": "3.2.1",
-                  "coreVersion": "12.331",
+                  "coreVersion": "13.351",
                   "createdTime": 1661787234075,
                   "modifiedTime": 1728509010386,
                   "lastModifiedBy": "6yhz13iFYYklKtgA",
                   "compendiumSource": "Compendium.dnd5e.spells.7buEm5KhI5lP8m1z",
-                  "duplicateSource": null
+                  "duplicateSource": null,
+                  "exportSource": null
                 },
-                "folder": null
+                "folder": null,
+                "ownership": {
+                  "default": 0
+                }
               },
               {
                 "_id": "gvdA9nPuWLck4tBl",
                 "name": "Sanctuary",
-                "ownership": {
-                  "default": 0,
-                  "6yhz13iFYYklKtgA": 3
-                },
                 "type": "spell",
                 "system": {
                   "description": {
@@ -10145,7 +10765,7 @@
                       "choice": false
                     },
                     "template": {
-                      "units": "",
+                      "units": "ft",
                       "contiguous": false
                     }
                   },
@@ -10166,10 +10786,6 @@
                     "consumed": false,
                     "cost": 0,
                     "supply": 0
-                  },
-                  "preparation": {
-                    "mode": "prepared",
-                    "prepared": true
                   },
                   "properties": [
                     "vocal",
@@ -10203,7 +10819,8 @@
                       },
                       "effects": [],
                       "range": {
-                        "override": false
+                        "override": false,
+                        "units": "self"
                       },
                       "target": {
                         "prompt": true,
@@ -10239,7 +10856,8 @@
                         "idi": false,
                         "idr": false,
                         "idv": false,
-                        "ida": false
+                        "ida": false,
+                        "idm": false
                       },
                       "midiProperties": {
                         "ignoreTraits": [],
@@ -10247,7 +10865,6 @@
                         "triggeredActivityConditionText": "",
                         "triggeredActivityTargets": "targets",
                         "triggeredActivityRollAs": "self",
-                        "forceDialog": false,
                         "confirmTargets": "default",
                         "autoTargetType": "any",
                         "autoTargetAction": "default",
@@ -10258,7 +10875,17 @@
                         "rollMode": "default",
                         "chooseEffects": false,
                         "toggleEffect": false,
-                        "ignoreFullCover": false
+                        "ignoreFullCover": false,
+                        "autoConsume": false,
+                        "forceConsumeDialog": "default",
+                        "forceRollDialog": "default",
+                        "forceDamageDialog": "default",
+                        "otherActivityAsParentType": true,
+                        "removeChatButtons": "default",
+                        "magicEffect": false,
+                        "magicDamage": false,
+                        "noConcentrationCheck": false,
+                        "autoCEEffects": "default"
                       },
                       "isOverTimeFlag": false,
                       "overTimeProperties": {
@@ -10266,16 +10893,24 @@
                         "preRemoveConditionText": "",
                         "postRemoveConditionText": ""
                       },
-                      "otherActivityId": "none"
+                      "otherActivityId": "none",
+                      "flags": {},
+                      "visibility": {
+                        "level": {},
+                        "requireAttunement": false,
+                        "requireIdentification": false,
+                        "requireMagic": false
+                      },
+                      "otherActivityAsParentType": true
                     }
                   },
-                  "identifier": "sanctuary"
+                  "identifier": "sanctuary",
+                  "method": "spell",
+                  "prepared": 1
                 },
                 "sort": 0,
                 "flags": {
-                  "core": {
-                    "sourceId": "Compendium.dnd5e.spells.gvdA9nPuWLck4tBl"
-                  },
+                  "core": {},
                   "dnd5e": {},
                   "midi-qol": {
                     "effectActivation": false,
@@ -10302,12 +10937,6 @@
                     "autoSaveFriendly": false,
                     "confirmTargets": "default",
                     "noConcentrationCheck": false
-                  },
-                  "exportSource": {
-                    "world": "development-testing",
-                    "system": "dnd5e",
-                    "coreVersion": "10.291",
-                    "systemVersion": "2.1.4"
                   },
                   "custom-character-sheet-sections": {
                     "sectionName": ""
@@ -10557,14 +11186,24 @@
                 "_stats": {
                   "systemId": "dnd5e",
                   "systemVersion": "3.2.1",
-                  "coreVersion": "12.331",
+                  "coreVersion": "13.351",
                   "createdTime": 1661787234193,
                   "modifiedTime": 1728509010386,
                   "lastModifiedBy": "6yhz13iFYYklKtgA",
                   "compendiumSource": "Compendium.dnd5e.spells.gvdA9nPuWLck4tBl",
-                  "duplicateSource": null
+                  "duplicateSource": null,
+                  "exportSource": {
+                    "worldId": "development-testing",
+                    "uuid": null,
+                    "coreVersion": "10.291",
+                    "systemId": "dnd5e",
+                    "systemVersion": "2.1.4"
+                  }
                 },
-                "folder": null
+                "folder": null,
+                "ownership": {
+                  "default": 0
+                }
               },
               {
                 "_id": "JbxsYXxSOTZbf9I0",
@@ -10598,7 +11237,7 @@
                       "choice": false
                     },
                     "template": {
-                      "units": "",
+                      "units": "ft",
                       "contiguous": false
                     }
                   },
@@ -10619,10 +11258,6 @@
                     "consumed": false,
                     "cost": 0,
                     "supply": 0
-                  },
-                  "preparation": {
-                    "mode": "prepared",
-                    "prepared": true
                   },
                   "properties": [
                     "vocal",
@@ -10655,7 +11290,8 @@
                       },
                       "effects": [],
                       "range": {
-                        "override": false
+                        "override": false,
+                        "units": "self"
                       },
                       "target": {
                         "prompt": true,
@@ -10691,7 +11327,8 @@
                         "idi": false,
                         "idr": false,
                         "idv": false,
-                        "ida": false
+                        "ida": false,
+                        "idm": false
                       },
                       "midiProperties": {
                         "ignoreTraits": [],
@@ -10699,7 +11336,6 @@
                         "triggeredActivityConditionText": "",
                         "triggeredActivityTargets": "targets",
                         "triggeredActivityRollAs": "self",
-                        "forceDialog": false,
                         "confirmTargets": "default",
                         "autoTargetType": "any",
                         "autoTargetAction": "default",
@@ -10710,7 +11346,17 @@
                         "rollMode": "default",
                         "chooseEffects": false,
                         "toggleEffect": false,
-                        "ignoreFullCover": false
+                        "ignoreFullCover": false,
+                        "autoConsume": false,
+                        "forceConsumeDialog": "default",
+                        "forceRollDialog": "default",
+                        "forceDamageDialog": "default",
+                        "otherActivityAsParentType": true,
+                        "removeChatButtons": "default",
+                        "magicEffect": false,
+                        "magicDamage": false,
+                        "noConcentrationCheck": false,
+                        "autoCEEffects": "default"
                       },
                       "isOverTimeFlag": false,
                       "overTimeProperties": {
@@ -10718,21 +11364,25 @@
                         "preRemoveConditionText": "",
                         "postRemoveConditionText": ""
                       },
-                      "otherActivityId": "none"
+                      "otherActivityId": "none",
+                      "flags": {},
+                      "visibility": {
+                        "level": {},
+                        "requireAttunement": false,
+                        "requireIdentification": false,
+                        "requireMagic": false
+                      },
+                      "otherActivityAsParentType": true
                     }
                   },
-                  "identifier": "spiritual-weapon"
+                  "identifier": "spiritual-weapon",
+                  "method": "spell",
+                  "prepared": 1
                 },
                 "effects": [],
                 "sort": 0,
-                "ownership": {
-                  "default": 0,
-                  "6yhz13iFYYklKtgA": 3
-                },
                 "flags": {
-                  "core": {
-                    "sourceId": "Compendium.dnd5e.spells.JbxsYXxSOTZbf9I0"
-                  },
+                  "core": {},
                   "dnd5e": {},
                   "midiProperties": {
                     "magicdam": true,
@@ -10766,12 +11416,6 @@
                   "custom-character-sheet-sections": {
                     "sectionName": ""
                   },
-                  "exportSource": {
-                    "world": "development-testing",
-                    "system": "dnd5e",
-                    "coreVersion": "10.303",
-                    "systemVersion": "2.2.1"
-                  },
                   "rest-recovery": {
                     "data": {
                       "recovery": {
@@ -10800,22 +11444,28 @@
                 "_stats": {
                   "systemId": "dnd5e",
                   "systemVersion": "3.2.1",
-                  "coreVersion": "12.331",
+                  "coreVersion": "13.351",
                   "createdTime": 1661787234115,
                   "modifiedTime": 1728509010386,
                   "lastModifiedBy": "6yhz13iFYYklKtgA",
                   "compendiumSource": "Compendium.dnd5e.spells.JbxsYXxSOTZbf9I0",
-                  "duplicateSource": null
+                  "duplicateSource": null,
+                  "exportSource": {
+                    "worldId": "development-testing",
+                    "uuid": null,
+                    "coreVersion": "10.303",
+                    "systemId": "dnd5e",
+                    "systemVersion": "2.2.1"
+                  }
                 },
-                "folder": null
+                "folder": null,
+                "ownership": {
+                  "default": 0
+                }
               },
               {
                 "_id": "uCud2s4TjMfjiXUb",
                 "name": "Spirit Guardians",
-                "ownership": {
-                  "default": 0,
-                  "6yhz13iFYYklKtgA": 3
-                },
                 "type": "spell",
                 "system": {
                   "description": {
@@ -10846,7 +11496,7 @@
                       "choice": false
                     },
                     "template": {
-                      "units": "",
+                      "units": "ft",
                       "contiguous": false
                     }
                   },
@@ -10867,10 +11517,6 @@
                     "consumed": false,
                     "cost": 0,
                     "supply": 0
-                  },
-                  "preparation": {
-                    "mode": "prepared",
-                    "prepared": true
                   },
                   "properties": [
                     "vocal",
@@ -10905,11 +11551,13 @@
                       },
                       "effects": [
                         {
-                          "_id": "7XN0MD4aruKyhVh4"
+                          "_id": "7XN0MD4aruKyhVh4",
+                          "level": {}
                         }
                       ],
                       "range": {
-                        "override": false
+                        "override": false,
+                        "units": "self"
                       },
                       "target": {
                         "prompt": true,
@@ -10945,7 +11593,8 @@
                         "idi": false,
                         "idr": false,
                         "idv": false,
-                        "ida": false
+                        "ida": false,
+                        "idm": false
                       },
                       "midiProperties": {
                         "ignoreTraits": [],
@@ -10953,7 +11602,6 @@
                         "triggeredActivityConditionText": "",
                         "triggeredActivityTargets": "targets",
                         "triggeredActivityRollAs": "self",
-                        "forceDialog": false,
                         "confirmTargets": "default",
                         "autoTargetType": "any",
                         "autoTargetAction": "default",
@@ -10964,7 +11612,17 @@
                         "rollMode": "default",
                         "chooseEffects": false,
                         "toggleEffect": false,
-                        "ignoreFullCover": false
+                        "ignoreFullCover": false,
+                        "autoConsume": false,
+                        "forceConsumeDialog": "default",
+                        "forceRollDialog": "default",
+                        "forceDamageDialog": "default",
+                        "otherActivityAsParentType": true,
+                        "removeChatButtons": "default",
+                        "magicEffect": false,
+                        "magicDamage": false,
+                        "noConcentrationCheck": false,
+                        "autoCEEffects": "default"
                       },
                       "isOverTimeFlag": false,
                       "overTimeProperties": {
@@ -10972,16 +11630,24 @@
                         "preRemoveConditionText": "",
                         "postRemoveConditionText": ""
                       },
-                      "otherActivityId": "none"
+                      "otherActivityId": "none",
+                      "flags": {},
+                      "visibility": {
+                        "level": {},
+                        "requireAttunement": false,
+                        "requireIdentification": false,
+                        "requireMagic": false
+                      },
+                      "otherActivityAsParentType": true
                     }
                   },
-                  "identifier": "spirit-guardians"
+                  "identifier": "spirit-guardians",
+                  "method": "spell",
+                  "prepared": 1
                 },
                 "sort": 0,
                 "flags": {
-                  "core": {
-                    "sourceId": "Compendium.dnd5e.spells.uCud2s4TjMfjiXUb"
-                  },
+                  "core": {},
                   "dnd5e": {},
                   "midi-qol": {
                     "forceCEOff": true,
@@ -11021,12 +11687,6 @@
                     "concentration": false,
                     "toggleEffect": false,
                     "ignoreTotalCover": false
-                  },
-                  "exportSource": {
-                    "world": "development-testing",
-                    "system": "dnd5e",
-                    "coreVersion": "10.291",
-                    "systemVersion": "2.1.5"
                   },
                   "autoanimations": {
                     "id": "94d1404a-d867-4f61-990f-ac34477b63cf",
@@ -11292,14 +11952,15 @@
                     "description": "",
                     "statuses": [],
                     "_stats": {
-                      "coreVersion": "12.331",
+                      "coreVersion": "13.351",
                       "systemId": null,
                       "systemVersion": null,
                       "createdTime": null,
                       "modifiedTime": null,
                       "lastModifiedBy": null,
                       "compendiumSource": null,
-                      "duplicateSource": null
+                      "duplicateSource": null,
+                      "exportSource": null
                     },
                     "img": "icons/magic/defensive/shield-barrier-blades-teal.webp",
                     "type": "base",
@@ -11310,14 +11971,24 @@
                 "_stats": {
                   "systemId": "dnd5e",
                   "systemVersion": "3.2.1",
-                  "coreVersion": "12.331",
+                  "coreVersion": "13.351",
                   "createdTime": 1661787234235,
                   "modifiedTime": 1728509010386,
                   "lastModifiedBy": "6yhz13iFYYklKtgA",
                   "compendiumSource": "Compendium.dnd5e.spells.uCud2s4TjMfjiXUb",
-                  "duplicateSource": null
+                  "duplicateSource": null,
+                  "exportSource": {
+                    "worldId": "development-testing",
+                    "uuid": null,
+                    "coreVersion": "10.291",
+                    "systemId": "dnd5e",
+                    "systemVersion": "2.1.5"
+                  }
                 },
-                "folder": null
+                "folder": null,
+                "ownership": {
+                  "default": 0
+                }
               }
             ],
             "effects": [],
@@ -11340,13 +12011,21 @@
               "scale": 1
             }
           },
-          "hexagonalShape": 0,
           "sort": 0,
           "locked": false,
           "occludable": {
             "radius": 0
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         }
       ],
       "lights": [
@@ -13124,7 +13803,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "o7lCpamYtEzTCYuE",
@@ -13147,7 +13827,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "PozcQRit5t1yCzIh",
@@ -13170,7 +13851,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "3v025z23UCOyxEzv",
@@ -13193,7 +13875,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ufOb9GJwu9hSGL3h",
@@ -13216,7 +13899,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "O5WIbqRajwIZwNfZ",
@@ -13239,7 +13923,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "1WtrDaftD9H2IxXf",
@@ -13262,7 +13947,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "C50GSTbO4XgoADjP",
@@ -13285,7 +13971,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "zv74aCkSiNP0KwG1",
@@ -13308,7 +13995,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "SRYZQ5ifF8TBXThC",
@@ -13331,7 +14019,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "z1LKAYS6YEHhfW5e",
@@ -13354,7 +14043,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ijZNPXDgBPsugCfh",
@@ -13377,7 +14067,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "sAjVbqaqk1Nee1SU",
@@ -13400,7 +14091,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "uLlHuOCrJJB6QPY2",
@@ -13423,7 +14115,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "F4EKrVP67aglowX2",
@@ -13446,7 +14139,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "tDXMI7xxqxBLQBxs",
@@ -13469,7 +14163,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "YqsqG3arxHG1hgev",
@@ -13492,7 +14187,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "K3OgOiSZ5W1k9MJj",
@@ -13515,7 +14211,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "0pRsQYYH34cY7bPT",
@@ -13538,7 +14235,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "VjEkWBkejsFUbBbA",
@@ -13579,7 +14277,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "xKMGhWqnoIgg8O1q",
@@ -13602,7 +14301,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "D7OoMJorbldibbgu",
@@ -13625,7 +14325,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "6hAb2NxtTdqH300o",
@@ -13648,7 +14349,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "IVnUMgZqmx0vtD66",
@@ -13671,7 +14373,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "HZLR6v0Yvs145dAv",
@@ -13694,7 +14397,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "cTOo1sw3Y06Eaoqw",
@@ -13735,7 +14439,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "02eAsIxi91j3zhlQ",
@@ -13776,7 +14481,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "zTVmTjNugrDqw7xe",
@@ -13799,7 +14505,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "8Q9MQmjBbvXYem5M",
@@ -13822,7 +14529,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "GT3ABq3oJdan1hen",
@@ -13845,7 +14553,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ksS49vXxwvgMHsIV",
@@ -13868,7 +14577,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "SvsLpyzjUdbQ78qV",
@@ -13891,7 +14601,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "DiXPucOzuz6Pw1QK",
@@ -13914,7 +14625,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "QckMpqE9goIi261O",
@@ -13937,7 +14649,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "PwP9fgcrPul8CWjw",
@@ -13960,7 +14673,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         }
       ],
       "playlist": null,
@@ -13970,17 +14684,7 @@
       "folder": "1Nsh8dTZlc27OmXn",
       "sort": 0,
       "flags": {
-        "token-attacher": {},
-        "exportSource": {
-          "world": "sdnd-cos-tuesday",
-          "system": "dnd5e",
-          "coreVersion": "11.315",
-          "systemVersion": "3.2.1"
-        }
-      },
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
+        "token-attacher": {}
       },
       "background": {
         "src": "modules/sdnd-strahd-adv/images/maps/Areas/N/n6_coffin_maker/shop_ground.webp",
@@ -14000,12 +14704,19 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": 1705180416812,
         "modifiedTime": 1733515827165,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "sdnd-cos-tuesday",
+          "uuid": null,
+          "coreVersion": "11.315",
+          "systemId": "dnd5e",
+          "systemVersion": "3.2.1"
+        }
       },
       "regions": [],
       "environment": {
@@ -14044,18 +14755,20 @@
       },
       "fog": {
         "exploration": true,
-        "reset": 1673878969335,
         "overlay": null,
         "colors": {
           "explored": null,
           "unexplored": null
         }
-      }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "active": false
     },
     {
       "_id": "bP2P3KvJqZkWifuE",
       "name": "N6.2. Coffin Shop (1st Floor)",
-      "active": false,
       "navigation": false,
       "navOrder": 0,
       "navName": "",
@@ -14239,12 +14952,9 @@
             "system": {},
             "items": [],
             "effects": [],
-            "ownership": null,
-            "flags": {}
+            "flags": {},
+            "ownership": null
           },
-          "appendNumber": false,
-          "prependAdjective": false,
-          "hexagonalShape": 0,
           "sort": 0,
           "locked": false,
           "occludable": {
@@ -14262,7 +14972,16 @@
               "texture": null
             }
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "_id": "c7mpu2NARaknxTBi",
@@ -14353,12 +15072,9 @@
             "system": {},
             "items": [],
             "effects": [],
-            "ownership": null,
-            "flags": {}
+            "flags": {},
+            "ownership": null
           },
-          "appendNumber": false,
-          "prependAdjective": false,
-          "hexagonalShape": 0,
           "sort": 0,
           "locked": false,
           "occludable": {
@@ -14376,7 +15092,16 @@
               "texture": null
             }
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "_id": "ROWJ7lDyZBgDx63i",
@@ -14472,12 +15197,9 @@
             "system": {},
             "items": [],
             "effects": [],
-            "ownership": null,
-            "flags": {}
+            "flags": {},
+            "ownership": null
           },
-          "appendNumber": false,
-          "prependAdjective": false,
-          "hexagonalShape": 0,
           "sort": 0,
           "locked": false,
           "occludable": {
@@ -14495,7 +15217,16 @@
               "texture": null
             }
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "_id": "Y5sI1AR4qquIjkqX",
@@ -14586,12 +15317,9 @@
             "system": {},
             "items": [],
             "effects": [],
-            "ownership": null,
-            "flags": {}
+            "flags": {},
+            "ownership": null
           },
-          "appendNumber": false,
-          "prependAdjective": false,
-          "hexagonalShape": 0,
           "sort": 0,
           "locked": false,
           "occludable": {
@@ -14609,7 +15337,16 @@
               "texture": null
             }
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "_id": "0cZSePVLLAuKb19q",
@@ -14705,12 +15442,9 @@
             "system": {},
             "items": [],
             "effects": [],
-            "ownership": null,
-            "flags": {}
+            "flags": {},
+            "ownership": null
           },
-          "appendNumber": false,
-          "prependAdjective": false,
-          "hexagonalShape": 0,
           "sort": 0,
           "locked": false,
           "occludable": {
@@ -14728,7 +15462,16 @@
               "texture": null
             }
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "_id": "24gfZG94qv9NGJlV",
@@ -14819,12 +15562,9 @@
             "system": {},
             "items": [],
             "effects": [],
-            "ownership": null,
-            "flags": {}
+            "flags": {},
+            "ownership": null
           },
-          "appendNumber": false,
-          "prependAdjective": false,
-          "hexagonalShape": 0,
           "sort": 0,
           "locked": false,
           "occludable": {
@@ -14842,7 +15582,16 @@
               "texture": null
             }
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "name": "Treasure",
@@ -15026,8 +15775,6 @@
             "contrast": 0
           },
           "detectionModes": [],
-          "appendNumber": false,
-          "prependAdjective": false,
           "actorId": "MBE40ejmR95pHVLP",
           "x": 1047,
           "y": 1642,
@@ -15081,31 +15828,30 @@
                 "effects": [],
                 "folder": "oDI9ynWcq39UUWEW",
                 "flags": {
-                  "exportSource": {
-                    "system": "dnd5e",
-                    "coreVersion": "11.315",
-                    "systemVersion": "3.1.2"
-                  },
-                  "core": {
-                    "sourceId": "Compendium.stroud-dnd-helpers.SDND-Items.Item.X1zZhd56NQdNGs6n"
-                  }
+                  "core": {}
                 },
                 "_stats": {
                   "systemId": "dnd5e",
                   "systemVersion": "3.2.1",
-                  "coreVersion": "12.331",
+                  "coreVersion": "13.351",
                   "createdTime": 1723338340157,
                   "modifiedTime": 1728908838695,
                   "lastModifiedBy": "6yhz13iFYYklKtgA",
-                  "compendiumSource": "Compendium.sdnd-strahd-adv.sdnd-cos-items.Item.6uSfn20sokbmbPu0",
-                  "duplicateSource": null
-                },
-                "ownership": {
-                  "default": 0,
-                  "6yhz13iFYYklKtgA": 3
+                  "compendiumSource": "Compendium.stroud-dnd-helpers.SDND-Items.Item.X1zZhd56NQdNGs6n",
+                  "duplicateSource": null,
+                  "exportSource": {
+                    "worldId": null,
+                    "uuid": null,
+                    "coreVersion": "11.315",
+                    "systemId": "dnd5e",
+                    "systemVersion": "3.1.2"
+                  }
                 },
                 "sort": 250000,
-                "_id": "MuN6dboZJXJkrmhM"
+                "_id": "MuN6dboZJXJkrmhM",
+                "ownership": {
+                  "default": 0
+                }
               }
             ],
             "effects": [],
@@ -15130,13 +15876,21 @@
               "scale": 1
             }
           },
-          "hexagonalShape": 0,
           "sort": 0,
           "locked": false,
           "occludable": {
             "radius": 0
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         }
       ],
       "lights": [
@@ -16049,7 +16803,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "8SU4nrRNDSFh4OFa",
@@ -16072,7 +16827,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Sml8ke7phM2NyeJx",
@@ -16095,7 +16851,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "eXhce0crPpsFcl3O",
@@ -16118,7 +16875,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Chi3lbQtVcPvCmWR",
@@ -16141,7 +16899,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "JsqEf81bfdSHog2d",
@@ -16164,7 +16923,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ygS5JVAdmCbKHDsE",
@@ -16187,7 +16947,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "1NNpKrErnkn4eR3n",
@@ -16210,7 +16971,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "QXmWATvkAOthMSeK",
@@ -16233,7 +16995,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "cOFwadNfPVyarLFP",
@@ -16256,7 +17019,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "kTffjPHdiGtcBPKt",
@@ -16279,7 +17043,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "WwYogGV09o9IGmgc",
@@ -16302,7 +17067,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "eaZv30f6HggAju7G",
@@ -16325,7 +17091,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "zSTUrAnNHpxi98h0",
@@ -16348,7 +17115,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "wQAKXbLpzEWFdk3y",
@@ -16371,7 +17139,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "CgtbYqhmtR1VCOpN",
@@ -16394,7 +17163,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "J3pqOfA3yrNqAeFc",
@@ -16417,7 +17187,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "OfQVmbDoBILTAYPT",
@@ -16456,7 +17227,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "0JI7BpSlgTp5j9zj",
@@ -16497,7 +17269,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "centuZzaSTA4dkWY",
@@ -16536,7 +17309,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "SXYjF8iUkaPbdwPF",
@@ -16575,7 +17349,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "yqHgsvKc9j6gviEE",
@@ -16614,7 +17389,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "CdftT3QNkHfGor77",
@@ -16653,7 +17429,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "oXPUwQHab5xCXiAw",
@@ -16676,7 +17453,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "xNhdBXc6b8Xtd7ea",
@@ -16715,7 +17493,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Ct12HN9qsL0m3VPh",
@@ -16754,7 +17533,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "nyUftXFieD3ql9kL",
@@ -16777,7 +17557,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "NoJoFwcEsMZ2by5R",
@@ -16800,7 +17581,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "CTH5pFWCyGEQh0g2",
@@ -16823,7 +17605,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "mSglNhtwslZJg11t",
@@ -16846,7 +17629,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "kICYVZoIDcrOd4lt",
@@ -16869,7 +17653,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "jpR3YoY00j5f3kv4",
@@ -16892,7 +17677,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "zrSVVReRTMIvp7j5",
@@ -16915,7 +17701,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "MLFchiZGcqykJSNe",
@@ -16938,7 +17725,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "light": 0,
@@ -16961,7 +17749,8 @@
             "sound": null,
             "attenuation": false
           },
-          "flags": {}
+          "flags": {},
+          "animation": null
         }
       ],
       "playlist": null,
@@ -16971,17 +17760,7 @@
       "folder": "1Nsh8dTZlc27OmXn",
       "sort": 0,
       "flags": {
-        "token-attacher": {},
-        "exportSource": {
-          "world": "sdnd-cos-tuesday",
-          "system": "dnd5e",
-          "coreVersion": "11.315",
-          "systemVersion": "3.2.1"
-        }
-      },
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
+        "token-attacher": {}
       },
       "background": {
         "src": "modules/sdnd-strahd-adv/images/maps/Areas/N/n6_coffin_maker/shop_first.webp",
@@ -17001,12 +17780,19 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "createdTime": 1704836371263,
         "modifiedTime": 1755264201670,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "sdnd-cos-tuesday",
+          "uuid": null,
+          "coreVersion": "11.315",
+          "systemId": "dnd5e",
+          "systemVersion": "3.2.1"
+        }
       },
       "regions": [],
       "environment": {
@@ -17045,13 +17831,16 @@
       },
       "fog": {
         "exploration": true,
-        "reset": 1673878969335,
         "overlay": null,
         "colors": {
           "explored": null,
           "unexplored": null
         }
-      }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "active": false
     }
   ],
   "tables": [],
@@ -17071,12 +17860,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": 1704839237165,
         "modifiedTime": 1704857631386,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "description": ""
     },
@@ -17093,12 +17883,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": 1704857160887,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
@@ -17114,12 +17905,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
@@ -17134,12 +17926,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": 1747943849391,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_id": "SgCwMBKLb1IzBVaz"
     },
@@ -17156,12 +17949,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.2.2",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": 1689092704006,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
@@ -17176,12 +17970,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": 1728506305718,
         "modifiedTime": 1728506305718,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "description": ""
     },
@@ -17197,12 +17992,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": 1728908280661,
         "modifiedTime": 1728908280661,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "description": ""
     },
@@ -17218,12 +18014,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": 1705027168419,
         "modifiedTime": 1705027175907,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "description": ""
     },
@@ -17240,12 +18037,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": 1705027185606,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
@@ -17260,12 +18058,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": 1705027268290,
         "modifiedTime": 1705027268290,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "description": ""
     },
@@ -17281,12 +18080,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "createdTime": 1704928235049,
         "modifiedTime": 1755203419193,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "description": ""
     },
@@ -17303,12 +18103,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": 1750267438535,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
@@ -17324,12 +18125,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.2.2",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": 1689092675085,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
@@ -17345,12 +18147,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
-        "compendiumSource": "Folder.HVgPUd5OjxKCjiLI",
-        "duplicateSource": null
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
@@ -17366,12 +18169,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.2.2",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": 1689092687175,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       }
     }
   ],
@@ -17381,12 +18185,13 @@
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
-    "coreVersion": "12.343",
+    "coreVersion": "13.351",
     "systemId": "dnd5e",
     "systemVersion": "3.3.1",
     "createdTime": 1733516948102,
-    "modifiedTime": 1755779516465,
-    "lastModifiedBy": "6yhz13iFYYklKtgA"
+    "modifiedTime": 1767281908018,
+    "lastModifiedBy": "6yhz13iFYYklKtgA",
+    "exportSource": null
   },
   "_key": "!adventures!ESm1BdNA8Nd3W2eN"
 }

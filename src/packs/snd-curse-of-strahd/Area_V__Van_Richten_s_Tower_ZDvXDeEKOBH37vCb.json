@@ -63,12 +63,6 @@
           "version": "3.2.14",
           "sharing": null
         },
-        "exportSource": {
-          "world": "curse_of_strahd",
-          "system": "dnd5e",
-          "coreVersion": "11.315",
-          "systemVersion": "3.1.2"
-        },
         "tidy5e-sheet": {
           "death": {
             "success": 0,
@@ -260,13 +254,10 @@
             }
           },
           "movement": {
-            "burrow": null,
-            "climb": null,
-            "fly": null,
-            "swim": null,
-            "walk": 30,
+            "walk": "30",
             "units": "ft",
-            "hover": false
+            "hover": false,
+            "ignoredDifficultTerrain": []
           },
           "attunement": {
             "max": 3
@@ -308,11 +299,13 @@
           "spell": {
             "level": 0
           },
-          "loyalty": {
-            "value": null
-          },
+          "loyalty": {},
           "hd": {
             "spent": 0
+          },
+          "price": {
+            "value": null,
+            "denomination": "gp"
           }
         },
         "details": {
@@ -686,12 +679,12 @@
         },
         "resources": {
           "legact": {
-            "value": 0,
-            "max": 0
+            "max": 0,
+            "spent": 0
           },
           "legres": {
-            "value": 0,
-            "max": 0
+            "max": 0,
+            "spent": 0
           },
           "lair": {
             "value": false,
@@ -704,16 +697,6 @@
           "custom": "",
           "revision": 1
         }
-      },
-      "ownership": {
-        "default": 2,
-        "6yhz13iFYYklKtgA": 3,
-        "nI44NHqYFA6fYSaA": 2,
-        "2o6fMFw0qQuhf5nV": 2,
-        "6A5pacAU8kbNm9PQ": 2,
-        "al3K6JMdvNPhJSGp": 2,
-        "PAsMQtGinm9l3io7": 2,
-        "39APwqo8boJ5in8b": 2
       },
       "prototypeToken": {
         "name": "Treasure",
@@ -836,20 +819,36 @@
             "scale": 1
           }
         },
-        "hexagonalShape": 0,
         "occludable": {
           "radius": 0
-        }
+        },
+        "turnMarker": {
+          "mode": 1,
+          "animation": null,
+          "src": null,
+          "disposition": false
+        },
+        "movementAction": null
       },
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "4.4.2",
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": 1754747181387,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
-        "compendiumSource": "Actor.MBE40ejmR95pHVLP",
-        "duplicateSource": null
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "curse_of_strahd",
+          "uuid": null,
+          "coreVersion": "11.315",
+          "systemId": "dnd5e",
+          "systemVersion": "3.1.2"
+        }
+      },
+      "ownership": {
+        "default": 2
       }
     },
     {
@@ -904,21 +903,23 @@
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             }
-          },
-          "ownership": {
-            "default": 0
           },
           "_stats": {
             "systemId": null,
             "systemVersion": null,
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": null,
             "modifiedTime": null,
             "lastModifiedBy": null,
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -963,7 +964,6 @@
             "rarity": "",
             "identified": true,
             "cover": null,
-            "crewed": false,
             "range": {
               "value": 5,
               "long": null,
@@ -1071,7 +1071,7 @@
                     "size": "",
                     "width": "",
                     "height": "",
-                    "units": ""
+                    "units": "ft"
                   },
                   "affects": {
                     "count": "",
@@ -1118,7 +1118,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -1126,7 +1127,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -1137,7 +1137,17 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -1148,27 +1158,41 @@
                 "otherActivityId": "",
                 "attackMode": "oneHanded",
                 "ammunition": "",
-                "otherActivityUuid": ""
+                "otherActivityUuid": "",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true,
+                "attackRollPerTarget": "default",
+                "fumbleThreshold": 1
               }
             },
             "identifier": "",
             "container": null,
             "attuned": false,
             "ammunition": {},
-            "magicalBonus": null
-          },
-          "ownership": {
-            "default": 0
+            "magicalBonus": null,
+            "crew": {
+              "value": []
+            }
           },
           "_stats": {
             "systemId": null,
             "systemVersion": null,
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": null,
             "modifiedTime": null,
             "lastModifiedBy": null,
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -1216,22 +1240,24 @@
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             },
             "properties": []
-          },
-          "ownership": {
-            "default": 0
           },
           "_stats": {
             "systemId": null,
             "systemVersion": null,
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": null,
             "modifiedTime": null,
             "lastModifiedBy": null,
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -1279,22 +1305,24 @@
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             },
             "properties": []
-          },
-          "ownership": {
-            "default": 0
           },
           "_stats": {
             "systemId": null,
             "systemVersion": null,
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": null,
             "modifiedTime": null,
             "lastModifiedBy": null,
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         }
       ],
@@ -1328,9 +1356,7 @@
         "midi-qol": {
           "concentration-damage": 0
         },
-        "core": {
-          "sourceId": "Compendium.world.ddb-lost-mines-phandelver-monsters.L076Qyk6whiz5vyx"
-        },
+        "core": {},
         "tidy5e-sheet": {
           "death": {
             "success": 0,
@@ -1525,13 +1551,10 @@
             }
           },
           "movement": {
-            "burrow": null,
-            "climb": null,
-            "fly": null,
-            "swim": null,
-            "walk": 25,
+            "walk": "25",
             "units": "ft",
-            "hover": false
+            "hover": false,
+            "ignoredDifficultTerrain": []
           },
           "attunement": {
             "max": 3
@@ -1578,6 +1601,10 @@
             "bonuses": {
               "save": ""
             }
+          },
+          "price": {
+            "value": null,
+            "denomination": "gp"
           }
         },
         "details": {
@@ -1963,12 +1990,12 @@
         },
         "resources": {
           "legact": {
-            "value": 0,
-            "max": 0
+            "max": 0,
+            "spent": 0
           },
           "legres": {
-            "value": 0,
-            "max": 0
+            "max": 0,
+            "spent": 0
           },
           "lair": {
             "value": false,
@@ -1981,10 +2008,6 @@
           "revision": 1,
           "rules": "2014"
         }
-      },
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
       },
       "prototypeToken": {
         "name": "Animated Armor",
@@ -2061,7 +2084,6 @@
         "detectionModes": [],
         "appendNumber": false,
         "prependAdjective": false,
-        "hexagonalShape": 0,
         "occludable": {
           "radius": 0
         },
@@ -2076,17 +2098,28 @@
             "scale": 1,
             "texture": null
           }
-        }
+        },
+        "turnMarker": {
+          "mode": 1,
+          "animation": null,
+          "src": null,
+          "disposition": false
+        },
+        "movementAction": null
       },
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "4.4.2",
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": 1754774801015,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": "Compendium.world.ddb-lost-mines-phandelver-monsters.L076Qyk6whiz5vyx",
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "ownership": {
+        "default": 0
       }
     },
     {
@@ -2258,13 +2291,14 @@
             }
           },
           "movement": {
-            "burrow": 0,
-            "climb": 0,
-            "fly": 0,
-            "swim": 0,
-            "walk": 30,
+            "burrow": "0",
+            "climb": "0",
+            "fly": "0",
+            "swim": "0",
+            "walk": "30",
             "units": "ft",
-            "hover": false
+            "hover": false,
+            "ignoredDifficultTerrain": []
           },
           "attunement": {
             "max": 3
@@ -2311,6 +2345,10 @@
           },
           "hd": {
             "spent": 0
+          },
+          "price": {
+            "value": null,
+            "denomination": "gp"
           }
         },
         "details": {
@@ -2703,12 +2741,12 @@
         },
         "resources": {
           "legact": {
-            "value": 0,
-            "max": 0
+            "max": 0,
+            "spent": 0
           },
           "legres": {
-            "value": 0,
-            "max": 0
+            "max": 0,
+            "spent": 0
           },
           "lair": {
             "value": false,
@@ -2815,10 +2853,16 @@
             "scale": 1
           }
         },
-        "hexagonalShape": 0,
         "occludable": {
           "radius": 0
-        }
+        },
+        "turnMarker": {
+          "mode": 1,
+          "animation": null,
+          "src": null,
+          "disposition": false
+        },
+        "movementAction": null
       },
       "items": [
         {
@@ -2858,29 +2902,29 @@
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             }
           },
           "effects": [],
           "folder": null,
           "sort": 0,
-          "ownership": {
-            "default": 0
-          },
           "flags": {
-            "core": {
-              "sourceId": "Compendium.dnd5e.monsterfeatures.MFuiImIvLzYA3osc"
-            }
+            "core": {}
           },
           "_stats": {
             "systemId": null,
             "systemVersion": null,
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": null,
             "modifiedTime": null,
             "lastModifiedBy": null,
             "compendiumSource": "Compendium.dnd5e.monsterfeatures.MFuiImIvLzYA3osc",
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -2920,29 +2964,29 @@
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             }
           },
           "effects": [],
           "folder": null,
           "sort": 0,
-          "ownership": {
-            "default": 0
-          },
           "flags": {
-            "core": {
-              "sourceId": "Compendium.dnd5e.monsterfeatures.Hc6MqLQhPTI1KOvm"
-            }
+            "core": {}
           },
           "_stats": {
             "systemId": null,
             "systemVersion": null,
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": null,
             "modifiedTime": null,
             "lastModifiedBy": null,
             "compendiumSource": "Compendium.dnd5e.monsterfeatures.Hc6MqLQhPTI1KOvm",
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -2982,29 +3026,29 @@
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             }
           },
           "effects": [],
           "folder": null,
           "sort": 0,
-          "ownership": {
-            "default": 0
-          },
           "flags": {
-            "core": {
-              "sourceId": "Compendium.dnd5e.monsterfeatures.nahRRxck9R5GVVFS"
-            }
+            "core": {}
           },
           "_stats": {
             "systemId": null,
             "systemVersion": null,
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": null,
             "modifiedTime": null,
             "lastModifiedBy": null,
             "compendiumSource": "Compendium.dnd5e.monsterfeatures.nahRRxck9R5GVVFS",
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -3062,13 +3106,13 @@
                 "duration": {
                   "concentration": false,
                   "value": "",
-                  "units": "",
+                  "units": "inst",
                   "special": "",
                   "override": false
                 },
                 "effects": [],
                 "range": {
-                  "units": "",
+                  "units": "self",
                   "special": "",
                   "override": false
                 },
@@ -3080,7 +3124,7 @@
                     "size": "",
                     "width": "",
                     "height": "",
-                    "units": ""
+                    "units": "ft"
                   },
                   "affects": {
                     "count": "",
@@ -3114,7 +3158,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -3122,7 +3167,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -3133,7 +3177,17 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -3141,7 +3195,15 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": "none"
+                "otherActivityId": "none",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true
               }
             },
             "identifier": "",
@@ -3149,30 +3211,30 @@
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             }
           },
           "effects": [],
           "folder": null,
           "sort": 0,
-          "ownership": {
-            "default": 0
-          },
           "flags": {
-            "core": {
-              "sourceId": "Compendium.dnd5e.monsterfeatures.EqoLg8T8EHvhJgKE"
-            },
+            "core": {},
             "dnd5e": {}
           },
           "_stats": {
             "systemId": null,
             "systemVersion": null,
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": null,
             "modifiedTime": null,
             "lastModifiedBy": null,
             "compendiumSource": "Compendium.dnd5e.monsterfeatures.EqoLg8T8EHvhJgKE",
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -3210,7 +3272,7 @@
             "range": {
               "value": null,
               "long": null,
-              "units": "",
+              "units": "ft",
               "reach": null
             },
             "uses": {
@@ -3271,7 +3333,6 @@
               "baseItem": ""
             },
             "container": null,
-            "crewed": false,
             "magicalBonus": null,
             "activities": {
               "dnd5eactivity000": {
@@ -3297,13 +3358,13 @@
                 "duration": {
                   "concentration": false,
                   "value": "",
-                  "units": "",
+                  "units": "inst",
                   "special": "",
                   "override": false
                 },
                 "effects": [],
                 "range": {
-                  "units": "",
+                  "units": "self",
                   "special": "",
                   "override": false
                 },
@@ -3315,7 +3376,7 @@
                     "size": "",
                     "width": "",
                     "height": "",
-                    "units": ""
+                    "units": "ft"
                   },
                   "affects": {
                     "count": "",
@@ -3362,7 +3423,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -3370,7 +3432,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -3381,7 +3442,17 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -3392,31 +3463,45 @@
                 "otherActivityId": "",
                 "attackMode": "oneHanded",
                 "ammunition": "",
-                "otherActivityUuid": ""
+                "otherActivityUuid": "",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true,
+                "attackRollPerTarget": "default",
+                "fumbleThreshold": 1
               }
             },
             "identifier": "",
             "attuned": false,
-            "ammunition": {}
+            "ammunition": {},
+            "crew": {
+              "value": []
+            }
           },
           "effects": [],
           "folder": null,
           "sort": 0,
-          "ownership": {
-            "default": 0
-          },
           "flags": {
             "dnd5e": {}
           },
           "_stats": {
             "systemId": null,
             "systemVersion": null,
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": null,
             "modifiedTime": null,
             "lastModifiedBy": null,
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -3553,7 +3638,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -3561,7 +3647,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -3572,7 +3657,17 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -3580,7 +3675,16 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": ""
+                "otherActivityId": "",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true,
+                "friendlySave": "default"
               }
             },
             "identifier": "",
@@ -3588,54 +3692,52 @@
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             }
           },
           "effects": [],
           "folder": null,
           "sort": 0,
-          "ownership": {
-            "default": 0
-          },
           "flags": {
-            "core": {
-              "sourceId": "Compendium.dnd5e.monsterfeatures.BDnjS1sQi2pdARh8"
-            },
+            "core": {},
             "dnd5e": {}
           },
           "_stats": {
             "systemId": null,
             "systemVersion": null,
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": null,
             "modifiedTime": null,
             "lastModifiedBy": null,
             "compendiumSource": "Compendium.dnd5e.monsterfeatures.BDnjS1sQi2pdARh8",
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         }
       ],
       "effects": [],
       "folder": "7fFXxvQlzOipnhM7",
       "sort": 200000,
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
-      },
       "flags": {
-        "core": {
-          "sourceId": "Compendium.dnd5e.monsters.Actor.z3gSIXHHWYaHjfBT"
-        }
+        "core": {}
       },
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "4.4.2",
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "createdTime": 1661787233254,
         "modifiedTime": 1754774832924,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": "Compendium.dnd5e.monsters.Actor.z3gSIXHHWYaHjfBT",
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "ownership": {
+        "default": 0
       }
     }
   ],
@@ -3667,20 +3769,21 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.1.2",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": 1720727188417,
             "modifiedTime": 1720747639687,
             "lastModifiedBy": "6yhz13iFYYklKtgA",
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "category": null,
+          "ownership": {
+            "default": -1
           }
         },
         {
@@ -3703,20 +3806,21 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.1.2",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": 1720727362230,
             "modifiedTime": 1720727974342,
             "lastModifiedBy": "6yhz13iFYYklKtgA",
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "category": null,
+          "ownership": {
+            "default": -1
           }
         },
         {
@@ -3739,20 +3843,21 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.1.2",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": 1720747433422,
             "modifiedTime": 1720747511545,
             "lastModifiedBy": "6yhz13iFYYklKtgA",
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "category": null,
+          "ownership": {
+            "default": -1
           }
         },
         {
@@ -3775,20 +3880,21 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.1.2",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": 1720747540396,
             "modifiedTime": 1720747540396,
             "lastModifiedBy": "6yhz13iFYYklKtgA",
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "category": null,
+          "ownership": {
+            "default": -1
           }
         },
         {
@@ -3811,20 +3917,21 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.1.2",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": 1720747666410,
             "modifiedTime": 1720747666410,
             "lastModifiedBy": "6yhz13iFYYklKtgA",
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "category": null,
+          "ownership": {
+            "default": -1
           }
         },
         {
@@ -3847,20 +3954,21 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.1.2",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": 1720748922529,
             "modifiedTime": 1720748964907,
             "lastModifiedBy": "6yhz13iFYYklKtgA",
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "category": null,
+          "ownership": {
+            "default": -1
           }
         },
         {
@@ -3883,20 +3991,21 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.1.2",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": 1720749145946,
             "modifiedTime": 1720749166646,
             "lastModifiedBy": "6yhz13iFYYklKtgA",
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "category": null,
+          "ownership": {
+            "default": -1
           }
         },
         {
@@ -3919,20 +4028,21 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.2.1",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": 1720749211521,
             "modifiedTime": 1729118240181,
             "lastModifiedBy": "6yhz13iFYYklKtgA",
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "category": null,
+          "ownership": {
+            "default": -1
           }
         },
         {
@@ -3955,38 +4065,40 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
             "systemVersion": "3.1.2",
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "createdTime": 1720756197532,
             "modifiedTime": 1720756230887,
             "lastModifiedBy": "6yhz13iFYYklKtgA",
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
+          },
+          "category": null,
+          "ownership": {
+            "default": -1
           }
         }
       ],
       "sort": 100000,
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
-      },
       "flags": {},
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": 1720727166539,
         "modifiedTime": 1729118240181,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "categories": [],
+      "ownership": {
+        "default": 0
       }
     }
   ],
@@ -3994,7 +4106,6 @@
     {
       "_id": "NujGRZv7TxBFUwpT",
       "name": "V1. Van Richten’s Tower (Ground Floor)",
-      "active": false,
       "navigation": false,
       "navOrder": 975000,
       "navName": "",
@@ -4101,8 +4212,6 @@
             "contrast": 0
           },
           "detectionModes": [],
-          "appendNumber": false,
-          "prependAdjective": false,
           "actorId": "BT6Bjco61v5NcudL",
           "x": 1359,
           "y": 1137,
@@ -4132,13 +4241,21 @@
               "scale": 1
             }
           },
-          "hexagonalShape": 0,
           "sort": 0,
           "locked": false,
           "occludable": {
             "radius": 0
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "name": "Stone Golem",
@@ -4223,8 +4340,6 @@
             "contrast": 0
           },
           "detectionModes": [],
-          "appendNumber": false,
-          "prependAdjective": false,
           "actorId": "BT6Bjco61v5NcudL",
           "x": 1239,
           "y": 1157,
@@ -4254,13 +4369,21 @@
               "scale": 1
             }
           },
-          "hexagonalShape": 0,
           "sort": 0,
           "locked": false,
           "occludable": {
             "radius": 0
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "name": "Stone Golem",
@@ -4341,8 +4464,6 @@
             "contrast": 0
           },
           "detectionModes": [],
-          "appendNumber": false,
-          "prependAdjective": false,
           "actorId": "BT6Bjco61v5NcudL",
           "x": 1239,
           "y": 1258,
@@ -4372,13 +4493,21 @@
               "scale": 1
             }
           },
-          "hexagonalShape": 0,
           "sort": 0,
           "locked": false,
           "occludable": {
             "radius": 0
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "name": "Stone Golem",
@@ -4459,8 +4588,6 @@
             "contrast": 0
           },
           "detectionModes": [],
-          "appendNumber": false,
-          "prependAdjective": false,
           "actorId": "BT6Bjco61v5NcudL",
           "x": 1357,
           "y": 1258,
@@ -4490,13 +4617,21 @@
               "scale": 1
             }
           },
-          "hexagonalShape": 0,
           "sort": 0,
           "locked": false,
           "occludable": {
             "radius": 0
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         }
       ],
       "lights": [
@@ -5463,7 +5598,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "UWjOSRyHKkIIo9W4",
@@ -5486,7 +5622,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Jqp7k0hlYzTf3wxT",
@@ -5509,7 +5646,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "vwWMeZlbTrIrpypN",
@@ -5532,7 +5670,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "CxwQP7rI1Fu2vntE",
@@ -5555,7 +5694,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "LVLBhBqKSUabt5NS",
@@ -5578,7 +5718,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "BopJnLZlzw6xHd2g",
@@ -5601,7 +5742,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "pfi5UHBSN0LO5MmE",
@@ -5624,7 +5766,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "nVVw8GNnnAKWBHPw",
@@ -5647,7 +5790,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "vleC7sCtgUjIEjQA",
@@ -5670,7 +5814,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "iz1A20MzGoYiXVzq",
@@ -5693,7 +5838,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "xbDSWVYPLdn3sdJX",
@@ -5716,7 +5862,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "XhqzKtrAbdeUovDm",
@@ -5739,7 +5886,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "7QnVI5NGliubj2Sl",
@@ -5762,7 +5910,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "F8HHaS9JJrEmiBBm",
@@ -5785,7 +5934,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "fl0JXkJ36eTla9Vz",
@@ -5808,7 +5958,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "sAvHicBHW9AJxHDs",
@@ -5831,7 +5982,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "lMn38C5DWPezsuJf",
@@ -5854,7 +6006,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "JGapwBP5vBadR1Dj",
@@ -5877,7 +6030,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "thPGP1EKgI2YSTPZ",
@@ -5900,7 +6054,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "SwpiczbpUSIpg3GR",
@@ -5923,7 +6078,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "pdYiu5ukVYGAAZPe",
@@ -5946,7 +6102,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Oyy5bW7UtYKuuT6E",
@@ -5969,7 +6126,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "6nTsNqrpABVwxpBf",
@@ -5992,7 +6150,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "FlVoxdDsqtQsS3C1",
@@ -6015,7 +6174,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "FRN14nzjYbuSBJQW",
@@ -6038,7 +6198,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "3AFjiQnF0pnSr6gz",
@@ -6061,7 +6222,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "0uWZtBxKYI8R2OhV",
@@ -6084,7 +6246,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "light": 20,
@@ -6107,7 +6270,8 @@
             "sound": null,
             "attenuation": false
           },
-          "flags": {}
+          "flags": {},
+          "animation": null
         },
         {
           "light": 20,
@@ -6130,7 +6294,8 @@
             "sound": null,
             "attenuation": false
           },
-          "flags": {}
+          "flags": {},
+          "animation": null
         },
         {
           "light": 20,
@@ -6153,7 +6318,8 @@
             "sound": null,
             "attenuation": false
           },
-          "flags": {}
+          "flags": {},
+          "animation": null
         },
         {
           "light": 20,
@@ -6176,7 +6342,8 @@
             "sound": null,
             "attenuation": false
           },
-          "flags": {}
+          "flags": {},
+          "animation": null
         },
         {
           "light": 20,
@@ -6199,7 +6366,8 @@
             "sound": null,
             "attenuation": false
           },
-          "flags": {}
+          "flags": {},
+          "animation": null
         },
         {
           "light": 20,
@@ -6222,7 +6390,8 @@
             "sound": null,
             "attenuation": false
           },
-          "flags": {}
+          "flags": {},
+          "animation": null
         },
         {
           "light": 20,
@@ -6245,7 +6414,8 @@
             "sound": null,
             "attenuation": false
           },
-          "flags": {}
+          "flags": {},
+          "animation": null
         },
         {
           "light": 20,
@@ -6281,7 +6451,8 @@
               "synchronizationGroup": ""
             }
           },
-          "doorSound": ""
+          "doorSound": "",
+          "animation": null
         },
         {
           "light": 0,
@@ -6304,7 +6475,8 @@
             "sound": null,
             "attenuation": false
           },
-          "flags": {}
+          "flags": {},
+          "animation": null
         },
         {
           "light": 0,
@@ -6327,7 +6499,8 @@
             "sound": null,
             "attenuation": false
           },
-          "flags": {}
+          "flags": {},
+          "animation": null
         },
         {
           "light": 0,
@@ -6350,7 +6523,8 @@
             "sound": null,
             "attenuation": false
           },
-          "flags": {}
+          "flags": {},
+          "animation": null
         },
         {
           "light": 30,
@@ -6383,7 +6557,8 @@
               "secret": false
             },
             "smartdoors": {}
-          }
+          },
+          "animation": null
         },
         {
           "light": 30,
@@ -6416,7 +6591,8 @@
               "secret": false
             },
             "smartdoors": {}
-          }
+          },
+          "animation": null
         }
       ],
       "playlist": null,
@@ -6427,10 +6603,6 @@
       "sort": 100000,
       "flags": {
         "token-attacher": {}
-      },
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
       },
       "background": {
         "src": "modules/sdnd-strahd-adv/images/maps/Areas/V/v1_vr_tower/ground_floor.webp",
@@ -6450,12 +6622,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "createdTime": 1719970603466,
         "modifiedTime": 1750195534621,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "regions": [],
       "environment": {
@@ -6494,18 +6667,20 @@
       },
       "fog": {
         "exploration": true,
-        "reset": 1675555379150,
         "overlay": null,
         "colors": {
           "explored": null,
           "unexplored": null
         }
-      }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "active": false
     },
     {
       "_id": "zqbxmKbL4QbicKiM",
       "name": "V2. Van Richten’s Tower (1st Floor)",
-      "active": false,
       "navigation": false,
       "navOrder": 1075000,
       "navName": "",
@@ -7454,7 +7629,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "zg5ApN3HrDqSObW6",
@@ -7477,7 +7653,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ZwWGVFzqRpHnOU87",
@@ -7500,7 +7677,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "JwUijiA7YsMU86wA",
@@ -7523,7 +7701,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Wmd23GUOIjXHzTiv",
@@ -7546,7 +7725,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "amlrAimHiqlYYm8J",
@@ -7569,7 +7749,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "qp06y2lAZDlWosEj",
@@ -7592,7 +7773,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "klKyu0pX5IUTFKf4",
@@ -7615,7 +7797,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "TbiQEvBiTAyOztVr",
@@ -7638,7 +7821,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ZyKW1u9VOKLKgm8E",
@@ -7661,7 +7845,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "lIqWgIPEgB3bTS4B",
@@ -7700,7 +7885,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "j9kjOq4byHzhReBZ",
@@ -7723,7 +7909,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "XlvKxz7u4bHJb3jO",
@@ -7762,7 +7949,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "bWN5bNWKgKkjDDeg",
@@ -7785,7 +7973,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ZY4X1BUlzg1FChAz",
@@ -7808,7 +7997,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "DP87GM4rd2ny1WKT",
@@ -7831,7 +8021,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "gPOt0PvXNpEwJyJp",
@@ -7854,7 +8045,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "aaJVpyWJEimtPRH2",
@@ -7877,7 +8069,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "NpMrlKZEHYkXptWt",
@@ -7900,7 +8093,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "VUUQrLmFeG54CVxK",
@@ -7923,7 +8117,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "WrZ6C6MCRA821fJv",
@@ -7946,7 +8141,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "tjEbgwmkxyIDTax3",
@@ -7969,7 +8165,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "sVQL3W32GUCA085h",
@@ -7992,7 +8189,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "rLSeISxkSB0DA1ri",
@@ -8015,7 +8213,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "O5D3SLYn8fRjxZUy",
@@ -8054,7 +8253,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "6SkTX5ynWdMMstnl",
@@ -8077,7 +8277,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "P78SOSmpiY73OHdM",
@@ -8116,7 +8317,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "1Xguo862WESBmhWs",
@@ -8139,7 +8341,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "LmPemogl2DXpDrfW",
@@ -8162,7 +8365,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "UMDK9iTemc05rntw",
@@ -8185,7 +8389,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "hV7bejTq3iUidIHT",
@@ -8208,7 +8413,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "10oDm7opmBHU3WJM",
@@ -8231,7 +8437,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "YheR5PYtISH7UtRI",
@@ -8270,7 +8477,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "F0PhTUC62PJXVFPF",
@@ -8293,7 +8501,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "4z0McIGRpWMUp3jL",
@@ -8332,7 +8541,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "pTe8Zao0d38oyFVh",
@@ -8355,7 +8565,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "mlopMm4MKy7TFIBl",
@@ -8394,7 +8605,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "j4lchPDNALL4LC8Q",
@@ -8433,7 +8645,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         }
       ],
       "playlist": null,
@@ -8444,10 +8657,6 @@
       "sort": 200000,
       "flags": {
         "token-attacher": {}
-      },
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
       },
       "background": {
         "src": "modules/sdnd-strahd-adv/images/maps/Areas/V/v1_vr_tower/first_floor.webp",
@@ -8467,12 +8676,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "createdTime": 1719970613989,
         "modifiedTime": 1750195536249,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "regions": [],
       "environment": {
@@ -8511,18 +8721,20 @@
       },
       "fog": {
         "exploration": true,
-        "reset": 1675555494382,
         "overlay": null,
         "colors": {
           "explored": null,
           "unexplored": null
         }
-      }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "active": false
     },
     {
       "_id": "apSEO786aX6hNU0y",
       "name": "V3. Van Richten’s Tower (2nd Floor)",
-      "active": false,
       "navigation": false,
       "navOrder": 1175000,
       "navName": "",
@@ -9275,7 +9487,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "2RB9z6SCvhzNPnG6",
@@ -9298,7 +9511,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "G5sZHYxS2eF851yw",
@@ -9337,7 +9551,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "PgBLMxGaLqP2LFPV",
@@ -9376,7 +9591,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "1x7Tl5NMRG5yb6jW",
@@ -9399,7 +9615,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "BCG2bIfaxPj3F7rw",
@@ -9422,7 +9639,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "hSeYaRzzFpJNh6dh",
@@ -9461,7 +9679,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Y8T3SINa8jfvGuHS",
@@ -9500,7 +9719,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "vuckkG0RJSddZKpY",
@@ -9523,7 +9743,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "W2aIbFDNh6S4FdoG",
@@ -9546,7 +9767,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "gfCvloViSzp7YyOK",
@@ -9569,7 +9791,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "EjkaKlPTOgIw6d9R",
@@ -9592,7 +9815,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "FYk7bAa2DSyB5ao9",
@@ -9615,7 +9839,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "oOz4sFvlGSI7yeRm",
@@ -9654,7 +9879,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ruwkBx2gLlwJCcNS",
@@ -9693,7 +9919,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "FzODvN5QZ7zXE2Jj",
@@ -9716,7 +9943,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "NchtmA3I5EZu05s6",
@@ -9739,7 +9967,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "2ctf7MPjLN42uePj",
@@ -9762,7 +9991,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "WNiLCZTncNHWp0VZ",
@@ -9785,7 +10015,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "WjNW9aW5blA1GiMJ",
@@ -9808,7 +10039,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "vYCskECkUlsPXkV0",
@@ -9831,7 +10063,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "nzA9e6Hm7rBAF05E",
@@ -9854,7 +10087,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "hpno2JQx45fH56v0",
@@ -9877,7 +10111,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "fLMjdokWVgnmKDk6",
@@ -9900,7 +10135,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "sQh3FavSTl8aGngK",
@@ -9923,7 +10159,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "C7XnKdldDQnJ4CDJ",
@@ -9946,7 +10183,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "vaf9PkVrIe45qgiw",
@@ -9969,7 +10207,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "TsGAtHSVZLUHlGJE",
@@ -9992,7 +10231,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "PYkUqcwbXD8vdktY",
@@ -10015,7 +10255,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "D9QU3SM8Aqm7LzmW",
@@ -10038,7 +10279,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "7hJGNlk0PcW6EGK2",
@@ -10061,7 +10303,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "OjJA1J5VYytqgiQZ",
@@ -10084,7 +10327,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "aVp27ZJV7ULJDvj7",
@@ -10107,7 +10351,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "uRjvBEUw2yESXYxj",
@@ -10130,7 +10375,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         }
       ],
       "playlist": null,
@@ -10141,10 +10387,6 @@
       "sort": 300000,
       "flags": {
         "token-attacher": {}
-      },
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
       },
       "background": {
         "src": "modules/sdnd-strahd-adv/images/maps/Areas/V/v1_vr_tower/second_floor.webp",
@@ -10164,12 +10406,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "createdTime": 1719970624243,
         "modifiedTime": 1750195538169,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "regions": [],
       "environment": {
@@ -10208,18 +10451,20 @@
       },
       "fog": {
         "exploration": true,
-        "reset": 1675555536415,
         "overlay": null,
         "colors": {
           "explored": null,
           "unexplored": null
         }
-      }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "active": false
     },
     {
       "_id": "xnIetFduR7Fv39PV",
       "name": "V4. Van Richten’s Tower (3rd Floor)",
-      "active": false,
       "navigation": false,
       "navOrder": 1275000,
       "navName": "",
@@ -10330,8 +10575,6 @@
             "contrast": 0
           },
           "detectionModes": [],
-          "appendNumber": false,
-          "prependAdjective": false,
           "actorId": "CuKLs0fcyWvOs7Km",
           "x": 1233,
           "y": 985,
@@ -10368,13 +10611,21 @@
               "scale": 1
             }
           },
-          "hexagonalShape": 0,
           "sort": 0,
           "locked": false,
           "occludable": {
             "radius": 0
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         },
         {
           "name": "Treasure",
@@ -10486,8 +10737,6 @@
             "contrast": 0
           },
           "detectionModes": [],
-          "appendNumber": false,
-          "prependAdjective": false,
           "actorId": "MBE40ejmR95pHVLP",
           "x": 1250,
           "y": 950,
@@ -10519,13 +10768,21 @@
               "scale": 1
             }
           },
-          "hexagonalShape": 0,
           "sort": 0,
           "locked": false,
           "occludable": {
             "radius": 0
           },
-          "_regions": []
+          "_regions": [],
+          "shape": 4,
+          "turnMarker": {
+            "mode": 1,
+            "animation": null,
+            "src": null,
+            "disposition": false
+          },
+          "movementAction": null,
+          "_movementHistory": []
         }
       ],
       "lights": [
@@ -10943,7 +11200,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "VvEHgAPLx0tIkF3r",
@@ -10966,7 +11224,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "yeL5zv1V9LDQTr8y",
@@ -10989,7 +11248,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "eJiKEhlqf8X4gQGt",
@@ -11012,7 +11272,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "KSTIJ6zsuOssYJ6H",
@@ -11051,7 +11312,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "xrGYcJ00z2TUbMe7",
@@ -11090,7 +11352,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "MbbuvLu6HUKv5wJy",
@@ -11113,7 +11376,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ukWhQDX08EBc6KGP",
@@ -11136,7 +11400,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "2bnnQdKKKjml8NZn",
@@ -11159,7 +11424,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "8kws0nFBvXtO831K",
@@ -11182,7 +11448,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "rVDZaSCfwt1mR8wJ",
@@ -11205,7 +11472,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "53jmsQQnPrt048Mn",
@@ -11228,7 +11496,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "FEV5KNVoUWlnnQbo",
@@ -11251,7 +11520,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "nfEqfOD5PBjGKrDu",
@@ -11274,7 +11544,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "y1MEu0mqjxZ1Vx4m",
@@ -11313,7 +11584,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "AGEHntSORyG1BT4Z",
@@ -11352,7 +11624,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "a8wSLI9bjGR0YgZd",
@@ -11375,7 +11648,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "ckKtbiBuljAYvcsn",
@@ -11398,7 +11672,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "hrls3QLrbimplymy",
@@ -11421,7 +11696,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "DIdPLXafn8ZA21eq",
@@ -11444,7 +11720,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "HfFGpGXeo141C0P7",
@@ -11483,7 +11760,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "IQPBuqBwy99tfyUB",
@@ -11506,7 +11784,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "bWaH5SwNJqxzA4EI",
@@ -11529,7 +11808,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Kws7pIZq6MD3FK29",
@@ -11552,7 +11832,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "xhAZgVYVPhfCeZXQ",
@@ -11575,7 +11856,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Lb8InthQmMF9frpH",
@@ -11614,7 +11896,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "JdNDYcon5gDTKVT9",
@@ -11637,7 +11920,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "dysqxW2p1Aj0XyN4",
@@ -11676,7 +11960,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "4WP9cZ76u8HVWQQZ",
@@ -11699,7 +11984,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "BR26pujc4AMpvdDP",
@@ -11722,7 +12008,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "o7oGnz5maVbZz9yK",
@@ -11745,7 +12032,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "iksk2geP3QSYAQTX",
@@ -11768,7 +12056,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Vyc96RCX4K3cEsbz",
@@ -11807,7 +12096,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "hTccugGYooVMFDO6",
@@ -11830,7 +12120,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "DCctwwOsv6hznI6o",
@@ -11853,7 +12144,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "fiLWgpXMfn5vxjnP",
@@ -11876,7 +12168,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Idh4P9gdqPheg5Lu",
@@ -11899,7 +12192,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "S4zJ08NSuKW7ELV4",
@@ -11938,7 +12232,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "v05Xyqzm35m1Vc4l",
@@ -11961,7 +12256,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Er4EY79ex9NrhVK8",
@@ -12000,7 +12296,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "RbzaXNqWUfhWbnor",
@@ -12023,7 +12320,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "Oup0GLCxAWxHm7dI",
@@ -12046,7 +12344,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "s1nBoW6hnEaoUkZE",
@@ -12069,7 +12368,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "dehBaBvm1EqCrkot",
@@ -12092,7 +12392,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "SDVrvqUq9xMEPbrJ",
@@ -12131,7 +12432,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "CVuNjxmF3FolkyOz",
@@ -12154,7 +12456,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "lWgInIghAPDtjg1z",
@@ -12193,7 +12496,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "6e0tnBQCxk5UhB8X",
@@ -12216,7 +12520,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "aiVQkils8I2OWjbZ",
@@ -12239,7 +12544,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "J2xpXaGjdkbObAwF",
@@ -12262,7 +12568,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "m7Wv2zTGj9mADKjc",
@@ -12285,7 +12592,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         }
       ],
       "playlist": null,
@@ -12296,10 +12604,6 @@
       "sort": 400000,
       "flags": {
         "token-attacher": {}
-      },
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
       },
       "background": {
         "src": "modules/sdnd-strahd-adv/images/maps/Areas/V/v1_vr_tower/third_floor.webp",
@@ -12319,12 +12623,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "createdTime": 1719970636070,
         "modifiedTime": 1750195540487,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "regions": [],
       "environment": {
@@ -12363,18 +12668,20 @@
       },
       "fog": {
         "exploration": true,
-        "reset": 1675555559422,
         "overlay": null,
         "colors": {
           "explored": null,
           "unexplored": null
         }
-      }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "active": false
     },
     {
       "_id": "5E20MqL1Ne11cg1s",
       "name": "V5: Van Richten's Tower (Destroyed)",
-      "active": false,
       "navigation": false,
       "navOrder": 0,
       "navName": "",
@@ -12574,7 +12881,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "AXCe15a8iCgzGGBS",
@@ -12597,7 +12905,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "rfY4u4bIs3BauUIc",
@@ -12620,7 +12929,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         },
         {
           "_id": "WUClcDmuA94kOfJi",
@@ -12643,7 +12953,8 @@
             "sight": null,
             "sound": null,
             "attenuation": false
-          }
+          },
+          "animation": null
         }
       ],
       "playlist": null,
@@ -12654,10 +12965,6 @@
       "sort": 500000,
       "flags": {
         "token-attacher": {}
-      },
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
       },
       "background": {
         "src": "modules/sdnd-strahd-adv/images/maps/Areas/V/v1_vr_tower/destroyed.webp",
@@ -12677,12 +12984,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": 1729120424798,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "regions": [],
       "environment": {
@@ -12721,13 +13029,16 @@
       },
       "fog": {
         "exploration": true,
-        "reset": 1675555605016,
         "overlay": null,
         "colors": {
           "explored": null,
           "unexplored": null
         }
-      }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "active": false
     }
   ],
   "tables": [],
@@ -12748,12 +13059,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": 1704857186650,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
@@ -12768,12 +13080,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": 1704839237165,
         "modifiedTime": 1704857631386,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "description": ""
     },
@@ -12789,12 +13102,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": 1720727157265,
         "modifiedTime": 1720727157265,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "description": ""
     },
@@ -12811,12 +13125,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": 1705027185606,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
@@ -12831,12 +13146,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": 1705027168419,
         "modifiedTime": 1705027175907,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "description": ""
     },
@@ -12853,12 +13169,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.2.2",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": 1689092687175,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
-        "compendiumSource": "Folder.JvBq76KcnxIjY4N7",
-        "duplicateSource": null
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
@@ -12874,12 +13191,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
-        "compendiumSource": "Folder.7fFXxvQlzOipnhM7",
-        "duplicateSource": null
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       }
     },
     {
@@ -12894,12 +13212,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": 1747943849391,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
-        "compendiumSource": "Folder.SgCwMBKLb1IzBVaz",
-        "duplicateSource": null
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_id": "SgCwMBKLb1IzBVaz"
     },
@@ -12916,12 +13235,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.2.2",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": 1689092675085,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       }
     }
   ],
@@ -12931,12 +13251,13 @@
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "3.2.1",
-    "coreVersion": "12.343",
+    "coreVersion": "13.351",
     "createdTime": 1719970860959,
-    "modifiedTime": 1755711712564,
+    "modifiedTime": 1767281849956,
     "lastModifiedBy": "6yhz13iFYYklKtgA",
     "compendiumSource": null,
-    "duplicateSource": null
+    "duplicateSource": null,
+    "exportSource": null
   },
   "_key": "!adventures!ZDvXDeEKOBH37vCb"
 }

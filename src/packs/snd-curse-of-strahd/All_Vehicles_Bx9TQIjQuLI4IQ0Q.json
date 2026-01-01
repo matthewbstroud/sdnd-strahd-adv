@@ -13,7 +13,7 @@
       "items": [],
       "effects": [],
       "folder": "zd9x2GFMK2wH9kUS",
-      "sort": 0,
+      "sort": 300000,
       "flags": {
         "midi-qol": {
           "concentration-damage": 0
@@ -164,8 +164,7 @@
           "ac": {
             "flat": null,
             "calc": "default",
-            "formula": "",
-            "motionless": ""
+            "formula": ""
           },
           "hp": {
             "value": null,
@@ -185,33 +184,48 @@
             }
           },
           "movement": {
-            "burrow": null,
-            "climb": null,
-            "fly": null,
-            "swim": null,
-            "walk": 30,
+            "walk": "30",
             "units": "ft",
-            "hover": false
+            "hover": false,
+            "ignoredDifficultTerrain": []
           },
           "actions": {
             "stations": false,
-            "value": 0,
             "thresholds": {
               "0": null,
               "1": null,
               "2": null
-            }
+            },
+            "max": 0,
+            "spent": 0
           },
           "capacity": {
             "creature": "",
-            "cargo": 0
+            "cargo": {
+              "value": 0,
+              "units": "tn"
+            }
+          },
+          "price": {
+            "value": null,
+            "denomination": "gp"
+          },
+          "quality": {
+            "value": 4
+          },
+          "travel": {
+            "paces": {},
+            "speeds": {},
+            "time": 24,
+            "units": "mph"
           }
         },
         "details": {
           "biography": {
             "value": "",
             "public": ""
-          }
+          },
+          "type": "water"
         },
         "traits": {
           "size": "lg",
@@ -251,6 +265,15 @@
           "dm": {
             "amount": {},
             "bypasses": []
+          },
+          "weight": {
+            "units": "lb"
+          },
+          "keel": {
+            "units": "ft"
+          },
+          "beam": {
+            "units": "ft"
           }
         },
         "currency": {
@@ -260,7 +283,6 @@
           "sp": 0,
           "cp": 0
         },
-        "vehicleType": "water",
         "cargo": {
           "crew": [],
           "passengers": []
@@ -268,11 +290,16 @@
         "source": {
           "rules": "2014",
           "revision": 1
+        },
+        "crew": {
+          "value": []
+        },
+        "draft": {
+          "value": []
+        },
+        "passengers": {
+          "value": []
         }
-      },
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
       },
       "prototypeToken": {
         "name": "Cart",
@@ -349,7 +376,6 @@
         "detectionModes": [],
         "appendNumber": false,
         "prependAdjective": false,
-        "hexagonalShape": 1,
         "occludable": {
           "radius": 0
         },
@@ -364,17 +390,28 @@
             "scale": 1,
             "texture": null
           }
-        }
+        },
+        "turnMarker": {
+          "mode": 1,
+          "animation": null,
+          "src": null,
+          "disposition": false
+        },
+        "movementAction": null
       },
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "4.4.2",
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "createdTime": null,
-        "modifiedTime": 1748176573915,
+        "modifiedTime": 1755779191295,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "ownership": {
+        "default": 0
       }
     },
     {
@@ -542,18 +579,13 @@
             "bonus": ""
           },
           "movement": {
-            "burrow": null,
-            "climb": null,
-            "fly": null,
-            "swim": null,
-            "walk": null,
             "units": null,
-            "hover": false
+            "hover": false,
+            "ignoredDifficultTerrain": []
           },
           "ac": {
             "flat": null,
-            "calc": "default",
-            "motionless": ""
+            "calc": "default"
           },
           "hp": {
             "value": 0,
@@ -565,23 +597,41 @@
           },
           "actions": {
             "stations": false,
-            "value": 0,
             "thresholds": {
               "0": null,
               "1": null,
               "2": null
-            }
+            },
+            "max": 0,
+            "spent": 0
           },
           "capacity": {
             "creature": "",
-            "cargo": 0
+            "cargo": {
+              "value": 0,
+              "units": "tn"
+            }
+          },
+          "price": {
+            "value": null,
+            "denomination": "gp"
+          },
+          "quality": {
+            "value": 4
+          },
+          "travel": {
+            "paces": {},
+            "speeds": {},
+            "time": 24,
+            "units": "mph"
           }
         },
         "details": {
           "biography": {
             "value": "",
             "public": ""
-          }
+          },
+          "type": "land"
         },
         "traits": {
           "size": "lg",
@@ -621,16 +671,33 @@
             ],
             "custom": ""
           },
-          "dimensions": ""
+          "dimensions": "",
+          "weight": {
+            "units": "lb"
+          },
+          "keel": {
+            "units": "ft"
+          },
+          "beam": {
+            "units": "ft"
+          }
         },
-        "vehicleType": "land",
         "cargo": {
           "crew": [],
           "passengers": []
         },
         "source": {
           "revision": 1,
-          "rules": "2024"
+          "rules": "2014"
+        },
+        "crew": {
+          "value": []
+        },
+        "draft": {
+          "value": []
+        },
+        "passengers": {
+          "value": []
         }
       },
       "prototypeToken": {
@@ -722,39 +789,45 @@
             "scale": 1
           }
         },
-        "hexagonalShape": 0,
         "occludable": {
           "radius": 0
-        }
+        },
+        "turnMarker": {
+          "mode": 1,
+          "animation": null,
+          "src": null,
+          "disposition": false
+        },
+        "movementAction": null
       },
       "items": [],
       "effects": [],
-      "sort": 0,
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
-      },
+      "sort": 400000,
       "flags": {
         "core": {},
         "sdnd-strahd-adv": {
           "actorName": "ezmerelda_wagon"
-        },
-        "exportSource": {
-          "world": "curse_of_strahd",
-          "system": "dnd5e",
-          "coreVersion": "11.315",
-          "systemVersion": "3.1.2"
         }
       },
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "4.4.2",
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "createdTime": 1720728320169,
-        "modifiedTime": 1748176577988,
+        "modifiedTime": 1755779191295,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "curse_of_strahd",
+          "uuid": null,
+          "coreVersion": "11.315",
+          "systemId": "dnd5e",
+          "systemVersion": "3.1.2"
+        }
+      },
+      "ownership": {
+        "default": 0
       }
     },
     {
@@ -765,7 +838,7 @@
       "items": [],
       "effects": [],
       "folder": "zd9x2GFMK2wH9kUS",
-      "sort": 0,
+      "sort": 800000,
       "flags": {
         "midi-qol": {
           "concentration-damage": 0
@@ -916,8 +989,7 @@
           "ac": {
             "flat": null,
             "calc": "default",
-            "formula": "",
-            "motionless": ""
+            "formula": ""
           },
           "hp": {
             "value": 0,
@@ -937,33 +1009,48 @@
             }
           },
           "movement": {
-            "burrow": null,
-            "climb": null,
-            "fly": null,
-            "swim": null,
-            "walk": 30,
+            "walk": "30",
             "units": "ft",
-            "hover": false
+            "hover": false,
+            "ignoredDifficultTerrain": []
           },
           "actions": {
             "stations": false,
-            "value": 0,
             "thresholds": {
               "0": null,
               "1": null,
               "2": null
-            }
+            },
+            "max": 0,
+            "spent": 0
           },
           "capacity": {
             "creature": "",
-            "cargo": 0
+            "cargo": {
+              "value": 0,
+              "units": "tn"
+            }
+          },
+          "price": {
+            "value": null,
+            "denomination": "gp"
+          },
+          "quality": {
+            "value": 4
+          },
+          "travel": {
+            "paces": {},
+            "speeds": {},
+            "time": 24,
+            "units": "mph"
           }
         },
         "details": {
           "biography": {
             "value": "",
             "public": ""
-          }
+          },
+          "type": "water"
         },
         "traits": {
           "size": "lg",
@@ -1003,6 +1090,15 @@
           "dm": {
             "amount": {},
             "bypasses": []
+          },
+          "weight": {
+            "units": "lb"
+          },
+          "keel": {
+            "units": "ft"
+          },
+          "beam": {
+            "units": "ft"
           }
         },
         "currency": {
@@ -1012,7 +1108,6 @@
           "sp": 0,
           "cp": 0
         },
-        "vehicleType": "water",
         "cargo": {
           "crew": [],
           "passengers": []
@@ -1020,11 +1115,16 @@
         "source": {
           "rules": "2014",
           "revision": 1
+        },
+        "crew": {
+          "value": []
+        },
+        "draft": {
+          "value": []
+        },
+        "passengers": {
+          "value": []
         }
-      },
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
       },
       "prototypeToken": {
         "name": "Travelling Party",
@@ -1109,7 +1209,6 @@
         "detectionModes": [],
         "appendNumber": false,
         "prependAdjective": false,
-        "hexagonalShape": 0,
         "occludable": {
           "radius": 0
         },
@@ -1124,17 +1223,28 @@
             "scale": 1,
             "texture": null
           }
-        }
+        },
+        "turnMarker": {
+          "mode": 1,
+          "animation": null,
+          "src": null,
+          "disposition": false
+        },
+        "movementAction": null
       },
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "4.4.2",
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "createdTime": null,
-        "modifiedTime": 1748176594405,
+        "modifiedTime": 1755779191295,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "ownership": {
+        "default": 0
       }
     },
     {
@@ -1145,11 +1255,9 @@
       "items": [],
       "effects": [],
       "folder": "zd9x2GFMK2wH9kUS",
-      "sort": 0,
+      "sort": 900000,
       "flags": {
-        "core": {
-          "sourceId": "Actor.jUG6BIcG9uNoucVl"
-        },
+        "core": {},
         "midi-qol": {
           "concentration-damage": 0
         }
@@ -1299,8 +1407,7 @@
           "ac": {
             "flat": null,
             "calc": "default",
-            "formula": "",
-            "motionless": ""
+            "formula": ""
           },
           "hp": {
             "value": 500,
@@ -1320,33 +1427,48 @@
             }
           },
           "movement": {
-            "burrow": null,
-            "climb": null,
-            "fly": null,
-            "swim": null,
-            "walk": 30,
+            "walk": "30",
             "units": "ft",
-            "hover": false
+            "hover": false,
+            "ignoredDifficultTerrain": []
           },
           "actions": {
             "stations": false,
-            "value": 0,
             "thresholds": {
               "0": null,
               "1": null,
               "2": null
-            }
+            },
+            "max": 0,
+            "spent": 0
           },
           "capacity": {
             "creature": "",
-            "cargo": 0
+            "cargo": {
+              "value": 0,
+              "units": "tn"
+            }
+          },
+          "price": {
+            "value": null,
+            "denomination": "gp"
+          },
+          "quality": {
+            "value": 4
+          },
+          "travel": {
+            "paces": {},
+            "speeds": {},
+            "time": 24,
+            "units": "mph"
           }
         },
         "details": {
           "biography": {
             "value": "",
             "public": ""
-          }
+          },
+          "type": "water"
         },
         "traits": {
           "size": "lg",
@@ -1386,6 +1508,15 @@
           "dm": {
             "amount": {},
             "bypasses": []
+          },
+          "weight": {
+            "units": "lb"
+          },
+          "keel": {
+            "units": "ft"
+          },
+          "beam": {
+            "units": "ft"
           }
         },
         "currency": {
@@ -1395,7 +1526,6 @@
           "sp": 0,
           "cp": 0
         },
-        "vehicleType": "water",
         "cargo": {
           "crew": [],
           "passengers": [
@@ -1408,11 +1538,16 @@
         "source": {
           "rules": "2014",
           "revision": 1
+        },
+        "crew": {
+          "value": []
+        },
+        "draft": {
+          "value": []
+        },
+        "passengers": {
+          "value": []
         }
-      },
-      "ownership": {
-        "default": 3,
-        "6yhz13iFYYklKtgA": 3
       },
       "prototypeToken": {
         "name": "Travelling Party",
@@ -1511,7 +1646,6 @@
         "detectionModes": [],
         "appendNumber": false,
         "prependAdjective": false,
-        "hexagonalShape": 0,
         "occludable": {
           "radius": 0
         },
@@ -1526,17 +1660,28 @@
             "scale": 1,
             "texture": null
           }
-        }
+        },
+        "turnMarker": {
+          "mode": 1,
+          "animation": null,
+          "src": null,
+          "disposition": false
+        },
+        "movementAction": null
       },
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "4.4.2",
-        "coreVersion": "12.343",
+        "coreVersion": "13.351",
         "createdTime": null,
-        "modifiedTime": 1748176594413,
+        "modifiedTime": 1755779191295,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": "Actor.jUG6BIcG9uNoucVl",
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "ownership": {
+        "default": 3
       }
     }
   ],
@@ -1561,12 +1706,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.2.1",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": 1747943849391,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_id": "SgCwMBKLb1IzBVaz"
     },
@@ -1583,12 +1729,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": 1726317879401,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       }
     }
   ],
@@ -1598,12 +1745,13 @@
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "3.1.2",
-    "coreVersion": "12.343",
+    "coreVersion": "13.351",
     "createdTime": 1726322125077,
-    "modifiedTime": 1754951366343,
+    "modifiedTime": 1767281748675,
     "lastModifiedBy": "6yhz13iFYYklKtgA",
     "compendiumSource": null,
-    "duplicateSource": null
+    "duplicateSource": null,
+    "exportSource": null
   },
   "_key": "!adventures!Bx9TQIjQuLI4IQ0Q"
 }

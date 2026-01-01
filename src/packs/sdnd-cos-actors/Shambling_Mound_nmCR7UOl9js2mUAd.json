@@ -222,12 +222,13 @@
       "_stats": {
         "systemId": null,
         "systemVersion": null,
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "_key": "!actors.items!nmCR7UOl9js2mUAd.zl47ht1508b3mdmq"
     },
@@ -329,14 +330,15 @@
           "description": "",
           "statuses": [],
           "_stats": {
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "systemId": null,
             "systemVersion": null,
             "createdTime": null,
             "modifiedTime": null,
             "lastModifiedBy": null,
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
           },
           "img": "icons/equipment/hand/gauntlet-tooled-leather-brown.webp",
           "type": "base",
@@ -626,12 +628,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": 1704860962181,
         "modifiedTime": 1704860962181,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "folder": null,
       "_key": "!actors.items!nmCR7UOl9js2mUAd.fuk4insfmfawwvm2"
@@ -680,12 +683,6 @@
           "ignoreTotalCover": false,
           "confirmTargets": false,
           "noConcentrationCheck": false
-        },
-        "exportSource": {
-          "world": "testclean",
-          "system": "dnd5e",
-          "coreVersion": "11.315",
-          "systemVersion": "2.4.0"
         },
         "dnd5e": {}
       },
@@ -783,14 +780,15 @@
           "description": "",
           "statuses": [],
           "_stats": {
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "systemId": null,
             "systemVersion": null,
             "createdTime": null,
             "modifiedTime": null,
             "lastModifiedBy": null,
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
           },
           "img": "icons/creatures/slimes/slime-movement-swirling-blue.webp",
           "type": "base",
@@ -847,14 +845,15 @@
           "description": "",
           "statuses": [],
           "_stats": {
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "systemId": null,
             "systemVersion": null,
             "createdTime": null,
             "modifiedTime": null,
             "lastModifiedBy": null,
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
           },
           "img": "icons/creatures/slimes/slime-movement-swirling-blue.webp",
           "type": "base",
@@ -1080,12 +1079,19 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": 1704860962181,
         "modifiedTime": 1704860962181,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "testclean",
+          "uuid": null,
+          "coreVersion": "11.315",
+          "systemId": "dnd5e",
+          "systemVersion": "2.4.0"
+        }
       },
       "folder": null,
       "_key": "!actors.items!nmCR7UOl9js2mUAd.c6ym79srh260v5av"
@@ -1167,14 +1173,15 @@
           "description": "",
           "statuses": [],
           "_stats": {
-            "coreVersion": "12.331",
+            "coreVersion": "13.351",
             "systemId": null,
             "systemVersion": null,
             "createdTime": null,
             "modifiedTime": null,
             "lastModifiedBy": null,
             "compendiumSource": null,
-            "duplicateSource": null
+            "duplicateSource": null,
+            "exportSource": null
           },
           "img": "icons/commodities/treasure/token-engraved-spiral-grey.webp",
           "type": "base",
@@ -1280,12 +1287,13 @@
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "2.4.1",
-        "coreVersion": "12.331",
+        "coreVersion": "13.351",
         "createdTime": 1704860962181,
         "modifiedTime": 1704860962181,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
-        "duplicateSource": null
+        "duplicateSource": null,
+        "exportSource": null
       },
       "folder": null,
       "_key": "!actors.items!nmCR7UOl9js2mUAd.v9p8kwosoy7r03xs"
@@ -1318,9 +1326,7 @@
       "isLegacy": false,
       "flatAC": true
     },
-    "core": {
-      "sourceId": "Compendium.world.ddb-lost-mines-phandelver-monsters.6jqAx1Cd0WT8p7rj"
-    },
+    "core": {},
     "midi-qol": {
       "concentration-damage": 0
     },
@@ -2057,7 +2063,6 @@
     "detectionModes": [],
     "appendNumber": false,
     "prependAdjective": false,
-    "hexagonalShape": 1,
     "occludable": {
       "radius": 0
     },
@@ -2072,17 +2077,25 @@
         "scale": 1,
         "texture": null
       }
-    }
+    },
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null
   },
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "4.4.2",
-    "coreVersion": "12.343",
+    "coreVersion": "13.351",
     "createdTime": 1704860962120,
     "modifiedTime": 1748178371532,
     "lastModifiedBy": "6yhz13iFYYklKtgA",
     "compendiumSource": "Compendium.world.ddb-lost-mines-phandelver-monsters.6jqAx1Cd0WT8p7rj",
-    "duplicateSource": null
+    "duplicateSource": null,
+    "exportSource": null
   },
   "_key": "!actors!nmCR7UOl9js2mUAd"
 }
