@@ -254,10 +254,13 @@
             }
           },
           "movement": {
-            "walk": "30",
+            "burrow": null,
+            "climb": null,
+            "fly": null,
+            "swim": null,
+            "walk": 30,
             "units": "ft",
-            "hover": false,
-            "ignoredDifficultTerrain": []
+            "hover": false
           },
           "attunement": {
             "max": 3
@@ -299,13 +302,11 @@
           "spell": {
             "level": 0
           },
-          "loyalty": {},
+          "loyalty": {
+            "value": null
+          },
           "hd": {
             "spent": 0
-          },
-          "price": {
-            "value": null,
-            "denomination": "gp"
           }
         },
         "details": {
@@ -679,12 +680,12 @@
         },
         "resources": {
           "legact": {
-            "max": 0,
-            "spent": 0
+            "value": 0,
+            "max": 0
           },
           "legres": {
-            "max": 0,
-            "spent": 0
+            "value": 0,
+            "max": 0
           },
           "lair": {
             "value": false,
@@ -697,6 +698,16 @@
           "custom": "",
           "revision": 1
         }
+      },
+      "ownership": {
+        "default": 2,
+        "6yhz13iFYYklKtgA": 3,
+        "nI44NHqYFA6fYSaA": 2,
+        "2o6fMFw0qQuhf5nV": 2,
+        "6A5pacAU8kbNm9PQ": 2,
+        "al3K6JMdvNPhJSGp": 2,
+        "PAsMQtGinm9l3io7": 2,
+        "39APwqo8boJ5in8b": 2
       },
       "prototypeToken": {
         "name": "Treasure",
@@ -837,7 +848,7 @@
         "createdTime": null,
         "modifiedTime": 1754747181387,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
-        "compendiumSource": null,
+        "compendiumSource": "Actor.MBE40ejmR95pHVLP",
         "duplicateSource": null,
         "exportSource": {
           "worldId": "curse_of_strahd",
@@ -846,9 +857,6 @@
           "systemId": "dnd5e",
           "systemVersion": "3.1.2"
         }
-      },
-      "ownership": {
-        "default": 2
       }
     },
     {
@@ -1020,14 +1028,13 @@
             }
           },
           "movement": {
-            "burrow": "0",
-            "climb": "0",
-            "fly": "0",
-            "swim": "0",
-            "walk": "40",
+            "burrow": 0,
+            "climb": 0,
+            "fly": 0,
+            "swim": 0,
+            "walk": 40,
             "units": "ft",
-            "hover": false,
-            "ignoredDifficultTerrain": []
+            "hover": false
           },
           "attunement": {
             "max": 3
@@ -1074,10 +1081,6 @@
             "bonuses": {
               "save": ""
             }
-          },
-          "price": {
-            "value": null,
-            "denomination": "gp"
           }
         },
         "details": {
@@ -1455,12 +1458,12 @@
         },
         "resources": {
           "legact": {
-            "max": 0,
-            "spent": 0
+            "value": 0,
+            "max": 0
           },
           "legres": {
-            "max": 0,
-            "spent": 0
+            "value": 0,
+            "max": 0
           },
           "lair": {
             "value": false,
@@ -1604,6 +1607,7 @@
             "rarity": "",
             "identified": true,
             "cover": null,
+            "crewed": false,
             "range": {
               "value": 5,
               "long": null,
@@ -1691,7 +1695,7 @@
                 "duration": {
                   "concentration": false,
                   "value": "",
-                  "units": "inst",
+                  "units": "",
                   "special": "",
                   "override": false
                 },
@@ -1710,7 +1714,7 @@
                     "size": "",
                     "width": "",
                     "height": "",
-                    "units": "ft"
+                    "units": ""
                   },
                   "affects": {
                     "count": "",
@@ -1757,8 +1761,7 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false,
-                  "idm": false
+                  "ida": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -1766,6 +1769,7 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -1776,17 +1780,7 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false,
-                  "autoConsume": false,
-                  "forceConsumeDialog": "default",
-                  "forceRollDialog": "default",
-                  "forceDamageDialog": "default",
-                  "otherActivityAsParentType": true,
-                  "removeChatButtons": "default",
-                  "magicEffect": false,
-                  "magicDamage": false,
-                  "noConcentrationCheck": false,
-                  "autoCEEffects": "default"
+                  "ignoreFullCover": false
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -1797,31 +1791,21 @@
                 "otherActivityId": "",
                 "attackMode": "oneHanded",
                 "ammunition": "",
-                "otherActivityUuid": "",
-                "flags": {},
-                "visibility": {
-                  "level": {},
-                  "requireAttunement": false,
-                  "requireIdentification": false,
-                  "requireMagic": false
-                },
-                "otherActivityAsParentType": true,
-                "attackRollPerTarget": "default",
-                "fumbleThreshold": 1
+                "otherActivityUuid": ""
               }
             },
             "identifier": "",
             "container": null,
             "attuned": false,
             "ammunition": {},
-            "magicalBonus": null,
-            "crew": {
-              "value": []
-            }
+            "magicalBonus": null
           },
           "effects": [],
           "folder": null,
           "sort": 0,
+          "ownership": {
+            "default": 0
+          },
           "flags": {
             "core": {},
             "dnd5e": {}
@@ -1836,15 +1820,16 @@
             "compendiumSource": "Compendium.dnd5e.monsterfeatures.re3oXQ3Xg4Z3Fr6O",
             "duplicateSource": null,
             "exportSource": null
-          },
-          "ownership": {
-            "default": 0
           }
         }
       ],
       "effects": [],
       "folder": "cMWemO7zeS6R7j7S",
       "sort": 100000,
+      "ownership": {
+        "default": 0,
+        "6yhz13iFYYklKtgA": 3
+      },
       "flags": {
         "core": {},
         "anonymous": {
@@ -1861,9 +1846,6 @@
         "compendiumSource": "Compendium.dnd5e.monsters.Actor.Bupo3E9X5Ptx6XeT",
         "duplicateSource": null,
         "exportSource": null
-      },
-      "ownership": {
-        "default": 0
       }
     },
     {
@@ -2035,14 +2017,13 @@
             }
           },
           "movement": {
-            "burrow": "0",
-            "climb": "0",
-            "fly": "0",
-            "swim": "0",
-            "walk": "30",
+            "burrow": 0,
+            "climb": 0,
+            "fly": 0,
+            "swim": 0,
+            "walk": 30,
             "units": "ft",
-            "hover": false,
-            "ignoredDifficultTerrain": []
+            "hover": false
           },
           "attunement": {
             "max": 3
@@ -2089,10 +2070,6 @@
           },
           "loyalty": {
             "value": null
-          },
-          "price": {
-            "value": null,
-            "denomination": "gp"
           }
         },
         "details": {
@@ -2472,12 +2449,12 @@
         },
         "resources": {
           "legact": {
-            "max": 0,
-            "spent": 0
+            "value": 0,
+            "max": 0
           },
           "legres": {
-            "max": 0,
-            "spent": 0
+            "value": 0,
+            "max": 0
           },
           "lair": {
             "value": false,
@@ -2630,6 +2607,7 @@
             "rarity": "",
             "identified": true,
             "cover": null,
+            "crewed": false,
             "uses": {
               "max": "",
               "spent": 0,
@@ -2648,8 +2626,7 @@
             },
             "speed": {
               "value": null,
-              "conditions": "",
-              "units": "ft"
+              "conditions": ""
             },
             "strength": 15,
             "proficient": 1,
@@ -2666,14 +2643,14 @@
             ],
             "attuned": false,
             "activities": {},
-            "identifier": "",
-            "crew": {
-              "value": []
-            }
+            "identifier": ""
           },
           "effects": [],
           "folder": null,
           "sort": 0,
+          "ownership": {
+            "default": 0
+          },
           "flags": {
             "core": {},
             "dnd5e": {}
@@ -2688,9 +2665,6 @@
             "compendiumSource": "Compendium.dnd5e.items.cKpJmsJmU8YaiuqG",
             "duplicateSource": null,
             "exportSource": null
-          },
-          "ownership": {
-            "default": 0
           }
         },
         {
@@ -2725,6 +2699,7 @@
             "rarity": "",
             "identified": true,
             "cover": null,
+            "crewed": false,
             "range": {
               "value": null,
               "long": null,
@@ -2814,7 +2789,7 @@
                 "duration": {
                   "concentration": false,
                   "value": "",
-                  "units": "inst",
+                  "units": "",
                   "special": "",
                   "override": false
                 },
@@ -2832,7 +2807,7 @@
                     "size": "",
                     "width": "",
                     "height": "",
-                    "units": "ft"
+                    "units": ""
                   },
                   "affects": {
                     "count": "",
@@ -2879,8 +2854,7 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false,
-                  "idm": false
+                  "ida": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -2888,6 +2862,7 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -2898,17 +2873,7 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false,
-                  "autoConsume": false,
-                  "forceConsumeDialog": "default",
-                  "forceRollDialog": "default",
-                  "forceDamageDialog": "default",
-                  "otherActivityAsParentType": true,
-                  "removeChatButtons": "default",
-                  "magicEffect": false,
-                  "magicDamage": false,
-                  "noConcentrationCheck": false,
-                  "autoCEEffects": "default"
+                  "ignoreFullCover": false
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -2919,31 +2884,21 @@
                 "otherActivityId": "",
                 "attackMode": "oneHanded",
                 "ammunition": "",
-                "otherActivityUuid": "",
-                "flags": {},
-                "visibility": {
-                  "level": {},
-                  "requireAttunement": false,
-                  "requireIdentification": false,
-                  "requireMagic": false
-                },
-                "otherActivityAsParentType": true,
-                "attackRollPerTarget": "default",
-                "fumbleThreshold": 1
+                "otherActivityUuid": ""
               }
             },
             "identifier": "",
             "container": null,
             "attuned": false,
             "ammunition": {},
-            "magicalBonus": null,
-            "crew": {
-              "value": []
-            }
+            "magicalBonus": null
           },
           "effects": [],
           "folder": null,
           "sort": 0,
+          "ownership": {
+            "default": 0
+          },
           "flags": {
             "core": {},
             "dnd5e": {}
@@ -2958,9 +2913,6 @@
             "compendiumSource": "Compendium.dnd5e.items.10ZP2Bu3vnCuYMIB",
             "duplicateSource": null,
             "exportSource": null
-          },
-          "ownership": {
-            "default": 0
           }
         },
         {
@@ -3017,13 +2969,13 @@
                 "duration": {
                   "concentration": false,
                   "value": "",
-                  "units": "inst",
+                  "units": "",
                   "special": "",
                   "override": false
                 },
                 "effects": [],
                 "range": {
-                  "units": "self",
+                  "units": "",
                   "special": "",
                   "override": false
                 },
@@ -3035,7 +2987,7 @@
                     "size": "",
                     "width": "",
                     "height": "",
-                    "units": "ft"
+                    "units": ""
                   },
                   "affects": {
                     "count": "",
@@ -3069,8 +3021,7 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false,
-                  "idm": false
+                  "ida": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -3078,6 +3029,7 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -3088,17 +3040,7 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false,
-                  "autoConsume": false,
-                  "forceConsumeDialog": "default",
-                  "forceRollDialog": "default",
-                  "forceDamageDialog": "default",
-                  "otherActivityAsParentType": true,
-                  "removeChatButtons": "default",
-                  "magicEffect": false,
-                  "magicDamage": false,
-                  "noConcentrationCheck": false,
-                  "autoCEEffects": "default"
+                  "ignoreFullCover": false
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -3106,15 +3048,7 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": "none",
-                "flags": {},
-                "visibility": {
-                  "level": {},
-                  "requireAttunement": false,
-                  "requireIdentification": false,
-                  "requireMagic": false
-                },
-                "otherActivityAsParentType": true
+                "otherActivityId": "none"
               }
             },
             "identifier": "",
@@ -3122,14 +3056,16 @@
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false,
-              "items": []
+              "repeatable": false
             },
             "properties": []
           },
           "effects": [],
           "folder": null,
           "sort": 0,
+          "ownership": {
+            "default": 0
+          },
           "flags": {
             "core": {},
             "dnd5e": {}
@@ -3144,9 +3080,6 @@
             "compendiumSource": "Compendium.dnd5e.monsterfeatures.EqoLg8T8EHvhJgKE",
             "duplicateSource": null,
             "exportSource": null
-          },
-          "ownership": {
-            "default": 0
           }
         },
         {
@@ -3181,6 +3114,7 @@
             "rarity": "",
             "identified": true,
             "cover": null,
+            "crewed": false,
             "range": {
               "value": null,
               "long": null,
@@ -3268,7 +3202,7 @@
                 "duration": {
                   "concentration": false,
                   "value": "",
-                  "units": "inst",
+                  "units": "",
                   "special": "",
                   "override": false
                 },
@@ -3286,7 +3220,7 @@
                     "size": "",
                     "width": "",
                     "height": "",
-                    "units": "ft"
+                    "units": ""
                   },
                   "affects": {
                     "count": "",
@@ -3333,8 +3267,7 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false,
-                  "idm": false
+                  "ida": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -3342,6 +3275,7 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -3352,17 +3286,7 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false,
-                  "autoConsume": false,
-                  "forceConsumeDialog": "default",
-                  "forceRollDialog": "default",
-                  "forceDamageDialog": "default",
-                  "otherActivityAsParentType": true,
-                  "removeChatButtons": "default",
-                  "magicEffect": false,
-                  "magicDamage": false,
-                  "noConcentrationCheck": false,
-                  "autoCEEffects": "default"
+                  "ignoreFullCover": false
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -3373,31 +3297,21 @@
                 "otherActivityId": "",
                 "attackMode": "oneHanded",
                 "ammunition": "",
-                "otherActivityUuid": "",
-                "flags": {},
-                "visibility": {
-                  "level": {},
-                  "requireAttunement": false,
-                  "requireIdentification": false,
-                  "requireMagic": false
-                },
-                "otherActivityAsParentType": true,
-                "attackRollPerTarget": "default",
-                "fumbleThreshold": 1
+                "otherActivityUuid": ""
               }
             },
             "identifier": "",
             "container": null,
             "attuned": false,
             "ammunition": {},
-            "magicalBonus": null,
-            "crew": {
-              "value": []
-            }
+            "magicalBonus": null
           },
           "effects": [],
           "folder": null,
           "sort": 0,
+          "ownership": {
+            "default": 0
+          },
           "flags": {
             "core": {},
             "dnd5e": {}
@@ -3412,9 +3326,6 @@
             "compendiumSource": "Compendium.dnd5e.items.osLzOwQdPtrK3rQH",
             "duplicateSource": null,
             "exportSource": null
-          },
-          "ownership": {
-            "default": 0
           }
         },
         {
@@ -3449,6 +3360,7 @@
             "rarity": "",
             "identified": true,
             "cover": null,
+            "crewed": false,
             "range": {
               "value": null,
               "long": 400,
@@ -3539,7 +3451,7 @@
                 "duration": {
                   "concentration": false,
                   "value": "",
-                  "units": "inst",
+                  "units": "",
                   "special": "",
                   "override": false
                 },
@@ -3557,7 +3469,7 @@
                     "size": "",
                     "width": "",
                     "height": "",
-                    "units": "ft"
+                    "units": ""
                   },
                   "affects": {
                     "count": "",
@@ -3604,8 +3516,7 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false,
-                  "idm": false
+                  "ida": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -3613,6 +3524,7 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -3623,17 +3535,7 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false,
-                  "autoConsume": false,
-                  "forceConsumeDialog": "default",
-                  "forceRollDialog": "default",
-                  "forceDamageDialog": "default",
-                  "otherActivityAsParentType": true,
-                  "removeChatButtons": "default",
-                  "magicEffect": false,
-                  "magicDamage": false,
-                  "noConcentrationCheck": false,
-                  "autoCEEffects": "default"
+                  "ignoreFullCover": false
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -3644,31 +3546,21 @@
                 "otherActivityId": "",
                 "attackMode": "oneHanded",
                 "ammunition": "",
-                "otherActivityUuid": "",
-                "flags": {},
-                "visibility": {
-                  "level": {},
-                  "requireAttunement": false,
-                  "requireIdentification": false,
-                  "requireMagic": false
-                },
-                "otherActivityAsParentType": true,
-                "attackRollPerTarget": "default",
-                "fumbleThreshold": 1
+                "otherActivityUuid": ""
               }
             },
             "identifier": "",
             "container": null,
             "attuned": false,
             "ammunition": {},
-            "magicalBonus": null,
-            "crew": {
-              "value": []
-            }
+            "magicalBonus": null
           },
           "effects": [],
           "folder": null,
           "sort": 0,
+          "ownership": {
+            "default": 0
+          },
           "flags": {
             "core": {},
             "dnd5e": {}
@@ -3683,15 +3575,16 @@
             "compendiumSource": "Compendium.dnd5e.items.RmP0mYRn2J7K26rX",
             "duplicateSource": null,
             "exportSource": null
-          },
-          "ownership": {
-            "default": 0
           }
         }
       ],
       "effects": [],
       "folder": "qNNDpHuw6Cytv93y",
       "sort": 100000,
+      "ownership": {
+        "default": 0,
+        "6yhz13iFYYklKtgA": 3
+      },
       "flags": {
         "core": {},
         "midi-qol": {
@@ -3734,9 +3627,6 @@
         "compendiumSource": "Compendium.dnd5e.monsters.Actor.J8xjoG4Dxb8WkHtV",
         "duplicateSource": null,
         "exportSource": null
-      },
-      "ownership": {
-        "default": 0
       }
     },
     {
@@ -3791,9 +3681,11 @@
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false,
-              "items": []
+              "repeatable": false
             }
+          },
+          "ownership": {
+            "default": 0
           },
           "_stats": {
             "systemId": null,
@@ -3805,9 +3697,6 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
-          },
-          "ownership": {
-            "default": 0
           }
         },
         {
@@ -3852,6 +3741,7 @@
             "rarity": "",
             "identified": true,
             "cover": null,
+            "crewed": false,
             "range": {
               "value": null,
               "long": null,
@@ -3960,7 +3850,7 @@
                     "size": "",
                     "width": "",
                     "height": "",
-                    "units": "ft"
+                    "units": ""
                   },
                   "affects": {
                     "count": "",
@@ -4007,8 +3897,7 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false,
-                  "idm": false
+                  "ida": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -4016,6 +3905,7 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -4026,17 +3916,7 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false,
-                  "autoConsume": false,
-                  "forceConsumeDialog": "default",
-                  "forceRollDialog": "default",
-                  "forceDamageDialog": "default",
-                  "otherActivityAsParentType": true,
-                  "removeChatButtons": "default",
-                  "magicEffect": false,
-                  "magicDamage": false,
-                  "noConcentrationCheck": false,
-                  "autoCEEffects": "default"
+                  "ignoreFullCover": false
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -4047,27 +3927,17 @@
                 "otherActivityId": "",
                 "attackMode": "oneHanded",
                 "ammunition": "",
-                "otherActivityUuid": "",
-                "flags": {},
-                "visibility": {
-                  "level": {},
-                  "requireAttunement": false,
-                  "requireIdentification": false,
-                  "requireMagic": false
-                },
-                "otherActivityAsParentType": true,
-                "attackRollPerTarget": "default",
-                "fumbleThreshold": 1
+                "otherActivityUuid": ""
               }
             },
             "identifier": "",
             "container": null,
             "attuned": false,
             "ammunition": {},
-            "magicalBonus": null,
-            "crew": {
-              "value": []
-            }
+            "magicalBonus": null
+          },
+          "ownership": {
+            "default": 0
           },
           "_stats": {
             "systemId": null,
@@ -4079,9 +3949,6 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
-          },
-          "ownership": {
-            "default": 0
           }
         },
         {
@@ -4126,6 +3993,7 @@
             "rarity": "",
             "identified": true,
             "cover": null,
+            "crewed": false,
             "range": {
               "value": 30,
               "long": 120,
@@ -4235,7 +4103,7 @@
                     "size": "",
                     "width": "",
                     "height": "",
-                    "units": "ft"
+                    "units": ""
                   },
                   "affects": {
                     "count": "",
@@ -4282,8 +4150,7 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false,
-                  "idm": false
+                  "ida": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -4291,6 +4158,7 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -4301,17 +4169,7 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false,
-                  "autoConsume": false,
-                  "forceConsumeDialog": "default",
-                  "forceRollDialog": "default",
-                  "forceDamageDialog": "default",
-                  "otherActivityAsParentType": true,
-                  "removeChatButtons": "default",
-                  "magicEffect": false,
-                  "magicDamage": false,
-                  "noConcentrationCheck": false,
-                  "autoCEEffects": "default"
+                  "ignoreFullCover": false
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -4322,27 +4180,17 @@
                 "otherActivityId": "",
                 "attackMode": "oneHanded",
                 "ammunition": "",
-                "otherActivityUuid": "",
-                "flags": {},
-                "visibility": {
-                  "level": {},
-                  "requireAttunement": false,
-                  "requireIdentification": false,
-                  "requireMagic": false
-                },
-                "otherActivityAsParentType": true,
-                "attackRollPerTarget": "default",
-                "fumbleThreshold": 1
+                "otherActivityUuid": ""
               }
             },
             "identifier": "",
             "container": null,
             "attuned": false,
             "ammunition": {},
-            "magicalBonus": null,
-            "crew": {
-              "value": []
-            }
+            "magicalBonus": null
+          },
+          "ownership": {
+            "default": 0
           },
           "_stats": {
             "systemId": null,
@@ -4354,9 +4202,6 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
-          },
-          "ownership": {
-            "default": 0
           }
         },
         {
@@ -4404,10 +4249,12 @@
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false,
-              "items": []
+              "repeatable": false
             },
             "properties": []
+          },
+          "ownership": {
+            "default": 0
           },
           "_stats": {
             "systemId": null,
@@ -4419,9 +4266,6 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
-          },
-          "ownership": {
-            "default": 0
           }
         },
         {
@@ -4487,13 +4331,13 @@
                 },
                 "duration": {
                   "concentration": false,
-                  "units": "inst",
+                  "units": "",
                   "special": "",
                   "override": false
                 },
                 "effects": [],
                 "range": {
-                  "units": "self",
+                  "units": "",
                   "special": "",
                   "override": false
                 },
@@ -4505,7 +4349,7 @@
                     "size": "",
                     "width": "",
                     "height": "",
-                    "units": "ft"
+                    "units": ""
                   },
                   "affects": {
                     "count": "",
@@ -4556,8 +4400,7 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false,
-                  "idm": false
+                  "ida": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -4565,6 +4408,7 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -4575,30 +4419,13 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false,
-                  "autoConsume": false,
-                  "forceConsumeDialog": "default",
-                  "forceRollDialog": "default",
-                  "forceDamageDialog": "default",
-                  "otherActivityAsParentType": true,
-                  "removeChatButtons": "default",
-                  "magicEffect": false,
-                  "magicDamage": false,
-                  "noConcentrationCheck": false,
-                  "autoCEEffects": "default"
+                  "ignoreFullCover": false
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
                   "saveRemoves": true,
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
-                },
-                "flags": {},
-                "visibility": {
-                  "level": {},
-                  "requireAttunement": false,
-                  "requireIdentification": false,
-                  "requireMagic": false
                 }
               }
             },
@@ -4607,10 +4434,12 @@
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false,
-              "items": []
+              "repeatable": false
             },
             "properties": []
+          },
+          "ownership": {
+            "default": 0
           },
           "_stats": {
             "systemId": null,
@@ -4622,9 +4451,6 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
-          },
-          "ownership": {
-            "default": 0
           }
         }
       ],
@@ -4853,10 +4679,13 @@
             }
           },
           "movement": {
-            "walk": "30",
+            "burrow": null,
+            "climb": null,
+            "fly": null,
+            "swim": null,
+            "walk": 30,
             "units": "ft",
-            "hover": false,
-            "ignoredDifficultTerrain": []
+            "hover": false
           },
           "attunement": {
             "max": 3
@@ -4903,10 +4732,6 @@
             "bonuses": {
               "save": ""
             }
-          },
-          "price": {
-            "value": null,
-            "denomination": "gp"
           }
         },
         "details": {
@@ -5280,12 +5105,12 @@
         },
         "resources": {
           "legact": {
-            "max": 0,
-            "spent": 0
+            "value": 0,
+            "max": 0
           },
           "legres": {
-            "max": 0,
-            "spent": 0
+            "value": 0,
+            "max": 0
           },
           "lair": {
             "value": false,
@@ -5298,6 +5123,10 @@
           "revision": 1,
           "rules": "2014"
         }
+      },
+      "ownership": {
+        "default": 0,
+        "6yhz13iFYYklKtgA": 3
       },
       "prototypeToken": {
         "name": "Spy",
@@ -5409,9 +5238,6 @@
         "compendiumSource": "Compendium.world.ddb-lost-mines-phandelver-monsters.NKcT89xIruMbdmKu",
         "duplicateSource": null,
         "exportSource": null
-      },
-      "ownership": {
-        "default": 0
       }
     },
     {
@@ -5462,6 +5288,7 @@
             "rarity": "",
             "identified": true,
             "cover": null,
+            "crewed": false,
             "range": {
               "value": 5,
               "long": null,
@@ -5572,7 +5399,7 @@
                     "size": "",
                     "width": "",
                     "height": "",
-                    "units": "ft"
+                    "units": ""
                   },
                   "affects": {
                     "count": "",
@@ -5619,8 +5446,7 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false,
-                  "idm": false
+                  "ida": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -5628,6 +5454,7 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -5638,17 +5465,7 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false,
-                  "autoConsume": false,
-                  "forceConsumeDialog": "default",
-                  "forceRollDialog": "default",
-                  "forceDamageDialog": "default",
-                  "otherActivityAsParentType": true,
-                  "removeChatButtons": "default",
-                  "magicEffect": false,
-                  "magicDamage": false,
-                  "noConcentrationCheck": false,
-                  "autoCEEffects": "default"
+                  "ignoreFullCover": false
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -5659,27 +5476,17 @@
                 "otherActivityId": "",
                 "attackMode": "oneHanded",
                 "ammunition": "",
-                "otherActivityUuid": "",
-                "flags": {},
-                "visibility": {
-                  "level": {},
-                  "requireAttunement": false,
-                  "requireIdentification": false,
-                  "requireMagic": false
-                },
-                "otherActivityAsParentType": true,
-                "attackRollPerTarget": "default",
-                "fumbleThreshold": 1
+                "otherActivityUuid": ""
               }
             },
             "identifier": "",
             "container": null,
             "attuned": false,
             "ammunition": {},
-            "magicalBonus": null,
-            "crew": {
-              "value": []
-            }
+            "magicalBonus": null
+          },
+          "ownership": {
+            "default": 0
           },
           "_stats": {
             "systemId": null,
@@ -5691,9 +5498,6 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
-          },
-          "ownership": {
-            "default": 0
           }
         },
         {
@@ -5742,9 +5546,11 @@
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false,
-              "items": []
+              "repeatable": false
             }
+          },
+          "ownership": {
+            "default": 0
           },
           "_stats": {
             "systemId": null,
@@ -5756,9 +5562,6 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
-          },
-          "ownership": {
-            "default": 0
           }
         },
         {
@@ -5807,9 +5610,11 @@
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false,
-              "items": []
+              "repeatable": false
             }
+          },
+          "ownership": {
+            "default": 0
           },
           "_stats": {
             "systemId": null,
@@ -5821,9 +5626,6 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
-          },
-          "ownership": {
-            "default": 0
           }
         },
         {
@@ -5871,10 +5673,12 @@
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false,
-              "items": []
+              "repeatable": false
             },
             "properties": []
+          },
+          "ownership": {
+            "default": 0
           },
           "_stats": {
             "systemId": null,
@@ -5886,9 +5690,6 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
-          },
-          "ownership": {
-            "default": 0
           }
         },
         {
@@ -6037,7 +5838,7 @@
                 "choice": false
               },
               "template": {
-                "units": "ft",
+                "units": "",
                 "contiguous": false
               }
             },
@@ -6056,6 +5857,10 @@
               "consumed": false,
               "cost": 0,
               "supply": 0
+            },
+            "preparation": {
+              "mode": "prepared",
+              "prepared": true
             },
             "properties": [
               "vocal",
@@ -6090,13 +5895,11 @@
                 "effects": [
                   {
                     "_id": "hlkwxzs7pd5lrkco",
-                    "onSave": false,
-                    "level": {}
+                    "onSave": false
                   }
                 ],
                 "range": {
-                  "override": false,
-                  "units": "self"
+                  "override": false
                 },
                 "target": {
                   "prompt": true,
@@ -6142,8 +5945,7 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false,
-                  "idm": false
+                  "ida": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -6151,6 +5953,7 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -6161,17 +5964,7 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false,
-                  "autoConsume": false,
-                  "forceConsumeDialog": "default",
-                  "forceRollDialog": "default",
-                  "forceDamageDialog": "default",
-                  "otherActivityAsParentType": true,
-                  "removeChatButtons": "default",
-                  "magicEffect": false,
-                  "magicDamage": false,
-                  "noConcentrationCheck": false,
-                  "autoCEEffects": "default"
+                  "ignoreFullCover": false
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -6179,21 +5972,14 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": "",
-                "flags": {},
-                "visibility": {
-                  "level": {},
-                  "requireAttunement": false,
-                  "requireIdentification": false,
-                  "requireMagic": false
-                },
-                "otherActivityAsParentType": true,
-                "friendlySave": "default"
+                "otherActivityId": ""
               }
             },
-            "identifier": "",
-            "method": "spell",
-            "prepared": 1
+            "identifier": ""
+          },
+          "ownership": {
+            "default": 0,
+            "6yhz13iFYYklKtgA": 3
           },
           "_stats": {
             "systemId": null,
@@ -6205,9 +5991,6 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
-          },
-          "ownership": {
-            "default": 0
           }
         },
         {
@@ -6294,6 +6077,10 @@
               "cost": 0,
               "supply": 0
             },
+            "preparation": {
+              "mode": "prepared",
+              "prepared": true
+            },
             "properties": [
               "vocal",
               "somatic",
@@ -6327,8 +6114,7 @@
                 },
                 "effects": [],
                 "range": {
-                  "override": false,
-                  "units": "self"
+                  "override": false
                 },
                 "target": {
                   "prompt": true,
@@ -6364,8 +6150,7 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false,
-                  "idm": false
+                  "ida": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -6373,6 +6158,7 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -6383,17 +6169,7 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false,
-                  "autoConsume": false,
-                  "forceConsumeDialog": "default",
-                  "forceRollDialog": "default",
-                  "forceDamageDialog": "default",
-                  "otherActivityAsParentType": true,
-                  "removeChatButtons": "default",
-                  "magicEffect": false,
-                  "magicDamage": false,
-                  "noConcentrationCheck": false,
-                  "autoCEEffects": "default"
+                  "ignoreFullCover": false
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -6401,20 +6177,14 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": "none",
-                "flags": {},
-                "visibility": {
-                  "level": {},
-                  "requireAttunement": false,
-                  "requireIdentification": false,
-                  "requireMagic": false
-                },
-                "otherActivityAsParentType": true
+                "otherActivityId": "none"
               }
             },
-            "identifier": "",
-            "method": "spell",
-            "prepared": 1
+            "identifier": ""
+          },
+          "ownership": {
+            "default": 0,
+            "6yhz13iFYYklKtgA": 3
           },
           "_stats": {
             "systemId": null,
@@ -6426,9 +6196,6 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
-          },
-          "ownership": {
-            "default": 0
           }
         },
         {
@@ -6497,7 +6264,7 @@
                 "choice": false
               },
               "template": {
-                "units": "ft",
+                "units": "",
                 "contiguous": false
               }
             },
@@ -6517,6 +6284,10 @@
               "consumed": false,
               "cost": 0,
               "supply": 0
+            },
+            "preparation": {
+              "mode": "prepared",
+              "prepared": true
             },
             "properties": [
               "vocal",
@@ -6549,8 +6320,7 @@
                 },
                 "effects": [],
                 "range": {
-                  "override": false,
-                  "units": "self"
+                  "override": false
                 },
                 "target": {
                   "prompt": true,
@@ -6614,8 +6384,7 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false,
-                  "idm": false
+                  "ida": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -6623,6 +6392,7 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -6633,17 +6403,7 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false,
-                  "autoConsume": false,
-                  "forceConsumeDialog": "default",
-                  "forceRollDialog": "default",
-                  "forceDamageDialog": "default",
-                  "otherActivityAsParentType": true,
-                  "removeChatButtons": "default",
-                  "magicEffect": false,
-                  "magicDamage": false,
-                  "noConcentrationCheck": false,
-                  "autoCEEffects": "default"
+                  "ignoreFullCover": false
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -6651,21 +6411,14 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": "",
-                "flags": {},
-                "visibility": {
-                  "level": {},
-                  "requireAttunement": false,
-                  "requireIdentification": false,
-                  "requireMagic": false
-                },
-                "otherActivityAsParentType": true,
-                "friendlySave": "default"
+                "otherActivityId": ""
               }
             },
-            "identifier": "",
-            "method": "spell",
-            "prepared": 1
+            "identifier": ""
+          },
+          "ownership": {
+            "default": 0,
+            "6yhz13iFYYklKtgA": 3
           },
           "_stats": {
             "systemId": null,
@@ -6677,9 +6430,6 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
-          },
-          "ownership": {
-            "default": 0
           }
         },
         {
@@ -6746,7 +6496,7 @@
                 "choice": false
               },
               "template": {
-                "units": "ft",
+                "units": "",
                 "contiguous": false
               }
             },
@@ -6766,6 +6516,10 @@
               "consumed": false,
               "cost": 0,
               "supply": 0
+            },
+            "preparation": {
+              "mode": "prepared",
+              "prepared": true
             },
             "properties": [
               "vocal"
@@ -6797,8 +6551,7 @@
                 },
                 "effects": [],
                 "range": {
-                  "override": false,
-                  "units": "self"
+                  "override": false
                 },
                 "target": {
                   "prompt": true,
@@ -6834,8 +6587,7 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false,
-                  "idm": false
+                  "ida": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -6843,6 +6595,7 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -6853,17 +6606,7 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false,
-                  "autoConsume": false,
-                  "forceConsumeDialog": "default",
-                  "forceRollDialog": "default",
-                  "forceDamageDialog": "default",
-                  "otherActivityAsParentType": true,
-                  "removeChatButtons": "default",
-                  "magicEffect": false,
-                  "magicDamage": false,
-                  "noConcentrationCheck": false,
-                  "autoCEEffects": "default"
+                  "ignoreFullCover": false
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -6871,20 +6614,14 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": "none",
-                "flags": {},
-                "visibility": {
-                  "level": {},
-                  "requireAttunement": false,
-                  "requireIdentification": false,
-                  "requireMagic": false
-                },
-                "otherActivityAsParentType": true
+                "otherActivityId": "none"
               }
             },
-            "identifier": "",
-            "method": "spell",
-            "prepared": 1
+            "identifier": ""
+          },
+          "ownership": {
+            "default": 0,
+            "6yhz13iFYYklKtgA": 3
           },
           "_stats": {
             "systemId": null,
@@ -6896,9 +6633,6 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
-          },
-          "ownership": {
-            "default": 0
           }
         },
         {
@@ -7028,7 +6762,7 @@
                 "choice": false
               },
               "template": {
-                "units": "ft",
+                "units": "",
                 "contiguous": false
               }
             },
@@ -7048,6 +6782,10 @@
               "consumed": false,
               "cost": 0,
               "supply": 0
+            },
+            "preparation": {
+              "mode": "prepared",
+              "prepared": true
             },
             "properties": [
               "vocal",
@@ -7084,13 +6822,11 @@
                 "effects": [
                   {
                     "_id": "qz8212rhqqmrpskf",
-                    "onSave": false,
-                    "level": {}
+                    "onSave": false
                   }
                 ],
                 "range": {
-                  "override": false,
-                  "units": "self"
+                  "override": false
                 },
                 "target": {
                   "prompt": true,
@@ -7136,8 +6872,7 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false,
-                  "idm": false
+                  "ida": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -7145,6 +6880,7 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -7155,17 +6891,7 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false,
-                  "autoConsume": false,
-                  "forceConsumeDialog": "default",
-                  "forceRollDialog": "default",
-                  "forceDamageDialog": "default",
-                  "otherActivityAsParentType": true,
-                  "removeChatButtons": "default",
-                  "magicEffect": false,
-                  "magicDamage": false,
-                  "noConcentrationCheck": false,
-                  "autoCEEffects": "default"
+                  "ignoreFullCover": false
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -7173,21 +6899,14 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": "",
-                "flags": {},
-                "visibility": {
-                  "level": {},
-                  "requireAttunement": false,
-                  "requireIdentification": false,
-                  "requireMagic": false
-                },
-                "otherActivityAsParentType": true,
-                "friendlySave": "default"
+                "otherActivityId": ""
               }
             },
-            "identifier": "",
-            "method": "spell",
-            "prepared": 1
+            "identifier": ""
+          },
+          "ownership": {
+            "default": 0,
+            "6yhz13iFYYklKtgA": 3
           },
           "_stats": {
             "systemId": null,
@@ -7199,9 +6918,6 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
-          },
-          "ownership": {
-            "default": 0
           }
         },
         {
@@ -7318,7 +7034,7 @@
                 "choice": false
               },
               "template": {
-                "units": "ft",
+                "units": "",
                 "contiguous": false
               }
             },
@@ -7338,6 +7054,10 @@
               "consumed": false,
               "cost": 0,
               "supply": 0
+            },
+            "preparation": {
+              "mode": "prepared",
+              "prepared": true
             },
             "properties": [
               "vocal"
@@ -7370,13 +7090,11 @@
                 "effects": [
                   {
                     "_id": "56bl4q0ss4ojlrtu",
-                    "onSave": false,
-                    "level": {}
+                    "onSave": false
                   }
                 ],
                 "range": {
-                  "override": false,
-                  "units": "self"
+                  "override": false
                 },
                 "target": {
                   "prompt": true,
@@ -7422,8 +7140,7 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false,
-                  "idm": false
+                  "ida": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -7431,6 +7148,7 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -7441,17 +7159,7 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false,
-                  "autoConsume": false,
-                  "forceConsumeDialog": "default",
-                  "forceRollDialog": "default",
-                  "forceDamageDialog": "default",
-                  "otherActivityAsParentType": true,
-                  "removeChatButtons": "default",
-                  "magicEffect": false,
-                  "magicDamage": false,
-                  "noConcentrationCheck": false,
-                  "autoCEEffects": "default"
+                  "ignoreFullCover": false
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -7459,21 +7167,14 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": "",
-                "flags": {},
-                "visibility": {
-                  "level": {},
-                  "requireAttunement": false,
-                  "requireIdentification": false,
-                  "requireMagic": false
-                },
-                "otherActivityAsParentType": true,
-                "friendlySave": "default"
+                "otherActivityId": ""
               }
             },
-            "identifier": "",
-            "method": "spell",
-            "prepared": 1
+            "identifier": ""
+          },
+          "ownership": {
+            "default": 0,
+            "6yhz13iFYYklKtgA": 3
           },
           "_stats": {
             "systemId": null,
@@ -7485,9 +7186,6 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
-          },
-          "ownership": {
-            "default": 0
           }
         },
         {
@@ -7576,6 +7274,10 @@
               "cost": 0,
               "supply": 0
             },
+            "preparation": {
+              "mode": "prepared",
+              "prepared": true
+            },
             "properties": [
               "vocal",
               "somatic",
@@ -7608,8 +7310,7 @@
                 },
                 "effects": [],
                 "range": {
-                  "override": false,
-                  "units": "self"
+                  "override": false
                 },
                 "target": {
                   "prompt": true,
@@ -7645,8 +7346,7 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false,
-                  "idm": false
+                  "ida": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -7654,6 +7354,7 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -7664,17 +7365,7 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false,
-                  "autoConsume": false,
-                  "forceConsumeDialog": "default",
-                  "forceRollDialog": "default",
-                  "forceDamageDialog": "default",
-                  "otherActivityAsParentType": true,
-                  "removeChatButtons": "default",
-                  "magicEffect": false,
-                  "magicDamage": false,
-                  "noConcentrationCheck": false,
-                  "autoCEEffects": "default"
+                  "ignoreFullCover": false
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -7682,20 +7373,14 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": "none",
-                "flags": {},
-                "visibility": {
-                  "level": {},
-                  "requireAttunement": false,
-                  "requireIdentification": false,
-                  "requireMagic": false
-                },
-                "otherActivityAsParentType": true
+                "otherActivityId": "none"
               }
             },
-            "identifier": "",
-            "method": "spell",
-            "prepared": 1
+            "identifier": ""
+          },
+          "ownership": {
+            "default": 0,
+            "6yhz13iFYYklKtgA": 3
           },
           "_stats": {
             "systemId": null,
@@ -7707,9 +7392,6 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
-          },
-          "ownership": {
-            "default": 0
           }
         },
         {
@@ -7798,6 +7480,10 @@
               "cost": 0,
               "supply": 0
             },
+            "preparation": {
+              "mode": "prepared",
+              "prepared": true
+            },
             "properties": [
               "vocal",
               "somatic",
@@ -7832,8 +7518,7 @@
                 },
                 "effects": [],
                 "range": {
-                  "override": false,
-                  "units": "self"
+                  "override": false
                 },
                 "target": {
                   "prompt": true,
@@ -7869,8 +7554,7 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false,
-                  "idm": false
+                  "ida": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -7878,6 +7562,7 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -7888,17 +7573,7 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false,
-                  "autoConsume": false,
-                  "forceConsumeDialog": "default",
-                  "forceRollDialog": "default",
-                  "forceDamageDialog": "default",
-                  "otherActivityAsParentType": true,
-                  "removeChatButtons": "default",
-                  "magicEffect": false,
-                  "magicDamage": false,
-                  "noConcentrationCheck": false,
-                  "autoCEEffects": "default"
+                  "ignoreFullCover": false
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -7906,20 +7581,14 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": "none",
-                "flags": {},
-                "visibility": {
-                  "level": {},
-                  "requireAttunement": false,
-                  "requireIdentification": false,
-                  "requireMagic": false
-                },
-                "otherActivityAsParentType": true
+                "otherActivityId": "none"
               }
             },
-            "identifier": "",
-            "method": "spell",
-            "prepared": 1
+            "identifier": ""
+          },
+          "ownership": {
+            "default": 0,
+            "6yhz13iFYYklKtgA": 3
           },
           "_stats": {
             "systemId": null,
@@ -7931,9 +7600,6 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
-          },
-          "ownership": {
-            "default": 0
           }
         },
         {
@@ -8020,6 +7686,10 @@
               "cost": 0,
               "supply": 0
             },
+            "preparation": {
+              "mode": "prepared",
+              "prepared": true
+            },
             "properties": [
               "vocal",
               "somatic"
@@ -8051,8 +7721,7 @@
                 },
                 "effects": [],
                 "range": {
-                  "override": false,
-                  "units": "self"
+                  "override": false
                 },
                 "target": {
                   "prompt": true,
@@ -8097,8 +7766,7 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false,
-                  "idm": false
+                  "ida": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -8106,6 +7774,7 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -8116,36 +7785,21 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false,
-                  "autoConsume": false,
-                  "forceConsumeDialog": "default",
-                  "forceRollDialog": "default",
-                  "forceDamageDialog": "default",
-                  "otherActivityAsParentType": true,
-                  "removeChatButtons": "default",
-                  "magicEffect": false,
-                  "magicDamage": false,
-                  "noConcentrationCheck": false,
-                  "autoCEEffects": "default"
+                  "ignoreFullCover": false
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
                   "saveRemoves": true,
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
-                },
-                "flags": {},
-                "visibility": {
-                  "level": {},
-                  "requireAttunement": false,
-                  "requireIdentification": false,
-                  "requireMagic": false
                 }
               }
             },
-            "identifier": "",
-            "method": "spell",
-            "prepared": 1
+            "identifier": ""
+          },
+          "ownership": {
+            "default": 0,
+            "6yhz13iFYYklKtgA": 3
           },
           "_stats": {
             "systemId": null,
@@ -8157,9 +7811,6 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
-          },
-          "ownership": {
-            "default": 0
           }
         },
         {
@@ -8302,6 +7953,10 @@
               "cost": 0,
               "supply": 0
             },
+            "preparation": {
+              "mode": "prepared",
+              "prepared": true
+            },
             "properties": [
               "vocal",
               "somatic"
@@ -8333,13 +7988,11 @@
                 },
                 "effects": [
                   {
-                    "_id": "ylcraol0dukhqzx0",
-                    "level": {}
+                    "_id": "ylcraol0dukhqzx0"
                   }
                 ],
                 "range": {
-                  "override": false,
-                  "units": "self"
+                  "override": false
                 },
                 "target": {
                   "prompt": true,
@@ -8375,8 +8028,7 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false,
-                  "idm": false
+                  "ida": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -8384,6 +8036,7 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -8394,17 +8047,7 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false,
-                  "autoConsume": false,
-                  "forceConsumeDialog": "default",
-                  "forceRollDialog": "default",
-                  "forceDamageDialog": "default",
-                  "otherActivityAsParentType": true,
-                  "removeChatButtons": "default",
-                  "magicEffect": false,
-                  "magicDamage": false,
-                  "noConcentrationCheck": false,
-                  "autoCEEffects": "default"
+                  "ignoreFullCover": false
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -8412,20 +8055,14 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": "none",
-                "flags": {},
-                "visibility": {
-                  "level": {},
-                  "requireAttunement": false,
-                  "requireIdentification": false,
-                  "requireMagic": false
-                },
-                "otherActivityAsParentType": true
+                "otherActivityId": "none"
               }
             },
-            "identifier": "",
-            "method": "spell",
-            "prepared": 1
+            "identifier": ""
+          },
+          "ownership": {
+            "default": 0,
+            "6yhz13iFYYklKtgA": 3
           },
           "_stats": {
             "systemId": null,
@@ -8437,9 +8074,6 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
-          },
-          "ownership": {
-            "default": 0
           }
         },
         {
@@ -8577,7 +8211,7 @@
                 "choice": false
               },
               "template": {
-                "units": "ft",
+                "units": "",
                 "contiguous": false
               }
             },
@@ -8597,6 +8231,10 @@
               "consumed": false,
               "cost": 0,
               "supply": 0
+            },
+            "preparation": {
+              "mode": "prepared",
+              "prepared": true
             },
             "properties": [
               "vocal",
@@ -8629,13 +8267,11 @@
                 },
                 "effects": [
                   {
-                    "_id": "utjqqydq8odyc0ei",
-                    "level": {}
+                    "_id": "utjqqydq8odyc0ei"
                   }
                 ],
                 "range": {
-                  "override": false,
-                  "units": "self"
+                  "override": false
                 },
                 "target": {
                   "prompt": true,
@@ -8671,8 +8307,7 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false,
-                  "idm": false
+                  "ida": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -8680,6 +8315,7 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -8690,17 +8326,7 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false,
-                  "autoConsume": false,
-                  "forceConsumeDialog": "default",
-                  "forceRollDialog": "default",
-                  "forceDamageDialog": "default",
-                  "otherActivityAsParentType": true,
-                  "removeChatButtons": "default",
-                  "magicEffect": false,
-                  "magicDamage": false,
-                  "noConcentrationCheck": false,
-                  "autoCEEffects": "default"
+                  "ignoreFullCover": false
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -8708,20 +8334,14 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": "none",
-                "flags": {},
-                "visibility": {
-                  "level": {},
-                  "requireAttunement": false,
-                  "requireIdentification": false,
-                  "requireMagic": false
-                },
-                "otherActivityAsParentType": true
+                "otherActivityId": "none"
               }
             },
-            "identifier": "",
-            "method": "spell",
-            "prepared": 1
+            "identifier": ""
+          },
+          "ownership": {
+            "default": 0,
+            "6yhz13iFYYklKtgA": 3
           },
           "_stats": {
             "systemId": null,
@@ -8733,9 +8353,6 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
-          },
-          "ownership": {
-            "default": 0
           }
         },
         {
@@ -8802,7 +8419,7 @@
                 "choice": false
               },
               "template": {
-                "units": "ft",
+                "units": "",
                 "contiguous": false
               }
             },
@@ -8822,6 +8439,10 @@
               "consumed": false,
               "cost": 0,
               "supply": 0
+            },
+            "preparation": {
+              "mode": "prepared",
+              "prepared": true
             },
             "properties": [
               "vocal",
@@ -8854,8 +8475,7 @@
                 },
                 "effects": [],
                 "range": {
-                  "override": false,
-                  "units": "self"
+                  "override": false
                 },
                 "target": {
                   "prompt": true,
@@ -8891,8 +8511,7 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false,
-                  "idm": false
+                  "ida": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -8900,6 +8519,7 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -8910,17 +8530,7 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false,
-                  "autoConsume": false,
-                  "forceConsumeDialog": "default",
-                  "forceRollDialog": "default",
-                  "forceDamageDialog": "default",
-                  "otherActivityAsParentType": true,
-                  "removeChatButtons": "default",
-                  "magicEffect": false,
-                  "magicDamage": false,
-                  "noConcentrationCheck": false,
-                  "autoCEEffects": "default"
+                  "ignoreFullCover": false
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -8928,20 +8538,14 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": "none",
-                "flags": {},
-                "visibility": {
-                  "level": {},
-                  "requireAttunement": false,
-                  "requireIdentification": false,
-                  "requireMagic": false
-                },
-                "otherActivityAsParentType": true
+                "otherActivityId": "none"
               }
             },
-            "identifier": "",
-            "method": "spell",
-            "prepared": 1
+            "identifier": ""
+          },
+          "ownership": {
+            "default": 0,
+            "6yhz13iFYYklKtgA": 3
           },
           "_stats": {
             "systemId": null,
@@ -8953,9 +8557,6 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
-          },
-          "ownership": {
-            "default": 0
           }
         },
         {
@@ -9023,7 +8624,7 @@
                 "choice": false
               },
               "template": {
-                "units": "ft",
+                "units": "",
                 "contiguous": false
               }
             },
@@ -9043,6 +8644,10 @@
               "consumed": false,
               "cost": 0,
               "supply": 0
+            },
+            "preparation": {
+              "mode": "prepared",
+              "prepared": true
             },
             "properties": [
               "vocal",
@@ -9077,8 +8682,7 @@
                 },
                 "effects": [],
                 "range": {
-                  "override": false,
-                  "units": "self"
+                  "override": false
                 },
                 "target": {
                   "prompt": true,
@@ -9114,8 +8718,7 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false,
-                  "idm": false
+                  "ida": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -9123,6 +8726,7 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -9133,17 +8737,7 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false,
-                  "autoConsume": false,
-                  "forceConsumeDialog": "default",
-                  "forceRollDialog": "default",
-                  "forceDamageDialog": "default",
-                  "otherActivityAsParentType": true,
-                  "removeChatButtons": "default",
-                  "magicEffect": false,
-                  "magicDamage": false,
-                  "noConcentrationCheck": false,
-                  "autoCEEffects": "default"
+                  "ignoreFullCover": false
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -9151,20 +8745,14 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": "none",
-                "flags": {},
-                "visibility": {
-                  "level": {},
-                  "requireAttunement": false,
-                  "requireIdentification": false,
-                  "requireMagic": false
-                },
-                "otherActivityAsParentType": true
+                "otherActivityId": "none"
               }
             },
-            "identifier": "",
-            "method": "spell",
-            "prepared": 1
+            "identifier": ""
+          },
+          "ownership": {
+            "default": 0,
+            "6yhz13iFYYklKtgA": 3
           },
           "_stats": {
             "systemId": null,
@@ -9176,9 +8764,6 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
-          },
-          "ownership": {
-            "default": 0
           }
         },
         {
@@ -9363,6 +8948,10 @@
               "cost": 0,
               "supply": 0
             },
+            "preparation": {
+              "mode": "prepared",
+              "prepared": true
+            },
             "properties": [
               "vocal",
               "somatic",
@@ -9397,13 +8986,11 @@
                 },
                 "effects": [
                   {
-                    "_id": "z7yh6cstcvpisu6m",
-                    "level": {}
+                    "_id": "z7yh6cstcvpisu6m"
                   }
                 ],
                 "range": {
-                  "override": false,
-                  "units": "self"
+                  "override": false
                 },
                 "target": {
                   "prompt": true,
@@ -9439,8 +9026,7 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false,
-                  "idm": false
+                  "ida": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -9448,6 +9034,7 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -9458,17 +9045,7 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false,
-                  "autoConsume": false,
-                  "forceConsumeDialog": "default",
-                  "forceRollDialog": "default",
-                  "forceDamageDialog": "default",
-                  "otherActivityAsParentType": true,
-                  "removeChatButtons": "default",
-                  "magicEffect": false,
-                  "magicDamage": false,
-                  "noConcentrationCheck": false,
-                  "autoCEEffects": "default"
+                  "ignoreFullCover": false
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -9476,20 +9053,14 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": "none",
-                "flags": {},
-                "visibility": {
-                  "level": {},
-                  "requireAttunement": false,
-                  "requireIdentification": false,
-                  "requireMagic": false
-                },
-                "otherActivityAsParentType": true
+                "otherActivityId": "none"
               }
             },
-            "identifier": "",
-            "method": "spell",
-            "prepared": 1
+            "identifier": ""
+          },
+          "ownership": {
+            "default": 0,
+            "6yhz13iFYYklKtgA": 3
           },
           "_stats": {
             "systemId": null,
@@ -9501,9 +9072,6 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
-          },
-          "ownership": {
-            "default": 0
           }
         },
         {
@@ -9572,7 +9140,7 @@
                 "choice": false
               },
               "template": {
-                "units": "ft",
+                "units": "",
                 "contiguous": false
               }
             },
@@ -9591,6 +9159,10 @@
               "consumed": true,
               "cost": 25,
               "supply": 0
+            },
+            "preparation": {
+              "mode": "prepared",
+              "prepared": true
             },
             "properties": [
               "vocal",
@@ -9626,8 +9198,7 @@
                 },
                 "effects": [],
                 "range": {
-                  "override": false,
-                  "units": "self"
+                  "override": false
                 },
                 "target": {
                   "prompt": true,
@@ -9663,8 +9234,7 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false,
-                  "idm": false
+                  "ida": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -9672,6 +9242,7 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -9682,17 +9253,7 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false,
-                  "autoConsume": false,
-                  "forceConsumeDialog": "default",
-                  "forceRollDialog": "default",
-                  "forceDamageDialog": "default",
-                  "otherActivityAsParentType": true,
-                  "removeChatButtons": "default",
-                  "magicEffect": false,
-                  "magicDamage": false,
-                  "noConcentrationCheck": false,
-                  "autoCEEffects": "default"
+                  "ignoreFullCover": false
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -9700,20 +9261,14 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": "none",
-                "flags": {},
-                "visibility": {
-                  "level": {},
-                  "requireAttunement": false,
-                  "requireIdentification": false,
-                  "requireMagic": false
-                },
-                "otherActivityAsParentType": true
+                "otherActivityId": "none"
               }
             },
-            "identifier": "",
-            "method": "spell",
-            "prepared": 1
+            "identifier": ""
+          },
+          "ownership": {
+            "default": 0,
+            "6yhz13iFYYklKtgA": 3
           },
           "_stats": {
             "systemId": null,
@@ -9725,9 +9280,6 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
-          },
-          "ownership": {
-            "default": 0
           }
         },
         {
@@ -9815,6 +9367,10 @@
               "cost": 0,
               "supply": 0
             },
+            "preparation": {
+              "mode": "prepared",
+              "prepared": true
+            },
             "properties": [
               "vocal",
               "somatic",
@@ -9848,8 +9404,7 @@
                 },
                 "effects": [],
                 "range": {
-                  "override": false,
-                  "units": "self"
+                  "override": false
                 },
                 "target": {
                   "prompt": true,
@@ -9885,8 +9440,7 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false,
-                  "idm": false
+                  "ida": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -9894,6 +9448,7 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -9904,17 +9459,7 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false,
-                  "autoConsume": false,
-                  "forceConsumeDialog": "default",
-                  "forceRollDialog": "default",
-                  "forceDamageDialog": "default",
-                  "otherActivityAsParentType": true,
-                  "removeChatButtons": "default",
-                  "magicEffect": false,
-                  "magicDamage": false,
-                  "noConcentrationCheck": false,
-                  "autoCEEffects": "default"
+                  "ignoreFullCover": false
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -9922,20 +9467,14 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": "none",
-                "flags": {},
-                "visibility": {
-                  "level": {},
-                  "requireAttunement": false,
-                  "requireIdentification": false,
-                  "requireMagic": false
-                },
-                "otherActivityAsParentType": true
+                "otherActivityId": "none"
               }
             },
-            "identifier": "",
-            "method": "spell",
-            "prepared": 1
+            "identifier": ""
+          },
+          "ownership": {
+            "default": 0,
+            "6yhz13iFYYklKtgA": 3
           },
           "_stats": {
             "systemId": null,
@@ -9947,9 +9486,6 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
-          },
-          "ownership": {
-            "default": 0
           }
         },
         {
@@ -10017,7 +9553,7 @@
                 "choice": false
               },
               "template": {
-                "units": "ft",
+                "units": "",
                 "contiguous": false
               }
             },
@@ -10037,6 +9573,10 @@
               "consumed": false,
               "cost": 0,
               "supply": 0
+            },
+            "preparation": {
+              "mode": "prepared",
+              "prepared": true
             },
             "properties": [
               "vocal"
@@ -10068,8 +9608,7 @@
                 },
                 "effects": [],
                 "range": {
-                  "override": false,
-                  "units": "self"
+                  "override": false
                 },
                 "target": {
                   "prompt": true,
@@ -10115,8 +9654,7 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false,
-                  "idm": false
+                  "ida": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -10124,6 +9662,7 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -10134,17 +9673,7 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false,
-                  "autoConsume": false,
-                  "forceConsumeDialog": "default",
-                  "forceRollDialog": "default",
-                  "forceDamageDialog": "default",
-                  "otherActivityAsParentType": true,
-                  "removeChatButtons": "default",
-                  "magicEffect": false,
-                  "magicDamage": false,
-                  "noConcentrationCheck": false,
-                  "autoCEEffects": "default"
+                  "ignoreFullCover": false
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -10152,21 +9681,14 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": "",
-                "flags": {},
-                "visibility": {
-                  "level": {},
-                  "requireAttunement": false,
-                  "requireIdentification": false,
-                  "requireMagic": false
-                },
-                "otherActivityAsParentType": true,
-                "friendlySave": "default"
+                "otherActivityId": ""
               }
             },
-            "identifier": "",
-            "method": "spell",
-            "prepared": 1
+            "identifier": ""
+          },
+          "ownership": {
+            "default": 0,
+            "6yhz13iFYYklKtgA": 3
           },
           "_stats": {
             "systemId": null,
@@ -10178,9 +9700,6 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
-          },
-          "ownership": {
-            "default": 0
           }
         },
         {
@@ -10269,6 +9788,10 @@
               "cost": 100,
               "supply": 0
             },
+            "preparation": {
+              "mode": "prepared",
+              "prepared": true
+            },
             "properties": [
               "vocal",
               "somatic",
@@ -10302,8 +9825,7 @@
                 },
                 "effects": [],
                 "range": {
-                  "override": false,
-                  "units": "self"
+                  "override": false
                 },
                 "target": {
                   "prompt": true,
@@ -10348,8 +9870,7 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false,
-                  "idm": false
+                  "ida": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -10357,6 +9878,7 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -10367,36 +9889,21 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false,
-                  "autoConsume": false,
-                  "forceConsumeDialog": "default",
-                  "forceRollDialog": "default",
-                  "forceDamageDialog": "default",
-                  "otherActivityAsParentType": true,
-                  "removeChatButtons": "default",
-                  "magicEffect": false,
-                  "magicDamage": false,
-                  "noConcentrationCheck": false,
-                  "autoCEEffects": "default"
+                  "ignoreFullCover": false
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
                   "saveRemoves": true,
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
-                },
-                "flags": {},
-                "visibility": {
-                  "level": {},
-                  "requireAttunement": false,
-                  "requireIdentification": false,
-                  "requireMagic": false
                 }
               }
             },
-            "identifier": "",
-            "method": "spell",
-            "prepared": 1
+            "identifier": ""
+          },
+          "ownership": {
+            "default": 0,
+            "6yhz13iFYYklKtgA": 3
           },
           "_stats": {
             "systemId": null,
@@ -10408,9 +9915,6 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
-          },
-          "ownership": {
-            "default": 0
           }
         },
         {
@@ -10497,6 +10001,10 @@
               "cost": 500,
               "supply": 0
             },
+            "preparation": {
+              "mode": "prepared",
+              "prepared": true
+            },
             "properties": [
               "vocal",
               "somatic",
@@ -10530,8 +10038,7 @@
                 },
                 "effects": [],
                 "range": {
-                  "override": false,
-                  "units": "self"
+                  "override": false
                 },
                 "target": {
                   "prompt": true,
@@ -10576,8 +10083,7 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false,
-                  "idm": false
+                  "ida": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -10585,6 +10091,7 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -10595,36 +10102,21 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false,
-                  "autoConsume": false,
-                  "forceConsumeDialog": "default",
-                  "forceRollDialog": "default",
-                  "forceDamageDialog": "default",
-                  "otherActivityAsParentType": true,
-                  "removeChatButtons": "default",
-                  "magicEffect": false,
-                  "magicDamage": false,
-                  "noConcentrationCheck": false,
-                  "autoCEEffects": "default"
+                  "ignoreFullCover": false
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
                   "saveRemoves": true,
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
-                },
-                "flags": {},
-                "visibility": {
-                  "level": {},
-                  "requireAttunement": false,
-                  "requireIdentification": false,
-                  "requireMagic": false
                 }
               }
             },
-            "identifier": "",
-            "method": "spell",
-            "prepared": 1
+            "identifier": ""
+          },
+          "ownership": {
+            "default": 0,
+            "6yhz13iFYYklKtgA": 3
           },
           "_stats": {
             "systemId": null,
@@ -10636,9 +10128,6 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
-          },
-          "ownership": {
-            "default": 0
           }
         },
         {
@@ -10707,7 +10196,7 @@
                 "choice": false
               },
               "template": {
-                "units": "ft",
+                "units": "",
                 "contiguous": false
               }
             },
@@ -10726,6 +10215,10 @@
               "consumed": false,
               "cost": 100,
               "supply": 0
+            },
+            "preparation": {
+              "mode": "prepared",
+              "prepared": true
             },
             "properties": [
               "vocal",
@@ -10761,8 +10254,7 @@
                 },
                 "effects": [],
                 "range": {
-                  "override": false,
-                  "units": "self"
+                  "override": false
                 },
                 "target": {
                   "prompt": true,
@@ -10798,8 +10290,7 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false,
-                  "idm": false
+                  "ida": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -10807,6 +10298,7 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -10817,17 +10309,7 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false,
-                  "autoConsume": false,
-                  "forceConsumeDialog": "default",
-                  "forceRollDialog": "default",
-                  "forceDamageDialog": "default",
-                  "otherActivityAsParentType": true,
-                  "removeChatButtons": "default",
-                  "magicEffect": false,
-                  "magicDamage": false,
-                  "noConcentrationCheck": false,
-                  "autoCEEffects": "default"
+                  "ignoreFullCover": false
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -10835,20 +10317,14 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": "none",
-                "flags": {},
-                "visibility": {
-                  "level": {},
-                  "requireAttunement": false,
-                  "requireIdentification": false,
-                  "requireMagic": false
-                },
-                "otherActivityAsParentType": true
+                "otherActivityId": "none"
               }
             },
-            "identifier": "",
-            "method": "spell",
-            "prepared": 1
+            "identifier": ""
+          },
+          "ownership": {
+            "default": 0,
+            "6yhz13iFYYklKtgA": 3
           },
           "_stats": {
             "systemId": null,
@@ -10860,9 +10336,6 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
-          },
-          "ownership": {
-            "default": 0
           }
         },
         {
@@ -10932,7 +10405,7 @@
                 "choice": false
               },
               "template": {
-                "units": "ft",
+                "units": "",
                 "contiguous": false
               }
             },
@@ -10952,6 +10425,10 @@
               "consumed": false,
               "cost": 0,
               "supply": 0
+            },
+            "preparation": {
+              "mode": "prepared",
+              "prepared": true
             },
             "properties": [
               "vocal",
@@ -10984,8 +10461,7 @@
                 },
                 "effects": [],
                 "range": {
-                  "override": false,
-                  "units": "self"
+                  "override": false
                 },
                 "target": {
                   "prompt": true,
@@ -11049,8 +10525,7 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false,
-                  "idm": false
+                  "ida": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -11058,6 +10533,7 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -11068,17 +10544,7 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false,
-                  "autoConsume": false,
-                  "forceConsumeDialog": "default",
-                  "forceRollDialog": "default",
-                  "forceDamageDialog": "default",
-                  "otherActivityAsParentType": true,
-                  "removeChatButtons": "default",
-                  "magicEffect": false,
-                  "magicDamage": false,
-                  "noConcentrationCheck": false,
-                  "autoCEEffects": "default"
+                  "ignoreFullCover": false
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -11086,21 +10552,14 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": "",
-                "flags": {},
-                "visibility": {
-                  "level": {},
-                  "requireAttunement": false,
-                  "requireIdentification": false,
-                  "requireMagic": false
-                },
-                "otherActivityAsParentType": true,
-                "friendlySave": "default"
+                "otherActivityId": ""
               }
             },
-            "identifier": "",
-            "method": "spell",
-            "prepared": 1
+            "identifier": ""
+          },
+          "ownership": {
+            "default": 0,
+            "6yhz13iFYYklKtgA": 3
           },
           "_stats": {
             "systemId": null,
@@ -11112,9 +10571,6 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
-          },
-          "ownership": {
-            "default": 0
           }
         },
         {
@@ -11201,6 +10657,10 @@
               "cost": 25,
               "supply": 0
             },
+            "preparation": {
+              "mode": "prepared",
+              "prepared": true
+            },
             "properties": [
               "vocal",
               "somatic",
@@ -11234,8 +10694,7 @@
                 },
                 "effects": [],
                 "range": {
-                  "override": false,
-                  "units": "self"
+                  "override": false
                 },
                 "target": {
                   "prompt": true,
@@ -11271,8 +10730,7 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false,
-                  "idm": false
+                  "ida": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -11280,6 +10738,7 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -11290,17 +10749,7 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false,
-                  "autoConsume": false,
-                  "forceConsumeDialog": "default",
-                  "forceRollDialog": "default",
-                  "forceDamageDialog": "default",
-                  "otherActivityAsParentType": true,
-                  "removeChatButtons": "default",
-                  "magicEffect": false,
-                  "magicDamage": false,
-                  "noConcentrationCheck": false,
-                  "autoCEEffects": "default"
+                  "ignoreFullCover": false
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -11308,20 +10757,14 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": "none",
-                "flags": {},
-                "visibility": {
-                  "level": {},
-                  "requireAttunement": false,
-                  "requireIdentification": false,
-                  "requireMagic": false
-                },
-                "otherActivityAsParentType": true
+                "otherActivityId": "none"
               }
             },
-            "identifier": "",
-            "method": "spell",
-            "prepared": 1
+            "identifier": ""
+          },
+          "ownership": {
+            "default": 0,
+            "6yhz13iFYYklKtgA": 3
           },
           "_stats": {
             "systemId": null,
@@ -11333,9 +10776,6 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
-          },
-          "ownership": {
-            "default": 0
           }
         },
         {
@@ -11402,7 +10842,7 @@
                 "choice": false
               },
               "template": {
-                "units": "ft",
+                "units": "",
                 "contiguous": false
               }
             },
@@ -11422,6 +10862,10 @@
               "consumed": false,
               "cost": 0,
               "supply": 0
+            },
+            "preparation": {
+              "mode": "prepared",
+              "prepared": true
             },
             "properties": [
               "vocal",
@@ -11454,8 +10898,7 @@
                 },
                 "effects": [],
                 "range": {
-                  "override": false,
-                  "units": "self"
+                  "override": false
                 },
                 "target": {
                   "prompt": true,
@@ -11519,8 +10962,7 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false,
-                  "idm": false
+                  "ida": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -11528,6 +10970,7 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -11538,17 +10981,7 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false,
-                  "autoConsume": false,
-                  "forceConsumeDialog": "default",
-                  "forceRollDialog": "default",
-                  "forceDamageDialog": "default",
-                  "otherActivityAsParentType": true,
-                  "removeChatButtons": "default",
-                  "magicEffect": false,
-                  "magicDamage": false,
-                  "noConcentrationCheck": false,
-                  "autoCEEffects": "default"
+                  "ignoreFullCover": false
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -11556,21 +10989,14 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": "",
-                "flags": {},
-                "visibility": {
-                  "level": {},
-                  "requireAttunement": false,
-                  "requireIdentification": false,
-                  "requireMagic": false
-                },
-                "otherActivityAsParentType": true,
-                "friendlySave": "default"
+                "otherActivityId": ""
               }
             },
-            "identifier": "",
-            "method": "spell",
-            "prepared": 1
+            "identifier": ""
+          },
+          "ownership": {
+            "default": 0,
+            "6yhz13iFYYklKtgA": 3
           },
           "_stats": {
             "systemId": null,
@@ -11582,9 +11008,6 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
-          },
-          "ownership": {
-            "default": 0
           }
         },
         {
@@ -11726,6 +11149,10 @@
               "cost": 0,
               "supply": 0
             },
+            "preparation": {
+              "mode": "prepared",
+              "prepared": true
+            },
             "properties": [
               "vocal",
               "somatic",
@@ -11759,13 +11186,11 @@
                 },
                 "effects": [
                   {
-                    "_id": "bje9rlwmgbv7pr68",
-                    "level": {}
+                    "_id": "bje9rlwmgbv7pr68"
                   }
                 ],
                 "range": {
-                  "override": false,
-                  "units": "self"
+                  "override": false
                 },
                 "target": {
                   "prompt": true,
@@ -11812,8 +11237,7 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false,
-                  "idm": false
+                  "ida": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -11821,6 +11245,7 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -11831,36 +11256,21 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false,
-                  "autoConsume": false,
-                  "forceConsumeDialog": "default",
-                  "forceRollDialog": "default",
-                  "forceDamageDialog": "default",
-                  "otherActivityAsParentType": true,
-                  "removeChatButtons": "default",
-                  "magicEffect": false,
-                  "magicDamage": false,
-                  "noConcentrationCheck": false,
-                  "autoCEEffects": "default"
+                  "ignoreFullCover": false
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
                   "saveRemoves": true,
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
-                },
-                "flags": {},
-                "visibility": {
-                  "level": {},
-                  "requireAttunement": false,
-                  "requireIdentification": false,
-                  "requireMagic": false
                 }
               }
             },
-            "identifier": "",
-            "method": "spell",
-            "prepared": 1
+            "identifier": ""
+          },
+          "ownership": {
+            "default": 0,
+            "6yhz13iFYYklKtgA": 3
           },
           "_stats": {
             "systemId": null,
@@ -11872,9 +11282,6 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
-          },
-          "ownership": {
-            "default": 0
           }
         },
         {
@@ -11942,7 +11349,7 @@
                 "choice": false
               },
               "template": {
-                "units": "ft",
+                "units": "",
                 "contiguous": false
               }
             },
@@ -11962,6 +11369,10 @@
               "consumed": false,
               "cost": 0,
               "supply": 0
+            },
+            "preparation": {
+              "mode": "prepared",
+              "prepared": true
             },
             "properties": [
               "vocal",
@@ -11997,8 +11408,7 @@
                 },
                 "effects": [],
                 "range": {
-                  "override": false,
-                  "units": "self"
+                  "override": false
                 },
                 "target": {
                   "prompt": true,
@@ -12062,8 +11472,7 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false,
-                  "idm": false
+                  "ida": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -12071,6 +11480,7 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -12081,17 +11491,7 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false,
-                  "autoConsume": false,
-                  "forceConsumeDialog": "default",
-                  "forceRollDialog": "default",
-                  "forceDamageDialog": "default",
-                  "otherActivityAsParentType": true,
-                  "removeChatButtons": "default",
-                  "magicEffect": false,
-                  "magicDamage": false,
-                  "noConcentrationCheck": false,
-                  "autoCEEffects": "default"
+                  "ignoreFullCover": false
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -12099,21 +11499,14 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": "",
-                "flags": {},
-                "visibility": {
-                  "level": {},
-                  "requireAttunement": false,
-                  "requireIdentification": false,
-                  "requireMagic": false
-                },
-                "otherActivityAsParentType": true,
-                "friendlySave": "default"
+                "otherActivityId": ""
               }
             },
-            "identifier": "",
-            "method": "spell",
-            "prepared": 1
+            "identifier": ""
+          },
+          "ownership": {
+            "default": 0,
+            "6yhz13iFYYklKtgA": 3
           },
           "_stats": {
             "systemId": null,
@@ -12125,9 +11518,6 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
-          },
-          "ownership": {
-            "default": 0
           }
         }
       ],
@@ -12384,10 +11774,13 @@
             }
           },
           "movement": {
-            "walk": "20",
+            "burrow": null,
+            "climb": null,
+            "fly": null,
+            "swim": null,
+            "walk": 20,
             "units": "ft",
-            "hover": false,
-            "ignoredDifficultTerrain": []
+            "hover": false
           },
           "attunement": {
             "max": 3
@@ -12434,10 +11827,6 @@
           },
           "loyalty": {
             "value": null
-          },
-          "price": {
-            "value": null,
-            "denomination": "gp"
           }
         },
         "details": {
@@ -12816,12 +12205,12 @@
         },
         "resources": {
           "legact": {
-            "max": 0,
-            "spent": 0
+            "value": 0,
+            "max": 0
           },
           "legres": {
-            "max": 0,
-            "spent": 0
+            "value": 0,
+            "max": 0
           },
           "lair": {
             "value": false,
@@ -12834,6 +12223,10 @@
           "revision": 1,
           "rules": "2014"
         }
+      },
+      "ownership": {
+        "default": 0,
+        "6yhz13iFYYklKtgA": 3
       },
       "prototypeToken": {
         "name": "Madam Eva",
@@ -12943,9 +12336,6 @@
         "compendiumSource": "Compendium.world.ddb-lost-mines-phandelver-monsters.jAhNNjsyRKjQqzm5",
         "duplicateSource": null,
         "exportSource": null
-      },
-      "ownership": {
-        "default": 0
       }
     }
   ],
@@ -12977,6 +12367,10 @@
           },
           "src": null,
           "system": {},
+          "ownership": {
+            "default": -1,
+            "6yhz13iFYYklKtgA": 3
+          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
@@ -12989,10 +12383,7 @@
             "duplicateSource": null,
             "exportSource": null
           },
-          "category": null,
-          "ownership": {
-            "default": -1
-          }
+          "category": null
         },
         {
           "sort": 200000,
@@ -13014,6 +12405,10 @@
           },
           "src": null,
           "system": {},
+          "ownership": {
+            "default": -1,
+            "6yhz13iFYYklKtgA": 3
+          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
@@ -13026,10 +12421,7 @@
             "duplicateSource": null,
             "exportSource": null
           },
-          "category": null,
-          "ownership": {
-            "default": -1
-          }
+          "category": null
         },
         {
           "sort": 300000,
@@ -13051,6 +12443,10 @@
           },
           "src": null,
           "system": {},
+          "ownership": {
+            "default": -1,
+            "6yhz13iFYYklKtgA": 3
+          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
@@ -13063,13 +12459,14 @@
             "duplicateSource": null,
             "exportSource": null
           },
-          "category": null,
-          "ownership": {
-            "default": -1
-          }
+          "category": null
         }
       ],
       "sort": 0,
+      "ownership": {
+        "default": 0,
+        "6yhz13iFYYklKtgA": 3
+      },
       "flags": {},
       "_stats": {
         "systemId": "dnd5e",
@@ -13082,16 +12479,14 @@
         "duplicateSource": null,
         "exportSource": null
       },
-      "categories": [],
-      "ownership": {
-        "default": 0
-      }
+      "categories": []
     }
   ],
   "scenes": [
     {
       "_id": "eiQ8Xea04JR0Scyh",
       "name": "Tser Pool Encampment",
+      "active": false,
       "navigation": false,
       "navOrder": 0,
       "navName": "",
@@ -13213,8 +12608,8 @@
             "system": {},
             "items": [],
             "effects": [],
-            "flags": {},
-            "ownership": null
+            "ownership": null,
+            "flags": {}
           },
           "occludable": {
             "radius": 10
@@ -22021,6 +21416,10 @@
       "flags": {
         "token-attacher": {}
       },
+      "ownership": {
+        "default": 0,
+        "6yhz13iFYYklKtgA": 3
+      },
       "background": {
         "src": "modules/sdnd-strahd-adv/images/maps/Areas/G/g1_camp/camp.webp",
         "offsetX": 0,
@@ -22084,16 +21483,13 @@
       },
       "fog": {
         "exploration": true,
+        "reset": 1673218695923,
         "overlay": null,
         "colors": {
           "explored": null,
           "unexplored": null
         }
-      },
-      "ownership": {
-        "default": 0
-      },
-      "active": false
+      }
     }
   ],
   "tables": [],
@@ -22227,7 +21623,7 @@
         "createdTime": null,
         "modifiedTime": 1747943849391,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
-        "compendiumSource": null,
+        "compendiumSource": "Folder.SgCwMBKLb1IzBVaz",
         "duplicateSource": null,
         "exportSource": null
       },
@@ -22272,7 +21668,7 @@
         "createdTime": null,
         "modifiedTime": 1689092687175,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
-        "compendiumSource": null,
+        "compendiumSource": "Folder.JvBq76KcnxIjY4N7",
         "duplicateSource": null,
         "exportSource": null
       }
@@ -22293,7 +21689,7 @@
         "createdTime": 1705269312390,
         "modifiedTime": 1705269312390,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
-        "compendiumSource": null,
+        "compendiumSource": "Folder.uYXTLuQaI0dc0pCR",
         "duplicateSource": null,
         "exportSource": null
       },
@@ -22374,7 +21770,7 @@
     "systemVersion": "3.2.1",
     "coreVersion": "13.351",
     "createdTime": 1704929363516,
-    "modifiedTime": 1767281786394,
+    "modifiedTime": 1755713028510,
     "lastModifiedBy": "6yhz13iFYYklKtgA",
     "compendiumSource": null,
     "duplicateSource": null,

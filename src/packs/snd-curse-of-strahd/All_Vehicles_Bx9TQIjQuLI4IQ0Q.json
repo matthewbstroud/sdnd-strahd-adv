@@ -13,7 +13,7 @@
       "items": [],
       "effects": [],
       "folder": "zd9x2GFMK2wH9kUS",
-      "sort": 300000,
+      "sort": 0,
       "flags": {
         "midi-qol": {
           "concentration-damage": 0
@@ -164,7 +164,8 @@
           "ac": {
             "flat": null,
             "calc": "default",
-            "formula": ""
+            "formula": "",
+            "motionless": ""
           },
           "hp": {
             "value": null,
@@ -184,48 +185,33 @@
             }
           },
           "movement": {
-            "walk": "30",
+            "burrow": null,
+            "climb": null,
+            "fly": null,
+            "swim": null,
+            "walk": 30,
             "units": "ft",
-            "hover": false,
-            "ignoredDifficultTerrain": []
+            "hover": false
           },
           "actions": {
             "stations": false,
+            "value": 0,
             "thresholds": {
               "0": null,
               "1": null,
               "2": null
-            },
-            "max": 0,
-            "spent": 0
+            }
           },
           "capacity": {
             "creature": "",
-            "cargo": {
-              "value": 0,
-              "units": "tn"
-            }
-          },
-          "price": {
-            "value": null,
-            "denomination": "gp"
-          },
-          "quality": {
-            "value": 4
-          },
-          "travel": {
-            "paces": {},
-            "speeds": {},
-            "time": 24,
-            "units": "mph"
+            "cargo": 0
           }
         },
         "details": {
           "biography": {
             "value": "",
             "public": ""
-          },
-          "type": "water"
+          }
         },
         "traits": {
           "size": "lg",
@@ -265,15 +251,6 @@
           "dm": {
             "amount": {},
             "bypasses": []
-          },
-          "weight": {
-            "units": "lb"
-          },
-          "keel": {
-            "units": "ft"
-          },
-          "beam": {
-            "units": "ft"
           }
         },
         "currency": {
@@ -283,6 +260,7 @@
           "sp": 0,
           "cp": 0
         },
+        "vehicleType": "water",
         "cargo": {
           "crew": [],
           "passengers": []
@@ -290,16 +268,11 @@
         "source": {
           "rules": "2014",
           "revision": 1
-        },
-        "crew": {
-          "value": []
-        },
-        "draft": {
-          "value": []
-        },
-        "passengers": {
-          "value": []
         }
+      },
+      "ownership": {
+        "default": 0,
+        "6yhz13iFYYklKtgA": 3
       },
       "prototypeToken": {
         "name": "Cart",
@@ -404,14 +377,11 @@
         "systemVersion": "4.4.2",
         "coreVersion": "13.351",
         "createdTime": null,
-        "modifiedTime": 1755779191295,
+        "modifiedTime": 1748176573915,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
         "duplicateSource": null,
         "exportSource": null
-      },
-      "ownership": {
-        "default": 0
       }
     },
     {
@@ -579,13 +549,18 @@
             "bonus": ""
           },
           "movement": {
+            "burrow": null,
+            "climb": null,
+            "fly": null,
+            "swim": null,
+            "walk": null,
             "units": null,
-            "hover": false,
-            "ignoredDifficultTerrain": []
+            "hover": false
           },
           "ac": {
             "flat": null,
-            "calc": "default"
+            "calc": "default",
+            "motionless": ""
           },
           "hp": {
             "value": 0,
@@ -597,41 +572,23 @@
           },
           "actions": {
             "stations": false,
+            "value": 0,
             "thresholds": {
               "0": null,
               "1": null,
               "2": null
-            },
-            "max": 0,
-            "spent": 0
+            }
           },
           "capacity": {
             "creature": "",
-            "cargo": {
-              "value": 0,
-              "units": "tn"
-            }
-          },
-          "price": {
-            "value": null,
-            "denomination": "gp"
-          },
-          "quality": {
-            "value": 4
-          },
-          "travel": {
-            "paces": {},
-            "speeds": {},
-            "time": 24,
-            "units": "mph"
+            "cargo": 0
           }
         },
         "details": {
           "biography": {
             "value": "",
             "public": ""
-          },
-          "type": "land"
+          }
         },
         "traits": {
           "size": "lg",
@@ -671,33 +628,16 @@
             ],
             "custom": ""
           },
-          "dimensions": "",
-          "weight": {
-            "units": "lb"
-          },
-          "keel": {
-            "units": "ft"
-          },
-          "beam": {
-            "units": "ft"
-          }
+          "dimensions": ""
         },
+        "vehicleType": "land",
         "cargo": {
           "crew": [],
           "passengers": []
         },
         "source": {
           "revision": 1,
-          "rules": "2014"
-        },
-        "crew": {
-          "value": []
-        },
-        "draft": {
-          "value": []
-        },
-        "passengers": {
-          "value": []
+          "rules": "2024"
         }
       },
       "prototypeToken": {
@@ -802,7 +742,11 @@
       },
       "items": [],
       "effects": [],
-      "sort": 400000,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "6yhz13iFYYklKtgA": 3
+      },
       "flags": {
         "core": {},
         "sdnd-strahd-adv": {
@@ -814,7 +758,7 @@
         "systemVersion": "4.4.2",
         "coreVersion": "13.351",
         "createdTime": 1720728320169,
-        "modifiedTime": 1755779191295,
+        "modifiedTime": 1748176577988,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
         "duplicateSource": null,
@@ -825,9 +769,6 @@
           "systemId": "dnd5e",
           "systemVersion": "3.1.2"
         }
-      },
-      "ownership": {
-        "default": 0
       }
     },
     {
@@ -838,7 +779,7 @@
       "items": [],
       "effects": [],
       "folder": "zd9x2GFMK2wH9kUS",
-      "sort": 800000,
+      "sort": 0,
       "flags": {
         "midi-qol": {
           "concentration-damage": 0
@@ -989,7 +930,8 @@
           "ac": {
             "flat": null,
             "calc": "default",
-            "formula": ""
+            "formula": "",
+            "motionless": ""
           },
           "hp": {
             "value": 0,
@@ -1009,48 +951,33 @@
             }
           },
           "movement": {
-            "walk": "30",
+            "burrow": null,
+            "climb": null,
+            "fly": null,
+            "swim": null,
+            "walk": 30,
             "units": "ft",
-            "hover": false,
-            "ignoredDifficultTerrain": []
+            "hover": false
           },
           "actions": {
             "stations": false,
+            "value": 0,
             "thresholds": {
               "0": null,
               "1": null,
               "2": null
-            },
-            "max": 0,
-            "spent": 0
+            }
           },
           "capacity": {
             "creature": "",
-            "cargo": {
-              "value": 0,
-              "units": "tn"
-            }
-          },
-          "price": {
-            "value": null,
-            "denomination": "gp"
-          },
-          "quality": {
-            "value": 4
-          },
-          "travel": {
-            "paces": {},
-            "speeds": {},
-            "time": 24,
-            "units": "mph"
+            "cargo": 0
           }
         },
         "details": {
           "biography": {
             "value": "",
             "public": ""
-          },
-          "type": "water"
+          }
         },
         "traits": {
           "size": "lg",
@@ -1090,15 +1017,6 @@
           "dm": {
             "amount": {},
             "bypasses": []
-          },
-          "weight": {
-            "units": "lb"
-          },
-          "keel": {
-            "units": "ft"
-          },
-          "beam": {
-            "units": "ft"
           }
         },
         "currency": {
@@ -1108,6 +1026,7 @@
           "sp": 0,
           "cp": 0
         },
+        "vehicleType": "water",
         "cargo": {
           "crew": [],
           "passengers": []
@@ -1115,16 +1034,11 @@
         "source": {
           "rules": "2014",
           "revision": 1
-        },
-        "crew": {
-          "value": []
-        },
-        "draft": {
-          "value": []
-        },
-        "passengers": {
-          "value": []
         }
+      },
+      "ownership": {
+        "default": 0,
+        "6yhz13iFYYklKtgA": 3
       },
       "prototypeToken": {
         "name": "Travelling Party",
@@ -1237,14 +1151,11 @@
         "systemVersion": "4.4.2",
         "coreVersion": "13.351",
         "createdTime": null,
-        "modifiedTime": 1755779191295,
+        "modifiedTime": 1748176594405,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
         "duplicateSource": null,
         "exportSource": null
-      },
-      "ownership": {
-        "default": 0
       }
     },
     {
@@ -1255,7 +1166,7 @@
       "items": [],
       "effects": [],
       "folder": "zd9x2GFMK2wH9kUS",
-      "sort": 900000,
+      "sort": 0,
       "flags": {
         "core": {},
         "midi-qol": {
@@ -1407,7 +1318,8 @@
           "ac": {
             "flat": null,
             "calc": "default",
-            "formula": ""
+            "formula": "",
+            "motionless": ""
           },
           "hp": {
             "value": 500,
@@ -1427,48 +1339,33 @@
             }
           },
           "movement": {
-            "walk": "30",
+            "burrow": null,
+            "climb": null,
+            "fly": null,
+            "swim": null,
+            "walk": 30,
             "units": "ft",
-            "hover": false,
-            "ignoredDifficultTerrain": []
+            "hover": false
           },
           "actions": {
             "stations": false,
+            "value": 0,
             "thresholds": {
               "0": null,
               "1": null,
               "2": null
-            },
-            "max": 0,
-            "spent": 0
+            }
           },
           "capacity": {
             "creature": "",
-            "cargo": {
-              "value": 0,
-              "units": "tn"
-            }
-          },
-          "price": {
-            "value": null,
-            "denomination": "gp"
-          },
-          "quality": {
-            "value": 4
-          },
-          "travel": {
-            "paces": {},
-            "speeds": {},
-            "time": 24,
-            "units": "mph"
+            "cargo": 0
           }
         },
         "details": {
           "biography": {
             "value": "",
             "public": ""
-          },
-          "type": "water"
+          }
         },
         "traits": {
           "size": "lg",
@@ -1508,15 +1405,6 @@
           "dm": {
             "amount": {},
             "bypasses": []
-          },
-          "weight": {
-            "units": "lb"
-          },
-          "keel": {
-            "units": "ft"
-          },
-          "beam": {
-            "units": "ft"
           }
         },
         "currency": {
@@ -1526,6 +1414,7 @@
           "sp": 0,
           "cp": 0
         },
+        "vehicleType": "water",
         "cargo": {
           "crew": [],
           "passengers": [
@@ -1538,16 +1427,11 @@
         "source": {
           "rules": "2014",
           "revision": 1
-        },
-        "crew": {
-          "value": []
-        },
-        "draft": {
-          "value": []
-        },
-        "passengers": {
-          "value": []
         }
+      },
+      "ownership": {
+        "default": 3,
+        "6yhz13iFYYklKtgA": 3
       },
       "prototypeToken": {
         "name": "Travelling Party",
@@ -1674,14 +1558,11 @@
         "systemVersion": "4.4.2",
         "coreVersion": "13.351",
         "createdTime": null,
-        "modifiedTime": 1755779191295,
+        "modifiedTime": 1748176594413,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": "Actor.jUG6BIcG9uNoucVl",
         "duplicateSource": null,
         "exportSource": null
-      },
-      "ownership": {
-        "default": 3
       }
     }
   ],
@@ -1747,7 +1628,7 @@
     "systemVersion": "3.1.2",
     "coreVersion": "13.351",
     "createdTime": 1726322125077,
-    "modifiedTime": 1767281748675,
+    "modifiedTime": 1754951366343,
     "lastModifiedBy": "6yhz13iFYYklKtgA",
     "compendiumSource": null,
     "duplicateSource": null,

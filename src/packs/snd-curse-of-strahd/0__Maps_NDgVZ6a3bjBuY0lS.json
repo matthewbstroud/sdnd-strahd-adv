@@ -165,7 +165,8 @@
           "ac": {
             "flat": null,
             "calc": "default",
-            "formula": ""
+            "formula": "",
+            "motionless": ""
           },
           "hp": {
             "value": 500,
@@ -185,48 +186,33 @@
             }
           },
           "movement": {
-            "walk": "30",
+            "burrow": null,
+            "climb": null,
+            "fly": null,
+            "swim": null,
+            "walk": 30,
             "units": "ft",
-            "hover": false,
-            "ignoredDifficultTerrain": []
+            "hover": false
           },
           "actions": {
             "stations": false,
+            "value": 0,
             "thresholds": {
               "0": null,
               "1": null,
               "2": null
-            },
-            "max": 0,
-            "spent": 0
+            }
           },
           "capacity": {
             "creature": "",
-            "cargo": {
-              "value": 0,
-              "units": "tn"
-            }
-          },
-          "price": {
-            "value": null,
-            "denomination": "gp"
-          },
-          "quality": {
-            "value": 4
-          },
-          "travel": {
-            "paces": {},
-            "speeds": {},
-            "time": 24,
-            "units": "mph"
+            "cargo": 0
           }
         },
         "details": {
           "biography": {
             "value": "",
             "public": ""
-          },
-          "type": "water"
+          }
         },
         "traits": {
           "size": "lg",
@@ -266,15 +252,6 @@
           "dm": {
             "amount": {},
             "bypasses": []
-          },
-          "weight": {
-            "units": "lb"
-          },
-          "keel": {
-            "units": "ft"
-          },
-          "beam": {
-            "units": "ft"
           }
         },
         "currency": {
@@ -284,6 +261,7 @@
           "sp": 0,
           "cp": 0
         },
+        "vehicleType": "water",
         "cargo": {
           "crew": [],
           "passengers": [
@@ -296,16 +274,11 @@
         "source": {
           "rules": "2014",
           "revision": 1
-        },
-        "crew": {
-          "value": []
-        },
-        "draft": {
-          "value": []
-        },
-        "passengers": {
-          "value": []
         }
+      },
+      "ownership": {
+        "default": 3,
+        "6yhz13iFYYklKtgA": 3
       },
       "prototypeToken": {
         "name": "Travelling Party",
@@ -437,9 +410,6 @@
         "compendiumSource": "Actor.jUG6BIcG9uNoucVl",
         "duplicateSource": null,
         "exportSource": null
-      },
-      "ownership": {
-        "default": 3
       }
     }
   ],
@@ -471,6 +441,10 @@
           },
           "src": null,
           "system": {},
+          "ownership": {
+            "default": -1,
+            "6yhz13iFYYklKtgA": 3
+          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
@@ -483,13 +457,14 @@
             "duplicateSource": null,
             "exportSource": null
           },
-          "category": null,
-          "ownership": {
-            "default": -1
-          }
+          "category": null
         }
       ],
       "sort": 100000,
+      "ownership": {
+        "default": 0,
+        "6yhz13iFYYklKtgA": 3
+      },
       "flags": {},
       "_stats": {
         "systemId": "dnd5e",
@@ -502,10 +477,7 @@
         "duplicateSource": null,
         "exportSource": null
       },
-      "categories": [],
-      "ownership": {
-        "default": 0
-      }
+      "categories": []
     },
     {
       "folder": "Wum4G6zSvATS6dar",
@@ -532,6 +504,10 @@
           },
           "src": null,
           "system": {},
+          "ownership": {
+            "default": -1,
+            "6yhz13iFYYklKtgA": 3
+          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
@@ -544,13 +520,14 @@
             "duplicateSource": null,
             "exportSource": null
           },
-          "category": null,
-          "ownership": {
-            "default": -1
-          }
+          "category": null
         }
       ],
       "sort": 0,
+      "ownership": {
+        "default": 0,
+        "6yhz13iFYYklKtgA": 3
+      },
       "flags": {},
       "_stats": {
         "systemId": "dnd5e",
@@ -563,16 +540,14 @@
         "duplicateSource": null,
         "exportSource": null
       },
-      "categories": [],
-      "ownership": {
-        "default": 0
-      }
+      "categories": []
     }
   ],
   "scenes": [
     {
       "_id": "UbBKrX8XSzSCcyM9",
       "name": "Bandit Camp",
+      "active": false,
       "navigation": false,
       "navOrder": 0,
       "navName": "",
@@ -652,6 +627,10 @@
       "flags": {
         "token-attacher": {}
       },
+      "ownership": {
+        "default": 0,
+        "6yhz13iFYYklKtgA": 3
+      },
       "background": {
         "src": "modules/sdnd-strahd-adv/images/maps/BanditCamp.webp",
         "offsetX": 0,
@@ -715,20 +694,18 @@
       },
       "fog": {
         "exploration": true,
+        "reset": 1676336949639,
         "overlay": null,
         "colors": {
           "explored": null,
           "unexplored": null
         }
-      },
-      "ownership": {
-        "default": 0
-      },
-      "active": false
+      }
     },
     {
       "_id": "xSmrTq9oeLpLiwnC",
       "name": "Barovia - Full",
+      "active": false,
       "navigation": false,
       "navOrder": 0,
       "navName": "",
@@ -773,6 +750,10 @@
           "legacyHex": true
         },
         "token-attacher": {}
+      },
+      "ownership": {
+        "default": 0,
+        "6yhz13iFYYklKtgA": 3
       },
       "background": {
         "src": "modules/sdnd-strahd-adv/images/maps/Map%20of%20Barovia%20-%204k%20-%20All%20Names%20-%20Without%20Hex.webp",
@@ -837,20 +818,18 @@
       },
       "fog": {
         "exploration": true,
+        "reset": 1673102626704,
         "overlay": null,
         "colors": {
           "explored": null,
           "unexplored": null
         }
-      },
-      "ownership": {
-        "default": 0
-      },
-      "active": false
+      }
     },
     {
       "_id": "KRwdpAjIkWGmVSTN",
       "name": "Map of Barovia",
+      "active": false,
       "navigation": true,
       "navOrder": 0,
       "navName": "",
@@ -986,8 +965,8 @@
             "system": {},
             "items": [],
             "effects": [],
-            "flags": {},
-            "ownership": null
+            "ownership": null,
+            "flags": {}
           },
           "sort": 0,
           "locked": false,
@@ -3748,6 +3727,10 @@
         },
         "token-attacher": {}
       },
+      "ownership": {
+        "default": 0,
+        "6yhz13iFYYklKtgA": 3
+      },
       "background": {
         "src": "modules/sdnd-strahd-adv/images/maps/Map%20of%20Barovia%20-%204k%20-%20No%20Names%20-%20Without%20Hex.webp",
         "offsetX": 0,
@@ -3768,7 +3751,7 @@
         "systemVersion": "3.2.1",
         "coreVersion": "13.351",
         "createdTime": 1704856935311,
-        "modifiedTime": 1755781095980,
+        "modifiedTime": 1755459245486,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
         "duplicateSource": null,
@@ -3811,16 +3794,13 @@
       },
       "fog": {
         "exploration": true,
+        "reset": 1673102626704,
         "overlay": null,
         "colors": {
           "explored": null,
           "unexplored": null
         }
-      },
-      "ownership": {
-        "default": 0
-      },
-      "active": false
+      }
     }
   ],
   "tables": [],
@@ -3977,7 +3957,7 @@
         "createdTime": null,
         "modifiedTime": 1726317879401,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
-        "compendiumSource": null,
+        "compendiumSource": "Folder.zd9x2GFMK2wH9kUS",
         "duplicateSource": null,
         "exportSource": null
       }
@@ -3998,7 +3978,7 @@
         "createdTime": null,
         "modifiedTime": 1747943849391,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
-        "compendiumSource": null,
+        "compendiumSource": "Folder.SgCwMBKLb1IzBVaz",
         "duplicateSource": null,
         "exportSource": null
       },
@@ -4013,7 +3993,7 @@
     "systemVersion": "3.1.2",
     "coreVersion": "13.351",
     "createdTime": 1722960870473,
-    "modifiedTime": 1767281717012,
+    "modifiedTime": 1755780625927,
     "lastModifiedBy": "6yhz13iFYYklKtgA",
     "compendiumSource": null,
     "duplicateSource": null,
