@@ -46,6 +46,7 @@
             "rarity": "common",
             "identified": true,
             "cover": null,
+            "crewed": false,
             "range": {
               "value": null,
               "long": null,
@@ -136,7 +137,7 @@
                 "duration": {
                   "concentration": false,
                   "value": "",
-                  "units": "inst",
+                  "units": "",
                   "special": "",
                   "override": false
                 },
@@ -154,7 +155,7 @@
                     "size": "",
                     "width": "",
                     "height": "",
-                    "units": "ft"
+                    "units": ""
                   },
                   "affects": {
                     "count": "",
@@ -201,8 +202,7 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false,
-                  "idm": false
+                  "ida": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -210,6 +210,7 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
+                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -220,17 +221,7 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false,
-                  "autoConsume": false,
-                  "forceConsumeDialog": "default",
-                  "forceRollDialog": "default",
-                  "forceDamageDialog": "default",
-                  "otherActivityAsParentType": true,
-                  "removeChatButtons": "default",
-                  "magicEffect": false,
-                  "magicDamage": false,
-                  "noConcentrationCheck": false,
-                  "autoCEEffects": "default"
+                  "ignoreFullCover": false
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -241,26 +232,16 @@
                 "otherActivityId": "",
                 "attackMode": "oneHanded",
                 "ammunition": "",
-                "otherActivityUuid": "",
-                "flags": {},
-                "visibility": {
-                  "level": {},
-                  "requireAttunement": false,
-                  "requireIdentification": false,
-                  "requireMagic": false
-                },
-                "otherActivityAsParentType": true,
-                "attackRollPerTarget": "default",
-                "fumbleThreshold": 1
+                "otherActivityUuid": ""
               }
             },
             "identifier": "",
             "container": null,
             "ammunition": {},
-            "magicalBonus": null,
-            "crew": {
-              "value": []
-            }
+            "magicalBonus": null
+          },
+          "ownership": {
+            "default": 0
           },
           "_stats": {
             "systemId": null,
@@ -272,9 +253,6 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
-          },
-          "ownership": {
-            "default": 0
           }
         }
       ],
@@ -477,10 +455,13 @@
             }
           },
           "movement": {
-            "walk": "30",
+            "burrow": null,
+            "climb": null,
+            "fly": null,
+            "swim": null,
+            "walk": 30,
             "units": "ft",
-            "hover": false,
-            "ignoredDifficultTerrain": []
+            "hover": false
           },
           "attunement": {
             "max": 3
@@ -527,10 +508,6 @@
             "bonuses": {
               "save": ""
             }
-          },
-          "price": {
-            "value": null,
-            "denomination": "gp"
           }
         },
         "details": {
@@ -908,12 +885,12 @@
         },
         "resources": {
           "legact": {
-            "max": 0,
-            "spent": 0
+            "value": 0,
+            "max": 0
           },
           "legres": {
-            "max": 0,
-            "spent": 0
+            "value": 0,
+            "max": 0
           },
           "lair": {
             "value": false,
@@ -926,6 +903,10 @@
           "revision": 1,
           "rules": "2014"
         }
+      },
+      "ownership": {
+        "default": 0,
+        "6yhz13iFYYklKtgA": 3
       },
       "prototypeToken": {
         "name": "Commoner",
@@ -1035,9 +1016,6 @@
         "compendiumSource": "Compendium.dnd5e.monsters.SqZRuJ8lt2KGJBbq",
         "duplicateSource": null,
         "exportSource": null
-      },
-      "ownership": {
-        "default": 0
       }
     }
   ],
@@ -1071,6 +1049,9 @@
           "src": null,
           "system": {},
           "sort": 0,
+          "ownership": {
+            "default": -1
+          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
@@ -1083,12 +1064,13 @@
             "duplicateSource": null,
             "exportSource": null
           },
-          "category": null,
-          "ownership": {
-            "default": -1
-          }
+          "category": null
         }
       ],
+      "ownership": {
+        "default": 0,
+        "6yhz13iFYYklKtgA": 3
+      },
       "_stats": {
         "systemId": "dnd5e",
         "systemVersion": "3.1.2",
@@ -1100,16 +1082,14 @@
         "duplicateSource": null,
         "exportSource": null
       },
-      "categories": [],
-      "ownership": {
-        "default": 0
-      }
+      "categories": []
     }
   ],
   "scenes": [
     {
       "_id": "fhu1xtw5rjsz1HiB",
       "name": "Body In Woods",
+      "active": false,
       "navigation": false,
       "navOrder": 800000,
       "navName": "",
@@ -1295,7 +1275,7 @@
                   "source": {
                     "custom": "",
                     "revision": 1,
-                    "rules": "2014"
+                    "rules": "2024"
                   },
                   "quantity": 1,
                   "weight": {
@@ -1319,6 +1299,10 @@
                     "subtype": ""
                   }
                 },
+                "ownership": {
+                  "default": 0,
+                  "6yhz13iFYYklKtgA": 3
+                },
                 "_stats": {
                   "systemId": null,
                   "systemVersion": null,
@@ -1329,13 +1313,18 @@
                   "compendiumSource": "Item.SkL0ecaeBxltCTF2",
                   "duplicateSource": null,
                   "exportSource": null
-                },
-                "ownership": {
-                  "default": 0
                 }
               }
             ],
             "effects": [],
+            "ownership": {
+              "nI44NHqYFA6fYSaA": 0,
+              "2o6fMFw0qQuhf5nV": 0,
+              "6A5pacAU8kbNm9PQ": 0,
+              "al3K6JMdvNPhJSGp": 0,
+              "PAsMQtGinm9l3io7": 0,
+              "39APwqo8boJ5in8b": 0
+            },
             "flags": {
               "core": {
                 "sheetClass": "dnd5e.LootSheetNPC5e"
@@ -1367,8 +1356,7 @@
             },
             "name": null,
             "type": null,
-            "img": null,
-            "ownership": null
+            "img": null
           },
           "sort": 0,
           "locked": false,
@@ -1493,8 +1481,8 @@
             "system": {},
             "items": [],
             "effects": [],
-            "flags": {},
-            "ownership": null
+            "ownership": null,
+            "flags": {}
           },
           "sort": 0,
           "locked": false,
@@ -1619,8 +1607,8 @@
             "system": {},
             "items": [],
             "effects": [],
-            "flags": {},
-            "ownership": null
+            "ownership": null,
+            "flags": {}
           },
           "sort": 0,
           "locked": false,
@@ -1745,8 +1733,8 @@
             "system": {},
             "items": [],
             "effects": [],
-            "flags": {},
-            "ownership": null
+            "ownership": null,
+            "flags": {}
           },
           "sort": 0,
           "locked": false,
@@ -1871,8 +1859,8 @@
             "system": {},
             "items": [],
             "effects": [],
-            "flags": {},
-            "ownership": null
+            "ownership": null,
+            "flags": {}
           },
           "sort": 0,
           "locked": false,
@@ -1997,8 +1985,8 @@
             "system": {},
             "items": [],
             "effects": [],
-            "flags": {},
-            "ownership": null
+            "ownership": null,
+            "flags": {}
           },
           "sort": 0,
           "locked": false,
@@ -2110,8 +2098,8 @@
             "system": {},
             "items": [],
             "effects": [],
-            "flags": {},
-            "ownership": null
+            "ownership": null,
+            "flags": {}
           },
           "sort": 0,
           "locked": false,
@@ -2223,8 +2211,8 @@
             "system": {},
             "items": [],
             "effects": [],
-            "flags": {},
-            "ownership": null
+            "ownership": null,
+            "flags": {}
           },
           "sort": 0,
           "locked": false,
@@ -2342,8 +2330,8 @@
             "system": {},
             "items": [],
             "effects": [],
-            "flags": {},
-            "ownership": null
+            "ownership": null,
+            "flags": {}
           },
           "sort": 0,
           "locked": false,
@@ -2455,8 +2443,8 @@
             "system": {},
             "items": [],
             "effects": [],
-            "flags": {},
-            "ownership": null
+            "ownership": null,
+            "flags": {}
           },
           "sort": 0,
           "locked": false,
@@ -2568,8 +2556,8 @@
             "system": {},
             "items": [],
             "effects": [],
-            "flags": {},
-            "ownership": null
+            "ownership": null,
+            "flags": {}
           },
           "sort": 0,
           "locked": false,
@@ -2681,8 +2669,8 @@
             "system": {},
             "items": [],
             "effects": [],
-            "flags": {},
-            "ownership": null
+            "ownership": null,
+            "flags": {}
           },
           "sort": 0,
           "locked": false,
@@ -2794,8 +2782,8 @@
             "system": {},
             "items": [],
             "effects": [],
-            "flags": {},
-            "ownership": null
+            "ownership": null,
+            "flags": {}
           },
           "sort": 0,
           "locked": false,
@@ -2907,8 +2895,8 @@
             "system": {},
             "items": [],
             "effects": [],
-            "flags": {},
-            "ownership": null
+            "ownership": null,
+            "flags": {}
           },
           "sort": 0,
           "locked": false,
@@ -3020,8 +3008,8 @@
             "system": {},
             "items": [],
             "effects": [],
-            "flags": {},
-            "ownership": null
+            "ownership": null,
+            "flags": {}
           },
           "sort": 0,
           "locked": false,
@@ -3133,8 +3121,8 @@
             "system": {},
             "items": [],
             "effects": [],
-            "flags": {},
-            "ownership": null
+            "ownership": null,
+            "flags": {}
           },
           "sort": 0,
           "locked": false,
@@ -3246,8 +3234,8 @@
             "system": {},
             "items": [],
             "effects": [],
-            "flags": {},
-            "ownership": null
+            "ownership": null,
+            "flags": {}
           },
           "sort": 0,
           "locked": false,
@@ -3359,8 +3347,8 @@
             "system": {},
             "items": [],
             "effects": [],
-            "flags": {},
-            "ownership": null
+            "ownership": null,
+            "flags": {}
           },
           "sort": 0,
           "locked": false,
@@ -3472,8 +3460,8 @@
             "system": {},
             "items": [],
             "effects": [],
-            "flags": {},
-            "ownership": null
+            "ownership": null,
+            "flags": {}
           },
           "sort": 0,
           "locked": false,
@@ -3585,8 +3573,8 @@
             "system": {},
             "items": [],
             "effects": [],
-            "flags": {},
-            "ownership": null
+            "ownership": null,
+            "flags": {}
           },
           "sort": 0,
           "locked": false,
@@ -3698,8 +3686,8 @@
             "system": {},
             "items": [],
             "effects": [],
-            "flags": {},
-            "ownership": null
+            "ownership": null,
+            "flags": {}
           },
           "sort": 0,
           "locked": false,
@@ -3811,8 +3799,8 @@
             "system": {},
             "items": [],
             "effects": [],
-            "flags": {},
-            "ownership": null
+            "ownership": null,
+            "flags": {}
           },
           "sort": 0,
           "locked": false,
@@ -3924,8 +3912,8 @@
             "system": {},
             "items": [],
             "effects": [],
-            "flags": {},
-            "ownership": null
+            "ownership": null,
+            "flags": {}
           },
           "sort": 0,
           "locked": false,
@@ -4037,8 +4025,8 @@
             "system": {},
             "items": [],
             "effects": [],
-            "flags": {},
-            "ownership": null
+            "ownership": null,
+            "flags": {}
           },
           "sort": 0,
           "locked": false,
@@ -4150,8 +4138,8 @@
             "system": {},
             "items": [],
             "effects": [],
-            "flags": {},
-            "ownership": null
+            "ownership": null,
+            "flags": {}
           },
           "sort": 0,
           "locked": false,
@@ -18489,6 +18477,10 @@
       "flags": {
         "token-attacher": {}
       },
+      "ownership": {
+        "default": 0,
+        "6yhz13iFYYklKtgA": 3
+      },
       "background": {
         "src": "modules/sdnd-strahd-adv/images/maps/Areas/C/c1_woods/woods.webp",
         "offsetX": 0,
@@ -18552,16 +18544,13 @@
       },
       "fog": {
         "exploration": true,
+        "reset": 1673215417001,
         "overlay": null,
         "colors": {
           "explored": null,
           "unexplored": null
         }
-      },
-      "ownership": {
-        "default": 0
-      },
-      "active": false
+      }
     }
   ],
   "tables": [],
@@ -18596,6 +18585,10 @@
       "sorting": "a",
       "seed": null,
       "sort": 0,
+      "ownership": {
+        "default": 0,
+        "6yhz13iFYYklKtgA": 3
+      },
       "flags": {},
       "_stats": {
         "systemId": "dnd5e",
@@ -18609,10 +18602,7 @@
         "exportSource": null
       },
       "description": "",
-      "channel": "music",
-      "ownership": {
-        "default": 0
-      }
+      "channel": "music"
     }
   ],
   "folders": [
@@ -18787,7 +18777,7 @@
         "createdTime": null,
         "modifiedTime": 1689092704006,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
-        "compendiumSource": null,
+        "compendiumSource": "Folder.E8qvJN3Vzs3DFHNC",
         "duplicateSource": null,
         "exportSource": null
       }
@@ -18808,7 +18798,7 @@
         "createdTime": null,
         "modifiedTime": 1747943849391,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
-        "compendiumSource": null,
+        "compendiumSource": "Folder.SgCwMBKLb1IzBVaz",
         "duplicateSource": null,
         "exportSource": null
       },
@@ -18823,7 +18813,7 @@
     "systemVersion": "3.2.1",
     "coreVersion": "13.351",
     "createdTime": 1704927741568,
-    "modifiedTime": 1767281765749,
+    "modifiedTime": 1755780108490,
     "lastModifiedBy": "6yhz13iFYYklKtgA",
     "compendiumSource": null,
     "duplicateSource": null,

@@ -32,7 +32,6 @@
     "attunement": "required",
     "equipped": false,
     "cover": null,
-    "crewed": false,
     "range": {
       "value": null,
       "long": null,
@@ -136,7 +135,7 @@
         "duration": {
           "concentration": false,
           "value": "",
-          "units": "",
+          "units": "inst",
           "special": "",
           "override": false
         },
@@ -154,7 +153,7 @@
             "size": "",
             "width": "",
             "height": "",
-            "units": ""
+            "units": "ft"
           },
           "affects": {
             "count": "",
@@ -201,7 +200,8 @@
           "idi": false,
           "idr": false,
           "idv": false,
-          "ida": false
+          "ida": false,
+          "idm": false
         },
         "midiProperties": {
           "ignoreTraits": [],
@@ -209,7 +209,6 @@
           "triggeredActivityConditionText": "",
           "triggeredActivityTargets": "targets",
           "triggeredActivityRollAs": "self",
-          "forceDialog": false,
           "confirmTargets": "default",
           "autoTargetType": "any",
           "autoTargetAction": "default",
@@ -220,7 +219,18 @@
           "rollMode": "default",
           "chooseEffects": false,
           "toggleEffect": false,
-          "ignoreFullCover": false
+          "ignoreFullCover": false,
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "otherActivityAsParentType": true,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
         },
         "isOverTimeFlag": false,
         "overTimeProperties": {
@@ -231,12 +241,181 @@
         "otherActivityId": "",
         "attackMode": "oneHanded",
         "ammunition": "",
-        "otherActivityUuid": ""
+        "otherActivityUuid": "",
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "otherActivityAsParentType": true,
+        "attackRollPerTarget": "default",
+        "fumbleThreshold": 1
+      },
+      "kxQ2lG2PwN9mfwtj": {
+        "type": "save",
+        "_id": "kxQ2lG2PwN9mfwtj",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": "Wave of Terror"
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "xnG6r9inUFgOB2Gg",
+            "onSave": false,
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "flags": {
+          "region-attacher": {
+            "attachRegionToTemplate": false
+          }
+        },
+        "range": {
+          "units": "ft",
+          "override": true,
+          "special": "",
+          "value": "30"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "emanationNoTemplate",
+            "size": "30",
+            "count": ""
+          },
+          "affects": {
+            "choice": true,
+            "type": "enemy",
+            "count": "",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "damage": {
+          "onSave": "half",
+          "critical": {
+            "allow": false
+          },
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "15"
+          }
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "notAlly",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default"
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "otherActivityId": "",
+        "otherActivityAsParentType": true,
+        "friendlySave": "default",
+        "name": "Wave of Terror",
+        "img": "modules/stroud-dnd-helpers/images/items/mace_of_terror.webp"
       }
     },
     "identifier": "mace-of-terror",
     "attuned": false,
-    "ammunition": {}
+    "ammunition": {},
+    "mastery": "",
+    "crew": {
+      "value": []
+    }
   },
   "flags": {
     "ddbimporter": {
@@ -312,30 +491,113 @@
     "core": {},
     "dnd5e": {
       "riders": {
-        "activity": [],
-        "effect": []
+        "activity": []
       }
     }
   },
-  "effects": [],
-  "img": "https://www.dndbeyond.com/avatars/19/183/636382352999096991.jpeg",
+  "effects": [
+    {
+      "name": "Mace of Terror",
+      "img": "modules/stroud-dnd-helpers/images/items/mace_of_terror.webp",
+      "origin": "Item.aN2abAlBYqFwuAue",
+      "transfer": false,
+      "_id": "xnG6r9inUFgOB2Gg",
+      "type": "base",
+      "system": {},
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "combat": null,
+        "seconds": 60,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [
+        "frightened"
+      ],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        },
+        "dae": {
+          "enableCondition": "",
+          "disableCondition": "",
+          "stackable": "noneName",
+          "showIcon": true,
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": [
+            "isSaveSuccess.wis"
+          ]
+        },
+        "core": {
+          "overlay": false
+        },
+        "ActiveAuras": {
+          "isAura": false,
+          "aura": "All",
+          "nameOverride": "",
+          "radius": "",
+          "alignment": "",
+          "type": "",
+          "customCheck": "",
+          "ignoreSelf": false,
+          "height": false,
+          "hidden": false,
+          "displayTemp": false,
+          "hostile": false,
+          "onlyOnce": false,
+          "wallsBlock": "system",
+          "statuses": []
+        },
+        "effectmacro": {
+          "onTurnEnd": {
+            "script": "// Triggered at end of turn\nconst actor = token.actor;\nconst dc = 15; // Your spell DC\nconst saveType = \"wis\"; // Constitution save\n// Prompt for saving throw\nconst roll = await stroudDnD.actors.rollSave(actor, saveType, dc, effect.Name)\nif (roll.isSuccess) {\n  await effect.delete();\n}\n"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.4",
+        "lastModifiedBy": null
+      },
+      "_key": "!items.effects!EWLRYdXIQXX38u3s.xnG6r9inUFgOB2Gg"
+    }
+  ],
+  "img": "modules/stroud-dnd-helpers/images/items/mace_of_terror.webp",
   "folder": "KLn5LsKCpa70wSSH",
   "_stats": {
     "compendiumSource": null,
     "duplicateSource": null,
+    "exportSource": null,
     "coreVersion": "13.351",
     "systemId": "dnd5e",
-    "systemVersion": "4.4.2",
-    "createdTime": 1755207533686,
-    "modifiedTime": 1755207533686,
-    "lastModifiedBy": "Xhr6fVPGIbvrReaZ",
-    "exportSource": null
+    "systemVersion": "5.2.4",
+    "createdTime": 1767570815647,
+    "modifiedTime": 1767570815716,
+    "lastModifiedBy": "6yhz13iFYYklKtgA"
   },
-  "_id": "aN2abAlBYqFwuAue",
-  "sort": 0,
   "ownership": {
     "default": 0,
-    "Xhr6fVPGIbvrReaZ": 3
+    "6yhz13iFYYklKtgA": 3
   },
-  "_key": "!items!aN2abAlBYqFwuAue"
+  "_id": "EWLRYdXIQXX38u3s",
+  "sort": 100000,
+  "_key": "!items!EWLRYdXIQXX38u3s"
 }

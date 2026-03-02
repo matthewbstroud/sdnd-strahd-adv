@@ -1,3 +1,8 @@
+# v13.5.2
+# New Features
+- Area Z: Werewolf Den
+# Bug Fixes
+- Fixed the Abbot
 # v13.5.1
 # New Features
 - Morphable Wereravens
@@ -254,6 +259,7 @@
 - Conversion to Foundry Version 11
 # v1.0.0: Initial Release of Curse of Strahd Adventure Pack
 - Includes starter scenes
+
 
 
 
