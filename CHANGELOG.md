@@ -2,6 +2,12 @@
 # New Features
 - Area K: Castle Ravenloft
   - Ground Floor
+  - First Floor
+  - Second Floor
+  - Third Floor
+  - Fifth Floor
+  - Sixtth Floor
+  - High Tower
 # Bug Fixes
 - Fix bug description here.
 # v13.5.2
