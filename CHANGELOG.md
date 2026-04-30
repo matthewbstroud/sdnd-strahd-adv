@@ -1,3 +1,18 @@
+# v13.5.3
+# New Features
+- Area K: Castle Ravenloft
+  - Ground Floor
+  - First Floor
+  - Second Floor
+  - Third Floor
+  - Fifth Floor
+  - Sixtth Floor
+  - High Tower
+  - Upper Catacombs
+  - Lower Catacombs
+  - Dank Crypt
+# Bug Fixes
+- Fix bug description here.
 # v13.5.2
 # New Features
 - Area Z: Werewolf Den
@@ -259,6 +274,7 @@
 - Conversion to Foundry Version 11
 # v1.0.0: Initial Release of Curse of Strahd Adventure Pack
 - Includes starter scenes
+
 
 
 

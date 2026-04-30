@@ -1,0 +1,28 @@
+{
+  "name": "Change Brazier Color",
+  "type": "script",
+  "command": "const TAG_NAME = \"k78_brazier\";\nconst COLOR_OPTIONS = [\n  { label: \"Blue\", value: \"#0000ff\" },\n  { label: \"Green\", value: \"#00ff00\" },\n  { label: \"Indigo\", value: \"#4b0082\" },\n  { label: \"Orange\", value: \"#ffa500\" },\n  { label: \"Red\", value: \"#ff0000\" },\n  { label: \"Violet\", value: \"#7f00ff\" },\n  { label: \"Yellow\", value: \"#ffff00\" },\n  { label: \"White\", value: \"#000000\" }\n];\n\nif (!globalThis.stroudDnD?.tagging?.tokens?.getTagged) {\n  ui.notifications.error(\"stroudDnD tagging API is not available.\");\n  return;\n}\n\nconst selectedColor = await foundry.applications.api.DialogV2.wait({\n  window: { title: \"Select Brazier Color\" },\n  content: `\n    <div style=\"display:flex; flex-direction:column; gap:0.5rem;\">\n      <p style=\"margin:0;\">Choose a light color for the tagged brazier.</p>\n    </div>\n  `,\n  buttons: [\n    ...COLOR_OPTIONS.map((option) => ({\n      action: option.value,\n      label: `${option.label} (${option.value})`,\n      callback: () => option.value\n    })),\n    {\n      action: \"cancel\",\n      label: \"Cancel\"\n    }\n  ],\n  rejectClose: false,\n  modal: true\n});\n\nif (!selectedColor || selectedColor === \"cancel\") {\n  return;\n}\n\nconst taggedTokens = await stroudDnD.tagging.tokens.getTagged(TAG_NAME);\nconst tokenDocument = taggedTokens?.[0]?.document ?? taggedTokens?.[0];\n\nif (!tokenDocument) {\n  ui.notifications.warn(`No token found with tag \"${TAG_NAME}\".`);\n  return;\n}\n\ntry {\n  await tokenDocument.update({ \"light.color\": selectedColor });\n  ui.notifications.info(`${tokenDocument.name}: light color set to ${selectedColor}.`);\n} catch (error) {\n  console.error(error);\n  ui.notifications.error(`Failed to update brazier light color: ${error.message}`);\n}",
+  "img": "modules/stroud-dnd-helpers/images/icons/LightBulb_Icon.webp",
+  "author": "6yhz13iFYYklKtgA",
+  "scope": "global",
+  "folder": "9hEwatOwy7oakCZ4",
+  "ownership": {
+    "default": 0,
+    "6yhz13iFYYklKtgA": 3
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.351",
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.4",
+    "createdTime": 1776620591557,
+    "modifiedTime": 1776620591557,
+    "lastModifiedBy": "6yhz13iFYYklKtgA"
+  },
+  "_id": "B7YQrtdc3a5U5gQ1",
+  "sort": 0,
+  "_key": "!macros!B7YQrtdc3a5U5gQ1"
+}
