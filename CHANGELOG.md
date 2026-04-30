@@ -8,6 +8,9 @@
   - Fifth Floor
   - Sixtth Floor
   - High Tower
+  - Upper Catacombs
+  - Lower Catacombs
+  - Dank Crypt
 # Bug Fixes
 - Fix bug description here.
 # v13.5.2
