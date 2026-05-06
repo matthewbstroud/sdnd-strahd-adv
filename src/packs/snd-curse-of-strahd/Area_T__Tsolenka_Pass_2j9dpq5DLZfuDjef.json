@@ -60,7 +60,7 @@
             "activePlayers": true,
             "merchantColumns": []
           },
-          "version": "3.2.14",
+          "version": "3.2.31",
           "sharing": null
         },
         "tidy5e-sheet": {
@@ -238,8 +238,8 @@
             "formula": ""
           },
           "hp": {
-            "value": 19,
-            "max": 19,
+            "value": 24,
+            "max": 24,
             "temp": 0,
             "tempmax": 0,
             "formula": ""
@@ -254,13 +254,10 @@
             }
           },
           "movement": {
-            "burrow": null,
-            "climb": null,
-            "fly": null,
-            "swim": null,
-            "walk": 30,
+            "walk": "30",
             "units": "ft",
-            "hover": false
+            "hover": false,
+            "ignoredDifficultTerrain": []
           },
           "attunement": {
             "max": 3
@@ -302,11 +299,13 @@
           "spell": {
             "level": 0
           },
-          "loyalty": {
-            "value": null
-          },
+          "loyalty": {},
           "hd": {
             "spent": 0
+          },
+          "price": {
+            "value": null,
+            "denomination": "gp"
           }
         },
         "details": {
@@ -680,12 +679,12 @@
         },
         "resources": {
           "legact": {
-            "value": 0,
-            "max": 0
+            "max": 0,
+            "spent": 0
           },
           "legres": {
-            "value": 0,
-            "max": 0
+            "max": 0,
+            "spent": 0
           },
           "lair": {
             "value": false,
@@ -698,16 +697,6 @@
           "custom": "",
           "revision": 1
         }
-      },
-      "ownership": {
-        "default": 2,
-        "6yhz13iFYYklKtgA": 3,
-        "nI44NHqYFA6fYSaA": 2,
-        "2o6fMFw0qQuhf5nV": 2,
-        "6A5pacAU8kbNm9PQ": 2,
-        "al3K6JMdvNPhJSGp": 2,
-        "PAsMQtGinm9l3io7": 2,
-        "39APwqo8boJ5in8b": 2
       },
       "prototypeToken": {
         "name": "Treasure",
@@ -779,7 +768,7 @@
               "openSound": "sounds/doors/wood/open.ogg",
               "merchantColumns": []
             },
-            "version": "3.2.14"
+            "version": "3.2.31"
           },
           "token-z": {
             "zIndex": 0
@@ -843,10 +832,10 @@
       },
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "4.4.2",
+        "systemVersion": "5.2.4",
         "coreVersion": "13.351",
         "createdTime": null,
-        "modifiedTime": 1754747181387,
+        "modifiedTime": 1774411841281,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
         "duplicateSource": null,
@@ -857,6 +846,9 @@
           "systemId": "dnd5e",
           "systemVersion": "3.1.2"
         }
+      },
+      "ownership": {
+        "default": 2
       }
     },
     {
@@ -1328,13 +1320,11 @@
             "bonus": ""
           },
           "movement": {
-            "burrow": null,
-            "climb": null,
-            "fly": 50,
-            "swim": null,
-            "walk": 0,
+            "fly": "50",
+            "walk": "0",
             "units": "ft",
-            "hover": false
+            "hover": false,
+            "ignoredDifficultTerrain": []
           },
           "attunement": {
             "max": 3
@@ -1367,8 +1357,8 @@
             "formula": ""
           },
           "hp": {
-            "value": 22,
-            "max": 22,
+            "value": 40,
+            "max": 40,
             "temp": 0,
             "tempmax": 0,
             "formula": "5d8"
@@ -1393,6 +1383,10 @@
           },
           "hd": {
             "spent": 0
+          },
+          "price": {
+            "value": null,
+            "denomination": "gp"
           }
         },
         "details": {
@@ -1420,12 +1414,12 @@
         },
         "resources": {
           "legact": {
-            "value": 0,
-            "max": 0
+            "max": 0,
+            "spent": 0
           },
           "legres": {
-            "value": 0,
-            "max": 0
+            "max": 0,
+            "spent": 0
           },
           "lair": {
             "value": false,
@@ -1646,7 +1640,6 @@
             "attunement": "",
             "equipped": true,
             "cover": null,
-            "crewed": false,
             "range": {
               "value": null,
               "long": null,
@@ -1750,7 +1743,7 @@
                     "size": "",
                     "width": "",
                     "height": "",
-                    "units": ""
+                    "units": "ft"
                   },
                   "affects": {
                     "count": "",
@@ -1797,7 +1790,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -1805,7 +1799,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -1816,7 +1809,18 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "skipConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -1827,7 +1831,17 @@
                 "otherActivityId": "",
                 "attackMode": "oneHanded",
                 "ammunition": "",
-                "otherActivityUuid": ""
+                "otherActivityUuid": "",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true,
+                "attackRollPerTarget": "default",
+                "fumbleThreshold": 1
               },
               "dnd5eactivity100": {
                 "_id": "dnd5eactivity100",
@@ -1870,7 +1884,7 @@
                     "size": "",
                     "width": "",
                     "height": "",
-                    "units": ""
+                    "units": "ft"
                   },
                   "affects": {
                     "count": "",
@@ -1914,7 +1928,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -1922,7 +1937,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -1933,7 +1947,18 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "skipConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -1941,12 +1966,24 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": ""
+                "otherActivityId": "",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true,
+                "friendlySave": "default"
               }
             },
             "identifier": "",
             "attuned": false,
-            "ammunition": {}
+            "ammunition": {},
+            "crew": {
+              "value": []
+            }
           },
           "effects": [],
           "flags": {
@@ -1984,9 +2021,6 @@
           "img": "icons/skills/wounds/injury-hand-blood-red.webp",
           "folder": null,
           "sort": 0,
-          "ownership": {
-            "default": 0
-          },
           "_stats": {
             "systemId": null,
             "systemVersion": null,
@@ -1997,6 +2031,9 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -2053,13 +2090,13 @@
                 "duration": {
                   "concentration": false,
                   "value": "",
-                  "units": "",
+                  "units": "inst",
                   "special": "",
                   "override": false
                 },
                 "effects": [],
                 "range": {
-                  "units": "",
+                  "units": "self",
                   "special": "",
                   "override": false
                 },
@@ -2071,7 +2108,7 @@
                     "size": "",
                     "width": "",
                     "height": "",
-                    "units": ""
+                    "units": "ft"
                   },
                   "affects": {
                     "count": "",
@@ -2124,7 +2161,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -2132,7 +2170,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -2143,13 +2180,31 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "skipConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
                   "saveRemoves": true,
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
+                },
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
                 }
               }
             },
@@ -2158,7 +2213,8 @@
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             }
           },
           "effects": [],
@@ -2193,9 +2249,6 @@
           "img": "icons/magic/control/debuff-energy-snare-purple-blue.webp",
           "folder": null,
           "sort": 0,
-          "ownership": {
-            "default": 0
-          },
           "_stats": {
             "systemId": null,
             "systemVersion": null,
@@ -2206,6 +2259,9 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -2244,7 +2300,8 @@
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             }
           },
           "effects": [],
@@ -2273,9 +2330,6 @@
           "img": "icons/magic/nature/root-vine-thorned-fire-purple.webp",
           "folder": null,
           "sort": 0,
-          "ownership": {
-            "default": 0
-          },
           "_stats": {
             "systemId": null,
             "systemVersion": null,
@@ -2286,16 +2340,15 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         }
       ],
       "effects": [],
       "folder": "HVgPUd5OjxKCjiLI",
       "sort": 125000,
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
-      },
       "flags": {
         "dnd5e": {},
         "monsterMunch": {
@@ -2329,14 +2382,17 @@
       },
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "4.4.2",
+        "systemVersion": "5.2.4",
         "coreVersion": "13.351",
         "createdTime": 1720663746454,
-        "modifiedTime": 1754774831851,
+        "modifiedTime": 1774412219068,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": "Compendium.world.ddb-lost-mines-phandelver-monsters.Actor.d1cqJZNGLLuPzR33",
         "duplicateSource": null,
         "exportSource": null
+      },
+      "ownership": {
+        "default": 0
       }
     },
     {
@@ -2491,8 +2547,8 @@
             "formula": ""
           },
           "hp": {
-            "value": 104,
-            "max": 104,
+            "value": 154,
+            "max": 154,
             "temp": null,
             "tempmax": null,
             "formula": "11d10 + 44"
@@ -2507,13 +2563,14 @@
             }
           },
           "movement": {
-            "burrow": 0,
-            "climb": 0,
-            "fly": 60,
-            "swim": 0,
-            "walk": 40,
+            "burrow": "0",
+            "climb": "0",
+            "fly": "60",
+            "swim": "0",
+            "walk": "40",
             "units": "ft",
-            "hover": false
+            "hover": false,
+            "ignoredDifficultTerrain": []
           },
           "attunement": {
             "max": 3
@@ -2560,6 +2617,10 @@
           },
           "loyalty": {
             "value": null
+          },
+          "price": {
+            "value": null,
+            "denomination": "gp"
           }
         },
         "details": {
@@ -2956,12 +3017,12 @@
         },
         "resources": {
           "legact": {
-            "value": 0,
-            "max": 0
+            "max": 0,
+            "spent": 0
           },
           "legres": {
-            "value": 0,
-            "max": 0
+            "max": 0,
+            "spent": 0
           },
           "lair": {
             "value": false,
@@ -3097,9 +3158,10 @@
               "book": "SRD 5.1",
               "page": "",
               "license": "CC-BY-4.0",
-              "rules": "2014",
-              "revision": 1
+              "revision": 1,
+              "rules": "2014"
             },
+            "cover": null,
             "uses": {
               "max": "",
               "spent": 0,
@@ -3110,17 +3172,17 @@
               "subtype": ""
             },
             "requirements": "",
+            "crewed": false,
             "properties": [],
-            "activities": {},
-            "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             },
+            "activities": {},
             "identifier": "magic-resistance",
             "advancement": [],
-            "cover": null,
-            "crewed": false
+            "enchant": {}
           },
           "effects": [
             {
@@ -3204,10 +3266,6 @@
           ],
           "folder": null,
           "sort": 200000,
-          "ownership": {
-            "default": 0,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {
             "core": {},
             "midi-qol": {
@@ -3216,8 +3274,7 @@
               "itemCondition": "",
               "reactionCondition": "",
               "otherCondition": "",
-              "effectCondition": "",
-              "-=onUseMacroName": null
+              "effectCondition": ""
             },
             "midiProperties": {
               "autoFailFriendly": false,
@@ -3235,7 +3292,6 @@
               }
             },
             "chris-premades": {
-              "-=macros": null,
               "info": {
                 "source": "stroud-dnd-helpers.SDND-Features",
                 "rules": "legacy"
@@ -3252,6 +3308,9 @@
             "modifiedTime": 1756411367880,
             "lastModifiedBy": "6yhz13iFYYklKtgA",
             "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -3307,13 +3366,13 @@
                 "duration": {
                   "concentration": false,
                   "value": "",
-                  "units": "",
+                  "units": "inst",
                   "special": "",
                   "override": false
                 },
                 "effects": [],
                 "range": {
-                  "units": "",
+                  "units": "self",
                   "special": "",
                   "override": false
                 },
@@ -3325,7 +3384,7 @@
                     "size": "",
                     "width": "",
                     "height": "",
-                    "units": ""
+                    "units": "ft"
                   },
                   "affects": {
                     "count": "",
@@ -3359,7 +3418,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -3367,7 +3427,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -3378,7 +3437,18 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "skipConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -3386,13 +3456,22 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": "none"
+                "otherActivityId": "none",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true
               }
             },
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             },
             "identifier": "multiattack",
             "advancement": [],
@@ -3402,9 +3481,6 @@
           "effects": [],
           "folder": null,
           "sort": 0,
-          "ownership": {
-            "default": 0
-          },
           "flags": {
             "core": {}
           },
@@ -3418,6 +3494,9 @@
             "modifiedTime": null,
             "lastModifiedBy": null,
             "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -3516,7 +3595,6 @@
               "baseItem": ""
             },
             "container": null,
-            "crewed": false,
             "activities": {
               "dnd5eactivity000": {
                 "_id": "dnd5eactivity000",
@@ -3541,7 +3619,7 @@
                 "duration": {
                   "concentration": false,
                   "value": "",
-                  "units": "",
+                  "units": "inst",
                   "special": "",
                   "override": false
                 },
@@ -3560,7 +3638,7 @@
                     "size": "",
                     "width": "",
                     "height": "",
-                    "units": ""
+                    "units": "ft"
                   },
                   "affects": {
                     "count": "",
@@ -3607,7 +3685,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -3615,7 +3694,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -3626,7 +3704,18 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "skipConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -3637,20 +3726,30 @@
                 "otherActivityId": "",
                 "attackMode": "oneHanded",
                 "ammunition": "",
-                "otherActivityUuid": ""
+                "otherActivityUuid": "",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true,
+                "attackRollPerTarget": "default",
+                "fumbleThreshold": 1
               }
             },
             "attuned": false,
             "ammunition": {},
             "magicalBonus": null,
-            "identifier": "beak"
+            "identifier": "beak",
+            "crew": {
+              "value": []
+            }
           },
           "effects": [],
           "folder": null,
           "sort": 0,
-          "ownership": {
-            "default": 0
-          },
           "flags": {},
           "_stats": {
             "compendiumSource": null,
@@ -3662,6 +3761,9 @@
             "modifiedTime": null,
             "lastModifiedBy": null,
             "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -3760,7 +3862,6 @@
               "baseItem": ""
             },
             "container": null,
-            "crewed": false,
             "activities": {
               "dnd5eactivity000": {
                 "_id": "dnd5eactivity000",
@@ -3785,7 +3886,7 @@
                 "duration": {
                   "concentration": false,
                   "value": "",
-                  "units": "",
+                  "units": "inst",
                   "special": "",
                   "override": false
                 },
@@ -3804,7 +3905,7 @@
                     "size": "",
                     "width": "",
                     "height": "",
-                    "units": ""
+                    "units": "ft"
                   },
                   "affects": {
                     "count": "",
@@ -3851,7 +3952,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -3859,7 +3961,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -3870,7 +3971,18 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "skipConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -3881,20 +3993,30 @@
                 "otherActivityId": "",
                 "attackMode": "oneHanded",
                 "ammunition": "",
-                "otherActivityUuid": ""
+                "otherActivityUuid": "",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true,
+                "attackRollPerTarget": "default",
+                "fumbleThreshold": 1
               }
             },
             "attuned": false,
             "ammunition": {},
             "magicalBonus": null,
-            "identifier": "talons"
+            "identifier": "talons",
+            "crew": {
+              "value": []
+            }
           },
           "effects": [],
           "folder": null,
           "sort": 0,
-          "ownership": {
-            "default": 0
-          },
           "flags": {},
           "_stats": {
             "compendiumSource": null,
@@ -3906,6 +4028,9 @@
             "modifiedTime": null,
             "lastModifiedBy": null,
             "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -3977,7 +4102,7 @@
                 "duration": {
                   "concentration": false,
                   "value": "",
-                  "units": "",
+                  "units": "inst",
                   "special": "",
                   "override": false
                 },
@@ -4057,7 +4182,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -4065,7 +4191,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -4076,7 +4201,18 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "skipConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -4084,13 +4220,23 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": ""
+                "otherActivityId": "",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true,
+                "friendlySave": "default"
               }
             },
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             },
             "identifier": "spores",
             "advancement": [],
@@ -4100,9 +4246,6 @@
           "effects": [],
           "folder": null,
           "sort": 0,
-          "ownership": {
-            "default": 0
-          },
           "flags": {
             "core": {}
           },
@@ -4116,6 +4259,9 @@
             "modifiedTime": null,
             "lastModifiedBy": null,
             "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -4186,7 +4332,7 @@
                 "duration": {
                   "concentration": false,
                   "value": "",
-                  "units": "",
+                  "units": "inst",
                   "special": "",
                   "override": false
                 },
@@ -4249,7 +4395,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -4257,7 +4404,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -4268,7 +4414,18 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "skipConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -4276,13 +4433,23 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": ""
+                "otherActivityId": "",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true,
+                "friendlySave": "default"
               }
             },
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             },
             "identifier": "stunning-screech",
             "advancement": [],
@@ -4292,9 +4459,6 @@
           "effects": [],
           "folder": null,
           "sort": 0,
-          "ownership": {
-            "default": 0
-          },
           "flags": {
             "core": {}
           },
@@ -4308,29 +4472,31 @@
             "modifiedTime": null,
             "lastModifiedBy": null,
             "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         }
       ],
       "effects": [],
       "folder": "clQ89T1fKMW6YFKM",
       "sort": 100000,
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
-      },
       "flags": {},
       "_stats": {
         "duplicateSource": "Actor.0KKouIqMAtLaBSp2",
         "compendiumSource": "Compendium.dnd5e.monsters.Actor.6oc29m5uzzzb0pk3",
         "coreVersion": "13.351",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.2",
+        "systemVersion": "5.2.4",
         "createdTime": 1756410452148,
-        "modifiedTime": 1756410473415,
+        "modifiedTime": 1774412223952,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "exportSource": null
       },
-      "_id": "XWl1iQPElsbALIKu"
+      "_id": "XWl1iQPElsbALIKu",
+      "ownership": {
+        "default": 0
+      }
     },
     {
       "name": "Vrok (Left)",
@@ -4484,8 +4650,8 @@
             "formula": ""
           },
           "hp": {
-            "value": 104,
-            "max": 104,
+            "value": 154,
+            "max": 154,
             "temp": null,
             "tempmax": null,
             "formula": "11d10 + 44"
@@ -4500,13 +4666,14 @@
             }
           },
           "movement": {
-            "burrow": 0,
-            "climb": 0,
-            "fly": 60,
-            "swim": 0,
-            "walk": 40,
+            "burrow": "0",
+            "climb": "0",
+            "fly": "60",
+            "swim": "0",
+            "walk": "40",
             "units": "ft",
-            "hover": false
+            "hover": false,
+            "ignoredDifficultTerrain": []
           },
           "attunement": {
             "max": 3
@@ -4553,6 +4720,10 @@
           },
           "loyalty": {
             "value": null
+          },
+          "price": {
+            "value": null,
+            "denomination": "gp"
           }
         },
         "details": {
@@ -4949,12 +5120,12 @@
         },
         "resources": {
           "legact": {
-            "value": 0,
-            "max": 0
+            "max": 0,
+            "spent": 0
           },
           "legres": {
-            "value": 0,
-            "max": 0
+            "max": 0,
+            "spent": 0
           },
           "lair": {
             "value": false,
@@ -5090,9 +5261,10 @@
               "book": "SRD 5.1",
               "page": "",
               "license": "CC-BY-4.0",
-              "rules": "2014",
-              "revision": 1
+              "revision": 1,
+              "rules": "2014"
             },
+            "cover": null,
             "uses": {
               "max": "",
               "spent": 0,
@@ -5103,17 +5275,17 @@
               "subtype": ""
             },
             "requirements": "",
+            "crewed": false,
             "properties": [],
-            "activities": {},
-            "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             },
+            "activities": {},
             "identifier": "magic-resistance",
             "advancement": [],
-            "cover": null,
-            "crewed": false
+            "enchant": {}
           },
           "effects": [
             {
@@ -5197,10 +5369,6 @@
           ],
           "folder": null,
           "sort": 200000,
-          "ownership": {
-            "default": 0,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {
             "core": {},
             "midi-qol": {
@@ -5209,8 +5377,7 @@
               "itemCondition": "",
               "reactionCondition": "",
               "otherCondition": "",
-              "effectCondition": "",
-              "-=onUseMacroName": null
+              "effectCondition": ""
             },
             "midiProperties": {
               "autoFailFriendly": false,
@@ -5228,7 +5395,6 @@
               }
             },
             "chris-premades": {
-              "-=macros": null,
               "info": {
                 "source": "stroud-dnd-helpers.SDND-Features",
                 "rules": "legacy"
@@ -5245,6 +5411,9 @@
             "modifiedTime": 1756411375740,
             "lastModifiedBy": "6yhz13iFYYklKtgA",
             "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -5300,13 +5469,13 @@
                 "duration": {
                   "concentration": false,
                   "value": "",
-                  "units": "",
+                  "units": "inst",
                   "special": "",
                   "override": false
                 },
                 "effects": [],
                 "range": {
-                  "units": "",
+                  "units": "self",
                   "special": "",
                   "override": false
                 },
@@ -5318,7 +5487,7 @@
                     "size": "",
                     "width": "",
                     "height": "",
-                    "units": ""
+                    "units": "ft"
                   },
                   "affects": {
                     "count": "",
@@ -5352,7 +5521,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -5360,7 +5530,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -5371,7 +5540,18 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "skipConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -5379,13 +5559,22 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": "none"
+                "otherActivityId": "none",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true
               }
             },
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             },
             "identifier": "multiattack",
             "advancement": [],
@@ -5395,9 +5584,6 @@
           "effects": [],
           "folder": null,
           "sort": 0,
-          "ownership": {
-            "default": 0
-          },
           "flags": {
             "core": {}
           },
@@ -5411,6 +5597,9 @@
             "modifiedTime": null,
             "lastModifiedBy": null,
             "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -5509,7 +5698,6 @@
               "baseItem": ""
             },
             "container": null,
-            "crewed": false,
             "activities": {
               "dnd5eactivity000": {
                 "_id": "dnd5eactivity000",
@@ -5534,7 +5722,7 @@
                 "duration": {
                   "concentration": false,
                   "value": "",
-                  "units": "",
+                  "units": "inst",
                   "special": "",
                   "override": false
                 },
@@ -5553,7 +5741,7 @@
                     "size": "",
                     "width": "",
                     "height": "",
-                    "units": ""
+                    "units": "ft"
                   },
                   "affects": {
                     "count": "",
@@ -5600,7 +5788,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -5608,7 +5797,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -5619,7 +5807,18 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "skipConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -5630,20 +5829,30 @@
                 "otherActivityId": "",
                 "attackMode": "oneHanded",
                 "ammunition": "",
-                "otherActivityUuid": ""
+                "otherActivityUuid": "",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true,
+                "attackRollPerTarget": "default",
+                "fumbleThreshold": 1
               }
             },
             "attuned": false,
             "ammunition": {},
             "magicalBonus": null,
-            "identifier": "beak"
+            "identifier": "beak",
+            "crew": {
+              "value": []
+            }
           },
           "effects": [],
           "folder": null,
           "sort": 0,
-          "ownership": {
-            "default": 0
-          },
           "flags": {},
           "_stats": {
             "compendiumSource": null,
@@ -5655,6 +5864,9 @@
             "modifiedTime": null,
             "lastModifiedBy": null,
             "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -5753,7 +5965,6 @@
               "baseItem": ""
             },
             "container": null,
-            "crewed": false,
             "activities": {
               "dnd5eactivity000": {
                 "_id": "dnd5eactivity000",
@@ -5778,7 +5989,7 @@
                 "duration": {
                   "concentration": false,
                   "value": "",
-                  "units": "",
+                  "units": "inst",
                   "special": "",
                   "override": false
                 },
@@ -5797,7 +6008,7 @@
                     "size": "",
                     "width": "",
                     "height": "",
-                    "units": ""
+                    "units": "ft"
                   },
                   "affects": {
                     "count": "",
@@ -5844,7 +6055,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -5852,7 +6064,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -5863,7 +6074,18 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "skipConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -5874,20 +6096,30 @@
                 "otherActivityId": "",
                 "attackMode": "oneHanded",
                 "ammunition": "",
-                "otherActivityUuid": ""
+                "otherActivityUuid": "",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true,
+                "attackRollPerTarget": "default",
+                "fumbleThreshold": 1
               }
             },
             "attuned": false,
             "ammunition": {},
             "magicalBonus": null,
-            "identifier": "talons"
+            "identifier": "talons",
+            "crew": {
+              "value": []
+            }
           },
           "effects": [],
           "folder": null,
           "sort": 0,
-          "ownership": {
-            "default": 0
-          },
           "flags": {},
           "_stats": {
             "compendiumSource": null,
@@ -5899,6 +6131,9 @@
             "modifiedTime": null,
             "lastModifiedBy": null,
             "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -5970,7 +6205,7 @@
                 "duration": {
                   "concentration": false,
                   "value": "",
-                  "units": "",
+                  "units": "inst",
                   "special": "",
                   "override": false
                 },
@@ -6050,7 +6285,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -6058,7 +6294,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -6069,7 +6304,18 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "skipConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -6077,13 +6323,23 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": ""
+                "otherActivityId": "",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true,
+                "friendlySave": "default"
               }
             },
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             },
             "identifier": "spores",
             "advancement": [],
@@ -6093,9 +6349,6 @@
           "effects": [],
           "folder": null,
           "sort": 0,
-          "ownership": {
-            "default": 0
-          },
           "flags": {
             "core": {}
           },
@@ -6109,6 +6362,9 @@
             "modifiedTime": null,
             "lastModifiedBy": null,
             "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -6179,7 +6435,7 @@
                 "duration": {
                   "concentration": false,
                   "value": "",
-                  "units": "",
+                  "units": "inst",
                   "special": "",
                   "override": false
                 },
@@ -6242,7 +6498,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -6250,7 +6507,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -6261,7 +6517,18 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "skipConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -6269,13 +6536,23 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": ""
+                "otherActivityId": "",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true,
+                "friendlySave": "default"
               }
             },
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             },
             "identifier": "stunning-screech",
             "advancement": [],
@@ -6285,9 +6562,6 @@
           "effects": [],
           "folder": null,
           "sort": 0,
-          "ownership": {
-            "default": 0
-          },
           "flags": {
             "core": {}
           },
@@ -6301,29 +6575,31 @@
             "modifiedTime": null,
             "lastModifiedBy": null,
             "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         }
       ],
       "effects": [],
       "folder": "clQ89T1fKMW6YFKM",
       "sort": 100000,
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
-      },
       "flags": {},
       "_stats": {
         "duplicateSource": "Actor.qrKWkfBsrjPRrAus",
         "compendiumSource": "Compendium.dnd5e.monsters.Actor.6oc29m5uzzzb0pk3",
         "coreVersion": "13.351",
         "systemId": "dnd5e",
-        "systemVersion": "4.4.2",
+        "systemVersion": "5.2.4",
         "createdTime": 1756410390173,
-        "modifiedTime": 1756411391306,
+        "modifiedTime": 1774412223977,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "exportSource": null
       },
-      "_id": "0KKouIqMAtLaBSp2"
+      "_id": "0KKouIqMAtLaBSp2",
+      "ownership": {
+        "default": 0
+      }
     }
   ],
   "combats": [],
@@ -6354,10 +6630,6 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
@@ -6370,7 +6642,10 @@
             "duplicateSource": null,
             "exportSource": null
           },
-          "category": null
+          "category": null,
+          "ownership": {
+            "default": -1
+          }
         },
         {
           "sort": 200000,
@@ -6392,10 +6667,6 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
@@ -6408,7 +6679,10 @@
             "duplicateSource": null,
             "exportSource": null
           },
-          "category": null
+          "category": null,
+          "ownership": {
+            "default": -1
+          }
         },
         {
           "sort": 300000,
@@ -6430,10 +6704,6 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
@@ -6446,7 +6716,10 @@
             "duplicateSource": null,
             "exportSource": null
           },
-          "category": null
+          "category": null,
+          "ownership": {
+            "default": -1
+          }
         },
         {
           "sort": 400000,
@@ -6468,10 +6741,6 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
@@ -6484,7 +6753,10 @@
             "duplicateSource": null,
             "exportSource": null
           },
-          "category": null
+          "category": null,
+          "ownership": {
+            "default": -1
+          }
         },
         {
           "sort": 500000,
@@ -6506,10 +6778,6 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
@@ -6522,7 +6790,10 @@
             "duplicateSource": null,
             "exportSource": null
           },
-          "category": null
+          "category": null,
+          "ownership": {
+            "default": -1
+          }
         },
         {
           "sort": 600000,
@@ -6544,10 +6815,6 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
@@ -6560,7 +6827,10 @@
             "duplicateSource": null,
             "exportSource": null
           },
-          "category": null
+          "category": null,
+          "ownership": {
+            "default": -1
+          }
         },
         {
           "sort": 700000,
@@ -6583,10 +6853,6 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
@@ -6599,7 +6865,10 @@
             "duplicateSource": null,
             "exportSource": null
           },
-          "category": null
+          "category": null,
+          "ownership": {
+            "default": -1
+          }
         },
         {
           "sort": 800000,
@@ -6622,10 +6891,6 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
@@ -6638,7 +6903,10 @@
             "duplicateSource": null,
             "exportSource": null
           },
-          "category": null
+          "category": null,
+          "ownership": {
+            "default": -1
+          }
         },
         {
           "sort": 900000,
@@ -6660,10 +6928,6 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
@@ -6676,7 +6940,10 @@
             "duplicateSource": null,
             "exportSource": null
           },
-          "category": null
+          "category": null,
+          "ownership": {
+            "default": -1
+          }
         },
         {
           "sort": 1000000,
@@ -6698,10 +6965,6 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
@@ -6714,14 +6977,13 @@
             "duplicateSource": null,
             "exportSource": null
           },
-          "category": null
+          "category": null,
+          "ownership": {
+            "default": -1
+          }
         }
       ],
       "sort": 0,
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
-      },
       "flags": {},
       "_stats": {
         "systemId": "dnd5e",
@@ -6734,15 +6996,17 @@
         "duplicateSource": null,
         "exportSource": null
       },
-      "categories": []
+      "categories": [],
+      "ownership": {
+        "default": 0
+      }
     }
   ],
   "scenes": [
     {
       "_id": "1nmiKL2XvzbfrZIo",
       "name": "T1.1. Tsolenka Gate (Ground)",
-      "active": false,
-      "navigation": true,
+      "navigation": false,
       "navOrder": 0,
       "navName": "",
       "foreground": null,
@@ -7073,9 +7337,9 @@
           "config": {
             "alpha": 0.2,
             "angle": 360,
-            "bright": 9.99,
+            "bright": 15,
             "coloration": 1,
-            "dim": 19.97,
+            "dim": 30,
             "luminosity": 0.5,
             "saturation": 0,
             "contrast": 0,
@@ -7084,7 +7348,7 @@
               "speed": 5,
               "intensity": 5,
               "reverse": false,
-              "type": "torch"
+              "type": "flame"
             },
             "darkness": {
               "min": 0,
@@ -7095,8 +7359,12 @@
             "negative": false,
             "priority": 0
           },
-          "hidden": false,
-          "flags": {},
+          "hidden": true,
+          "flags": {
+            "stroud-dnd-helpers": {
+              "fireplace": "5a74d7ae-127a-4ec8-9a35-f82ccea62b15"
+            }
+          },
           "elevation": 0
         },
         {
@@ -7120,7 +7388,7 @@
               "speed": 5,
               "intensity": 5,
               "reverse": false,
-              "type": "torch"
+              "type": "flame"
             },
             "darkness": {
               "min": 0,
@@ -7786,6 +8054,114 @@
           "hidden": false,
           "flags": {},
           "elevation": 0
+        },
+        {
+          "x": 2250,
+          "y": 1850,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "alpha": 0.5,
+            "angle": 360,
+            "bright": 15,
+            "coloration": 1,
+            "dim": 15,
+            "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false,
+              "type": null
+            },
+            "darkness": {
+              "min": 0,
+              "max": 0.5
+            },
+            "color": null,
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
+          },
+          "hidden": false,
+          "flags": {},
+          "elevation": 0,
+          "_id": "L6OHgex6qOhpj28u"
+        },
+        {
+          "x": 2750,
+          "y": 2150,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "alpha": 0.5,
+            "angle": 360,
+            "bright": 15,
+            "coloration": 1,
+            "dim": 15,
+            "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false,
+              "type": null
+            },
+            "darkness": {
+              "min": 0,
+              "max": 0.5
+            },
+            "color": null,
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
+          },
+          "hidden": false,
+          "flags": {},
+          "elevation": 0,
+          "_id": "zl5xpcKZsD1K6gvN"
+        },
+        {
+          "x": 1050,
+          "y": 3200,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "alpha": 0.5,
+            "angle": 360,
+            "bright": 15,
+            "coloration": 1,
+            "dim": 15,
+            "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false,
+              "type": null
+            },
+            "darkness": {
+              "min": 0,
+              "max": 0.5
+            },
+            "color": null,
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
+          },
+          "hidden": false,
+          "flags": {},
+          "elevation": 0,
+          "_id": "csNG1zk41wNMuUPb"
         }
       ],
       "notes": [
@@ -7921,12 +8297,16 @@
           "volume": 0.5,
           "walls": true,
           "easing": true,
-          "hidden": false,
+          "hidden": true,
           "darkness": {
             "min": 0,
             "max": 1
           },
-          "flags": {},
+          "flags": {
+            "stroud-dnd-helpers": {
+              "fireplace": "5a74d7ae-127a-4ec8-9a35-f82ccea62b15"
+            }
+          },
           "elevation": 0,
           "effects": {
             "base": {
@@ -8530,6 +8910,14 @@
                     "colour": "#ff0000"
                   },
                   "id": "gBePSFHzKK7po6qj"
+                },
+                {
+                  "action": "scene",
+                  "data": {
+                    "sceneid": "rF225DFPHAHqSDrE",
+                    "activate": false
+                  },
+                  "id": "hKlIxMfIodDHvUYK"
                 }
               ],
               "files": []
@@ -8608,6 +8996,157 @@
           "_id": "W0qYNGbp6AFmF3u5",
           "hidden": true,
           "locked": false
+        },
+        {
+          "x": 2350,
+          "y": 1200,
+          "width": 150,
+          "height": 100,
+          "rotation": 0,
+          "elevation": 0,
+          "sort": 106,
+          "flags": {
+            "monks-active-tiles": {
+              "name": "t4_portal",
+              "active": false,
+              "record": false,
+              "restriction": "all",
+              "controlled": "all",
+              "trigger": [
+                ""
+              ],
+              "allowpaused": false,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": null,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            },
+            "region-attacher": {
+              "attachRegionToTile": false
+            }
+          },
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/void.webp",
+            "scaleX": 1,
+            "scaleY": 1,
+            "tint": "#ffffff",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "rotation": 0,
+            "alphaThreshold": 0.75
+          },
+          "alpha": 1,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "hidden": true,
+          "locked": true,
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "_id": "eAoaSuib2GtGOJqx"
+        },
+        {
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/icons/Fireplace_Icon.webp",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "scaleX": 1,
+            "scaleY": 1,
+            "rotation": 0,
+            "tint": "#ffffff",
+            "alphaThreshold": 0.75
+          },
+          "x": 2600,
+          "y": 1350,
+          "width": 100,
+          "height": 100,
+          "elevation": 0,
+          "sort": 101,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "rotation": 0,
+          "alpha": 1,
+          "hidden": true,
+          "locked": true,
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          },
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "gm",
+              "trigger": "dblclick",
+              "allowpaused": true,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [
+                {
+                  "action": "runmacro",
+                  "data": {
+                    "entity": {
+                      "id": "Compendium.stroud-dnd-helpers.SDND-GM-Macros.Macro.fmvUKqibTHufoKNq",
+                      "name": "toggleFireplace"
+                    },
+                    "args": "\"5a74d7ae-127a-4ec8-9a35-f82ccea62b15\"",
+                    "runasgm": "gm"
+                  },
+                  "id": "5a74d7ae-127a-4ec8-9a35-f82ccea62b15"
+                }
+              ],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            },
+            "region-attacher": {
+              "attachRegionToTile": false
+            }
+          },
+          "_id": "eQv18absy3PH3vNg"
         }
       ],
       "walls": [
@@ -8985,8 +9524,12 @@
           "sound": 20,
           "dir": 0,
           "door": 1,
-          "ds": 0,
-          "flags": {},
+          "ds": 2,
+          "flags": {
+            "stroud-dnd-helpers": {
+              "DefaultDoorState": 2
+            }
+          },
           "threshold": {
             "light": null,
             "sight": null,
@@ -9227,126 +9770,6 @@
           "door": 0,
           "ds": 0,
           "flags": {},
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "animation": null
-        },
-        {
-          "_id": "48SmfRN4ncOyhKqy",
-          "c": [
-            2350,
-            1100,
-            2450,
-            1100
-          ],
-          "light": 10,
-          "move": 20,
-          "sight": 20,
-          "sound": 10,
-          "dir": 0,
-          "door": 0,
-          "ds": 0,
-          "flags": {
-            "dnd5e-helpers": {
-              "coverLevel": 3
-            },
-            "betterroofs": {
-              "externalWall": false
-            },
-            "monks-active-tiles": {
-              "entity": "",
-              "open": false,
-              "close": false,
-              "lock": false,
-              "checklock": false,
-              "secret": false
-            },
-            "smartdoors": {}
-          },
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "animation": null
-        },
-        {
-          "_id": "UaJVZpJ7rMbIyDGA",
-          "c": [
-            2562,
-            1162,
-            2637,
-            1237
-          ],
-          "light": 10,
-          "move": 20,
-          "sight": 20,
-          "sound": 10,
-          "dir": 0,
-          "door": 0,
-          "ds": 0,
-          "flags": {
-            "dnd5e-helpers": {
-              "coverLevel": 3
-            },
-            "betterroofs": {
-              "externalWall": false
-            },
-            "monks-active-tiles": {
-              "entity": "",
-              "open": false,
-              "close": false,
-              "lock": false,
-              "checklock": false,
-              "secret": false
-            },
-            "smartdoors": {}
-          },
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "animation": null
-        },
-        {
-          "_id": "dT8hrmiYiyp1kYBZ",
-          "c": [
-            2637,
-            1562,
-            2562,
-            1637
-          ],
-          "light": 10,
-          "move": 20,
-          "sight": 20,
-          "sound": 10,
-          "dir": 0,
-          "door": 0,
-          "ds": 0,
-          "flags": {
-            "dnd5e-helpers": {
-              "coverLevel": 3
-            },
-            "betterroofs": {
-              "externalWall": false
-            },
-            "monks-active-tiles": {
-              "entity": "",
-              "open": false,
-              "close": false,
-              "lock": false,
-              "checklock": false,
-              "secret": false
-            },
-            "smartdoors": {}
-          },
           "threshold": {
             "light": null,
             "sight": null,
@@ -10738,7 +11161,11 @@
           "dir": 0,
           "door": 1,
           "ds": 2,
-          "flags": {},
+          "flags": {
+            "stroud-dnd-helpers": {
+              "DefaultDoorState": 2
+            }
+          },
           "threshold": {
             "light": null,
             "sight": null,
@@ -10842,6 +11269,115 @@
             "attenuation": false
           },
           "animation": null
+        },
+        {
+          "light": 20,
+          "sight": 10,
+          "sound": 10,
+          "move": 20,
+          "c": [
+            2663,
+            1338,
+            2663,
+            1463
+          ],
+          "_id": "XAYJKXbksT0pEE3J",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "animation": null,
+          "flags": {
+            "smartdoors": {
+              "synchronizationGroup": "",
+              "synchronizeSecretStatus": false
+            },
+            "monks-active-tiles": {
+              "entity": "",
+              "open": false,
+              "close": false,
+              "lock": false,
+              "checklock": false,
+              "secret": false
+            }
+          }
+        },
+        {
+          "light": 30,
+          "sight": 30,
+          "sound": 20,
+          "move": 20,
+          "threshold": {
+            "light": 10,
+            "sight": 10,
+            "attenuation": true,
+            "sound": null
+          },
+          "c": [
+            2350,
+            1100,
+            2450,
+            1100
+          ],
+          "_id": "FCs5jvZQm89nWZoR",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 30,
+          "sight": 30,
+          "sound": 20,
+          "move": 20,
+          "threshold": {
+            "light": 10,
+            "sight": 10,
+            "attenuation": true,
+            "sound": null
+          },
+          "c": [
+            2562,
+            1162,
+            2638,
+            1238
+          ],
+          "_id": "GKjF7YXCqvf6Y3io",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 30,
+          "sight": 30,
+          "sound": 20,
+          "move": 20,
+          "threshold": {
+            "light": 10,
+            "sight": 10,
+            "attenuation": true,
+            "sound": null
+          },
+          "c": [
+            2637,
+            1562,
+            2563,
+            1638
+          ],
+          "_id": "ybV2A9sur6nGc5m0",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "animation": null,
+          "flags": {}
         }
       ],
       "playlist": null,
@@ -10855,10 +11391,6 @@
         "stroud-dnd-helpers": {
           "id": "t1.1"
         }
-      },
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
       },
       "background": {
         "src": "modules/sdnd-strahd-adv/images/maps/Areas/T/t1_gate/ground_floor.webp",
@@ -10880,7 +11412,7 @@
         "systemVersion": "3.2.1",
         "coreVersion": "13.351",
         "createdTime": 1719969260402,
-        "modifiedTime": 1756412262973,
+        "modifiedTime": 1778024580838,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
         "duplicateSource": null,
@@ -10923,19 +11455,21 @@
       },
       "fog": {
         "exploration": true,
-        "reset": 1675811289459,
         "overlay": null,
         "colors": {
           "explored": null,
           "unexplored": null
         }
-      }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "active": false
     },
     {
       "_id": "rF225DFPHAHqSDrE",
       "name": "T1.2. Tsolenka Gate (1st Floor)",
-      "active": false,
-      "navigation": true,
+      "navigation": false,
       "navOrder": 0,
       "navName": "",
       "foreground": null,
@@ -11376,9 +11910,9 @@
           "config": {
             "alpha": 0.2,
             "angle": 360,
-            "bright": 9.99,
+            "bright": 15,
             "coloration": 1,
-            "dim": 19.97,
+            "dim": 30,
             "luminosity": 0.5,
             "saturation": 0,
             "contrast": 0,
@@ -11387,7 +11921,7 @@
               "speed": 5,
               "intensity": 5,
               "reverse": false,
-              "type": "torch"
+              "type": "flame"
             },
             "darkness": {
               "min": 0,
@@ -11399,7 +11933,11 @@
             "priority": 0
           },
           "hidden": false,
-          "flags": {},
+          "flags": {
+            "stroud-dnd-helpers": {
+              "fireplace": "a8bd648a-e500-4772-a461-6924e4a107da"
+            }
+          },
           "elevation": 0
         },
         {
@@ -11422,7 +11960,7 @@
               "speed": 5,
               "intensity": 5,
               "reverse": false,
-              "type": "torch"
+              "type": "flame"
             },
             "darkness": {
               "min": 0,
@@ -11441,6 +11979,222 @@
           },
           "elevation": 0,
           "_id": "2Dr0JIkyVG5C0jfE"
+        },
+        {
+          "x": 3100,
+          "y": 1000,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "alpha": 0.5,
+            "angle": 360,
+            "bright": 60,
+            "coloration": 1,
+            "dim": 60,
+            "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false,
+              "type": null
+            },
+            "darkness": {
+              "min": 0,
+              "max": 0.5
+            },
+            "color": null,
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
+          },
+          "hidden": false,
+          "flags": {},
+          "elevation": 0,
+          "_id": "AThqrQL0OBhzp7xe"
+        },
+        {
+          "x": 3200,
+          "y": 1450,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "alpha": 0.5,
+            "angle": 360,
+            "bright": 60,
+            "coloration": 1,
+            "dim": 60,
+            "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false,
+              "type": null
+            },
+            "darkness": {
+              "min": 0,
+              "max": 0.5
+            },
+            "color": null,
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
+          },
+          "hidden": false,
+          "flags": {},
+          "elevation": 0,
+          "_id": "gICE3R2OUNmFRE4C"
+        },
+        {
+          "x": 3050,
+          "y": 2450,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "alpha": 0.5,
+            "angle": 360,
+            "bright": 60,
+            "coloration": 1,
+            "dim": 60,
+            "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false,
+              "type": null
+            },
+            "darkness": {
+              "min": 0,
+              "max": 0.5
+            },
+            "color": null,
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
+          },
+          "hidden": false,
+          "flags": {},
+          "elevation": 0,
+          "_id": "vePa4MeVxc4OXOOH"
+        },
+        {
+          "x": 1550,
+          "y": 1700,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "alpha": 0.5,
+            "angle": 360,
+            "bright": 60,
+            "coloration": 1,
+            "dim": 60,
+            "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false,
+              "type": null
+            },
+            "darkness": {
+              "min": 0,
+              "max": 0.5
+            },
+            "color": null,
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
+          },
+          "hidden": false,
+          "flags": {},
+          "elevation": 0,
+          "_id": "toohWVL8U5beCyFu"
+        },
+        {
+          "x": 700,
+          "y": 700,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "alpha": 0.5,
+            "angle": 360,
+            "bright": 60,
+            "coloration": 1,
+            "dim": 60,
+            "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false,
+              "type": null
+            },
+            "darkness": {
+              "min": 0,
+              "max": 0.5
+            },
+            "color": null,
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
+          },
+          "hidden": false,
+          "flags": {},
+          "elevation": 0,
+          "_id": "CYkNIthQbC2ACV08"
+        },
+        {
+          "x": 1950,
+          "y": 650,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "alpha": 0.5,
+            "angle": 360,
+            "bright": 60,
+            "coloration": 1,
+            "dim": 60,
+            "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false,
+              "type": null
+            },
+            "darkness": {
+              "min": 0,
+              "max": 0.5
+            },
+            "color": null,
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
+          },
+          "hidden": false,
+          "flags": {},
+          "elevation": 0,
+          "_id": "LbzV1nCAjDre2ptd"
         }
       ],
       "notes": [
@@ -11491,7 +12245,11 @@
             "min": 0,
             "max": 1
           },
-          "flags": {},
+          "flags": {
+            "stroud-dnd-helpers": {
+              "fireplace": "a8bd648a-e500-4772-a461-6924e4a107da"
+            }
+          },
           "elevation": 0,
           "effects": {
             "base": {
@@ -11583,6 +12341,14 @@
                     "colour": "#ff0000"
                   },
                   "id": "gBePSFHzKK7po6qj"
+                },
+                {
+                  "action": "scene",
+                  "data": {
+                    "sceneid": "1nmiKL2XvzbfrZIo",
+                    "activate": false
+                  },
+                  "id": "CnHz4F7enubc8gel"
                 }
               ],
               "files": []
@@ -11741,6 +12507,14 @@
                     "colour": "#ff0000"
                   },
                   "id": "gBePSFHzKK7po6qj"
+                },
+                {
+                  "action": "scene",
+                  "data": {
+                    "sceneid": "2RYQglwKSuIQnBZm",
+                    "activate": false
+                  },
+                  "id": "3afbndciqJdh3hhd"
                 }
               ],
               "files": []
@@ -12077,6 +12851,84 @@
             "volume": 0
           },
           "_id": "rvhjttlox0xjq64z"
+        },
+        {
+          "x": 2600,
+          "y": 1350,
+          "width": 100,
+          "height": 100,
+          "rotation": 0,
+          "elevation": 0,
+          "sort": 104,
+          "flags": {
+            "monks-active-tiles": {
+              "name": "",
+              "active": true,
+              "record": false,
+              "restriction": "all",
+              "controlled": "gm",
+              "trigger": "dblclick",
+              "allowpaused": true,
+              "usealpha": false,
+              "pointer": false,
+              "vision": true,
+              "pertoken": false,
+              "minrequired": 0,
+              "cooldown": null,
+              "chance": 100,
+              "fileindex": 0,
+              "actions": [
+                {
+                  "action": "runmacro",
+                  "data": {
+                    "entity": {
+                      "id": "Compendium.stroud-dnd-helpers.SDND-GM-Macros.Macro.fmvUKqibTHufoKNq",
+                      "name": "toggleFireplace"
+                    },
+                    "args": "\"a8bd648a-e500-4772-a461-6924e4a107da\"",
+                    "runasgm": "gm"
+                  },
+                  "id": "a8bd648a-e500-4772-a461-6924e4a107da"
+                }
+              ],
+              "files": []
+            },
+            "betterroofs": {
+              "brMode": false,
+              "occlusionLinkId": "",
+              "occlusionLinkSource": false
+            }
+          },
+          "texture": {
+            "src": "modules/stroud-dnd-helpers/images/icons/Fireplace_Icon.webp",
+            "scaleX": 1,
+            "scaleY": 1,
+            "tint": "#ffffff",
+            "anchorX": 0.5,
+            "anchorY": 0.5,
+            "offsetX": 0,
+            "offsetY": 0,
+            "fit": "fill",
+            "rotation": 0,
+            "alphaThreshold": 0.75
+          },
+          "alpha": 1,
+          "occlusion": {
+            "mode": 0,
+            "alpha": 0
+          },
+          "restrictions": {
+            "light": false,
+            "weather": false
+          },
+          "_id": "ngTBgomYOR6sQXVh",
+          "hidden": true,
+          "locked": true,
+          "video": {
+            "loop": true,
+            "autoplay": true,
+            "volume": 0
+          }
         }
       ],
       "walls": [
@@ -12133,8 +12985,8 @@
           "c": [
             2100,
             1300,
-            2300,
-            1100
+            2163,
+            1238
           ],
           "light": 20,
           "move": 20,
@@ -12312,126 +13164,6 @@
           "door": 0,
           "ds": 0,
           "flags": {},
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "animation": null
-        },
-        {
-          "_id": "KrP50poytVUDzcrF",
-          "c": [
-            2350,
-            1100,
-            2450,
-            1100
-          ],
-          "light": 10,
-          "move": 20,
-          "sight": 20,
-          "sound": 10,
-          "dir": 0,
-          "door": 0,
-          "ds": 0,
-          "flags": {
-            "dnd5e-helpers": {
-              "coverLevel": 3
-            },
-            "betterroofs": {
-              "externalWall": false
-            },
-            "monks-active-tiles": {
-              "entity": "",
-              "open": false,
-              "close": false,
-              "lock": false,
-              "checklock": false,
-              "secret": false
-            },
-            "smartdoors": {}
-          },
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "animation": null
-        },
-        {
-          "_id": "w9FPBzxslG5wopZh",
-          "c": [
-            2562,
-            1162,
-            2637,
-            1237
-          ],
-          "light": 10,
-          "move": 20,
-          "sight": 20,
-          "sound": 10,
-          "dir": 0,
-          "door": 0,
-          "ds": 0,
-          "flags": {
-            "dnd5e-helpers": {
-              "coverLevel": 3
-            },
-            "betterroofs": {
-              "externalWall": false
-            },
-            "monks-active-tiles": {
-              "entity": "",
-              "open": false,
-              "close": false,
-              "lock": false,
-              "checklock": false,
-              "secret": false
-            },
-            "smartdoors": {}
-          },
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "animation": null
-        },
-        {
-          "_id": "OoNA5rdrikIVG2K5",
-          "c": [
-            2637,
-            1562,
-            2562,
-            1637
-          ],
-          "light": 10,
-          "move": 20,
-          "sight": 20,
-          "sound": 10,
-          "dir": 0,
-          "door": 0,
-          "ds": 0,
-          "flags": {
-            "dnd5e-helpers": {
-              "coverLevel": 3
-            },
-            "betterroofs": {
-              "externalWall": false
-            },
-            "monks-active-tiles": {
-              "entity": "",
-              "open": false,
-              "close": false,
-              "lock": false,
-              "checklock": false,
-              "secret": false
-            },
-            "smartdoors": {}
-          },
           "threshold": {
             "light": null,
             "sight": null,
@@ -12753,46 +13485,6 @@
           "animation": null
         },
         {
-          "_id": "LMDKidcZa4bLOO4s",
-          "c": [
-            2100,
-            1350,
-            2100,
-            1450
-          ],
-          "light": 10,
-          "move": 20,
-          "sight": 20,
-          "sound": 10,
-          "dir": 0,
-          "door": 0,
-          "ds": 0,
-          "flags": {
-            "dnd5e-helpers": {
-              "coverLevel": 3
-            },
-            "betterroofs": {
-              "externalWall": false
-            },
-            "monks-active-tiles": {
-              "entity": "",
-              "open": false,
-              "close": false,
-              "lock": false,
-              "checklock": false,
-              "secret": false
-            },
-            "smartdoors": {}
-          },
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "animation": null
-        },
-        {
           "_id": "pvoUE8eH1qFpnevD",
           "c": [
             305,
@@ -12887,6 +13579,299 @@
             "attenuation": false
           },
           "animation": null
+        },
+        {
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "c": [
+            2300,
+            1100,
+            2238,
+            1163
+          ],
+          "_id": "4BtiuGn6sg2YYx5d",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 30,
+          "sight": 30,
+          "sound": 20,
+          "move": 20,
+          "threshold": {
+            "light": 10,
+            "sight": 10,
+            "attenuation": true,
+            "sound": null
+          },
+          "c": [
+            2163,
+            1238,
+            2238,
+            1163
+          ],
+          "_id": "IhGnjAn3AXP3NhwD",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 30,
+          "sight": 30,
+          "sound": 20,
+          "move": 20,
+          "threshold": {
+            "light": 10,
+            "sight": 10,
+            "attenuation": true,
+            "sound": null
+          },
+          "c": [
+            2350,
+            1100,
+            2450,
+            1100
+          ],
+          "_id": "7xB0WUjE9gMezOHQ",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 30,
+          "sight": 30,
+          "sound": 20,
+          "move": 20,
+          "threshold": {
+            "light": 10,
+            "sight": 10,
+            "attenuation": true,
+            "sound": null
+          },
+          "c": [
+            2562,
+            1162,
+            2638,
+            1238
+          ],
+          "_id": "xm2ZwiQfuLNZxriS",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 30,
+          "sight": 30,
+          "sound": 20,
+          "move": 20,
+          "threshold": {
+            "light": 10,
+            "sight": 10,
+            "attenuation": true,
+            "sound": null
+          },
+          "c": [
+            2637,
+            1562,
+            2563,
+            1638
+          ],
+          "_id": "22mkeeQW9zSe2TQT",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 30,
+          "sight": 30,
+          "sound": 20,
+          "move": 20,
+          "threshold": {
+            "light": 10,
+            "sight": 10,
+            "attenuation": true,
+            "sound": null
+          },
+          "c": [
+            2100,
+            1350,
+            2100,
+            1450
+          ],
+          "_id": "BqDAwq8KqxsKmWV4",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 1,
+          "c": [
+            2125,
+            1350,
+            2125,
+            1450
+          ],
+          "_id": "FlMBKWS3Cmk9RsVY",
+          "dir": 0,
+          "ds": 1,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "animation": null,
+          "flags": {
+            "stroud-dnd-helpers": {
+              "DefaultDoorState": 1
+            }
+          }
+        },
+        {
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 1,
+          "c": [
+            2250,
+            1188,
+            2188,
+            1250
+          ],
+          "_id": "SVxzcbBGEqcxARiZ",
+          "dir": 0,
+          "ds": 1,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "animation": null,
+          "flags": {
+            "stroud-dnd-helpers": {
+              "DefaultDoorState": 1
+            }
+          }
+        },
+        {
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 1,
+          "c": [
+            2350,
+            1125,
+            2450,
+            1125
+          ],
+          "_id": "UWdMsZOfZboPkqCK",
+          "dir": 0,
+          "ds": 1,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "animation": null,
+          "flags": {
+            "stroud-dnd-helpers": {
+              "DefaultDoorState": 1
+            }
+          }
+        },
+        {
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 1,
+          "c": [
+            2550,
+            1188,
+            2625,
+            1263
+          ],
+          "_id": "JgUEhdxLtxh4oMPw",
+          "dir": 0,
+          "ds": 1,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "animation": null,
+          "flags": {
+            "stroud-dnd-helpers": {
+              "DefaultDoorState": 1
+            }
+          }
+        },
+        {
+          "light": 20,
+          "sight": 10,
+          "sound": 10,
+          "move": 20,
+          "c": [
+            2663,
+            1338,
+            2663,
+            1463
+          ],
+          "_id": "g6rwydnumkPyXNwY",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "animation": null,
+          "flags": {
+            "smartdoors": {
+              "synchronizationGroup": "",
+              "synchronizeSecretStatus": false
+            },
+            "monks-active-tiles": {
+              "entity": "",
+              "open": false,
+              "close": false,
+              "lock": false,
+              "checklock": false,
+              "secret": false
+            }
+          }
         }
       ],
       "playlist": null,
@@ -12900,10 +13885,6 @@
         "stroud-dnd-helpers": {
           "id": "t1.2"
         }
-      },
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
       },
       "background": {
         "src": "modules/sdnd-strahd-adv/images/maps/Areas/T/t1_gate/first_floor.webp",
@@ -12925,7 +13906,7 @@
         "systemVersion": "3.2.1",
         "coreVersion": "13.351",
         "createdTime": 1719969281904,
-        "modifiedTime": 1756411633570,
+        "modifiedTime": 1778024405727,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
         "duplicateSource": null,
@@ -12968,19 +13949,21 @@
       },
       "fog": {
         "exploration": true,
-        "reset": 1675811348862,
         "overlay": null,
         "colors": {
           "explored": null,
           "unexplored": null
         }
-      }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "active": false
     },
     {
       "_id": "2RYQglwKSuIQnBZm",
       "name": "T1.3. Tsolenka Gate (Roof)",
-      "active": false,
-      "navigation": true,
+      "navigation": false,
       "navOrder": 0,
       "navName": "",
       "foreground": null,
@@ -17061,10 +18044,6 @@
           "id": "t1.3"
         }
       },
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
-      },
       "background": {
         "src": "modules/sdnd-strahd-adv/images/maps/Areas/T/t1_gate/roof.webp",
         "offsetX": 0,
@@ -17085,7 +18064,7 @@
         "systemVersion": "3.2.1",
         "coreVersion": "13.351",
         "createdTime": 1719969296522,
-        "modifiedTime": 1756411670219,
+        "modifiedTime": 1772290541228,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
         "duplicateSource": null,
@@ -17128,19 +18107,21 @@
       },
       "fog": {
         "exploration": true,
-        "reset": 1675811289459,
         "overlay": null,
         "colors": {
           "explored": null,
           "unexplored": null
         }
-      }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "active": false
     },
     {
       "_id": "WuklPpu9bIWP6qga",
       "name": "Tsolenka Bridge",
-      "active": false,
-      "navigation": true,
+      "navigation": false,
       "navOrder": 0,
       "navName": "",
       "foreground": null,
@@ -20082,10 +21063,6 @@
       "flags": {
         "token-attacher": {}
       },
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
-      },
       "background": {
         "src": "modules/sdnd-strahd-adv/images/maps/Areas/T/t2_bridge/ground_floor.webp",
         "offsetX": 0,
@@ -20106,7 +21083,7 @@
         "systemVersion": "3.2.1",
         "coreVersion": "13.351",
         "createdTime": 1720665425989,
-        "modifiedTime": 1756408977852,
+        "modifiedTime": 1772290543118,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
         "duplicateSource": null,
@@ -20149,13 +21126,16 @@
       },
       "fog": {
         "exploration": true,
-        "reset": 1675811662365,
         "overlay": null,
         "colors": {
           "explored": null,
           "unexplored": null
         }
-      }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "active": false
     }
   ],
   "tables": [],
@@ -20458,7 +21438,7 @@
     "systemVersion": "3.2.1",
     "coreVersion": "13.351",
     "createdTime": 1719969562120,
-    "modifiedTime": 1756412285951,
+    "modifiedTime": 1778024613295,
     "lastModifiedBy": "6yhz13iFYYklKtgA",
     "compendiumSource": null,
     "duplicateSource": null,
