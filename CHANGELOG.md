@@ -1,3 +1,7 @@
+# v13.5.4
+# Bug Fixes
+- Fixed portals everywhere.
+- Fixed countless issues with Castle Ravenloft.  (Thanks Pam and Kelly!)
 # v13.5.3
 # New Features
 - Area K: Castle Ravenloft
@@ -274,6 +278,7 @@
 - Conversion to Foundry Version 11
 # v1.0.0: Initial Release of Curse of Strahd Adventure Pack
 - Includes starter scenes
+
 
 
 

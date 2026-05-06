@@ -60,7 +60,7 @@
             "activePlayers": true,
             "merchantColumns": []
           },
-          "version": "3.2.14",
+          "version": "3.2.31",
           "sharing": null
         },
         "tidy5e-sheet": {
@@ -238,8 +238,8 @@
             "formula": ""
           },
           "hp": {
-            "value": 19,
-            "max": 19,
+            "value": 24,
+            "max": 24,
             "temp": 0,
             "tempmax": 0,
             "formula": ""
@@ -254,13 +254,10 @@
             }
           },
           "movement": {
-            "burrow": null,
-            "climb": null,
-            "fly": null,
-            "swim": null,
-            "walk": 30,
+            "walk": "30",
             "units": "ft",
-            "hover": false
+            "hover": false,
+            "ignoredDifficultTerrain": []
           },
           "attunement": {
             "max": 3
@@ -302,11 +299,13 @@
           "spell": {
             "level": 0
           },
-          "loyalty": {
-            "value": null
-          },
+          "loyalty": {},
           "hd": {
             "spent": 0
+          },
+          "price": {
+            "value": null,
+            "denomination": "gp"
           }
         },
         "details": {
@@ -680,12 +679,12 @@
         },
         "resources": {
           "legact": {
-            "value": 0,
-            "max": 0
+            "max": 0,
+            "spent": 0
           },
           "legres": {
-            "value": 0,
-            "max": 0
+            "max": 0,
+            "spent": 0
           },
           "lair": {
             "value": false,
@@ -698,16 +697,6 @@
           "custom": "",
           "revision": 1
         }
-      },
-      "ownership": {
-        "default": 2,
-        "6yhz13iFYYklKtgA": 3,
-        "nI44NHqYFA6fYSaA": 2,
-        "2o6fMFw0qQuhf5nV": 2,
-        "6A5pacAU8kbNm9PQ": 2,
-        "al3K6JMdvNPhJSGp": 2,
-        "PAsMQtGinm9l3io7": 2,
-        "39APwqo8boJ5in8b": 2
       },
       "prototypeToken": {
         "name": "Treasure",
@@ -779,7 +768,7 @@
               "openSound": "sounds/doors/wood/open.ogg",
               "merchantColumns": []
             },
-            "version": "3.2.14"
+            "version": "3.2.31"
           },
           "token-z": {
             "zIndex": 0
@@ -843,12 +832,12 @@
       },
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "4.4.2",
+        "systemVersion": "5.2.4",
         "coreVersion": "13.351",
         "createdTime": null,
-        "modifiedTime": 1754747181387,
+        "modifiedTime": 1774411841281,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
-        "compendiumSource": "Actor.MBE40ejmR95pHVLP",
+        "compendiumSource": null,
         "duplicateSource": null,
         "exportSource": {
           "worldId": "curse_of_strahd",
@@ -857,6 +846,9 @@
           "systemId": "dnd5e",
           "systemVersion": "3.1.2"
         }
+      },
+      "ownership": {
+        "default": 2
       }
     },
     {
@@ -911,11 +903,9 @@
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             }
-          },
-          "ownership": {
-            "default": 0
           },
           "_stats": {
             "systemId": null,
@@ -927,6 +917,9 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -971,7 +964,6 @@
             "rarity": "",
             "identified": true,
             "cover": null,
-            "crewed": false,
             "range": {
               "value": 5,
               "long": null,
@@ -1079,7 +1071,7 @@
                     "size": "",
                     "width": "",
                     "height": "",
-                    "units": ""
+                    "units": "ft"
                   },
                   "affects": {
                     "count": "",
@@ -1126,7 +1118,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -1134,7 +1127,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -1145,7 +1137,18 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "skipConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -1156,17 +1159,27 @@
                 "otherActivityId": "",
                 "attackMode": "oneHanded",
                 "ammunition": "",
-                "otherActivityUuid": ""
+                "otherActivityUuid": "",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true,
+                "attackRollPerTarget": "default",
+                "fumbleThreshold": 1
               }
             },
             "identifier": "",
             "container": null,
             "attuned": false,
             "ammunition": {},
-            "magicalBonus": null
-          },
-          "ownership": {
-            "default": 0
+            "magicalBonus": null,
+            "crew": {
+              "value": []
+            }
           },
           "_stats": {
             "systemId": null,
@@ -1178,6 +1191,9 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -1225,12 +1241,10 @@
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             },
             "properties": []
-          },
-          "ownership": {
-            "default": 0
           },
           "_stats": {
             "systemId": null,
@@ -1242,6 +1256,9 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -1289,12 +1306,10 @@
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             },
             "properties": []
-          },
-          "ownership": {
-            "default": 0
           },
           "_stats": {
             "systemId": null,
@@ -1306,6 +1321,9 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         }
       ],
@@ -1518,8 +1536,8 @@
             "formula": ""
           },
           "hp": {
-            "value": 33,
-            "max": 33,
+            "value": 54,
+            "max": 54,
             "temp": 0,
             "tempmax": 0,
             "formula": "6d8 + 6"
@@ -1534,13 +1552,10 @@
             }
           },
           "movement": {
-            "burrow": null,
-            "climb": null,
-            "fly": null,
-            "swim": null,
-            "walk": 25,
+            "walk": "25",
             "units": "ft",
-            "hover": false
+            "hover": false,
+            "ignoredDifficultTerrain": []
           },
           "attunement": {
             "max": 3
@@ -1587,6 +1602,10 @@
             "bonuses": {
               "save": ""
             }
+          },
+          "price": {
+            "value": null,
+            "denomination": "gp"
           }
         },
         "details": {
@@ -1972,12 +1991,12 @@
         },
         "resources": {
           "legact": {
-            "value": 0,
-            "max": 0
+            "max": 0,
+            "spent": 0
           },
           "legres": {
-            "value": 0,
-            "max": 0
+            "max": 0,
+            "spent": 0
           },
           "lair": {
             "value": false,
@@ -1990,10 +2009,6 @@
           "revision": 1,
           "rules": "2014"
         }
-      },
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
       },
       "prototypeToken": {
         "name": "Animated Armor",
@@ -2095,14 +2110,17 @@
       },
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "4.4.2",
+        "systemVersion": "5.2.4",
         "coreVersion": "13.351",
         "createdTime": null,
-        "modifiedTime": 1754774801015,
+        "modifiedTime": 1774412197780,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": "Compendium.world.ddb-lost-mines-phandelver-monsters.L076Qyk6whiz5vyx",
         "duplicateSource": null,
         "exportSource": null
+      },
+      "ownership": {
+        "default": 0
       }
     },
     {
@@ -2258,8 +2276,8 @@
             "formula": ""
           },
           "hp": {
-            "value": 178,
-            "max": 178,
+            "value": 255,
+            "max": 255,
             "temp": 0,
             "tempmax": 0,
             "formula": "17d10 + 85"
@@ -2274,13 +2292,14 @@
             }
           },
           "movement": {
-            "burrow": 0,
-            "climb": 0,
-            "fly": 0,
-            "swim": 0,
-            "walk": 30,
+            "burrow": "0",
+            "climb": "0",
+            "fly": "0",
+            "swim": "0",
+            "walk": "30",
             "units": "ft",
-            "hover": false
+            "hover": false,
+            "ignoredDifficultTerrain": []
           },
           "attunement": {
             "max": 3
@@ -2327,6 +2346,10 @@
           },
           "hd": {
             "spent": 0
+          },
+          "price": {
+            "value": null,
+            "denomination": "gp"
           }
         },
         "details": {
@@ -2719,12 +2742,12 @@
         },
         "resources": {
           "legact": {
-            "value": 0,
-            "max": 0
+            "max": 0,
+            "spent": 0
           },
           "legres": {
-            "value": 0,
-            "max": 0
+            "max": 0,
+            "spent": 0
           },
           "lair": {
             "value": false,
@@ -2880,15 +2903,13 @@
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             }
           },
           "effects": [],
           "folder": null,
           "sort": 0,
-          "ownership": {
-            "default": 0
-          },
           "flags": {
             "core": {}
           },
@@ -2902,6 +2923,9 @@
             "compendiumSource": "Compendium.dnd5e.monsterfeatures.MFuiImIvLzYA3osc",
             "duplicateSource": null,
             "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -2941,15 +2965,13 @@
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             }
           },
           "effects": [],
           "folder": null,
           "sort": 0,
-          "ownership": {
-            "default": 0
-          },
           "flags": {
             "core": {}
           },
@@ -2963,6 +2985,9 @@
             "compendiumSource": "Compendium.dnd5e.monsterfeatures.Hc6MqLQhPTI1KOvm",
             "duplicateSource": null,
             "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -3002,15 +3027,13 @@
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             }
           },
           "effects": [],
           "folder": null,
           "sort": 0,
-          "ownership": {
-            "default": 0
-          },
           "flags": {
             "core": {}
           },
@@ -3024,6 +3047,9 @@
             "compendiumSource": "Compendium.dnd5e.monsterfeatures.nahRRxck9R5GVVFS",
             "duplicateSource": null,
             "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -3081,13 +3107,13 @@
                 "duration": {
                   "concentration": false,
                   "value": "",
-                  "units": "",
+                  "units": "inst",
                   "special": "",
                   "override": false
                 },
                 "effects": [],
                 "range": {
-                  "units": "",
+                  "units": "self",
                   "special": "",
                   "override": false
                 },
@@ -3099,7 +3125,7 @@
                     "size": "",
                     "width": "",
                     "height": "",
-                    "units": ""
+                    "units": "ft"
                   },
                   "affects": {
                     "count": "",
@@ -3133,7 +3159,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -3141,7 +3168,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -3152,7 +3178,18 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "skipConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -3160,7 +3197,15 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": "none"
+                "otherActivityId": "none",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true
               }
             },
             "identifier": "",
@@ -3168,15 +3213,13 @@
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             }
           },
           "effects": [],
           "folder": null,
           "sort": 0,
-          "ownership": {
-            "default": 0
-          },
           "flags": {
             "core": {},
             "dnd5e": {}
@@ -3191,6 +3234,9 @@
             "compendiumSource": "Compendium.dnd5e.monsterfeatures.EqoLg8T8EHvhJgKE",
             "duplicateSource": null,
             "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -3228,7 +3274,7 @@
             "range": {
               "value": null,
               "long": null,
-              "units": "",
+              "units": "ft",
               "reach": null
             },
             "uses": {
@@ -3289,7 +3335,6 @@
               "baseItem": ""
             },
             "container": null,
-            "crewed": false,
             "magicalBonus": null,
             "activities": {
               "dnd5eactivity000": {
@@ -3315,13 +3360,13 @@
                 "duration": {
                   "concentration": false,
                   "value": "",
-                  "units": "",
+                  "units": "inst",
                   "special": "",
                   "override": false
                 },
                 "effects": [],
                 "range": {
-                  "units": "",
+                  "units": "self",
                   "special": "",
                   "override": false
                 },
@@ -3333,7 +3378,7 @@
                     "size": "",
                     "width": "",
                     "height": "",
-                    "units": ""
+                    "units": "ft"
                   },
                   "affects": {
                     "count": "",
@@ -3380,7 +3425,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -3388,7 +3434,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -3399,7 +3444,18 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "skipConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -3410,19 +3466,29 @@
                 "otherActivityId": "",
                 "attackMode": "oneHanded",
                 "ammunition": "",
-                "otherActivityUuid": ""
+                "otherActivityUuid": "",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true,
+                "attackRollPerTarget": "default",
+                "fumbleThreshold": 1
               }
             },
             "identifier": "",
             "attuned": false,
-            "ammunition": {}
+            "ammunition": {},
+            "crew": {
+              "value": []
+            }
           },
           "effects": [],
           "folder": null,
           "sort": 0,
-          "ownership": {
-            "default": 0
-          },
           "flags": {
             "dnd5e": {}
           },
@@ -3436,6 +3502,9 @@
             "compendiumSource": null,
             "duplicateSource": null,
             "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         },
         {
@@ -3572,7 +3641,8 @@
                   "idi": false,
                   "idr": false,
                   "idv": false,
-                  "ida": false
+                  "ida": false,
+                  "idm": false
                 },
                 "midiProperties": {
                   "ignoreTraits": [],
@@ -3580,7 +3650,6 @@
                   "triggeredActivityConditionText": "",
                   "triggeredActivityTargets": "targets",
                   "triggeredActivityRollAs": "self",
-                  "forceDialog": false,
                   "confirmTargets": "default",
                   "autoTargetType": "any",
                   "autoTargetAction": "default",
@@ -3591,7 +3660,18 @@
                   "rollMode": "default",
                   "chooseEffects": false,
                   "toggleEffect": false,
-                  "ignoreFullCover": false
+                  "ignoreFullCover": false,
+                  "autoConsume": false,
+                  "forceConsumeDialog": "default",
+                  "forceRollDialog": "default",
+                  "forceDamageDialog": "default",
+                  "otherActivityAsParentType": true,
+                  "removeChatButtons": "default",
+                  "magicEffect": false,
+                  "magicDamage": false,
+                  "noConcentrationCheck": false,
+                  "skipConcentrationCheck": false,
+                  "autoCEEffects": "default"
                 },
                 "isOverTimeFlag": false,
                 "overTimeProperties": {
@@ -3599,7 +3679,16 @@
                   "preRemoveConditionText": "",
                   "postRemoveConditionText": ""
                 },
-                "otherActivityId": ""
+                "otherActivityId": "",
+                "flags": {},
+                "visibility": {
+                  "level": {},
+                  "requireAttunement": false,
+                  "requireIdentification": false,
+                  "requireMagic": false
+                },
+                "otherActivityAsParentType": true,
+                "friendlySave": "default"
               }
             },
             "identifier": "",
@@ -3607,15 +3696,13 @@
             "enchant": {},
             "prerequisites": {
               "level": null,
-              "repeatable": false
+              "repeatable": false,
+              "items": []
             }
           },
           "effects": [],
           "folder": null,
           "sort": 0,
-          "ownership": {
-            "default": 0
-          },
           "flags": {
             "core": {},
             "dnd5e": {}
@@ -3630,29 +3717,31 @@
             "compendiumSource": "Compendium.dnd5e.monsterfeatures.BDnjS1sQi2pdARh8",
             "duplicateSource": null,
             "exportSource": null
+          },
+          "ownership": {
+            "default": 0
           }
         }
       ],
       "effects": [],
       "folder": "7fFXxvQlzOipnhM7",
       "sort": 200000,
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
-      },
       "flags": {
         "core": {}
       },
       "_stats": {
         "systemId": "dnd5e",
-        "systemVersion": "4.4.2",
+        "systemVersion": "5.2.4",
         "coreVersion": "13.351",
         "createdTime": 1661787233254,
-        "modifiedTime": 1754774832924,
+        "modifiedTime": 1774412219715,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": "Compendium.dnd5e.monsters.Actor.z3gSIXHHWYaHjfBT",
         "duplicateSource": null,
         "exportSource": null
+      },
+      "ownership": {
+        "default": 0
       }
     }
   ],
@@ -3684,10 +3773,6 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
@@ -3700,7 +3785,10 @@
             "duplicateSource": null,
             "exportSource": null
           },
-          "category": null
+          "category": null,
+          "ownership": {
+            "default": -1
+          }
         },
         {
           "sort": 200000,
@@ -3722,10 +3810,6 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
@@ -3738,7 +3822,10 @@
             "duplicateSource": null,
             "exportSource": null
           },
-          "category": null
+          "category": null,
+          "ownership": {
+            "default": -1
+          }
         },
         {
           "sort": 300000,
@@ -3760,10 +3847,6 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
@@ -3776,7 +3859,10 @@
             "duplicateSource": null,
             "exportSource": null
           },
-          "category": null
+          "category": null,
+          "ownership": {
+            "default": -1
+          }
         },
         {
           "sort": 400000,
@@ -3798,10 +3884,6 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
@@ -3814,7 +3896,10 @@
             "duplicateSource": null,
             "exportSource": null
           },
-          "category": null
+          "category": null,
+          "ownership": {
+            "default": -1
+          }
         },
         {
           "sort": 500000,
@@ -3836,10 +3921,6 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
@@ -3852,7 +3933,10 @@
             "duplicateSource": null,
             "exportSource": null
           },
-          "category": null
+          "category": null,
+          "ownership": {
+            "default": -1
+          }
         },
         {
           "sort": 600000,
@@ -3874,10 +3958,6 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
@@ -3890,7 +3970,10 @@
             "duplicateSource": null,
             "exportSource": null
           },
-          "category": null
+          "category": null,
+          "ownership": {
+            "default": -1
+          }
         },
         {
           "sort": 700000,
@@ -3912,10 +3995,6 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
@@ -3928,7 +4007,10 @@
             "duplicateSource": null,
             "exportSource": null
           },
-          "category": null
+          "category": null,
+          "ownership": {
+            "default": -1
+          }
         },
         {
           "sort": 800000,
@@ -3950,10 +4032,6 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
@@ -3966,7 +4044,10 @@
             "duplicateSource": null,
             "exportSource": null
           },
-          "category": null
+          "category": null,
+          "ownership": {
+            "default": -1
+          }
         },
         {
           "sort": 900000,
@@ -3988,10 +4069,6 @@
           },
           "src": null,
           "system": {},
-          "ownership": {
-            "default": -1,
-            "6yhz13iFYYklKtgA": 3
-          },
           "flags": {},
           "_stats": {
             "systemId": "dnd5e",
@@ -4004,14 +4081,13 @@
             "duplicateSource": null,
             "exportSource": null
           },
-          "category": null
+          "category": null,
+          "ownership": {
+            "default": -1
+          }
         }
       ],
       "sort": 100000,
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
-      },
       "flags": {},
       "_stats": {
         "systemId": "dnd5e",
@@ -4024,14 +4100,16 @@
         "duplicateSource": null,
         "exportSource": null
       },
-      "categories": []
+      "categories": [],
+      "ownership": {
+        "default": 0
+      }
     }
   ],
   "scenes": [
     {
       "_id": "NujGRZv7TxBFUwpT",
       "name": "V1. Van Richten’s Tower (Ground Floor)",
-      "active": false,
       "navigation": false,
       "navOrder": 975000,
       "navName": "",
@@ -4599,8 +4677,8 @@
         },
         {
           "_id": "VaEQKbdRZLi8rxdq",
-          "x": 750,
-          "y": 2800,
+          "x": 800,
+          "y": 2500,
           "rotation": 0,
           "walls": true,
           "vision": false,
@@ -4625,42 +4703,6 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5,
-            "negative": false,
-            "priority": 0
-          },
-          "hidden": false,
-          "flags": {},
-          "elevation": 0
-        },
-        {
-          "_id": "vdarer3GQZ8HRmz9",
-          "x": 1250,
-          "y": 1150,
-          "rotation": 0,
-          "walls": true,
-          "vision": false,
-          "config": {
-            "alpha": 0.2,
-            "angle": 360,
-            "bright": 5,
-            "coloration": 1,
-            "dim": 20,
-            "luminosity": 0.5,
-            "saturation": 0,
-            "contrast": 0,
-            "shadows": 0,
-            "animation": {
-              "speed": 2,
-              "intensity": 6,
-              "reverse": false,
-              "type": "torch"
-            },
-            "darkness": {
-              "min": 0,
-              "max": 1
-            },
-            "color": "#cd8737",
             "attenuation": 0.5,
             "negative": false,
             "priority": 0
@@ -5210,6 +5252,14 @@
                     "colour": "#ff0000"
                   },
                   "id": "O9Gz5KVTFJxqdN0w"
+                },
+                {
+                  "action": "scene",
+                  "data": {
+                    "sceneid": "zqbxmKbL4QbicKiM",
+                    "activate": false
+                  },
+                  "id": "KXddkrVr07HVPqoZ"
                 }
               ],
               "files": []
@@ -5383,6 +5433,14 @@
                     "colour": "#ff0000"
                   },
                   "id": "O9Gz5KVTFJxqdN0w"
+                },
+                {
+                  "action": "scene",
+                  "data": {
+                    "sceneid": "zqbxmKbL4QbicKiM",
+                    "activate": false
+                  },
+                  "id": "DCsXNleOHKDemQdj"
                 }
               ],
               "files": []
@@ -6070,7 +6128,11 @@
           "dir": 0,
           "door": 1,
           "ds": 2,
-          "flags": {},
+          "flags": {
+            "stroud-dnd-helpers": {
+              "DefaultDoorState": 2
+            }
+          },
           "threshold": {
             "light": null,
             "sight": null,
@@ -6375,6 +6437,9 @@
             },
             "smartdoors": {
               "synchronizationGroup": ""
+            },
+            "stroud-dnd-helpers": {
+              "DefaultDoorState": 2
             }
           },
           "doorSound": "",
@@ -6530,10 +6595,6 @@
       "flags": {
         "token-attacher": {}
       },
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
-      },
       "background": {
         "src": "modules/sdnd-strahd-adv/images/maps/Areas/V/v1_vr_tower/ground_floor.webp",
         "offsetX": 0,
@@ -6554,7 +6615,7 @@
         "systemVersion": "3.2.1",
         "coreVersion": "13.351",
         "createdTime": 1719970603466,
-        "modifiedTime": 1750195534621,
+        "modifiedTime": 1778024944887,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
         "compendiumSource": null,
         "duplicateSource": null,
@@ -6597,18 +6658,20 @@
       },
       "fog": {
         "exploration": true,
-        "reset": 1675555379150,
         "overlay": null,
         "colors": {
           "explored": null,
           "unexplored": null
         }
-      }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "active": false
     },
     {
       "_id": "zqbxmKbL4QbicKiM",
       "name": "V2. Van Richten’s Tower (1st Floor)",
-      "active": false,
       "navigation": false,
       "navOrder": 1075000,
       "navName": "",
@@ -6665,42 +6728,6 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5,
-            "negative": false,
-            "priority": 0
-          },
-          "hidden": false,
-          "flags": {},
-          "elevation": 0
-        },
-        {
-          "_id": "cwoqqL4MCKBRXzKp",
-          "x": 1250,
-          "y": 1150,
-          "rotation": 0,
-          "walls": true,
-          "vision": false,
-          "config": {
-            "alpha": 0.2,
-            "angle": 360,
-            "bright": 5,
-            "coloration": 1,
-            "dim": 20,
-            "luminosity": 0.5,
-            "saturation": 0,
-            "contrast": 0,
-            "shadows": 0,
-            "animation": {
-              "speed": 2,
-              "intensity": 6,
-              "reverse": false,
-              "type": "torch"
-            },
-            "darkness": {
-              "min": 0,
-              "max": 1
-            },
-            "color": "#cd8737",
             "attenuation": 0.5,
             "negative": false,
             "priority": 0
@@ -6924,6 +6951,438 @@
           "hidden": false,
           "flags": {},
           "elevation": 0
+        },
+        {
+          "x": 1077,
+          "y": 1293,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "alpha": 0.4,
+            "angle": 360,
+            "bright": 55,
+            "coloration": 1,
+            "dim": 55,
+            "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false,
+              "type": null
+            },
+            "darkness": {
+              "min": 0,
+              "max": 0.5
+            },
+            "color": null,
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
+          },
+          "hidden": false,
+          "flags": {},
+          "elevation": 0,
+          "_id": "itaIPZybD9TtpljN"
+        },
+        {
+          "x": 1635,
+          "y": 1203,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "alpha": 0.4,
+            "angle": 360,
+            "bright": 55,
+            "coloration": 1,
+            "dim": 55,
+            "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false,
+              "type": null
+            },
+            "darkness": {
+              "min": 0,
+              "max": 0.5
+            },
+            "color": null,
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
+          },
+          "hidden": false,
+          "flags": {},
+          "elevation": 0,
+          "_id": "2ixS91yKFNkQfkYG"
+        },
+        {
+          "x": 1399,
+          "y": 1526,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "alpha": 0.4,
+            "angle": 360,
+            "bright": 55,
+            "coloration": 1,
+            "dim": 55,
+            "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false,
+              "type": null
+            },
+            "darkness": {
+              "min": 0,
+              "max": 0.5
+            },
+            "color": null,
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
+          },
+          "hidden": false,
+          "flags": {},
+          "elevation": 0,
+          "_id": "lYo8WkNm6r5p8nPC"
+        },
+        {
+          "x": 1307,
+          "y": 969,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "alpha": 0.4,
+            "angle": 360,
+            "bright": 55,
+            "coloration": 1,
+            "dim": 55,
+            "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false,
+              "type": null
+            },
+            "darkness": {
+              "min": 0,
+              "max": 0.5
+            },
+            "color": null,
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
+          },
+          "hidden": false,
+          "flags": {},
+          "elevation": 0,
+          "_id": "c2gWqzkHbhVD1AaU"
+        },
+        {
+          "x": 1150,
+          "y": 1050,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "alpha": 0.4,
+            "angle": 360,
+            "bright": 55,
+            "coloration": 1,
+            "dim": 55,
+            "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false,
+              "type": null
+            },
+            "darkness": {
+              "min": 0,
+              "max": 0.5
+            },
+            "color": null,
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
+          },
+          "hidden": false,
+          "flags": {},
+          "elevation": 0,
+          "_id": "3KEDdYW2i8TmbLfM"
+        },
+        {
+          "x": 1550,
+          "y": 1050,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "alpha": 0.4,
+            "angle": 360,
+            "bright": 55,
+            "coloration": 1,
+            "dim": 55,
+            "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false,
+              "type": null
+            },
+            "darkness": {
+              "min": 0,
+              "max": 0.5
+            },
+            "color": null,
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
+          },
+          "hidden": false,
+          "flags": {},
+          "elevation": 0,
+          "_id": "rocc5fxvqcyPtraE"
+        },
+        {
+          "x": 1550,
+          "y": 1450,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "alpha": 0.4,
+            "angle": 360,
+            "bright": 55,
+            "coloration": 1,
+            "dim": 55,
+            "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false,
+              "type": null
+            },
+            "darkness": {
+              "min": 0,
+              "max": 0.5
+            },
+            "color": null,
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
+          },
+          "hidden": false,
+          "flags": {},
+          "elevation": 0,
+          "_id": "s1AFzeLkmjhBnB9y"
+        },
+        {
+          "x": 1150,
+          "y": 1450,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "alpha": 0.4,
+            "angle": 360,
+            "bright": 55,
+            "coloration": 1,
+            "dim": 55,
+            "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false,
+              "type": null
+            },
+            "darkness": {
+              "min": 0,
+              "max": 0.5
+            },
+            "color": null,
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
+          },
+          "hidden": false,
+          "flags": {},
+          "elevation": 0,
+          "_id": "2YYxZJ1HbyTn2BWN"
+        },
+        {
+          "x": 1396,
+          "y": 968,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "alpha": 0.4,
+            "angle": 360,
+            "bright": 55,
+            "coloration": 1,
+            "dim": 55,
+            "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false,
+              "type": null
+            },
+            "darkness": {
+              "min": 0,
+              "max": 0.5
+            },
+            "color": null,
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
+          },
+          "hidden": false,
+          "flags": {},
+          "elevation": 0,
+          "_id": "qZK6IMweAX5fF6oJ"
+        },
+        {
+          "x": 1630,
+          "y": 1294,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "alpha": 0.4,
+            "angle": 360,
+            "bright": 55,
+            "coloration": 1,
+            "dim": 55,
+            "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false,
+              "type": null
+            },
+            "darkness": {
+              "min": 0,
+              "max": 0.5
+            },
+            "color": null,
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
+          },
+          "hidden": false,
+          "flags": {},
+          "elevation": 0,
+          "_id": "epqbOKuvqO9t4ihp"
+        },
+        {
+          "x": 1302,
+          "y": 1526,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "alpha": 0.4,
+            "angle": 360,
+            "bright": 55,
+            "coloration": 1,
+            "dim": 55,
+            "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false,
+              "type": null
+            },
+            "darkness": {
+              "min": 0,
+              "max": 0.5
+            },
+            "color": null,
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
+          },
+          "hidden": false,
+          "flags": {},
+          "elevation": 0,
+          "_id": "lUb7F79SOFLH2WqY"
+        },
+        {
+          "x": 1078,
+          "y": 1206,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "alpha": 0.4,
+            "angle": 360,
+            "bright": 55,
+            "coloration": 1,
+            "dim": 55,
+            "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false,
+              "type": null
+            },
+            "darkness": {
+              "min": 0,
+              "max": 0.5
+            },
+            "color": null,
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
+          },
+          "hidden": false,
+          "flags": {},
+          "elevation": 0,
+          "_id": "cOdQ97NrnaSAOKs5"
         }
       ],
       "notes": [
@@ -7070,6 +7529,14 @@
                     "colour": "#ff0000"
                   },
                   "id": "O9Gz5KVTFJxqdN0w"
+                },
+                {
+                  "action": "scene",
+                  "data": {
+                    "sceneid": "apSEO786aX6hNU0y",
+                    "activate": false
+                  },
+                  "id": "o91S43GrDpsznRHV"
                 }
               ],
               "files": []
@@ -7163,6 +7630,14 @@
                     "colour": "#ff0000"
                   },
                   "id": "O9Gz5KVTFJxqdN0w"
+                },
+                {
+                  "action": "scene",
+                  "data": {
+                    "sceneid": "NujGRZv7TxBFUwpT",
+                    "activate": false
+                  },
+                  "id": "P8ks0OSu96Aj3UZs"
                 }
               ],
               "files": []
@@ -7256,6 +7731,14 @@
                     "colour": "#ff0000"
                   },
                   "id": "O9Gz5KVTFJxqdN0w"
+                },
+                {
+                  "action": "scene",
+                  "data": {
+                    "sceneid": "NujGRZv7TxBFUwpT",
+                    "activate": false
+                  },
+                  "id": "8tD513ar19G44sBb"
                 }
               ],
               "files": []
@@ -7416,6 +7899,14 @@
                     "colour": "#ff0000"
                   },
                   "id": "O9Gz5KVTFJxqdN0w"
+                },
+                {
+                  "action": "scene",
+                  "data": {
+                    "sceneid": "apSEO786aX6hNU0y",
+                    "activate": false
+                  },
+                  "id": "TbxCYa5cQ2RJovle"
                 }
               ],
               "files": []
@@ -7777,46 +8268,6 @@
           "animation": null
         },
         {
-          "_id": "lIqWgIPEgB3bTS4B",
-          "c": [
-            1150,
-            1175,
-            1150,
-            1225
-          ],
-          "light": 10,
-          "move": 20,
-          "sight": 10,
-          "sound": 20,
-          "dir": 0,
-          "door": 0,
-          "ds": 0,
-          "flags": {
-            "dnd5e-helpers": {
-              "coverLevel": 3
-            },
-            "betterroofs": {
-              "externalWall": false
-            },
-            "monks-active-tiles": {
-              "entity": "",
-              "open": false,
-              "close": false,
-              "lock": false,
-              "checklock": false,
-              "secret": false
-            },
-            "smartdoors": {}
-          },
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "animation": null
-        },
-        {
           "_id": "j9kjOq4byHzhReBZ",
           "c": [
             1150,
@@ -7832,46 +8283,6 @@
           "door": 0,
           "ds": 0,
           "flags": {},
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "animation": null
-        },
-        {
-          "_id": "XlvKxz7u4bHJb3jO",
-          "c": [
-            1150,
-            1325,
-            1150,
-            1275
-          ],
-          "light": 10,
-          "move": 20,
-          "sight": 10,
-          "sound": 20,
-          "dir": 0,
-          "door": 0,
-          "ds": 0,
-          "flags": {
-            "dnd5e-helpers": {
-              "coverLevel": 3
-            },
-            "betterroofs": {
-              "externalWall": false
-            },
-            "monks-active-tiles": {
-              "entity": "",
-              "open": false,
-              "close": false,
-              "lock": false,
-              "checklock": false,
-              "secret": false
-            },
-            "smartdoors": {}
-          },
           "threshold": {
             "light": null,
             "sight": null,
@@ -8145,46 +8556,6 @@
           "animation": null
         },
         {
-          "_id": "O5D3SLYn8fRjxZUy",
-          "c": [
-            1550,
-            1325,
-            1550,
-            1275
-          ],
-          "light": 10,
-          "move": 20,
-          "sight": 10,
-          "sound": 20,
-          "dir": 0,
-          "door": 0,
-          "ds": 0,
-          "flags": {
-            "dnd5e-helpers": {
-              "coverLevel": 3
-            },
-            "betterroofs": {
-              "externalWall": false
-            },
-            "monks-active-tiles": {
-              "entity": "",
-              "open": false,
-              "close": false,
-              "lock": false,
-              "checklock": false,
-              "secret": false
-            },
-            "smartdoors": {}
-          },
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "animation": null
-        },
-        {
           "_id": "6SkTX5ynWdMMstnl",
           "c": [
             1550,
@@ -8200,46 +8571,6 @@
           "door": 0,
           "ds": 0,
           "flags": {},
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "animation": null
-        },
-        {
-          "_id": "P78SOSmpiY73OHdM",
-          "c": [
-            1550,
-            1225,
-            1550,
-            1175
-          ],
-          "light": 10,
-          "move": 20,
-          "sight": 10,
-          "sound": 20,
-          "dir": 0,
-          "door": 0,
-          "ds": 0,
-          "flags": {
-            "dnd5e-helpers": {
-              "coverLevel": 3
-            },
-            "betterroofs": {
-              "externalWall": false
-            },
-            "monks-active-tiles": {
-              "entity": "",
-              "open": false,
-              "close": false,
-              "lock": false,
-              "checklock": false,
-              "secret": false
-            },
-            "smartdoors": {}
-          },
           "threshold": {
             "light": null,
             "sight": null,
@@ -8369,49 +8700,9 @@
           "animation": null
         },
         {
-          "_id": "YheR5PYtISH7UtRI",
-          "c": [
-            1425,
-            1050,
-            1362,
-            1050
-          ],
-          "light": 10,
-          "move": 20,
-          "sight": 10,
-          "sound": 20,
-          "dir": 0,
-          "door": 0,
-          "ds": 0,
-          "flags": {
-            "dnd5e-helpers": {
-              "coverLevel": 3
-            },
-            "betterroofs": {
-              "externalWall": false
-            },
-            "monks-active-tiles": {
-              "entity": "",
-              "open": false,
-              "close": false,
-              "lock": false,
-              "checklock": false,
-              "secret": false
-            },
-            "smartdoors": {}
-          },
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "animation": null
-        },
-        {
           "_id": "F0PhTUC62PJXVFPF",
           "c": [
-            1362,
+            1375,
             1050,
             1325,
             1050
@@ -8424,46 +8715,6 @@
           "door": 0,
           "ds": 0,
           "flags": {},
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "animation": null
-        },
-        {
-          "_id": "4z0McIGRpWMUp3jL",
-          "c": [
-            1325,
-            1050,
-            1275,
-            1050
-          ],
-          "light": 10,
-          "move": 20,
-          "sight": 10,
-          "sound": 20,
-          "dir": 0,
-          "door": 0,
-          "ds": 0,
-          "flags": {
-            "dnd5e-helpers": {
-              "coverLevel": 3
-            },
-            "betterroofs": {
-              "externalWall": false
-            },
-            "monks-active-tiles": {
-              "entity": "",
-              "open": false,
-              "close": false,
-              "lock": false,
-              "checklock": false,
-              "secret": false
-            },
-            "smartdoors": {}
-          },
           "threshold": {
             "light": null,
             "sight": null,
@@ -8497,84 +8748,196 @@
           "animation": null
         },
         {
-          "_id": "mlopMm4MKy7TFIBl",
+          "light": 30,
+          "sight": 30,
+          "sound": 20,
+          "move": 20,
+          "threshold": {
+            "light": 10,
+            "sight": 10,
+            "attenuation": true,
+            "sound": null
+          },
+          "c": [
+            1275,
+            1050,
+            1325,
+            1050
+          ],
+          "_id": "tqEzEGd5IlrUKRAA",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 30,
+          "sight": 30,
+          "sound": 20,
+          "move": 20,
+          "threshold": {
+            "light": 10,
+            "sight": 10,
+            "attenuation": true,
+            "sound": null
+          },
+          "c": [
+            1375,
+            1050,
+            1425,
+            1050
+          ],
+          "_id": "IguDuy24iExIefWx",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 30,
+          "sight": 30,
+          "sound": 20,
+          "move": 20,
+          "threshold": {
+            "light": 10,
+            "sight": 10,
+            "attenuation": true,
+            "sound": null
+          },
+          "c": [
+            1550,
+            1175,
+            1550,
+            1225
+          ],
+          "_id": "QIwshg3JLYmi7utZ",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 30,
+          "sight": 30,
+          "sound": 20,
+          "move": 20,
+          "threshold": {
+            "light": 10,
+            "sight": 10,
+            "attenuation": true,
+            "sound": null
+          },
+          "c": [
+            1550,
+            1275,
+            1550,
+            1325
+          ],
+          "_id": "jcX38wsZ5ctuVyas",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 30,
+          "sight": 30,
+          "sound": 20,
+          "move": 20,
+          "threshold": {
+            "light": 10,
+            "sight": 10,
+            "attenuation": true,
+            "sound": null
+          },
           "c": [
             1275,
             1450,
             1325,
             1450
           ],
-          "light": 10,
-          "move": 20,
-          "sight": 10,
-          "sound": 20,
+          "_id": "I9DAqc57PCCC18Qg",
           "dir": 0,
           "door": 0,
           "ds": 0,
-          "flags": {
-            "dnd5e-helpers": {
-              "coverLevel": 3
-            },
-            "betterroofs": {
-              "externalWall": false
-            },
-            "monks-active-tiles": {
-              "entity": "",
-              "open": false,
-              "close": false,
-              "lock": false,
-              "checklock": false,
-              "secret": false
-            },
-            "smartdoors": {}
-          },
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "animation": null
+          "animation": null,
+          "flags": {}
         },
         {
-          "_id": "j4lchPDNALL4LC8Q",
+          "light": 30,
+          "sight": 30,
+          "sound": 20,
+          "move": 20,
+          "threshold": {
+            "light": 10,
+            "sight": 10,
+            "attenuation": true,
+            "sound": null
+          },
           "c": [
             1375,
             1450,
             1425,
             1450
           ],
-          "light": 10,
-          "move": 20,
-          "sight": 10,
-          "sound": 20,
+          "_id": "DJkx8kNHS0sgd6Q4",
           "dir": 0,
           "door": 0,
           "ds": 0,
-          "flags": {
-            "dnd5e-helpers": {
-              "coverLevel": 3
-            },
-            "betterroofs": {
-              "externalWall": false
-            },
-            "monks-active-tiles": {
-              "entity": "",
-              "open": false,
-              "close": false,
-              "lock": false,
-              "checklock": false,
-              "secret": false
-            },
-            "smartdoors": {}
-          },
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 30,
+          "sight": 30,
+          "sound": 20,
+          "move": 20,
           "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
+            "light": 10,
+            "sight": 10,
+            "attenuation": true,
+            "sound": null
           },
-          "animation": null
+          "c": [
+            1150,
+            1325,
+            1150,
+            1275
+          ],
+          "_id": "AmCC12asIjwgVuss",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 30,
+          "sight": 30,
+          "sound": 20,
+          "move": 20,
+          "threshold": {
+            "light": 10,
+            "sight": 10,
+            "attenuation": true,
+            "sound": null
+          },
+          "c": [
+            1150,
+            1225,
+            1150,
+            1175
+          ],
+          "_id": "EwibUFtRRgCQRz7n",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "animation": null,
+          "flags": {}
         }
       ],
       "playlist": null,
@@ -8585,10 +8948,6 @@
       "sort": 200000,
       "flags": {
         "token-attacher": {}
-      },
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
       },
       "background": {
         "src": "modules/sdnd-strahd-adv/images/maps/Areas/V/v1_vr_tower/first_floor.webp",
@@ -8653,18 +9012,20 @@
       },
       "fog": {
         "exploration": true,
-        "reset": 1675555494382,
         "overlay": null,
         "colors": {
           "explored": null,
           "unexplored": null
         }
-      }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "active": false
     },
     {
       "_id": "apSEO786aX6hNU0y",
       "name": "V3. Van Richten’s Tower (2nd Floor)",
-      "active": false,
       "navigation": false,
       "navOrder": 1175000,
       "navName": "",
@@ -8721,42 +9082,6 @@
               "max": 0.5
             },
             "color": null,
-            "attenuation": 0.5,
-            "negative": false,
-            "priority": 0
-          },
-          "hidden": false,
-          "flags": {},
-          "elevation": 0
-        },
-        {
-          "_id": "NU91iyUyNNXAZxFw",
-          "x": 1600,
-          "y": 1600,
-          "rotation": 0,
-          "walls": true,
-          "vision": false,
-          "config": {
-            "alpha": 0.2,
-            "angle": 360,
-            "bright": 5,
-            "coloration": 1,
-            "dim": 20,
-            "luminosity": 0.5,
-            "saturation": 0,
-            "contrast": 0,
-            "shadows": 0,
-            "animation": {
-              "speed": 2,
-              "intensity": 6,
-              "reverse": false,
-              "type": "torch"
-            },
-            "darkness": {
-              "min": 0,
-              "max": 1
-            },
-            "color": "#cd8737",
             "attenuation": 0.5,
             "negative": false,
             "priority": 0
@@ -8944,6 +9269,150 @@
           "hidden": false,
           "flags": {},
           "elevation": 0
+        },
+        {
+          "x": 1450,
+          "y": 1950,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "alpha": 0.4,
+            "angle": 360,
+            "bright": 55,
+            "coloration": 1,
+            "dim": 55,
+            "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false,
+              "type": null
+            },
+            "darkness": {
+              "min": 0,
+              "max": 0.5
+            },
+            "color": null,
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
+          },
+          "hidden": false,
+          "flags": {},
+          "elevation": 0,
+          "_id": "Gbtt9M88bLB6G4jN"
+        },
+        {
+          "x": 1850,
+          "y": 1550,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "alpha": 0.4,
+            "angle": 360,
+            "bright": 55,
+            "coloration": 1,
+            "dim": 55,
+            "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false,
+              "type": null
+            },
+            "darkness": {
+              "min": 0,
+              "max": 0.5
+            },
+            "color": null,
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
+          },
+          "hidden": false,
+          "flags": {},
+          "elevation": 0,
+          "_id": "qm0Fp0UtTQhu29B2"
+        },
+        {
+          "x": 1850,
+          "y": 1950,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "alpha": 0.4,
+            "angle": 360,
+            "bright": 55,
+            "coloration": 1,
+            "dim": 55,
+            "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false,
+              "type": null
+            },
+            "darkness": {
+              "min": 0,
+              "max": 0.5
+            },
+            "color": null,
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
+          },
+          "hidden": false,
+          "flags": {},
+          "elevation": 0,
+          "_id": "K4WEiM1mmo4PSdZ0"
+        },
+        {
+          "x": 1350,
+          "y": 1450,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "alpha": 0.4,
+            "angle": 360,
+            "bright": 55,
+            "coloration": 1,
+            "dim": 55,
+            "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false,
+              "type": null
+            },
+            "darkness": {
+              "min": 0,
+              "max": 0.5
+            },
+            "color": null,
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
+          },
+          "hidden": false,
+          "flags": {},
+          "elevation": 0,
+          "_id": "Y2O8GF6PrJjs9EBM"
         }
       ],
       "notes": [
@@ -8951,7 +9420,7 @@
           "entryId": "f2FHLdRM7czQ3Mxk",
           "pageId": "yWfeHuv960dBLM6G",
           "text": "V6. Tower, Third Floor",
-          "x": 1750,
+          "x": 1700,
           "y": 1550,
           "global": false,
           "iconSize": 40,
@@ -9090,6 +9559,14 @@
                     "colour": "#ff0000"
                   },
                   "id": "O9Gz5KVTFJxqdN0w"
+                },
+                {
+                  "action": "scene",
+                  "data": {
+                    "sceneid": "zqbxmKbL4QbicKiM",
+                    "activate": false
+                  },
+                  "id": "LiruyRLPmgKIbthX"
                 }
               ],
               "files": []
@@ -9183,6 +9660,14 @@
                     "colour": "#ff0000"
                   },
                   "id": "O9Gz5KVTFJxqdN0w"
+                },
+                {
+                  "action": "scene",
+                  "data": {
+                    "sceneid": "xnIetFduR7Fv39PV",
+                    "activate": false
+                  },
+                  "id": "YKlZYaxyEtDy0omA"
                 }
               ],
               "files": []
@@ -9276,6 +9761,14 @@
                     "colour": "#ff0000"
                   },
                   "id": "O9Gz5KVTFJxqdN0w"
+                },
+                {
+                  "action": "scene",
+                  "data": {
+                    "sceneid": "zqbxmKbL4QbicKiM",
+                    "activate": false
+                  },
+                  "id": "fSOfkSkkhhri3V0Q"
                 }
               ],
               "files": []
@@ -9445,86 +9938,6 @@
           "animation": null
         },
         {
-          "_id": "G5sZHYxS2eF851yw",
-          "c": [
-            1450,
-            1837,
-            1500,
-            1900
-          ],
-          "light": 10,
-          "move": 20,
-          "sight": 10,
-          "sound": 20,
-          "dir": 0,
-          "door": 0,
-          "ds": 0,
-          "flags": {
-            "dnd5e-helpers": {
-              "coverLevel": 3
-            },
-            "betterroofs": {
-              "externalWall": false
-            },
-            "monks-active-tiles": {
-              "entity": "",
-              "open": false,
-              "close": false,
-              "lock": false,
-              "checklock": false,
-              "secret": false
-            },
-            "smartdoors": {}
-          },
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "animation": null
-        },
-        {
-          "_id": "PgBLMxGaLqP2LFPV",
-          "c": [
-            1500,
-            1900,
-            1550,
-            1950
-          ],
-          "light": 10,
-          "move": 20,
-          "sight": 10,
-          "sound": 20,
-          "dir": 0,
-          "door": 0,
-          "ds": 0,
-          "flags": {
-            "dnd5e-helpers": {
-              "coverLevel": 3
-            },
-            "betterroofs": {
-              "externalWall": false
-            },
-            "monks-active-tiles": {
-              "entity": "",
-              "open": false,
-              "close": false,
-              "lock": false,
-              "checklock": false,
-              "secret": false
-            },
-            "smartdoors": {}
-          },
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "animation": null
-        },
-        {
           "_id": "1x7Tl5NMRG5yb6jW",
           "c": [
             1550,
@@ -9564,86 +9977,6 @@
           "door": 0,
           "ds": 0,
           "flags": {},
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "animation": null
-        },
-        {
-          "_id": "hSeYaRzzFpJNh6dh",
-          "c": [
-            1750,
-            1950,
-            1800,
-            1900
-          ],
-          "light": 10,
-          "move": 20,
-          "sight": 10,
-          "sound": 20,
-          "dir": 0,
-          "door": 0,
-          "ds": 0,
-          "flags": {
-            "dnd5e-helpers": {
-              "coverLevel": 3
-            },
-            "betterroofs": {
-              "externalWall": false
-            },
-            "monks-active-tiles": {
-              "entity": "",
-              "open": false,
-              "close": false,
-              "lock": false,
-              "checklock": false,
-              "secret": false
-            },
-            "smartdoors": {}
-          },
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "animation": null
-        },
-        {
-          "_id": "Y8T3SINa8jfvGuHS",
-          "c": [
-            1800,
-            1900,
-            1850,
-            1837
-          ],
-          "light": 10,
-          "move": 20,
-          "sight": 10,
-          "sound": 20,
-          "dir": 0,
-          "door": 0,
-          "ds": 0,
-          "flags": {
-            "dnd5e-helpers": {
-              "coverLevel": 3
-            },
-            "betterroofs": {
-              "externalWall": false
-            },
-            "monks-active-tiles": {
-              "entity": "",
-              "open": false,
-              "close": false,
-              "lock": false,
-              "checklock": false,
-              "secret": false
-            },
-            "smartdoors": {}
-          },
           "threshold": {
             "light": null,
             "sight": null,
@@ -9764,86 +10097,6 @@
           "door": 0,
           "ds": 0,
           "flags": {},
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "animation": null
-        },
-        {
-          "_id": "oOz4sFvlGSI7yeRm",
-          "c": [
-            1750,
-            1550,
-            1800,
-            1600
-          ],
-          "light": 10,
-          "move": 20,
-          "sight": 10,
-          "sound": 20,
-          "dir": 0,
-          "door": 0,
-          "ds": 0,
-          "flags": {
-            "dnd5e-helpers": {
-              "coverLevel": 3
-            },
-            "betterroofs": {
-              "externalWall": false
-            },
-            "monks-active-tiles": {
-              "entity": "",
-              "open": false,
-              "close": false,
-              "lock": false,
-              "checklock": false,
-              "secret": false
-            },
-            "smartdoors": {}
-          },
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "animation": null
-        },
-        {
-          "_id": "ruwkBx2gLlwJCcNS",
-          "c": [
-            1800,
-            1600,
-            1850,
-            1650
-          ],
-          "light": 10,
-          "move": 20,
-          "sight": 10,
-          "sound": 20,
-          "dir": 0,
-          "door": 0,
-          "ds": 0,
-          "flags": {
-            "dnd5e-helpers": {
-              "coverLevel": 3
-            },
-            "betterroofs": {
-              "externalWall": false
-            },
-            "monks-active-tiles": {
-              "entity": "",
-              "open": false,
-              "close": false,
-              "lock": false,
-              "checklock": false,
-              "secret": false
-            },
-            "smartdoors": {}
-          },
           "threshold": {
             "light": null,
             "sight": null,
@@ -10307,6 +10560,366 @@
             "attenuation": false
           },
           "animation": null
+        },
+        {
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "c": [
+            1750,
+            1550,
+            1763,
+            1563
+          ],
+          "_id": "vavM1wBJvO8SnOth",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "c": [
+            1850,
+            1650,
+            1838,
+            1638
+          ],
+          "_id": "R53F1lOrNoSmpKU7",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "c": [
+            1794,
+            1595,
+            1806,
+            1606
+          ],
+          "_id": "fH8qQqWsYz0sqBB8",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 30,
+          "sight": 30,
+          "sound": 20,
+          "move": 20,
+          "threshold": {
+            "light": 10,
+            "sight": 10,
+            "attenuation": true,
+            "sound": null
+          },
+          "c": [
+            1763,
+            1563,
+            1800,
+            1600
+          ],
+          "_id": "K7Fft9UoT1rhxtss",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 30,
+          "sight": 30,
+          "sound": 20,
+          "move": 20,
+          "threshold": {
+            "light": 10,
+            "sight": 10,
+            "attenuation": true,
+            "sound": null
+          },
+          "c": [
+            1800,
+            1600,
+            1838,
+            1638
+          ],
+          "_id": "2GG7fvTXPlOewsbj",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "c": [
+            1850,
+            1837,
+            1838,
+            1863
+          ],
+          "_id": "Apq3f0HE0PahhpR2",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "c": [
+            1750,
+            1950,
+            1763,
+            1938
+          ],
+          "_id": "mIPjmazT8p21WZt9",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "c": [
+            1794,
+            1908,
+            1806,
+            1894
+          ],
+          "_id": "dNqk2GCnlMel5kcj",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 30,
+          "sight": 30,
+          "sound": 20,
+          "move": 20,
+          "threshold": {
+            "light": 10,
+            "sight": 10,
+            "attenuation": true,
+            "sound": null
+          },
+          "c": [
+            1763,
+            1938,
+            1800,
+            1900
+          ],
+          "_id": "P6Gnth1jzxV0vNYs",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 30,
+          "sight": 30,
+          "sound": 20,
+          "move": 20,
+          "threshold": {
+            "light": 10,
+            "sight": 10,
+            "attenuation": true,
+            "sound": null
+          },
+          "c": [
+            1800,
+            1900,
+            1838,
+            1863
+          ],
+          "_id": "oiZtROlVfzjF6gEY",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "c": [
+            1550,
+            1950,
+            1538,
+            1938
+          ],
+          "_id": "klrmIwDsMsuQVNHB",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "c": [
+            1450,
+            1837,
+            1459,
+            1857
+          ],
+          "_id": "2p6kPj7OKZA73a2M",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "c": [
+            1492,
+            1893,
+            1505,
+            1904
+          ],
+          "_id": "PGJAnU6y2cZbQnlc",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 30,
+          "sight": 30,
+          "sound": 20,
+          "move": 20,
+          "threshold": {
+            "light": 10,
+            "sight": 10,
+            "attenuation": true,
+            "sound": null
+          },
+          "c": [
+            1459,
+            1857,
+            1500,
+            1900
+          ],
+          "_id": "OXxdfDEPZXlz0NGm",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 30,
+          "sight": 30,
+          "sound": 20,
+          "move": 20,
+          "threshold": {
+            "light": 10,
+            "sight": 10,
+            "attenuation": true,
+            "sound": null
+          },
+          "c": [
+            1500,
+            1900,
+            1538,
+            1938
+          ],
+          "_id": "0aX0tmIksU72Txmi",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "animation": null,
+          "flags": {}
         }
       ],
       "playlist": null,
@@ -10317,10 +10930,6 @@
       "sort": 300000,
       "flags": {
         "token-attacher": {}
-      },
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
       },
       "background": {
         "src": "modules/sdnd-strahd-adv/images/maps/Areas/V/v1_vr_tower/second_floor.webp",
@@ -10385,18 +10994,20 @@
       },
       "fog": {
         "exploration": true,
-        "reset": 1675555536415,
         "overlay": null,
         "colors": {
           "explored": null,
           "unexplored": null
         }
-      }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "active": false
     },
     {
       "_id": "xnIetFduR7Fv39PV",
       "name": "V4. Van Richten’s Tower (3rd Floor)",
-      "active": false,
       "navigation": false,
       "navOrder": 1275000,
       "navName": "",
@@ -10755,42 +11366,6 @@
           "elevation": 0
         },
         {
-          "_id": "3IiYbkHn3U9APrlE",
-          "x": 1205,
-          "y": 1144,
-          "rotation": 0,
-          "walls": true,
-          "vision": false,
-          "config": {
-            "alpha": 0.2,
-            "angle": 360,
-            "bright": 5,
-            "coloration": 1,
-            "dim": 20,
-            "luminosity": 0.5,
-            "saturation": 0,
-            "contrast": 0,
-            "shadows": 0,
-            "animation": {
-              "speed": 2,
-              "intensity": 6,
-              "reverse": false,
-              "type": "torch"
-            },
-            "darkness": {
-              "min": 0,
-              "max": 1
-            },
-            "color": "#cd8737",
-            "attenuation": 0.5,
-            "negative": false,
-            "priority": 0
-          },
-          "hidden": false,
-          "flags": {},
-          "elevation": 0
-        },
-        {
           "_id": "XMidYrT65D8Ozf0C",
           "x": 550,
           "y": 2400,
@@ -10897,6 +11472,330 @@
           "hidden": false,
           "flags": {},
           "elevation": 0
+        },
+        {
+          "x": 992,
+          "y": 1251,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "alpha": 0.4,
+            "angle": 360,
+            "bright": 60,
+            "coloration": 1,
+            "dim": 60,
+            "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false,
+              "type": null
+            },
+            "darkness": {
+              "min": 0,
+              "max": 0.5
+            },
+            "color": null,
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
+          },
+          "hidden": false,
+          "flags": {},
+          "elevation": 0,
+          "_id": "gFxWpIcasCcB5dyJ"
+        },
+        {
+          "x": 2300,
+          "y": 1300,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "alpha": 0.4,
+            "angle": 360,
+            "bright": 60,
+            "coloration": 1,
+            "dim": 60,
+            "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false,
+              "type": null
+            },
+            "darkness": {
+              "min": 0,
+              "max": 0.5
+            },
+            "color": null,
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
+          },
+          "hidden": false,
+          "flags": {},
+          "elevation": 0,
+          "_id": "01KsAqlpd1qy5Gb5"
+        },
+        {
+          "x": 1709,
+          "y": 1248,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "alpha": 0.4,
+            "angle": 360,
+            "bright": 60,
+            "coloration": 1,
+            "dim": 60,
+            "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false,
+              "type": null
+            },
+            "darkness": {
+              "min": 0,
+              "max": 0.5
+            },
+            "color": null,
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
+          },
+          "hidden": false,
+          "flags": {},
+          "elevation": 0,
+          "_id": "e6B6xhtw2YPda0kx"
+        },
+        {
+          "x": 1348,
+          "y": 891,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "alpha": 0.4,
+            "angle": 360,
+            "bright": 60,
+            "coloration": 1,
+            "dim": 60,
+            "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false,
+              "type": null
+            },
+            "darkness": {
+              "min": 0,
+              "max": 0.5
+            },
+            "color": null,
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
+          },
+          "hidden": false,
+          "flags": {},
+          "elevation": 0,
+          "_id": "aN3IcJHJYuE2biAz"
+        },
+        {
+          "x": 1349,
+          "y": 1609,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "alpha": 0.4,
+            "angle": 360,
+            "bright": 60,
+            "coloration": 1,
+            "dim": 60,
+            "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false,
+              "type": null
+            },
+            "darkness": {
+              "min": 0,
+              "max": 0.5
+            },
+            "color": null,
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
+          },
+          "hidden": false,
+          "flags": {},
+          "elevation": 0,
+          "_id": "b3BQXkKSCaBLbuPb"
+        },
+        {
+          "x": 1137,
+          "y": 1466,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "alpha": 0.4,
+            "angle": 360,
+            "bright": 60,
+            "coloration": 1,
+            "dim": 60,
+            "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false,
+              "type": null
+            },
+            "darkness": {
+              "min": 0,
+              "max": 0.5
+            },
+            "color": null,
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
+          },
+          "hidden": false,
+          "flags": {},
+          "elevation": 0,
+          "_id": "LhZeicVIow0RhlF2"
+        },
+        {
+          "x": 1566,
+          "y": 1036,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "alpha": 0.4,
+            "angle": 360,
+            "bright": 60,
+            "coloration": 1,
+            "dim": 60,
+            "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false,
+              "type": null
+            },
+            "darkness": {
+              "min": 0,
+              "max": 0.5
+            },
+            "color": null,
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
+          },
+          "hidden": false,
+          "flags": {},
+          "elevation": 0,
+          "_id": "SjZrotJyoClwjJ5i"
+        },
+        {
+          "x": 1132,
+          "y": 1028,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "alpha": 0.4,
+            "angle": 360,
+            "bright": 60,
+            "coloration": 1,
+            "dim": 60,
+            "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false,
+              "type": null
+            },
+            "darkness": {
+              "min": 0,
+              "max": 0.5
+            },
+            "color": null,
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
+          },
+          "hidden": false,
+          "flags": {},
+          "elevation": 0,
+          "_id": "paGoyUM0Jf47pOND"
+        },
+        {
+          "x": 1560,
+          "y": 1467,
+          "rotation": 0,
+          "walls": true,
+          "vision": false,
+          "config": {
+            "alpha": 0.4,
+            "angle": 360,
+            "bright": 60,
+            "coloration": 1,
+            "dim": 60,
+            "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation": {
+              "speed": 5,
+              "intensity": 5,
+              "reverse": false,
+              "type": null
+            },
+            "darkness": {
+              "min": 0,
+              "max": 0.5
+            },
+            "color": null,
+            "attenuation": 0.5,
+            "negative": false,
+            "priority": 0
+          },
+          "hidden": false,
+          "flags": {},
+          "elevation": 0,
+          "_id": "Dyfau2QkglgIKtIF"
         }
       ],
       "notes": [
@@ -10905,7 +11804,7 @@
           "pageId": "VwvpypjHSzFoMzgo",
           "text": "V7. Tower, Fourth Floor",
           "x": 1450,
-          "y": 1050,
+          "y": 1000,
           "global": false,
           "iconSize": 40,
           "texture": {
@@ -11058,6 +11957,14 @@
                     "colour": "#ff0000"
                   },
                   "id": "O9Gz5KVTFJxqdN0w"
+                },
+                {
+                  "action": "scene",
+                  "data": {
+                    "sceneid": "apSEO786aX6hNU0y",
+                    "activate": false
+                  },
+                  "id": "EH7RJIw5lxvcxQtr"
                 }
               ],
               "files": []
@@ -11199,86 +12106,6 @@
           "door": 0,
           "ds": 0,
           "flags": {},
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "animation": null
-        },
-        {
-          "_id": "KSTIJ6zsuOssYJ6H",
-          "c": [
-            1125,
-            1125,
-            1175,
-            1075
-          ],
-          "light": 10,
-          "move": 20,
-          "sight": 10,
-          "sound": 20,
-          "dir": 0,
-          "door": 0,
-          "ds": 0,
-          "flags": {
-            "dnd5e-helpers": {
-              "coverLevel": 3
-            },
-            "betterroofs": {
-              "externalWall": false
-            },
-            "monks-active-tiles": {
-              "entity": "",
-              "open": false,
-              "close": false,
-              "lock": false,
-              "checklock": false,
-              "secret": false
-            },
-            "smartdoors": {}
-          },
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "animation": null
-        },
-        {
-          "_id": "xrGYcJ00z2TUbMe7",
-          "c": [
-            1175,
-            1075,
-            1225,
-            1025
-          ],
-          "light": 10,
-          "move": 20,
-          "sight": 10,
-          "sound": 20,
-          "dir": 0,
-          "door": 0,
-          "ds": 0,
-          "flags": {
-            "dnd5e-helpers": {
-              "coverLevel": 3
-            },
-            "betterroofs": {
-              "externalWall": false
-            },
-            "monks-active-tiles": {
-              "entity": "",
-              "open": false,
-              "close": false,
-              "lock": false,
-              "checklock": false,
-              "secret": false
-            },
-            "smartdoors": {}
-          },
           "threshold": {
             "light": null,
             "sight": null,
@@ -11480,86 +12307,6 @@
           "animation": null
         },
         {
-          "_id": "y1MEu0mqjxZ1Vx4m",
-          "c": [
-            1475,
-            1025,
-            1525,
-            1075
-          ],
-          "light": 10,
-          "move": 20,
-          "sight": 10,
-          "sound": 20,
-          "dir": 0,
-          "door": 0,
-          "ds": 0,
-          "flags": {
-            "dnd5e-helpers": {
-              "coverLevel": 3
-            },
-            "betterroofs": {
-              "externalWall": false
-            },
-            "monks-active-tiles": {
-              "entity": "",
-              "open": false,
-              "close": false,
-              "lock": false,
-              "checklock": false,
-              "secret": false
-            },
-            "smartdoors": {}
-          },
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "animation": null
-        },
-        {
-          "_id": "AGEHntSORyG1BT4Z",
-          "c": [
-            1537,
-            1087,
-            1575,
-            1125
-          ],
-          "light": 10,
-          "move": 20,
-          "sight": 10,
-          "sound": 20,
-          "dir": 0,
-          "door": 0,
-          "ds": 0,
-          "flags": {
-            "dnd5e-helpers": {
-              "coverLevel": 3
-            },
-            "betterroofs": {
-              "externalWall": false
-            },
-            "monks-active-tiles": {
-              "entity": "",
-              "open": false,
-              "close": false,
-              "lock": false,
-              "checklock": false,
-              "secret": false
-            },
-            "smartdoors": {}
-          },
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "animation": null
-        },
-        {
           "_id": "a8wSLI9bjGR0YgZd",
           "c": [
             1575,
@@ -11647,46 +12394,6 @@
           "door": 0,
           "ds": 0,
           "flags": {},
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "animation": null
-        },
-        {
-          "_id": "HfFGpGXeo141C0P7",
-          "c": [
-            1650,
-            1225,
-            1650,
-            1275
-          ],
-          "light": 10,
-          "move": 20,
-          "sight": 10,
-          "sound": 20,
-          "dir": 0,
-          "door": 0,
-          "ds": 0,
-          "flags": {
-            "dnd5e-helpers": {
-              "coverLevel": 3
-            },
-            "betterroofs": {
-              "externalWall": false
-            },
-            "monks-active-tiles": {
-              "entity": "",
-              "open": false,
-              "close": false,
-              "lock": false,
-              "checklock": false,
-              "secret": false
-            },
-            "smartdoors": {}
-          },
           "threshold": {
             "light": null,
             "sight": null,
@@ -11792,46 +12499,6 @@
           "animation": null
         },
         {
-          "_id": "Lb8InthQmMF9frpH",
-          "c": [
-            1575,
-            1375,
-            1537,
-            1412
-          ],
-          "light": 10,
-          "move": 20,
-          "sight": 10,
-          "sound": 20,
-          "dir": 0,
-          "door": 0,
-          "ds": 0,
-          "flags": {
-            "dnd5e-helpers": {
-              "coverLevel": 3
-            },
-            "betterroofs": {
-              "externalWall": false
-            },
-            "monks-active-tiles": {
-              "entity": "",
-              "open": false,
-              "close": false,
-              "lock": false,
-              "checklock": false,
-              "secret": false
-            },
-            "smartdoors": {}
-          },
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "animation": null
-        },
-        {
           "_id": "JdNDYcon5gDTKVT9",
           "c": [
             1537,
@@ -11847,46 +12514,6 @@
           "door": 0,
           "ds": 0,
           "flags": {},
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "animation": null
-        },
-        {
-          "_id": "dysqxW2p1Aj0XyN4",
-          "c": [
-            1512,
-            1437,
-            1475,
-            1475
-          ],
-          "light": 10,
-          "move": 20,
-          "sight": 10,
-          "sound": 20,
-          "dir": 0,
-          "door": 0,
-          "ds": 0,
-          "flags": {
-            "dnd5e-helpers": {
-              "coverLevel": 3
-            },
-            "betterroofs": {
-              "externalWall": false
-            },
-            "monks-active-tiles": {
-              "entity": "",
-              "open": false,
-              "close": false,
-              "lock": false,
-              "checklock": false,
-              "secret": false
-            },
-            "smartdoors": {}
-          },
           "threshold": {
             "light": null,
             "sight": null,
@@ -11992,46 +12619,6 @@
           "animation": null
         },
         {
-          "_id": "Vyc96RCX4K3cEsbz",
-          "c": [
-            1375,
-            1550,
-            1325,
-            1550
-          ],
-          "light": 10,
-          "move": 20,
-          "sight": 10,
-          "sound": 20,
-          "dir": 0,
-          "door": 0,
-          "ds": 0,
-          "flags": {
-            "dnd5e-helpers": {
-              "coverLevel": 3
-            },
-            "betterroofs": {
-              "externalWall": false
-            },
-            "monks-active-tiles": {
-              "entity": "",
-              "open": false,
-              "close": false,
-              "lock": false,
-              "checklock": false,
-              "secret": false
-            },
-            "smartdoors": {}
-          },
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "animation": null
-        },
-        {
           "_id": "hTccugGYooVMFDO6",
           "c": [
             1325,
@@ -12128,52 +12715,12 @@
           "animation": null
         },
         {
-          "_id": "S4zJ08NSuKW7ELV4",
-          "c": [
-            1225,
-            1475,
-            1187,
-            1437
-          ],
-          "light": 10,
-          "move": 20,
-          "sight": 10,
-          "sound": 20,
-          "dir": 0,
-          "door": 0,
-          "ds": 0,
-          "flags": {
-            "dnd5e-helpers": {
-              "coverLevel": 3
-            },
-            "betterroofs": {
-              "externalWall": false
-            },
-            "monks-active-tiles": {
-              "entity": "",
-              "open": false,
-              "close": false,
-              "lock": false,
-              "checklock": false,
-              "secret": false
-            },
-            "smartdoors": {}
-          },
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "animation": null
-        },
-        {
           "_id": "v05Xyqzm35m1Vc4l",
           "c": [
             1187,
             1437,
-            1162,
-            1425
+            1168,
+            1419
           ],
           "light": 20,
           "move": 20,
@@ -12192,50 +12739,10 @@
           "animation": null
         },
         {
-          "_id": "Er4EY79ex9NrhVK8",
-          "c": [
-            1162,
-            1425,
-            1125,
-            1387
-          ],
-          "light": 10,
-          "move": 20,
-          "sight": 10,
-          "sound": 20,
-          "dir": 0,
-          "door": 0,
-          "ds": 0,
-          "flags": {
-            "dnd5e-helpers": {
-              "coverLevel": 3
-            },
-            "betterroofs": {
-              "externalWall": false
-            },
-            "monks-active-tiles": {
-              "entity": "",
-              "open": false,
-              "close": false,
-              "lock": false,
-              "checklock": false,
-              "secret": false
-            },
-            "smartdoors": {}
-          },
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "animation": null
-        },
-        {
           "_id": "RbzaXNqWUfhWbnor",
           "c": [
-            1125,
-            1387,
+            1129,
+            1380,
             1100,
             1350
           ],
@@ -12328,46 +12835,6 @@
           "animation": null
         },
         {
-          "_id": "SDVrvqUq9xMEPbrJ",
-          "c": [
-            1050,
-            1275,
-            1050,
-            1225
-          ],
-          "light": 10,
-          "move": 20,
-          "sight": 10,
-          "sound": 20,
-          "dir": 0,
-          "door": 0,
-          "ds": 0,
-          "flags": {
-            "dnd5e-helpers": {
-              "coverLevel": 3
-            },
-            "betterroofs": {
-              "externalWall": false
-            },
-            "monks-active-tiles": {
-              "entity": "",
-              "open": false,
-              "close": false,
-              "lock": false,
-              "checklock": false,
-              "secret": false
-            },
-            "smartdoors": {}
-          },
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "animation": null
-        },
-        {
           "_id": "CVuNjxmF3FolkyOz",
           "c": [
             1300,
@@ -12383,46 +12850,6 @@
           "door": 0,
           "ds": 0,
           "flags": {},
-          "threshold": {
-            "light": null,
-            "sight": null,
-            "sound": null,
-            "attenuation": false
-          },
-          "animation": null
-        },
-        {
-          "_id": "lWgInIghAPDtjg1z",
-          "c": [
-            1325,
-            950,
-            1375,
-            950
-          ],
-          "light": 10,
-          "move": 20,
-          "sight": 10,
-          "sound": 20,
-          "dir": 0,
-          "door": 0,
-          "ds": 0,
-          "flags": {
-            "dnd5e-helpers": {
-              "coverLevel": 3
-            },
-            "betterroofs": {
-              "externalWall": false
-            },
-            "monks-active-tiles": {
-              "entity": "",
-              "open": false,
-              "close": false,
-              "lock": false,
-              "checklock": false,
-              "secret": false
-            },
-            "smartdoors": {}
-          },
           "threshold": {
             "light": null,
             "sight": null,
@@ -12526,6 +12953,510 @@
             "attenuation": false
           },
           "animation": null
+        },
+        {
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "c": [
+            1182,
+            1069,
+            1169,
+            1082
+          ],
+          "_id": "PRUqLC6D52TBklOC",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 30,
+          "sight": 30,
+          "sound": 20,
+          "move": 20,
+          "threshold": {
+            "light": 10,
+            "sight": 10,
+            "attenuation": true,
+            "sound": null
+          },
+          "c": [
+            1129,
+            1380,
+            1175,
+            1425
+          ],
+          "_id": "rfDP0smt59l829x7",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 30,
+          "sight": 30,
+          "sound": 20,
+          "move": 20,
+          "threshold": {
+            "light": 10,
+            "sight": 10,
+            "attenuation": true,
+            "sound": null
+          },
+          "c": [
+            1175,
+            1425,
+            1225,
+            1475
+          ],
+          "_id": "0E9Rk5J2mf5sluak",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 30,
+          "sight": 30,
+          "sound": 20,
+          "move": 20,
+          "threshold": {
+            "light": 10,
+            "sight": 10,
+            "attenuation": true,
+            "sound": null
+          },
+          "c": [
+            1475,
+            1475,
+            1525,
+            1425
+          ],
+          "_id": "OkR4z4h7aKiY6naL",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 30,
+          "sight": 30,
+          "sound": 20,
+          "move": 20,
+          "threshold": {
+            "light": 10,
+            "sight": 10,
+            "attenuation": true,
+            "sound": null
+          },
+          "c": [
+            1525,
+            1425,
+            1575,
+            1375
+          ],
+          "_id": "jEE2Gq86ZTSOGeEO",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 30,
+          "sight": 30,
+          "sound": 20,
+          "move": 20,
+          "threshold": {
+            "light": 10,
+            "sight": 10,
+            "attenuation": true,
+            "sound": null
+          },
+          "c": [
+            1650,
+            1275,
+            1650,
+            1225
+          ],
+          "_id": "Qq112fX9FZfdN47z",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 30,
+          "sight": 30,
+          "sound": 20,
+          "move": 20,
+          "threshold": {
+            "light": 10,
+            "sight": 10,
+            "attenuation": true,
+            "sound": null
+          },
+          "c": [
+            1575,
+            1125,
+            1525,
+            1075
+          ],
+          "_id": "KEy1dRet3RBhzNP6",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 30,
+          "sight": 30,
+          "sound": 20,
+          "move": 20,
+          "threshold": {
+            "light": 10,
+            "sight": 10,
+            "attenuation": true,
+            "sound": null
+          },
+          "c": [
+            1525,
+            1075,
+            1475,
+            1025
+          ],
+          "_id": "3mXIM96HqUj2VoN6",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 30,
+          "sight": 30,
+          "sound": 20,
+          "move": 20,
+          "threshold": {
+            "light": 10,
+            "sight": 10,
+            "attenuation": true,
+            "sound": null
+          },
+          "c": [
+            1325,
+            950,
+            1375,
+            950
+          ],
+          "_id": "TnWKtAqQX6nyzL5A",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 30,
+          "sight": 30,
+          "sound": 20,
+          "move": 20,
+          "threshold": {
+            "light": 10,
+            "sight": 10,
+            "attenuation": true,
+            "sound": null
+          },
+          "c": [
+            1225,
+            1025,
+            1175,
+            1075
+          ],
+          "_id": "K7iHEqaN5GUMRnmZ",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 30,
+          "sight": 30,
+          "sound": 20,
+          "move": 20,
+          "threshold": {
+            "light": 10,
+            "sight": 10,
+            "attenuation": true,
+            "sound": null
+          },
+          "c": [
+            1175,
+            1075,
+            1125,
+            1125
+          ],
+          "_id": "RToUxyopfa2HKNk8",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 30,
+          "sight": 30,
+          "sound": 20,
+          "move": 20,
+          "threshold": {
+            "light": 10,
+            "sight": 10,
+            "attenuation": true,
+            "sound": null
+          },
+          "c": [
+            1050,
+            1225,
+            1050,
+            1275
+          ],
+          "_id": "rRpbuqIXnGlxjnh4",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 1,
+          "c": [
+            1150,
+            1363,
+            1188,
+            1400
+          ],
+          "_id": "utRDNvwD9fU5p5VN",
+          "dir": 0,
+          "ds": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 1,
+          "c": [
+            1238,
+            1450,
+            1200,
+            1413
+          ],
+          "_id": "gLiecUFzHgze8Xok",
+          "dir": 0,
+          "ds": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 1,
+          "c": [
+            1463,
+            1450,
+            1500,
+            1413
+          ],
+          "_id": "sgannIbD1XtUyNIH",
+          "dir": 0,
+          "ds": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 1,
+          "c": [
+            1513,
+            1400,
+            1550,
+            1363
+          ],
+          "_id": "NYpFyVhWSmHq6pU4",
+          "dir": 0,
+          "ds": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 1,
+          "c": [
+            1513,
+            1100,
+            1550,
+            1138
+          ],
+          "_id": "jeZIjxI2CI0EvL03",
+          "dir": 0,
+          "ds": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 1,
+          "c": [
+            1500,
+            1088,
+            1463,
+            1050
+          ],
+          "_id": "Jer4MvK1Jh0GUlph",
+          "dir": 0,
+          "ds": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 1,
+          "c": [
+            1238,
+            1050,
+            1200,
+            1088
+          ],
+          "_id": "SvTQKus8rWINg0Fp",
+          "dir": 0,
+          "ds": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 20,
+          "sight": 20,
+          "sound": 20,
+          "move": 20,
+          "door": 1,
+          "c": [
+            1188,
+            1100,
+            1150,
+            1138
+          ],
+          "_id": "n8ltSKUkzSMpdwtp",
+          "dir": 0,
+          "ds": 0,
+          "threshold": {
+            "light": null,
+            "sight": null,
+            "sound": null,
+            "attenuation": false
+          },
+          "animation": null,
+          "flags": {}
+        },
+        {
+          "light": 30,
+          "sight": 30,
+          "sound": 20,
+          "move": 20,
+          "threshold": {
+            "light": 10,
+            "sight": 10,
+            "attenuation": true,
+            "sound": null
+          },
+          "c": [
+            1325,
+            1550,
+            1375,
+            1550
+          ],
+          "_id": "Clu3eXln0KhuV07u",
+          "dir": 0,
+          "door": 0,
+          "ds": 0,
+          "animation": null,
+          "flags": {}
         }
       ],
       "playlist": null,
@@ -12536,10 +13467,6 @@
       "sort": 400000,
       "flags": {
         "token-attacher": {}
-      },
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
       },
       "background": {
         "src": "modules/sdnd-strahd-adv/images/maps/Areas/V/v1_vr_tower/third_floor.webp",
@@ -12604,18 +13531,20 @@
       },
       "fog": {
         "exploration": true,
-        "reset": 1675555559422,
         "overlay": null,
         "colors": {
           "explored": null,
           "unexplored": null
         }
-      }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "active": false
     },
     {
       "_id": "5E20MqL1Ne11cg1s",
       "name": "V5: Van Richten's Tower (Destroyed)",
-      "active": false,
       "navigation": false,
       "navOrder": 0,
       "navName": "",
@@ -12900,10 +13829,6 @@
       "flags": {
         "token-attacher": {}
       },
-      "ownership": {
-        "default": 0,
-        "6yhz13iFYYklKtgA": 3
-      },
       "background": {
         "src": "modules/sdnd-strahd-adv/images/maps/Areas/V/v1_vr_tower/destroyed.webp",
         "offsetX": 0,
@@ -12967,13 +13892,16 @@
       },
       "fog": {
         "exploration": true,
-        "reset": 1675555605016,
         "overlay": null,
         "colors": {
           "explored": null,
           "unexplored": null
         }
-      }
+      },
+      "ownership": {
+        "default": 0
+      },
+      "active": false
     }
   ],
   "tables": [],
@@ -13108,7 +14036,7 @@
         "createdTime": null,
         "modifiedTime": 1689092687175,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
-        "compendiumSource": "Folder.JvBq76KcnxIjY4N7",
+        "compendiumSource": null,
         "duplicateSource": null,
         "exportSource": null
       }
@@ -13130,7 +14058,7 @@
         "createdTime": null,
         "modifiedTime": null,
         "lastModifiedBy": null,
-        "compendiumSource": "Folder.7fFXxvQlzOipnhM7",
+        "compendiumSource": null,
         "duplicateSource": null,
         "exportSource": null
       }
@@ -13151,7 +14079,7 @@
         "createdTime": null,
         "modifiedTime": 1747943849391,
         "lastModifiedBy": "6yhz13iFYYklKtgA",
-        "compendiumSource": "Folder.SgCwMBKLb1IzBVaz",
+        "compendiumSource": null,
         "duplicateSource": null,
         "exportSource": null
       },
@@ -13188,7 +14116,7 @@
     "systemVersion": "3.2.1",
     "coreVersion": "13.351",
     "createdTime": 1719970860959,
-    "modifiedTime": 1755711712564,
+    "modifiedTime": 1778025973519,
     "lastModifiedBy": "6yhz13iFYYklKtgA",
     "compendiumSource": null,
     "duplicateSource": null,
