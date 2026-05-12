@@ -1,3 +1,6 @@
+# v13.5.5
+# Bug Fixes
+- Fix Portals in Castle.
 # v13.5.4
 # Bug Fixes
 - Fixed portals everywhere.
@@ -278,6 +281,7 @@
 - Conversion to Foundry Version 11
 # v1.0.0: Initial Release of Curse of Strahd Adventure Pack
 - Includes starter scenes
+
 
 
 
